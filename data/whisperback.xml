@@ -4,7 +4,7 @@
   <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkWindow" id="windowMain">
     <property name="title" translatable="yes">WhisperBack</property>
-    <property name="icon_name">3floppy_unmount</property>
+    <property name="icon">whisperback.svg</property>
     <signal name="delete_event" handler="cb_close_application"/>
     <child>
       <object class="GtkVBox" id="vboxMain">
@@ -251,6 +251,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
   </object>
   <object class="GtkImage" id="iconWhisperback">
     <property name="visible">True</property>
-    <property name="icon_name">whisperback</property>
+    <property name="pixbuf">whisperback.svg</property>
   </object>
 </interface>
