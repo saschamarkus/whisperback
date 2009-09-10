@@ -4,6 +4,7 @@
   <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkWindow" id="windowMain">
     <property name="title" translatable="yes">WhisperBack</property>
+    <property name="icon_name">3floppy_unmount</property>
     <signal name="delete_event" handler="cb_close_application"/>
     <child>
       <object class="GtkVBox" id="vboxMain">
@@ -151,6 +152,8 @@ To report a bug, please include:
                 <signal name="clicked" handler="cb_show_about"/>
               </object>
               <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
                 <property name="position">0</property>
               </packing>
             </child>
@@ -164,6 +167,8 @@ To report a bug, please include:
                 <signal name="clicked" handler="cb_close_application"/>
               </object>
               <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
                 <property name="position">1</property>
               </packing>
             </child>
@@ -173,9 +178,12 @@ To report a bug, please include:
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="image">iconSend</property>
                 <signal name="clicked" handler="cb_send_message"/>
               </object>
               <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
                 <property name="position">2</property>
               </packing>
             </child>
@@ -236,5 +244,13 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
         </child>
       </object>
     </child>
+  </object>
+  <object class="GtkImage" id="iconSend">
+    <property name="visible">True</property>
+    <property name="stock">gtk-ok</property>
+  </object>
+  <object class="GtkImage" id="iconWhisperback">
+    <property name="visible">True</property>
+    <property name="icon_name">whisperback</property>
   </object>
 </interface>
