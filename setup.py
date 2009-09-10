@@ -45,7 +45,7 @@ txt2tags = subprocess.Popen (["txt2tags",
 txt2tags.wait()
 
 setup(name='whisperback',
-    version='0.1',
+    version='1.0-rc1',
     description='Send a feedback in an encrypted mail',
     author='Amnesia',
     author_email='amnesia@boum.org',
