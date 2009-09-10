@@ -1,7 +1,6 @@
 TODO
 ====
 
-* Translate the .xml UI file into english
 * Check the internationalization of the gtbBuilder
 * Implement details collection
 * Use StartTLS in SMTPLib

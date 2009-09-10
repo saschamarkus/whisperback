@@ -24,7 +24,7 @@
                     <property name="xalign">0</property>
                     <property name="yalign">0</property>
                     <property name="ypad">5</property>
-                    <property name="label" translatable="yes">Sujet</property>
+                    <property name="label" translatable="yes">Subject</property>
                   </object>
                   <packing>
                     <property name="position">0</property>
@@ -82,15 +82,17 @@
                 <property name="xalign">0</property>
                 <property name="yalign">0</property>
                 <property name="ypad">5</property>
-                <property name="label" translatable="yes">&lt;b&gt;Pour les bugs&lt;/b&gt;
+                <property name="label" translatable="yes" comments="Please keep the markup (e.g. &lt;big&gt;&lt;/big&gt; or &lt;b&gt;&lt;/b&gt;) for pango">&lt;big&gt;Some help&lt;/big&gt;
 
-Pour rapporter un probl&#xE8;me, merci de penser &#xE0; &#xE9;crire
-&#x2022; le nom du logiciel concern&#xE9; ;
-&#x2022; le bouton utilis&#xE9; ;
-&#x2022; l'action ;
-&#x2022; le r&#xE9;sultat, le probl&#xE8;me ;
+&lt;b&gt;For bugs&lt;/b&gt;
 
-&lt;b&gt;Dans tous les cas, pensez &#xE0; ne pas transmettre d'informations permettant de vous identifier !&lt;/b&gt;</property>
+To report a bug, please include :
+&#x2022; the name of the affected software ;
+&#x2022; the button/function used ;
+&#x2022; the action ;
+&#x2022; the result/the problem ;
+
+&lt;b&gt;As a general rule, please think about not to include any information allowing to identify you !&lt;/b&gt;</property>
                 <property name="use_markup">True</property>
                 <property name="wrap">True</property>
               </object>
@@ -116,7 +118,7 @@ Pour rapporter un probl&#xE8;me, merci de penser &#xE0; &#xE9;crire
             <child type="label">
               <object class="GtkLabel" id="labelMoreDetails">
                 <property name="visible">True</property>
-                <property name="label" translatable="yes">Plus de d&#xE9;tails</property>
+                <property name="label" translatable="yes">More details</property>
               </object>
             </child>
           </object>
@@ -156,7 +158,7 @@ Pour rapporter un probl&#xE8;me, merci de penser &#xE0; &#xE9;crire
             </child>
             <child>
               <object class="GtkButton" id="buttonSend">
-                <property name="label">Envoyer</property>
+                <property name="label">Send</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
