@@ -3,4 +3,6 @@ include COPYING
 include data/whisperback.desktop
 include data/whisperback.svg 
 include data/whisperback.xml
+include doc/whisperback.1
+include doc/README
 recursive-include po *

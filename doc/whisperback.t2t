@@ -1,0 +1,66 @@
+WhisperBack
+Send a feedback in an encrypted mail
+Copyright (C) 2009 Amnesia <amnesia@boum.org>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for man pages
+%
+% This file contain string indexes of the form \{key\}
+% (without the backslashes).
+% It should be processed by doc-i18n to produce a txt2tags input file
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Configuration
+%
+%! Target :  man
+%! Encoding: utf-8
+
+
+=NAME=
+
+
+WhisperBack - Send a feedback in an encrypted mail
+
+
+=SYNOPSIS=
+
+
+**pypdfconv**
+
+
+=DESCRIPTION=
+
+
+WhisperBack is a small pyGTK application intend to provide a
+user-friendly way to send a GnuPG-encrypted feedback to the amnesia
+dev team.
+
+
+=OPTIONS=
+
+
+**whisperback** doesn't accept any options
+
+
+=FILES=
+
+
+:**/etc/whisperback/config**
+System-wise configuration file.
+
+
+:**~/.whisperback/config**
+Per-user configuration file, overriding values from system-wise 
+configuration.
+
+
+:**./config
+Local configuration file, overriding values from both system-wise and
+per-user configuration.
+
+
+
+=AUTHORS=
+Amnesia (amnesia@boum.org)
+

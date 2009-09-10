@@ -38,6 +38,12 @@ intltool_extract = subprocess.Popen (["intltool-extract",
                                      "data/whisperback.xml"])
 intltool_extract.wait()
 
+# And some ugly way to generate the man
+txt2tags = subprocess.Popen (["txt2tags",
+                              "--outfile=doc/whisperback.1",
+                              "doc/whisperback.t2t"])
+txt2tags.wait()
+
 setup(name='whisperback',
     version='0.1',
     description='Send a feedback in an encrypted mail',
@@ -48,7 +54,9 @@ setup(name='whisperback',
     data_files=[('share/whisperback', ['data/whisperback.xml']),
                 ('share/pixmaps', ['data/whisperback.svg']),
                 ('share/applications', ['data/whisperback.desktop']),
-                ('share/doc/whisperback', ['config.sample', 'README'])],
+                ('share/doc/whisperback', ['config.sample', 
+                                           'doc/README']),
+                ('share/man', ['doc/whisperback.1'])],
     cmdclass = { "build" : build_extra.build_extra,
         "build_i18n" :  build_i18n.build_i18n,
         "build_help" :  build_help.build_help,
