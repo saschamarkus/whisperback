@@ -264,7 +264,7 @@ class WhisperBack (object):
     """Actually sends the message"""
     
     message_body = "Subject: " + self.subject + "\n" + \
-                   "Details: " + self.details + "\n\n" + \
+                   "Amnesia-Version: " + self.details + "\n\n" + \
                    self.message + "\n"
     
     encrypted_message_body = encryption.Encryption(). \
