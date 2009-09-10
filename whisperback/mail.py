@@ -55,7 +55,7 @@ def create_message (from_address, to_address, subject, message):
   return msg.as_string()
 
 
-def send_message (from_address, to_address, message):
+def send_message (from_address, to_address, message, host="localhost", port=25):
   """Sends a mail
   
   This is from an example from doc.python.org
@@ -63,9 +63,12 @@ def send_message (from_address, to_address, message):
   @param from_address The sender's address
   @param to_address The recipient address
   @param message The content of the mail
+  @param host The host of the smtp server to connect to
+  @param port The port of the smtp server to connect to
   """
   # Send the message via our own SMTP server, but don't include the
   # envelope header.
   smtp = smtplib.SMTP()
+  smtp.connect(host, port)
   smtp.sendmail(from_address, [to_address], message)
   smtp.quit()

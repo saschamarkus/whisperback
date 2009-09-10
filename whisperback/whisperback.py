@@ -82,6 +82,7 @@ class WhisperBackUI (object):
     self.subject = builder.get_object("entrySubject")
     self.message = builder.get_object("textviewMessage")
     self.details = builder.get_object("labelDetails")
+    self.send_button = builder.get_object("buttonSend")
 
     # Shows the UI
     self.main_window.show()
@@ -113,12 +114,53 @@ class WhisperBackUI (object):
     """Callback function to actually send the message
     
     """
-
-    WhisperBack (self.subject.get_text(), 
-                 self.message.get_buffer().get_text(
-                              self.message.get_buffer().get_start_iter(), 
-                              self.message.get_buffer().get_end_iter()),
-                 self.details.get_text()).send()
+    
+    self.main_window.set_sensitive(False)
+    
+    try:
+      WhisperBack (self.subject.get_text(), 
+                   self.message.get_buffer().get_text(
+                                self.message.get_buffer().get_start_iter(),
+                                self.message.get_buffer().get_end_iter()),
+                   self.details.get_text()).send()
+    except EncryptionException, e:
+      self.show_exception_dialog (_("An error occured during encryption."), e)
+      return False
+    except KeyNotFoundException, e:
+      self.show_exception_dialog (_("Unable to find encryption key."), e)
+      return False
+    
+    dialog = gtk.MessageDialog (parent=self.main_window, 
+                       flags=gtk.DIALOG_MODAL,
+                       type=gtk.MESSAGE_INFO,
+                       buttons=gtk.BUTTONS_CLOSE,
+                       message_format=_("Your message has been sent.")
+                       )
+    dialog.connect("response", self.cb_close_application)
+    dialog.show()
+    
+    return False
+    
+  def show_exception_dialog(self, message, exception):
+    """Shows a dialog reporting an exception
+    
+    @param message A string explaining the exception
+    @param exception The exception
+    """
+    dialog = gtk.MessageDialog (parent=self.main_window, 
+                       flags=gtk.DIALOG_MODAL,
+                       type=gtk.MESSAGE_ERROR,
+                       buttons=gtk.BUTTONS_CLOSE)
+    dialog.set_markup ("<b>%s</b>\n\n%s\n" % (message, exception.message()))
+    dialog.connect("response", self.cb_close_exception_dialog)
+    dialog.show()
+    
+  def cb_close_exception_dialog (self, widget, data=None):
+    """Callback function for the exception dialog close event
+    
+    """
+    self.main_window.set_sensitive(True)
+    widget.hide()
     return False
 
   def show_about_dialog(self):
@@ -134,9 +176,9 @@ class WhisperBackUI (object):
     about_dialog.set_comments(_("Send a feedback in an encrypted mail."))
     about_dialog.set_license(LICENCE)
     about_dialog.set_copyright(_("Copyright © 2009 amnesia@boum.org"))
-    about_dialog.set_authors(["Amnesia team <amnesia@boum.org"])
+    about_dialog.set_authors(["Amnesia team <amnesia@boum.org>"])
     about_dialog.set_translator_credits (_("translator-credits"))
-    about_dialog.set_website("http://amnesia.boum.org")
+    about_dialog.set_website("https://amnesia.boum.org")
     about_dialog.connect("response", gtk.Widget.hide_on_delete)
     about_dialog.show()
 
@@ -156,13 +198,8 @@ class Encryption (object):
     """Initialize the encryption mechanism"""
     
     # Some true initialisation : create a pyme context
-    try:
-      self.context = pyme.core.Context()
-      print ("GPGME init OK; context=" + str(self.context))
-    except Exception, e:
-      print (_("Pyme initialization error"))
-      raise
-  
+    self.context = pyme.core.Context()
+    
   def __fingerprints_to_keys (self, fingerprints):
     """Convert fingerprints into pyme keys
     
@@ -184,9 +221,7 @@ class Encryption (object):
 
         to_keys.append (to_key)
       except pyme.errors.GPGMEError, e:
-        print ("Error when trying to find key : " + e.getstring()
-                + "\nSource=" + str(e.getsource()) 
-                + "\nCode=" + str(e.getcode()))
+        raise KeyNotFoundException (e.getstring)
     
     return to_keys
     
@@ -235,21 +270,18 @@ class Encryption (object):
       #           GPGME_ENCRYPT_NO_ENCRYPT_TO : 2}
       #
       # context.op_encrypt (keys[], flags, plain, cipher)
-      #
-      # FIXME: why do we use GPGME_ENCRYPT_ALWAYS_TRUST?
-      context.op_encrypt([to_keys], 1, plain, cipher)
+      context.op_encrypt(to_keys, 1, plain, cipher)
       
-      # Reads the cipher (= encrypted text) from the beginning to the
-      # end
-      # FIXME: why to do this?
+      del plain
+      
+      # Go to the beginning of the buffer
       cipher.seek(0,0)
       
-      # Returns the cipher (= encrypted text)
+      # Reads the cipher (= encrypted text)
       return cipher.read()
       
-    except pyme.errors.GPGMEError, ex:
-      print ex.getstring()
-      raise ex
+    except pyme.errors.GPGMEError, e:
+      raise EncryptionException (e.getstring())
 
   def encrypt (self, data, to_fingerprints):
     """Encrypts data for a list of recepients
@@ -259,54 +291,17 @@ class Encryption (object):
     
     @return The encrypted data
     """
-    print ("to_fingerprints=" + str(to_fingerprints))
-    
     
     # Convert the fingerprint into pgpme keys
     to_keys = self.__fingerprints_to_keys (to_fingerprints)
-    print ("to_keys=" + str(to_keys))
     
     # Process only if some keys were found
-    if (len(to_keys) == 0):
-      raise Exception ( _("no key found") )
-      return
+    if len(to_keys) == 0:
+      raise KeyNotFoundException ( _("No keys found.") )
     
     # Encrypt the data
     return self.__encrypt_from_keys (data, to_keys)
-    
-    
-  def __find_fingerprints (self, to_addresse):
-    """Gets the fingerprints from a recepient address
-    
-    @param to_addresse A recepient's addresse
-    
-    @return A list of the fingerprint found, if any
-    """
-    
-    recepient_keys = []
-    
-    # The function gpgme_op_keylist_start initiates a key listing
-    # operation inside the context ctx. It sets everything up so that
-    # subsequent invocations of gpgme_op_keylist_next return the keys
-    # in the list.
-    context.op_keylist_start(to_address, 0)
-    
-    while True:
-      try:
-        # op_keylist_next eturns the next key in the list created by a 
-        # previous op_keylist_start operation in the context and append it
-        recepient_key = context.op_keylist_next()
-        
-        # Next we append it to our recipient_keys list
-        recepient_keys.append (recepient_key)
-        
-      except pyme.errors.GPGMEError, e:
-        print e.getstring()
-        break
-      
-      finally:
-        return recepient_keys
-        
+
 
 class WhisperBack (object):
   """
@@ -346,14 +341,17 @@ class WhisperBack (object):
     self.from_address = config.get('sender', 'address')
     
     self.mail_subject = config.get('message', 'subject')
-  
+    
+    self.smtp_host = config.get('smtp', 'host')
+    self.smtp_port = config.get('smtp', 'port')
+      
   
   def send(self):
     """Actually sends the message"""
     
-    message_body = "subject: " + self.subject + "\n\n" + \
-                   "message: " + self.message + "\n\n" + \
-                   "details: " + self.details
+    message_body = "Subject: " + self.subject + "\n" + \
+                   "Details: " + self.details + "\n\n" + \
+                   self.message + "\n"
     
     encrypted_message_body = Encryption().encrypt(message_body, 
                                                   [self.to_fingerprint])
@@ -361,10 +359,19 @@ class WhisperBack (object):
     mail.create_message (self.from_address, self.to_address, 
                          self.mail_subject, encrypted_message_body)
     
-    mail.send_message (self.from_address, self.to_address, encrypted_message_body)
+    mail.send_message (self.from_address, self.to_address, 
+                       encrypted_message_body, self.smtp_host,
+                       self.smtp_port)
     
-    print ("should have sent a message")
-  
+    
+class KeyNotFoundException (Exception):
+  """This exception is raised when GPGME can't find the key it searches 
+  in the keyring"""
+  pass
+
+class EncryptionException (Exception):
+  """This exception is raised when GPGME fails to encrypt the data"""
+  pass
 
 ########################################################################
   
