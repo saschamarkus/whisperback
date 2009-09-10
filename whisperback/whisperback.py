@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 ########################################################################
-LICENCE = """
+__licence__ = """
 WhisperBack - Send a feedback in an encrypted mail
 Copyright (C) 2009 Amnesia <amnesia@boum.org>
 
@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 ########################################################################
 
-VERSION = '0.1'
+__version__ = '0.1'
 LOCALEDIR = "locale/"
 PACKAGE = "whisperback"
 
@@ -47,6 +47,7 @@ import ConfigParser
 # Import our modules
 import mail
 import encryption
+import sysinfo
 
 # Initialize gettext 
 # FIXME : how to set these pathes ?
@@ -81,7 +82,7 @@ class WhisperBackUI (object):
     self.main_window.show()
     
     # Retrives info on the system
-    self.details.set_text(SystemInformations().get_info())
+    self.details.set_text(sysinfo.AmnesiaSystemInformations().get_info())
 
 
   # CALLBACKS
@@ -168,12 +169,12 @@ class WhisperBackUI (object):
     # Creates the about dialog
     about_dialog = gtk.AboutDialog()
     about_dialog.set_transient_for(self.main_window)
-    about_dialog.set_version(VERSION)
+    about_dialog.set_version(__version__)
     about_dialog.set_name(_("WhisperBack"))
     about_dialog.set_comments(_("Send a feedback in an encrypted mail."))
-    about_dialog.set_license(LICENCE)
+    about_dialog.set_license(__licence__)
     about_dialog.set_copyright(_("Copyright © 2009 amnesia@boum.org"))
-    about_dialog.set_authors(["Amnesia team <amnesia@boum.org>"])
+    about_dialog.set_authors(["_(Amnesia team <amnesia@boum.org>)"])
     about_dialog.set_translator_credits (_("translator-credits"))
     about_dialog.set_website("https://amnesia.boum.org")
     about_dialog.connect("response", gtk.Widget.hide_on_delete)
@@ -247,21 +248,6 @@ class WhisperBack (object):
     mail.send_message (self.from_address, self.to_address, 
                        encrypted_message_body, self.smtp_host,
                        self.smtp_port)
-
-########################################################################
-
-class SystemInformations (object):
-  """Retrives informations on the running system
-  
-  """
-  
-  def get_info (self):
-    """Returns a summary of the informations on the running system
-    
-    @return a summary of the informations on the running system
-    """
-    
-    return "This is a test"
 
 ########################################################################
   

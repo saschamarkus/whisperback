@@ -2,7 +2,6 @@ TODO
 ====
 
 * Check the internationalization of the gtbBuilder
-* Implement details collection
 * Use StartTLS in SMTPLib
 * Add an icon
 * Add a .desktop file
