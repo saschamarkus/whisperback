@@ -1,5 +1,6 @@
 include config.sample
 include COPYING
+include TODO
 include data/whisperback.desktop
 include data/whisperback.svg 
 include data/whisperback.xml

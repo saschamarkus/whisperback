@@ -1,7 +1,5 @@
 TODO
 ====
 
-* Check the internationalization of the gtbBuilder
 * Use StartTLS in SMTPLib
-* Add an icon
-* Add a .desktop file
+* Fix the absolute paths and their ugly workaround
