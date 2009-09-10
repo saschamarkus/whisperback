@@ -72,7 +72,7 @@ class WhisperBackUI (object):
     """
 
     builder = gtk.Builder()
-    builder.add_from_file("data/whisperback.xml")
+    builder.add_from_file("/usr/share/whisperback/whisperback.xml")
     builder.connect_signals(self)
 
     self.main_window = builder.get_object("windowMain")
@@ -207,7 +207,7 @@ class WhisperBack (object):
     print ("NEW")
     # Load the configuration
     #FIXME this is an absolute path, bad !
-    self.__load_conf (os.path.join("etc", "whisperback", "config"))
+    self.__load_conf ("/etc/whisperback/config")
     self.__load_conf (os.path.join(os.path.expanduser('~'),
                                    ".whisperback",
                                    "config"))
