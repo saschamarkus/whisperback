@@ -1,7 +1,7 @@
 WhisperBack - Send a feedback in an encrypted mail
 ##################################################
 
-Copyright (C) 2009 Amnesio <amnesia@boum.org>
+Copyright (C) 2009 Amnesia <amnesia@boum.org>
 
 
 DESCRIPTION
@@ -10,6 +10,18 @@ DESCRIPTION
 WhisperBack is a small pyGTK application intend to provide a
 user-friendly way to send a GnuPG-encrypted feedback to the amnesia
 dev team.
+
+
+DEPENDENCIES
+============
+
+You need the following runtime dependancies :
+  - python-gtk2
+  - python-pyme
+
+In addition, you need the following build dependancies :
+  - python-distutils-extra
+  - txt2tags
 
 
 INSTALLATION
