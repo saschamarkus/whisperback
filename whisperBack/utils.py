@@ -3,7 +3,7 @@
 
 ########################################################################
 # WhisperBack - Send a feedback in an encrypted mail
-# Copyright (C) 2009 Amnesia <amnesia@boum.org>
+# Copyright (C) 2009 Amnesio <amnesia@boum.org>
 # 
 # This program is  free software; you can redistribute  it and/or modify
 # it under the  terms of the GNU General Public  License as published by
@@ -21,35 +21,51 @@
 
 ########################################################################
 # 
-# whisperback
+# utils.py
 #
-# WhisperBack launcher script
+# Ugly pathes finder utility
 #
 ########################################################################
 
-#import os
-import sys
-#import optparse
-import gtk
+import os
 
-import gettext
+def guess_prefix ():
+  """Tries to guess the prefix
+  
+  @return The guessed prefix"""
+  
+  #FIXME: hardcoded path !
+  if os.path.exists ("/usr/local/share/whisperback"):
+    return "/usr/local"
+  elif os.path.exists ("/usr/share/whisperback"):
+    return "/usr"
+  else:
+    return None
 
-import whisperBack
+def get_sharedir ():
+  """Tries to guess the shared data directiry
+  
+  @return The guessed shared data directiry"""
+  if guess_prefix():
+    return os.path.join (guess_prefix(), "share")
+  else:
+    return "data"
 
-#program = sys.argv[0]
-#if program.startswith('./') or program.startswith('bin/'):
-#  sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-#    os.environ['USBCREATOR_LOCAL'] = '1'
+def get_datadir ():
+  """Tries to guess the datadir
+  
+  @return The guessed datadir"""
+  if guess_prefix():
+    return os.path.join (get_sharedir(), "whisperback")
+  else:
+    return "data"
 
-# FIXME: hardcoded path
-gettext.install('whisperback', localedir='/usr/share/locale', unicode=True)
 
-# parser = optparse.OptionParser(usage=_('%prog [options]'), version='0.2.5')
-# parser.add_option('-s', '--safe', dest='safe', action='store_true',
-#                   help=_('choose safer options when constructing the USB '
-#                          'disk (may slow down the boot process).'))
-# (options, args) = parser.parse_args()
-
-print whisperBack
-ui = whisperBack.WhisperBackUI()
-gtk.main()
+def get_pixmapdir ():
+  """Tries to guess the pixmapdir
+  
+  @return The guessed pixmapdir"""
+  if guess_prefix():
+    return os.path.join (get_sharedir(), "pixmaps")
+  else:
+    return "data"

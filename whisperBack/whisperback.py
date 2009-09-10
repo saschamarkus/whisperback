@@ -37,6 +37,7 @@ PACKAGE = "whisperback"
 import pygtk
 pygtk.require('2.0')
 import gtk
+import gobject
 
 # Import gettext for i18n
 #import gettext
@@ -51,6 +52,7 @@ import ConfigParser
 import mail
 import encryption
 import sysinfo
+import utils
 
 # Initialize gettext 
 # FIXME : how to set these pathes ?
@@ -72,7 +74,8 @@ class WhisperBackUI (object):
     """
 
     builder = gtk.Builder()
-    builder.add_from_file("/usr/share/whisperback/whisperback.xml")
+    builder.add_from_file(os.path.join(utils.get_datadir(),
+                                      "whisperback.xml"))
     builder.connect_signals(self)
 
     self.main_window = builder.get_object("windowMain")
@@ -80,6 +83,13 @@ class WhisperBackUI (object):
     self.message = builder.get_object("textviewMessage")
     self.details = builder.get_object("labelDetails")
     self.send_button = builder.get_object("buttonSend")
+    
+
+    try:
+      self.main_window.set_icon_from_file (os.path.join(
+          utils.get_pixmapdir(), "whisperback.svg"))
+    except gobject.GError, e:
+      print e
     
     # Shows the UI
     self.main_window.show()
@@ -89,7 +99,6 @@ class WhisperBackUI (object):
 
 
   # CALLBACKS
-
   def cb_close_application (self, widget, event, data=None):
     """Callback function for the main window's close event
     
