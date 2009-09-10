@@ -30,17 +30,25 @@
 from distutils.core import setup
 from DistUtilsExtra.command import *
 import os
+import subprocess
+
+# Some ugly way to generate the headers required to use gettext whit glade
+intltool_extract = subprocess.Popen (["intltool-extract",
+                                     "--type=gettext/glade",
+                                     "data/whisperback.xml"])
+intltool_extract.wait()
 
 setup(name='whisperback',
     version='0.1',
     description='Send a feedback in an encrypted mail',
     author='Amnesia',
     author_email='amnesia@boum.org',
-    packages=['whisperback'],
-    scripts=['whisperback.py'],
+    packages=['whisperBack'],
+    scripts=['whisperback'],
     data_files=[('share/whisperback', ['data/whisperback.xml']),
                 ('share/pixmaps', ['data/whisperback.svg']),
-                ('share/applications', ['data/whisperback.desktop'])],
+                ('share/applications', ['data/whisperback.desktop']),
+                ('share/doc/whisperback', ['config.sample', 'README'])],
     cmdclass = { "build" : build_extra.build_extra,
         "build_i18n" :  build_i18n.build_i18n,
         "build_help" :  build_help.build_help,

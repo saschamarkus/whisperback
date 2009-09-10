@@ -41,6 +41,9 @@ import gtk
 # Import gettext for i18n
 #import gettext
 
+# Import os services
+import os
+
 # Import the configuration parser
 import ConfigParser
 
@@ -201,9 +204,14 @@ class WhisperBack (object):
     @param message The content of the feedback
     @param details The details of the used software
     """
-    
+    print ("NEW")
     # Load the configuration
-    self.__load_conf ('whisperback.conf')
+    #FIXME this is an absolute path, bad !
+    self.__load_conf (os.path.join("etc", "whisperback", "config"))
+    self.__load_conf (os.path.join(os.path.expanduser('~'),
+                                   ".whisperback",
+                                   "config"))
+    self.__load_conf ("config")
     
     # Initialize variables
     self.subject = subject
@@ -217,20 +225,40 @@ class WhisperBack (object):
     
     @param config_file_path The path on the configuration file to load
     """
-        
+    print ("load config from %s..." % config_file_path)
+    
     config = ConfigParser.SafeConfigParser()
     config.read(config_file_path)
-
-    self.to_address = config.get('dest', 'address')
-    self.to_fingerprint = config.get('dest', 'fingerprint')
     
-    self.from_address = config.get('sender', 'address')
-    
-    self.mail_subject = config.get('message', 'subject')
-    
-    self.smtp_host = config.get('smtp', 'host')
-    self.smtp_port = config.get('smtp', 'port')
+    try:
+      self.to_address = config.get('dest', 'address')
+      self.to_fingerprint = config.get('dest', 'fingerprint')
+      print ("dest", self.to_address, self.to_fingerprint)
+    except ConfigParser.NoSectionError:
+      # There is no problem if all sections are not defined !
+      pass
       
+    try:
+      self.from_address = config.get('sender', 'address')
+      print ("sender", self.from_address)
+    except ConfigParser.NoSectionError:
+      # There is no problem if all sections are not defined !
+      pass
+    
+    try:
+      self.mail_subject = config.get('message', 'subject')
+      print ("mail", self.mail_subject)
+    except ConfigParser.NoSectionError:
+      # There is no problem if all sections are not defined !
+      pass
+      
+    try:
+      self.smtp_host = config.get('smtp', 'host')
+      self.smtp_port = config.get('smtp', 'port')
+      print ("smtp", self.smtp_host, self.smtp_port)
+    except ConfigParser.NoSectionError:
+      # There is no problem if all sections are not defined !
+      pass
   
   def send(self):
     """Actually sends the message"""

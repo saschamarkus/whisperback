@@ -1,0 +1,6 @@
+include config.sample
+include COPYING
+include data/whisperback.desktop
+include data/whisperback.svg 
+include data/whisperback.xml
+recursive-include po *

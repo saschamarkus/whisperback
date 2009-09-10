@@ -34,7 +34,7 @@ import gtk
 
 import gettext
 
-import whisperback
+import whisperBack
 
 #program = sys.argv[0]
 #if program.startswith('./') or program.startswith('bin/'):
@@ -49,7 +49,6 @@ gettext.install('whisperback', localedir='/usr/share/locale', unicode=True)
 #                          'disk (may slow down the boot process).'))
 # (options, args) = parser.parse_args()
 
-print whisperback
-#print whisperback.__all__
-ui = whisperback.WhisperBackUI()
+print whisperBack
+ui = whisperBack.WhisperBackUI()
 gtk.main()

@@ -63,7 +63,7 @@ class AmnesiaSystemInformations (SystemInformations):
       system_information = amensia_version.stdout.read()
     except OSError, e:
       system_information = "amnesia-version command not found"
-    except CalledProcessError, e:
+    except subprocess.CalledProcessError, e:
       system_information = "amnesia-version returned an error"
     
     return system_information

@@ -1,0 +1,11 @@
+# List of source files containing translatable strings.
+
+whisperBack/whisperback.py
+whisperBack/encryption.py
+whisperBack/mail.py
+whisperBack/sysinfo.py
+whisperBack/__init__.py
+
+data/whisperback.xml.h
+
+whisperback
