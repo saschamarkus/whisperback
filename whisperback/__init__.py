@@ -1,1 +1,2 @@
-__all__ = ["whisperback"]
+from whisperback import WhisperBackUI
+

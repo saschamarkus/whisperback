@@ -39,7 +39,7 @@ pygtk.require('2.0')
 import gtk
 
 # Import gettext for i18n
-import gettext
+#import gettext
 
 # Import the configuration parser
 import ConfigParser
@@ -51,9 +51,9 @@ import sysinfo
 
 # Initialize gettext 
 # FIXME : how to set these pathes ?
-gettext.bindtextdomain(PACKAGE, LOCALEDIR)
-gettext.textdomain(PACKAGE)
-_ = gettext.gettext
+#gettext.bindtextdomain(PACKAGE, LOCALEDIR)
+#gettext.textdomain(PACKAGE)
+#_ = gettext.gettext
 
 class WhisperBackUI (object):
   """
@@ -250,16 +250,4 @@ class WhisperBack (object):
                        self.smtp_port)
 
 ########################################################################
-  
-def main():
-  """
-  This is the function that launches the program
-  """
-    
-  ui = WhisperBackUI()
-  gtk.main()
-  
-  return 0 
-  
-if __name__ == "__main__":
-  main()
+
