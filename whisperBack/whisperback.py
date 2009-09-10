@@ -263,9 +263,9 @@ class WhisperBack (object):
   def send(self):
     """Actually sends the message"""
     
-    message_body = "Subject: " + self.subject + "\n" + \
-                   "Amnesia-Version: " + self.details + "\n\n" + \
-                   self.message + "\n"
+    message_body = "Subject: %s\n\n%s\n%s\n" % (self.subject,
+                                              self.details,
+                                              self.message)
     
     encrypted_message_body = encryption.Encryption(). \
                              encrypt(message_body, [self.to_fingerprint])
