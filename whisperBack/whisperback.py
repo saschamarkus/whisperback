@@ -139,6 +139,12 @@ class WhisperBackUI (object):
     except encryption.KeyNotFoundException, e:
       self.show_exception_dialog (_("Unable to find encryption key."), e)
       return False
+    except MisconfigurationException, e:
+      self.show_exception_dialog (_("Unable to load a valid configuration."), e)
+      return False
+    except SMTPException, e:
+      self.show_exception_dialog (_("Unable to send the mail."), e)
+      return False
     
     dialog = gtk.MessageDialog (parent=self.main_window, 
                        flags=gtk.DIALOG_MODAL,
@@ -213,7 +219,7 @@ class WhisperBack (object):
     @param message The content of the feedback
     @param details The details of the used software
     """
-    print ("NEW")
+    
     # Load the configuration
     #FIXME this is an absolute path, bad !
     self.__load_conf ("/etc/whisperback/config")
@@ -221,12 +227,13 @@ class WhisperBack (object):
                                    ".whisperback",
                                    "config"))
     self.__load_conf ("config")
+    self.__check_conf ()
     
     # Initialize variables
     self.subject = subject
     self.message = message
     self.details = details
-    
+  
   
   def __load_conf (self, config_file_path):
     """Loads a configuration file from config_file_path and initialize
@@ -234,7 +241,6 @@ class WhisperBack (object):
     
     @param config_file_path The path on the configuration file to load
     """
-    print ("load config from %s..." % config_file_path)
     
     config = ConfigParser.SafeConfigParser()
     config.read(config_file_path)
@@ -242,14 +248,12 @@ class WhisperBack (object):
     try:
       self.to_address = config.get('dest', 'address')
       self.to_fingerprint = config.get('dest', 'fingerprint')
-      print ("dest", self.to_address, self.to_fingerprint)
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
       
     try:
       self.from_address = config.get('sender', 'address')
-      print ("sender", self.from_address)
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
@@ -264,10 +268,35 @@ class WhisperBack (object):
     try:
       self.smtp_host = config.get('smtp', 'host')
       self.smtp_port = config.get('smtp', 'port')
-      print ("smtp", self.smtp_host, self.smtp_port)
+      self.smtp_tlskeyfile = config.get('smtp', 'tlskeyfile')
+      self.smtp_tlscertfile = config.get('smtp', 'tlscertfile')
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
+  
+  
+  def __check_conf (self):
+    """Check that all the required configuration variables are filled
+    and raise MisconfigurationException if not.
+    """
+    
+    if not self.to_address:
+      raise MisconfigurationException ('to', 'address')
+    if not self.to_fingerprint:
+      raise MisconfigurationException ('to', 'fingerprint')
+    if not self.from_address:
+      raise MisconfigurationException ('from', 'address')
+    if not self.mail_subject:
+      raise MisconfigurationException ('mail', 'subject')
+    if not self.smtp_host:
+      raise MisconfigurationException ('smtp', 'host')
+    if not self.smtp_port:
+      raise MisconfigurationException ('smtp', 'port')
+    if not self.smtp_tlskeyfile:
+      raise MisconfigurationException ('smtp', 'tlskeyfile')
+    if not self.smtp_tlscertfile:
+      raise MisconfigurationException ('smtp', 'tlscertfile')
+  
   
   def send(self):
     """Actually sends the message"""
@@ -282,9 +311,17 @@ class WhisperBack (object):
     mail.create_message (self.from_address, self.to_address, 
                          self.mail_subject, encrypted_message_body)
     
-    mail.send_message (self.from_address, self.to_address, 
-                       encrypted_message_body, self.smtp_host,
-                       self.smtp_port)
+    mail.send_message_tls (self.from_address, self.to_address, 
+                            encrypted_message_body, self.smtp_host,
+                            self.smtp_port, self.smtp_tlskeyfile,
+                            self.smtp_tlscertfile)
 
 ########################################################################
 
+class MisconfigurationException (Exception):
+  """This exception is raised when the configuartion can't be properly
+  loaded
+  
+  """
+  def __init__ (section, variable):
+    Exception.__init__ ( _("The variable %s from section %s was not found in any on the configuation files /etc/whisperback/config, ~/.whisperback/config, ./config") % (section, variable) )

@@ -1,5 +1,5 @@
 TODO
 ====
 
-* Use StartTLS in SMTPLib
+* Test starttls ! Verify how to check sercer certificate (google intrigeri rfp python ssl)
 * Fix the absolute paths and their ugly workaround

@@ -11,3 +11,5 @@ subject = The subject of the mail
 [smtp]
 host = smtp.example.org
 port = 25
+tlskeyfile = 
+tlscertfile = 

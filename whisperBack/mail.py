@@ -54,8 +54,8 @@ def create_message (from_address, to_address, subject, message):
   
   return msg.as_string()
 
-
-def send_message (from_address, to_address, message, host="localhost", port=25):
+def send_message (from_address, to_address, message, host="localhost",
+                  port=25):
   """Sends a mail
   
   This is from an example from doc.python.org
@@ -72,3 +72,27 @@ def send_message (from_address, to_address, message, host="localhost", port=25):
   smtp.connect(host, port)
   smtp.sendmail(from_address, [to_address], message)
   smtp.quit()
+
+
+def send_message_tls (from_address, to_address, message, host="localhost",
+                  port=25, tls_keyfile=None, tls_certfile=None):
+  """Sends a mail
+  
+  This is from an example from doc.python.org
+  
+  @param from_address The sender's address
+  @param to_address The recipient address
+  @param message The content of the mail
+  @param host The host of the smtp server to connect to
+  @param port The port of the smtp server to connect to
+  @param tls_keyfile Keyfile passed to the socket module’s ssl() function.
+  @param tls_certfile Certfile passed to the socket module’s ssl() function.
+  """
+  # Send the message via our own SMTP server, but don't include the
+  # envelope header.
+  smtp = smtplib.SMTP()
+  smtp.connect(host, port)
+  smtp.starttls(tls_keyfile, tls_certfile)
+  smtp.sendmail(from_address, [to_address], message)
+  smtp.quit()
+  
