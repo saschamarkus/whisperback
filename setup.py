@@ -33,16 +33,14 @@ import os
 import subprocess
 
 # Some ugly way to generate the headers required to use gettext whit glade
-intltool_extract = subprocess.Popen (["intltool-extract",
-                                     "--type=gettext/glade",
-                                     "data/whisperback.xml"])
-intltool_extract.wait()
+subprocess.call (["intltool-extract",
+                 "--type=gettext/glade",
+                 "data/whisperback.xml"])
 
 # And some ugly way to generate the man
-txt2tags = subprocess.Popen (["txt2tags",
-                              "--outfile=doc/whisperback.1",
-                              "doc/whisperback.t2t"])
-txt2tags.wait()
+subprocess.call (["txt2tags",
+                 "--outfile=doc/whisperback.1",
+                 "doc/whisperback.t2t"])
 
 setup(name='whisperback',
     version='1.0-rc1',
@@ -57,6 +55,7 @@ setup(name='whisperback',
                 ('share/doc/whisperback', ['config.sample', 
                                            'doc/README']),
                 ('share/man/man1', ['doc/whisperback.1'])],
+    requires=['gtk', 'pyme'],
     cmdclass = { "build" : build_extra.build_extra,
         "build_i18n" :  build_i18n.build_i18n,
         "build_help" :  build_help.build_help,
