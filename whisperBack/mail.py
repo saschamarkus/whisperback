@@ -30,6 +30,7 @@
 
 # Import smtplib for the actual sending function
 import smtplib
+import socket
 # Import the email modules we'll need
 from email.mime.text import MIMEText
 
@@ -66,6 +67,11 @@ def send_message (from_address, to_address, message, host="localhost",
   @param host The host of the smtp server to connect to
   @param port The port of the smtp server to connect to
   """
+  # We set a long timeout because Tor is slow
+  # TODO this will not be necessary anymore under python 2.6, because it
+  #      includes a timeout argument on smtplib
+  socket.setdefaulttimeout(60)
+  
   # Send the message via our own SMTP server, but don't include the
   # envelope header.
   smtp = smtplib.SMTP()
@@ -88,6 +94,11 @@ def send_message_tls (from_address, to_address, message, host="localhost",
   @param tls_keyfile Keyfile passed to the socket module’s ssl() function.
   @param tls_certfile Certfile passed to the socket module’s ssl() function.
   """
+  # We set a long timeout because Tor is slow
+  # TODO this will not be necessary anymore under python 2.6, because it
+  #      includes a timeout argument on smtplib
+  socket.setdefaulttimeout(60)
+  
   # Send the message via our own SMTP server, but don't include the
   # envelope header.
   smtp = smtplib.SMTP()
