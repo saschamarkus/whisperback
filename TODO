@@ -3,3 +3,4 @@ TODO
 
 * Test starttls ! Verify how to check sercer certificate (google intrigeri rfp python ssl)
 * Fix the absolute paths and their ugly workaround
+* Fix exception catcher in whisperback.py (+ MisConfigurationException ?)

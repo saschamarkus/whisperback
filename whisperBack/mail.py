@@ -34,6 +34,9 @@ import socket
 # Import the email modules we'll need
 from email.mime.text import MIMEText
 
+import gnutls.errors
+import time
+
 
 def create_message (from_address, to_address, subject, message):
   """Create a plaintext mail
@@ -82,4 +85,84 @@ def send_message_tls (from_address, to_address, message, host="localhost",
   smtp.starttls(tls_keyfile, tls_certfile)
   smtp.sendmail(from_address, [to_address], message)
   smtp.quit()
+
+
+# This is a monkey patch to make the starttls function of libsmtp use
+# starttls
   
+def starttls(self, keyfile = None, certfile = None):
+  """Puts the connection to the SMTP server into TLS mode.
+
+  If the server supports TLS, this will encrypt the rest of the SMTP
+  session.
+  
+  """
+  (resp, reply) = self.docmd("STARTTLS")
+  if resp == 220:
+    
+      from gnutls.crypto import X509Certificate, X509CRL
+      from gnutls.connection import ClientSession, X509Credentials
+      import socket, struct
+      
+      tv = struct.pack('ii', int(6), int(0))
+      self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_RCVTIMEO, tv)
+      
+      ca = X509Certificate(open('/etc/ssl/certs/ca-certificates.crt').read())
+      # FIXME : use CRL
+      #crl = X509CRL(open(certs_path + '/crl.pem').read())
+      cred = X509Credentials()
+      session = ClientSession(self.sock, cred)
+      
+      while True:
+        try:
+          session.handshake()
+          break
+        except gnutls.errors.OperationWouldBlock:
+          time.sleep(0.1)
+      
+      def tls_quit():
+        """Terminate the SMTP session."""
+        self.docmd("quit")
+        self.sock.bye()
+        self.close()
+      
+      self.quit = tls_quit
+      
+      self.sock = session
+      self.file = SSLFakeFile(session)
+      
+      # RFC 3207:
+      # The client MUST discard any knowledge obtained from
+      # the server, such as the list of SMTP service extensions,
+      # which was not obtained from the TLS negotiation itself.
+      self.helo_resp = None
+      self.ehlo_resp = None
+      self.esmtp_features = {}
+      self.does_esmtp = 0
+  return (resp, reply)
+
+class SSLFakeFile:
+    """A fake file like object that really wraps a SSLObject.
+
+    It only supports what is needed in smtplib.
+    """
+    def __init__(self, sslobj):
+        self.sslobj = sslobj
+
+    def readline(self):
+        str = ""
+        chr = None
+        while chr != "\n":
+          while True:
+            try:          
+              chr = self.sslobj.recv(1)
+              str += chr
+              break
+            except gnutls.errors.OperationWouldBlock:
+              time.sleep(0.1)
+        return str
+
+    def close(self):
+        pass
+
+smtplib.SMTP.starttls = starttls
