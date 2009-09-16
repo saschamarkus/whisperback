@@ -54,6 +54,9 @@ import encryption
 import sysinfo
 import utils
 
+# Import smtplib because we need the exception it raises
+import smtplib
+
 # Initialize gettext 
 # FIXME : how to set these pathes ?
 #gettext.bindtextdomain(PACKAGE, LOCALEDIR)
@@ -142,7 +145,7 @@ class WhisperBackUI (object):
     except MisconfigurationException, e:
       self.show_exception_dialog (_("Unable to load a valid configuration."), e)
       return False
-    except SMTPException, e:
+    except smtplib.SMTPException, e:
       self.show_exception_dialog (_("Unable to send the mail."), e)
       return False
     
@@ -167,6 +170,7 @@ class WhisperBackUI (object):
                        flags=gtk.DIALOG_MODAL,
                        type=gtk.MESSAGE_ERROR,
                        buttons=gtk.BUTTONS_CLOSE)
+    raise exception
     dialog.set_markup ("<b>%s</b>\n\n%s\n" % (message, exception.message()))
     dialog.connect("response", self.cb_close_exception_dialog)
     dialog.show()
@@ -292,10 +296,6 @@ class WhisperBack (object):
       raise MisconfigurationException ('smtp', 'host')
     if not self.smtp_port:
       raise MisconfigurationException ('smtp', 'port')
-    if not self.smtp_tlskeyfile:
-      raise MisconfigurationException ('smtp', 'tlskeyfile')
-    if not self.smtp_tlscertfile:
-      raise MisconfigurationException ('smtp', 'tlscertfile')
   
   
   def send(self):
@@ -323,5 +323,7 @@ class MisconfigurationException (Exception):
   loaded
   
   """
-  def __init__ (section, variable):
-    Exception.__init__ ( _("The variable %s from section %s was not found in any on the configuation files /etc/whisperback/config, ~/.whisperback/config, ./config") % (section, variable) )
+  def __init__ (self, section, variable):
+    Exception.__init__ (self, _("The variable %s from section %s was not found in any of the configuation files /etc/whisperback/config, ~/.whisperback/config, ./config") % (section, variable) )
+
+

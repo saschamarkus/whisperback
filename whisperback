@@ -42,7 +42,7 @@ import whisperBack
 #    os.environ['USBCREATOR_LOCAL'] = '1'
 
 # FIXME: hardcoded path
-gettext.install('whisperback', localedir='/usr/share/locale', unicode=True)
+#gettext.install('whisperback', localedir='/usr/share/locale', unicode=True)
 
 # parser = optparse.OptionParser(usage=_('%prog [options]'), version='0.2.5')
 # parser.add_option('-s', '--safe', dest='safe', action='store_true',
