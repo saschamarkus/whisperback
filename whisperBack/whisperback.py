@@ -99,7 +99,12 @@ class WhisperBackUI (object):
     
     # Retrives info on the system
     self.details.set_text(sysinfo.AmnesiaSystemInformations().get_info())
-
+    
+    # Launches the backend
+    try:
+      self.backend = WhisperBack (details = self.details)
+    except MisconfigurationException, e:
+      self.show_exception_dialog (_("Unable to load a valid configuration."), e, self.cb_close_application)
 
   # CALLBACKS
   def cb_close_application (self, widget, event, data=None):
@@ -130,20 +135,17 @@ class WhisperBackUI (object):
     
     self.main_window.set_sensitive(False)
     
+    self.backend.subjcet = self.subject.get_text()
+    self.backend.message = self.message.get_buffer().get_text(
+                           self.message.get_buffer().get_start_iter(),
+                           self.message.get_buffer().get_end_iter())
     try:
-      WhisperBack (self.subject.get_text(), 
-                   self.message.get_buffer().get_text(
-                                self.message.get_buffer().get_start_iter(),
-                                self.message.get_buffer().get_end_iter()),
-                   self.details.get_text()).send()
+      self.backend.send()
     except encryption.EncryptionException, e:
       self.show_exception_dialog (_("An error occured during encryption."), e)
       return False
     except encryption.KeyNotFoundException, e:
       self.show_exception_dialog (_("Unable to find encryption key."), e)
-      return False
-    except MisconfigurationException, e:
-      self.show_exception_dialog (_("Unable to load a valid configuration."), e)
       return False
     except smtplib.SMTPException, e:
       self.show_exception_dialog (_("Unable to send the mail."), e)
@@ -160,20 +162,28 @@ class WhisperBackUI (object):
     
     return False
     
-  def show_exception_dialog(self, message, exception):
+  def show_exception_dialog(self, message, exception,
+                            close_callback = None):
     """Shows a dialog reporting an exception
     
     @param message A string explaining the exception
     @param exception The exception
+    @param close_callback An alternative callback to use on closing
     """
+    
+    if not close_callback:
+      close_callback = self.cb_close_exception_dialog
+      
+    
     dialog = gtk.MessageDialog (parent=self.main_window, 
                        flags=gtk.DIALOG_MODAL,
                        type=gtk.MESSAGE_ERROR,
                        buttons=gtk.BUTTONS_CLOSE)
     dialog.set_markup ("<b>%s</b>\n\n%s\n" % (message, exception.message))
-    dialog.connect("response", self.cb_close_exception_dialog)
+    
+    dialog.connect("response", close_callback)
     dialog.show()
-    raise exception
+    #raise exception
     
   def cb_close_exception_dialog (self, widget, data=None):
     """Callback function for the exception dialog close event
@@ -216,7 +226,7 @@ class WhisperBack (object):
   This class contains the backend which actually sends the feedback
   """
   
-  def __init__ (self, subject, message, details):
+  def __init__ (self, subject = "", message = "", details = ""):
     """Initialize a feedback object with the given contents
     
     @param subject The topic of the feedback 
