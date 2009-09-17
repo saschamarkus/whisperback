@@ -60,7 +60,7 @@ def create_message (from_address, to_address, subject, message):
 
 
 def send_message_tls (from_address, to_address, message, host="localhost",
-                  port=25, tls_keyfile=None, tls_certfile=None):
+                  port=25, tls_cafile=None):
   """Sends a mail
   
   This is from an example from doc.python.org
@@ -70,8 +70,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
   @param message The content of the mail
   @param host The host of the smtp server to connect to
   @param port The port of the smtp server to connect to
-  @param tls_keyfile Keyfile passed to the socket module’s ssl() function.
-  @param tls_certfile Certfile passed to the socket module’s ssl() function.
+  @param tls_ca Certificate authority file passed to the socket module’s ssl() function.
   """
   # We set a long timeout because Tor is slow
   # TODO this will not be necessary anymore under python 2.6, because it
@@ -82,7 +81,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
   # envelope header.
   smtp = smtplib.SMTP()
   smtp.connect(host, port)
-  smtp.starttls(tls_keyfile, tls_certfile)
+  smtp.starttls(cafile = tls_cafile)
   smtp.sendmail(from_address, [to_address], message)
   smtp.quit()
 
@@ -90,13 +89,14 @@ def send_message_tls (from_address, to_address, message, host="localhost",
 # This is a monkey patch to make the starttls function of libsmtp use
 # starttls
   
-def starttls(self, keyfile = None, certfile = None):
+def starttls(self, keyfile = None, certfile = None, cafile=None):
   """Puts the connection to the SMTP server into TLS mode.
 
   If the server supports TLS, this will encrypt the rest of the SMTP
   session.
   
   """
+  print "mkpatched func"
   (resp, reply) = self.docmd("STARTTLS")
   if resp == 220:
     
@@ -107,7 +107,8 @@ def starttls(self, keyfile = None, certfile = None):
       tv = struct.pack('ii', int(6), int(0))
       self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_RCVTIMEO, tv)
       
-      ca = X509Certificate(open('/etc/ssl/certs/ca-certificates.crt').read())
+      if cafile:
+        ca = X509Certificate(open(cafile).read())
       # FIXME : use CRL
       #crl = X509CRL(open(certs_path + '/crl.pem').read())
       cred = X509Credentials()
@@ -116,6 +117,7 @@ def starttls(self, keyfile = None, certfile = None):
       while True:
         try:
           session.handshake()
+          session.verify_peer()
           break
         except gnutls.errors.OperationWouldBlock:
           time.sleep(0.1)

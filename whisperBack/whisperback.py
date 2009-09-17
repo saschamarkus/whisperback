@@ -170,10 +170,10 @@ class WhisperBackUI (object):
                        flags=gtk.DIALOG_MODAL,
                        type=gtk.MESSAGE_ERROR,
                        buttons=gtk.BUTTONS_CLOSE)
-    raise exception
-    dialog.set_markup ("<b>%s</b>\n\n%s\n" % (message, exception.message()))
+    dialog.set_markup ("<b>%s</b>\n\n%s\n" % (message, exception.message))
     dialog.connect("response", self.cb_close_exception_dialog)
     dialog.show()
+    raise exception
     
   def cb_close_exception_dialog (self, widget, data=None):
     """Callback function for the exception dialog close event
@@ -238,42 +238,45 @@ class WhisperBack (object):
     self.message = message
     self.details = details
   
-  
   def __load_conf (self, config_file_path):
     """Loads a configuration file from config_file_path and initialize
     the corresponding instance variables.
     
     @param config_file_path The path on the configuration file to load
     """
-    
     config = ConfigParser.SafeConfigParser()
     config.read(config_file_path)
     
+    def _try_read_option (section, option, function = config.get):
+      try:
+        return function(section, option)
+      except ConfigParser.NoOptionError:
+        # There is no problem if all options are not defined !
+        pass
+    
     try:
-      self.to_address = config.get('dest', 'address')
-      self.to_fingerprint = config.get('dest', 'fingerprint')
+      self.to_address = _try_read_option('dest', 'address')
+      self.to_fingerprint = _try_read_option('dest', 'fingerprint')
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
       
     try:
-      self.from_address = config.get('sender', 'address')
+      self.from_address = _try_read_option('sender', 'address')
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
     
     try:
-      self.mail_subject = config.get('message', 'subject')
-      print ("mail", self.mail_subject)
+      self.mail_subject = _try_read_option('message', 'subject')
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
       
     try:
-      self.smtp_host = config.get('smtp', 'host')
-      self.smtp_port = config.get('smtp', 'port')
-      self.smtp_tlskeyfile = config.get('smtp', 'tlskeyfile')
-      self.smtp_tlscertfile = config.get('smtp', 'tlscertfile')
+      self.smtp_host = _try_read_option('smtp', 'host')
+      self.smtp_port = _try_read_option('smtp', 'port', config.getint)
+      self.smtp_tlscafile = _try_read_option('smtp', 'tlscafile')
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
@@ -296,6 +299,8 @@ class WhisperBack (object):
       raise MisconfigurationException ('smtp', 'host')
     if not self.smtp_port:
       raise MisconfigurationException ('smtp', 'port')
+    if not self.smtp_tlscafile:
+      raise MisconfigurationException ('smtp', 'tlscafile')
   
   
   def send(self):
@@ -313,8 +318,7 @@ class WhisperBack (object):
     
     mail.send_message_tls (self.from_address, self.to_address, 
                             encrypted_message_body, self.smtp_host,
-                            self.smtp_port, self.smtp_tlskeyfile,
-                            self.smtp_tlscertfile)
+                            self.smtp_port, self.smtp_tlscafile)
 
 ########################################################################
 
