@@ -96,7 +96,6 @@ def starttls(self, keyfile = None, certfile = None, cafile=None):
   session.
   
   """
-  print "mkpatched func"
   (resp, reply) = self.docmd("STARTTLS")
   if resp == 220:
     
