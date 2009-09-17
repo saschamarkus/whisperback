@@ -32,6 +32,18 @@ WhisperBack is packaged using distutils. To install it :
 and then under root
   # ./setup.py install
 
+
+CONFIGURATION
+=============
+
+The configuration is read, in that order, from :
+- /etc/whisperback/config
+- ~/.whisperback/config
+- ./config
+
+Please see config.sample for the syntax.
+
+
 USAGE
 =====
 

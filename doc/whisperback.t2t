@@ -1,6 +1,6 @@
 WhisperBack
 Send a feedback in an encrypted mail
-1.0-rc1
+1.1-beta
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Template for man pages
@@ -33,7 +33,7 @@ WhisperBack - Send a feedback in an encrypted mail
 
 
 WhisperBack is a small pyGTK application intend to provide a
-user-friendly way to send a GnuPG-encrypted feedback to the amnesia
+user-friendly way to send a GnuPG-encrypted feedback mail to the amnesia
 dev team.
 
 

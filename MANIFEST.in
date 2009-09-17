@@ -1,4 +1,3 @@
-include config.sample
 include COPYING
 include TODO
 include data/whisperback.desktop
@@ -6,4 +5,5 @@ include data/whisperback.svg
 include data/whisperback.xml
 include doc/whisperback.t2t
 include doc/README
+include doc/config.sample
 recursive-include po *
