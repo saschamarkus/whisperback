@@ -57,14 +57,15 @@ class AmnesiaSystemInformations (SystemInformations):
     """
   
     try:
-      amnesia_version = subprocess.Popen ("amnesia-version", 
-                                          stdout=subprocess.PIPE)
-      amnesia_version.wait()
-      system_information = "Amnesia-Version: %s\n" % \
-                           amnesia_version.stdout.read()
+      amnesia_version_process = subprocess.Popen ("amnesia-version", 
+                                                 stdout=subprocess.PIPE)
+      amnesia_version_process.wait()
+      amnesia_version = amnesia_version_process.stdout.read()
     except OSError, e:
-      system_information = "amnesia-version command not found"
+      amnesia_version = "amnesia-version command not found"
     except subprocess.CalledProcessError, e:
-      system_information = "amnesia-version returned an error"
+      amnesia_version = "amnesia-version returned an error"
     
-    return system_information
+    system_informations = "Amnesia-Version: %s\n" % amnesia_version
+    
+    return system_informations

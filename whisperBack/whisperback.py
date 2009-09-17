@@ -97,14 +97,15 @@ class WhisperBackUI (object):
     # Shows the UI
     self.main_window.show()
     
-    # Retrives info on the system
-    self.details.set_text(sysinfo.AmnesiaSystemInformations().get_info())
-    
     # Launches the backend
     try:
-      self.backend = WhisperBack (details = self.details)
+      self.backend = WhisperBack ()
     except MisconfigurationException, e:
       self.show_exception_dialog (_("Unable to load a valid configuration."), e, self.cb_close_application)
+    
+    # Shows the details
+    self.details.set_text(self.backend.details)
+    
 
   # CALLBACKS
   def cb_close_application (self, widget, event, data=None):
@@ -135,7 +136,7 @@ class WhisperBackUI (object):
     
     self.main_window.set_sensitive(False)
     
-    self.backend.subjcet = self.subject.get_text()
+    self.backend.subject = self.subject.get_text()
     self.backend.message = self.message.get_buffer().get_text(
                            self.message.get_buffer().get_start_iter(),
                            self.message.get_buffer().get_end_iter())
@@ -226,7 +227,7 @@ class WhisperBack (object):
   This class contains the backend which actually sends the feedback
   """
   
-  def __init__ (self, subject = "", message = "", details = ""):
+  def __init__ (self, subject = "", message = ""):
     """Initialize a feedback object with the given contents
     
     @param subject The topic of the feedback 
@@ -243,10 +244,12 @@ class WhisperBack (object):
     self.__load_conf ("config")
     self.__check_conf ()
     
-    # Initialize variables
+    # Retrives info on the system
+    self.details = sysinfo.AmnesiaSystemInformations().get_info()
+    
+    # Initialize other variables
     self.subject = subject
     self.message = message
-    self.details = details
   
   def __load_conf (self, config_file_path):
     """Loads a configuration file from config_file_path and initialize
@@ -316,7 +319,7 @@ class WhisperBack (object):
   def send(self):
     """Actually sends the message"""
     
-    message_body = "Subject: %s\n\n%s\n%s\n" % (self.subject,
+    message_body = "Subject: %s\n%s\n%s\n" % (self.subject,
                                               self.details,
                                               self.message)
     
