@@ -3,7 +3,7 @@ address = mail@example.org
 fingerprint = 0000000000000000000000000000000000000000
 
 [sender]
-address = mail@otherexample;org
+address = mail@otherexample.org
 
 [message]
 subject = The subject of the mail

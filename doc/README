@@ -1,5 +1,5 @@
-WhisperBack - Send a feedback in an encrypted mail
-##################################################
+WhisperBack - Send feedback via encrypted e-mail
+################################################
 
 Copyright (C) 2009 Amnesia <amnesia@boum.org>
 
@@ -7,19 +7,19 @@ Copyright (C) 2009 Amnesia <amnesia@boum.org>
 DESCRIPTION
 ===========
 
-WhisperBack is a small pyGTK application intend to provide a
-user-friendly way to send a GnuPG-encrypted feedback to the amnesia
-dev team.
+WhisperBack is a small pyGTK application intended to provide
+a user-friendly way to send feedback to the amnesia dev team in
+a GnuPG-encrypted way.
 
 
 DEPENDENCIES
 ============
 
-You need the following runtime dependancies :
+You need the following runtime dependencies:
   - python-gtk2
   - python-pyme
 
-In addition, you need the following build dependancies :
+In addition, you need the following build dependencies:
   - python-distutils-extra
   - txt2tags
 
@@ -27,24 +27,29 @@ In addition, you need the following build dependancies :
 INSTALLATION
 ============
 
-WhisperBack is packaged using distutils. To install it :
+WhisperBack is packaged using Python distutils. To install it:
+
   $ ./setup.py build
-and then under root
+
+and as root:
+
   # ./setup.py install
 
 
 CONFIGURATION
 =============
 
-The configuration is read, in that order, from :
+The configuration is read in sequence from the following files,
+settings read last overriding previous ones:
 - /etc/whisperback/config
 - ~/.whisperback/config
 - ./config
 
-Please see config.sample for the syntax.
+The config.sample example configuration file will tell you about the
+configuration syntax and available settings.
 
 
 USAGE
 =====
 
-Please see the man page
+Please see the man page.

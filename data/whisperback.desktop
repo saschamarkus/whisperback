@@ -1,7 +1,7 @@
 [Desktop Entry]
-Version=1.0-rc1
-Name=Whisperback
-Comment=Send a feedback in an encrypted mail
+Version=1.1-beta
+Name=WhisperBack
+Comment=Send feedback via encrypted e-mail
 Type=Application
 Exec=whisperback
 Icon=whisperback
