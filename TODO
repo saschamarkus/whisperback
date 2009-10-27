@@ -4,3 +4,7 @@ TODO
 * Test starttls ! Verify how to check server certificate
 * Vérifier un certificat avec une fingerprint
 * Fix the absolute paths and their ugly workaround
+* Mettre des threads pour pas que l'envoi du mail avec TOR (lent) freeze la GUI
+* Ajouter script de récupération d'infos de configuration
+  - script python, dans /etc/whisperback, .whisperback, local
+  - possibilité de voir les détails inclus
