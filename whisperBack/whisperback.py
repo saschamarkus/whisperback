@@ -48,6 +48,9 @@ import os
 # Import the configuration parser
 import ConfigParser
 
+# Used to by show_exception_dialog to print exception traceback
+import traceback
+
 # Import our modules
 import mail
 import encryption
@@ -185,8 +188,8 @@ class WhisperBackUI (object):
     
     dialog.connect("response", close_callback)
     dialog.show()
-    #raise exception
-    
+    print traceback.format_exc()
+
   def cb_close_exception_dialog (self, widget, data=None):
     """Callback function for the exception dialog close event
     
