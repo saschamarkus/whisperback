@@ -66,7 +66,7 @@ import smtplib
 #gettext.textdomain(PACKAGE)
 #_ = gettext.gettext
 
-class WhisperBackUI (object):
+class WhisperBackUI(object):
   """
   This class provides a window containing the GTK+ user interface.
   
@@ -89,57 +89,55 @@ class WhisperBackUI (object):
     self.message = builder.get_object("textviewMessage")
     self.details = builder.get_object("labelDetails")
     self.send_button = builder.get_object("buttonSend")
-    
 
     try:
-      self.main_window.set_icon_from_file (os.path.join(
+      self.main_window.set_icon_from_file(os.path.join(
           utils.get_pixmapdir(), "whisperback.svg"))
     except gobject.GError, e:
       print e
-    
+
     # Shows the UI
     self.main_window.show()
-    
+
     # Launches the backend
     try:
-      self.backend = WhisperBack ()
+      self.backend = WhisperBack()
     except MisconfigurationException, e:
-      self.show_exception_dialog (_("Unable to load a valid configuration."), e, self.cb_close_application)
+      self.show_exception_dialog(_("Unable to load a valid configuration."), e, self.cb_close_application)
       return
-    
+
     # Shows the details
     self.details.set_text(self.backend.details)
-    
 
   # CALLBACKS
-  def cb_close_application (self, widget, event, data=None):
+  def cb_close_application(self, widget, event, data=None):
     """Callback function for the main window's close event
     
     """
-    self.close_application ()
+    self.close_application()
     return False
-  
-  def cb_close_application (self, widget, data=None):
+
+  def cb_close_application(self, widget, data=None):
     """Callback function for the main window's close event
     
     """
-    self.close_application ()
+    self.close_application()
     return False
-  
-  def cb_show_about (self, widget, data=None):
+
+  def cb_show_about(self, widget, data=None):
     """Callback function to show the "about" dialog
     
     """
-    self.show_about_dialog ()
+    self.show_about_dialog()
     return False
-    
-  def cb_send_message (self, widget, data=None):
+
+  def cb_send_message(self, widget, data=None):
     """Callback function to actually send the message
     
     """
-    
+
     self.main_window.set_sensitive(False)
-    
+
     self.backend.subject = self.subject.get_text()
     self.backend.message = self.message.get_buffer().get_text(
                            self.message.get_buffer().get_start_iter(),
@@ -147,26 +145,25 @@ class WhisperBackUI (object):
     try:
       self.backend.send()
     except encryption.EncryptionException, e:
-      self.show_exception_dialog (_("An error occured during encryption."), e)
+      self.show_exception_dialog(_("An error occured during encryption."), e)
       return False
     except encryption.KeyNotFoundException, e:
-      self.show_exception_dialog (_("Unable to find encryption key."), e)
+      self.show_exception_dialog(_("Unable to find encryption key."), e)
       return False
     except smtplib.SMTPException, e:
-      self.show_exception_dialog (_("Unable to send the mail."), e)
+      self.show_exception_dialog(_("Unable to send the mail."), e)
       return False
-    
-    dialog = gtk.MessageDialog (parent=self.main_window, 
-                       flags=gtk.DIALOG_MODAL,
-                       type=gtk.MESSAGE_INFO,
-                       buttons=gtk.BUTTONS_CLOSE,
-                       message_format=_("Your message has been sent.")
-                       )
+
+    dialog = gtk.MessageDialog(parent=self.main_window,
+                               flags=gtk.DIALOG_MODAL,
+                               type=gtk.MESSAGE_INFO,
+                               buttons=gtk.BUTTONS_CLOSE,
+                               message_format=_("Your message has been sent."))
     dialog.connect("response", self.cb_close_application)
     dialog.show()
-    
+
     return False
-    
+
   def show_exception_dialog(self, message, exception,
                             close_callback = None):
     """Shows a dialog reporting an exception
@@ -175,22 +172,21 @@ class WhisperBackUI (object):
     @param exception The exception
     @param close_callback An alternative callback to use on closing
     """
-    
+
     if not close_callback:
       close_callback = self.cb_close_exception_dialog
-      
-    
-    dialog = gtk.MessageDialog (parent=self.main_window, 
-                       flags=gtk.DIALOG_MODAL,
-                       type=gtk.MESSAGE_ERROR,
-                       buttons=gtk.BUTTONS_CLOSE)
-    dialog.set_markup ("<b>%s</b>\n\n%s\n" % (message, exception.message))
+
+    dialog = gtk.MessageDialog(parent=self.main_window,
+                               flags=gtk.DIALOG_MODAL,
+                               type=gtk.MESSAGE_ERROR,
+                               buttons=gtk.BUTTONS_CLOSE)
+    dialog.set_markup("<b>%s</b>\n\n%s\n" % (message, exception.message))
     
     dialog.connect("response", close_callback)
     dialog.show()
     print traceback.format_exc()
 
-  def cb_close_exception_dialog (self, widget, data=None):
+  def cb_close_exception_dialog(self, widget, data=None):
     """Callback function for the exception dialog close event
     
     """
@@ -202,7 +198,7 @@ class WhisperBackUI (object):
     """Shows an "about" dialog for the program
     
     """
-        
+
     # Creates the about dialog
     about_dialog = gtk.AboutDialog()
     about_dialog.set_transient_for(self.main_window)
@@ -212,12 +208,12 @@ class WhisperBackUI (object):
     about_dialog.set_license(__licence__)
     about_dialog.set_copyright(_("Copyright © 2009 amnesia@boum.org"))
     about_dialog.set_authors(["_(Amnesia team <amnesia@boum.org>)"])
-    about_dialog.set_translator_credits (_("translator-credits"))
+    about_dialog.set_translator_credits(_("translator-credits"))
     about_dialog.set_website("https://amnesia.boum.org")
     about_dialog.connect("response", gtk.Widget.hide_on_delete)
     about_dialog.show()
 
-  def close_application (self):
+  def close_application(self):
     """
     Closes the application
     
@@ -226,12 +222,12 @@ class WhisperBackUI (object):
 
 ########################################################################
 
-class WhisperBack (object):
+class WhisperBack(object):
   """
   This class contains the backend which actually sends the feedback
   """
   
-  def __init__ (self, subject = "", message = ""):
+  def __init__(self, subject = "", message = ""):
     """Initialize a feedback object with the given contents
     
     @param subject The topic of the feedback 
@@ -249,21 +245,21 @@ class WhisperBack (object):
 
     # Load the configuration
     #FIXME this is an absolute path, bad !
-    self.__load_conf ("/etc/whisperback/config")
-    self.__load_conf (os.path.join(os.path.expanduser('~'),
-                                   ".whisperback",
-                                   "config"))
-    self.__load_conf ("config")
-    self.__check_conf ()
-    
+    self.__load_conf("/etc/whisperback/config")
+    self.__load_conf(os.path.join(os.path.expanduser('~'),
+                                  ".whisperback",
+                                  "config"))
+    self.__load_conf("config")
+    self.__check_conf()
+
     # Retrives info on the system
     self.details = sysinfo.AmnesiaSystemInformations().get_info()
-    
+
     # Initialize other variables
     self.subject = subject
     self.message = message
 
-  def __load_conf (self, config_file_path):
+  def __load_conf(self, config_file_path):
     """Loads a configuration file from config_file_path and initialize
     the corresponding instance variables.
     
@@ -271,33 +267,33 @@ class WhisperBack (object):
     """
     config = ConfigParser.SafeConfigParser()
     config.read(config_file_path)
-    
-    def _try_read_option (section, option, function = config.get):
+
+    def _try_read_option(section, option, function = config.get):
       try:
         return function(section, option)
       except ConfigParser.NoOptionError:
         # There is no problem if all options are not defined !
         pass
-    
+
     try:
       self.to_address = _try_read_option('dest', 'address')
       self.to_fingerprint = _try_read_option('dest', 'fingerprint')
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
-      
+
     try:
       self.from_address = _try_read_option('sender', 'address')
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
-    
+
     try:
       self.mail_subject = _try_read_option('message', 'subject')
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
-      
+
     try:
       self.smtp_host = _try_read_option('smtp', 'host')
       self.smtp_port = _try_read_option('smtp', 'port', config.getint)
@@ -305,54 +301,52 @@ class WhisperBack (object):
     except ConfigParser.NoSectionError:
       # There is no problem if all sections are not defined !
       pass
-  
-  
-  def __check_conf (self):
+
+  def __check_conf(self):
     """Check that all the required configuration variables are filled
     and raise MisconfigurationException if not.
     """
-    
+
     if not self.to_address:
-      raise MisconfigurationException ('to', 'address')
+      raise MisconfigurationException('to', 'address')
     if not self.to_fingerprint:
-      raise MisconfigurationException ('to', 'fingerprint')
+      raise MisconfigurationException('to', 'fingerprint')
     if not self.from_address:
-      raise MisconfigurationException ('from', 'address')
+      raise MisconfigurationException('from', 'address')
     if not self.mail_subject:
-      raise MisconfigurationException ('mail', 'subject')
+      raise MisconfigurationException('mail', 'subject')
     if not self.smtp_host:
-      raise MisconfigurationException ('smtp', 'host')
+      raise MisconfigurationException('smtp', 'host')
     if not self.smtp_port:
-      raise MisconfigurationException ('smtp', 'port')
+      raise MisconfigurationException('smtp', 'port')
     if not self.smtp_tlscafile:
-      raise MisconfigurationException ('smtp', 'tlscafile')
-  
-  
+      raise MisconfigurationException('smtp', 'tlscafile')
+
   def send(self):
     """Actually sends the message"""
     
-    message_body = "Subject: %s\n%s\n%s\n" % (self.subject,
-                                              self.details,
-                                              self.message)
+    message_body = "Subject: %s\n%s\n%s\n" %(self.subject,
+                                             self.details,
+                                             self.message)
     
     encrypted_message_body = encryption.Encryption(). \
                              encrypt(message_body, [self.to_fingerprint])
     
-    mail.create_message (self.from_address, self.to_address, 
+    mail.create_message(self.from_address, self.to_address,
                          self.mail_subject, encrypted_message_body)
     
-    mail.send_message_tls (self.from_address, self.to_address, 
+    mail.send_message_tls(self.from_address, self.to_address,
                             encrypted_message_body, self.smtp_host,
                             self.smtp_port, self.smtp_tlscafile)
 
 ########################################################################
 
-class MisconfigurationException (Exception):
+class MisconfigurationException(Exception):
   """This exception is raised when the configuartion can't be properly
   loaded
-  
+
   """
-  def __init__ (self, section, variable):
-    Exception.__init__ (self, _("The variable %s from section %s was not found in any of the configuation files /etc/whisperback/config, ~/.whisperback/config, ./config") % (section, variable) )
+  def __init__(self, section, variable):
+    Exception.__init__(self, _("The variable %s from section %s was not found in any of the configuation files /etc/whisperback/config, ~/.whisperback/config, ./config") % (section, variable))
 
 
