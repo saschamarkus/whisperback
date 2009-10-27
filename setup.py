@@ -43,7 +43,7 @@ subprocess.call (["txt2tags",
                  "doc/whisperback.t2t"])
 
 setup(name='whisperback',
-    version='1.1-beta',
+    version='1.1-beta2',
     description='Send a feedback in an encrypted mail',
     author='Amnesia',
     author_email='amnesia@boum.org',
