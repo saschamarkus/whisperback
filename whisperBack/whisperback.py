@@ -102,6 +102,7 @@ class WhisperBackUI (object):
       self.backend = WhisperBack ()
     except MisconfigurationException, e:
       self.show_exception_dialog (_("Unable to load a valid configuration."), e, self.cb_close_application)
+      return
     
     # Shows the details
     self.details.set_text(self.backend.details)
@@ -234,7 +235,15 @@ class WhisperBack (object):
     @param message The content of the feedback
     @param details The details of the used software
     """
-    
+    # Initialize config variables
+    self.to_address = None
+    self.to_fingerprint = None
+    self.from_address = None
+    self.mail_subject = None
+    self.smtp_host = None
+    self.smtp_port = None
+    self.smtp_tlscafile = None
+
     # Load the configuration
     #FIXME this is an absolute path, bad !
     self.__load_conf ("/etc/whisperback/config")
@@ -250,7 +259,7 @@ class WhisperBack (object):
     # Initialize other variables
     self.subject = subject
     self.message = message
-  
+
   def __load_conf (self, config_file_path):
     """Loads a configuration file from config_file_path and initialize
     the corresponding instance variables.
