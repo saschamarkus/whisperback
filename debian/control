@@ -1,0 +1,20 @@
+Source: whisperback
+Section: net
+Priority: optional
+Maintainer: Amnesia <amnesia@boum.org>
+Build-Depends: debhelper (>= 7.0.50~), python-support, python-distutils-extra, txt2tags
+Standards-Version: 3.8.3
+
+Package: whisperback
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-pyme, python-gnutls, python-gtk2
+Description: send feedback using encrypted email
+ WhisperBack is designed to allow Live system users to be able to report bugs
+ or issues in a simple yet secure manner.
+ .
+ A simple GTK+ interface is provided that will send a filled out form to an
+ email address.  The email is encrypted using GnuPG and sent directly to the
+ destination SMTP server with prior verification of its X509 certificate.
+ .
+ Please note that this package is useless without a configuration file: the
+ system provider should install it separately.
