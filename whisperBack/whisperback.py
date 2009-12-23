@@ -48,6 +48,10 @@ import os
 # Used to by show_exception_dialog to print exception traceback
 import traceback
 
+# To use threads
+import threading
+import time
+
 # Import our modules
 import mail
 import encryption
@@ -308,7 +312,31 @@ class WhisperBack(object):
     if not self.smtp_tlscafile:
         raise MisconfigurationException('smtp_tlscafile')
 
-  def send(self):
+  def execute_threaded(self, func, args, progress_callback):
+    self.__error_output = None
+
+    def save_exception(func, args):
+        try:
+            func(*args)
+        except Exception, e:
+            self.__error_output = e
+
+    thread = threading.Thread(target=func,
+                              args=args)
+    thread.start()
+
+    while thread.isAlive():
+        if progress_callback is not None:
+            progress_callback()
+        # XXX: I think there is a best way to do that !
+        time.sleep(0.1)
+
+    if self.__error_output is not None:
+        raise self.__error_output
+  # XXX: static would be best, but I get a problem with self.*
+  #execute_threaded = staticmethod(execute_threaded)
+
+  def send(self, progress_callback=None):
     """Actually sends the message"""
     
     message_body = "Subject: %s\n%s\n%s\n%s\n" %(self.subject,
@@ -321,10 +349,13 @@ class WhisperBack(object):
     
     mail.create_message(self.from_address, self.to_address,
                          self.mail_subject, encrypted_message_body)
-    
-    mail.send_message_tls(self.from_address, self.to_address,
-                            encrypted_message_body, self.smtp_host,
-                            self.smtp_port, self.smtp_tlscafile)
+
+    self.execute_threaded(func=mail.send_message_tls,
+                          args=(self.from_address, self.to_address,
+                                encrypted_message_body, self.smtp_host,
+                                self.smtp_port, self.smtp_tlscafile),
+                          progress_callback=progress_callback)
+
 
 ########################################################################
 
