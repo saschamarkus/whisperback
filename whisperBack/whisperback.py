@@ -97,6 +97,7 @@ class WhisperBackUI(object):
     self.progression_main_text = builder.get_object("progressLabelMain")
     self.progression_progressbar = builder.get_object("progressProgressbar")
     self.progression_secondary_text = builder.get_object("progressLabelSecondary")
+    self.progression_close = builder.get_object("progressButtonClose")
     self.subject = builder.get_object("entrySubject")
     self.message = builder.get_object("textviewMessage")
     self.prepended_details = builder.get_object("textviewPrependedInfo")
@@ -150,8 +151,8 @@ class WhisperBackUI(object):
     
     """
 
-    self.progression_main_text.set_text("Sending mail")
-    self.progression_secondary_text.set_text("XXX: not implemented")
+    self.progression_main_text.set_text(_("Sending mail"))
+    #self.progression_secondary_text.set_text("XXX: not implemented")
     self.progression_dialog.set_transient_for(self.main_window)
     self.progression_dialog.show()
     self.main_window.set_sensitive(False)
@@ -165,20 +166,18 @@ class WhisperBackUI(object):
         self.progression_progressbar.pulse()
 
     def cb_finished_progress(e):
-        self.progression_dialog.hide()
-
         if isinstance(e, smtplib.SMTPException):
             self.show_exception_dialog(_("Unable to send the mail."), e)
+            self.progression_dialog.hide()
         elif isinstance(e, Exception):
             self.show_exception_dialog(_("Unable to create or to send the mail."), e)
+            self.progression_dialog.hide()
         else:
-            dialog = gtk.MessageDialog(parent=self.main_window,
-                                       flags=gtk.DIALOG_MODAL,
-                                       type=gtk.MESSAGE_INFO,
-                                       buttons=gtk.BUTTONS_CLOSE,
-                                       message_format=_("Your message has been sent."))
-            dialog.connect("response", self.cb_close_application)
-            dialog.show()
+            self.main_window.set_sensitive(False)
+            self.progression_close.set_sensitive(True)
+            self.progression_progressbar.set_fraction(1.0)
+            self.progression_main_text.set_text(_("Your message has been sent."))
+            self.progression_secondary_text.set_text("")
 
     try:
         self.backend.send(cb_update_progress, cb_finished_progress)
