@@ -72,7 +72,7 @@ class WhisperBackUI(object):
   
   """
 
-  def __init__(self, pdfconv = None):
+  def __init__(self):
     """Constructor of the class, which creates the main window
     
     This is where the main window will be created and filled with the 
