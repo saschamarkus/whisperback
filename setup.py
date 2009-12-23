@@ -35,7 +35,7 @@ import subprocess
 # Some ugly way to generate the headers required to use gettext whit glade
 subprocess.call (["intltool-extract",
                  "--type=gettext/glade",
-                 "data/whisperback.xml"])
+                 "data/whisperback.ui"])
 
 # And some ugly way to generate the man
 subprocess.call (["txt2tags",
@@ -49,7 +49,7 @@ setup(name='whisperback',
     author_email='amnesia@boum.org',
     packages=['whisperBack'],
     scripts=['whisperback'],
-    data_files=[('share/whisperback', ['data/whisperback.xml']),
+    data_files=[('share/whisperback', ['data/whisperback.ui']),
                 ('share/pixmaps', ['data/whisperback.svg']),
                 ('share/applications', ['data/whisperback.desktop']),
                 ('share/doc/whisperback', ['doc/config.py.sample', 

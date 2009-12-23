@@ -89,7 +89,7 @@ class WhisperBackUI(object):
 
     builder = gtk.Builder()
     builder.add_from_file(os.path.join(utils.get_datadir(),
-                                      "whisperback.xml"))
+                                      "whisperback.ui"))
     builder.connect_signals(self)
 
     self.main_window = builder.get_object("windowMain")

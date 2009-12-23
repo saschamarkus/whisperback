@@ -5,6 +5,6 @@ whisperBack/encryption.py
 whisperBack/mail.py
 whisperBack/__init__.py
 
-data/whisperback.xml.h
+data/whisperback.ui.h
 
 whisperback
