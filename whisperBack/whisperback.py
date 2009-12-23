@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 ########################################################################
 
-__version__ = '1.1-beta2'
+__version__ = '1.2-dev'
 LOCALEDIR = "locale/"
 PACKAGE = "whisperback"
 
@@ -85,6 +85,10 @@ class WhisperBackUI(object):
     builder.connect_signals(self)
 
     self.main_window = builder.get_object("windowMain")
+    self.progression_dialog = builder.get_object("dialogProgression")
+    self.progression_main_text = builder.get_object("progressLabelMain")
+    self.progression_progressbar = builder.get_object("progressProgressbar")
+    self.progression_secondary_text = builder.get_object("progressLabelSecondary")
     self.subject = builder.get_object("entrySubject")
     self.message = builder.get_object("textviewMessage")
     self.prepended_details = builder.get_object("textviewPrependedInfo")
@@ -138,14 +142,27 @@ class WhisperBackUI(object):
     
     """
 
+    self.progression_main_text.set_text("Sending mail")
+    self.progression_secondary_text.set_text("XXX: not implemented")
+    self.progression_dialog.set_transient_for(self.main_window)
+    self.progression_dialog.show()
     self.main_window.set_sensitive(False)
+
+    while gtk.events_pending():
+        gtk.main_iteration(False)
 
     self.backend.subject = self.subject.get_text()
     self.backend.message = self.message.get_buffer().get_text(
                            self.message.get_buffer().get_start_iter(),
                            self.message.get_buffer().get_end_iter())
+
+    def cb_update_progress():
+        self.progression_progressbar.pulse()
+        while gtk.events_pending():
+            gtk.main_iteration(False)
+
     try:
-      self.backend.send()
+      self.backend.send(cb_update_progress)
     except encryption.EncryptionException, e:
       self.show_exception_dialog(_("An error occured during encryption."), e)
       return False
@@ -166,6 +183,7 @@ class WhisperBackUI(object):
                                message_format=_("Your message has been sent."))
     dialog.connect("response", self.cb_close_application)
     dialog.show()
+    self.progression_dialog.hide()
 
     return False
 
@@ -312,7 +330,10 @@ class WhisperBack(object):
     if not self.smtp_tlscafile:
         raise MisconfigurationException('smtp_tlscafile')
 
-  def execute_threaded(self, func, args, progress_callback):
+  def execute_threaded(self, func, args, progress_callback, polling_freq=0.1):
+    """XXX: Document this
+    
+    """
     self.__error_output = None
 
     def save_exception(func, args):
@@ -321,15 +342,14 @@ class WhisperBack(object):
         except Exception, e:
             self.__error_output = e
 
-    thread = threading.Thread(target=func,
-                              args=args)
+    thread = threading.Thread(target=save_exception, args=(func, args))
     thread.start()
 
     while thread.isAlive():
         if progress_callback is not None:
             progress_callback()
         # XXX: I think there is a best way to do that !
-        time.sleep(0.1)
+        time.sleep(polling_freq)
 
     if self.__error_output is not None:
         raise self.__error_output
