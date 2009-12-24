@@ -53,6 +53,8 @@ gobject.threads_init()
 # Import os services
 import os
 
+import types
+
 # Used to by show_exception_dialog to print exception traceback
 import traceback
 
@@ -209,12 +211,17 @@ class WhisperBackUI(object):
     if not close_callback:
       close_callback = self.cb_close_exception_dialog
 
+    if isinstance(exception.message, types.MethodType):
+        exception_message = exception.message()
+    else:
+        exception_message = str(exception)
+
     dialog = gtk.MessageDialog(parent=self.main_window,
                                flags=gtk.DIALOG_MODAL,
                                type=gtk.MESSAGE_ERROR,
                                buttons=gtk.BUTTONS_CLOSE,
                                message_format=message)
-    dialog.format_secondary_text(exception.message())
+    dialog.format_secondary_text(exception_message)
     
     dialog.connect("response", close_callback)
     dialog.show()
