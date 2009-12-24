@@ -117,6 +117,7 @@ To report a bug, please include:
               <object class="GtkVBox" id="vbox2">
                 <property name="visible">True</property>
                 <property name="orientation">vertical</property>
+                <property name="spacing">5</property>
                 <child>
                   <object class="GtkTextView" id="textviewPrependedInfo">
                     <property name="visible">True</property>
