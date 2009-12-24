@@ -67,8 +67,9 @@ import mail
 import encryption
 import utils
 
-# Import smtplib because we need the exception it raises
+# Import these because we need the exception it raises
 import smtplib
+import socket
 
 # Initialize gettext 
 # FIXME : how to set these pathes ?
@@ -176,7 +177,10 @@ class WhisperBackUI(object):
 
     def cb_finished_progress(e):
         if isinstance(e, smtplib.SMTPException):
-            self.show_exception_dialog(_("Unable to send the mail."), e)
+            self.show_exception_dialog(_("Unable to send the mail : SMTP error"), e)
+            self.progression_dialog.hide()
+        elif isinstance(e, socket.error):
+            self.show_exception_dialog(_("Unable to connect to the server."), e)
             self.progression_dialog.hide()
         elif isinstance(e, Exception):
             self.show_exception_dialog(_("Unable to create or to send the mail."), e)
