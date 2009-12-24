@@ -101,7 +101,9 @@ class WhisperBackUI(object):
     self.subject = builder.get_object("entrySubject")
     self.message = builder.get_object("textviewMessage")
     self.prepended_details = builder.get_object("textviewPrependedInfo")
+    self.include_prepended_details = builder.get_object("checkbuttonIncludePrependedInfo")
     self.appened_details = builder.get_object("textviewAppenedInfo")
+    self.include_appened_details = builder.get_object("checkbuttonIncludeAppenedInfo")
     self.send_button = builder.get_object("buttonSend")
 
     try:
@@ -161,6 +163,11 @@ class WhisperBackUI(object):
     self.backend.message = self.message.get_buffer().get_text(
                            self.message.get_buffer().get_start_iter(),
                            self.message.get_buffer().get_end_iter())
+
+    if not self.include_prepended_details.get_active():
+        self.backend.prepended_data = ""
+    if not self.include_appened_details.get_active():
+        self.backend.appened_data = ""
 
     def cb_update_progress():
         self.progression_progressbar.pulse()
