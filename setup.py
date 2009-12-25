@@ -27,20 +27,35 @@
 #
 ########################################################################
 
-from distutils.core import setup
+from distutils.core import setup, Command
 from DistUtilsExtra.command import *
 import os
 import subprocess
 
-# Some ugly way to generate the headers required to use gettext whit glade
-subprocess.call (["intltool-extract",
-                 "--type=gettext/glade",
-                 "data/whisperback.ui"])
+class build_gtkbuilderi18n(Command):
+    description = "generate the headers required to use gettext whit gtkbuilder"
+    def initialize_options(self):
+        pass
+    def finalize_options(self):
+        pass
+    def run(self):
+        subprocess.call (["intltool-extract",
+                          "--type=gettext/glade",
+                          "data/whisperback.ui"])
 
-# And some ugly way to generate the man
-subprocess.call (["txt2tags",
-                 "--outfile=doc/whisperback.1",
-                 "doc/whisperback.t2t"])
+class build_man(Command):
+    description = "generate the man"
+    def initialize_options(self):
+        pass
+    def finalize_options(self):
+        pass
+    def run(self):
+        subprocess.call (["txt2tags",
+                         "--outfile=doc/whisperback.1",
+                         "doc/whisperback.t2t"])
+
+build_extra.build_extra.sub_commands.insert(0, ("build_gtkbuilderi18n", None))
+build_extra.build_extra.sub_commands.append(("build_man", None))
 
 setup(name='whisperback',
     version='1.2-dev',
@@ -57,6 +72,8 @@ setup(name='whisperback',
                 ('share/man/man1', ['doc/whisperback.1'])],
     requires=['gtk', 'pyme', 'gnutls'],
     cmdclass = { "build" : build_extra.build_extra,
+        "build_gtkbuilderi18n" : build_gtkbuilderi18n,
+        "build_man" : build_man,
         "build_i18n" :  build_i18n.build_i18n,
         "build_help" :  build_help.build_help,
         "build_icons" :  build_icons.build_icons,
