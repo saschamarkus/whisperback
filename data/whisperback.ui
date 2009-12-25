@@ -174,6 +174,7 @@ To report a bug, please include:
                             <property name="vscrollbar_policy">automatic</property>
                             <child>
                               <object class="GtkTextView" id="textviewAppenedInfo">
+                                <property name="height_request">200</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="editable">False</property>
