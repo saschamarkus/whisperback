@@ -29,11 +29,10 @@ PACKAGE = "whisperback"
 #
 # WhisperBack.py
 #
-# This file conatins...
+# WhisperBack main backend and GUI
 #
 ########################################################################
 
-# Import pygtk for the GUI
 import pygtk
 pygtk.require('2.0')
 import gtk
@@ -47,29 +46,22 @@ else:
         timeout_add = gobject.timeout_add
 gobject.threads_init()
 
-# Import gettext for i18n
-#import gettext
-
-# Import os services
 import os
 
 import types
+import threading
 
 # Used to by show_exception_dialog to print exception traceback
 import traceback
 
-# To use threads
-import threading
-import time
+# Import these because we need the exception they raise
+import smtplib
+import socket
 
 # Import our modules
 import mail
 import encryption
 import utils
-
-# Import these because we need the exception it raises
-import smtplib
-import socket
 
 # Initialize gettext 
 # FIXME : how to set these pathes ?
@@ -115,7 +107,6 @@ class WhisperBackUI(object):
     except gobject.GError, e:
       print e
 
-    # Shows the UI
     self.main_window.show()
 
     # Launches the backend
@@ -125,7 +116,7 @@ class WhisperBackUI(object):
       self.show_exception_dialog(_("Unable to load a valid configuration."), e, self.cb_close_application)
       return
 
-    # Shows the details
+    # Shows the debugging details
     self.prepended_details.get_buffer().set_text(self.backend.prepended_data)
     self.appened_details.get_buffer().set_text(self.backend.appened_data)
 
@@ -244,7 +235,6 @@ class WhisperBackUI(object):
     
     """
 
-    # Creates the about dialog
     about_dialog = gtk.AboutDialog()
     about_dialog.set_transient_for(self.main_window)
     about_dialog.set_version(__version__)
@@ -292,7 +282,7 @@ class WhisperBack(object):
     self.smtp_tlscafile = None
 
     # Load the python configuration file "config.py" from diffrents locations
-    #FIXME this is an absolute path, bad !
+    # XXX: this is an absolute path, bad !
     self.__load_conf(os.path.join("/", "etc", "whisperback", "config.py"))
     self.__load_conf(os.path.join(os.path.expanduser('~'),
                                   ".whisperback",
@@ -322,7 +312,7 @@ class WhisperBack(object):
         f = open(config_file_path, 'r')
         code = f.read()
     except IOError:
-        # There's no problem if one of the configuration file is not
+        # There's no problem if one of the configuration files is not
         # present
         return None
     finally:
@@ -336,8 +326,8 @@ class WhisperBack(object):
     and raise MisconfigurationException if not.
     """
 
-    # XXX: Sanity checks
-
+    # XXX: Add sanity checks
+    
     if not self.to_address:
         raise MisconfigurationException('to_address')
     if not self.to_fingerprint:

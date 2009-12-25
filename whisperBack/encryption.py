@@ -27,7 +27,6 @@
 #
 ########################################################################
 
-# Import the required pyme modules
 import pyme.core
 import pyme.errors
 
@@ -36,8 +35,7 @@ class Encryption (object):
   
   def __init__ (self):
     """Initialize the encryption mechanism"""
-    
-    # Some true initialisation : create a pyme context
+
     self.context = pyme.core.Context()
     
   def __fingerprints_to_keys (self, fingerprints):
@@ -47,8 +45,7 @@ class Encryption (object):
     
     @return A list of pygme keys
     """
-    
-    # Set up the recipients.
+
     to_keys = []
     
     for fingerprint in fingerprints:

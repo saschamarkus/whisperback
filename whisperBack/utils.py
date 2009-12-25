@@ -33,8 +33,8 @@ def guess_prefix ():
   """Tries to guess the prefix
   
   @return The guessed prefix"""
-  
-  #FIXME: hardcoded path !
+
+  # XXX: hardcoded path !
   if os.path.exists ("/usr/local/share/whisperback"):
     return "/usr/local"
   elif os.path.exists ("/usr/share/whisperback"):

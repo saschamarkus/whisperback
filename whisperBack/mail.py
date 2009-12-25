@@ -27,11 +27,8 @@
 #
 ########################################################################
 
-
-# Import smtplib for the actual sending function
 import smtplib
 import socket
-# Import the email modules we'll need
 from email.mime.text import MIMEText
 
 import gnutls.errors
@@ -73,7 +70,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
   @param tls_ca Certificate authority file passed to the socket module’s ssl() function.
   """
   # We set a long timeout because Tor is slow
-  # TODO this will not be necessary anymore under python 2.6, because it
+  # XXX: this will not be necessary anymore under python 2.6, because it
   #      includes a timeout argument on smtplib
   socket.setdefaulttimeout(60)
   
@@ -87,8 +84,8 @@ def send_message_tls (from_address, to_address, message, host="localhost",
 
 
 # This is a monkey patch to make the starttls function of libsmtp use
-# starttls
-  
+# starttls, as the buildin doesn't really check certificates and doesn't
+# have a timeout parameter
 def starttls(self, keyfile = None, certfile = None, cafile=None):
   """Puts the connection to the SMTP server into TLS mode.
 
@@ -108,7 +105,7 @@ def starttls(self, keyfile = None, certfile = None, cafile=None):
       
       if cafile:
         ca = X509Certificate(open(cafile).read())
-      # FIXME : use CRL
+      # XXX: use CRL
       #crl = X509CRL(open(certs_path + '/crl.pem').read())
       cred = X509Credentials()
       session = ClientSession(self.sock, cred)
