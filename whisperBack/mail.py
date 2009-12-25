@@ -30,10 +30,8 @@
 import smtplib
 import socket
 from email.mime.text import MIMEText
-
 import gnutls.errors
 import time
-
 
 def create_message (from_address, to_address, subject, message):
   """Create a plaintext mail
@@ -54,7 +52,6 @@ def create_message (from_address, to_address, subject, message):
   msg['To'] = to_address
   
   return msg.as_string()
-
 
 def send_message_tls (from_address, to_address, message, host="localhost",
                   port=25, tls_cafile=None):
@@ -81,7 +78,6 @@ def send_message_tls (from_address, to_address, message, host="localhost",
   smtp.starttls(cafile = tls_cafile)
   smtp.sendmail(from_address, [to_address], message)
   smtp.quit()
-
 
 # This is a monkey patch to make the starttls function of libsmtp use
 # starttls, as the buildin doesn't really check certificates and doesn't

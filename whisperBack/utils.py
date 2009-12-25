@@ -46,6 +46,7 @@ def get_sharedir ():
   """Tries to guess the shared data directiry
   
   @return The guessed shared data directiry"""
+
   if guess_prefix():
     return os.path.join (guess_prefix(), "share")
   else:
@@ -60,11 +61,11 @@ def get_datadir ():
   else:
     return "data"
 
-
 def get_pixmapdir ():
   """Tries to guess the pixmapdir
   
   @return The guessed pixmapdir"""
+
   if guess_prefix():
     return os.path.join (get_sharedir(), "pixmaps")
   else:

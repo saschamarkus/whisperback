@@ -47,7 +47,6 @@ else:
 gobject.threads_init()
 
 import os
-
 import types
 import threading
 
@@ -307,7 +306,6 @@ class WhisperBack(object):
     """
 
     f = None
-
     try:
         f = open(config_file_path, 'r')
         code = f.read()
@@ -318,7 +316,6 @@ class WhisperBack(object):
     finally:
         if f:
             f.close()
-
     exec code in self.__dict__
 
   def __check_conf(self):

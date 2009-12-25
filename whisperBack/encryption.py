@@ -42,12 +42,10 @@ class Encryption (object):
     """Convert fingerprints into pyme keys
     
     @param fingerprints A list of fingerprints
-    
     @return A list of pygme keys
     """
 
     to_keys = []
-    
     for fingerprint in fingerprints:
       try:
         # The function gpgme_op_keylist_start initiates a key listing
@@ -55,11 +53,9 @@ class Encryption (object):
         # subsequent invocations of gpgme_op_keylist_next return the keys
         # in the list.
         to_key = self.context.get_key(fingerprint, secret=False)
-
         to_keys.append (to_key)
       except pyme.errors.GPGMEError, e:
         raise KeyNotFoundException (e.getstring)
-    
     return to_keys
     
   def __encrypt_from_keys (self, data, to_keys):
@@ -68,9 +64,7 @@ class Encryption (object):
     @param to_keys  A list of pyme keys, as returned by 
                     __fingerprint_to_keys
     @param data The data to be encrypted
-    
     @return The encrypted data
-    
     """
     
     # THE CONTEXT
@@ -108,15 +102,11 @@ class Encryption (object):
       #
       # context.op_encrypt (keys[], flags, plain, cipher)
       context.op_encrypt(to_keys, 1, plain, cipher)
-      
       del plain
-      
       # Go to the beginning of the buffer
       cipher.seek(0,0)
-      
       # Reads the cipher (= encrypted text)
       return cipher.read()
-      
     except pyme.errors.GPGMEError, e:
       raise EncryptionException (e.getstring())
 
@@ -125,17 +115,14 @@ class Encryption (object):
     
     @param to_fingerprints A list of recepient's key fingerprints
     @param data Data to be encrypted
-    
     @return The encrypted data
     """
     
     # Convert the fingerprint into pgpme keys
     to_keys = self.__fingerprints_to_keys (to_fingerprints)
-    
     # Process only if some keys were found
     if len(to_keys) == 0:
       raise KeyNotFoundException ( _("No keys found.") )
-    
     # Encrypt the data
     return self.__encrypt_from_keys (data, to_keys)
 
