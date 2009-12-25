@@ -27,6 +27,7 @@
                     <property name="label" translatable="yes">Subject</property>
                   </object>
                   <packing>
+                    <property name="expand">False</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
@@ -37,6 +38,7 @@
                     <property name="invisible_char">&#x25CF;</property>
                   </object>
                   <packing>
+                    <property name="expand">False</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -49,6 +51,7 @@
                     <property name="label" translatable="yes">Message</property>
                   </object>
                   <packing>
+                    <property name="expand">False</property>
                     <property name="position">2</property>
                   </packing>
                 </child>
@@ -61,7 +64,6 @@
                     <property name="shadow_type">etched-in</property>
                     <child>
                       <object class="GtkTextView" id="textviewMessage">
-                        <property name="height_request">200</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="accepts_tab">False</property>
@@ -129,6 +131,7 @@ To report a bug, please include:
                         <property name="left_padding">12</property>
                         <child>
                           <object class="GtkTextView" id="textviewPrependedInfo">
+                            <property name="height_request">40</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="editable">False</property>
@@ -150,6 +153,7 @@ To report a bug, please include:
                     </child>
                   </object>
                   <packing>
+                    <property name="expand">False</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
@@ -163,13 +167,21 @@ To report a bug, please include:
                         <property name="visible">True</property>
                         <property name="left_padding">12</property>
                         <child>
-                          <object class="GtkTextView" id="textviewAppenedInfo">
+                          <object class="GtkScrolledWindow" id="scrolledwindow2">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
-                            <property name="editable">False</property>
-                            <property name="wrap_mode">char</property>
-                            <property name="indent">-10</property>
-                            <property name="cursor_visible">False</property>
+                            <property name="hscrollbar_policy">automatic</property>
+                            <property name="vscrollbar_policy">automatic</property>
+                            <child>
+                              <object class="GtkTextView" id="textviewAppenedInfo">
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="editable">False</property>
+                                <property name="wrap_mode">char</property>
+                                <property name="indent">-10</property>
+                                <property name="cursor_visible">False</property>
+                              </object>
+                            </child>
                           </object>
                         </child>
                       </object>
@@ -257,6 +269,7 @@ To report a bug, please include:
             </child>
           </object>
           <packing>
+            <property name="expand">False</property>
             <property name="position">2</property>
           </packing>
         </child>
@@ -405,4 +418,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
     </action-widgets>
   </object>
   <object class="GtkSizeGroup" id="sizegroup1"/>
+  <object class="GtkRadioAction" id="radioaction1">
+    <property name="draw_as_radio">True</property>
+  </object>
 </interface>
