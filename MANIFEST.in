@@ -1,9 +1,9 @@
 include COPYING
 include TODO
+include README
 include data/whisperback.desktop
 include data/whisperback.svg 
 include data/whisperback.ui
 include doc/whisperback.t2t
-include doc/README
 include doc/config.py.sample
 recursive-include po *
