@@ -147,7 +147,7 @@ class WhisperBackUI(object):
     """
 
     self.progression_main_text.set_text(_("Sending mail"))
-    #self.progression_secondary_text.set_text("XXX: not implemented")
+    self.progression_secondary_text.set_text(_("This could take a while..."))
     self.progression_dialog.set_transient_for(self.main_window)
     self.progression_dialog.show()
     self.main_window.set_sensitive(False)
@@ -180,7 +180,7 @@ class WhisperBackUI(object):
             self.progression_close.set_sensitive(True)
             self.progression_progressbar.set_fraction(1.0)
             self.progression_main_text.set_text(_("Your message has been sent."))
-            self.progression_secondary_text.set_text("")
+            #self.progression_secondary_text.set_text("")
 
     try:
         self.backend.send(cb_update_progress, cb_finished_progress)
