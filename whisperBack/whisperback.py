@@ -406,7 +406,7 @@ class WhisperBack(object):
                              encrypt(message_body, [self.to_fingerprint])
     
     mail.create_message(self.from_address, self.to_address,
-                         self.mail_subject, encrypted_message_body)
+                        self.mail_subject, encrypted_message_body)
 
     self.execute_threaded(func=mail.send_message_tls,
                           args=(self.from_address, self.to_address,
