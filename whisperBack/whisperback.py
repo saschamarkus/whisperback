@@ -38,7 +38,13 @@ import pygtk
 pygtk.require('2.0')
 import gtk
 import gobject
-import glib
+# Workaround an API change: timeout_add was moved from gobject to glib
+# in 2.16
+if gobject.pygobject_version[:2] >= (2, 16):
+    import glib
+else:
+    class glib:
+        timeout_add = gobject.timeout_add
 gobject.threads_init()
 
 # Import gettext for i18n
