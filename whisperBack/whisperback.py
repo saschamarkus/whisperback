@@ -51,7 +51,6 @@ import traceback
 # Import our modules
 import mail
 import encryption
-import sysinfo
 import utils
 
 # Import smtplib because we need the exception it raises
@@ -84,7 +83,8 @@ class WhisperBackUI(object):
     self.main_window = builder.get_object("windowMain")
     self.subject = builder.get_object("entrySubject")
     self.message = builder.get_object("textviewMessage")
-    self.details = builder.get_object("labelDetails")
+    self.prepended_details = builder.get_object("textviewPrependedInfo")
+    self.appened_details = builder.get_object("textviewAppenedInfo")
     self.send_button = builder.get_object("buttonSend")
 
     try:
@@ -104,7 +104,8 @@ class WhisperBackUI(object):
       return
 
     # Shows the details
-    self.details.set_text(self.backend.details)
+    self.prepended_details.get_buffer().set_text(self.backend.prepended_data)
+    self.appened_details.get_buffer().set_text(self.backend.appened_data)
 
   # CALLBACKS
   def cb_close_application(self, widget, event, data=None):
@@ -229,12 +230,13 @@ class WhisperBack(object):
     
     @param subject The topic of the feedback 
     @param message The content of the feedback
-    @param details The details of the used software
     """
     # Initialize config variables
     self.to_address = None
     self.to_fingerprint = None
     self.from_address = None
+    self.mail_prepended_info = lambda: ""
+    self.mail_appened_info = lambda: ""
     self.mail_subject = None
     self.smtp_host = None
     self.smtp_port = None
@@ -249,8 +251,10 @@ class WhisperBack(object):
     self.__load_conf(os.path.join(os.getcwd(), "config.py"))
     self.__check_conf()
 
-    # Retrives info on the system
-    self.details = sysinfo.AmnesiaSystemInformations().get_info()
+    # Get additional info through the callbacks
+    self.prepended_data = self.mail_prepended_info()
+    print self.prepended_data
+    self.appened_data = self.mail_appened_info()
 
     # Initialize other variables
     self.subject = subject
@@ -303,10 +307,11 @@ class WhisperBack(object):
   def send(self):
     """Actually sends the message"""
     
-    message_body = "Subject: %s\n%s\n%s\n" %(self.subject,
-                                             self.details,
-                                             self.message)
-    
+    message_body = "Subject: %s\n%s\n%s\n%s\n" %(self.subject,
+                                                 self.prepended_data,
+                                                 self.message,
+                                                 self.appened_data)
+/bin/bash: q : commande introuvable
     encrypted_message_body = encryption.Encryption(). \
                              encrypt(message_body, [self.to_fingerprint])
     
