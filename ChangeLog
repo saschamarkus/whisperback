@@ -6,19 +6,34 @@
 1.1-beta
 ========
 
- * Add  a long timeout to socket, because we want to use tor which is slow
- * Remove the non-starttls send_message function from mail.py
- * Add an ugly hack to use libgnutls for sending mail
- * Move gettext initialisation from whisperback.py to __init__.py 
- * Fix exception dialog, improved configuration handeling and ca certificate
-   handeling
- * Initialize tne backend on startup, so that the configuration check is done
+New features
+------------
+ * CA certificates handeling with libgnutls
+ * Improve configuration handeling
+
+Minor improvements
+------------------
+ * Initialize the backend on startup, so that the configuration check is done
  * Move system information handeling from UI to backend, as it is now possible
    because the backend is initialised early
+ * Remove the non-starttls send_message function from mail.py
+ * Move gettext initialisation from whisperback.py to __init__.py
  * Add a "configration" section to the readme.
  * Move config.sample to doc/
 
+Bug fixes
+---------
+ * Add a long timeout to socket, because we want to use tor which is slow
+ * Fix exception dialog
+
 1.1-beta2
 =========
- * English corrections
+
+Minor improvements
+------------------
  * Add a changelog
+
+Bug fixes
+---------
+ * English corrections
+
