@@ -77,9 +77,13 @@ class WhisperBackUI (object):
     self.message = builder.get_object("textviewMessage")
     self.details = builder.get_object("labelDetails")
     self.send_button = builder.get_object("buttonSend")
-
+    
     # Shows the UI
     self.main_window.show()
+    
+    # Retrives info on the system
+    self.details.set_text(SystemInformations().get_info())
+
 
   # CALLBACKS
 
@@ -244,16 +248,21 @@ class WhisperBack (object):
     mail.send_message (self.from_address, self.to_address, 
                        encrypted_message_body, self.smtp_host,
                        self.smtp_port)
-    
-    
-class KeyNotFoundException (Exception):
-  """This exception is raised when GPGME can't find the key it searches 
-  in the keyring"""
-  pass
 
-class EncryptionException (Exception):
-  """This exception is raised when GPGME fails to encrypt the data"""
-  pass
+########################################################################
+
+class SystemInformations (object):
+  """Retrives informations on the running system
+  
+  """
+  
+  def get_info (self):
+    """Returns a summary of the informations on the running system
+    
+    @return a summary of the informations on the running system
+    """
+    
+    return "This is a test"
 
 ########################################################################
   
