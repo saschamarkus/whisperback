@@ -38,6 +38,8 @@ import pygtk
 pygtk.require('2.0')
 import gtk
 import gobject
+import glib
+gobject.threads_init()
 
 # Import gettext for i18n
 #import gettext
@@ -148,9 +150,6 @@ class WhisperBackUI(object):
     self.progression_dialog.show()
     self.main_window.set_sensitive(False)
 
-    while gtk.events_pending():
-        gtk.main_iteration(False)
-
     self.backend.subject = self.subject.get_text()
     self.backend.message = self.message.get_buffer().get_text(
                            self.message.get_buffer().get_start_iter(),
@@ -158,32 +157,31 @@ class WhisperBackUI(object):
 
     def cb_update_progress():
         self.progression_progressbar.pulse()
-        while gtk.events_pending():
-            gtk.main_iteration(False)
+
+    def cb_finished_progress(e):
+        self.progression_dialog.hide()
+
+        if isinstance(e, smtplib.SMTPException):
+            self.show_exception_dialog(_("Unable to send the mail."), e)
+        elif isinstance(e, Exception):
+            self.show_exception_dialog(_("Unable to create or to send the mail."), e)
+        else:
+            dialog = gtk.MessageDialog(parent=self.main_window,
+                                       flags=gtk.DIALOG_MODAL,
+                                       type=gtk.MESSAGE_INFO,
+                                       buttons=gtk.BUTTONS_CLOSE,
+                                       message_format=_("Your message has been sent."))
+            dialog.connect("response", self.cb_close_application)
+            dialog.show()
 
     try:
-      self.backend.send(cb_update_progress)
+        self.backend.send(cb_update_progress, cb_finished_progress)
     except encryption.EncryptionException, e:
-      self.show_exception_dialog(_("An error occured during encryption."), e)
-      return False
+        self.show_exception_dialog(_("An error occured during encryption."), e)
+        self.progression_dialog.hide()
     except encryption.KeyNotFoundException, e:
-      self.show_exception_dialog(_("Unable to find encryption key."), e)
-      return False
-    except smtplib.SMTPException, e:
-      self.show_exception_dialog(_("Unable to send the mail."), e)
-      return False
-    except Exception, e:
-      self.show_exception_dialog(_("Unable to create or to send the mail."), e)
-      return False
-
-    dialog = gtk.MessageDialog(parent=self.main_window,
-                               flags=gtk.DIALOG_MODAL,
-                               type=gtk.MESSAGE_INFO,
-                               buttons=gtk.BUTTONS_CLOSE,
-                               message_format=_("Your message has been sent."))
-    dialog.connect("response", self.cb_close_application)
-    dialog.show()
-    self.progression_dialog.hide()
+        self.show_exception_dialog(_("Unable to find encryption key."), e)
+        self.progression_dialog.hide()
 
     return False
 
@@ -204,7 +202,7 @@ class WhisperBackUI(object):
                                type=gtk.MESSAGE_ERROR,
                                buttons=gtk.BUTTONS_CLOSE,
                                message_format=message)
-    dialog.format_secondary_text(exception.message)
+    dialog.format_secondary_text(exception.message())
     
     dialog.connect("response", close_callback)
     dialog.show()
@@ -257,6 +255,8 @@ class WhisperBack(object):
     @param subject The topic of the feedback 
     @param message The content of the feedback
     """
+    self.__thread = None
+
     # Initialize config variables
     self.to_address = None
     self.to_fingerprint = None
@@ -330,40 +330,68 @@ class WhisperBack(object):
     if not self.smtp_tlscafile:
         raise MisconfigurationException('smtp_tlscafile')
 
-  def execute_threaded(self, func, args, progress_callback, polling_freq=0.1):
-    """XXX: Document this
+  def execute_threaded(self, func, args, progress_callback=None, 
+                       finished_callback=None, polling_freq=100):
+    """Execute a function in another thread and handle it.
     
+    Execute the function `func` with arguments `args` in another thread,
+    and poll whether the thread is alive, executing the callback
+    `progress_callback` every `polling_frequency`. When the function
+    thread terminates, saves the execption it eventually raised and pass
+    it to `finished_callback`.
+    
+    @param func               the function to execute.
+    @param args               the tuple to pass as arguments to `func`.
+    @param progress_callback  (optional) a callback function to call
+                              every time the execution thread is polled.
+                              It doesn't take any agument. 
+    @param finished_callback  (optional) a callback function to call when
+                              the execution thread terminated. It receives
+                              the exception raised by `func`, if any, or
+                              None.
+    @param polling_freq       (optional) the interal between polling
+                              iterations (in ms).
     """
-    self.__error_output = None
-
     def save_exception(func, args):
         try:
             func(*args)
         except Exception, e:
             self.__error_output = e
 
-    thread = threading.Thread(target=save_exception, args=(func, args))
-    thread.start()
-
-    while thread.isAlive():
+    def poll_thread(self):
         if progress_callback is not None:
             progress_callback()
-        # XXX: I think there is a best way to do that !
-        time.sleep(polling_freq)
+        if self.__thread.isAlive():
+            return True
+        else:
+            if finished_callback is not None:
+                finished_callback(self.__error_output)
+            return False
 
-    if self.__error_output is not None:
-        raise self.__error_output
+    self.__error_output = None
+    assert self.__thread is None or not self.__thread.isAlive ()
+    self.__thread = threading.Thread(target=save_exception, args=(func, args))
+    self.__thread.start()
+    # XXX: there could be no main loop
+    glib.timeout_add(polling_freq, poll_thread, self)
   # XXX: static would be best, but I get a problem with self.*
   #execute_threaded = staticmethod(execute_threaded)
 
-  def send(self, progress_callback=None):
-    """Actually sends the message"""
+  def send(self, progress_callback=None, finished_callback=None):
+    """Actually sends the message
     
+    @param progress_callback 
+    @param finished_callback
+    """
+    
+    # XXX: It's really strange that some exceptions from this method are
+    #      raised and some other transmitted to finished_callback…
+
     message_body = "Subject: %s\n%s\n%s\n%s\n" %(self.subject,
                                                  self.prepended_data,
                                                  self.message,
                                                  self.appened_data)
-/bin/bash: q : commande introuvable
+
     encrypted_message_body = encryption.Encryption(). \
                              encrypt(message_body, [self.to_fingerprint])
     
@@ -374,7 +402,8 @@ class WhisperBack(object):
                           args=(self.from_address, self.to_address,
                                 encrypted_message_body, self.smtp_host,
                                 self.smtp_port, self.smtp_tlscafile),
-                          progress_callback=progress_callback)
+                          progress_callback=progress_callback,
+                          finished_callback=finished_callback)
 
 
 ########################################################################
