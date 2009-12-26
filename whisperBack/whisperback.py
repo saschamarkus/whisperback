@@ -151,6 +151,9 @@ class WhisperBackUI(object):
     except smtplib.SMTPException, e:
       self.show_exception_dialog(_("Unable to send the mail."), e)
       return False
+    except Exception, e:
+      self.show_exception_dialog(_("Unable to create or to send the mail."), e)
+      return False
 
     dialog = gtk.MessageDialog(parent=self.main_window,
                                flags=gtk.DIALOG_MODAL,
