@@ -157,7 +157,7 @@ class WhisperBackUI (object):
     
     """
     self.main_window.set_sensitive(True)
-    widget.hide()
+    widget.destroy()
     return False
 
   def show_about_dialog(self):
