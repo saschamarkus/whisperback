@@ -37,3 +37,30 @@ Bug fixes
 ---------
  * English corrections
 
+1.2-beta
+========
+
+New features
+------------
+ * New python configuration file
+ * Support of custom function to add debugging information
+ * Implement opt-out in the UI to exclude details
+ * Send the mail in another thread
+ * Display a progression dialog while sending mail
+ * Add a configuration file for amnesia
+
+Minor improvements
+------------------
+ * Add debian packaging
+ * Print tracback of GUI catched exceptions
+ * Rename GtkBuilder file to canonical .ui
+ * Precise error messages when sending mail
+ * Move README file to package toplevel
+ * Properly add custom build commands
+ * Add the license to setup.py
+
+Bugfixes
+--------
+ * Bugfix: remove unused argument from WhisperBackUI
+ * Bugfix: handle different exception formats in show_exception
+ * Bugfix in configuration check
