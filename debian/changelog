@@ -1,3 +1,9 @@
+whisperback (1.2~beta1-1) UNRELEASED; urgency=low
+
+  * new upstream release
+
+ -- Amnesia <amnesia@boum.org>  Sat, 26 Dec 2009 22:00:51 +0100
+
 whisperback (1.1~beta2-1) UNRELEASED; urgency=low
 
   * Initial release.
