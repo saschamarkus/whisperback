@@ -46,16 +46,16 @@ a GnuPG-encrypted way.
 =FILES=
 
 
-:**/etc/whisperback/config**
+:**/etc/whisperback/config.py**
 System-wide configuration file.
 
 
-:**~/.whisperback/config**
+:**~/.whisperback/config.py**
 Per-user configuration file, overriding values from system-wide 
 configuration.
 
 
-:**./config
+:**./config.py
 Local configuration file, overriding values from both system-wide and
 per-user configuration.
 

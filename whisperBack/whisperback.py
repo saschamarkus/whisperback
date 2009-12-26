@@ -45,9 +45,6 @@ import gobject
 # Import os services
 import os
 
-# Import the configuration parser
-import ConfigParser
-
 # Used to by show_exception_dialog to print exception traceback
 import traceback
 
@@ -243,13 +240,13 @@ class WhisperBack(object):
     self.smtp_port = None
     self.smtp_tlscafile = None
 
-    # Load the configuration
+    # Load the python configuration file "config.py" from diffrents locations
     #FIXME this is an absolute path, bad !
-    self.__load_conf("/etc/whisperback/config")
+    self.__load_conf(os.path.join("/", "etc", "whisperback", "config.py"))
     self.__load_conf(os.path.join(os.path.expanduser('~'),
                                   ".whisperback",
-                                  "config"))
-    self.__load_conf("config")
+                                  "config.py"))
+    self.__load_conf(os.path.join(os.getcwd(), "config.py"))
     self.__check_conf()
 
     # Retrives info on the system
@@ -260,67 +257,48 @@ class WhisperBack(object):
     self.message = message
 
   def __load_conf(self, config_file_path):
-    """Loads a configuration file from config_file_path and initialize
-    the corresponding instance variables.
+    """Loads a configuration file from config_file_path and executes it
+    inside the current class.
     
     @param config_file_path The path on the configuration file to load
     """
-    config = ConfigParser.SafeConfigParser()
-    config.read(config_file_path)
 
-    def _try_read_option(section, option, function = config.get):
-      try:
-        return function(section, option)
-      except ConfigParser.NoOptionError:
-        # There is no problem if all options are not defined !
-        pass
+    f = None
 
     try:
-      self.to_address = _try_read_option('dest', 'address')
-      self.to_fingerprint = _try_read_option('dest', 'fingerprint')
-    except ConfigParser.NoSectionError:
-      # There is no problem if all sections are not defined !
-      pass
+        f = open(config_file_path, 'r')
+        code = f.read()
+    except IOError:
+        # There's no problem if one of the configuration file is not
+        # present
+        return None
+    finally:
+        if f:
+            f.close()
 
-    try:
-      self.from_address = _try_read_option('sender', 'address')
-    except ConfigParser.NoSectionError:
-      # There is no problem if all sections are not defined !
-      pass
-
-    try:
-      self.mail_subject = _try_read_option('message', 'subject')
-    except ConfigParser.NoSectionError:
-      # There is no problem if all sections are not defined !
-      pass
-
-    try:
-      self.smtp_host = _try_read_option('smtp', 'host')
-      self.smtp_port = _try_read_option('smtp', 'port', config.getint)
-      self.smtp_tlscafile = _try_read_option('smtp', 'tlscafile')
-    except ConfigParser.NoSectionError:
-      # There is no problem if all sections are not defined !
-      pass
+    exec code in self.__dict__
 
   def __check_conf(self):
     """Check that all the required configuration variables are filled
     and raise MisconfigurationException if not.
     """
 
+    # XXX: Sanity checks
+
     if not self.to_address:
-      raise MisconfigurationException('to', 'address')
+        raise MisconfigurationException('to_address')
     if not self.to_fingerprint:
-      raise MisconfigurationException('to', 'fingerprint')
+        raise MisconfigurationException('to_fingerprint')
     if not self.from_address:
-      raise MisconfigurationException('from', 'address')
+        raise MisconfigurationException('from_address')
     if not self.mail_subject:
-      raise MisconfigurationException('mail', 'subject')
+        raise MisconfigurationException('mail_subject')
     if not self.smtp_host:
-      raise MisconfigurationException('smtp', 'host')
+        raise MisconfigurationException('smtp_host')
     if not self.smtp_port:
-      raise MisconfigurationException('smtp', 'port')
+        raise MisconfigurationException('smtp_port')
     if not self.smtp_tlscafile:
-      raise MisconfigurationException('smtp', 'tlscafile')
+        raise MisconfigurationException('smtp_tlscafile')
 
   def send(self):
     """Actually sends the message"""
@@ -346,7 +324,6 @@ class MisconfigurationException(Exception):
   loaded
 
   """
-  def __init__(self, section, variable):
-    Exception.__init__(self, _("The variable %s from section %s was not found in any of the configuation files /etc/whisperback/config, ~/.whisperback/config, ./config") % (section, variable))
-
+  def __init__(self, variable):
+    Exception.__init__(self, _("The variable %s was not found in any of the configuation files /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py") % variable)
 

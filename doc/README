@@ -41,11 +41,11 @@ CONFIGURATION
 
 The configuration is read in sequence from the following files,
 settings read last overriding previous ones:
-- /etc/whisperback/config
-- ~/.whisperback/config
-- ./config
+- /etc/whisperback/config.py
+- ~/.whisperback/config.py
+- ./config.py
 
-The config.sample example configuration file will tell you about the
+The config.py.sample example configuration file will tell you about the
 configuration syntax and available settings.
 
 

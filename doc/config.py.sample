@@ -1,0 +1,80 @@
+# -*- coding: UTF-8 -*-
+#
+# Sample configuration file for Whisperback
+# =========================================
+#
+# This is a python script that will be read at startup. Any python
+# syntax is valid.
+
+########################################################################
+# Copyright (C) 2009 Amnesia <amnesia@boum.org>
+# 
+# This program is  free software; you can redistribute  it and/or modify
+# it under the  terms of the GNU General Public  License as published by
+# the Free Software Foundation; either  version 3 of the License, or (at
+# your option) any later version.
+# 
+# This program  is distributed in the  hope that it will  be useful, but
+# WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of
+# MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+########################################################################
+
+# IMPORTS
+
+# Do not change this - required to parse path
+import os.path
+
+# RECIPIENT
+#
+# This section defines the recepient parameters
+
+# The address of the recipient
+to_address = "mail@example.org"
+
+# The fingerprint of the recipient's GPG key
+to_fingerprint = "0000000000000000000000000000000000000000"
+
+# SENDER
+#
+# This section defines the sender parameters
+
+# The address of the sender
+from_address = "mail@otherexample.org"
+
+# MESSAGE
+#
+# This section defines the message parameters
+
+# The subject of the email to be sent
+# Please take into account that this will not be encrypted
+mail_subject = "The subject of the mail"
+
+# A callback function to get information to prepend to the mail
+# (this information will be encrypted). This is useful to add
+# software version.
+#
+# It shound not take any parameter, and should return a string to be
+# preprended to the email
+def mail_prepended_info():
+    return ""
+
+# A callback function to get information to append to the email
+# (this information will be encrypted). This is useful to add
+# configuration files usebul for debugging.
+#
+# It shound not take any parameter, and should return a string to be
+# appened to the email
+def mail_appened_info():
+    return ""
+
+# SMTP
+#
+# This section defines the SMTP server parameters
+#
+smtp_host = "smtp.example.org"
+smtp_port = 25
+smtp_tlscafile = os.path.join("path", "to", "ca")

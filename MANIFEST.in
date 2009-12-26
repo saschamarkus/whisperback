@@ -5,5 +5,5 @@ include data/whisperback.svg
 include data/whisperback.xml
 include doc/whisperback.t2t
 include doc/README
-include doc/config.sample
+include doc/config.py.sample
 recursive-include po *
