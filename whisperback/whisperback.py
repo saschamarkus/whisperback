@@ -41,7 +41,7 @@ import gtk
 # Import gettext for i18n
 import gettext
 
-# Import some configuration
+# Import the configuration parser
 import ConfigParser
 
 # Import our modules
@@ -57,7 +57,6 @@ _ = gettext.gettext
 class WhisperBackUI (object):
   """
   This class provides a window containing the GTK+ user interface.
-  
   
   """
 
