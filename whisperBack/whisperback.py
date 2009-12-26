@@ -180,8 +180,9 @@ class WhisperBackUI(object):
     dialog = gtk.MessageDialog(parent=self.main_window,
                                flags=gtk.DIALOG_MODAL,
                                type=gtk.MESSAGE_ERROR,
-                               buttons=gtk.BUTTONS_CLOSE)
-    dialog.set_markup("<b>%s</b>\n\n%s\n" % (message, exception.message))
+                               buttons=gtk.BUTTONS_CLOSE,
+                               message_format=message)
+    dialog.format_secondary_text(exception.message)
     
     dialog.connect("response", close_callback)
     dialog.show()
