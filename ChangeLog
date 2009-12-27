@@ -64,3 +64,16 @@ Bugfixes
  * Bugfix: remove unused argument from WhisperBackUI
  * Bugfix: handle different exception formats in show_exception
  * Bugfix in configuration check
+
+1.2-beta2
+=========
+
+Minor improvements
+------------------
+ * Re-raise the exception catched in the sender thread
+
+Bugfixes
+--------
+ * Bugfix: really use the given CA
+ * Bugfix: info on sending process was not cleared after success
+ * Bugfix: custom tls_quit raised OperationWouldBlock
