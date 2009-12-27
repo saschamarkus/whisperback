@@ -367,6 +367,7 @@ class WhisperBack(object):
             func(*args)
         except Exception, e:
             self.__error_output = e
+            raise
 
     def poll_thread(self):
         if progress_callback is not None:
