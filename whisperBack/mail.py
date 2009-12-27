@@ -118,7 +118,12 @@ def starttls(self, keyfile = None, certfile = None, cafile=None):
       def tls_quit():
         """Terminate the SMTP session."""
         self.docmd("quit")
-        self.sock.bye()
+        while True:
+          try:
+            self.sock.bye()
+            break
+          except gnutls.errors.OperationWouldBlock:
+            time.sleep(0.1)
         self.close()
       
       self.quit = tls_quit
