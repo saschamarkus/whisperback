@@ -7,9 +7,12 @@
 # syntax is valid.
 
 ########################################################################
+# WhisperBack - Send a feedback in an encrypted mail
 # Copyright (C) 2009 Amnesia <amnesia@boum.org>
-# 
-# This program is  free software; you can redistribute  it and/or modify
+#
+# This file is part of WhisperBack
+#
+# WhisperBack is  free software; you can redistribute  it and/or modify
 # it under the  terms of the GNU General Public  License as published by
 # the Free Software Foundation; either  version 3 of the License, or (at
 # your option) any later version.
