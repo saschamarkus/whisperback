@@ -103,7 +103,8 @@ def starttls(self, keyfile = None, certfile = None, cafile=None):
         ca = X509Certificate(open(cafile).read())
       # XXX: use CRL
       #crl = X509CRL(open(certs_path + '/crl.pem').read())
-      cred = X509Credentials()
+      #cred = X509Credentials(trusted=[ca], crl_list=[crl])
+      cred = X509Credentials(trusted=[ca])
       session = ClientSession(self.sock, cred)
       
       while True:
