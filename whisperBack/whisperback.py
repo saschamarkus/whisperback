@@ -180,7 +180,7 @@ class WhisperBackUI(object):
             self.progression_close.set_sensitive(True)
             self.progression_progressbar.set_fraction(1.0)
             self.progression_main_text.set_text(_("Your message has been sent."))
-            #self.progression_secondary_text.set_text("")
+            self.progression_secondary_text.set_text("")
 
     try:
         self.backend.send(cb_update_progress, cb_finished_progress)
