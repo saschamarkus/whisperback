@@ -25,9 +25,7 @@ Send feedback via encrypted e-mail
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Template for man pages
 %
-% This file contain string indexes of the form \{key\}
-% (without the backslashes).
-% It should be processed by doc-i18n to produce a txt2tags input file
+% This file should be processed by txt2tags to produce a man page
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
