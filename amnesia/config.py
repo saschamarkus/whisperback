@@ -55,8 +55,13 @@ from_address = "devnull@amnesia.boum.org"
 #
 # This section defines the SMTP server parameters
 #
+# The SMTP server to use to send the mail
 smtp_host = "4mvq3pnvid3awjln.onion"
+# The port to connect to on that SMTP server
 smtp_port = 25
+# The path to a file containing the certificate to trust
+# This can be either a CA certificate used to sign the SMTP server
+# certificate or the certificate of the SMTP server itself
 # XXX: add the CA file
 smtp_tlscafile = os.path.join("path", "to", "ca")
 
