@@ -98,8 +98,8 @@ class WhisperBackUI(object):
     self.message = builder.get_object("textviewMessage")
     self.prepended_details = builder.get_object("textviewPrependedInfo")
     self.include_prepended_details = builder.get_object("checkbuttonIncludePrependedInfo")
-    self.appened_details = builder.get_object("textviewAppenedInfo")
-    self.include_appened_details = builder.get_object("checkbuttonIncludeAppenedInfo")
+    self.appended_details = builder.get_object("textviewAppendedInfo")
+    self.include_appended_details = builder.get_object("checkbuttonIncludeAppendedInfo")
     self.send_button = builder.get_object("buttonSend")
 
     try:
@@ -119,7 +119,7 @@ class WhisperBackUI(object):
 
     # Shows the debugging details
     self.prepended_details.get_buffer().set_text(self.backend.prepended_data)
-    self.appened_details.get_buffer().set_text(self.backend.appened_data)
+    self.appended_details.get_buffer().set_text(self.backend.appended_data)
 
   # CALLBACKS
   def cb_close_application(self, widget, event, data=None):
@@ -161,8 +161,8 @@ class WhisperBackUI(object):
 
     if not self.include_prepended_details.get_active():
         self.backend.prepended_data = ""
-    if not self.include_appened_details.get_active():
-        self.backend.appened_data = ""
+    if not self.include_appended_details.get_active():
+        self.backend.appended_data = ""
 
     def cb_update_progress():
         self.progression_progressbar.pulse()
@@ -276,7 +276,7 @@ class WhisperBack(object):
     self.to_fingerprint = None
     self.from_address = None
     self.mail_prepended_info = lambda: ""
-    self.mail_appened_info = lambda: ""
+    self.mail_appended_info = lambda: ""
     self.mail_subject = None
     self.smtp_host = None
     self.smtp_port = None
@@ -294,7 +294,7 @@ class WhisperBack(object):
     # Get additional info through the callbacks
     self.prepended_data = self.mail_prepended_info()
     print self.prepended_data
-    self.appened_data = self.mail_appened_info()
+    self.appended_data = self.mail_appended_info()
 
     # Initialize other variables
     self.subject = subject
@@ -403,7 +403,7 @@ class WhisperBack(object):
     message_body = "Subject: %s\n%s\n%s\n%s\n" %(self.subject,
                                                  self.prepended_data,
                                                  self.message,
-                                                 self.appened_data)
+                                                 self.appended_data)
 
     encrypted_message_body = encryption.Encryption(). \
                              encrypt(message_body, [self.to_fingerprint])

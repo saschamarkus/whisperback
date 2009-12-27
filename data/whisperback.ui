@@ -173,7 +173,7 @@ To report a bug, please include:
                             <property name="hscrollbar_policy">automatic</property>
                             <property name="vscrollbar_policy">automatic</property>
                             <child>
-                              <object class="GtkTextView" id="textviewAppenedInfo">
+                              <object class="GtkTextView" id="textviewAppendedInfo">
                                 <property name="height_request">200</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
@@ -188,7 +188,7 @@ To report a bug, please include:
                       </object>
                     </child>
                     <child type="label">
-                      <object class="GtkCheckButton" id="checkbuttonIncludeAppenedInfo">
+                      <object class="GtkCheckButton" id="checkbuttonIncludeAppendedInfo">
                         <property name="label" translatable="yes">debugging info</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>

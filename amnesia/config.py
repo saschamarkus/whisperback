@@ -102,8 +102,8 @@ def mail_prepended_info():
 # configuration files usebul for debugging.
 # 
 # It shound not take any parameter, and should return a string to be
-# appened to the email
-def mail_appened_info():
+# appended to the email
+def mail_appended_info():
     """Returns debugging informations on the running amnesia system
     
     @return XXX: document me
