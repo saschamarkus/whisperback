@@ -62,8 +62,7 @@ smtp_port = 25
 # The path to a file containing the certificate to trust
 # This can be either a CA certificate used to sign the SMTP server
 # certificate or the certificate of the SMTP server itself
-# XXX: add the CA file
-smtp_tlscafile = os.path.join("path", "to", "ca")
+smtp_tlscafile = os.path.join("/", "etc", "whisperback", "4mvq3pnvid3awjln.onion.pem")
 
 # MESSAGE
 #
