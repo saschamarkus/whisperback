@@ -48,6 +48,14 @@ to_fingerprint = "0000000000000000000000000000000000000000"
 # The address of the sender
 from_address = "mail@otherexample.org"
 
+# SMTP
+#
+# This section defines the SMTP server parameters
+#
+smtp_host = "smtp.example.org"
+smtp_port = 25
+smtp_tlscafile = os.path.join("path", "to", "ca")
+
 # MESSAGE
 #
 # This section defines the message parameters
@@ -73,11 +81,3 @@ def mail_prepended_info():
 # appened to the email
 def mail_appened_info():
     return ""
-
-# SMTP
-#
-# This section defines the SMTP server parameters
-#
-smtp_host = "smtp.example.org"
-smtp_port = 25
-smtp_tlscafile = os.path.join("path", "to", "ca")

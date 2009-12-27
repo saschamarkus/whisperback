@@ -51,6 +51,15 @@ to_fingerprint = "09F6BC8FEEC9D8EE005DBAA41D2975EDF93E735F"
 # The address of the sender
 from_address = "devnull@amnesia.boum.org"
 
+# SMTP
+#
+# This section defines the SMTP server parameters
+#
+smtp_host = "4mvq3pnvid3awjln.onion"
+smtp_port = 25
+# XXX: add the CA file
+smtp_tlscafile = os.path.join("path", "to", "ca")
+
 # MESSAGE
 #
 # This section defines the message parameters
@@ -125,12 +134,3 @@ def mail_appened_info():
             f.close()
 
     return debugging_info
-
-# SMTP
-#
-# This section defines the SMTP server parameters
-#
-smtp_host = "4mvq3pnvid3awjln.onion"
-smtp_port = 25
-# XXX: add the CA file
-smtp_tlscafile = os.path.join("path", "to", "ca")
