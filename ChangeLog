@@ -77,3 +77,21 @@ Bugfixes
  * Bugfix: really use the given CA
  * Bugfix: info on sending process was not cleared after success
  * Bugfix: custom tls_quit raised OperationWouldBlock
+
+
+1.2-beta3
+=========
+
+Minor improvements
+------------------
+ * Improve copyright information
+ * Improve sample configuration file readability
+ * Add missing documentation on SMTP configuration
+ * Correct comments of man source headers
+ * Include debian build infrastructure into the tarball
+
+Bugfixes
+--------
+ * Fix typo in the API
+ * Bugfix: path to the certificate in amnesia's config.py
+ * Bugfix: mail was sent without TLS on severs without STARTTLS
