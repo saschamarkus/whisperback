@@ -77,9 +77,18 @@ def send_message_tls (from_address, to_address, message, host="localhost",
   # envelope header.
   smtp = smtplib.SMTP()
   smtp.connect(host, port)
-  smtp.starttls(cafile = tls_cafile)
-  smtp.sendmail(from_address, [to_address], message)
-  smtp.quit()
+  (resp, reply) = smtp.starttls(cafile = tls_cafile)
+  # Default python let you continue in cleartext if starttls
+  # fails, while you expect to have an encrypted connexion
+  if resp != 220:
+      raise TLSError("%s answered %i, %s when trying to start TLS"
+                     % (host, resp, reply))
+  else:
+      smtp.sendmail(from_address, [to_address], message)
+      smtp.quit()
+
+class TLSError(Exception):
+    pass
 
 # This is a monkey patch to make the starttls function of libsmtp use
 # starttls, as the buildin doesn't really check certificates and doesn't

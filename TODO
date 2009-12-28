@@ -1,6 +1,5 @@
 TODO
 ====
 
-* Test starttls / verify how to check server certificate
 * Use a fingerprint to check the certificate
 * Fix the absolute paths and their ugly workaround
