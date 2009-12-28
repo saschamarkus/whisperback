@@ -3,3 +3,5 @@ TODO
 
 * Use a fingerprint to check the certificate
 * Fix the absolute paths and their ugly workaround
+* Use the python configuration file only for the callbacks, and use the old one
+  for the other configuration variables
