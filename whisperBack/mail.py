@@ -3,7 +3,7 @@
 
 ########################################################################
 # WhisperBack - Send a feedback in an encrypted mail
-# Copyright (C) 2009 Amnesia <amnesia@boum.org>
+# Copyright (C) 2009-2010 Amnesia <amnesia@boum.org>
 #
 # This file is part of WhisperBack
 #

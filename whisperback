@@ -3,7 +3,7 @@
 
 ########################################################################
 # WhisperBack - Send a feedback in an encrypted mail
-# Copyright (C) 2009 Amnesia <amnesia@boum.org>
+# Copyright (C) 2009-2010 Amnesia <amnesia@boum.org>
 # 
 # This program is  free software; you can redistribute  it and/or modify
 # it under the  terms of the GNU General Public  License as published by
