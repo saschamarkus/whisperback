@@ -95,3 +95,10 @@ Bugfixes
  * Fix typo in the API
  * Bugfix: path to the certificate in amnesia's config.py
  * Bugfix: mail was sent without TLS on severs without STARTTLS
+
+1.2
+===
+
+Bugfixes
+--------
+ * Bugfix: debian/files should not be included
