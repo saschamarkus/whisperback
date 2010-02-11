@@ -408,12 +408,12 @@ class WhisperBack(object):
     encrypted_message_body = encryption.Encryption(). \
                              encrypt(message_body, [self.to_fingerprint])
     
-    mail.create_message(self.from_address, self.to_address,
-                        self.mail_subject, encrypted_message_body)
+    mime_message = mail.create_message(self.from_address, self.to_address,
+                                       self.mail_subject, encrypted_message_body)
 
     self.execute_threaded(func=mail.send_message_tls,
                           args=(self.from_address, self.to_address,
-                                encrypted_message_body, self.smtp_host,
+                                mime_message, self.smtp_host,
                                 self.smtp_port, self.smtp_tlscafile),
                           progress_callback=progress_callback,
                           finished_callback=finished_callback)
