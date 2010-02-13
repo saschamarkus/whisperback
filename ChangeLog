@@ -102,3 +102,14 @@ Bugfixes
 Bugfixes
 --------
  * Bugfix: debian/files should not be included
+
+1.2.1
+=====
+
+Minor improvements
+------------------
+ * Amnesia config: add a random id to mail subject
+
+Bugfixes
+--------
+ * Bugfix: headers was not actually sent
