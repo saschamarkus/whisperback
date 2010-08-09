@@ -263,6 +263,26 @@ class WhisperBack(object):
   This class contains the backend which actually sends the feedback
   """
   
+  def set_contact_email(self, email):
+    if utils.check_email(email):
+       self._contact_email = email
+    else:
+       #XXX use a better exception
+       raise ValueError, _("Invalid contact email: %s" % email)
+
+  contact_email = property(lambda self: self._contact_email,
+                           set_contact_email)
+
+  def set_contact_gpgkey(self, gpgkey):
+    if utils.check_gpgkey(gpgkey):
+       self._contact_gpgkey = gpgkey
+    else:
+       #XXX use a better exception
+       raise ValueError, _("Invalid contact gpg key: %s" % gpgkey)
+
+  contact_gpgkey = property(lambda self: self._contact_gpgkey,
+                           set_contact_gpgkey)
+
   def __init__(self, subject = "", message = ""):
     """Initialize a feedback object with the given contents
     
@@ -299,6 +319,8 @@ class WhisperBack(object):
     # Initialize other variables
     self.subject = subject
     self.message = message
+    self._contact_email = None
+    self._contact_gpgkey = None
 
   def __load_conf(self, config_file_path):
     """Loads a configuration file from config_file_path and executes it
@@ -390,6 +412,15 @@ class WhisperBack(object):
   # XXX: static would be best, but I get a problem with self.*
   #execute_threaded = staticmethod(execute_threaded)
 
+  def __prepare_body(self):
+    body = "Subject: %s\n" % self.subject
+    if self.contact_email:
+        body += "From: %s\n" % self.contact_email
+    body += "%s\n%s\n" % (self.prepended_data, self.message)
+    if self.contact_gpgkey:
+        body += "GPG Key: %s\n" % self.contact_gpgkey
+    body += "%s\n" % self.appended_data
+
   def send(self, progress_callback=None, finished_callback=None):
     """Actually sends the message
     
@@ -400,10 +431,7 @@ class WhisperBack(object):
     # XXX: It's really strange that some exceptions from this method are
     #      raised and some other transmitted to finished_callback…
 
-    message_body = "Subject: %s\n%s\n%s\n%s\n" %(self.subject,
-                                                 self.prepended_data,
-                                                 self.message,
-                                                 self.appended_data)
+    message_body = self.__prepare_body()
 
     encrypted_message_body = encryption.Encryption(). \
                              encrypt(message_body, [self.to_fingerprint])
