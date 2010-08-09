@@ -58,7 +58,7 @@ build_extra.build_extra.sub_commands.insert(0, ("build_gtkbuilderi18n", None))
 build_extra.build_extra.sub_commands.append(("build_man", None))
 
 setup(name='whisperback',
-    version='1.2.1',
+    version='1.3-dev',
     description='Send a feedback in an encrypted mail',
     author='Amnesia',
     author_email='amnesia@boum.org',
