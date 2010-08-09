@@ -93,9 +93,9 @@
 
 To report a bug, please include:
 &#x2022; the name of the affected software;
-&#x2022; the button / function used;
-&#x2022; the action;
-&#x2022; the result / problem;
+&#x2022; exact steps to reproduce the problem;
+&#x2022; actual result / the problem;
+&#x2022; desired result (if not obvious).
 
 &lt;b&gt;As a general rule, please remember not to include any information that could identify you!&lt;/b&gt;</property>
                 <property name="use_markup">True</property>
