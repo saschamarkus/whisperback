@@ -74,6 +74,108 @@
                     <property name="position">3</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkLabel" id="labelMail">
+                    <property name="visible">True</property>
+                    <property name="xalign">0</property>
+                    <property name="label" translatable="yes">Optional email address to ask for details</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="entryMail">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="invisible_char">&#x25CF;</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="labelGPGKey">
+                    <property name="visible">True</property>
+                    <property name="xalign">0</property>
+                    <property name="label" translatable="yes">Optional GPG key for the email address</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">6</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkAlignment" id="alignment1">
+                    <property name="visible">True</property>
+                    <property name="left_padding">12</property>
+                    <child>
+                      <object class="GtkTable" id="table1">
+                        <property name="visible">True</property>
+                        <property name="n_rows">2</property>
+                        <property name="n_columns">2</property>
+                        <child>
+                          <object class="GtkRadioButton" id="radiobuttonGPGKeyId">
+                            <property name="label" translatable="yes">key ID</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">False</property>
+                            <property name="active">True</property>
+                            <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="cb_contact_gpg_togglesensitive"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioButton" id="radiobuttonGPGKeyfile">
+                            <property name="label" translatable="yes">public key block</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">False</property>
+                            <property name="draw_indicator">True</property>
+                            <property name="group">radiobuttonGPGKeyId</property>
+                          </object>
+                          <packing>
+                            <property name="top_attach">1</property>
+                            <property name="bottom_attach">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="entryGPGKeyId">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="invisible_char">&#x25CF;</property>
+                          </object>
+                          <packing>
+                            <property name="left_attach">1</property>
+                            <property name="right_attach">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="buttonGPGKeyBlock">
+                            <property name="label" translatable="yes">enter</property>
+                            <property name="visible">True</property>
+                            <property name="sensitive">False</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">True</property>
+                            <signal name="clicked" handler="cb_enter_gpgkeyblock"/>
+                          </object>
+                          <packing>
+                            <property name="left_attach">1</property>
+                            <property name="right_attach">2</property>
+                            <property name="top_attach">1</property>
+                            <property name="bottom_attach">2</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">7</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="position">0</property>
@@ -97,7 +199,11 @@ To report a bug, please include:
 &#x2022; actual result / the problem;
 &#x2022; desired result (if not obvious).
 
-&lt;b&gt;As a general rule, please remember not to include any information that could identify you!&lt;/b&gt;</property>
+&lt;b&gt;As a general rule, please remember not to include any information that could identify you!&lt;/b&gt;
+
+&lt;b&gt;Optional email&lt;/b&gt;
+
+If you don't mind disclosing some bits of your identity to T(A)ILS developers, you might want to provide an email address so that we can ask details about the bug if needed. Additionally providing a public PGP key will allow as to encrypt email we might send you. Please note that anyone able to know you are corresponding with us will probably infer you are a T(A)ILS user. Time to wonder how much you trust your ISP and mailbox provider?</property>
                 <property name="use_markup">True</property>
                 <property name="wrap">True</property>
               </object>
@@ -421,5 +527,101 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
   <object class="GtkSizeGroup" id="sizegroup1"/>
   <object class="GtkRadioAction" id="radioaction1">
     <property name="draw_as_radio">True</property>
+  </object>
+  <object class="GtkDialog" id="dialogGpgkeyblock">
+    <property name="border_width">5</property>
+    <property name="type_hint">normal</property>
+    <property name="has_separator">False</property>
+    <signal name="close" handler="cb_gpg_close_ok"/>
+    <child internal-child="vbox">
+      <object class="GtkVBox" id="dialog-vboxGpg1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child>
+          <object class="GtkVBox" id="vboxGpg1">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="labelGpg">
+                <property name="visible">True</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">GPG public key block to encrypt emails we might send you:</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="padding">7</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="scrolledwindowGpg">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="hscrollbar_policy">automatic</property>
+                <property name="vscrollbar_policy">automatic</property>
+                <child>
+                  <object class="GtkTextView" id="textviewGpgKeyblock">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="dialog-action_areaGpg1">
+            <property name="visible">True</property>
+            <property name="layout_style">end</property>
+            <child>
+              <object class="GtkButton" id="buttonGpgCancel">
+                <property name="label">gtk-cancel</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_stock">True</property>
+                <signal name="clicked" handler="cb_gpg_close_cancel"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="buttonGpgOk">
+                <property name="label">gtk-ok</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_stock">True</property>
+                <signal name="clicked" handler="cb_gpg_close_ok"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">buttonGpgCancel</action-widget>
+      <action-widget response="0">buttonGpgOk</action-widget>
+    </action-widgets>
   </object>
 </interface>

@@ -94,8 +94,17 @@ class WhisperBackUI(object):
     self.progression_progressbar = builder.get_object("progressProgressbar")
     self.progression_secondary_text = builder.get_object("progressLabelSecondary")
     self.progression_close = builder.get_object("progressButtonClose")
+    self.gpg_dialog = builder.get_object("dialogGpgkeyblock")
+    self.gpg_keyblock = builder.get_object("textviewGpgKeyblock")
+    self.gpg_ok = builder.get_object("buttonGpgOk")
+    self.gpg_cancel = builder.get_object("buttonGpgClose")
     self.subject = builder.get_object("entrySubject")
     self.message = builder.get_object("textviewMessage")
+    self.contact_email = builder.get_object("entryMail")
+    self.contact_gpg_useid = builder.get_object("radiobuttonGPGKeyId")
+    self.contact_gpg_usefile = builder.get_object("radiobuttonGPGKeyfile")
+    self.contact_gpg_keyid = builder.get_object("entryGPGKeyId")
+    self.contact_gpg_keyblock = builder.get_object("buttonGPGKeyBlock")
     self.prepended_details = builder.get_object("textviewPrependedInfo")
     self.include_prepended_details = builder.get_object("checkbuttonIncludePrependedInfo")
     self.appended_details = builder.get_object("textviewAppendedInfo")
@@ -143,6 +152,17 @@ class WhisperBackUI(object):
     self.show_about_dialog()
     return False
 
+  def cb_enter_gpgkeyblock(self, widget, data=None):
+    """Callback function to show the gpg publick key block input dialog
+
+    """
+    self.show_gpg_dialog()
+    return False
+
+  def cb_contact_gpg_togglesensitive(self, widget, data=None):
+    self.contact_gpg_keyblock.set_sensitive(not self.contact_gpg_keyblock.get_sensitive())
+    self.contact_gpg_keyid.set_sensitive(not self.contact_gpg_keyid.get_sensitive())
+
   def cb_send_message(self, widget, data=None):
     """Callback function to actually send the message
     
@@ -158,6 +178,21 @@ class WhisperBackUI(object):
     self.backend.message = self.message.get_buffer().get_text(
                            self.message.get_buffer().get_start_iter(),
                            self.message.get_buffer().get_end_iter())
+    if self.contact_email.get_text():
+        try:
+            self.backend.contact_email = self.contact_email.get_text()
+        except ValueError, e:
+            self.show_exception_dialog(_("The contact email adress doesn't seem valid."), e)
+            self.progression_dialog.hide()
+            return
+    if self.contact_gpg_useid.get_active() and self.contact_gpg_keyid.get_text():
+        try:
+            self.backend.contact_gpgkey = self.contact_gpg_keyid.get_text()
+        except ValueError, e:
+            self.show_exception_dialog(_("Invalid contact GPG key ID."), e)
+            self.progression_dialog.hide()
+            return
+    # else, contact_gpgkey was filled when the user exited the dedicated dialog
 
     if not self.include_prepended_details.get_active():
         self.backend.prepended_data = ""
@@ -248,6 +283,35 @@ class WhisperBackUI(object):
     about_dialog.set_website("https://amnesia.boum.org")
     about_dialog.connect("response", gtk.Widget.hide_on_delete)
     about_dialog.show()
+
+  def show_gpg_dialog(self):
+    """Show a text entry dialog to let the user enter a GPG public key block
+
+    """
+    if self.backend.contact_gpgkey:
+        self.gpg_keyblock.get_buffer().set_text(str(self.backend.contact_gpgkey))
+    else:
+        self.gpg_keyblock.get_buffer().set_text("")
+    self.gpg_dialog.show()
+
+  def cb_gpg_close_ok(self, widget, data=None):
+    """Callback function for the gpg publick key entry close and apply event
+
+    """
+    try:
+        self.backend.contact_gpgkey = self.gpg_keyblock.get_buffer().get_text(
+            self.gpg_keyblock.get_buffer().get_start_iter(),
+            self.gpg_keyblock.get_buffer().get_end_iter())
+    except ValueError, e:
+        self.show_exception_dialog(_("Invalid GPG public key block."), e)
+        return
+    self.gpg_dialog.hide()
+
+  def cb_gpg_close_cancel(self, widget, data=None):
+    """Callback function for the gpg pyblick key entry cancel event
+
+    """
+    self.gpg_dialog.hide()
 
   def close_application(self):
     """
@@ -413,13 +477,24 @@ class WhisperBack(object):
   #execute_threaded = staticmethod(execute_threaded)
 
   def __prepare_body(self):
+    """Returns the content of the message body
+
+    Aggregate all informations to prepare the message body.
+    """
     body = "Subject: %s\n" % self.subject
     if self.contact_email:
         body += "From: %s\n" % self.contact_email
-    body += "%s\n%s\n" % (self.prepended_data, self.message)
     if self.contact_gpgkey:
-        body += "GPG Key: %s\n" % self.contact_gpgkey
+        # Test wether we have a key ID or a key block
+        if len(self.contact_gpgkey.splitlines()) <= 1:
+            body += "GPG-Key: %s\n" % self.contact_gpgkey
+        else:
+            body += "GPG-Key: included below\n"
+    body += "%s\n%s\n\n" % (self.prepended_data, self.message)
+    if self.contact_gpgkey and len(self.contact_gpgkey.splitlines()) > 1:
+        body += "%s\n\n" % self.contact_gpgkey
     body += "%s\n" % self.appended_data
+    return body
 
   def send(self, progress_callback=None, finished_callback=None):
     """Actually sends the message
