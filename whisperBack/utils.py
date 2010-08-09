@@ -25,11 +25,14 @@
 # 
 # utils.py
 #
-# Ugly pathes finder utility
+# Various utility functions
 #
 ########################################################################
 
 import os
+import re
+
+# Ugly pathes finder utilities
 
 def guess_prefix ():
   """Tries to guess the prefix
@@ -72,3 +75,17 @@ def get_pixmapdir ():
     return os.path.join (get_sharedir(), "pixmaps")
   else:
     return "data"
+
+# Input validation fuctions
+
+def check_gpgkey(candidate):
+  if re.search(r"(?:-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----)|(^(?:0x)?(?:[0-9a-fA-Z]{8}){1,2}$)|(?:^(?:[0-9a-zA-Z]{4} {0,2}){10}$)", candidate):
+    return True
+  else:
+    return False
+
+def check_email(candidate):
+  if re.search(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", candidate):
+    return True
+  else:
+    return False
