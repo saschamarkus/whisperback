@@ -344,7 +344,7 @@ class WhisperBack(object):
        #XXX use a better exception
        if len(gpgkey.splitlines()) <= 1:
            message = _("Invalid contact gpg key id: %s" % gpgkey)
-       else
+       else:
            message = _("Invalid contact gpg public key block")
        raise ValueError, message
 
