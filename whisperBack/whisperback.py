@@ -342,7 +342,11 @@ class WhisperBack(object):
        self._contact_gpgkey = gpgkey
     else:
        #XXX use a better exception
-       raise ValueError, _("Invalid contact gpg key: %s" % gpgkey)
+       if len(gpgkey.splitlines()) <= 1:
+           message = _("Invalid contact gpg key id: %s" % gpgkey)
+       else
+           message = _("Invalid contact gpg public key block")
+       raise ValueError, message
 
   contact_gpgkey = property(lambda self: self._contact_gpgkey,
                            set_contact_gpgkey)
