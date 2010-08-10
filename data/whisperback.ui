@@ -237,7 +237,6 @@ If you don't mind disclosing some bits of your identity to T(A)ILS developers, y
                         <property name="left_padding">12</property>
                         <child>
                           <object class="GtkTextView" id="textviewPrependedInfo">
-                            <property name="height_request">40</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="editable">False</property>
@@ -280,7 +279,7 @@ If you don't mind disclosing some bits of your identity to T(A)ILS developers, y
                             <property name="vscrollbar_policy">automatic</property>
                             <child>
                               <object class="GtkTextView" id="textviewAppendedInfo">
-                                <property name="height_request">200</property>
+                                <property name="height_request">120</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="editable">False</property>
