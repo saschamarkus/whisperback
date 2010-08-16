@@ -78,7 +78,7 @@ def get_pixmapdir ():
 
 # Input validation fuctions
 
-def check_gpgkey(candidate):
+def is_valid_pgp_block_or_id(candidate):
   if re.search(r"(?:-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----)|(^(?:0x)?(?:[0-9a-fA-Z]{8}){1,2}$)|(?:^(?:[0-9a-zA-Z]{4} {0,2}){10}$)", candidate):
     return True
   else:

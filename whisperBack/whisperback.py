@@ -338,7 +338,7 @@ class WhisperBack(object):
                            set_contact_email)
 
   def set_contact_gpgkey(self, gpgkey):
-    if utils.check_gpgkey(gpgkey):
+    if utils.is_valid_pgp_block_or_id(gpgkey):
        self._contact_gpgkey = gpgkey
     else:
        #XXX use a better exception
