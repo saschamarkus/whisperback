@@ -328,7 +328,7 @@ class WhisperBack(object):
   """
   
   def set_contact_email(self, email):
-    if utils.check_email(email):
+    if utils.is_valid_email(email):
        self._contact_email = email
     else:
        #XXX use a better exception
