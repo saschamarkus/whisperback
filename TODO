@@ -5,4 +5,3 @@ TODO
 * Fix the absolute paths and their ugly workaround
 * Use the python configuration file only for the callbacks, and use the old one
   for the other configuration variables
-* split whisperback.py in two files: one for the backend and one for the GUI
