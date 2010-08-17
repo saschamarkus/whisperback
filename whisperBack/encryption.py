@@ -32,6 +32,8 @@
 import pyme.core
 import pyme.errors
 
+import exceptions
+
 class Encryption (object):
   """Some tools for encryption"""
   
@@ -127,12 +129,3 @@ class Encryption (object):
       raise KeyNotFoundException ( _("No keys found.") )
     # Encrypt the data
     return self.__encrypt_from_keys (data, to_keys)
-
-class KeyNotFoundException (Exception):
-  """This exception is raised when GPGME can't find the key it searches 
-  in the keyring"""
-  pass
-
-class EncryptionException (Exception):
-  """This exception is raised when GPGME fails to encrypt the data"""
-  pass

@@ -60,6 +60,7 @@ import smtplib
 import socket
 
 # Import our modules
+from exceptions import WhisperbackException
 import mail
 import encryption
 import utils
@@ -413,19 +414,19 @@ class WhisperBack(object):
     # XXX: Add sanity checks
     
     if not self.to_address:
-        raise MisconfigurationException('to_address')
+        raise exceptions.MisconfigurationException('to_address')
     if not self.to_fingerprint:
-        raise MisconfigurationException('to_fingerprint')
+        raise exceptions.MisconfigurationException('to_fingerprint')
     if not self.from_address:
-        raise MisconfigurationException('from_address')
+        raise exceptions.MisconfigurationException('from_address')
     if not self.mail_subject:
-        raise MisconfigurationException('mail_subject')
+        raise exceptions.MisconfigurationException('mail_subject')
     if not self.smtp_host:
-        raise MisconfigurationException('smtp_host')
+        raise exceptions.MisconfigurationException('smtp_host')
     if not self.smtp_port:
-        raise MisconfigurationException('smtp_port')
+        raise exceptions.MisconfigurationException('smtp_port')
     if not self.smtp_tlscafile:
-        raise MisconfigurationException('smtp_tlscafile')
+        raise exceptions.MisconfigurationException('smtp_tlscafile')
 
   def execute_threaded(self, func, args, progress_callback=None, 
                        finished_callback=None, polling_freq=100):
@@ -519,15 +520,3 @@ class WhisperBack(object):
                                 self.smtp_port, self.smtp_tlscafile),
                           progress_callback=progress_callback,
                           finished_callback=finished_callback)
-
-
-########################################################################
-
-class MisconfigurationException(Exception):
-  """This exception is raised when the configuartion can't be properly
-  loaded
-
-  """
-  def __init__(self, variable):
-    Exception.__init__(self, _("The variable %s was not found in any of the configuation files /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py") % variable)
-
