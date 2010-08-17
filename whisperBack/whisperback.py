@@ -117,6 +117,16 @@ class WhisperBackUI(object):
     except gobject.GError, e:
       print e
 
+    underline = lambda str: str + "\n" + len(str) * '-'
+
+    self.message.get_buffer().insert_with_tags(
+        self.message.get_buffer().get_start_iter(),
+           underline ( _("Name of the affected software") ) + "\n"*4 +
+           underline ( _("Exact steps to reproduce the problem") ) + "\n"*4 +
+           underline ( _("Actual result / the problem") ) + "\n"*4 +
+           underline ( _("Desired result") ) + "\n"*4,
+        self.message.get_buffer().create_tag(family="Monospace"))
+
     self.main_window.show()
 
     # Launches the backend
