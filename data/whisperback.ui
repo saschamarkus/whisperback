@@ -209,6 +209,7 @@ If you don't mind disclosing some bits of your identity to T(A)ILS developers, y
 Anyone who can see this reply will probably infer you are a T(A)ILS user. Time to wonder how much you trust your Internet and mailbox providers?
 </property>
                 <property name="use_markup">True</property>
+                <property name="justify">fill</property>
                 <property name="wrap">True</property>
               </object>
               <packing>
