@@ -87,94 +87,35 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEntry" id="entryMail">
+                  <object class="GtkHBox" id="hbox1">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="invisible_char">&#x25CF;</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="position">5</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="labelGPGKey">
-                    <property name="visible">True</property>
-                    <property name="xalign">0</property>
-                    <property name="label" translatable="yes">Optional PGP key for this email address</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="position">6</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkAlignment" id="alignment1">
-                    <property name="visible">True</property>
-                    <property name="left_padding">12</property>
                     <child>
-                      <object class="GtkTable" id="table1">
+                      <object class="GtkEntry" id="entryMail">
                         <property name="visible">True</property>
-                        <property name="n_rows">2</property>
-                        <property name="n_columns">2</property>
-                        <child>
-                          <object class="GtkRadioButton" id="radiobuttonGPGKeyId">
-                            <property name="label" translatable="yes">key ID</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="receives_default">False</property>
-                            <property name="active">True</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="toggled" handler="cb_contact_gpg_togglesensitive"/>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkRadioButton" id="radiobuttonGPGKeyfile">
-                            <property name="label" translatable="yes">public key block</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="receives_default">False</property>
-                            <property name="draw_indicator">True</property>
-                            <property name="group">radiobuttonGPGKeyId</property>
-                          </object>
-                          <packing>
-                            <property name="top_attach">1</property>
-                            <property name="bottom_attach">2</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkEntry" id="entryGPGKeyId">
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="invisible_char">&#x25CF;</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="right_attach">2</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkButton" id="buttonGPGKeyBlock">
-                            <property name="label" translatable="yes">enter</property>
-                            <property name="visible">True</property>
-                            <property name="sensitive">False</property>
-                            <property name="can_focus">True</property>
-                            <property name="receives_default">True</property>
-                            <signal name="clicked" handler="cb_enter_gpgkeyblock"/>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="right_attach">2</property>
-                            <property name="top_attach">1</property>
-                            <property name="bottom_attach">2</property>
-                          </packing>
-                        </child>
+                        <property name="can_focus">True</property>
+                        <property name="invisible_char">&#x25CF;</property>
                       </object>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="buttonGPGKeyBlock">
+                        <property name="label" translatable="yes">optional PGP key</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="image">iconKey</property>
+                        <signal name="clicked" handler="cb_enter_gpgkeyblock"/>
+                      </object>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
-                    <property name="position">7</property>
+                    <property name="position">5</property>
                   </packing>
                 </child>
               </object>
@@ -521,10 +462,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
       <action-widget response="0">progressButtonClose</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkSizeGroup" id="sizegroup1"/>
-  <object class="GtkRadioAction" id="radioaction1">
-    <property name="draw_as_radio">True</property>
-  </object>
   <object class="GtkDialog" id="dialogGpgkeyblock">
     <property name="border_width">5</property>
     <property name="type_hint">normal</property>
@@ -543,7 +480,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
               <object class="GtkLabel" id="labelGpg">
                 <property name="visible">True</property>
                 <property name="xalign">0</property>
-                <property name="label" translatable="yes">GPG public key block to encrypt emails we might send you:</property>
+                <property name="label" translatable="yes">Optional PGP key id or public key block to encrypt emails we might send you:</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -620,5 +557,13 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
       <action-widget response="0">buttonGpgCancel</action-widget>
       <action-widget response="0">buttonGpgOk</action-widget>
     </action-widgets>
+  </object>
+  <object class="GtkImage" id="iconKey">
+    <property name="visible">True</property>
+    <property name="stock">gtk-dialog-authentication</property>
+  </object>
+  <object class="GtkSizeGroup" id="sizegroup1"/>
+  <object class="GtkRadioAction" id="radioaction1">
+    <property name="draw_as_radio">True</property>
   </object>
 </interface>

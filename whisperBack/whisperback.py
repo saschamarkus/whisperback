@@ -101,9 +101,6 @@ class WhisperBackUI(object):
     self.subject = builder.get_object("entrySubject")
     self.message = builder.get_object("textviewMessage")
     self.contact_email = builder.get_object("entryMail")
-    self.contact_gpg_useid = builder.get_object("radiobuttonGPGKeyId")
-    self.contact_gpg_usefile = builder.get_object("radiobuttonGPGKeyfile")
-    self.contact_gpg_keyid = builder.get_object("entryGPGKeyId")
     self.contact_gpg_keyblock = builder.get_object("buttonGPGKeyBlock")
     self.prepended_details = builder.get_object("textviewPrependedInfo")
     self.include_prepended_details = builder.get_object("checkbuttonIncludePrependedInfo")
@@ -169,10 +166,6 @@ class WhisperBackUI(object):
     self.show_gpg_dialog()
     return False
 
-  def cb_contact_gpg_togglesensitive(self, widget, data=None):
-    self.contact_gpg_keyblock.set_sensitive(not self.contact_gpg_keyblock.get_sensitive())
-    self.contact_gpg_keyid.set_sensitive(not self.contact_gpg_keyid.get_sensitive())
-
   def cb_send_message(self, widget, data=None):
     """Callback function to actually send the message
     
@@ -195,14 +188,6 @@ class WhisperBackUI(object):
             self.show_exception_dialog(_("The contact email adress doesn't seem valid."), e)
             self.progression_dialog.hide()
             return
-    if self.contact_gpg_useid.get_active() and self.contact_gpg_keyid.get_text():
-        try:
-            self.backend.contact_gpgkey = self.contact_gpg_keyid.get_text()
-        except ValueError, e:
-            self.show_exception_dialog(_("Invalid contact GPG key ID."), e)
-            self.progression_dialog.hide()
-            return
-    # else, contact_gpgkey was filled when the user exited the dedicated dialog
 
     if not self.include_prepended_details.get_active():
         self.backend.prepended_data = ""
