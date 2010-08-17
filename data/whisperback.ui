@@ -24,7 +24,7 @@
                     <property name="xalign">0</property>
                     <property name="yalign">0</property>
                     <property name="ypad">5</property>
-                    <property name="label" translatable="yes">Subject</property>
+                    <property name="label" translatable="yes">Summary</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -48,7 +48,7 @@
                     <property name="xalign">0</property>
                     <property name="yalign">0</property>
                     <property name="ypad">5</property>
-                    <property name="label" translatable="yes">Message</property>
+                    <property name="label" translatable="yes">Bug description</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -78,7 +78,7 @@
                   <object class="GtkLabel" id="labelMail">
                     <property name="visible">True</property>
                     <property name="xalign">0</property>
-                    <property name="label" translatable="yes">Optional email address to ask for details</property>
+                    <property name="label" translatable="yes">Optional email address to contact you</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -100,7 +100,7 @@
                   <object class="GtkLabel" id="labelGPGKey">
                     <property name="visible">True</property>
                     <property name="xalign">0</property>
-                    <property name="label" translatable="yes">Optional GPG key for the email address</property>
+                    <property name="label" translatable="yes">Optional PGP key for this email address</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -189,9 +189,8 @@
                 <property name="yalign">0</property>
                 <property name="xpad">10</property>
                 <property name="ypad">5</property>
-                <property name="label" translatable="yes" comments="Please keep the markup (e.g. &lt;big&gt;&lt;/big&gt; or &lt;b&gt;&lt;/b&gt;) for pango">&lt;big&gt;Some help&lt;/big&gt;
+                <property name="label" translatable="yes" comments="Please keep the markup (e.g. &lt;big&gt;&lt;/big&gt; or &lt;b&gt;&lt;/b&gt;) for pango">&lt;span size="larger" weight="ultrabold"&gt;Help us fix your bug!&lt;/span&gt;
 
-&lt;b&gt;For bugs&lt;/b&gt;
 
 To report a bug, please include:
 &#x2022; the name of the affected software;
@@ -199,13 +198,16 @@ To report a bug, please include:
 &#x2022; actual result / the problem;
 &#x2022; desired result (if not obvious).
 
-See &lt;u&gt;https://amnesia.boum.org/bug_reporting/&lt;/u&gt;
+Read &lt;a href="file://XXX/bug_reporting/"&gt;our bug reporting instructions&lt;/a&gt;.
 
-&lt;b&gt;As a general rule, please remember not to include any information that could identify you!&lt;/b&gt;
+&lt;b&gt;Do not include more personal information than needed!&lt;/b&gt;
 
-&lt;b&gt;Optional email&lt;/b&gt;
+&lt;span size="larger" weight="ultrabold"&gt;Give us an email address (or don't)&lt;/span&gt;
 
-If you don't mind disclosing some bits of your identity to T(A)ILS developers, you might want to provide an email address so that we can ask details about the bug if needed. Additionally providing a public PGP key will allow as to encrypt email we might send you. Please note that anyone able to know you are corresponding with us will probably infer you are a T(A)ILS user. Time to wonder how much you trust your ISP and mailbox provider?</property>
+If you don't mind disclosing some bits of your identity to T(A)ILS developers, you can provide an email address to let us ask more details about the bug. Additionally entering a public PGP key enables us to encrypt such future communication.
+
+Anyone who can see this reply will probably infer you are a T(A)ILS user. Time to wonder how much you trust your Internet and mailbox providers?
+</property>
                 <property name="use_markup">True</property>
                 <property name="wrap">True</property>
               </object>
