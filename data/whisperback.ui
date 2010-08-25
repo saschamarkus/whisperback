@@ -132,7 +132,7 @@
                 <property name="ypad">5</property>
                 <property name="label" translatable="yes" comments="Please keep the markup (e.g. &lt;big&gt;&lt;/big&gt; or &lt;b&gt;&lt;/b&gt;) for pango">&lt;span size="larger" weight="ultrabold"&gt;Help us fix your bug!&lt;/span&gt;
 
-Read &lt;a href="file://XXX/bug_reporting/"&gt;our bug reporting instructions&lt;/a&gt;.
+Read &lt;a href="file:///live/image/doc/amnesia/wiki/bug_reporting.en.html"&gt;our bug reporting instructions&lt;/a&gt;.
 
 &lt;b&gt;Do not include more personal information than needed!&lt;/b&gt;
 
