@@ -113,3 +113,20 @@ Minor improvements
 Bugfixes
 --------
  * Bugfix: headers was not actually sent
+
+1.3-beta
+========
+
+New features
+------------
+ * Let the user provide optional email address and gpg key so that we can ask
+   details about the bug if needed.
+
+Minor improvements
+------------------
+ * Clarify online help and add a link to amnesia's website, and move bugreport
+   steps from online help to a template
+ * Reduce window height to fit 1024*768
+ * Use hierchical exceptions
+ * Split whisperback.py in two files: backend and gui
+ * Remove unused stuff from UI file
