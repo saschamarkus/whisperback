@@ -3,7 +3,7 @@
 
 ########################################################################
 __licence__ = """
-WhisperBack - Send a feedback in an encrypted mail
+WhisperBack - Send feedback in an encrypted mail
 Copyright (C) 2009-2010 Amnesia <amnesia@boum.org>
 
 This file is part of WhisperBack
@@ -255,7 +255,7 @@ class WhisperBackUI(object):
     about_dialog.set_transient_for(self.main_window)
     about_dialog.set_version(__version__)
     about_dialog.set_name(_("WhisperBack"))
-    about_dialog.set_comments(_("Send a feedback in an encrypted mail."))
+    about_dialog.set_comments(_("Send feedback in an encrypted mail."))
     about_dialog.set_license(__licence__)
     about_dialog.set_copyright(_("Copyright © 2009 amnesia@boum.org"))
     about_dialog.set_authors(["_(Amnesia team <amnesia@boum.org>)"])

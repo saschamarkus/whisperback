@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 ########################################################################
-# WhisperBack - Send a feedback in an encrypted mail
+# WhisperBack - Send feedback in an encrypted mail
 # Copyright (C) 2009-2010 Amnesia <amnesia@boum.org>
 # 
 # This program is  free software; you can redistribute  it and/or modify
@@ -59,7 +59,7 @@ build_extra.build_extra.sub_commands.append(("build_man", None))
 
 setup(name='whisperback',
     version='1.3-beta',
-    description='Send a feedback in an encrypted mail',
+    description='Send feedback in an encrypted mail',
     author='Amnesia',
     author_email='amnesia@boum.org',
     license='GNU GPL v3',

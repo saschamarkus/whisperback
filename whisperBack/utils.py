@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 ########################################################################
-# WhisperBack - Send a feedback in an encrypted mail
+# WhisperBack - Send feedback in an encrypted mail
 # Copyright (C) 2009-2010 Amnesia <amnesia@boum.org>
 #
 # This file is part of WhisperBack
