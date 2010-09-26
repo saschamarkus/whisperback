@@ -1,7 +1,7 @@
 Source: whisperback
 Section: net
 Priority: optional
-Maintainer: Amnesia <amnesia@boum.org>
+Maintainer: T(A)ILS developers <amnesia@boum.org>
 Build-Depends: debhelper (>= 7.0.50~), python-support, python-distutils-extra, txt2tags
 Standards-Version: 3.8.3
 
