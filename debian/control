@@ -15,9 +15,10 @@ Description: send feedback using encrypted email
  WhisperBack is designed to allow Live system users to be able to report bugs
  or issues in a simple yet secure manner.
  .
- A simple GTK+ interface is provided that will send a filled out form to an
- email address.  The email is encrypted using GnuPG and sent directly to the
- destination SMTP server with prior verification of its X509 certificate.
+ A simple graphical user interface allows sending a filled out form to
+ an email address. The email is encrypted using GnuPG and sent to the
+ configured SMTP relay with prior verification of its X.509
+ certificate.
  .
- Please note that this package is useless without a configuration file: the
- system provider should install it separately.
+ Please note that this package is useless without a configuration file
+ that must be installed by the Live system developers.
