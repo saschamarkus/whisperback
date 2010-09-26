@@ -119,14 +119,14 @@ Bugfixes
 
 New features
 ------------
- * Let the user provide optional email address and gpg key so that we can ask
+ * Let the user provide optional email address and OpenPGP key so that we can ask
    details about the bug if needed.
 
 Minor improvements
 ------------------
- * Clarify online help and add a link to amnesia's website, and move bugreport
+ * Clarify online help and add a link to amnesia's website, and move bug reporting
    steps from online help to a template
- * Reduce window height to fit 1024*768
+ * Reduce window height to fit in 1024*768
  * Use hierchical exceptions
- * Split whisperback.py in two files: backend and gui
+ * Split whisperback.py in two files: backend and GUI
  * Remove unused stuff from UI file
