@@ -8,7 +8,7 @@
 
 ########################################################################
 # WhisperBack - Send feedback in an encrypted mail
-# Copyright (C) 2009-2010 Amnesia <amnesia@boum.org>
+# Copyright (C) 2009-2010 T(A)ILS developers <amnesia.org>
 #
 # This file is part of WhisperBack
 #
