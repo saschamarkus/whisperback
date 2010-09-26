@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 #
-# Amnesia configuration file for Whisperback
+# Whisperback configuration file for T(A)ILS
 # ==========================================
 #
 # This is a python script that will be read at startup. Any python
@@ -96,7 +96,7 @@ def mail_prepended_info():
     except subprocess.CalledProcessError:
       amnesia_version = "amnesia-version returned an error"
     
-    return "Amnesia-Version: %s\n" % amnesia_version
+    return "T(A)ILS-Version: %s\n" % amnesia_version
 
 # A callback function to get information to append to the email
 # (this information will be encrypted). This is useful to add
