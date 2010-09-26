@@ -2,7 +2,10 @@
 
 whisperBack/whisperback.py
 whisperBack/encryption.py
+whisperBack/exceptions.py
+whisperBack/gui.py
 whisperBack/mail.py
+whisperBack/utils.py
 whisperBack/__init__.py
 
 data/whisperback.ui.h
