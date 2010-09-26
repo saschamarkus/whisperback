@@ -2,6 +2,9 @@ Source: whisperback
 Section: net
 Priority: optional
 Maintainer: T(A)ILS developers <amnesia@boum.org>
+Homepage: http://git.immerda.ch/?p=whisperback.git
+Vcs-Browser: http://git.immerda.ch/?p=whisperback.git
+Vcs-Git: git://git.immerda.ch/whisperback.git
 Build-Depends: debhelper (>= 7.0.50~), python-support, python-distutils-extra, txt2tags
 Standards-Version: 3.8.3
 
