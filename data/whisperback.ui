@@ -329,8 +329,8 @@ Anyone who can see this reply will probably infer you are a T(A)ILS user. Time t
     <property name="version">0.1</property>
     <property name="copyright" translatable="yes">Copyright &#xA9; 2009-2010 amnesia@boum.org</property>
     <property name="comments" translatable="yes">Send feedback in an encrypted mail.</property>
-    <property name="website">https://amnesia.boum.org</property>
-    <property name="website_label" translatable="yes">https://amnesia.boum.org</property>
+    <property name="website">https://amnesia.boum.org/</property>
+    <property name="website_label" translatable="yes">https://amnesia.boum.org/</property>
     <property name="license" translatable="yes">WhisperBack - Send feedback in an encrypted mail
 Copyright (C) 2009-2010 T(A)ILS developers &lt;amnesia@boum.org&gt;
 

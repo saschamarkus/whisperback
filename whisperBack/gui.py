@@ -260,7 +260,7 @@ class WhisperBackUI(object):
     about_dialog.set_copyright(_("Copyright © 2009-2010 amnesia@boum.org"))
     about_dialog.set_authors(["_(T(A)ILS developers <amnesia@boum.org>)"])
     about_dialog.set_translator_credits(_("translator-credits"))
-    about_dialog.set_website("https://amnesia.boum.org")
+    about_dialog.set_website("https://amnesia.boum.org/")
     about_dialog.connect("response", gtk.Widget.hide_on_delete)
     about_dialog.show()
 
