@@ -119,8 +119,8 @@ class WhisperBackUI(object):
       return
 
     # Shows the debugging details
-    self.prepended_details.get_buffer().set_text(self.backend.prepended_data)
-    self.appended_details.get_buffer().set_text(self.backend.appended_data)
+    self.prepended_details.get_buffer().set_text(self.backend.prepended_data.rstrip())
+    self.appended_details.get_buffer().set_text(self.backend.appended_data.rstrip())
 
   # CALLBACKS
   def cb_close_application(self, widget, event, data=None):

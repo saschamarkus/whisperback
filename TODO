@@ -7,8 +7,6 @@ TODO
 * Use the python configuration file only for the callbacks, and use the old one
   for the other configuration variables
 * Change progress dialog title to "Sending email..."
-* The prepended info text box uses 3 lines while 2 would be enough.
-  The tails-version output should probably be chomp'ed to fix this.
 * Document how to translate WhisperBack.
 * Clicking on the arrow to show the included technical details makes the
   main window a bit too big for 1024x768: the About/Quit/Send buttons are
