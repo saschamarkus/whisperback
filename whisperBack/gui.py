@@ -156,6 +156,7 @@ class WhisperBackUI(object):
 
     """
 
+    self.progression_dialog.set_title(_("Sending mail..."))
     self.progression_main_text.set_text(_("Sending mail"))
     self.progression_secondary_text.set_text(_("This could take a while..."))
     self.progression_dialog.set_transient_for(self.main_window)
