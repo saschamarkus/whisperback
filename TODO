@@ -2,7 +2,7 @@ TODO
 ====
 
 * Use a non-X.509-dependent way to check the SMTP relay certificate:
-  fingerprint or Monkeyspher
+  fingerprint or Monkeysphere
 * Fix the absolute paths and their ugly workaround
 * Use the python configuration file only for the callbacks, and use the old one
   for the other configuration variables
