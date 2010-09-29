@@ -130,3 +130,25 @@ Minor improvements
  * Use hierchical exceptions
  * Split whisperback.py in two files: backend and GUI
  * Remove unused stuff from UI file
+
+1.3-beta2
+=========
+
+Minor improvements
+------------------
+ * Various spelling and phrasing enhancements.
+ * Add a readme for translators
+ * Update copyright in the whole source tree.
+ * Change progress dialog title to 'Sending email...'
+ * Update debian packaging: various updates, bump standards version to 3.9.1.0
+
+Bugfixes
+--------
+ * Replace (some) mentions of Amnesia with T(A)ILS.
+ * Replace mentions of GPG with OpenPGP
+ * Typo: gettext keyword was in the string
+ * UI: don't expand the technical details area
+ * Hide the blank line at the end of technical details
+ * Update the list of source files containing translatable strings.
+ * Fix version in debian/changelog, this is currently a native package.
+ * Add trailing / to URLs.
