@@ -284,7 +284,7 @@ class WhisperBackUI(object):
             self.gpg_keyblock.get_buffer().get_start_iter(),
             self.gpg_keyblock.get_buffer().get_end_iter())
     except ValueError, e:
-        self.show_exception_dialog(_("Invalid GPG public key block."), e)
+        self.show_exception_dialog(_("This doesn's seem to be a valid URL or OpenPGP key ."), e)
         return
     self.gpg_dialog.hide()
 

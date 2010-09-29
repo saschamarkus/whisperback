@@ -65,12 +65,13 @@ class WhisperBack(object):
 
   def set_contact_gpgkey(self, gpgkey):
     if (utils.is_valid_pgp_block(gpgkey) or
-        utils.is_valid_pgp_id(gpgkey)):
+        utils.is_valid_pgp_id(gpgkey) or
+        utils.is_valid_link(gpgkey)):
        self._contact_gpgkey = gpgkey
     else:
        #XXX use a better exception
        if len(gpgkey.splitlines()) <= 1:
-           message = _("Invalid contact OpenPGP key id: %s" % gpgkey)
+           message = _("Invalid contact OpenPGP key: %s" % gpgkey)
        else:
            message = _("Invalid contact OpenPGP public key block")
        raise ValueError, message
@@ -216,7 +217,7 @@ class WhisperBack(object):
     if self.contact_email:
         body += "From: %s\n" % self.contact_email
     if self.contact_gpgkey:
-        # Test wether we have a key ID or a key block
+        # Test wether we have a key block or a key id/url
         if len(self.contact_gpgkey.splitlines()) <= 1:
             body += "OpenPGP-Key: %s\n" % self.contact_gpgkey
         else:

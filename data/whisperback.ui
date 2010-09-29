@@ -481,7 +481,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
               <object class="GtkLabel" id="labelGpg">
                 <property name="visible">True</property>
                 <property name="xalign">0</property>
-                <property name="label" translatable="yes">Optional PGP key id or public key block to encrypt emails we might send you:</property>
+                <property name="label" translatable="yes">Optional PGP key to encrypt emails we might send you (key ID, link to the key or public key block):</property>
               </object>
               <packing>
                 <property name="expand">False</property>

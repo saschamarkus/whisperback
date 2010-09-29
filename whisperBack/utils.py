@@ -31,6 +31,7 @@
 
 import os
 import re
+import urlparse
 
 # Ugly pathes finder utilities
 
@@ -77,6 +78,22 @@ def get_pixmapdir ():
     return "data"
 
 # Input validation fuctions
+
+def is_valid_link(candidate):
+  """Check if candidate seems to be a internet link
+  
+  @param candidate the URL to be checked
+
+  @returns true if candidate is an URL with:
+  - an hostname of the form domain.tld
+  - a scheme http(s) or ftp(S)
+  """
+  parseresult = urlparse.urlparse(candidate)
+  if (re.search(r'^(ht|f)tp(s)?$', parseresult.scheme) and
+      re.search(r'^(\w{1,}\.){1,}\w{1,}$', parseresult.hostname)):
+    return True
+  else:
+    return False
 
 def is_valid_pgp_block(candidate):
   if re.search(r"-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----", candidate):
