@@ -1,0 +1,82 @@
+WhisperBack - Send feedback via encrypted e-mail
+################################################
+
+Copyright (C) 2009-2010 T(A)ILS developers <amnesia@boum.org>
+
+This file explains how to translate WhisperBack. See README for generic
+informations
+
+CONTENTS
+========
+
+- Before you begin
+- Create a new translation
+- Update an existiog translation
+- Man page translation
+
+
+BEFORE YOU BEGIN
+================
+
+Make sure you have the required packages on your system: you'll need the
+build-depends of the debian package, and especially `python-distutils-extra` and
+its dependency `intltool`.
+
+
+CREATE A NEW TRANSLATION
+========================
+
+1. Generate an uptodate template of translatable strings
+
+In sources root, execute: 
+
+    ./setup.py build
+
+which will (re)generate the template `po/whisperback.pot`
+
+2. Create the translations file for your language
+
+In the `po/` directory, execute:
+
+    msginit --locale=<yourlocale>
+
+For example to create a french translation file:
+
+    msginit --locale=fr_FR
+
+3. Edit the translation file as usually
+
+4. Send the result to T(A)ILS developpers to include it in a next release
+
+
+UPDATE AN EXISTING TRANSLATION
+==============================
+
+1. Generate an uptodate template of translatable strings
+
+In sources root, execute:
+
+    ./setup.py build
+
+which will (re)generate the template `po/whisperback.pot`
+
+2. Update the translations file for your language
+
+In the `po/` directory, execute:
+
+    msgmerge --update <yourlocale>.po whisperback.pot
+
+For example to update a french translation file:
+
+    msgmerge --update fr.po whisperback.pot`
+
+3. Edit the translation file as usually
+
+4. Send the result to T(A)ILS developpers to include it in a next release
+
+
+MAN PAGE TRANSLATION
+====================
+
+The man page source located in `doc/whisperback.t2t` is not currently
+translatable. Any help is welcome.

@@ -1,6 +1,7 @@
 include COPYING
 include TODO
 include README
+include README.translators
 include data/whisperback.desktop
 include data/whisperback.svg 
 include data/whisperback.ui
