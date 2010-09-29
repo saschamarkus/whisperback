@@ -212,7 +212,7 @@ class WhisperBackUI(object):
     return False
 
   def show_exception_dialog(self, message, exception,
-                            close_callback = None):
+                            close_callback=None, parent=None):
     """Shows a dialog reporting an exception
 
     @param message A string explaining the exception
@@ -223,12 +223,15 @@ class WhisperBackUI(object):
     if not close_callback:
       close_callback = self.cb_close_exception_dialog
 
+    if not parent:
+      parent=self.main_window
+
     if isinstance(exception.message, types.MethodType):
         exception_message = exception.message()
     else:
         exception_message = str(exception)
 
-    dialog = gtk.MessageDialog(parent=self.main_window,
+    dialog = gtk.MessageDialog(parent=parent,
                                flags=gtk.DIALOG_MODAL,
                                type=gtk.MESSAGE_ERROR,
                                buttons=gtk.BUTTONS_CLOSE,
