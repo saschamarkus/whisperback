@@ -69,9 +69,9 @@ class WhisperBack(object):
     else:
        #XXX use a better exception
        if len(gpgkey.splitlines()) <= 1:
-           message = _("Invalid contact gpg key id: %s" % gpgkey)
+           message = _("Invalid contact OpenPGP key id: %s" % gpgkey)
        else:
-           message = _("Invalid contact gpg public key block")
+           message = _("Invalid contact OpenPGP public key block")
        raise ValueError, message
 
   contact_gpgkey = property(lambda self: self._contact_gpgkey,
@@ -217,9 +217,9 @@ class WhisperBack(object):
     if self.contact_gpgkey:
         # Test wether we have a key ID or a key block
         if len(self.contact_gpgkey.splitlines()) <= 1:
-            body += "GPG-Key: %s\n" % self.contact_gpgkey
+            body += "OpenPGP-Key: %s\n" % self.contact_gpgkey
         else:
-            body += "GPG-Key: included below\n"
+            body += "OpenPGP-Key: included below\n"
     body += "%s\n%s\n\n" % (self.prepended_data, self.message)
     if self.contact_gpgkey and len(self.contact_gpgkey.splitlines()) > 1:
         body += "%s\n\n" % self.contact_gpgkey
