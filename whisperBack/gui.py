@@ -258,7 +258,7 @@ class WhisperBackUI(object):
     about_dialog.set_name(_("WhisperBack"))
     about_dialog.set_comments(_("Send feedback in an encrypted mail."))
     about_dialog.set_license(__licence__)
-    about_dialog.set_copyright(_("Copyright © 2009-2010 T(A)IlS developpers (amnesia@boum.org)"))
+    about_dialog.set_copyright(_("Copyright © 2009-2010 T(A)ILS developpers (amnesia@boum.org)"))
     about_dialog.set_authors([_("T(A)ILS developers <amnesia@boum.org>")])
     about_dialog.set_translator_credits(_("translator-credits"))
     about_dialog.set_website("https://amnesia.boum.org/")
