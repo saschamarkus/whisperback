@@ -217,7 +217,7 @@ class WhisperBack(object):
     if self.contact_email:
         body += "From: %s\n" % self.contact_email
     if self.contact_gpgkey:
-        # Test wether we have a key block or a key id/url
+        # Test whether we have a key block or a key id/url
         if len(self.contact_gpgkey.splitlines()) <= 1:
             body += "OpenPGP-Key: %s\n" % self.contact_gpgkey
         else:
