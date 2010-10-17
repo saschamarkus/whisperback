@@ -166,3 +166,8 @@ Bugfixes
 
  * Fix regular expression to match OpenPGP key IDs.
  * Specify the right parent for exception dialog.
+
+1.3
+===
+
+Release stable version, no further changes required
