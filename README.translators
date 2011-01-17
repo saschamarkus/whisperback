@@ -18,9 +18,9 @@ CONTENTS
 BEFORE YOU BEGIN
 ================
 
-Make sure you have the required packages on your system: you'll need the
-build-depends of the debian package, and especially `python-distutils-extra` and
-its dependency `intltool`.
+Make sure you have the required packages on your system: you'll need
+the build-depends of the Debian package that are listed in the line
+that starts with "Build-Depends" in the debian/control file.
 
 
 CREATE A NEW TRANSLATION
