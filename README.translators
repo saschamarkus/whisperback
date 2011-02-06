@@ -68,7 +68,7 @@ In the `po/` directory, execute:
 
 For example to update a french translation file:
 
-    msgmerge --update fr.po whisperback.pot`
+    msgmerge --update fr.po whisperback.pot
 
 3. Edit the translation file as usually
 
