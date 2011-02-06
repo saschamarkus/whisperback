@@ -1,0 +1,229 @@
+# French translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# T(A)ILS developpers <amnesia@boum.org>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WhisperBack 1.3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-06 16:32+0100\n"
+"PO-Revision-Date: 2011-02-06 16:35+0100\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. XXX use a better exception
+#: ../whisperBack/whisperback.py:61
+#, python-format
+msgid "Invalid contact email: %s"
+msgstr "Email de contact invalide : %s"
+
+#: ../whisperBack/whisperback.py:74
+#, python-format
+msgid "Invalid contact OpenPGP key: %s"
+msgstr "Clé OpenPGP de contact invalide : %s"
+
+#: ../whisperBack/whisperback.py:76
+msgid "Invalid contact OpenPGP public key block"
+msgstr "Bloc de clé OpenPGP de contact invalide"
+
+#: ../whisperBack/encryption.py:129
+msgid "No keys found."
+msgstr "Aucune clé trouvée"
+
+#: ../whisperBack/exceptions.py:44
+#, python-format
+msgid "The variable %s was not found in any of the configuation files /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "La variable %s n'a été trouvée dans aucun des fichiers de configuration/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+
+#: ../whisperBack/gui.py:107
+msgid "Name of the affected software"
+msgstr "Nom du logiciel affecté"
+
+#: ../whisperBack/gui.py:108
+msgid "Exact steps to reproduce the problem"
+msgstr "Étapes exactes pour reproduire le problème"
+
+#: ../whisperBack/gui.py:109
+msgid "Actual result / the problem"
+msgstr "Résultat observé / problème"
+
+#: ../whisperBack/gui.py:110
+msgid "Desired result"
+msgstr "Résultat souhaité"
+
+#: ../whisperBack/gui.py:119
+msgid "Unable to load a valid configuration."
+msgstr "Incapable de charger une configuration valide"
+
+#: ../whisperBack/gui.py:160
+msgid "Sending mail..."
+msgstr "Envoi du mail..."
+
+#: ../whisperBack/gui.py:161
+msgid "Sending mail"
+msgstr "Envoi du mail"
+
+#: ../whisperBack/gui.py:162
+msgid "This could take a while..."
+msgstr "Ceci peut prendre un moment..."
+
+#: ../whisperBack/gui.py:175
+msgid "The contact email adress doesn't seem valid."
+msgstr "L'adresse email de contact ne semble pas valide"
+
+#: ../whisperBack/gui.py:189
+msgid "Unable to send the mail : SMTP error"
+msgstr "Impossible d'envoyer le mail : erreur SMTP"
+
+#: ../whisperBack/gui.py:192
+msgid "Unable to connect to the server."
+msgstr "Impossible de se connecter au serveur."
+
+#: ../whisperBack/gui.py:195
+msgid "Unable to create or to send the mail."
+msgstr "Impossible de créer ou d'envoyer le mail."
+
+#: ../whisperBack/gui.py:201
+msgid "Your message has been sent."
+msgstr "Votre message a été envoyé."
+
+#: ../whisperBack/gui.py:207
+msgid "An error occured during encryption."
+msgstr "Une erreur est survenue durant le chiffrement."
+
+#: ../whisperBack/gui.py:210
+msgid "Unable to find encryption key."
+msgstr "Impossible de trouver la clé de chiffrement."
+
+#: ../whisperBack/gui.py:262
+#: ../data/whisperback.ui.h:21
+msgid "WhisperBack"
+msgstr "WhisperBack"
+
+#: ../whisperBack/gui.py:263
+#: ../data/whisperback.ui.h:18
+msgid "Send feedback in an encrypted mail."
+msgstr "Envoyer vos remarques dans un mail chiffré"
+
+#: ../whisperBack/gui.py:265
+msgid "Copyright © 2009-2010 T(A)ILS developpers (amnesia@boum.org)"
+msgstr "Copyright © 2009-2010 développeurs de T(A)IlS (amnesia@boum.org)"
+
+#: ../whisperBack/gui.py:266
+msgid "T(A)ILS developers <amnesia@boum.org>"
+msgstr "Développeurs de T(A)ILS <amnesia@boum.org>"
+
+#: ../whisperBack/gui.py:267
+msgid "translator-credits"
+msgstr "traducteurs"
+
+#: ../whisperBack/gui.py:292
+msgid "This doesn's seem to be a valid URL or OpenPGP key."
+msgstr "Ceci ne semble pas être une URL ou une clé OpenPGP valide."
+
+#. Please keep the markup (e.g. <big></big> or <b></b>) for pango
+#: ../data/whisperback.ui.h:2
+msgid ""
+"<span size=\"larger\" weight=\"ultrabold\">Help us fix your bug!</span>\n"
+"\n"
+"Read <a href=\"file:///live/image/doc/amnesia/wiki/bug_reporting.en.html\">our bug reporting instructions</a>.\n"
+"\n"
+"<b>Do not include more personal information than needed!</b>\n"
+"\n"
+"<span size=\"larger\" weight=\"ultrabold\">About giving us an email address</span>\n"
+"\n"
+"If you don't mind disclosing some bits of your identity to T(A)ILS developers, you can provide an email address to let us ask more details about the bug. Additionally entering a public PGP key enables us to encrypt such future communication.\n"
+"\n"
+"Anyone who can see this reply will probably infer you are a T(A)ILS user. Time to wonder how much you trust your Internet and mailbox providers?\n"
+msgstr ""
+"<span size=\"larger\" weight=\"ultrabold\">Aidez-nous à résoudre votre problème !</span>\n"
+"\n"
+"Lire <a href=\"file:///live/image/doc/amnesia/wiki/bug_reporting.en.html\">nos instructions sur le signalement de problèmes</a>.\n"
+"\n"
+"<b>N'incluez pas plus d'informations personnelles que nécessaire !</b>\n"
+"\n"
+"<span size=\"larger\" weight=\"ultrabold\">À propos de votre adresse email</span>\n"
+"\n"
+"Si cela ne vous dérange pas de divulguer des bribes d'information à votre sujet aux développeurs de T(A)ILS, vous pouvez fournir une adresse email afin que nous puissions vous demander davantage de détails sur le bug. Si vous fournissez aussi une clé PGP publique, nous vous demanderons ces détails par email chiffré.\n"
+"\n"
+"Ceux qui pourront voir ces communication pourront sans doute en déduire que vous êtes un utilisateur de T(A)ILS. C'est peut-être le moment de vous interroger sur la confiance que vous accordez à votre fournisseur d'accès à Internet et à votre hébergeur email...\n"
+
+#: ../data/whisperback.ui.h:14
+msgid "Bug description"
+msgstr "Description du problème"
+
+#: ../data/whisperback.ui.h:15
+msgid "Copyright &#xA9; 2009-2010 amnesia@boum.org"
+msgstr "Copyright &#xA9; 2009-2010 amnesia@boum.org"
+
+#: ../data/whisperback.ui.h:16
+msgid "Optional PGP key to encrypt emails we might send you (key ID, link to the key or public key block):"
+msgstr "Clé PGP optionnelle pour chiffrer les mails que l'on pourrait vous envoyer (identifiant de clé, lien vers la clé ou bloc de clé publique) :"
+
+#: ../data/whisperback.ui.h:17
+msgid "Optional email address to contact you"
+msgstr "Adresse email optionnelle pour vous contacter"
+
+#: ../data/whisperback.ui.h:19
+msgid "Summary"
+msgstr "Résumé"
+
+#: ../data/whisperback.ui.h:20
+msgid "Technical details to include"
+msgstr "Détails techniques à inclure"
+
+#: ../data/whisperback.ui.h:22
+msgid ""
+"WhisperBack - Send feedback in an encrypted mail\n"
+"Copyright (C) 2009-2010 T(A)ILS developers <amnesia@boum.org>\n"
+"\n"
+"This program is  free software; you can redistribute  it and/or modify\n"
+"it under the  terms of the GNU General Public  License as published by\n"
+"the Free Software Foundation; either  version 3 of the License, or (at\n"
+"your option) any later version.\n"
+"\n"
+"This program  is distributed in the  hope that it will  be useful, but\n"
+"WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\n"
+"MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\n"
+"General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - Envoyer vos remarques dans un email chiffré\n"
+"Copyright (C) 2009-2010 développeurs de T(A)ILS <amnesia@boum.org>\n"
+"\n"
+"Ce programme est un logiciel libre ; vous pouvez le redistribuer ou lemodifier suivant les termes de la License Piblique Générale GNU telle quepubliée par la Free Software Foundation : soit la version 3 de cettelicence, soit (à votre gré) toute version ultérieure.\n"
+"\n"
+"Ce programme est distribué dans l’espoir qu’il vous sera utile, mais SANSAUCUNE GARANTIE : sans même la garantie implicite de COMMERCIALISABILITÉni d’ADÉQUATION À UN OBJECTIF PARTICULIER. Consultez la Licence PubliqueGénérale GNU pour plus de détails.\n"
+"\n"
+"Vous devez avoir reçu une copie de la Licence Publique Générale GNU avecce programme ; si ce n'est pas le cas, consultez : <http://www.gnu.org/licenses/>.\n"
+
+#: ../data/whisperback.ui.h:38
+msgid "debugging info"
+msgstr "informations de déboguage"
+
+#: ../data/whisperback.ui.h:39
+msgid "headers"
+msgstr "en-têtes"
+
+#: ../data/whisperback.ui.h:40
+msgid "https://amnesia.boum.org/"
+msgstr "https://amnesia.boum.org/"
+
+#: ../data/whisperback.ui.h:41
+msgid "optional PGP key"
+msgstr "clé PGP optionnelle"
+
+#~ msgid "Invalid GPG public key block."
+#~ msgstr "Clé publique GPG non valide"
+
