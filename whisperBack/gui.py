@@ -116,32 +116,10 @@ class WhisperBackUI(object):
 
     # Experiment for help
 
-    htmlhelp = webkit.WebView()
-    htmlhelp.load_string(_("""<h2>Help us fix your bug!</h2>
-
-            <p>Read <a href="%s">our bug reporting instructions</a>.</p>
-
-            <p><strong>Do not include more personal information than
-            needed!</strong></p>
-
-            <h3>About giving us an email address</h3>
-
-            <p>If you don't mind disclosing some bits of your identity
-            to Tails developers, you can provide an email address to
-            let us ask more details about the bug. Additionally entering
-            a public PGP key enables us to encrypt such future
-            communication.</p>
-
-            <p>Anyone who can see this reply will probably infer you are
-            a Tails user. Time to wonder how much you trust your
-            Internet and mailbox providers?</p>
-            """) %
-            utils.get_localised_documentation_link(),
-        "text/html",
-        "UTF-8",
-        "file:///")
-    self.help_container.add_child(builder, htmlhelp, None)
-    htmlhelp.show()
+    self.htmlhelp = webkit.WebView()
+    self.load_htmlhelp()
+    self.help_container.add_child(builder, self.htmlhelp, None)
+    self.htmlhelp.show()
 
     # set the two main window areas to be each half of the window
     # on big screens
@@ -179,6 +157,36 @@ class WhisperBackUI(object):
     """
     self.close_application()
     return False
+
+  def load_htmlhelp(self):
+    self.htmlhelp.load_string(_("""<h1>Help us fix your bug!</h1>
+
+            <p>Read <a href="%s">our bug reporting instructions</a>.</p>
+
+            <p><strong>Do not include more personal information than
+            needed!</strong></p>
+
+            <h2>About giving us an email address</h2>
+
+            <p>If you don't mind disclosing some bits of your identity
+            to Tails developers, you can provide an email address to
+            let us ask more details about the bug. Additionally entering
+            a public PGP key enables us to encrypt such future
+            communication.</p>
+
+            <p>Anyone who can see this reply will probably infer you are
+            a Tails user. Time to wonder how much you trust your
+            Internet and mailbox providers?</p>
+            """) % utils.get_localised_documentation_link(),
+        "text/html",
+        "UTF-8",
+        "file:///")
+
+  def cb_help_prev(self, widget, data=None):
+    if self.htmlhelp.can_go_back():
+        self.htmlhelp.go_back()
+    else:
+        self.load_htmlhelp()
 
   def cb_show_about(self, widget, data=None):
     """Callback function to show the "about" dialog
