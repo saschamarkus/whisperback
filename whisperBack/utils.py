@@ -32,6 +32,7 @@
 import os
 import re
 import urlparse
+import locale
 
 # Ugly pathes finder utilities
 
@@ -112,3 +113,26 @@ def is_valid_email(candidate):
     return True
   else:
     return False
+
+# Documentation localisation helpers
+
+def get_wiki_supported_languages():
+    try:
+        return os.environ["TAILS_WIKI_SUPPORTED_LANGUAGES"].split(' ')
+    except KeyError:
+        return 'en'
+
+def get_localised_documentation_language():
+    # locale.getlocale returns a tuple (language code, encoding)
+    # the language is the two first character of the RFC 1766 "language code"
+    system_language = locale.getdefaultlocale()[0][0:2]
+
+    if system_language in get_wiki_supported_languages():
+        return system_language
+    else:
+        return 'en'
+
+def get_localised_documentation_link():
+    return ("file:///live/image/doc/amnesia/wiki/bug_reporting." +
+        get_localised_documentation_language() +
+        ".html")

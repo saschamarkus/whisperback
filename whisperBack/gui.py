@@ -124,7 +124,7 @@ Read <a href="%s">our bug reporting instructions</a>.
 If you don't mind disclosing some bits of your identity to T(A)ILS developers, you can provide an email address to let us ask more details about the bug. Additionally entering a public PGP key enables us to encrypt such future communication.
 
 Anyone who can see this reply will probably infer you are a T(A)ILS user. Time to wonder how much you trust your Internet and mailbox providers?""") %
-    "file:///live/image/doc/amnesia/wiki/bug_reporting.en.html")
+    utils.get_localised_documentation_link())
 
     self.main_window.show()
 
