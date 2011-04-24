@@ -42,6 +42,8 @@ pygtk.require('2.0')
 import gtk
 import gobject
 
+import webkit
+
 # Used by show_exception_dialog
 import traceback
 import types
@@ -92,7 +94,7 @@ class WhisperBackUI(object):
     self.include_prepended_details = builder.get_object("checkbuttonIncludePrependedInfo")
     self.appended_details = builder.get_object("textviewAppendedInfo")
     self.include_appended_details = builder.get_object("checkbuttonIncludeAppendedInfo")
-    self.help_label = builder.get_object("labelHelp")
+    self.help_placeholder = builder.get_object("scrolledwindowHelp")
     self.send_button = builder.get_object("buttonSend")
 
     try:
@@ -111,20 +113,34 @@ class WhisperBackUI(object):
            underline ( _("Desired result") ) + "\n"*4,
         self.message.get_buffer().create_tag(family="Monospace"))
 
-    # XXX: add translator's comment: "Please keep the markup (e.g. <big></big>
-    # or <b></b>) for pango and %s stuff"
-    self.help_label.set_markup(_("""<span size="larger" weight="ultrabold">Help us fix your bug!</span>
+    # Experiment for help
 
-Read <a href="%s">our bug reporting instructions</a>.
+    htmlhelp = webkit.WebView()
+    htmlhelp.load_string(_("""<h2>Help us fix your bug!</h2>
 
-<b>Do not include more personal information than needed!</b>
+            <p>Read <a href="%s">our bug reporting instructions</a>.</p>
 
-<span size="larger" weight="ultrabold">About giving us an email address</span>
+            <p><strong>Do not include more personal information than
+            needed!</strong></p>
 
-If you don't mind disclosing some bits of your identity to T(A)ILS developers, you can provide an email address to let us ask more details about the bug. Additionally entering a public PGP key enables us to encrypt such future communication.
+            <h3>About giving us an email address</h3>
 
-Anyone who can see this reply will probably infer you are a T(A)ILS user. Time to wonder how much you trust your Internet and mailbox providers?""") %
-    utils.get_localised_documentation_link())
+            <p>If you don't mind disclosing some bits of your identity
+            to Tails developers, you can provide an email address to
+            let us ask more details about the bug. Additionally entering
+            a public PGP key enables us to encrypt such future
+            communication.</p>
+
+            <p>Anyone who can see this reply will probably infer you are
+            a Tails user. Time to wonder how much you trust your
+            Internet and mailbox providers?</p>
+            """) %
+            utils.get_localised_documentation_link(),
+        "text/html",
+        "UTF-8",
+        "file:///")
+    self.help_placeholder.add_child(builder, htmlhelp, None)
+    htmlhelp.show()
 
     self.main_window.show()
 

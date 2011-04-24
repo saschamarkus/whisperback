@@ -10,7 +10,7 @@ Standards-Version: 3.9.1.0
 
 Package: whisperback
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-pyme, python-gnutls, python-gtk2
+Depends: ${misc:Depends}, ${python:Depends}, python-pyme, python-gnutls, python-gtk2, python-webkit
 Description: send feedback using encrypted email
  WhisperBack is designed to allow Live system users to be able to report bugs
  or issues in a simple yet secure manner.
