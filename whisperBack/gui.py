@@ -92,6 +92,7 @@ class WhisperBackUI(object):
     self.include_prepended_details = builder.get_object("checkbuttonIncludePrependedInfo")
     self.appended_details = builder.get_object("textviewAppendedInfo")
     self.include_appended_details = builder.get_object("checkbuttonIncludeAppendedInfo")
+    self.help_label = builder.get_object("labelHelp")
     self.send_button = builder.get_object("buttonSend")
 
     try:
@@ -109,6 +110,21 @@ class WhisperBackUI(object):
            underline ( _("Actual result / the problem") ) + "\n"*4 +
            underline ( _("Desired result") ) + "\n"*4,
         self.message.get_buffer().create_tag(family="Monospace"))
+
+    # XXX: add translator's comment: "Please keep the markup (e.g. <big></big>
+    # or <b></b>) for pango and %s stuff"
+    self.help_label.set_markup(_("""<span size="larger" weight="ultrabold">Help us fix your bug!</span>
+
+Read <a href="%s">our bug reporting instructions</a>.
+
+<b>Do not include more personal information than needed!</b>
+
+<span size="larger" weight="ultrabold">About giving us an email address</span>
+
+If you don't mind disclosing some bits of your identity to T(A)ILS developers, you can provide an email address to let us ask more details about the bug. Additionally entering a public PGP key enables us to encrypt such future communication.
+
+Anyone who can see this reply will probably infer you are a T(A)ILS user. Time to wonder how much you trust your Internet and mailbox providers?""") %
+    "file:///live/image/doc/amnesia/wiki/bug_reporting.en.html")
 
     self.main_window.show()
 
