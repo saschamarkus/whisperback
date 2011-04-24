@@ -142,6 +142,8 @@ class WhisperBackUI(object):
     self.help_placeholder.add_child(builder, htmlhelp, None)
     htmlhelp.show()
 
+    self.main_window.maximize()
+
     self.main_window.show()
 
     # Launches the backend
