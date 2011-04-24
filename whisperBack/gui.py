@@ -77,6 +77,7 @@ class WhisperBackUI(object):
     builder.connect_signals(self)
 
     self.main_window = builder.get_object("windowMain")
+    self.vbox_top_left = builder.get_object("vboxTopLeft")
     self.progression_dialog = builder.get_object("dialogProgression")
     self.progression_main_text = builder.get_object("progressLabelMain")
     self.progression_progressbar = builder.get_object("progressProgressbar")
@@ -94,7 +95,7 @@ class WhisperBackUI(object):
     self.include_prepended_details = builder.get_object("checkbuttonIncludePrependedInfo")
     self.appended_details = builder.get_object("textviewAppendedInfo")
     self.include_appended_details = builder.get_object("checkbuttonIncludeAppendedInfo")
-    self.help_placeholder = builder.get_object("scrolledwindowHelp")
+    self.help_container = builder.get_object("scrolledwindowHelp")
     self.send_button = builder.get_object("buttonSend")
 
     try:
@@ -139,8 +140,15 @@ class WhisperBackUI(object):
         "text/html",
         "UTF-8",
         "file:///")
-    self.help_placeholder.add_child(builder, htmlhelp, None)
+    self.help_container.add_child(builder, htmlhelp, None)
     htmlhelp.show()
+
+    # set the two main window areas to be each half of the window
+    # on big screens
+    if self.main_window.get_screen().get_width() > 800:
+       self.vbox_top_left.set_size_request(400, -1)
+       self.help_container.set_size_request(400, -1)
+       pass
 
     self.main_window.maximize()
 
