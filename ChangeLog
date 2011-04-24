@@ -184,3 +184,16 @@ Bugfixes
  * UI: wrap text in the 'bug description' box
  * UI: activate translation of GtkBuilder interface
  * UI: move 'technical details' to left of 'help us' label
+
+1.4-rc1
+=======
+
+Minor improvements
+------------------
+ * Automaticaly localise the link to the documentation wiki.
+ * Use webkit to display help
+
+Bugfixes
+--------
+ * UI: renders whisperback usable on really smallwidgets
+
