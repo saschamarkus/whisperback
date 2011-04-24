@@ -16,7 +16,6 @@
             <property name="spacing">10</property>
             <child>
               <object class="GtkVBox" id="vboxTopLeft">
-                <property name="width_request">400</property>
                 <property name="visible">True</property>
                 <property name="orientation">vertical</property>
                 <child>
@@ -182,7 +181,6 @@
                                     <property name="vscrollbar_policy">automatic</property>
                                     <child>
                                       <object class="GtkTextView" id="textviewAppendedInfo">
-                                        <property name="height_request">120</property>
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="editable">False</property>
