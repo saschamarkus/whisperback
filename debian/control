@@ -1,7 +1,7 @@
 Source: whisperback
 Section: net
 Priority: optional
-Maintainer: T(A)ILS developers <amnesia@boum.org>
+Maintainer: Tails developers <amnesia@boum.org>
 Homepage: http://git.immerda.ch/?p=whisperback.git
 Vcs-Browser: http://git.immerda.ch/?p=whisperback.git
 Vcs-Git: git://git.immerda.ch/whisperback.git

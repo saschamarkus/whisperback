@@ -4,7 +4,7 @@
 ########################################################################
 __licence__ = """
 WhisperBack - Send feedback in an encrypted mail
-Copyright (C) 2009-2010 T(A)ILS developers <amnesia.org>
+Copyright (C) 2009-2010 Tails developers <amnesia.org>
 
 This file is part of WhisperBack
 
@@ -312,8 +312,8 @@ class WhisperBackUI(object):
     about_dialog.set_name(_("WhisperBack"))
     about_dialog.set_comments(_("Send feedback in an encrypted mail."))
     about_dialog.set_license(__licence__)
-    about_dialog.set_copyright(_("Copyright © 2009-2010 T(A)ILS developpers (amnesia@boum.org)"))
-    about_dialog.set_authors([_("T(A)ILS developers <amnesia@boum.org>")])
+    about_dialog.set_copyright(_("Copyright © 2009-2010 Tails developpers (amnesia@boum.org)"))
+    about_dialog.set_authors([_("Tails developers <amnesia@boum.org>")])
     about_dialog.set_translator_credits(_("translator-credits"))
     about_dialog.set_website("https://amnesia.boum.org/")
     about_dialog.connect("response", gtk.Widget.hide_on_delete)

@@ -1,7 +1,7 @@
 WhisperBack - Send feedback via encrypted e-mail
 ################################################
 
-Copyright (C) 2009-2010 T(A)ILS developers <amnesia@boum.org>
+Copyright (C) 2009-2010 Tails developers <amnesia@boum.org>
 
 This file explains how to translate WhisperBack. See README for generic
 informations
@@ -46,7 +46,7 @@ For example to create a french translation file:
 
 3. Edit the translation file as usually
 
-4. Send the result to T(A)ILS developpers to include it in a next release
+4. Send the result to Tails developpers to include it in a next release
 
 
 UPDATE AN EXISTING TRANSLATION
@@ -72,7 +72,7 @@ For example to update a french translation file:
 
 3. Edit the translation file as usually
 
-4. Send the result to T(A)ILS developpers to include it in a next release
+4. Send the result to Tails developpers to include it in a next release
 
 
 MAN PAGE TRANSLATION

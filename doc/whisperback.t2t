@@ -4,7 +4,7 @@ Send feedback via encrypted e-mail
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % WhisperBack - Send feedback in an encrypted mail
-% Copyright (C) 2009-2010 T(A)ILS developers <amnesia.org>
+% Copyright (C) 2009-2010 Tails developers <amnesia.org>
 %
 % This file is part of WhisperBack.
 %
@@ -51,7 +51,7 @@ WhisperBack - Send feedback via encrypted e-mail
 
 
 WhisperBack is a small pyGTK application intended to provide
-a user-friendly way to send feedback to the T(A)ILS dev team in
+a user-friendly way to send feedback to the Tails dev team in
 a GnuPG-encrypted way.
 
 
@@ -82,5 +82,5 @@ per-user configuration.
 =AUTHORS=
 
 
-T(A)ILS developers (amnesia@boum.org)
+Tails developers (amnesia@boum.org)
 
