@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WhisperBack 1.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-25 02:19+0200\n"
-"PO-Revision-Date: 2011-04-25 02:19+0100\n"
+"POT-Creation-Date: 2011-04-25 19:29+0200\n"
+"PO-Revision-Date: 2011-04-25 19:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -68,99 +68,100 @@ msgstr "Incapable de charger une configuration valide"
 #, python-format
 msgid ""
 "<h1>Help us fix your bug!</h1>\n"
-"\n"
-"            <p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
-"\n"
-"            <p><strong>Do not include more personal information than\n"
-"            needed!</strong></p>\n"
-"\n"
-"            <h2>About giving us an email address</h2>\n"
-"\n"
-"            <p>If you don't mind disclosing some bits of your identity\n"
-"            to Tails developers, you can provide an email address to\n"
-"            let us ask more details about the bug. Additionally entering\n"
-"            a public PGP key enables us to encrypt such future\n"
-"            communication.</p>\n"
-"\n"
-"            <p>Anyone who can see this reply will probably infer you are\n"
-"            a Tails user. Time to wonder how much you trust your\n"
-"            Internet and mailbox providers?</p>"
+"<p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
+"<p><strong>Do not include more personal information than\n"
+"needed!</strong></p>\n"
+"<h2>About giving us an email address</h2>\n"
+"<p>If you don't mind disclosing some bits of your identity\n"
+"to Tails developers, you can provide an email address to\n"
+"let us ask more details about the bug. Additionally entering\n"
+"a public PGP key enables us to encrypt such future\n"
+"communication.</p>\n"
+"<p>Anyone who can see this reply will probably infer you are\n"
+"a Tails user. Time to wonder how much you trust your\n"
+"Internet and mailbox providers?</p>\n"
 msgstr ""
 "<h1>Aidez-nous à résoudre votre problème !</h1>\n"
-"\n"
-"<p>Lire <a href=\"%s\">nos instructions sur le signalement de problèmes</a>.</p>\n"
-"\n"
-"<p><strong>N'incluez pas plus d'informations personnelles que nécessaire !</strong></p>\n"
-"\n"
+"<p>Lire <a href=\"%s\">nos instructions sur le signalement de\n"
+"problèmes</a>.</p>\n"
+"<p><strong>N'incluez pas plus d'informations personnelles que\n"
+"nécessaire !</strong></p>\n"
 "<h2>À propos de votre adresse email</h2>\n"
-"\n"
-"<p>Si cela ne vous dérange pas de divulguer des bribes d'information à votre sujet aux développeurs de Tails, vous pouvez fournir une adresse email afin que nous puissions vous demander davantage de détails sur le bug. Si vous fournissez aussi une clé PGP publique, nous vous demanderons ces détails par email chiffré.</p>\n"
-"\n"
-"<p>Ceux qui pourront voir ces communication pourront sans doute en déduire que vous êtes un utilisateur de Tails. C'est peut-être le moment de vous interroger sur la confiance que vous accordez à votre fournisseur d'accès à Internet et à votre hébergeur email...</p>"
+"<p>Si cela ne vous dérange pas de divulguer des bribes\n"
+"d'information à votre sujet aux développeurs de Tails, vous\n"
+"pouvez fournir une adresse email afin que nous puissions vous\n"
+"demander davantage de détails sur le bug. Si vous fournissez\n"
+"aussi une clé PGP publique, nous vous demanderons ces détails\n"
+"par email chiffré.</p>\n"
+"<p>Ceux qui pourront voir ces communication pourront sans\n"
+"doute en déduire que vous êtes un utilisateur de Tails. C'est\n"
+"peut-être le moment de vous interroger sur la confiance que vous\n"
+"accordez à votre fournisseur d'accès à Internet et à votre\n"
+"hébergeur email...</p>\n"
 
-#: ../whisperBack/gui.py:210
+#: ../whisperBack/gui.py:205
 msgid "Sending mail..."
 msgstr "Envoi du mail..."
 
-#: ../whisperBack/gui.py:211
+#: ../whisperBack/gui.py:206
 msgid "Sending mail"
 msgstr "Envoi du mail"
 
-#: ../whisperBack/gui.py:212
+#: ../whisperBack/gui.py:207
 msgid "This could take a while..."
 msgstr "Ceci peut prendre un moment..."
 
-#: ../whisperBack/gui.py:225
+#: ../whisperBack/gui.py:220
 msgid "The contact email adress doesn't seem valid."
 msgstr "L'adresse email de contact ne semble pas valide"
 
-#: ../whisperBack/gui.py:239
+#: ../whisperBack/gui.py:234
 msgid "Unable to send the mail : SMTP error"
 msgstr "Impossible d'envoyer le mail : erreur SMTP"
 
-#: ../whisperBack/gui.py:242
+#: ../whisperBack/gui.py:237
 msgid "Unable to connect to the server."
 msgstr "Impossible de se connecter au serveur."
 
-#: ../whisperBack/gui.py:245
+#: ../whisperBack/gui.py:240
 msgid "Unable to create or to send the mail."
 msgstr "Impossible de créer ou d'envoyer le mail."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:246
 msgid "Your message has been sent."
 msgstr "Votre message a été envoyé."
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:252
 msgid "An error occured during encryption."
 msgstr "Une erreur est survenue durant le chiffrement."
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:255
 msgid "Unable to find encryption key."
 msgstr "Impossible de trouver la clé de chiffrement."
 
-#: ../whisperBack/gui.py:312
+#: ../whisperBack/gui.py:307
 #: ../data/whisperback.ui.h:9
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:313
+#: ../whisperBack/gui.py:308
 #: ../data/whisperback.ui.h:6
 msgid "Send feedback in an encrypted mail."
 msgstr "Envoyer vos remarques dans un mail chiffré"
 
-#: ../whisperBack/gui.py:315
-msgid "Copyright © 2009-2010 T(A)ILS developpers (amnesia@boum.org)"
-msgstr "Copyright © 2009-2010 développeurs de T(A)IlS (amnesia@boum.org)"
+#: ../whisperBack/gui.py:310
+msgid "Copyright © 2009-2011 Tails developpers (amnesia@boum.org)"
+msgstr "Copyright © 2009-2010 développeurs de Tails (amnesia@boum.org)"
 
-#: ../whisperBack/gui.py:316
-msgid "T(A)ILS developers <amnesia@boum.org>"
-msgstr "Développeurs de T(A)ILS <amnesia@boum.org>"
+#: ../whisperBack/gui.py:311
+msgid "Tails developers <amnesia@boum.org>"
+msgstr "Développeurs de Tails <amnesia@boum.org>"
 
-#: ../whisperBack/gui.py:317
+#: ../whisperBack/gui.py:312
 msgid "translator-credits"
 msgstr "traducteurs"
 
-#: ../whisperBack/gui.py:342
+#: ../whisperBack/gui.py:337
 msgid "This doesn's seem to be a valid URL or OpenPGP key."
 msgstr "Ceci ne semble pas être une URL ou une clé OpenPGP valide."
 
@@ -169,8 +170,8 @@ msgid "Bug description"
 msgstr "Description du problème"
 
 #: ../data/whisperback.ui.h:2
-msgid "Copyright &#xA9; 2009-2010 amnesia@boum.org"
-msgstr "Copyright &#xA9; 2009-2010 amnesia@boum.org"
+msgid "Copyright &#xA9; 2009-2011 amnesia@boum.org"
+msgstr "Copyright &#xA9; 2009-2011 amnesia@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "Help"
@@ -195,7 +196,7 @@ msgstr "Détails techniques à inclure"
 #: ../data/whisperback.ui.h:10
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2010 T(A)ILS developers <amnesia@boum.org>\n"
+"Copyright (C) 2009-2011 Tails developers <amnesia@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -211,13 +212,21 @@ msgid ""
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
 "WhisperBack - Envoyer vos remarques dans un email chiffré\n"
-"Copyright (C) 2009-2010 développeurs de T(A)ILS <amnesia@boum.org>\n"
+"Copyright (C) 2009-2010 développeurs de Tails <amnesia@boum.org>\n"
 "\n"
-"Ce programme est un logiciel libre ; vous pouvez le redistribuer ou lemodifier suivant les termes de la License Piblique Générale GNU telle quepubliée par la Free Software Foundation : soit la version 3 de cettelicence, soit (à votre gré) toute version ultérieure.\n"
+"Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier\n"
+"suivant les termes de la License Piblique Générale GNU telle quepubliée par\n"
+"la Free Software Foundation : soit la version 3 de cettelicence, soit (à votre\n"
+"gré) toute version ultérieure.\n"
 "\n"
-"Ce programme est distribué dans l’espoir qu’il vous sera utile, mais SANSAUCUNE GARANTIE : sans même la garantie implicite de COMMERCIALISABILITÉni d’ADÉQUATION À UN OBJECTIF PARTICULIER. Consultez la Licence PubliqueGénérale GNU pour plus de détails.\n"
+"Ce programme est distribué dans l’espoir qu’il vous sera utile, mais SANS\n"
+"AUCUNE GARANTIE : sans même la garantie implicite de COMMERCIALISABILITÉ\n"
+"ni d’ADÉQUATION À UN OBJECTIF PARTICULIER. Consultez la Licence Publique\n"
+"Générale GNU pour plus de détails.\n"
 "\n"
-"Vous devez avoir reçu une copie de la Licence Publique Générale GNU avecce programme ; si ce n'est pas le cas, consultez : <http://www.gnu.org/licenses/>.\n"
+"Vous devez avoir reçu une copie de la Licence Publique Générale GNU avec\n"
+"ce programme ; si ce n'est pas le cas, consultez : <http://www.gnu.org/licenses/>.\n"
+"\n"
 
 #: ../data/whisperback.ui.h:26
 msgid "debugging info"
