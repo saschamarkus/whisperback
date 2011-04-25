@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WhisperBack 1.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-25 01:22+0200\n"
-"PO-Revision-Date: 2011-04-25 01:25+0100\n"
+"POT-Creation-Date: 2011-04-25 02:19+0200\n"
+"PO-Revision-Date: 2011-04-25 02:19+0100\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -86,13 +86,13 @@ msgid ""
 "            a Tails user. Time to wonder how much you trust your\n"
 "            Internet and mailbox providers?</p>"
 msgstr ""
-"<h2>Aidez-nous à résoudre votre problème !</h2>\n"
+"<h1>Aidez-nous à résoudre votre problème !</h1>\n"
 "\n"
 "<p>Lire <a href=\"file:///live/image/doc/amnesia/wiki/bug_reporting.en.html\">nos instructions sur le signalement de problèmes</a>.</p>\n"
 "\n"
 "<p><strong>N'incluez pas plus d'informations personnelles que nécessaire !</strong></p>\n"
 "\n"
-"<h3>À propos de votre adresse email</h3>\n"
+"<h2>À propos de votre adresse email</h2>\n"
 "\n"
 "<p>Si cela ne vous dérange pas de divulguer des bribes d'information à votre sujet aux développeurs de T(A)ILS, vous pouvez fournir une adresse email afin que nous puissions vous demander davantage de détails sur le bug. Si vous fournissez aussi une clé PGP publique, nous vous demanderons ces détails par email chiffré.</p>\n"
 "\n"
@@ -139,12 +139,12 @@ msgid "Unable to find encryption key."
 msgstr "Impossible de trouver la clé de chiffrement."
 
 #: ../whisperBack/gui.py:312
-#: ../data/whisperback.ui.h:8
+#: ../data/whisperback.ui.h:9
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:313
-#: ../data/whisperback.ui.h:5
+#: ../data/whisperback.ui.h:6
 msgid "Send feedback in an encrypted mail."
 msgstr "Envoyer vos remarques dans un mail chiffré"
 
@@ -173,22 +173,26 @@ msgid "Copyright &#xA9; 2009-2010 amnesia@boum.org"
 msgstr "Copyright &#xA9; 2009-2010 amnesia@boum.org"
 
 #: ../data/whisperback.ui.h:3
+msgid "Help"
+msgstr "Aide"
+
+#: ../data/whisperback.ui.h:4
 msgid "Optional PGP key to encrypt emails we might send you (key ID, link to the key or public key block):"
 msgstr "Clé PGP optionnelle pour chiffrer les mails que l'on pourrait vous envoyer (identifiant de clé, lien vers la clé ou bloc de clé publique) :"
 
-#: ../data/whisperback.ui.h:4
+#: ../data/whisperback.ui.h:5
 msgid "Optional email address to contact you"
 msgstr "Adresse email optionnelle pour vous contacter"
 
-#: ../data/whisperback.ui.h:6
+#: ../data/whisperback.ui.h:7
 msgid "Summary"
 msgstr "Résumé"
 
-#: ../data/whisperback.ui.h:7
+#: ../data/whisperback.ui.h:8
 msgid "Technical details to include"
 msgstr "Détails techniques à inclure"
 
-#: ../data/whisperback.ui.h:9
+#: ../data/whisperback.ui.h:10
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
 "Copyright (C) 2009-2010 T(A)ILS developers <amnesia@boum.org>\n"
@@ -215,19 +219,19 @@ msgstr ""
 "\n"
 "Vous devez avoir reçu une copie de la Licence Publique Générale GNU avecce programme ; si ce n'est pas le cas, consultez : <http://www.gnu.org/licenses/>.\n"
 
-#: ../data/whisperback.ui.h:25
+#: ../data/whisperback.ui.h:26
 msgid "debugging info"
 msgstr "informations de déboguage"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:27
 msgid "headers"
 msgstr "en-têtes"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:28
 msgid "https://amnesia.boum.org/"
 msgstr "https://amnesia.boum.org/"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:29
 msgid "optional PGP key"
 msgstr "clé PGP optionnelle"
 
