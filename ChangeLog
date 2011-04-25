@@ -203,3 +203,15 @@ Bugfixes
 Minor improvements
 ------------------
  * Add a label for the help section
+
+1.4-rc3
+=======
+
+Minor improvements
+------------------
+ * Update copyright notice
+ * Rename T(A)ILS to Tails
+
+Bugfixes
+--------
+ * Bugfix: make help string actually translated
