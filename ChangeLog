@@ -214,4 +214,13 @@ Minor improvements
 
 Bugfixes
 --------
- * Bugfix: make help string actually translated
+ * Make help string actually translated
+
+1.4
+===
+
+Bugfixes
+--------
+ * Update some forgotten copyright notices
+ * Update french translation version
+ * Correct typo in ChangeLog
