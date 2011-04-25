@@ -3,7 +3,7 @@
 
 ########################################################################
 # WhisperBack - Send feedback in an encrypted mail
-# Copyright (C) 2009-2010 Tails developers <amnesia.org>
+# Copyright (C) 2009-2011 Tails developers <amnesia.org>
 # 
 # This program is  free software; you can redistribute  it and/or modify
 # it under the  terms of the GNU General Public  License as published by
