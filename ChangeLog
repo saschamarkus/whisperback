@@ -197,3 +197,9 @@ Bugfixes
 --------
  * UI: renders whisperback usable on really smallwidgets
 
+1.4-rc2
+=======
+
+Minor improvements
+------------------
+ * Add a label for the help section
