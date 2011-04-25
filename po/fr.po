@@ -1,7 +1,7 @@
 # French translations for PACKAGE package.
-# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2011 Tails developpers <amnesia@boum.org>
 # This file is distributed under the same license as the PACKAGE package.
-# T(A)ILS developpers <amnesia@boum.org>, 2010.
+# Tails developpers <amnesia@boum.org>, 2011.
 #
 msgid ""
 msgstr ""
@@ -151,7 +151,7 @@ msgstr "Envoyer vos remarques dans un mail chiffré"
 
 #: ../whisperBack/gui.py:310
 msgid "Copyright © 2009-2011 Tails developpers (amnesia@boum.org)"
-msgstr "Copyright © 2009-2010 développeurs de Tails (amnesia@boum.org)"
+msgstr "Copyright © 2009-2011 développeurs de Tails (amnesia@boum.org)"
 
 #: ../whisperBack/gui.py:311
 msgid "Tails developers <amnesia@boum.org>"
@@ -212,7 +212,7 @@ msgid ""
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
 "WhisperBack - Envoyer vos remarques dans un email chiffré\n"
-"Copyright (C) 2009-2010 développeurs de Tails <amnesia@boum.org>\n"
+"Copyright (C) 2009-2011 développeurs de Tails <amnesia@boum.org>\n"
 "\n"
 "Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier\n"
 "suivant les termes de la License Piblique Générale GNU telle quepubliée par\n"
