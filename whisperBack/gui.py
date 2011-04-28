@@ -43,6 +43,7 @@ import gtk
 import gobject
 
 import webkit
+import webbrowser
 
 # Used by show_exception_dialog
 import traceback
@@ -117,6 +118,16 @@ class WhisperBackUI(object):
     # Experiment for help
 
     self.htmlhelp = webkit.WebView()
+
+    # Load only local ressources in the embedded webkit
+    # Loading untrusted ressources in such an unprotected browser wouldn't be safe
+    def cb_request_starting(webView, web_frame, web_ressource, request,
+                            response, user_data=None):
+        if not request.get_uri().startswith("file://"):
+            webbrowser.open_new(request.get_uri())
+            request.set_uri(web_frame.get_uri())
+    self.htmlhelp.connect("resource-request-starting", cb_request_starting) 
+
     self.load_htmlhelp()
     self.help_container.add_child(builder, self.htmlhelp, None)
     self.htmlhelp.show()
