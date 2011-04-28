@@ -224,3 +224,10 @@ Bugfixes
  * Update some forgotten copyright notices
  * Update french translation version
  * Correct typo in ChangeLog
+
+1.4.1
+=====
+
+Security fix
+------------
+ * allow only local ressources to be loaded in embedded webkit

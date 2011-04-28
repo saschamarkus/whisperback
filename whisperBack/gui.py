@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 ########################################################################
 
-__version__ = '1.4'
+__version__ = '1.4.1'
 LOCALEDIR = "locale/"
 PACKAGE = "whisperback"
 
