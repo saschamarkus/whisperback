@@ -104,7 +104,7 @@ class Encryption (object):
       context.op_encrypt(to_keys, 1, plain, cipher)
       del plain
       # Go to the beginning of the buffer
-      cipher.seek(0,0)
+      cipher.seek(0, 0)
       # Reads the cipher (= encrypted text)
       return cipher.read()
     except pyme.errors.GPGMEError, e:

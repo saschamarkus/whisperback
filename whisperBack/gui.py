@@ -121,7 +121,7 @@ class WhisperBackUI(object):
     # Load only local ressources in the embedded webkit
     # Loading untrusted ressources in such an unprotected browser
     # wouldn't be safe
-    def cb_request_starting(webView, web_frame, web_ressource, request,
+    def cb_request_starting(web_view, web_frame, web_ressource, request,
                             response, user_data=None):
         if not request.get_uri().startswith("file://"):
             webbrowser.open_new(request.get_uri())
@@ -290,7 +290,7 @@ Internet and mailbox providers?</p>
       close_callback = self.cb_close_exception_dialog
 
     if not parent:
-      parent=self.main_window
+      parent = self.main_window
 
     if isinstance(exception.message, types.MethodType):
         exception_message = exception.message()
