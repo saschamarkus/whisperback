@@ -140,7 +140,6 @@ class WhisperBackUI(object):
         if self.main_window.get_screen().get_width() > 800:
             self.vbox_top_left.set_size_request(400, -1)
             self.help_container.set_size_request(400, -1)
-            pass
 
         self.main_window.maximize()
 
