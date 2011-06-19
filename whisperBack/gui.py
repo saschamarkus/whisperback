@@ -78,7 +78,8 @@ class WhisperBackUI(object):
     self.progression_dialog = builder.get_object("dialogProgression")
     self.progression_main_text = builder.get_object("progressLabelMain")
     self.progression_progressbar = builder.get_object("progressProgressbar")
-    self.progression_secondary_text = builder.get_object("progressLabelSecondary")
+    self.progression_secondary_text = \
+        builder.get_object("progressLabelSecondary")
     self.progression_close = builder.get_object("progressButtonClose")
     self.gpg_dialog = builder.get_object("dialogGpgkeyblock")
     self.gpg_keyblock = builder.get_object("textviewGpgKeyblock")
@@ -88,10 +89,13 @@ class WhisperBackUI(object):
     self.message = builder.get_object("textviewMessage")
     self.contact_email = builder.get_object("entryMail")
     self.contact_gpg_keyblock = builder.get_object("buttonGPGKeyBlock")
-    self.prepended_details = builder.get_object("textviewPrependedInfo")
-    self.include_prepended_details = builder.get_object("checkbuttonIncludePrependedInfo")
+    self.prepended_details = \
+        builder.get_object("textviewPrependedInfo")
+    self.include_prepended_details = \
+        builder.get_object("checkbuttonIncludePrependedInfo")
     self.appended_details = builder.get_object("textviewAppendedInfo")
-    self.include_appended_details = builder.get_object("checkbuttonIncludeAppendedInfo")
+    self.include_appended_details = \
+        builder.get_object("checkbuttonIncludeAppendedInfo")
     self.help_container = builder.get_object("scrolledwindowHelp")
     self.send_button = builder.get_object("buttonSend")
 
@@ -115,7 +119,8 @@ class WhisperBackUI(object):
     self.htmlhelp = webkit.WebView()
 
     # Load only local ressources in the embedded webkit
-    # Loading untrusted ressources in such an unprotected browser wouldn't be safe
+    # Loading untrusted ressources in such an unprotected browser
+    # wouldn't be safe
     def cb_request_starting(webView, web_frame, web_ressource, request,
                             response, user_data=None):
         if not request.get_uri().startswith("file://"):
@@ -148,8 +153,10 @@ class WhisperBackUI(object):
       return
 
     # Shows the debugging details
-    self.prepended_details.get_buffer().set_text(self.backend.prepended_data.rstrip())
-    self.appended_details.get_buffer().set_text(self.backend.appended_data.rstrip())
+    self.prepended_details.get_buffer().set_text(
+        self.backend.prepended_data.rstrip())
+    self.appended_details.get_buffer().set_text(
+        self.backend.appended_data.rstrip())
 
   # CALLBACKS
   def cb_close_application(self, widget, event, data=None):
@@ -225,7 +232,8 @@ Internet and mailbox providers?</p>
         try:
             self.backend.contact_email = self.contact_email.get_text()
         except ValueError, e:
-            self.show_exception_dialog(_("The contact email adress doesn't seem valid."), e)
+            self.show_exception_dialog(
+                _("The contact email adress doesn't seem valid."), e)
             self.progression_dialog.hide()
             return
 
@@ -239,19 +247,23 @@ Internet and mailbox providers?</p>
 
     def cb_finished_progress(e):
         if isinstance(e, smtplib.SMTPException):
-            self.show_exception_dialog(_("Unable to send the mail : SMTP error"), e)
+            self.show_exception_dialog(
+                _("Unable to send the mail : SMTP error"), e)
             self.progression_dialog.hide()
         elif isinstance(e, socket.error):
-            self.show_exception_dialog(_("Unable to connect to the server."), e)
+            self.show_exception_dialog(
+                _("Unable to connect to the server."), e)
             self.progression_dialog.hide()
         elif isinstance(e, Exception):
-            self.show_exception_dialog(_("Unable to create or to send the mail."), e)
+            self.show_exception_dialog(
+                _("Unable to create or to send the mail."), e)
             self.progression_dialog.hide()
         else:
             self.main_window.set_sensitive(False)
             self.progression_close.set_sensitive(True)
             self.progression_progressbar.set_fraction(1.0)
-            self.progression_main_text.set_text(_("Your message has been sent."))
+            self.progression_main_text.set_text(
+                _("Your message has been sent."))
             self.progression_secondary_text.set_text("")
 
     try:
@@ -315,7 +327,8 @@ Internet and mailbox providers?</p>
     about_dialog.set_name(_("WhisperBack"))
     about_dialog.set_comments(_("Send feedback in an encrypted mail."))
     about_dialog.set_license(__licence__)
-    about_dialog.set_copyright(_("Copyright © 2009-2011 Tails developpers (amnesia@boum.org)"))
+    about_dialog.set_copyright(
+        _("Copyright © 2009-2011 Tails developpers (amnesia@boum.org)"))
     about_dialog.set_authors([_("Tails developers <amnesia@boum.org>")])
     about_dialog.set_translator_credits(_("translator-credits"))
     about_dialog.set_website("https://amnesia.boum.org/")

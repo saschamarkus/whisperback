@@ -93,13 +93,17 @@ def is_valid_link(candidate):
     return False
 
 def is_valid_pgp_block(candidate):
-  if re.search(r"-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----", candidate):
+  #pylint: disable=C0301
+  if re.search(r"-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----",
+        candidate):
     return True
   else:
     return False
 
 def is_valid_pgp_id(candidate):
-  if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9f-zA-F]{4} {0,2}){10}$)", candidate):
+  #pylint: disable=C0301
+  if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9f-zA-F]{4} {0,2}){10}$)",
+        candidate):
     return True
   else:
     return False
