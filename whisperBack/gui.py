@@ -377,6 +377,7 @@ Internet and mailbox providers?</p>
     """
     self.gpg_dialog.hide()
 
+  #pylint: disable=R0201
   def close_application(self):
     """
     Closes the application
