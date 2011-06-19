@@ -163,17 +163,17 @@ class SSLFakeFile:
 
     #pylint: disable=C0111
     def readline(self):
-        str = ""
-        chr = None
-        while chr != "\n":
+        string = ""
+        char = None
+        while char != "\n":
           while True:
             try:          
-              chr = self.sslobj.recv(1)
-              str += chr
+              char = self.sslobj.recv(1)
+              string += char
               break
             except gnutls.errors.OperationWouldBlock:
               time.sleep(0.1)
-        return str
+        return string
 
     #pylint: disable=C0111
     def close(self):
