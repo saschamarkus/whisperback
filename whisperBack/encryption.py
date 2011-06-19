@@ -28,7 +28,7 @@
 import pyme.core
 import pyme.errors
 
-import exceptions
+import whisperBack.exceptions
 
 class Encryption (object):
   """Some tools for encryption"""
@@ -55,7 +55,7 @@ class Encryption (object):
         to_key = self.context.get_key(fingerprint, secret=False)
         to_keys.append (to_key)
       except pyme.errors.GPGMEError, e:
-        raise KeyNotFoundException (e.getstring)
+        raise whisperBack.exceptions.KeyNotFoundException (e.getstring)
     return to_keys
     
   def __encrypt_from_keys (self, data, to_keys):
@@ -108,7 +108,7 @@ class Encryption (object):
       # Reads the cipher (= encrypted text)
       return cipher.read()
     except pyme.errors.GPGMEError, e:
-      raise EncryptionException (e.getstring())
+      raise whisperBack.exceptions.EncryptionException (e.getstring())
 
   def encrypt (self, data, to_fingerprints):
     """Encrypts data for a list of recepients
@@ -122,6 +122,6 @@ class Encryption (object):
     to_keys = self.__fingerprints_to_keys (to_fingerprints)
     # Process only if some keys were found
     if len(to_keys) == 0:
-      raise KeyNotFoundException ( _("No keys found.") )
+      raise whisperBack.exceptions.KeyNotFoundException ( _("No keys found.") )
     # Encrypt the data
     return self.__encrypt_from_keys (data, to_keys)

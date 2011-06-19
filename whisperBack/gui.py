@@ -50,9 +50,9 @@ import smtplib
 import socket
 
 # Import our modules
-import exceptions
-import whisperback
-import utils
+import whisperBack.exceptions
+import whisperBack.whisperback
+import whisperBack.utils
 
 class WhisperBackUI(object):
   """
@@ -69,7 +69,7 @@ class WhisperBackUI(object):
 
     builder = gtk.Builder()
     builder.set_translation_domain('whisperback')
-    builder.add_from_file(os.path.join(utils.get_datadir(),
+    builder.add_from_file(os.path.join(whisperBack.utils.get_datadir(),
                                       "whisperback.ui"))
     builder.connect_signals(self)
 
@@ -97,7 +97,7 @@ class WhisperBackUI(object):
 
     try:
       self.main_window.set_icon_from_file(os.path.join(
-          utils.get_pixmapdir(), "whisperback.svg"))
+          whisperBack.utils.get_pixmapdir(), "whisperback.svg"))
     except gobject.GError, e:
       print e
 
@@ -140,9 +140,11 @@ class WhisperBackUI(object):
 
     # Launches the backend
     try:
-      self.backend = whisperback.WhisperBack()
-    except exceptions.MisconfigurationException, e:
-      self.show_exception_dialog(_("Unable to load a valid configuration."), e, self.cb_close_application)
+      self.backend = whisperBack.whisperback.WhisperBack()
+    except whisperBack.exceptions.MisconfigurationException, e:
+      self.show_exception_dialog(
+        _("Unable to load a valid configuration."), e,
+        self.cb_close_application)
       return
 
     # Shows the debugging details
@@ -178,7 +180,7 @@ communication.</p>
 <p>Anyone who can see this reply will probably infer you are
 a Tails user. Time to wonder how much you trust your
 Internet and mailbox providers?</p>
-""") % utils.get_localised_documentation_link(),
+""") % whisperBack.utils.get_localised_documentation_link(),
         "text/html",
         "UTF-8",
         "file:///")

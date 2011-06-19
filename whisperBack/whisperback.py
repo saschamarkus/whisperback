@@ -39,10 +39,10 @@ import os
 import threading
 
 # Import our modules
-import exceptions
-import mail
-import encryption
-import utils
+import whisperBack.exceptions
+import whisperBack.mail
+import whisperBack.encryption
+import whisperBack.utils
 
 class WhisperBack(object):
   """
@@ -50,7 +50,7 @@ class WhisperBack(object):
   """
   
   def set_contact_email(self, email):
-    if utils.is_valid_email(email):
+    if whisperBack.utils.is_valid_email(email):
        self._contact_email = email
     else:
        #XXX use a better exception
@@ -60,9 +60,9 @@ class WhisperBack(object):
                            set_contact_email)
 
   def set_contact_gpgkey(self, gpgkey):
-    if (utils.is_valid_pgp_block(gpgkey) or
-        utils.is_valid_pgp_id(gpgkey) or
-        utils.is_valid_link(gpgkey)):
+    if (whisperBack.utils.is_valid_pgp_block(gpgkey) or
+        whisperBack.utils.is_valid_pgp_id(gpgkey) or
+        whisperBack.utils.is_valid_link(gpgkey)):
        self._contact_gpgkey = gpgkey
     else:
        #XXX use a better exception
@@ -142,19 +142,19 @@ class WhisperBack(object):
     # XXX: Add sanity checks
     
     if not self.to_address:
-        raise exceptions.MisconfigurationException('to_address')
+        raise whisperBack.exceptions.MisconfigurationException('to_address')
     if not self.to_fingerprint:
-        raise exceptions.MisconfigurationException('to_fingerprint')
+        raise whisperBack.exceptions.MisconfigurationException('to_fingerprint')
     if not self.from_address:
-        raise exceptions.MisconfigurationException('from_address')
+        raise whisperBack.exceptions.MisconfigurationException('from_address')
     if not self.mail_subject:
-        raise exceptions.MisconfigurationException('mail_subject')
+        raise whisperBack.exceptions.MisconfigurationException('mail_subject')
     if not self.smtp_host:
-        raise exceptions.MisconfigurationException('smtp_host')
+        raise whisperBack.exceptions.MisconfigurationException('smtp_host')
     if not self.smtp_port:
-        raise exceptions.MisconfigurationException('smtp_port')
+        raise whisperBack.exceptions.MisconfigurationException('smtp_port')
     if not self.smtp_tlscafile:
-        raise exceptions.MisconfigurationException('smtp_tlscafile')
+        raise whisperBack.exceptions.MisconfigurationException('smtp_tlscafile')
 
   def execute_threaded(self, func, args, progress_callback=None, 
                        finished_callback=None, polling_freq=100):
@@ -236,13 +236,14 @@ class WhisperBack(object):
 
     message_body = self.__prepare_body()
 
-    encrypted_message_body = encryption.Encryption(). \
+    encrypted_message_body = whisperBack.encryption.Encryption(). \
                              encrypt(message_body, [self.to_fingerprint])
     
-    mime_message = mail.create_message(self.from_address, self.to_address,
-                                       self.mail_subject, encrypted_message_body)
+    mime_message = whisperBack.mail.create_message(self.from_address,
+                            self.to_address, self.mail_subject,
+                            encrypted_message_body)
 
-    self.execute_threaded(func=mail.send_message_tls,
+    self.execute_threaded(func=whisperBack.mail.send_message_tls,
                           args=(self.from_address, self.to_address,
                                 mime_message, self.smtp_host,
                                 self.smtp_port, self.smtp_tlscafile),

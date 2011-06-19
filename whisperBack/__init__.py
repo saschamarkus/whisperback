@@ -26,7 +26,7 @@
 """
 
 import gettext
-from gui import WhisperBackUI
+from whisperBack.gui import WhisperBackUI
 
 # FIXME: hardcoded path
 gettext.install('whisperback', localedir='/usr/share/locale', unicode=True)
