@@ -350,6 +350,7 @@ Internet and mailbox providers?</p>
 
     """
     if self.backend.contact_gpgkey:
+        #pylint: disable=C0301
         self.gpg_keyblock.get_buffer().set_text(str(self.backend.contact_gpgkey))
     else:
         self.gpg_keyblock.get_buffer().set_text("")
