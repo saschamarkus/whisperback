@@ -271,11 +271,11 @@ Internet and mailbox providers?</p>
 
     try:
         self.backend.send(cb_update_progress, cb_finished_progress)
-    except exceptions.EncryptionException, e:
-        self.show_exception_dialog(_("An error occured during encryption."), e)
-        self.progression_dialog.hide()
-    except exceptions.KeyNotFoundException, e:
+    except whisperBack.exceptions.KeyNotFoundException, e:
         self.show_exception_dialog(_("Unable to find encryption key."), e)
+        self.progression_dialog.hide()
+    except whisperBack.exceptions.EncryptionException, e:
+        self.show_exception_dialog(_("An error occured during encryption."), e)
         self.progression_dialog.hide()
 
     return False
