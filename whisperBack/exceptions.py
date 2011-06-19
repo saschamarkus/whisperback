@@ -21,13 +21,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
-########################################################################
-# 
-# exceptions.py
-#
-# Base exceptions for whisperback
-#
-########################################################################
+"""Base exceptions for whisperback
+
+"""
 
 class WhisperbackException(Exception):
     """Base class for all exceptions raised by WhisperBack"""

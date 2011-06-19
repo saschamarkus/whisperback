@@ -21,13 +21,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
-########################################################################
-# 
-# utils.py
-#
-# Various utility functions
-#
-########################################################################
+"""various WhisperBack utility functions
+
+"""
 
 import os
 import re

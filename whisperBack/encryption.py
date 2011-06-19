@@ -21,13 +21,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
-########################################################################
-# 
-# encryption.py
-#
-# Some tools for encryption
-#
-########################################################################
+"""Some tools for encryption
+
+"""
 
 import pyme.core
 import pyme.errors

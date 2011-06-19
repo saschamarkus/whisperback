@@ -21,13 +21,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
-########################################################################
-# 
-# mail.py
-#
-# Some tools for mailing
-#
-########################################################################
+"""WhisperBack mailing library
+
+"""
 
 import smtplib
 import socket

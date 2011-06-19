@@ -21,13 +21,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
-########################################################################
-#
-# whisperback.py
-#
-# WhisperBack main backend
-#
-########################################################################
+"""WhisperBack main backend
+
+"""
 
 import gobject
 # Workaround an API change: timeout_add was moved from gobject to glib

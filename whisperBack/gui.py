@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
+"""WhisperBack GUI
+
+"""
+
 ########################################################################
 __licence__ = """
 WhisperBack - Send feedback in an encrypted mail
@@ -26,14 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 __version__ = '1.4.1'
 LOCALEDIR = "locale/"
 PACKAGE = "whisperback"
-
-########################################################################
-#
-# gui.py
-#
-# WhisperBack GUI
-#
-########################################################################
 
 import os
 

@@ -21,6 +21,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
+"""WhisperBack - Send feedback in an encrypted mail
+
+"""
+
 import gettext
 from gui import WhisperBackUI
 
