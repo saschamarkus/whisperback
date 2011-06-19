@@ -91,6 +91,7 @@ class WhisperBack(object):
         @param message The content of the feedback
         """
         self.__thread = None
+        self.__error_output = None
 
         # Initialize config variables
         self.to_address = None
@@ -206,7 +207,6 @@ class WhisperBack(object):
                     finished_callback(self.__error_output)
                 return False
 
-        self.__error_output = None
         assert self.__thread is None or not self.__thread.isAlive ()
         self.__thread = threading.Thread(target=save_exception, args=(func, args))
         self.__thread.start()
