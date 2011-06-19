@@ -49,9 +49,9 @@ class Encryption (object):
         for fingerprint in fingerprints:
             try:
                 # The function gpgme_op_keylist_start initiates a key listing
-                # operation inside the context ctx. It sets everything up so that
-                # subsequent invocations of gpgme_op_keylist_next return the keys
-                # in the list.
+                # operation inside the context ctx. It sets everything up so
+                # that subsequent invocations of gpgme_op_keylist_next return
+                # the keys in the list.
                 to_key = self.context.get_key(fingerprint, secret=False)
                 to_keys.append (to_key)
             except pyme.errors.GPGMEError, e:
@@ -122,6 +122,7 @@ class Encryption (object):
         to_keys = self.__fingerprints_to_keys (to_fingerprints)
         # Process only if some keys were found
         if len(to_keys) == 0:
-            raise whisperBack.exceptions.KeyNotFoundException ( _("No keys found.") )
+            raise whisperBack.exceptions.KeyNotFoundException (
+                _("No keys found.") )
         # Encrypt the data
         return self.__encrypt_from_keys (data, to_keys)
