@@ -185,7 +185,7 @@ communication.</p>
 <p>Anyone who can see this reply will probably infer you are
 a Tails user. Time to wonder how much you trust your
 Internet and mailbox providers?</p>
-""") % whisperBack.utils.get_localised_documentation_link(),
+""") % whisperBack.utils.get_localised_doc_link(),
             "text/html",
             "UTF-8",
             "file:///")

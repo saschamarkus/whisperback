@@ -151,7 +151,7 @@ def get_wiki_supported_languages():
     except KeyError:
         return 'en'
 
-def get_localised_documentation_language():
+def get_localised_doc_language():
     """Return the best documentation language according to the locale
 
     @returns  the language code of the localised documentation if available, or
@@ -166,12 +166,12 @@ def get_localised_documentation_language():
     else:
         return 'en'
 
-def get_localised_documentation_link():
+def get_localised_doc_link():
     """Return the link to the localised documentation
 
     @returns  the link to the localised documentation if available, or to the
             english version
     """
     return ("file:///live/image/doc/amnesia/wiki/bug_reporting." +
-        get_localised_documentation_language() +
+        get_localised_doc_language() +
         ".html")
