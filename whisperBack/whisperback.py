@@ -142,6 +142,7 @@ class WhisperBack(object):
         finally:
             if f:
                 f.close()
+        #pylint: disable=W0122
         exec code in self.__dict__
 
     def __check_conf(self):
