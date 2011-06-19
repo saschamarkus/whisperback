@@ -86,6 +86,7 @@ def is_valid_link(candidate):
   - a scheme http(s) or ftp(S)
   """
   parseresult = urlparse.urlparse(candidate)
+  #pylint: disable=E1101
   if (re.search(r'^(ht|f)tp(s)?$', parseresult.scheme) and
       re.search(r'^(\w{1,}\.){1,}\w{1,}$', parseresult.hostname)):
     return True
