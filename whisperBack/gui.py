@@ -54,6 +54,7 @@ import whisperBack.exceptions
 import whisperBack.whisperback
 import whisperBack.utils
 
+#pylint: disable=R0902
 class WhisperBackUI(object):
   """
   This class provides a window containing the GTK+ user interface.
