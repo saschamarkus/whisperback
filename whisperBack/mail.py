@@ -102,7 +102,7 @@ def starttls(self, keyfile = None, certfile = None, cafile=None):
   (resp, reply) = self.docmd("STARTTLS")
   if resp == 220:
     
-      from gnutls.crypto import X509Certificate, X509CRL
+      from gnutls.crypto import X509Certificate
       from gnutls.connection import ClientSession, X509Credentials
       # Don't worry, this is a monkey patch
       #pylint: disable=W0621
