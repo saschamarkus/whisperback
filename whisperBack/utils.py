@@ -93,6 +93,13 @@ def is_valid_link(candidate):
     return False
 
 def is_valid_pgp_block(candidate):
+  """Check if candidate seems to be a PGP public key block
+
+  @param    candidate the string to be checked
+
+  @returns  true if candidate starts with `-----BEGIN PGP PUBLIC KEY BLOCK----`
+            and ends with `-----END PGP PUBLIC KEY BLOCK-----`
+  """
   #pylint: disable=C0301
   if re.search(r"-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----",
         candidate):
@@ -101,6 +108,13 @@ def is_valid_pgp_block(candidate):
     return False
 
 def is_valid_pgp_id(candidate):
+  """Check if candidate looks like a pgp key ID
+
+  @param    candidate the string to be checked
+
+  @returns  true if candidate is either an 8 or 16 digit hex number or a 40
+            digit hex fingerprint
+  """
   #pylint: disable=C0301
   if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9f-zA-F]{4} {0,2}){10}$)",
         candidate):
@@ -109,6 +123,12 @@ def is_valid_pgp_id(candidate):
     return False
 
 def is_valid_email(candidate):
+  """Check if candidate looks like an email address
+
+  @param    candidate the string to be checked
+
+  @returns  true if candidate is in the form test@example.com
+  """
   if re.search(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", candidate):
     return True
   else:
@@ -117,12 +137,25 @@ def is_valid_email(candidate):
 # Documentation localisation helpers
 
 def get_wiki_supported_languages():
+    """Return the languages supported by the documentation
+
+    Try to get the list of supported languages according to the
+    $TAILS_WIKI_SUPPORTED_LANGUAGES environnement variable. If unset, fallback
+    to `en`
+
+    @returns  a list of languages codes supported by the documentation
+    """
     try:
         return os.environ["TAILS_WIKI_SUPPORTED_LANGUAGES"].split(' ')
     except KeyError:
         return 'en'
 
 def get_localised_documentation_language():
+    """Return the best documentation language according to the locale
+
+    @returns  the language code of the localised documentation if available, or
+              fallback to `en`
+    """
     # locale.getlocale returns a tuple (language code, encoding)
     # the language is the two first character of the RFC 1766 "language code"
     system_language = locale.getdefaultlocale()[0][0:2]
@@ -133,6 +166,11 @@ def get_localised_documentation_language():
         return 'en'
 
 def get_localised_documentation_link():
+    """Return the link to the localised documentation
+
+    @returns  the link to the localised documentation if available, or to the
+              english version
+    """
     return ("file:///live/image/doc/amnesia/wiki/bug_reporting." +
         get_localised_documentation_language() +
         ".html")

@@ -50,6 +50,9 @@ class WhisperBack(object):
   """
   
   def set_contact_email(self, email):
+    """Sets an optional email address to be used for furether communication
+
+    """
     if whisperBack.utils.is_valid_email(email):
        self._contact_email = email
     else:
@@ -60,6 +63,9 @@ class WhisperBack(object):
                            set_contact_email)
 
   def set_contact_gpgkey(self, gpgkey):
+    """Sets an optional PGP key to be used for furether communication
+
+    """
     if (whisperBack.utils.is_valid_pgp_block(gpgkey) or
         whisperBack.utils.is_valid_pgp_id(gpgkey) or
         whisperBack.utils.is_valid_link(gpgkey)):

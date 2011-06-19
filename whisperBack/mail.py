@@ -84,6 +84,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
       smtp.quit()
 
 class TLSError(Exception):
+    """Exception raised if problem happens in STARTTLS step"""
     pass
 
 # This is a monkey patch to make the starttls function of libsmtp use
