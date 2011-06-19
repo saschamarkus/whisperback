@@ -188,6 +188,7 @@ class WhisperBack(object):
     #pylint: disable=C0111
     def save_exception(func, args):
         try:
+            #pylint: disable=W0142
             func(*args)
         except Exception, e:
             self.__error_output = e
