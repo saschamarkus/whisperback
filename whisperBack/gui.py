@@ -128,7 +128,7 @@ class WhisperBackUI(object):
         if not request.get_uri().startswith("file://"):
             webbrowser.open_new(request.get_uri())
             request.set_uri(web_frame.get_uri())
-    self.htmlhelp.connect("resource-request-starting", cb_request_starting) 
+    self.htmlhelp.connect("resource-request-starting", cb_request_starting)
 
     self.load_htmlhelp()
     self.help_container.add_child(builder, self.htmlhelp, None)

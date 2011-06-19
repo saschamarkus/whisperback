@@ -34,7 +34,7 @@ import locale
 
 def guess_prefix ():
   """Tries to guess the prefix
-  
+
   @return The guessed prefix"""
 
   # XXX: hardcoded path !
@@ -47,7 +47,7 @@ def guess_prefix ():
 
 def get_sharedir ():
   """Tries to guess the shared data directiry
-  
+
   @return The guessed shared data directiry"""
 
   if guess_prefix():
@@ -57,7 +57,7 @@ def get_sharedir ():
 
 def get_datadir ():
   """Tries to guess the datadir
-  
+
   @return The guessed datadir"""
   if guess_prefix():
     return os.path.join (get_sharedir(), "whisperback")
@@ -66,7 +66,7 @@ def get_datadir ():
 
 def get_pixmapdir ():
   """Tries to guess the pixmapdir
-  
+
   @return The guessed pixmapdir"""
 
   if guess_prefix():
@@ -78,7 +78,7 @@ def get_pixmapdir ():
 
 def is_valid_link(candidate):
   """Check if candidate seems to be a internet link
-  
+
   @param candidate the URL to be checked
 
   @returns true if candidate is an URL with:
