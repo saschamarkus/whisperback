@@ -28,6 +28,7 @@
 import gobject
 # Workaround an API change: timeout_add was moved from gobject to glib
 # in 2.16
+#pylint: disable=C0301,C0111,C0103,W0232,R0903
 if gobject.pygobject_version[:2] >= (2, 16):
     import glib
 else:
@@ -184,6 +185,7 @@ class WhisperBack(object):
     @param polling_freq       (optional) the interal between polling
                               iterations (in ms).
     """
+    #pylint: disable=C0111
     def save_exception(func, args):
         try:
             func(*args)

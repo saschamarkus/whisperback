@@ -122,6 +122,7 @@ class WhisperBackUI(object):
     # Load only local ressources in the embedded webkit
     # Loading untrusted ressources in such an unprotected browser
     # wouldn't be safe
+    #pylint: disable=C0111
     def cb_request_starting(web_view, web_frame, web_ressource, request,
                             response, user_data=None):
         if not request.get_uri().startswith("file://"):
@@ -249,9 +250,11 @@ Internet and mailbox providers?</p>
     if not self.include_appended_details.get_active():
         self.backend.appended_data = ""
 
+    #pylint: disable=C0111
     def cb_update_progress():
         self.progression_progressbar.pulse()
 
+    #pylint: disable=C0111
     def cb_finished_progress(e):
         if isinstance(e, smtplib.SMTPException):
             self.show_exception_dialog(

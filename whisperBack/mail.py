@@ -157,6 +157,7 @@ class SSLFakeFile:
     def __init__(self, sslobj):
         self.sslobj = sslobj
 
+    #pylint: disable=C0111
     def readline(self):
         str = ""
         chr = None
@@ -170,6 +171,7 @@ class SSLFakeFile:
               time.sleep(0.1)
         return str
 
+    #pylint: disable=C0111
     def close(self):
         pass
 
