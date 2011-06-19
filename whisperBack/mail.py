@@ -51,6 +51,7 @@ def create_message (from_address, to_address, subject, message):
   
   return msg.as_string()
 
+#pylint: disable=R0913
 def send_message_tls (from_address, to_address, message, host="localhost",
                   port=25, tls_cafile=None):
   """Sends a mail
