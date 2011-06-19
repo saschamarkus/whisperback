@@ -117,7 +117,7 @@ class WhisperBackUI(object):
                 underline ( _("Desired result") ) + "\n"*4,
             self.message.get_buffer().create_tag(family="Monospace"))
 
-
+        #pylint: disable=E1101
         self.htmlhelp = webkit.WebView()
 
         # Load only local ressources in the embedded webkit
