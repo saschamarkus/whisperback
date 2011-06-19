@@ -104,7 +104,9 @@ def starttls(self, keyfile = None, certfile = None, cafile=None):
     
       from gnutls.crypto import X509Certificate, X509CRL
       from gnutls.connection import ClientSession, X509Credentials
-      import socket, struct
+      # Don't worry, this is a monkey patch
+      #pylint: disable=W0621
+      import struct
       
       tv = struct.pack('ii', int(6), int(0))
       self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_RCVTIMEO, tv)
