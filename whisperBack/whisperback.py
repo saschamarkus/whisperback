@@ -60,6 +60,7 @@ class WhisperBack(object):
             #XXX use a better exception
             raise ValueError, _("Invalid contact email: %s" % email)
 
+    #pylint: disable=W0212
     contact_email = property(lambda self: self._contact_email,
                              set_contact_email)
 
@@ -79,6 +80,7 @@ class WhisperBack(object):
                 message = _("Invalid contact OpenPGP public key block")
             raise ValueError, message
 
+    #pylint: disable=W0212
     contact_gpgkey = property(lambda self: self._contact_gpgkey,
                                set_contact_gpgkey)
 
