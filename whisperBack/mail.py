@@ -91,6 +91,7 @@ class TLSError(Exception):
 # This is a monkey patch to make the starttls function of libsmtp use
 # starttls, as the buildin doesn't really check certificates and doesn't
 # have a timeout parameter
+#pylint: disable=W0613
 def starttls(self, keyfile = None, certfile = None, cafile=None):
   """Puts the connection to the SMTP server into TLS mode.
 
