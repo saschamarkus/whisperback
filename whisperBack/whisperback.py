@@ -45,6 +45,7 @@ import whisperBack.mail
 import whisperBack.encryption
 import whisperBack.utils
 
+# pylint: disable=R0902
 class WhisperBack(object):
     """
     This class contains the backend which actually sends the feedback
