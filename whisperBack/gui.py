@@ -123,7 +123,7 @@ class WhisperBackUI(object):
         # Load only local ressources in the embedded webkit
         # Loading untrusted ressources in such an unprotected browser
         # wouldn't be safe
-        #pylint: disable=C0111
+        #pylint: disable=C0111,R0913
         def cb_request_starting(web_view, web_frame, web_ressource, request,
                                 response, user_data=None):
             if not request.get_uri().startswith("file://"):
