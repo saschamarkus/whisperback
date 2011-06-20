@@ -19,13 +19,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
-########################################################################
-# 
-# whisperback
-#
-# WhisperBack launcher script
-#
-########################################################################
+"""WhisperBack launcher script
+
+"""
 
 import sys
 import gtk
