@@ -133,6 +133,6 @@ def get_localised_documentation_language():
         return 'en'
 
 def get_localised_documentation_link():
-    return ("file:///live/image/doc/amnesia/wiki/bug_reporting." +
+    return ("file:///usr/share/doc/tails/website/bug_reporting." +
         get_localised_documentation_language() +
         ".html")
