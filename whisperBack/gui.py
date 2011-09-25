@@ -261,12 +261,14 @@ Internet and mailbox providers?</p>
     return False
 
   def show_exception_dialog(self, message, exception,
-                            close_callback=None, parent=None):
+                            close_callback=None, parent=None,
+                            buttons=gtk.BUTTONS_CLOSE):
     """Shows a dialog reporting an exception
 
-    @param message A string explaining the exception
-    @param exception The exception
-    @param close_callback An alternative callback to use on closing
+    @param message          A string explaining the exception
+    @param exception        The exception
+    @param close_callback   An alternative callback to use on closing
+    @param buttons          Buttons to display
     """
 
     if not close_callback:
@@ -283,7 +285,7 @@ Internet and mailbox providers?</p>
     dialog = gtk.MessageDialog(parent=parent,
                                flags=gtk.DIALOG_MODAL,
                                type=gtk.MESSAGE_ERROR,
-                               buttons=gtk.BUTTONS_CLOSE,
+                               buttons=buttons,
                                message_format=message)
     dialog.format_secondary_text(exception_message)
     
