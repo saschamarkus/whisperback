@@ -234,6 +234,17 @@ class WhisperBack(object):
     return encryption.Encryption().encrypt(self.get_message_body(),
                                            [self.to_fingerprint])
 
+  def save(self, path):
+    """Save the message into a file
+
+    @param path path of the file to save
+    """
+    f = open(path)
+    try:
+        f.write(self.get_encrypted_message_body())
+    finally:
+        f.close()
+
   def send(self, progress_callback=None, finished_callback=None):
     """Actually sends the message
     
