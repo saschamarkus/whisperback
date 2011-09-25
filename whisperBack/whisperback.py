@@ -208,7 +208,7 @@ class WhisperBack(object):
   # XXX: static would be best, but I get a problem with self.*
   #execute_threaded = staticmethod(execute_threaded)
 
-  def __prepare_body(self):
+  def get_message_body(self):
     """Returns the content of the message body
 
     Aggregate all informations to prepare the message body.
@@ -228,6 +228,12 @@ class WhisperBack(object):
     body += "%s\n" % self.appended_data
     return body
 
+  def get_encrypted_message_body(self):
+    """Returns the encrypted body of the email to be send"""
+
+    return encryption.Encryption().encrypt(self.get_message_body(),
+                                           [self.to_fingerprint])
+
   def send(self, progress_callback=None, finished_callback=None):
     """Actually sends the message
     
@@ -238,11 +244,8 @@ class WhisperBack(object):
     # XXX: It's really strange that some exceptions from this method are
     #      raised and some other transmitted to finished_callback…
 
-    message_body = self.__prepare_body()
+    encrypted_message_body = self.get_encrypted_message_body()
 
-    encrypted_message_body = encryption.Encryption(). \
-                             encrypt(message_body, [self.to_fingerprint])
-    
     mime_message = mail.create_message(self.from_address, self.to_address,
                                        self.mail_subject, encrypted_message_body)
 
