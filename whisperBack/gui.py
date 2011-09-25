@@ -161,13 +161,6 @@ class WhisperBackUI(object):
     self.close_application()
     return False
 
-  def cb_close_application(self, widget, data=None):
-    """Callback function for the main window's close event
-
-    """
-    self.close_application()
-    return False
-
   def load_htmlhelp(self):
     self.htmlhelp.load_string(_("""<h1>Help us fix your bug!</h1>
 <p>Read <a href="%s">our bug reporting instructions</a>.</p>
