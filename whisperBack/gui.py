@@ -8,7 +8,7 @@
 ########################################################################
 __licence__ = """
 WhisperBack - Send feedback in an encrypted mail
-Copyright (C) 2009-2011 Tails developers <amnesia.org>
+Copyright (C) 2009-2011 Tails developers <tails@boum.org>
 
 This file is part of WhisperBack
 
@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 ########################################################################
 
-__version__ = '1.4.1'
+__version__ = '1.4.2'
 LOCALEDIR = "locale/"
 PACKAGE = "whisperback"
 
@@ -333,10 +333,10 @@ Internet and mailbox providers?</p>
         about_dialog.set_comments(_("Send feedback in an encrypted mail."))
         about_dialog.set_license(__licence__)
         about_dialog.set_copyright(
-            _("Copyright © 2009-2011 Tails developpers (amnesia@boum.org)"))
-        about_dialog.set_authors([_("Tails developers <amnesia@boum.org>")])
+            _("Copyright © 2009-2011 Tails developpers (tails@boum.org)"))
+        about_dialog.set_authors([_("Tails developers <tails@boum.org>")])
         about_dialog.set_translator_credits(_("translator-credits"))
-        about_dialog.set_website("https://amnesia.boum.org/")
+        about_dialog.set_website("https://tails.boum.org/")
         about_dialog.connect("response", gtk.Widget.hide_on_delete)
         about_dialog.show()
 

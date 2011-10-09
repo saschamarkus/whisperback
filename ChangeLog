@@ -231,3 +231,10 @@ Bugfixes
 Security fix
 ------------
  * allow only local ressources to be loaded in embedded webkit
+
+1.4.2
+=====
+
+Bugfixes
+--------
+ * fix link to embedded documentation

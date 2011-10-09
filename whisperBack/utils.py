@@ -172,6 +172,6 @@ def get_localised_doc_link():
     @returns  the link to the localised documentation if available, or to the
             english version
     """
-    return ("file:///live/image/doc/amnesia/wiki/bug_reporting." +
+    return ("file:///usr/share/doc/tails/website/bug_reporting." +
         get_localised_doc_language() +
         ".html")
