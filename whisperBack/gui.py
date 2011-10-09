@@ -296,6 +296,7 @@ If it doesn't work, you will be offered to save the bug report."), e)
         @param close_callback   An alternative callback to use on closing
         @param buttons          Buttons to display
         """
+        #pylint: disable=C0111
         def cb_save_response(widget, event, data=None):
             if event == gtk.RESPONSE_ACCEPT:
                 try:
@@ -306,6 +307,7 @@ If it doesn't work, you will be offered to save the bug report."), e)
             widget.hide()
             self.main_window.set_sensitive(True)
 
+        #pylint: disable=C0111
         def cb_response(widget, event, data=None):
             widget.hide()
             if event == gtk.RESPONSE_YES:
