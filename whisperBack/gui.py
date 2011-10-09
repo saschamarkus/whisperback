@@ -258,7 +258,12 @@ Internet and mailbox providers?</p>
                 else:
                     exception_string = _("Unable to create or to send the mail.")
 
-                self.show_exception_dialog_with_save(exception_string, e)
+                if self.backend.send_attempts <= 1:
+                    self.show_exception_dialog(exception_string +
+                        "\n\nPlease try to connect to the network and click send again." +
+                        "If it doesn't work, you will be offered to save the bug report.", e)
+                else:
+                    self.show_exception_dialog_with_save(exception_string, e)
                 self.progression_dialog.hide()
             else:
                 self.main_window.set_sensitive(False)
@@ -314,8 +319,6 @@ Internet and mailbox providers?</p>
 
             else:
                 self.main_window.set_sensitive(True)
-
-        # Try to send a 2nd time before saving
 
         #XXX: fix string
         suggestion = _("The bug report could not be sent, likely \
