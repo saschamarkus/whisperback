@@ -239,7 +239,7 @@ class WhisperBack(object):
 
     @param path path of the file to save
     """
-    f = open(path)
+    f = open(path, 'w')
     try:
         f.write(self.get_encrypted_message_body())
     finally:
