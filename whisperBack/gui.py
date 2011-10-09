@@ -260,6 +260,57 @@ Internet and mailbox providers?</p>
 
     return False
 
+  def show_exception_dialog_with_save(self, message, exception):
+    """Shows a dialog reporting an exception and prompting the user to
+    save the debugging data as a file
+
+    @param message          A string explaining the exception
+    @param exception        The exception
+    @param close_callback   An alternative callback to use on closing
+    @param buttons          Buttons to display
+    """
+    def cb_save_response(widget, event, data=None):
+        if event == gtk.RESPONSE_ACCEPT:
+            try:
+                self.backend.save(widget.get_filename())
+            except IOError, e:
+                self.show_exception_dialog(_("Unable to save %s.") % widget.get_filename(), e)
+        widget.hide()
+        self.main_window.set_sensitive(True)
+
+    def cb_response(widget, event, data=None):
+        widget.hide()
+        if event == gtk.RESPONSE_YES:
+            save_dialog = gtk.FileChooserDialog(title=None,
+                              parent=self.main_window,
+                              action=gtk.FILE_CHOOSER_ACTION_SAVE,
+                              buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL,
+                                       gtk.STOCK_SAVE, gtk.RESPONSE_ACCEPT))
+
+
+            save_dialog.set_local_only(True)
+            save_dialog.connect("response", cb_save_response)
+            save_dialog.show()
+
+        else:
+            self.main_window.set_sensitive(True)
+
+    # Try to send a 2nd time before saving
+
+    #XXX: fix string
+    suggestion = _("The bug report could not be sent, likely \
+due to network problems. As a work-around you can save the bug report as a \
+file on a USB drive and try to send it to us at tails@boum.org from your email \
+account using a system with a functional Internet connection. Note that your \
+bug report will not be anonymous when doing so unless you take further steps \
+yourself (e.g. using Tor with a throw-away email account). \n\
+\n\
+Do you want to save the bug report to a file")
+    self.show_exception_dialog(message + "\n\n" + suggestion, exception,
+                               parent=self.progression_dialog,
+                               close_callback=cb_response,
+                               buttons=gtk.BUTTONS_YES_NO)
+
   def show_exception_dialog(self, message, exception,
                             close_callback=None, parent=None,
                             buttons=gtk.BUTTONS_CLOSE):
