@@ -154,7 +154,7 @@ class WhisperBackUI(object):
     self.appended_details.get_buffer().set_text(self.backend.appended_data.rstrip())
 
   # CALLBACKS
-  def cb_close_application(self, widget, event, data=None):
+  def cb_close_application(self, widget, data=None):
     """Callback function for the main window's close event
     
     """
