@@ -301,7 +301,8 @@ If it doesn't work, you will be offered to save the bug report."), e)
                 try:
                     self.backend.save(widget.get_filename())
                 except IOError, e:
-                    self.show_exception_dialog(_("Unable to save %s.") % widget.get_filename(), e)
+                    self.show_exception_dialog(_("Unable to save %s.")
+                                               % widget.get_filename(), e)
             widget.hide()
             self.main_window.set_sensitive(True)
 
@@ -309,10 +310,10 @@ If it doesn't work, you will be offered to save the bug report."), e)
             widget.hide()
             if event == gtk.RESPONSE_YES:
                 save_dialog = gtk.FileChooserDialog(title=None,
-                                  parent=self.main_window,
-                                  action=gtk.FILE_CHOOSER_ACTION_SAVE,
-                                  buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL,
-                                           gtk.STOCK_SAVE, gtk.RESPONSE_ACCEPT))
+                              parent=self.main_window,
+                              action=gtk.FILE_CHOOSER_ACTION_SAVE,
+                              buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL,
+                                       gtk.STOCK_SAVE, gtk.RESPONSE_ACCEPT))
 
 
                 save_dialog.set_local_only(True)
