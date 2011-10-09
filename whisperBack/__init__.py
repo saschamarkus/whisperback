@@ -21,8 +21,12 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
+"""WhisperBack - Send feedback in an encrypted mail
+
+"""
+
 import gettext
-from gui import WhisperBackUI
+from whisperBack.gui import WhisperBackUI
 
 # FIXME: hardcoded path
 gettext.install('whisperback', localedir='/usr/share/locale', unicode=True)

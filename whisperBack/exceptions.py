@@ -21,13 +21,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
-########################################################################
-# 
-# exceptions.py
-#
-# Base exceptions for whisperback
-#
-########################################################################
+"""Base exceptions for whisperback
+
+"""
 
 class WhisperbackException(Exception):
     """Base class for all exceptions raised by WhisperBack"""
@@ -36,20 +32,23 @@ class WhisperbackException(Exception):
 # Used in whisperback.py
 
 class MisconfigurationException(WhisperbackException):
-  """This exception is raised when the configuartion can't be properly
-  loaded
+    """This exception is raised when the configuartion can't be properly
+    loaded
 
-  """
-  def __init__(self, variable):
-    WhisperbackException.__init__(self, _("The variable %s was not found in any of the configuation files /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py") % variable)
+    """
+    def __init__(self, variable):
+        WhisperbackException.__init__(self,
+            _("The variable %s was not found in any of the configuation files"
+            "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py")
+            % variable)
 
 # Used in encryption.py
 
 class EncryptionException (WhisperbackException):
-  """This exception is raised when GPGME fails to encrypt the data"""
-  pass
+    """This exception is raised when GPGME fails to encrypt the data"""
+    pass
 
 class KeyNotFoundException (EncryptionException):
-  """This exception is raised when GPGME can't find the key it searches 
-  in the keyring"""
-  pass
+    """This exception is raised when GPGME can't find the key it searches 
+    in the keyring"""
+    pass

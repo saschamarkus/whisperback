@@ -21,13 +21,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################
 
-########################################################################
-# 
-# utils.py
-#
-# Various utility functions
-#
-########################################################################
+"""various WhisperBack utility functions
+
+"""
 
 import os
 import re
@@ -37,92 +33,130 @@ import locale
 # Ugly pathes finder utilities
 
 def guess_prefix ():
-  """Tries to guess the prefix
-  
-  @return The guessed prefix"""
+    """Tries to guess the prefix
 
-  # XXX: hardcoded path !
-  if os.path.exists ("/usr/local/share/whisperback"):
-    return "/usr/local"
-  elif os.path.exists ("/usr/share/whisperback"):
-    return "/usr"
-  else:
-    return None
+    @return The guessed prefix"""
+
+    # XXX: hardcoded path !
+    if os.path.exists ("/usr/local/share/whisperback"):
+        return "/usr/local"
+    elif os.path.exists ("/usr/share/whisperback"):
+        return "/usr"
+    else:
+        return None
 
 def get_sharedir ():
-  """Tries to guess the shared data directiry
-  
-  @return The guessed shared data directiry"""
+    """Tries to guess the shared data directiry
 
-  if guess_prefix():
-    return os.path.join (guess_prefix(), "share")
-  else:
-    return "data"
+    @return The guessed shared data directiry"""
+
+    if guess_prefix():
+        return os.path.join (guess_prefix(), "share")
+    else:
+        return "data"
 
 def get_datadir ():
-  """Tries to guess the datadir
-  
-  @return The guessed datadir"""
-  if guess_prefix():
-    return os.path.join (get_sharedir(), "whisperback")
-  else:
-    return "data"
+    """Tries to guess the datadir
+
+    @return The guessed datadir"""
+    if guess_prefix():
+        return os.path.join (get_sharedir(), "whisperback")
+    else:
+        return "data"
 
 def get_pixmapdir ():
-  """Tries to guess the pixmapdir
-  
-  @return The guessed pixmapdir"""
+    """Tries to guess the pixmapdir
 
-  if guess_prefix():
-    return os.path.join (get_sharedir(), "pixmaps")
-  else:
-    return "data"
+    @return The guessed pixmapdir"""
+
+    if guess_prefix():
+        return os.path.join (get_sharedir(), "pixmaps")
+    else:
+        return "data"
 
 # Input validation fuctions
 
 def is_valid_link(candidate):
-  """Check if candidate seems to be a internet link
-  
-  @param candidate the URL to be checked
+    """Check if candidate seems to be a internet link
 
-  @returns true if candidate is an URL with:
-  - an hostname of the form domain.tld
-  - a scheme http(s) or ftp(S)
-  """
-  parseresult = urlparse.urlparse(candidate)
-  if (re.search(r'^(ht|f)tp(s)?$', parseresult.scheme) and
-      re.search(r'^(\w{1,}\.){1,}\w{1,}$', parseresult.hostname)):
-    return True
-  else:
-    return False
+    @param candidate the URL to be checked
+
+    @returns true if candidate is an URL with:
+    - an hostname of the form domain.tld
+    - a scheme http(s) or ftp(S)
+    """
+    parseresult = urlparse.urlparse(candidate)
+    #pylint: disable=E1101
+    if (re.search(r'^(ht|f)tp(s)?$', parseresult.scheme) and
+        re.search(r'^(\w{1,}\.){1,}\w{1,}$', parseresult.hostname)):
+        return True
+    else:
+        return False
 
 def is_valid_pgp_block(candidate):
-  if re.search(r"-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----", candidate):
-    return True
-  else:
-    return False
+    """Check if candidate seems to be a PGP public key block
+
+    @param    candidate the string to be checked
+
+    @returns  true if candidate starts with `-----BEGIN PGP PUBLIC KEY BLOCK----`
+              and ends with `-----END PGP PUBLIC KEY BLOCK-----`
+    """
+    #pylint: disable=C0301
+    if re.search(r"-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----",
+            candidate):
+        return True
+    else:
+        return False
 
 def is_valid_pgp_id(candidate):
-  if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9f-zA-F]{4} {0,2}){10}$)", candidate):
-    return True
-  else:
-    return False
+    """Check if candidate looks like a pgp key ID
+
+    @param    candidate the string to be checked
+
+    @returns  true if candidate is either an 8 or 16 digit hex number or a 40
+              digit hex fingerprint
+    """
+    #pylint: disable=C0301
+    if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9f-zA-F]{4} {0,2}){10}$)",
+            candidate):
+        return True
+    else:
+        return False
 
 def is_valid_email(candidate):
-  if re.search(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", candidate):
-    return True
-  else:
-    return False
+    """Check if candidate looks like an email address
+
+    @param    candidate the string to be checked
+
+    @returns  true if candidate is in the form test@example.com
+    """
+    if re.search(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", candidate):
+        return True
+    else:
+        return False
 
 # Documentation localisation helpers
 
 def get_wiki_supported_languages():
+    """Return the languages supported by the documentation
+
+    Try to get the list of supported languages according to the
+    $TAILS_WIKI_SUPPORTED_LANGUAGES environnement variable. If unset, fallback
+    to `en`
+
+    @returns  a list of languages codes supported by the documentation
+    """
     try:
         return os.environ["TAILS_WIKI_SUPPORTED_LANGUAGES"].split(' ')
     except KeyError:
         return 'en'
 
-def get_localised_documentation_language():
+def get_localised_doc_language():
+    """Return the best documentation language according to the locale
+
+    @returns  the language code of the localised documentation if available, or
+            fallback to `en`
+    """
     # locale.getlocale returns a tuple (language code, encoding)
     # the language is the two first character of the RFC 1766 "language code"
     system_language = locale.getdefaultlocale()[0][0:2]
@@ -132,7 +166,12 @@ def get_localised_documentation_language():
     else:
         return 'en'
 
-def get_localised_documentation_link():
+def get_localised_doc_link():
+    """Return the link to the localised documentation
+
+    @returns  the link to the localised documentation if available, or to the
+            english version
+    """
     return ("file:///usr/share/doc/tails/website/bug_reporting." +
-        get_localised_documentation_language() +
+        get_localised_doc_language() +
         ".html")
