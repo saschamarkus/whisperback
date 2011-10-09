@@ -351,7 +351,7 @@ Do you want to save the bug report to a file")
     
     """
     self.main_window.set_sensitive(True)
-    widget.destroy()
+    widget.hide()
     return False
 
   def show_about_dialog(self):
