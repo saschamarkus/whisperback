@@ -125,6 +125,7 @@ class WhisperBack(object):
         self.message = message
         self._contact_email = None
         self._contact_gpgkey = None
+        self.send_attempts = 0
 
     def __load_conf(self, config_file_path):
         """Loads a configuration file from config_file_path and executes it
@@ -264,6 +265,8 @@ class WhisperBack(object):
         
         # XXX: It's really strange that some exceptions from this method are
         #      raised and some other transmitted to finished_callback…
+
+        self.send_attempts = self.send_attempts + 1
         
         encrypted_message_body = self.get_encrypted_message_body()
 
