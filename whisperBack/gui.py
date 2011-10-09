@@ -259,9 +259,11 @@ Internet and mailbox providers?</p>
                     exception_string = _("Unable to create or to send the mail.")
 
                 if self.backend.send_attempts <= 1:
-                    self.show_exception_dialog(exception_string +
-                        "\n\nPlease try to connect to the network and click send again." +
-                        "If it doesn't work, you will be offered to save the bug report.", e)
+                    self.show_exception_dialog(exception_string + _("\n\n\
+The bug report could not be sent, likely due to network problems. \
+Please try to reconnect to the network and click send again.\n\
+\n\
+If it doesn't work, you will be offered to save the bug report."), e)
                 else:
                     self.show_exception_dialog_with_save(exception_string, e)
                 self.progression_dialog.hide()
@@ -322,13 +324,15 @@ Internet and mailbox providers?</p>
 
         #XXX: fix string
         suggestion = _("The bug report could not be sent, likely \
-due to network problems. As a work-around you can save the bug report as a \
-file on a USB drive and try to send it to us at tails@boum.org from your email \
-account using a system with a functional Internet connection. Note that your \
-bug report will not be anonymous when doing so unless you take further steps \
-yourself (e.g. using Tor with a throw-away email account). \n\
+due to network problems.\n\
 \n\
-Do you want to save the bug report to a file")
+As a work-around you can save the bug report as a file on a USB drive and try \
+to send it to us at %s from your email account using a system with a \
+functional Internet connection. Note that your bug report will not be \
+anonymous when doing so unless you take further steps yourself (e.g. using \
+Tor with a throw-away email account).\n\
+\n\
+Do you want to save the bug report to a file?" % self.backend.to_address)
         self.show_exception_dialog(message + "\n\n" + suggestion, exception,
                                    parent=self.progression_dialog,
                                    close_callback=cb_response,
