@@ -6,8 +6,5 @@ TODO
 * Fix the absolute paths and their ugly workaround
 * Use the python configuration file only for the callbacks, and use the old one
   for the other configuration variables
-* Clicking on the arrow to show the included technical details makes the
-  main window a bit too big for 1024x768: the About/Quit/Send buttons are
-  half-hidden.
 * Re-clicking the arrow to hide the included technical details doesn't
   restore the main window's original size.
