@@ -233,15 +233,17 @@ Internet and mailbox providers?</p>
         self.progression_progressbar.pulse()
 
     def cb_finished_progress(e):
-        if isinstance(e, smtplib.SMTPException):
-            self.show_exception_dialog(_("Unable to send the mail : SMTP error"), e)
+        if isinstance(e, Exception):
+            if isinstance(e, smtplib.SMTPException):
+                exception_string = _("Unable to send the mail : SMTP error.")
+            elif isinstance(e, socket.error):
+                exception_string = _("Unable to connect to the server.")
+            else:
+                exception_string = _("Unable to create or to send the mail.")
+
+            self.show_exception_dialog_with_save(exception_string, e)
             self.progression_dialog.hide()
-        elif isinstance(e, socket.error):
-            self.show_exception_dialog(_("Unable to connect to the server."), e)
-            self.progression_dialog.hide()
-        elif isinstance(e, Exception):
-            self.show_exception_dialog(_("Unable to create or to send the mail."), e)
-            self.progression_dialog.hide()
+
         else:
             self.main_window.set_sensitive(False)
             self.progression_close.set_sensitive(True)
