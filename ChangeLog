@@ -238,3 +238,22 @@ Security fix
 Bugfixes
 --------
  * fix link to embedded documentation
+
+1.5~rc1
+=======
+
+New features
+------------
+ * UI: guide the user if an error occurs while sending the bugreport.
+   Propose to send it after 2 faild attempts.
+
+Minor improvements
+------------------
+ * Follow good coding standards thanks to pylint
+ * Update Tails URL and email address.
+
+Bugfixes
+--------
+ * Catch encryption exceptions in the right order
+ * Remove duplicated function cb_close_application
+
