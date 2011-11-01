@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WhisperBack 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-30 22:36+0100\n"
-"PO-Revision-Date: 2011-11-01 22:35+0100\n"
+"POT-Creation-Date: 2011-11-01 22:58+0100\n"
+"PO-Revision-Date: 2011-11-01 22:59+0100\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -176,12 +176,12 @@ msgstr ""
 "Voulez-vous sauvegarder le signalement de problème dans un fichier ?"
 
 #: ../whisperBack/gui.py:393
-#: ../data/whisperback.ui.h:9
+#: ../data/whisperback.ui.h:10
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:394
-#: ../data/whisperback.ui.h:6
+#: ../data/whisperback.ui.h:7
 msgid "Send feedback in an encrypted mail."
 msgstr "Envoyer vos remarques dans un mail chiffré."
 
@@ -221,15 +221,19 @@ msgstr "Clé PGP optionnelle pour chiffrer les mails que l'on pourrait vous envo
 msgid "Optional email address to contact you"
 msgstr "Adresse email optionnelle pour vous contacter"
 
-#: ../data/whisperback.ui.h:7
+#: ../data/whisperback.ui.h:6
+msgid "Send"
+msgstr "Envoyer"
+
+#: ../data/whisperback.ui.h:8
 msgid "Summary"
 msgstr "Résumé"
 
-#: ../data/whisperback.ui.h:8
+#: ../data/whisperback.ui.h:9
 msgid "Technical details to include"
 msgstr "Détails techniques à inclure"
 
-#: ../data/whisperback.ui.h:10
+#: ../data/whisperback.ui.h:11
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
 "Copyright (C) 2009-2011 Tails developers <tails@boum.org>\n"
@@ -264,19 +268,19 @@ msgstr ""
 "ce programme ; si ce n'est pas le cas, consultez : <http://www.gnu.org/licenses/>.\n"
 "\n"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:27
 msgid "debugging info"
 msgstr "informations de déboguage"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:28
 msgid "headers"
 msgstr "en-têtes"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:29
 msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/"
 
-#: ../data/whisperback.ui.h:29
+#: ../data/whisperback.ui.h:30
 msgid "optional PGP key"
 msgstr "clé PGP optionnelle"
 
