@@ -257,3 +257,15 @@ Bugfixes
  * Catch encryption exceptions in the right order
  * Remove duplicated function cb_close_application
 
+1.5
+===
+
+Minor improvements
+------------------
+ * Update french translation
+
+Bugfixes
+--------
+ * UI: fix typo and minor rephrasing
+ * Make send button label translatable
+
