@@ -252,7 +252,7 @@ Internet and mailbox providers?</p>
         def cb_finished_progress(e):
             if isinstance(e, Exception):
                 if isinstance(e, smtplib.SMTPException):
-                    exception_string = _("Unable to send the mail : SMTP error.")
+                    exception_string = _("Unable to send the mail: SMTP error.")
                 elif isinstance(e, socket.error):
                     exception_string = _("Unable to connect to the server.")
                 else:
@@ -263,7 +263,7 @@ Internet and mailbox providers?</p>
 The bug report could not be sent, likely due to network problems. \
 Please try to reconnect to the network and click send again.\n\
 \n\
-If it doesn't work, you will be offered to save the bug report."), e)
+If it does not work, you will be offered to save the bug report."), e)
                 else:
                     self.show_exception_dialog_with_save(exception_string, e)
                 self.progression_dialog.hide()
@@ -330,8 +330,8 @@ If it doesn't work, you will be offered to save the bug report."), e)
 due to network problems.\n\
 \n\
 As a work-around you can save the bug report as a file on a USB drive and try \
-to send it to us at %s from your email account using a system with a \
-functional Internet connection. Note that your bug report will not be \
+to send it to us at %s from your email account using another system. \
+Note that your bug report will not be \
 anonymous when doing so unless you take further steps yourself (e.g. using \
 Tor with a throw-away email account).\n\
 \n\
