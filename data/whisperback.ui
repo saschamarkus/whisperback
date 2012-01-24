@@ -105,6 +105,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="tooltip_text" translatable="yes">Add a PGP key if you want us to encrypt messages when we respond to you.</property>
                         <property name="image">iconKey</property>
                         <signal name="clicked" handler="cb_enter_gpgkeyblock"/>
                       </object>
