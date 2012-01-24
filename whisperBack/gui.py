@@ -130,6 +130,8 @@ class WhisperBackUI(object):
                 webbrowser.open_new(request.get_uri())
                 request.set_uri(web_frame.get_uri())
         self.htmlhelp.connect("resource-request-starting", cb_request_starting)
+        self.htmlhelp.get_settings().set_property("user-stylesheet-uri", "file://" +
+            whisperBack.utils.get_datadir() + "/style.css")
 
         self.load_htmlhelp()
         self.help_container.add_child(builder, self.htmlhelp, None)
