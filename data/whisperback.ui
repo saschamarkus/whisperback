@@ -552,23 +552,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="buttonHelpPrev">
-                    <property name="label">gtk-go-back</property>
-                    <property name="use_action_appearance">False</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="use_action_appearance">False</property>
-                    <property name="use_stock">True</property>
-                    <signal name="clicked" handler="cb_help_prev" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkScrolledWindow" id="scrolledwindowHelp">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
@@ -578,6 +561,52 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                   </object>
                   <packing>
                     <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkHButtonBox" id="buttonboxHelp">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="layout_style">start</property>
+                    <child>
+                      <object class="GtkButton" id="buttonHelpIndex">
+                        <property name="label">gtk-index</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="use_stock">True</property>
+                        <signal name="clicked" handler="cb_show_help" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="buttonHelpPrev">
+                        <property name="label">gtk-go-back</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="use_stock">True</property>
+                        <signal name="clicked" handler="cb_help_prev" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
                     <property name="fill">True</property>
                     <property name="position">2</property>
                   </packing>

@@ -199,6 +199,12 @@ Internet and mailbox providers?</p>
         else:
             self.load_htmlhelp()
 
+    def cb_show_help(self, widget, data=None):
+        """Callback function display help main page in help browser
+
+        """
+        self.load_htmlhelp()
+
     def cb_show_about(self, widget, data=None):
         """Callback function to show the "about" dialog
 
