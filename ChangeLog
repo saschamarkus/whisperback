@@ -269,3 +269,10 @@ Bugfixes
  * UI: fix typo and minor rephrasing
  * Make send button label translatable
 
+
+1.5.1
+=====
+
+Bugfixes
+--------
+ * Fix link to bug reporting documentation which have moved
