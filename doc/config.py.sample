@@ -73,16 +73,18 @@ mail_subject = "The subject of the mail"
 # (this information will be encrypted). This is useful to add
 # software version.
 #
-# It shound not take any parameter, and should return a string to be
+# It should not take any parameter, and should return a string. This string
+# will be sanitized with whisperBack.utils.sanitize_hardware_info and
 # preprended to the email
 def mail_prepended_info():
     return ""
 
 # A callback function to get information to append to the email
 # (this information will be encrypted). This is useful to add
-# configuration files usebul for debugging.
+# configuration files useful for debugging.
 #
-# It shound not take any parameter, and should return a string to be
-# appended to the email
+# It should not take any parameter, and should return a string. This string
+# will be sanitized with whisperBack.utils.sanitize_hardware_info and
+# appended to the email.
 def mail_appended_info():
     return ""

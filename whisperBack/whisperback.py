@@ -115,10 +115,9 @@ class WhisperBack(object):
         self.__load_conf(os.path.join(os.getcwd(), "config.py"))
         self.__check_conf()
 
-        # Get additional info through the callbacks
-        self.prepended_data = self.mail_prepended_info()
-        print self.prepended_data
-        self.appended_data = self.mail_appended_info()
+        # Get additional info through the callbacks and sanitize it
+        self.prepended_data = whisperBack.utils.sanitize_hardware_info(self.mail_prepended_info())
+        self.appended_data = whisperBack.utils.sanitize_hardware_info(self.mail_appended_info())
 
         # Initialize other variables
         self.subject = subject

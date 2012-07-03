@@ -175,3 +175,36 @@ def get_localised_doc_link():
     return ("file:///usr/share/doc/tails/website/doc/first_steps/bug_reporting." +
         get_localised_doc_language() +
         ".html")
+
+def sanitize_hardware_info(log_string):
+    """Sanitize hardware-identifying info from a string
+
+    Removes strings:
+    
+    - labeled as serial numbers and UUID;
+    - looking like IPs or MAC addresses.
+
+    @param  log_string  the string to be sanitized
+
+    @returns a sanitized version of log_string
+    """
+    # XXX: must be updated once IPv6 is enabled
+
+    # Serial Numbers
+    log_string = re.sub(r'((Serial Number:?[\s]+|SerialNo=|iSerial[\s]+[\d]+\s+|SerialNumber:|Serial#:)[\s]+)[^\s].+',
+                        r'\1[SN REMOVED]',
+                        log_string)
+    # UUIDs
+    log_string = re.sub(r'(UUID:[\s]+)[^\s].+',
+                        r'\1[UUID REMOVED]',
+                        log_string)
+
+    # IPs
+    log_string = re.sub(r'\<([\d]{1,3}\.){3}[\d]{1,3}\>',
+                        r'[IP REMOVED]',
+                        log_string)
+    # MAC addresses
+    log_string = re.sub(r'\<([0-9a-fA-F]{2}:){5,}[0-9a-fA-F]{2}\>',
+                        r'[MAC REMOVED]',
+                        log_string)
+    return log_string
