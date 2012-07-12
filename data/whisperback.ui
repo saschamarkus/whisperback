@@ -474,7 +474,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                                 <property name="left_padding">12</property>
                                 <child>
                                   <object class="GtkScrolledWindow" id="scrolledwindow2">
-                                    <property name="height_request">120</property>
+                                    <property name="height_request">160</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <child>
