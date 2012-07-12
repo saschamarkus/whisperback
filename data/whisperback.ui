@@ -433,12 +433,20 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                                 <property name="can_focus">False</property>
                                 <property name="left_padding">12</property>
                                 <child>
-                                  <object class="GtkTextView" id="textviewPrependedInfo">
+                                  <object class="GtkScrolledWindow" id="scrolledwindow1">
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
-                                    <property name="editable">False</property>
-                                    <property name="indent">-10</property>
-                                    <property name="cursor_visible">False</property>
+                                    <property name="hscrollbar_policy">automatic</property>
+                                    <property name="vscrollbar_policy">automatic</property>
+                                    <child>
+                                      <object class="GtkTextView" id="textviewPrependedInfo">
+                                        <property name="height_request">60</property>
+                                        <property name="visible">True</property>
+                                        <property name="can_focus">True</property>
+                                        <property name="indent">-10</property>
+                                        <property name="cursor_visible">False</property>
+                                      </object>
+                                    </child>
                                   </object>
                                 </child>
                               </object>
