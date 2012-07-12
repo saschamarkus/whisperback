@@ -8,3 +8,4 @@ TODO
   for the other configuration variables
 * Re-clicking the arrow to hide the included technical details doesn't
   restore the main window's original size.
+* Use a dedicated PGP keyring
