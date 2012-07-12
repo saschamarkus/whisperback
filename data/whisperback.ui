@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <!-- interface-requires gtk+ 2.12 -->
+  <requires lib="gtk+" version="2.20"/>
+  <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkRadioAction" id="radioaction1">
     <property name="draw_as_radio">True</property>
   </object>
@@ -33,13 +34,12 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
     <property name="authors">Tails developers &lt;tails@boum.org&gt;</property>
     <property name="wrap_license">True</property>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox1">
+      <object class="GtkVBox" id="dialog-vbox1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area1">
+          <object class="GtkHButtonBox" id="dialog-action_area1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
@@ -63,13 +63,12 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
     <property name="type_hint">normal</property>
     <signal name="close" handler="cb_gpg_close_ok" swapped="no"/>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vboxGpg1">
+      <object class="GtkVBox" id="dialog-vboxGpg1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_areaGpg1">
+          <object class="GtkHButtonBox" id="dialog-action_areaGpg1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
@@ -80,7 +79,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
                 <signal name="clicked" handler="cb_gpg_close_cancel" swapped="no"/>
               </object>
@@ -97,7 +95,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
                 <signal name="clicked" handler="cb_gpg_close_ok" swapped="no"/>
               </object>
@@ -176,10 +173,9 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox2">
+      <object class="GtkVBox" id="dialog-vbox2">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child>
           <object class="GtkVBox" id="vbox1">
@@ -226,7 +222,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
           </packing>
         </child>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area2">
+          <object class="GtkHButtonBox" id="dialog-action_area2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
@@ -241,7 +237,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                 <property name="sensitive">False</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
                 <signal name="clicked" handler="cb_close_application" swapped="no"/>
               </object>
@@ -313,6 +308,10 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="invisible_char">●</property>
+                    <property name="primary_icon_activatable">False</property>
+                    <property name="secondary_icon_activatable">False</property>
+                    <property name="primary_icon_sensitive">True</property>
+                    <property name="secondary_icon_sensitive">True</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -377,6 +376,10 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="invisible_char">●</property>
+                        <property name="primary_icon_activatable">False</property>
+                        <property name="secondary_icon_activatable">False</property>
+                        <property name="primary_icon_sensitive">True</property>
+                        <property name="secondary_icon_sensitive">True</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -392,7 +395,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="tooltip_text" translatable="yes">Add a PGP key if you want us to encrypt messages when we respond to you.</property>
-                        <property name="use_action_appearance">False</property>
                         <property name="image">iconKey</property>
                         <signal name="clicked" handler="cb_enter_gpgkeyblock" swapped="no"/>
                       </object>
@@ -448,7 +450,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="active">True</property>
                                 <property name="draw_indicator">True</property>
                               </object>
@@ -497,7 +498,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="active">True</property>
                                 <property name="draw_indicator">True</property>
                               </object>
@@ -578,7 +578,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <property name="use_action_appearance">False</property>
                         <property name="use_stock">True</property>
                         <signal name="clicked" handler="cb_show_help" swapped="no"/>
                       </object>
@@ -595,7 +594,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <property name="use_action_appearance">False</property>
                         <property name="use_stock">True</property>
                         <signal name="clicked" handler="cb_help_prev" swapped="no"/>
                       </object>
@@ -640,7 +638,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
                 <signal name="clicked" handler="cb_show_about" swapped="no"/>
               </object>
@@ -657,7 +654,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
                 <signal name="clicked" handler="cb_close_application" swapped="no"/>
               </object>
@@ -674,7 +670,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="image">iconSend</property>
                 <signal name="clicked" handler="cb_send_message" swapped="no"/>
               </object>
