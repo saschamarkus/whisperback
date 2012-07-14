@@ -96,6 +96,7 @@ class WhisperBack(object):
         self.__error_output = None
 
         # Initialize config variables
+        self.html_help = ""
         self.to_address = None
         self.to_fingerprint = None
         self.from_address = None

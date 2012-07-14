@@ -31,6 +31,20 @@
 # Do not change this - required to parse path
 import os.path
 
+# DOCUMENTATION
+
+# The right panel help (HTML string)
+html_help = _("""<h1>Help us fix your bug!</h1>
+<p><strong>Do not include more personal information than
+needed!</strong></p>
+<h2>About giving us an email address</h2>
+<p>If you don't mind disclosing some bits of your identity
+to developers, you can provide an email address to
+let us ask more details about the bug. Additionally entering
+a public PGP key enables us to encrypt such future
+communication.</p>
+""")
+
 # RECIPIENT
 #
 # This section defines the recepient parameters

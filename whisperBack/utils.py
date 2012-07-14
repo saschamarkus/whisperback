@@ -135,47 +135,6 @@ def is_valid_email(candidate):
     else:
         return False
 
-# Documentation localisation helpers
-
-def get_wiki_supported_languages():
-    """Return the languages supported by the documentation
-
-    Try to get the list of supported languages according to the
-    $TAILS_WIKI_SUPPORTED_LANGUAGES environnement variable. If unset, fallback
-    to `en`
-
-    @returns  a list of languages codes supported by the documentation
-    """
-    try:
-        return os.environ["TAILS_WIKI_SUPPORTED_LANGUAGES"].split(' ')
-    except KeyError:
-        return 'en'
-
-def get_localised_doc_language():
-    """Return the best documentation language according to the locale
-
-    @returns  the language code of the localised documentation if available, or
-            fallback to `en`
-    """
-    # locale.getlocale returns a tuple (language code, encoding)
-    # the language is the two first character of the RFC 1766 "language code"
-    system_language = locale.getdefaultlocale()[0][0:2]
-
-    if system_language in get_wiki_supported_languages():
-        return system_language
-    else:
-        return 'en'
-
-def get_localised_doc_link():
-    """Return the link to the localised documentation
-
-    @returns  the link to the localised documentation if available, or to the
-            english version
-    """
-    return ("file:///usr/share/doc/tails/website/doc/first_steps/bug_reporting." +
-        get_localised_doc_language() +
-        ".html")
-
 def sanitize_hardware_info(log_string):
     """Sanitize hardware-identifying info from a string
 
