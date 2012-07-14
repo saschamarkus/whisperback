@@ -265,6 +265,11 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
     <property name="can_focus">False</property>
     <property name="stock">gtk-dialog-authentication</property>
   </object>
+  <object class="GtkImage" id="iconKey1">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-dialog-authentication</property>
+  </object>
   <object class="GtkImage" id="iconSend">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
@@ -285,231 +290,125 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
             <property name="can_focus">False</property>
             <property name="spacing">10</property>
             <child>
-              <object class="GtkVBox" id="vboxTopLeft">
+              <object class="GtkNotebook" id="notebookLeft">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
+                <property name="tab_pos">bottom</property>
                 <child>
-                  <object class="GtkLabel" id="labelSubject">
+                  <object class="GtkVBox" id="vboxTopLeft">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
-                    <property name="yalign">0</property>
-                    <property name="ypad">5</property>
-                    <property name="label" translatable="yes">Summary</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkEntry" id="entrySubject">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="invisible_char">●</property>
-                    <property name="primary_icon_activatable">False</property>
-                    <property name="secondary_icon_activatable">False</property>
-                    <property name="primary_icon_sensitive">True</property>
-                    <property name="secondary_icon_sensitive">True</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="labelMessage">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
-                    <property name="yalign">0</property>
-                    <property name="ypad">5</property>
-                    <property name="label" translatable="yes">Bug description</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkScrolledWindow" id="scrolledwindowMessage">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="shadow_type">etched-in</property>
+                    <property name="border_width">10</property>
                     <child>
-                      <object class="GtkTextView" id="textviewMessage">
+                      <object class="GtkLabel" id="labelSubject">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="wrap_mode">word</property>
-                        <property name="accepts_tab">False</property>
+                        <property name="can_focus">False</property>
+                        <property name="xalign">0</property>
+                        <property name="yalign">0</property>
+                        <property name="ypad">5</property>
+                        <property name="label" translatable="yes">Summary</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
                     </child>
-                  </object>
-                  <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">3</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="labelMail">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
-                    <property name="label" translatable="yes">Optional email address to contact you</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkHBox" id="hbox1">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkEntry" id="entryMail">
+                      <object class="GtkEntry" id="entrySubject">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="invisible_char">●</property>
+                        <property name="invisible_char_set">True</property>
                         <property name="primary_icon_activatable">False</property>
                         <property name="secondary_icon_activatable">False</property>
                         <property name="primary_icon_sensitive">True</property>
                         <property name="secondary_icon_sensitive">True</property>
                       </object>
                       <packing>
-                        <property name="expand">True</property>
-                        <property name="fill">True</property>
-                        <property name="position">0</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkButton" id="buttonGPGKeyBlock">
-                        <property name="label" translatable="yes">optional PGP key</property>
-                        <property name="use_action_appearance">False</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">True</property>
-                        <property name="tooltip_text" translatable="yes">Add a PGP key if you want us to encrypt messages when we respond to you.</property>
-                        <property name="image">iconKey</property>
-                        <signal name="clicked" handler="cb_enter_gpgkeyblock" swapped="no"/>
-                      </object>
-                      <packing>
-                        <property name="expand">True</property>
+                        <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">5</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkExpander" id="expanderMoreDetails">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="border_width">5</property>
                     <child>
-                      <object class="GtkVBox" id="vbox2">
+                      <object class="GtkLabel" id="labelMessage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="spacing">6</property>
+                        <property name="xalign">0</property>
+                        <property name="yalign">0</property>
+                        <property name="ypad">5</property>
+                        <property name="label" translatable="yes">Bug description</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkScrolledWindow" id="scrolledwindowMessage">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="shadow_type">etched-in</property>
                         <child>
-                          <object class="GtkFrame" id="frame3">
+                          <object class="GtkTextView" id="textviewMessage">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label_xalign">0</property>
-                            <property name="shadow_type">none</property>
-                            <child>
-                              <object class="GtkAlignment" id="alignment2">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="left_padding">12</property>
-                                <child>
-                                  <object class="GtkScrolledWindow" id="scrolledwindow1">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
-                                    <property name="hscrollbar_policy">automatic</property>
-                                    <property name="vscrollbar_policy">automatic</property>
-                                    <child>
-                                      <object class="GtkTextView" id="textviewPrependedInfo">
-                                        <property name="height_request">60</property>
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="indent">-10</property>
-                                        <property name="cursor_visible">False</property>
-                                      </object>
-                                    </child>
-                                  </object>
-                                </child>
-                              </object>
-                            </child>
-                            <child type="label">
-                              <object class="GtkCheckButton" id="checkbuttonIncludePrependedInfo">
-                                <property name="label" translatable="yes">headers</property>
-                                <property name="use_action_appearance">False</property>
-                                <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">False</property>
-                                <property name="active">True</property>
-                                <property name="draw_indicator">True</property>
-                              </object>
-                            </child>
+                            <property name="can_focus">True</property>
+                            <property name="wrap_mode">word</property>
+                            <property name="accepts_tab">False</property>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="labelMail">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="xalign">0</property>
+                        <property name="label" translatable="yes">Optional email address to contact you</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkHBox" id="hbox1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkEntry" id="entryMail">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="invisible_char">●</property>
+                            <property name="invisible_char_set">True</property>
+                            <property name="primary_icon_activatable">False</property>
+                            <property name="secondary_icon_activatable">False</property>
+                            <property name="primary_icon_sensitive">True</property>
+                            <property name="secondary_icon_sensitive">True</property>
                           </object>
                           <packing>
-                            <property name="expand">False</property>
+                            <property name="expand">True</property>
                             <property name="fill">True</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkFrame" id="frame2">
+                          <object class="GtkButton" id="buttonGPGKeyBlock">
+                            <property name="label" translatable="yes">optional PGP key</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label_xalign">0</property>
-                            <property name="shadow_type">none</property>
-                            <child>
-                              <object class="GtkAlignment" id="alignment3">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="left_padding">12</property>
-                                <child>
-                                  <object class="GtkScrolledWindow" id="scrolledwindow2">
-                                    <property name="height_request">120</property>
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
-                                    <child>
-                                      <object class="GtkTextView" id="textviewAppendedInfo">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="editable">False</property>
-                                        <property name="wrap_mode">char</property>
-                                        <property name="indent">-10</property>
-                                        <property name="cursor_visible">False</property>
-                                      </object>
-                                    </child>
-                                  </object>
-                                </child>
-                              </object>
-                            </child>
-                            <child type="label">
-                              <object class="GtkCheckButton" id="checkbuttonIncludeAppendedInfo">
-                                <property name="label" translatable="yes">debugging info</property>
-                                <property name="use_action_appearance">False</property>
-                                <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">False</property>
-                                <property name="active">True</property>
-                                <property name="draw_indicator">True</property>
-                              </object>
-                            </child>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">True</property>
+                            <property name="image">iconKey1</property>
+                            <signal name="clicked" handler="cb_enter_gpgkeyblock" swapped="no"/>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -518,22 +417,164 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                           </packing>
                         </child>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">5</property>
+                      </packing>
                     </child>
-                    <child type="label">
-                      <object class="GtkLabel" id="labelMoreDetails">
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                </child>
+                <child type="tab">
+                  <object class="GtkLabel" id="labelBugReport">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Bug description</property>
+                  </object>
+                  <packing>
+                    <property name="tab_fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkVBox" id="vbox2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="border_width">10</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkLabel" id="labelMoreDetails2">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="xalign">0</property>
-                        <property name="yalign">0</property>
                         <property name="label" translatable="yes">Technical details to include</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkFrame" id="frame3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label_xalign">0</property>
+                        <property name="shadow_type">none</property>
+                        <child>
+                          <object class="GtkAlignment" id="alignment2">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="left_padding">12</property>
+                            <child>
+                              <object class="GtkScrolledWindow" id="scrolledwindow1">
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="hscrollbar_policy">automatic</property>
+                                <property name="vscrollbar_policy">automatic</property>
+                                <child>
+                                  <object class="GtkTextView" id="textviewPrependedInfo">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="indent">-10</property>
+                                    <property name="cursor_visible">False</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child type="label">
+                          <object class="GtkCheckButton" id="checkbuttonIncludePrependedInfo">
+                            <property name="label" translatable="yes">headers</property>
+                            <property name="use_action_appearance">False</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">False</property>
+                            <property name="active">True</property>
+                            <property name="draw_indicator">True</property>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkFrame" id="frame2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label_xalign">0</property>
+                        <property name="shadow_type">none</property>
+                        <child>
+                          <object class="GtkAlignment" id="alignment3">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="left_padding">12</property>
+                            <child>
+                              <object class="GtkScrolledWindow" id="scrolledwindow2">
+                                <property name="height_request">120</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <child>
+                                  <object class="GtkTextView" id="textviewAppendedInfo">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="editable">False</property>
+                                    <property name="wrap_mode">char</property>
+                                    <property name="indent">-10</property>
+                                    <property name="cursor_visible">False</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child type="label">
+                          <object class="GtkCheckButton" id="checkbuttonIncludeAppendedInfo">
+                            <property name="label" translatable="yes">debugging info</property>
+                            <property name="use_action_appearance">False</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">False</property>
+                            <property name="active">True</property>
+                            <property name="draw_indicator">True</property>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
                     </child>
                   </object>
                   <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">6</property>
+                    <property name="position">1</property>
                   </packing>
+                </child>
+                <child type="tab">
+                  <object class="GtkLabel" id="labelMoreDetails">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="xalign">0</property>
+                    <property name="yalign">0</property>
+                    <property name="label" translatable="yes">Technical details to include</property>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                    <property name="tab_fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child type="tab">
+                  <placeholder/>
                 </child>
               </object>
               <packing>
