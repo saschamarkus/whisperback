@@ -293,7 +293,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
               <object class="GtkNotebook" id="notebookLeft">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="tab_pos">bottom</property>
                 <child>
                   <object class="GtkVBox" id="vboxTopLeft">
                     <property name="visible">True</property>
