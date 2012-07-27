@@ -382,6 +382,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                       <object class="GtkHBox" id="hbox1">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="spacing">5</property>
                         <child>
                           <object class="GtkEntry" id="entryMail">
                             <property name="visible">True</property>
@@ -595,6 +596,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                       <object class="GtkHButtonBox" id="buttonboxHelp">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="spacing">5</property>
                         <property name="layout_style">start</property>
                         <child>
                           <object class="GtkButton" id="buttonHelpIndex">
@@ -678,6 +680,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">5</property>
+            <property name="spacing">5</property>
             <property name="homogeneous">True</property>
             <property name="layout_style">end</property>
             <child>
@@ -694,6 +697,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                 <property name="expand">False</property>
                 <property name="fill">False</property>
                 <property name="position">0</property>
+                <property name="secondary">True</property>
               </packing>
             </child>
             <child>
