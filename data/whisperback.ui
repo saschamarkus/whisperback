@@ -595,20 +595,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                     <property name="border_width">11</property>
                     <property name="spacing">10</property>
                     <child>
-                      <object class="GtkScrolledWindow" id="scrolledwindowHelp">
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="expand">True</property>
-                        <property name="fill">True</property>
-                        <property name="position">0</property>
-                      </packing>
-                    </child>
-                    <child>
                       <object class="GtkHButtonBox" id="buttonboxHelp">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
@@ -650,6 +636,20 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                         <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkScrolledWindow" id="scrolledwindowHelp">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
                       </packing>
                     </child>
                   </object>
