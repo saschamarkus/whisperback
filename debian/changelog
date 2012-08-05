@@ -1,3 +1,10 @@
+
+whisperback (1.6~alpha1) unstable; urgency=low
+
+  * new upstream snapshot
+
+ -- Tails developpers <tails@boum.org>  Tue, 26 Jul 2012 23:48:12 +0200
+
 whisperback (1.5.1+1.gita7a363b) unstable; urgency=low
 
   * Import a few completed PO files from Transifex.
