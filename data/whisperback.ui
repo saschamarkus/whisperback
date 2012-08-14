@@ -581,11 +581,9 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
               </packing>
             </child>
             <child>
-              <object class="GtkFrame" id="frameHelp">
+              <object class="GtkNotebook" id="notebookRight">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label_xalign">0</property>
-                <property name="label_yalign">0</property>
+                <property name="can_focus">True</property>
                 <child>
                   <object class="GtkVBox" id="vboxRight">
                     <property name="visible">True</property>
@@ -653,13 +651,27 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                     </child>
                   </object>
                 </child>
-                <child type="label">
+                <child type="tab">
                   <object class="GtkLabel" id="labelHelp">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">&lt;b&gt;Help&lt;/b&gt;</property>
-                    <property name="use_markup">True</property>
+                    <property name="label" translatable="yes">Help</property>
                   </object>
+                  <packing>
+                    <property name="tab_fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child type="tab">
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child type="tab">
+                  <placeholder/>
                 </child>
               </object>
               <packing>
