@@ -157,8 +157,8 @@ msgid "Send feedback in an encrypted mail."
 msgstr "Atzeraelikadura enkriptatutako email batean bidali."
 
 #: ../whisperBack/gui.py:405
-msgid "Copyright © 2009-2011 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2011 Tails garatzaileak (tails@boum.org)"
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Copyright © 2009-2012 Tails garatzaileak (tails@boum.org)"
 
 #: ../whisperBack/gui.py:406
 msgid "Tails developers <tails@boum.org>"
@@ -182,8 +182,8 @@ msgid "Bug description"
 msgstr "Akatsaren deskribapena"
 
 #: ../data/whisperback.ui.h:3
-msgid "Copyright © 2009-2011 tails@boum.org"
-msgstr "Copyright © 2009-2011 tails@boum.org"
+msgid "Copyright © 2009-2012 tails@boum.org"
+msgstr "Copyright © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:4
 msgid "Help"
@@ -214,7 +214,7 @@ msgstr "Sartzeko xehetasun teknikoak"
 #: ../data/whisperback.ui.h:12
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2011 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -228,7 +228,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Bidali atzeraelikadura enkriptatutako postan\nCopyright (C) 2009-2011 Tails garatzaileak <tails@boum.org>\n\nPrograma hau software librea da; birbana eta/edo alda dezakezu \nSoftware Foundation-ek argitaratutako GNU Lizentzia Publiko \nOrokorraren 3. bertsioan, edo (nahiago baduzu) beste berriago \nbatean, jasotako baldintzak betez gero.\n\nPrograma hau erabilgarria izango delakoan banatzen da, baina, \nINOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren \nEGOKITASUNA MERKATURATZEKO edo HELBURU \nPARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez \ngero, ikus GNU Lizentzia Publiko Orokorra.\n\nPrograma honekin batera GNU Lizentzia Publiko Orokorraren kopia \nbat jasoko zenuen; hala ez bada, ikusi: <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Bidali atzeraelikadura enkriptatutako postan\nCopyright (C) 2009-2012 Tails garatzaileak <tails@boum.org>\n\nPrograma hau software librea da; birbana eta/edo alda dezakezu \nSoftware Foundation-ek argitaratutako GNU Lizentzia Publiko \nOrokorraren 3. bertsioan, edo (nahiago baduzu) beste berriago \nbatean, jasotako baldintzak betez gero.\n\nPrograma hau erabilgarria izango delakoan banatzen da, baina, \nINOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren \nEGOKITASUNA MERKATURATZEKO edo HELBURU \nPARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez \ngero, ikus GNU Lizentzia Publiko Orokorra.\n\nPrograma honekin batera GNU Lizentzia Publiko Orokorraren kopia \nbat jasoko zenuen; hala ez bada, ikusi: <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"

@@ -157,8 +157,8 @@ msgid "Send feedback in an encrypted mail."
 msgstr "Enviar feedback en un correo encriptado"
 
 #: ../whisperBack/gui.py:405
-msgid "Copyright © 2009-2011 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2011 Desarrolladores de Tails  (tails@boum.org)"
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Copyright © 2009-2012 Desarrolladores de Tails  (tails@boum.org)"
 
 #: ../whisperBack/gui.py:406
 msgid "Tails developers <tails@boum.org>"
@@ -182,8 +182,8 @@ msgid "Bug description"
 msgstr "Descripcion del error"
 
 #: ../data/whisperback.ui.h:3
-msgid "Copyright © 2009-2011 tails@boum.org"
-msgstr "Copyright © 2009-2011 tails@boum.org"
+msgid "Copyright © 2009-2012 tails@boum.org"
+msgstr "Copyright © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:4
 msgid "Help"
@@ -214,7 +214,7 @@ msgstr "Detalles tecnicos a incluir"
 #: ../data/whisperback.ui.h:12
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2011 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -228,7 +228,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "Whisperback - Enviar feedback en un correo encriptado ⏎\n Copyright (C) 2009-2011 Tails developers <tails@boum.org>⏎ \n⏎\nEste programa es un software gratis; puede redistribuirlo y/o modificarlo⏎  bajo los terminos de la Licencia General Publica de GNU publicada por ⏎ la Fundacion de Software Gratis; sea la version 3 de la licencia, o (bajo⏎ vuestra opinion) cualquier version posterior.⏎\n⏎\nEste programa es distribuido con la esperanza de que sea util, pero NO SE GARANTIZA NADA; sin siquiera la garantia de COMERCIALIZACION o ADAPTACION PARA UN PROPOSITO EN PARTICULAR. Vea la Licencia General Publica de GNU⏎ para mas detalles. ⏎ \n⏎ \nDeberia haber recibido una copia de la Licencia General Publica de GNU⏎ durante este programa. Si no es asi, visite <http://www.gnu.org/licenses/>.⏎\n"
+msgstr "Whisperback - Enviar feedback en un correo encriptado ⏎\n Copyright (C) 2009-2012 Tails developers <tails@boum.org>⏎ \n⏎\nEste programa es un software gratis; puede redistribuirlo y/o modificarlo⏎  bajo los terminos de la Licencia General Publica de GNU publicada por ⏎ la Fundacion de Software Gratis; sea la version 3 de la licencia, o (bajo⏎ vuestra opinion) cualquier version posterior.⏎\n⏎\nEste programa es distribuido con la esperanza de que sea util, pero NO SE GARANTIZA NADA; sin siquiera la garantia de COMERCIALIZACION o ADAPTACION PARA UN PROPOSITO EN PARTICULAR. Vea la Licencia General Publica de GNU⏎ para mas detalles. ⏎ \n⏎ \nDeberia haber recibido una copia de la Licencia General Publica de GNU⏎ durante este programa. Si no es asi, visite <http://www.gnu.org/licenses/>.⏎\n"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"

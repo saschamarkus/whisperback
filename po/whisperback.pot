@@ -161,7 +161,7 @@ msgid "Send feedback in an encrypted mail."
 msgstr ""
 
 #: ../whisperBack/gui.py:405
-msgid "Copyright © 2009-2011 Tails developpers (tails@boum.org)"
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr ""
 
 #: ../whisperBack/gui.py:406
@@ -186,7 +186,7 @@ msgid "Bug description"
 msgstr ""
 
 #: ../data/whisperback.ui.h:3
-msgid "Copyright © 2009-2011 tails@boum.org"
+msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr ""
 
 #: ../data/whisperback.ui.h:4
@@ -218,7 +218,7 @@ msgstr ""
 #: ../data/whisperback.ui.h:12
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2011 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"

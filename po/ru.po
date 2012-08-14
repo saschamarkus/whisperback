@@ -157,8 +157,8 @@ msgid "Send feedback in an encrypted mail."
 msgstr "Отправить сообщение в зашифрованном письме."
 
 #: ../whisperBack/gui.py:405
-msgid "Copyright © 2009-2011 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2011 Tails developpers (tails@boum.org)"
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 
 #: ../whisperBack/gui.py:406
 msgid "Tails developers <tails@boum.org>"
@@ -182,8 +182,8 @@ msgid "Bug description"
 msgstr "Описание ошибки"
 
 #: ../data/whisperback.ui.h:3
-msgid "Copyright © 2009-2011 tails@boum.org"
-msgstr "Copyright © 2009-2011 tails@boum.org"
+msgid "Copyright © 2009-2012 tails@boum.org"
+msgstr "Copyright © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:4
 msgid "Help"
@@ -214,7 +214,7 @@ msgstr "Технические подробности для предостав�
 #: ../data/whisperback.ui.h:12
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2011 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -228,7 +228,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Отправить сообщение в зашифрованном письме\nCopyright (C) 2009-2011 Tails developers <tails@boum.org>\n\nЭта программа бесплатное ПО; вы можете распространять его и/или модифицировать\nего под условиями GNU General Public License отпубликованной\nFree Software Foundation; или версией 3 данной лицензии, или\n(по вашему желанию) любой более поздней версией.\n\nЭта программа распространяется в надежде, что она будет полезна, но\nБЕЗ КАКИХ-ЛИБО ГАРАНТИЙ;   даже без подразумеваемой гарантии\nПРОДАЖИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ. Смотрите\nGeneral Public License для дополнительной информации.\n\nВы должны были получить копию GNU General Public License\nвместе с этой программой. Если нет, смотрите <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Отправить сообщение в зашифрованном письме\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\nЭта программа бесплатное ПО; вы можете распространять его и/или модифицировать\nего под условиями GNU General Public License отпубликованной\nFree Software Foundation; или версией 3 данной лицензии, или\n(по вашему желанию) любой более поздней версией.\n\nЭта программа распространяется в надежде, что она будет полезна, но\nБЕЗ КАКИХ-ЛИБО ГАРАНТИЙ;   даже без подразумеваемой гарантии\nПРОДАЖИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ. Смотрите\nGeneral Public License для дополнительной информации.\n\nВы должны были получить копию GNU General Public License\nвместе с этой программой. Если нет, смотрите <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
