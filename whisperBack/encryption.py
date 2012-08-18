@@ -24,7 +24,7 @@
 """Some tools for encryption
 
 """
-import os
+import os.path
 
 import pyme.core
 import pyme.errors
