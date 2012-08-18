@@ -276,3 +276,33 @@ Bugfixes
 Bugfixes
 --------
  * Fix link to bug reporting documentation which have moved
+
+1.6~rc1
+=======
+
+New features
+------------
+ * Allow to use arbitrary gnupg homdir
+ * Load help from the config file instead of hardcoding it
+ * Sanitize debugging info
+
+
+Minor improvements
+------------------
+ * UI: reword optional PGP key field label
+ * UI: add a tool tip to the PGP key button
+ * UI: upgrade file for GTK+ 2.20 (squeeze version)
+ * UI: add a button to display help index
+ * Hide website sidebar and title in embedded viewer
+ * I18n: import translations for Arabic, Spanish, Euskara, French, Dutch,
+   Polish, Portuguese and Russian
+ * Doc: include basic release documentation and script
+ * UI: make tails-version window scrollable
+ * UI: add a frame for help
+ * UI: space widgets according to GNOME HIG
+
+Bugfixes
+--------
+ * UI: add a notebook to make technical details readable on small screen
+ * Update copyright year
+ * I18n: include POT file.
