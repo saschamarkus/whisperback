@@ -45,6 +45,14 @@ a public PGP key enables us to encrypt such future
 communication.</p>
 """)
 
+# KEYRING
+#
+# This section defines keyring parameters
+
+# The path to the OpenPGP home directory to use. If None, use OpenPGP default
+# $GUNPGHOME
+gnupg_homedir = None
+
 # RECIPIENT
 #
 # This section defines the recepient parameters

@@ -24,6 +24,7 @@
 """Some tools for encryption
 
 """
+import os
 
 import pyme.core
 import pyme.errors
@@ -33,9 +34,11 @@ import whisperBack.exceptions
 class Encryption (object):
     """Some tools for encryption"""
     
-    def __init__ (self):
+    def __init__ (self, gnupg_homedir=None):
         """Initialize the encryption mechanism"""
 
+        if gnupg_homedir and os.path.exists(gnupg_homedir):
+            os.environ["GNUPGHOME"] = gnupg_homedir
         self.context = pyme.core.Context()
         
     def __fingerprints_to_keys (self, fingerprints):
