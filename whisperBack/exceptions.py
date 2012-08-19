@@ -45,10 +45,5 @@ class MisconfigurationException(WhisperbackException):
 # Used in encryption.py
 
 class EncryptionException (WhisperbackException):
-    """This exception is raised when GPGME fails to encrypt the data"""
-    pass
-
-class KeyNotFoundException (EncryptionException):
-    """This exception is raised when GPGME can't find the key it searches 
-    in the keyring"""
+    """This exception is raised when GnuPG fails to encrypt the data"""
     pass

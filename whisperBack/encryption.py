@@ -26,93 +26,25 @@
 """
 import os.path
 
-import pyme.core
-import pyme.errors
+import GnuPGInterface
 
 import whisperBack.exceptions
 
-class Encryption (object):
+class Encryption (GnuPGInterface.GnuPG):
     """Some tools for encryption"""
     
     def __init__ (self, gnupg_homedir=None):
         """Initialize the encryption mechanism"""
 
+        GnuPGInterface.GnuPG.__init__(self)
+
+        self.options.armor = True
+        self.options.meta_interactive = False
+        self.options.always_trust = True
+
         if gnupg_homedir and os.path.exists(gnupg_homedir):
-            os.environ["GNUPGHOME"] = gnupg_homedir
-        self.context = pyme.core.Context()
-        
-    def __fingerprints_to_keys (self, fingerprints):
-        """Convert fingerprints into pyme keys
-        
-        @param fingerprints A list of fingerprints
-        @return A list of pygme keys
-        """
-
-        to_keys = []
-        for fingerprint in fingerprints:
-            try:
-                # The function gpgme_op_keylist_start initiates a key listing
-                # operation inside the context ctx. It sets everything up so
-                # that subsequent invocations of gpgme_op_keylist_next return
-                # the keys in the list.
-                to_key = self.context.get_key(fingerprint, secret=False)
-                to_keys.append (to_key)
-            except pyme.errors.GPGMEError, e:
-                raise whisperBack.exceptions.KeyNotFoundException (e.getstring)
-        return to_keys
-        
-    def __encrypt_from_keys (self, data, to_keys):
-        """Encrypt data to a list of keys 
-        
-        @param to_keys  A list of pyme keys, as returned by 
-                        __fingerprint_to_keys
-        @param data The data to be encrypted
-        @return The encrypted data
-        """
-        
-        # THE CONTEXT
-        # Initialize our context
-        context = self.context
-        # Define which protocol we want to use 
-        #context.set_protocol(PROTOCOL)
-        # Define that we want an ASCII-armored output
-        context.set_armor(True)
-        
-        # THE BUFFERS
-        # Set up our input buffer and initialize it whit our message
-        plain = pyme.core.Data(data)
-        # Set up our output buffer
-        cipher = pyme.core.Data()
-        
-        # THE ACTUAL ENCRYPTION
-        # Do the actual encryption.
-        try:
-            # Do the actual encryption 
-            #
-            # The function gpgme_op_encrypt encrypts the plaintext in the data
-            # object plain for the recipients recp and stores the ciphertext 
-            # in the data object cipher. The type of the ciphertext created is
-            # determined by the ASCII armor and text mode attributes set for
-            # the context.
-            #
-            # Key must be a NULL-terminated array of keys. The user must keep
-            # references for all keys during the whole duration of the call
-            # (but see gpgme_op_encrypt_start for the requirements with the
-            # asynchronous variant). 
-            #
-            # flags := {GPGME_ENCRYPT_ALWAYS_TRUST : 1, 
-            #           GPGME_ENCRYPT_NO_ENCRYPT_TO : 2}
-            #
-            # context.op_encrypt (keys[], flags, plain, cipher)
-            context.op_encrypt(to_keys, 1, plain, cipher)
-            del plain
-            # Go to the beginning of the buffer
-            cipher.seek(0, 0)
-            # Reads the cipher (= encrypted text)
-            return cipher.read()
-        except pyme.errors.GPGMEError, e:
-            raise whisperBack.exceptions.EncryptionException (e.getstring())
-
+            self.options.homedir = gnupg_homedir
+ 
     def encrypt (self, data, to_fingerprints):
         """Encrypts data for a list of recepients
         
@@ -120,12 +52,22 @@ class Encryption (object):
         @param data Data to be encrypted
         @return The encrypted data
         """
-        
-        # Convert the fingerprint into pgpme keys
-        to_keys = self.__fingerprints_to_keys (to_fingerprints)
-        # Process only if some keys were found
-        if len(to_keys) == 0:
-            raise whisperBack.exceptions.KeyNotFoundException (
-                _("No keys found.") )
-        # Encrypt the data
-        return self.__encrypt_from_keys (data, to_keys)
+        try:
+            self.options.recipients = to_fingerprints
+            proc = self.run(['--encrypt'], create_fhs=['stdin', 'stdout', 'stderr'])
+
+            proc.handles['stdin'].write(data)
+            proc.handles['stdin'].close()
+
+            output = proc.handles['stdout'].read()
+            proc.handles['stdout'].close()
+
+            error = proc.handles['stderr'].read()
+            proc.handles['stderr'].close()
+
+            proc.wait()
+            return output
+
+        except IOError, e:
+            # XXX: raise a specific exception if the key wasn't found
+            raise whisperBack.exceptions.EncryptionException(error)
