@@ -32,8 +32,8 @@ import whisperBack.exceptions
 
 class Encryption (GnuPGInterface.GnuPG):
     """Some tools for encryption"""
-    
-    def __init__ (self, gnupg_homedir=None):
+
+    def __init__ (self, keyring=None):
         """Initialize the encryption mechanism"""
 
         GnuPGInterface.GnuPG.__init__(self)
@@ -42,8 +42,8 @@ class Encryption (GnuPGInterface.GnuPG):
         self.options.meta_interactive = False
         self.options.always_trust = True
 
-        if gnupg_homedir and os.path.exists(gnupg_homedir):
-            self.options.homedir = gnupg_homedir
+        if keyring and os.path.exists(keyring):
+            self.options.extra_args = ["--keyring", keyring, "--no-default-keyring"]
  
     def encrypt (self, data, to_fingerprints):
         """Encrypts data for a list of recepients

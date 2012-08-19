@@ -97,7 +97,7 @@ class WhisperBack(object):
 
         # Initialize config variables
         self.html_help = ""
-        self.gnupg_homedir = None
+        self.gnupg_keyring = None
         self.to_address = None
         self.to_fingerprint = None
         self.from_address = None
@@ -243,7 +243,7 @@ class WhisperBack(object):
     def get_encrypted_message_body(self):
         """Returns the encrypted body of the email to be send"""
 
-        encryption = whisperBack.encryption.Encryption(gnupg_homedir=self.gnupg_homedir)
+        encryption = whisperBack.encryption.Encryption(keyring=self.gnupg_keyring)
         return encryption.encrypt(self.get_message_body(), [self.to_fingerprint])
 
     def save(self, path):
