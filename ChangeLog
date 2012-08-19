@@ -306,3 +306,12 @@ Bugfixes
  * UI: add a notebook to make technical details readable on small screen
  * Update copyright year
  * I18n: include POT file.
+
+1.6~rc2
+=======
+
+Minor imporvements
+------------------
+
+ * Encryption: use GnuPGInterface instead of pyme
+ * Use an external keyring instead of a dedicated gnupg homedir
