@@ -315,3 +315,11 @@ Minor imporvements
 
  * Encryption: use GnuPGInterface instead of pyme
  * Use an external keyring instead of a dedicated gnupg homedir
+
+1.6
+===
+
+Minor imporvements
+------------------
+
+ * I18n: import Czech translation
