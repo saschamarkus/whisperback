@@ -68,7 +68,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     # We set a long timeout because Tor is slow
     # XXX: this will not be necessary anymore under python 2.6, because it
     #      includes a timeout argument on smtplib
-    socket.setdefaulttimeout(60)
+    socket.setdefaulttimeout(120)
 
     # Send the message via our own SMTP server, but don't include the
     # envelope header.
