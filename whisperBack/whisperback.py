@@ -212,7 +212,8 @@ class WhisperBack(object):
                     finished_callback(self.__error_output)
                 return False
 
-        assert self.__thread is None or not self.__thread.isAlive ()
+        self.__error_output = None
+        assert self.__thread is None or not self.__thread.isAlive()
         self.__thread = threading.Thread(target=save_exception, args=(func, args))
         self.__thread.start()
         # XXX: there could be no main loop
