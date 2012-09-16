@@ -65,14 +65,10 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param port The port of the smtp server to connect to
     @param tls_ca Certificate authority file passed to the socket module’s ssl() function.
     """
-    # We set a long timeout because Tor is slow
-    # XXX: this will not be necessary anymore under python 2.6, because it
-    #      includes a timeout argument on smtplib
-    socket.setdefaulttimeout(120)
-
     # Send the message via our own SMTP server, but don't include the
     # envelope header.
-    smtp = smtplib.SMTP()
+    # We set a long timeout because Tor is slow
+    smtp = smtplib.SMTP(timeout=120)
     smtp.connect(host, port)
     (resp, reply) = smtp.starttls(cafile = tls_cafile)
     # Default python let you continue in cleartext if starttls
