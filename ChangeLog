@@ -323,3 +323,18 @@ Minor imporvements
 ------------------
 
  * I18n: import Czech translation
+
+1.6.1
+=====
+
+Minor improvements
+------------------
+
+ * Raise the socket library timeout to 120 seconds
+ * Use smtplib's timeout parameter
+
+Bugfixes
+--------
+
+ * Fix error output when calling send a 2nd time
+
