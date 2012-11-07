@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <fragos.george@hotmail.com>, 2012.
+# Nisok Kosin <nikos.efthimiou@gmail.com>, 2012.
+#   <soldizach@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: The Tor Project\n"
+"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
+"POT-Creation-Date: 2012-02-16 22:33+0100\n"
+"PO-Revision-Date: 2012-08-16 21:43+0000\n"
+"Last-Translator: anvo <fragos.george@hotmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. XXX use a better exception
+#: ../whisperBack/whisperback.py:63
+#, python-format
+msgid "Invalid contact email: %s"
+msgstr "Μη έγκυρο email: %s"
+
+#: ../whisperBack/whisperback.py:80
+#, python-format
+msgid "Invalid contact OpenPGP key: %s"
+msgstr "Μη έγκυρο κλειδί OpenPGP %s"
+
+#: ../whisperBack/whisperback.py:82
+msgid "Invalid contact OpenPGP public key block"
+msgstr "Μη έγκυρο δημόσιο OpenPGP key block"
+
+#: ../whisperBack/encryption.py:126
+msgid "No keys found."
+msgstr "Δεν βρέθηκαν κλειδιά "
+
+#: ../whisperBack/exceptions.py:41
+#, python-format
+msgid ""
+"The variable %s was not found in any of the configuation "
+"files/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "Η μεταβλητή %s δεν βρέθηκε σε κανένα από τα αρχεία ρυθμίσεων /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+
+#: ../whisperBack/gui.py:114
+msgid "Name of the affected software"
+msgstr "Όνομα από το προσβεβλημένο λογισμικό"
+
+#: ../whisperBack/gui.py:115
+msgid "Exact steps to reproduce the problem"
+msgstr "Ακριβή βήματα για την αναπαραγωγή του προβλήματος "
+
+#: ../whisperBack/gui.py:116
+msgid "Actual result / the problem"
+msgstr "Πραγματικό αποτέλεσμα / το πρόβλημα"
+
+#: ../whisperBack/gui.py:117
+msgid "Desired result"
+msgstr "Επιθυμητό αποτέλεσμα"
+
+#: ../whisperBack/gui.py:155
+msgid "Unable to load a valid configuration."
+msgstr "Αδύνατον να το φορτωθούν έγκυρες ρυθμίσεις. "
+
+#: ../whisperBack/gui.py:177
+#, python-format
+msgid ""
+"<h1>Help us fix your bug!</h1>\n"
+"<p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
+"<p><strong>Do not include more personal information than\n"
+"needed!</strong></p>\n"
+"<h2>About giving us an email address</h2>\n"
+"<p>If you don't mind disclosing some bits of your identity\n"
+"to Tails developers, you can provide an email address to\n"
+"let us ask more details about the bug. Additionally entering\n"
+"a public PGP key enables us to encrypt such future\n"
+"communication.</p>\n"
+"<p>Anyone who can see this reply will probably infer you are\n"
+"a Tails user. Time to wonder how much you trust your\n"
+"Internet and mailbox providers?</p>\n"
+msgstr "<h1>Βοήθησε μας να φτιάξουμε το Bug σου!</h1>\n<p>Διάβασε<a href=\"%s\">τις οδηγίες για την αναφορά Bug</a>.</p>\n<p><strong>Μην συμπεριλάβεις περισσότερες πληροφορίες από όσες χρειάζονται!</strong></p>\n<h2>Δώσε μας μια διεύθυνση e-mail</h2>\n<p>Αν δεν σε πειράζει δώσε μερικές πληροφορίες της ταυτότητας σου\nστους Tails developers, μπορείς να μας δώσεις μια διεύθυνση e-mail για να μπορέσουμε να σε ρωτήσουμε περισσότερα για το Bug. Ακόμα με το να δώσεις\nένα public PGP κλειδί θα μας επιτρέπει να κρυπτογραφούμε τυχόν μελλοντικές συνομιλίες\nγια την επικοινωνία μας.</p>\n<p>Οποισδήποτε που μπορεί να δει την απάντηση λογικά θα συμπεραίνει ότι είσαι\nένας χρήστης Tails . Έναι ώρα να αναρωτηθείς πόσο εμπιστέυεσε τον πάροχο Internet και email?</p>\n"
+
+#: ../whisperBack/gui.py:229
+msgid "Sending mail..."
+msgstr "Αποστέλετε το mail..."
+
+#: ../whisperBack/gui.py:230
+msgid "Sending mail"
+msgstr "Αποστέλετε το mail"
+
+#. pylint: disable=C0301
+#: ../whisperBack/gui.py:232
+msgid "This could take a while..."
+msgstr "Αυτό μπορεί να διαρκέσει λίγο..."
+
+#: ../whisperBack/gui.py:246
+msgid "The contact email adress doesn't seem valid."
+msgstr "Η διεύθυνση επικοινωνίας δεν φαίνεται να είναι έγκυρη"
+
+#: ../whisperBack/gui.py:263
+msgid "Unable to send the mail: SMTP error."
+msgstr "Δεν είναι δυνατόν να σταλεί το mail: σφάλμα SMTP "
+
+#: ../whisperBack/gui.py:265
+msgid "Unable to connect to the server."
+msgstr "Αδύνατη η σύνδεση με τον διακομιστή"
+
+#: ../whisperBack/gui.py:267
+msgid "Unable to create or to send the mail."
+msgstr "Αδύνατη η δημιουργία ή η αποστολή mail"
+
+#: ../whisperBack/gui.py:270
+msgid ""
+"\n"
+"\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"\n"
+"If it does not work, you will be offered to save the bug report."
+msgstr "\n\nΗ αναφορά bug δεν μπορούσε να σταλεί, λόγω προβλημάτων σύνδεσης. Παρακαλούμε προσπαθήστε να συνδεθείτε ξανά και πατήστε \"Αποστολή πάλι\". \n\nΑν δεν δουλέψει, θα σου ζητηθεί να αποθηκεύσεις την αναφορά bug "
+
+#: ../whisperBack/gui.py:283
+msgid "Your message has been sent."
+msgstr "Το μήνυμα σας έχει σταλεί"
+
+#: ../whisperBack/gui.py:289
+msgid "Unable to find encryption key."
+msgstr "Δεν είναι δυνατόν να βρεθεί το κλειδί κωδικοποίησης "
+
+#: ../whisperBack/gui.py:293
+msgid "An error occured during encryption."
+msgstr "Εμφανίστηκε ένα σφάλμα "
+
+#: ../whisperBack/gui.py:313
+#, python-format
+msgid "Unable to save %s."
+msgstr "Αδύνατη η αποθήκευση  %s"
+
+#. XXX: fix string
+#: ../whisperBack/gui.py:337
+#, python-format
+msgid ""
+"The bug report could not be sent, likely due to network problems.\n"
+"\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"\n"
+"Do you want to save the bug report to a file?"
+msgstr "Η αναφορά bug δεν μπορούσε να σταλεί, λόγω προβλημάτων σύνδεσης.\n\nΜπορείς να σώσεις την αναφορά bug σαν αρχείο σε ένα  USB Drive και να προσπαθήσεις να μας το στείλεις %s από τον email λογαριασμό σου από ένα άλλο σύστημα. Σημειώσε εδώ ότι δεν θα σταλεί ανώνημα με αυτή την επιλογή εκτός και αν κάνεις κάποιες παραπάνω ρυθμίσεις εσύ ( π.χ. να χρησιμοποιήσεις το Tor με έναν throw-away λογαριασμό Email).\n\nΘές να αποθηκεύσεις την αναφορά bug ως αρχείο;"
+
+#: ../whisperBack/gui.py:401 ../data/whisperback.ui.h:11
+msgid "WhisperBack"
+msgstr "WhisperBack"
+
+#: ../whisperBack/gui.py:402 ../data/whisperback.ui.h:8
+msgid "Send feedback in an encrypted mail."
+msgstr "Στείλε τα σχόλια σας σε ένα κρυπτογραφημένο mail."
+
+#: ../whisperBack/gui.py:405
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+
+#: ../whisperBack/gui.py:406
+msgid "Tails developers <tails@boum.org>"
+msgstr "Tails developers <tails@boum.org>"
+
+#: ../whisperBack/gui.py:407
+msgid "translator-credits"
+msgstr "translator-credits"
+
+#: ../whisperBack/gui.py:434
+msgid "This doesn's seem to be a valid URL or OpenPGP key."
+msgstr "Αυτό δεν φαίνετε να είναι έγκυρο URL ή κλειδί OpenPGP "
+
+#: ../data/whisperback.ui.h:1
+msgid ""
+"Add a PGP key if you want us to encrypt messages when we respond to you."
+msgstr "Πρόσθεσε ένα κλειδί PGP αν θέλεις να κρυπτογραφούμε τα μηνύμα τα μας όταν σου απαντάμε"
+
+#: ../data/whisperback.ui.h:2
+msgid "Bug description"
+msgstr "Περιγραφή Bug "
+
+#: ../data/whisperback.ui.h:3
+msgid "Copyright © 2009-2012 tails@boum.org"
+msgstr "Copyright © 2009-2012 tails@boum.org"
+
+#: ../data/whisperback.ui.h:4
+msgid "Help"
+msgstr "Βοήθεια "
+
+#: ../data/whisperback.ui.h:5
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr "Αν θέλεις να κρυπτογραφούμε τα μημνυμα τα μας όταν σου απαντάμε, πρόσθεσε τον ID σου, ένα σύνδεσμο στο ID  σου, ή το ID σου σαν ένα δημόσιο ID block"
+
+#: ../data/whisperback.ui.h:6
+msgid "Optional email address to contact you"
+msgstr "Εναλλακτικη διευθυνση email για να επικοινωνήσουμε μαζί σου"
+
+#: ../data/whisperback.ui.h:7
+msgid "Send"
+msgstr "Αποστολή"
+
+#: ../data/whisperback.ui.h:9
+msgid "Summary"
+msgstr "Περίληψη"
+
+#: ../data/whisperback.ui.h:10
+msgid "Technical details to include"
+msgstr "Τεχνικές λεπτομέριες για να συμπεριλάβεις "
+
+#: ../data/whisperback.ui.h:12
+msgid ""
+"WhisperBack - Send feedback in an encrypted mail\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"\n"
+"This program is  free software; you can redistribute  it and/or modify\n"
+"it under the  terms of the GNU General Public  License as published by\n"
+"the Free Software Foundation; either  version 3 of the License, or (at\n"
+"your option) any later version.\n"
+"\n"
+"This program  is distributed in the  hope that it will  be useful, but\n"
+"WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\n"
+"MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\n"
+"General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Επικοινωνήστε μαζί μας με κρυπτογραφημένο μήνυμα\nCopyright (C) 2009-2012 Tails developers <tails@boum.org\n\nΤο πρόγραμμα αυτό είναι ελεύθερο λογισμικό· μπορείτε να το αναδιανέμετε και/ή να το τροποποιήσετε\nυπό τους όρους της GNU General Public License όπως αυτή δημοσιεύεται από το\nΊδρυμα Ελεύθερου λογισμικού· είτε η έκδοση 3 της Αδειας, είτε (με\nδική σας επιλογή) κάθε παλαιότερη έκδοσή της.\n\nΤο πρόγραμμα διανέμετε με την ελπίδα ότι θα φανεί χρήσιμο, αλλά\nΧΩΡΙΣ ΟΥΔΕΜΙΑ ΕΓΓΥΗΣΗ· χωρίς καν την υπονοούμενη εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΚΑΠΟΙΟΝ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Για περισσότερες πληροφορίες, δείτε την Άδεια GNU General Public License.\n\nΜαζί με το πρόγραμμα αυτό θα πρέπει να έχετε λάβει και ένα\n αντίγραφο της GNU General Public License. Αν όχι, δείτε την ιστοσελίδα <http://www.gnu.org/licenses/>.\n"
+
+#: ../data/whisperback.ui.h:28
+msgid "debugging info"
+msgstr "Πληροφορίες debugging "
+
+#: ../data/whisperback.ui.h:29
+msgid "headers"
+msgstr "Κεφαλίδες "
+
+#: ../data/whisperback.ui.h:30
+msgid "https://tails.boum.org/"
+msgstr "https://tails.boum.org/"
+
+#: ../data/whisperback.ui.h:31
+msgid "optional PGP key"
+msgstr "Εναλλακτικό κλειδί PGP"
