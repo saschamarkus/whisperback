@@ -338,3 +338,14 @@ Bugfixes
 
  * Fix error output when calling send a 2nd time
 
+1.6.2
+=====
+
+Minor improvements
+------------------
+
+ * I18n: Import German translation from Transifex.
+ * I18n: Import Hebrew translation from Transifex.
+ * I18n: Import Hungarian translation from Transifex.
+ * I18n: Import Italian translation from Transifex.
+ * I18n: Import Korean translation from Transifex.
