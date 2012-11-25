@@ -17,7 +17,7 @@ sed -i "\$a \\\n$NEWVERSION\n$(echo $NEWVERSION | tr '[:graph:]' '=')\n" ChangeL
 vim ChangeLog
 
 #echo "Please edit Debian changelog…"
-export DEBFULLNAME="Tails developpers"
+export DEBFULLNAME="Tails developers"
 export DEBEMAIL="tails@boum.org"
 dch --newversion $NEWVERSION
 
