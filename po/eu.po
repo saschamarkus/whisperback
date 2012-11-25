@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
 "POT-Creation-Date: 2012-02-16 22:33+0100\n"
-"PO-Revision-Date: 2012-03-08 17:55+0000\n"
+"PO-Revision-Date: 2012-11-21 13:45+0000\n"
 "Last-Translator: Antxon Baldarra <baldarra@euskalerria.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: eu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
@@ -228,7 +228,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Bidali atzeraelikadura enkriptatutako postan\nCopyright (C) 2009-2012 Tails garatzaileak <tails@boum.org>\n\nPrograma hau software librea da; birbana eta/edo alda dezakezu \nSoftware Foundation-ek argitaratutako GNU Lizentzia Publiko \nOrokorraren 3. bertsioan, edo (nahiago baduzu) beste berriago \nbatean, jasotako baldintzak betez gero.\n\nPrograma hau erabilgarria izango delakoan banatzen da, baina, \nINOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren \nEGOKITASUNA MERKATURATZEKO edo HELBURU \nPARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez \ngero, ikus GNU Lizentzia Publiko Orokorra.\n\nPrograma honekin batera GNU Lizentzia Publiko Orokorraren kopia \nbat jasoko zenuen; hala ez bada, ikusi: <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Bidali berrelikadura enkriptatutako mail batean\nCopyright (C) 2009-2012 Tails garatzaileak <tails@boum.org>\n\nPrograma hau software askea da; birbana eta/edo alda dezakezu Software \nFoundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren 3. \nbertsioan, edo (nahiago baduzu) beste berriago batean.\n\nPrograma hau erabilgarria izango delakoan banatzen da, baina, INOLAKO \nBERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA \nMERKATURATZEKO edo HELBURU PARTIKULARRETARAKO \nERABILTZEKO. Argibide gehiago nahi izanez gero, ikus GNU Lizentzia \nPubliko Orokorra.\n\nPorgrama honekin batera GNU Lizentzia Publiko Orokorraren kopia bat \njasoko zenuen; hala ez bada, begiratu <http://www.gnu.org/licenses/>\n"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
