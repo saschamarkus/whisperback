@@ -3,7 +3,7 @@ Whisperback developper guide
 Release
 =======
 
-Fetch updated PO from the whisperback and whisperback_completed branches of
+Fetch updated PO from the whisperback_completed branch of
 git://git.torproject.org/translation.git
 
 Verify and commit.
