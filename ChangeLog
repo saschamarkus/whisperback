@@ -355,4 +355,11 @@ Minor improvements
 
 * l10n: update Euskadi translation.
 
+1.6.4
+=====
+
+ * Update Spanish translation from Transifex.
+ * Update Portuguese (Brazil) translation from Transifex.
+ * Import new translations (Hebrew and Latvian) from Transifex.
+ * update-version.sh: fix typo in DEBFULLNAME.
 
