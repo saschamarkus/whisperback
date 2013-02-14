@@ -363,3 +363,9 @@ Minor improvements
  * Import new translations (Hebrew and Latvian) from Transifex.
  * update-version.sh: fix typo in DEBFULLNAME.
 
+1.6.5
+=====
+
+ * Don't translate the bug report template.
+ * Update Spanish and Korean translations, import new Polish translation.
+

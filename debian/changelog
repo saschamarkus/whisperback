@@ -1,3 +1,10 @@
+whisperback (1.6.5) testing; urgency=low
+
+  * Don't translate the bug report template.
+  * Update Spanish and Korean translations, import new Polish translation.
+
+ -- Tails developers <tails@boum.org>  Thu, 14 Feb 2013 17:57:41 +0100
+
 whisperback (1.6.4) devel; urgency=low
 
   * Update Spanish translation from Transifex.
