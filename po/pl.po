@@ -3,67 +3,67 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-#   <cwt967@naver.com>, 2012.
-#   <pcsori@gmail.com>, 2012.
+# EJI <ewa.infeld@gmail.com>, 2013.
+# Eva Infeld <ewa.infeld@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
 "POT-Creation-Date: 2012-02-16 22:33+0100\n"
-"PO-Revision-Date: 2012-12-15 13:05+0000\n"
-"Last-Translator: cwt96 <cwt967@naver.com>\n"
+"PO-Revision-Date: 2013-01-30 20:18+0000\n"
+"Last-Translator: Quaithe <ewa.infeld@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ko\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "잘못된 연락처 이메일: %s"
+msgstr "Błędny adres email: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "잘못된 연락처 OpenPGP 키: %s"
+msgstr "Błedny klucz OpenPGP: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "잘못된 연락처 OpenPGP 공증 키 차단"
+msgstr "Błedny klucz publiczny OpenPGP."
 
 #: ../whisperBack/encryption.py:126
 msgid "No keys found."
-msgstr "키를 찾을 수 없습니다."
+msgstr "Nie znaleziono klucza."
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
 "The variable %s was not found in any of the configuation "
 "files/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "변수 %s을(를) configuation files/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py에서 찾을 수 없습니다"
+msgstr "Zmienna %s nie została znaleziona w konfiguracji files/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
 #: ../whisperBack/gui.py:114
 msgid "Name of the affected software"
-msgstr "영향을 받는 소프트웨어의 이름"
+msgstr "Nazwa programu z którym jest problem"
 
 #: ../whisperBack/gui.py:115
 msgid "Exact steps to reproduce the problem"
-msgstr "문제 재현의 정확한 단계"
+msgstr "Dokładna instrucja jak zrekonstruować problem"
 
 #: ../whisperBack/gui.py:116
 msgid "Actual result / the problem"
-msgstr "실제 결과 / 문제"
+msgstr "Rezultat/problem"
 
 #: ../whisperBack/gui.py:117
 msgid "Desired result"
-msgstr "원하는 결과"
+msgstr "Pożądany rezultat"
 
 #: ../whisperBack/gui.py:155
 msgid "Unable to load a valid configuration."
-msgstr "올바른 구성을 로드할 수 없습니다."
+msgstr "Nie udało się zaladować dzialającej konfiguracji."
 
 #: ../whisperBack/gui.py:177
 #, python-format
@@ -81,36 +81,36 @@ msgid ""
 "<p>Anyone who can see this reply will probably infer you are\n"
 "a Tails user. Time to wonder how much you trust your\n"
 "Internet and mailbox providers?</p>\n"
-msgstr "<h1>버그를 찾을 수 있도록 도와주세요!</h1>\n<p>Read <a href=\"%s\">버그 보고 과정</a>.</p>\n<p><strong>필요한 것 이상의 개인 정보를 포함하지 마십시오!</strong></p>\n<h2>이메일 주소를 우리에게 주는 것에 대하여</h2>\n<p>만약 귀하의 신원 중 약간을 Tails 개발자에게 주는 것이 꺼려지지 않는다면, 귀하는 버그에 대한 더 많은 세부사항을 묻기 위해 이메일 주소를 제공할 수 있습니다. 또한, 공개 PGP 통신은 나중에 암호화 통신을 할 수 있게 해 줍니다.</p>\n<p>이 답변을 볼 수 있는 사람들은 Tails 사용자로 추정됩니다. 귀하가 인터넷과 메일박스 제공자를 얼마나 믿는지 궁금할 시간입니까?</p>\n"
+msgstr "<h1>Pomóż nam naprawić swój problem!</h1>⏎ <p>Przeczytaj <a href=\"%s\">instrukcje jak zgłosić problem</a>.</p>⏎ <p><strong>Nie ujawniaj wiecej informacji o sobie niż to \nkonieczne!</strong></p>⏎ <h2>Jeżeli chcesz podac adres email</h2>\n<p>Jeżeli zgadzasz sie na częściowe ujawnienie swojej tożsamości\ndeweloperom Tails, możesz podac adres email\nżebysmy mogli zadawać Ci pytania dotyczące problemu. Ponadto, jeżeli podasz\nklucz publiczny PGP umożliwisz nam szyfrowanie tego typu \nkomunikacji.</p>\n<p>Kazdy kto zobaczy ta odpowiedx domyśli się, że jesteś\nurzytkownijiem Tails. Zastanow sie czy ufasz swoim operattorom\nintenetu i poczty.</p>\n"
 
 #: ../whisperBack/gui.py:229
 msgid "Sending mail..."
-msgstr "메일을 보내는 중..."
+msgstr "Wysyłanie..."
 
 #: ../whisperBack/gui.py:230
 msgid "Sending mail"
-msgstr "메일 전송 중"
+msgstr "Wysyłanie"
 
 #. pylint: disable=C0301
 #: ../whisperBack/gui.py:232
 msgid "This could take a while..."
-msgstr "다소 시간이 걸릴 수 있습니다..."
+msgstr "To może chwilę potrwać..."
 
 #: ../whisperBack/gui.py:246
 msgid "The contact email adress doesn't seem valid."
-msgstr "연락처 이메일 주소가 올바르지 않은 것 같습니다."
+msgstr "Adres email wygląda na błędny."
 
 #: ../whisperBack/gui.py:263
 msgid "Unable to send the mail: SMTP error."
-msgstr "메일을 보낼 수 없습니다: SMPT 오류."
+msgstr "Nie można wysłać poczty: błąd SMTP."
 
 #: ../whisperBack/gui.py:265
 msgid "Unable to connect to the server."
-msgstr "서버에 연결할 수 없습니다."
+msgstr "Nie można połączyc się z serwerem."
 
 #: ../whisperBack/gui.py:267
 msgid "Unable to create or to send the mail."
-msgstr "작성하거나 메일을 보낼 수 없습니다."
+msgstr "Nie można utworzyc lub wysłać poczty."
 
 #: ../whisperBack/gui.py:270
 msgid ""
@@ -119,24 +119,24 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\n네트워크 문제로 인해 버그 보고서를 보낼 수 없을 가능성이 있습니다. 네트워크를 다시 연결하고 다시 보내기를 시도하여 보십시오.\n\n작동하지 않는 경우, 버그 보고서를 저장하십시오.  "
+msgstr "\n\nNie można wysłać zawiadomienia o błędzie, prawdopodobnie przez problemy z siecią. Postaraj sie połączyć z siecią ponownie i kliknąć wyślij. \n\nJeżeli to nie zadziała, będziesz miał(a) mozliwość zachowania raportu o błędzie."
 
 #: ../whisperBack/gui.py:283
 msgid "Your message has been sent."
-msgstr "메시지를 보냈습니다."
+msgstr "Wiadomość została wysłana."
 
 #: ../whisperBack/gui.py:289
 msgid "Unable to find encryption key."
-msgstr "암호화 키를 찾을 수 없습니다."
+msgstr "Nie można znaleźć klucza szyfrowania."
 
 #: ../whisperBack/gui.py:293
 msgid "An error occured during encryption."
-msgstr "암호화하는 동안 오류가 발생했습니다."
+msgstr "Wystąpił błąd podczas szyfrowania."
 
 #: ../whisperBack/gui.py:313
 #, python-format
 msgid "Unable to save %s."
-msgstr "%s을(를) 저장할 수 없습니다."
+msgstr "Nie można zapisać %s."
 
 #. XXX: fix string
 #: ../whisperBack/gui.py:337
@@ -147,7 +147,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "네트워크 문제로 인해 버그 보고서를 보낼 수 없을 가능성이 있습니다.\n\n버그 보고서를 파일로 USB 드라이브에 저장하여 다른 시스템을 사용하여 %s를 우리에게 보낼 수 있습니다. 참고: 추가 단계를 취하지 않으면 귀하의 버그 보고서는 익명으로 처리되지 않습니다.\n(예, 이메일 계정으로 토르를 사용하지 않는 경우)\n\n버그 보고서를 파일로 저장하시겠습니까?"
+msgstr "Nie można wysłać komunikatu o błędzie, prawdopodobnie ze wzgęldu na problemy z siecią.\n\nAby to obejść, możesz zapisać raport o błędzie jako plik na dysku USB i spróbować wyslać go z twojego konta email na %s używając innego systemu. Pamiętaj, że w ten sposób Twój raport nie będzie anonimowy, chyba że postarasz sie aby był (na przyklad uzywając Tor z jednorazowym kontem email).\n\nCzy chcesz zapisać raport błędu jako plik?"
 
 #: ../whisperBack/gui.py:401 ../data/whisperback.ui.h:11
 msgid "WhisperBack"
@@ -155,32 +155,32 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:402 ../data/whisperback.ui.h:8
 msgid "Send feedback in an encrypted mail."
-msgstr "암호화된 메일로 피드백을 보냅니다."
+msgstr "Wyślij nam Swoje uwagi w zaszyfrowanym emailu."
 
 #: ../whisperBack/gui.py:405
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Copyright © 2009-2012 deweloperzy Tails (tails@boum.org)"
 
 #: ../whisperBack/gui.py:406
 msgid "Tails developers <tails@boum.org>"
-msgstr "Tails developers <tails@boum.org>"
+msgstr "Deweloperzy Tails <tails@boum.org>"
 
 #: ../whisperBack/gui.py:407
 msgid "translator-credits"
-msgstr "번역-저작자"
+msgstr "tłumaczenie"
 
 #: ../whisperBack/gui.py:434
 msgid "This doesn's seem to be a valid URL or OpenPGP key."
-msgstr "URL 또는 OpenPGP 키가 유효하지 않은 것 같습니다."
+msgstr "URL lub klucz OpenPGP wydaje się błędny."
 
 #: ../data/whisperback.ui.h:1
 msgid ""
 "Add a PGP key if you want us to encrypt messages when we respond to you."
-msgstr "우리가 당신에게 응답할 때 우리는 메시지를 암호화할 수 있는 PGP 키를 추가합니다."
+msgstr "Dodaj klucz PGP jeżeli chcesz aby nasza odpowiedź była zaszyfrowana."
 
 #: ../data/whisperback.ui.h:2
 msgid "Bug description"
-msgstr "버그 설명"
+msgstr "Opis błędu"
 
 #: ../data/whisperback.ui.h:3
 msgid "Copyright © 2009-2012 tails@boum.org"
@@ -188,29 +188,29 @@ msgstr "Copyright © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:4
 msgid "Help"
-msgstr "도움말"
+msgstr "Pomoc"
 
 #: ../data/whisperback.ui.h:5
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "우리가 당신에게 응답할 때 우리는 메시지를 암호화할 수 있는 귀하의 키 ID, 공개 키 블록과 같은 키에 대한 링크나 키를 추가합니다."
+msgstr "Jeżeli chcesz, żeby nasza odpowiedź była zaszyfrowana, podaj identyfikator Twojego klucza, link do klucza lub klucz publiczny:"
 
 #: ../data/whisperback.ui.h:6
 msgid "Optional email address to contact you"
-msgstr "연락 가능한 이메일 주소 (옵션)"
+msgstr "(Opcjonalne) Adres email pod którym można sie z Toba skontaktować:"
 
 #: ../data/whisperback.ui.h:7
 msgid "Send"
-msgstr "보내기"
+msgstr "Wyslij"
 
 #: ../data/whisperback.ui.h:9
 msgid "Summary"
-msgstr "요약"
+msgstr "Podsumowanie"
 
 #: ../data/whisperback.ui.h:10
 msgid "Technical details to include"
-msgstr "기술적인 세부 사항 포함"
+msgstr "Szczegóły techniczne do zawarcia"
 
 #: ../data/whisperback.ui.h:12
 msgid ""
@@ -229,15 +229,15 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Send feedback in an encrypted mail\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\n이 프로그램은 자유 소프트웨어입니다. 귀하는 이 프로그램을 자유 소프트웨어 재단에서 발행한 GNU General Public License 버전 3이나 그 이후의 버전으로 기여, 재생산, 배포 할 수 있습니다.\n\nThis program  is distributed in the  hope that it will  be useful, but\nWITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\nMERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\nGeneral Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Wyślij opinię w zaszywrowanym emailu\nCopyright (C) 2009-2012 deweloperzy Tails <tails@boum.org>\n\nTen program jest darmowy, może byc kopiowany i modyfikowany\nwedług wytycznych GNU general Public License opublikowanych przez\nFree Software Foundation; wersja trzecia licencji lub dowolna późniejsza.\n\nRozpowszechniając ten program, mamy nadzieje że będzie on przydatny lecz\nBEZ ŻADNEJ GWARANCJI; bez nawet domniemanej gwarancji\nPRZYDATNOŚCI HANDLOWEJ lub SPELNIANIA KONKRETYCH FUNKCJI. Szczegóły dostępne w GNU\nGeneral Public License.\n\nPowinienes byl otrzymac egzemplarz GNU General Public License razem z kopia programu. Jezeli tak sie nie stało, odwolaj sie do <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "디버깅 정보"
+msgstr "Informacje o debugowaniu"
 
 #: ../data/whisperback.ui.h:29
 msgid "headers"
-msgstr "헤더"
+msgstr "Nagłówki"
 
 #: ../data/whisperback.ui.h:30
 msgid "https://tails.boum.org/"
@@ -245,4 +245,4 @@ msgstr "https://tails.boum.org/"
 
 #: ../data/whisperback.ui.h:31
 msgid "optional PGP key"
-msgstr "옵션 PGP 키"
+msgstr "(opcjonalne) klucz PGP"
