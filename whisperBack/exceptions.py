@@ -38,7 +38,7 @@ class MisconfigurationException(WhisperbackException):
     """
     def __init__(self, variable):
         WhisperbackException.__init__(self,
-            _("The variable %s was not found in any of the configuation files"
+            _("The %s variable was not found in any of the configuration files "
             "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py")
             % variable)
 

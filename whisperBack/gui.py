@@ -416,7 +416,7 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
                 self.gpg_keyblock.get_buffer().get_end_iter())
         except ValueError, e:
             self.show_exception_dialog(
-                _("This doesn's seem to be a valid URL or OpenPGP key."),
+                _("This doesn't seem to be a valid URL or OpenPGP key."),
                 e, parent=self.gpg_dialog)
             return
         self.gpg_dialog.hide()
