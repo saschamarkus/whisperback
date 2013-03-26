@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-16 22:33+0100\n"
+"POT-Creation-Date: 2013-03-26 15:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,85 +32,47 @@ msgstr ""
 msgid "Invalid contact OpenPGP public key block"
 msgstr ""
 
-#: ../whisperBack/encryption.py:126
-msgid "No keys found."
-msgstr ""
-
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The variable %s was not found in any of the configuation files/etc/"
+"The %s variable was not found in any of the configuration files /etc/"
 "whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr ""
 
-#: ../whisperBack/gui.py:114
-msgid "Name of the affected software"
-msgstr ""
-
-#: ../whisperBack/gui.py:115
-msgid "Exact steps to reproduce the problem"
-msgstr ""
-
-#: ../whisperBack/gui.py:116
-msgid "Actual result / the problem"
-msgstr ""
-
-#: ../whisperBack/gui.py:117
-msgid "Desired result"
-msgstr ""
-
-#: ../whisperBack/gui.py:155
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr ""
 
-#: ../whisperBack/gui.py:177
-#, python-format
-msgid ""
-"<h1>Help us fix your bug!</h1>\n"
-"<p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
-"<p><strong>Do not include more personal information than\n"
-"needed!</strong></p>\n"
-"<h2>About giving us an email address</h2>\n"
-"<p>If you don't mind disclosing some bits of your identity\n"
-"to Tails developers, you can provide an email address to\n"
-"let us ask more details about the bug. Additionally entering\n"
-"a public PGP key enables us to encrypt such future\n"
-"communication.</p>\n"
-"<p>Anyone who can see this reply will probably infer you are\n"
-"a Tails user. Time to wonder how much you trust your\n"
-"Internet and mailbox providers?</p>\n"
-msgstr ""
-
-#: ../whisperBack/gui.py:229
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr ""
 
-#: ../whisperBack/gui.py:230
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr ""
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr ""
 
-#: ../whisperBack/gui.py:246
+#: ../whisperBack/gui.py:234
 msgid "The contact email adress doesn't seem valid."
 msgstr ""
 
-#: ../whisperBack/gui.py:263
+#: ../whisperBack/gui.py:251
 msgid "Unable to send the mail: SMTP error."
 msgstr ""
 
-#: ../whisperBack/gui.py:265
+#: ../whisperBack/gui.py:253
 msgid "Unable to connect to the server."
 msgstr ""
 
-#: ../whisperBack/gui.py:267
+#: ../whisperBack/gui.py:255
 msgid "Unable to create or to send the mail."
 msgstr ""
 
-#: ../whisperBack/gui.py:270
+#: ../whisperBack/gui.py:258
 msgid ""
 "\n"
 "\n"
@@ -120,25 +82,21 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr ""
 
-#: ../whisperBack/gui.py:283
+#: ../whisperBack/gui.py:271
 msgid "Your message has been sent."
 msgstr ""
 
-#: ../whisperBack/gui.py:289
-msgid "Unable to find encryption key."
-msgstr ""
-
-#: ../whisperBack/gui.py:293
+#: ../whisperBack/gui.py:278
 msgid "An error occured during encryption."
 msgstr ""
 
-#: ../whisperBack/gui.py:313
+#: ../whisperBack/gui.py:298
 #, python-format
 msgid "Unable to save %s."
 msgstr ""
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:337
+#: ../whisperBack/gui.py:322
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -152,70 +110,39 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr ""
 
-#: ../whisperBack/gui.py:401 ../data/whisperback.ui.h:11
+#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr ""
 
-#: ../whisperBack/gui.py:402 ../data/whisperback.ui.h:8
+#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr ""
 
-#: ../whisperBack/gui.py:405
+#: ../whisperBack/gui.py:390
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr ""
 
-#: ../whisperBack/gui.py:406
+#: ../whisperBack/gui.py:391
 msgid "Tails developers <tails@boum.org>"
 msgstr ""
 
-#: ../whisperBack/gui.py:407
+#: ../whisperBack/gui.py:392
 msgid "translator-credits"
 msgstr ""
 
-#: ../whisperBack/gui.py:434
-msgid "This doesn's seem to be a valid URL or OpenPGP key."
+#: ../whisperBack/gui.py:419
+msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr ""
 
 #: ../data/whisperback.ui.h:1
-msgid ""
-"Add a PGP key if you want us to encrypt messages when we respond to you."
-msgstr ""
-
-#: ../data/whisperback.ui.h:2
-msgid "Bug description"
-msgstr ""
-
-#: ../data/whisperback.ui.h:3
 msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr ""
 
+#: ../data/whisperback.ui.h:3
+msgid "https://tails.boum.org/"
+msgstr ""
+
 #: ../data/whisperback.ui.h:4
-msgid "Help"
-msgstr ""
-
-#: ../data/whisperback.ui.h:5
-msgid ""
-"If you want us to encrypt messages when we respond to you, add your key ID, "
-"a link to your key, or the key as a public key block:"
-msgstr ""
-
-#: ../data/whisperback.ui.h:6
-msgid "Optional email address to contact you"
-msgstr ""
-
-#: ../data/whisperback.ui.h:7
-msgid "Send"
-msgstr ""
-
-#: ../data/whisperback.ui.h:9
-msgid "Summary"
-msgstr ""
-
-#: ../data/whisperback.ui.h:10
-msgid "Technical details to include"
-msgstr ""
-
-#: ../data/whisperback.ui.h:12
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
 "Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
@@ -234,18 +161,44 @@ msgid ""
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
 
+#: ../data/whisperback.ui.h:20
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr ""
+
+#: ../data/whisperback.ui.h:22
+msgid "Summary"
+msgstr ""
+
+#: ../data/whisperback.ui.h:23
+msgid "Bug description"
+msgstr ""
+
+#: ../data/whisperback.ui.h:24
+msgid "Optional email address to contact you"
+msgstr ""
+
+#: ../data/whisperback.ui.h:25
+msgid "optional PGP key"
+msgstr ""
+
+#: ../data/whisperback.ui.h:26
+msgid "Technical details to include"
+msgstr ""
+
+#: ../data/whisperback.ui.h:27
+msgid "headers"
+msgstr ""
+
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
 msgstr ""
 
 #: ../data/whisperback.ui.h:29
-msgid "headers"
+msgid "Help"
 msgstr ""
 
 #: ../data/whisperback.ui.h:30
-msgid "https://tails.boum.org/"
-msgstr ""
-
-#: ../data/whisperback.ui.h:31
-msgid "optional PGP key"
+msgid "Send"
 msgstr ""
