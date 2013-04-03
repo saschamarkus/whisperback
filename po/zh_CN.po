@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <hua5679@gmail.com>, 2012.
+#   <zhazhenzhong@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: The Tor Project\n"
+"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
+"POT-Creation-Date: 2013-03-26 15:50+0100\n"
+"PO-Revision-Date: 2013-03-27 19:29+0000\n"
+"Last-Translator: simabull tsai <tsaizb@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. XXX use a better exception
+#: ../whisperBack/whisperback.py:63
+#, python-format
+msgid "Invalid contact email: %s"
+msgstr "无效联系人邮件：%s"
+
+#: ../whisperBack/whisperback.py:80
+#, python-format
+msgid "Invalid contact OpenPGP key: %s"
+msgstr "无效联系人OpenPGP密钥：%s"
+
+#: ../whisperBack/whisperback.py:82
+msgid "Invalid contact OpenPGP public key block"
+msgstr "无效联系人OpenPGP公钥块"
+
+#: ../whisperBack/exceptions.py:41
+#, python-format
+msgid ""
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "在配置文件 /etc/whisperback/config.py、~/.whisperback/config.py 以及 ./config.py 中都没有找到 %s 变量"
+
+#: ../whisperBack/gui.py:151
+msgid "Unable to load a valid configuration."
+msgstr "无法载入一个有效的配置。"
+
+#: ../whisperBack/gui.py:217
+msgid "Sending mail..."
+msgstr "正在发送邮件..."
+
+#: ../whisperBack/gui.py:218
+msgid "Sending mail"
+msgstr "正在发送邮件"
+
+#. pylint: disable=C0301
+#: ../whisperBack/gui.py:220
+msgid "This could take a while..."
+msgstr "此操作可能需要一些时间..."
+
+#: ../whisperBack/gui.py:234
+msgid "The contact email adress doesn't seem valid."
+msgstr "联系人邮件地址无效。"
+
+#: ../whisperBack/gui.py:251
+msgid "Unable to send the mail: SMTP error."
+msgstr "无法发送邮件：SMTP错误。"
+
+#: ../whisperBack/gui.py:253
+msgid "Unable to connect to the server."
+msgstr "无法连接服务器。"
+
+#: ../whisperBack/gui.py:255
+msgid "Unable to create or to send the mail."
+msgstr "无法创建或发送邮件。"
+
+#: ../whisperBack/gui.py:258
+msgid ""
+"\n"
+"\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"\n"
+"If it does not work, you will be offered to save the bug report."
+msgstr "\n\n错误报告无法发送，可能是网络问题，尝试重新连接网络，再点击发送。\n\n如果仍不管用，您可以选择保存错误报告。"
+
+#: ../whisperBack/gui.py:271
+msgid "Your message has been sent."
+msgstr "您的信息已发送。"
+
+#: ../whisperBack/gui.py:278
+msgid "An error occured during encryption."
+msgstr "加密中出现错误。"
+
+#: ../whisperBack/gui.py:298
+#, python-format
+msgid "Unable to save %s."
+msgstr "无法保存 %s。"
+
+#. XXX: fix string
+#: ../whisperBack/gui.py:322
+#, python-format
+msgid ""
+"The bug report could not be sent, likely due to network problems.\n"
+"\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"\n"
+"Do you want to save the bug report to a file?"
+msgstr "可能由于网络原因，错误报告无法发送。\n\n为了绕过这一问题，您可以保存错误报告到U盘中，在其他系统中从您的邮箱将其发送给我们 %s 。注意这样您的错误报告将失去匿名性。除非您自行采取其他措施。 (例如，使用 Tor 和 一次性邮箱 )。\n\n您是否要将错误报告保存至文件 ?"
+
+#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
+msgid "WhisperBack"
+msgstr "WhisperBack"
+
+#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
+msgid "Send feedback in an encrypted mail."
+msgstr "通过加密邮件发送用户反馈。"
+
+#: ../whisperBack/gui.py:390
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Copyright © 2009-2012 Tails 开发人员(tails@boum.org)"
+
+#: ../whisperBack/gui.py:391
+msgid "Tails developers <tails@boum.org>"
+msgstr "Tails 开发者 <tails@boum.org>"
+
+#: ../whisperBack/gui.py:392
+msgid "translator-credits"
+msgstr "翻译人员"
+
+#: ../whisperBack/gui.py:419
+msgid "This doesn't seem to be a valid URL or OpenPGP key."
+msgstr "这好像并非有效的 URL 地址或 OpenPGP 密钥。"
+
+#: ../data/whisperback.ui.h:1
+msgid "Copyright © 2009-2012 tails@boum.org"
+msgstr "Copyright © 2009-2012 tails@boum.org"
+
+#: ../data/whisperback.ui.h:3
+msgid "https://tails.boum.org/"
+msgstr "https://tails.boum.org/"
+
+#: ../data/whisperback.ui.h:4
+msgid ""
+"WhisperBack - Send feedback in an encrypted mail\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"\n"
+"This program is  free software; you can redistribute  it and/or modify\n"
+"it under the  terms of the GNU General Public  License as published by\n"
+"the Free Software Foundation; either  version 3 of the License, or (at\n"
+"your option) any later version.\n"
+"\n"
+"This program  is distributed in the  hope that it will  be useful, but\n"
+"WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\n"
+"MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\n"
+"General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - 请以加密邮件发送反馈信息\nCopyright (C) 2009-2012 Tails 开发者 <tails@boum.org>\n\n该程序为自由软件。根据自由软件基金会发布的 GNU 通用公共许可证\n（第 3 版或更高版本），你可以对该软件进行再发布和/或修改。\n\n该程序的发布是希望它能带来用处，但对此并不提供保证，\n甚至不包括对适销性或适用于特定用途的默示保证。\n更多详细信息，请参阅 GNU 通用公共许可证。\n\n该程序附带一份 GNU 通用公共许可证。\n如未收到，请查看 <http://www.gnu.org/licenses/>。\n"
+
+#: ../data/whisperback.ui.h:20
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr "如果您希望我们回复您时使用加密消息，添加您的 密钥编号，下载密钥用的链接或公钥字符串:"
+
+#: ../data/whisperback.ui.h:22
+msgid "Summary"
+msgstr "概要"
+
+#: ../data/whisperback.ui.h:23
+msgid "Bug description"
+msgstr "错误描述"
+
+#: ../data/whisperback.ui.h:24
+msgid "Optional email address to contact you"
+msgstr "用于联系您的Email地址（可选）"
+
+#: ../data/whisperback.ui.h:25
+msgid "optional PGP key"
+msgstr "PGP 密钥（可选 ）"
+
+#: ../data/whisperback.ui.h:26
+msgid "Technical details to include"
+msgstr "技术细节"
+
+#: ../data/whisperback.ui.h:27
+msgid "headers"
+msgstr "头部"
+
+#: ../data/whisperback.ui.h:28
+msgid "debugging info"
+msgstr "调试信息"
+
+#: ../data/whisperback.ui.h:29
+msgid "Help"
+msgstr "帮助"
+
+#: ../data/whisperback.ui.h:30
+msgid "Send"
+msgstr "发送"
