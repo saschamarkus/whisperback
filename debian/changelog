@@ -1,3 +1,15 @@
+whisperback (1.6.6) stable; urgency=low
+
+  * Declare Debian source format is 3.0 (native).
+  * Spelling fixes.
+  * Update POT file.
+  * Update translations: Arabic, French, German, Greek, Spanish, Korean,
+    Polish, Russian.
+  * New translations: Finnish, Chinese.
+  * Stop listing PO and MO files in MANIFEST.
+
+ -- Tails developers <amnesia@boum.org>  Wed, 03 Apr 2013 10:50:12 +0200
+
 whisperback (1.6.5) testing; urgency=low
 
   * Don't translate the bug report template.
