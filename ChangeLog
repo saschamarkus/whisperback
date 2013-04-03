@@ -369,3 +369,10 @@ Minor improvements
  * Don't translate the bug report template.
  * Update Spanish and Korean translations, import new Polish translation.
 
+1.6.6
+=====
+
+ * Update translations: Arabic, German, Greek, Spanish, Korean, Polish,
+   Russian.
+ * New translations: Finnish, Chinese.
+ * Stop listing PO and MO files in MANIFEST.
