@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Mikko Harhanen <gitti@mikkoharhanen.fi>, 2013.
+# mikkoharhanen <gitti@mikkoharhanen.fi>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
 "POT-Creation-Date: 2013-03-26 15:50+0100\n"
-"PO-Revision-Date: 2013-03-27 21:17+0000\n"
-"Last-Translator: mikkoharhanen <gitti@mikkoharhanen.fi>\n"
+"PO-Revision-Date: 2013-04-29 08:29+0000\n"
+"Last-Translator: runasand <runa.sandvik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,16 +22,16 @@ msgstr ""
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Sähköpostiosoite on virheellinen: %s"
+msgstr "Virheellinen sähköpostiosoite: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "OpenPGP-avain on virheellinen: %s"
+msgstr "Virheellinen OpenPGP-avain: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Julkisen OpenPGP -avaimen lohko (public key block) on virheellinen:"
+msgstr "Virheellinen julkinen OpenPGP-avain (public key block)"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
@@ -63,7 +63,7 @@ msgstr "Yhteyshenkilön sähköpostiosoite ei vaikuta kelvolliselta."
 
 #: ../whisperBack/gui.py:251
 msgid "Unable to send the mail: SMTP error."
-msgstr "Sähköpostia ei voida lähettää: SMTP virhe."
+msgstr "Sähköpostia ei voida lähettää: SMTP-virhe."
 
 #: ../whisperBack/gui.py:253
 msgid "Unable to connect to the server."
@@ -80,7 +80,7 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\nVikailmoitusta ei voitu lähettää, mikä johtuu todennäköisesti verkko-ongelmista. Yritä yhdistää uudelleen verkkoon ja napsauta \"lähetä uudelleen\".\n\nJos toimenpide ei auta, sinulle ehdotetaan vikailmoituksen tallennusta."
+msgstr "\nVikailmoitusta ei voitu lähettää luultavasti verkko-ongelmien vuoksi. Yritä yhdistää uudelleen verkkoon ja napsauta taas Lähetä-painiketta.\n\nJos tämä ei auta,  sinulle ehdotetaan vikailmoituksen tallentamista."
 
 #: ../whisperBack/gui.py:271
 msgid "Your message has been sent."
@@ -93,7 +93,7 @@ msgstr "Salauksen aikana sattui virhe."
 #: ../whisperBack/gui.py:298
 #, python-format
 msgid "Unable to save %s."
-msgstr "%s ei voida tallentaa."
+msgstr "Ei voida tallentaa %s."
 
 #. XXX: fix string
 #: ../whisperBack/gui.py:322
@@ -132,7 +132,7 @@ msgstr "Tämä ei vaikuta kelvolliselta URL-osoitteelta tai OpenPGP-avaimelta."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Tekijänoikeus © 2009-2012 (tails@boum.org)"
+msgstr "Tekijänoikeus © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -173,11 +173,11 @@ msgstr "Vian kuvaus"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Vaihtoehtoinen sähköpostiosoite, johon voidaan ottaa yhteyttä"
+msgstr "Vapaaehtoinen sähköpostiosoitteesi yhteydenottoa varten"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "valinnainen PGP-avain"
+msgstr "Vapaaehtoinen PGP-avain"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
@@ -189,7 +189,7 @@ msgstr "tunnistetiedot"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "Vianjäljityksen tiedot"
+msgstr "vianjäljityksen tiedot"
 
 #: ../data/whisperback.ui.h:29
 msgid "Help"

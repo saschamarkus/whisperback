@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-#   <geronimo.bruno@gmail.com>, 2012.
-# n3t0  <>, 2012.
+# Augustine <evandro@geocities.com>, 2013
+# bruuh <bruuh@outlook.com>, 2012
+# m4lqu1570 <>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2012-02-16 22:33+0100\n"
-"PO-Revision-Date: 2012-12-10 01:26+0000\n"
-"Last-Translator: bruuh <geronimo.bruno@gmail.com>\n"
+"POT-Creation-Date: 2013-03-26 15:50+0100\n"
+"PO-Revision-Date: 2013-04-29 08:29+0000\n"
+"Last-Translator: runasand <runa.sandvik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,85 +35,47 @@ msgstr "Chave OpenPGP de contato inválida: %s"
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Bloco de chave pública OpenPGP de contato inválida"
 
-#: ../whisperBack/encryption.py:126
-msgid "No keys found."
-msgstr "Nenhuma chave encontrada."
-
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The variable %s was not found in any of the configuation "
-"files/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "A variável %s não foi encontrada em nenhuma configuração files/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "A variável %s não foi encontrada em quaisquer dos arquivos de configuração: /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:114
-msgid "Name of the affected software"
-msgstr "Nome do software afetado"
-
-#: ../whisperBack/gui.py:115
-msgid "Exact steps to reproduce the problem"
-msgstr "Passos exatos para reproduzir o problema"
-
-#: ../whisperBack/gui.py:116
-msgid "Actual result / the problem"
-msgstr "Resultado atual / o problema"
-
-#: ../whisperBack/gui.py:117
-msgid "Desired result"
-msgstr "Resultado desejado"
-
-#: ../whisperBack/gui.py:155
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "Habilitar carregar uma configuração válida"
 
-#: ../whisperBack/gui.py:177
-#, python-format
-msgid ""
-"<h1>Help us fix your bug!</h1>\n"
-"<p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
-"<p><strong>Do not include more personal information than\n"
-"needed!</strong></p>\n"
-"<h2>About giving us an email address</h2>\n"
-"<p>If you don't mind disclosing some bits of your identity\n"
-"to Tails developers, you can provide an email address to\n"
-"let us ask more details about the bug. Additionally entering\n"
-"a public PGP key enables us to encrypt such future\n"
-"communication.</p>\n"
-"<p>Anyone who can see this reply will probably infer you are\n"
-"a Tails user. Time to wonder how much you trust your\n"
-"Internet and mailbox providers?</p>\n"
-msgstr "<h1>Ajude-nos a consertar seu bug!</h1>\n<p>Leia <a href=\"%s\">nossas instruções para reportar bug</a>.</p>\n<p><strong>Não inclua mais informações pessoais do que o necessário!</strong></p>\n<h2>Sobre dar-nos um endereço de e-mail</h2>\n<p>Se você não se importa em abrir um pouco da sua identidade\naos desenvolvedores Tails, você pode prover um email para contar-nos\nmais detalhes sobre o bug. Adicionalmente, entrando uma chave PGP\npública, nos permite encriptar futuras comunicações via e-mail.</p>\n<p>Qualquer um que puder ver esta resposta provavelmente deduzirá\nque você é um usuário Tails. Tempo para pensar o quanto você confia\nna sua internet e no seu provedor de e-mail?</p>\n"
-
-#: ../whisperBack/gui.py:229
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "Enviando e-mail..."
 
-#: ../whisperBack/gui.py:230
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "Enviando e-mail"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "Isto pode levar um tempo..."
 
-#: ../whisperBack/gui.py:246
+#: ../whisperBack/gui.py:234
 msgid "The contact email adress doesn't seem valid."
 msgstr "O e-mail de contato não parece ser válido"
 
-#: ../whisperBack/gui.py:263
+#: ../whisperBack/gui.py:251
 msgid "Unable to send the mail: SMTP error."
 msgstr "Habilitar enviar o e-mail: erro SMTP."
 
-#: ../whisperBack/gui.py:265
+#: ../whisperBack/gui.py:253
 msgid "Unable to connect to the server."
 msgstr "Habilitar conectar ao servidor."
 
-#: ../whisperBack/gui.py:267
+#: ../whisperBack/gui.py:255
 msgid "Unable to create or to send the mail."
 msgstr "Habilitar criar ou enviar o e-mail."
 
-#: ../whisperBack/gui.py:270
+#: ../whisperBack/gui.py:258
 msgid ""
 "\n"
 "\n"
@@ -121,25 +84,21 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nO report do bug não pode ser enviado, provavelmente por problemas de rede. Por favor, tente reconectar à rede e clique em enviar novamente.\n\nSe isto não funcionar, será oferecido a você salvar o report do bug."
 
-#: ../whisperBack/gui.py:283
+#: ../whisperBack/gui.py:271
 msgid "Your message has been sent."
 msgstr "Sua mensagem está sendo enviada."
 
-#: ../whisperBack/gui.py:289
-msgid "Unable to find encryption key."
-msgstr "Habilitar encontrar a chave de encriptação."
-
-#: ../whisperBack/gui.py:293
+#: ../whisperBack/gui.py:278
 msgid "An error occured during encryption."
 msgstr "Um erro ocorreu durante a encriptação."
 
-#: ../whisperBack/gui.py:313
+#: ../whisperBack/gui.py:298
 #, python-format
 msgid "Unable to save %s."
 msgstr "Habilitar salvar %s."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:337
+#: ../whisperBack/gui.py:322
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -149,70 +108,39 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "O report do bug não pode ser enviado, provavelmente devido à problemas na rede.\n\nVocê pode salvar o report como um arquivo em um drive USB e tentar enviar-nos em %s de sua conta de e-mail usando outro sistema. Note que seu report de bug não será anônimo ao fazer isto, a não ser que você faça-o por conta própria (ex. usando Tor com uma conta de e-mail descartável).\n\nVocê quer salvar o report para um arquivo? "
 
-#: ../whisperBack/gui.py:401 ../data/whisperback.ui.h:11
+#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:402 ../data/whisperback.ui.h:8
+#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Enviar feedback em um e-mail encriptado"
 
-#: ../whisperBack/gui.py:405
+#: ../whisperBack/gui.py:390
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails developers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:406
+#: ../whisperBack/gui.py:391
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails developers <tails@boum.org>"
 
-#: ../whisperBack/gui.py:407
+#: ../whisperBack/gui.py:392
 msgid "translator-credits"
 msgstr "créditos de tradução"
 
-#: ../whisperBack/gui.py:434
-msgid "This doesn's seem to be a valid URL or OpenPGP key."
-msgstr "Isto não parece ser uma URL válida ou uma chave OpenPGP."
+#: ../whisperBack/gui.py:419
+msgid "This doesn't seem to be a valid URL or OpenPGP key."
+msgstr "Esta URL ou chave OpenPGP não parece ser válida."
 
 #: ../data/whisperback.ui.h:1
-msgid ""
-"Add a PGP key if you want us to encrypt messages when we respond to you."
-msgstr "Adicione uma chave PGP se você quiser que nós encriptemos as mensagens de resposta à você."
-
-#: ../data/whisperback.ui.h:2
-msgid "Bug description"
-msgstr "Descrição do Bug"
-
-#: ../data/whisperback.ui.h:3
 msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr "Copyright © 2009-2012 tails@boum.org"
 
+#: ../data/whisperback.ui.h:3
+msgid "https://tails.boum.org/"
+msgstr "https://tails.boum.org/"
+
 #: ../data/whisperback.ui.h:4
-msgid "Help"
-msgstr "Ajuda"
-
-#: ../data/whisperback.ui.h:5
-msgid ""
-"If you want us to encrypt messages when we respond to you, add your key ID, "
-"a link to your key, or the key as a public key block:"
-msgstr "Se você quiser que nós encriptemos as mensagens quando respondermos à você, adicione sua chave ID, um link para sua chave, ou a chave como um bloco de chave pública:"
-
-#: ../data/whisperback.ui.h:6
-msgid "Optional email address to contact you"
-msgstr "E-mail opcional para contatarmos você"
-
-#: ../data/whisperback.ui.h:7
-msgid "Send"
-msgstr "Envio"
-
-#: ../data/whisperback.ui.h:9
-msgid "Summary"
-msgstr "Resumo"
-
-#: ../data/whisperback.ui.h:10
-msgid "Technical details to include"
-msgstr "Detalhes técnicos para incluir"
-
-#: ../data/whisperback.ui.h:12
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
 "Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
@@ -231,18 +159,44 @@ msgid ""
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr "WhisperBack - Envie feedback em um email encriptado\nCopyright (C) 2009-2011 Tails developers <tails@boum.org>\n\nEste programa é  software livre; você pode redistribuir  e/ou modificá-lo\nsobre os  termos da Licença Pública  Geral GNU como publicado pela\nFree Software Foundation;  versão 3 da Licença, ou (sob\nsua opção) qualquer versão mais recente.\n\nEste programa  é distribuído na  na esperança de que será  útil, mas\nSEM   QUALQUER  GARANTIA;   sem  nem   a  garantia   implícita  de\nCOMERCIALIZAÇÃO  ou ADEQUAÇÃO  PARA UM  PROPÓSITO PARTICULAR.   Veja  a Licença Pública Geral GNU para maiores detalhes.\n\nVocê deve ter recebido uma cópia da Licença Pública Geral GNU\njunto com este programa.  Caso contrário, veja <http://www.gnu.org/licenses/>.\n"
 
+#: ../data/whisperback.ui.h:20
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr "Se você quiser que nós encriptemos as mensagens quando respondermos à você, adicione sua chave ID, um link para sua chave, ou a chave como um bloco de chave pública:"
+
+#: ../data/whisperback.ui.h:22
+msgid "Summary"
+msgstr "Resumo"
+
+#: ../data/whisperback.ui.h:23
+msgid "Bug description"
+msgstr "Descrição do Bug"
+
+#: ../data/whisperback.ui.h:24
+msgid "Optional email address to contact you"
+msgstr "E-mail opcional para contatarmos você"
+
+#: ../data/whisperback.ui.h:25
+msgid "optional PGP key"
+msgstr "chave PGP opcional"
+
+#: ../data/whisperback.ui.h:26
+msgid "Technical details to include"
+msgstr "Detalhes técnicos para incluir"
+
+#: ../data/whisperback.ui.h:27
+msgid "headers"
+msgstr "cabeçalhos"
+
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
 msgstr "informação de debug"
 
 #: ../data/whisperback.ui.h:29
-msgid "headers"
-msgstr "cabeçalhos"
+msgid "Help"
+msgstr "Ajuda"
 
 #: ../data/whisperback.ui.h:30
-msgid "https://tails.boum.org/"
-msgstr "https://tails.boum.org/"
-
-#: ../data/whisperback.ui.h:31
-msgid "optional PGP key"
-msgstr "chave PGP opcional"
+msgid "Send"
+msgstr "Envio"

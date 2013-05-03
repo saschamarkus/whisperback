@@ -3,20 +3,24 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Shondoit Walker <shondoit+transifex@gmail.com>, 2012.
+# JerBen <ayurveda63@gmail.com>, 2012
+# Shondoit Walker <shondoit@gmail.com>, 2012
+# Marco Brohet <therbom@gmail.com>, 2012
+# caesarjulius <darthim@hotmail.com>, 2013
+# unknown365 <unknown365@hotmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2012-02-16 22:33+0100\n"
-"PO-Revision-Date: 2012-02-26 21:19+0000\n"
-"Last-Translator: Shondoit Walker <shondoit+transifex@gmail.com>\n"
+"POT-Creation-Date: 2013-03-26 15:50+0100\n"
+"PO-Revision-Date: 2013-04-29 08:29+0000\n"
+"Last-Translator: runasand <runa.sandvik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
@@ -33,85 +37,47 @@ msgstr "Ongeldige contact OpenPGP sleutel: %s"
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Ongeldige contact OpenPGP publieke sleutelblok"
 
-#: ../whisperBack/encryption.py:126
-msgid "No keys found."
-msgstr "Geen sleutels gevonden."
-
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The variable %s was not found in any of the configuation "
-"files/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "De variabele %s was niet gevonden in enig configuratie bestand. /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "De %s variabel is niet gevonden in de configuratie bestanden etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:114
-msgid "Name of the affected software"
-msgstr "Naam van betreffende software"
-
-#: ../whisperBack/gui.py:115
-msgid "Exact steps to reproduce the problem"
-msgstr "Exacte stappen om het probleem te reproduceren"
-
-#: ../whisperBack/gui.py:116
-msgid "Actual result / the problem"
-msgstr "Daadwerkelijke resultaat / het probleem"
-
-#: ../whisperBack/gui.py:117
-msgid "Desired result"
-msgstr "Gewenste resultaat"
-
-#: ../whisperBack/gui.py:155
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "Kan geen geldige configuratie inladen."
 
-#: ../whisperBack/gui.py:177
-#, python-format
-msgid ""
-"<h1>Help us fix your bug!</h1>\n"
-"<p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
-"<p><strong>Do not include more personal information than\n"
-"needed!</strong></p>\n"
-"<h2>About giving us an email address</h2>\n"
-"<p>If you don't mind disclosing some bits of your identity\n"
-"to Tails developers, you can provide an email address to\n"
-"let us ask more details about the bug. Additionally entering\n"
-"a public PGP key enables us to encrypt such future\n"
-"communication.</p>\n"
-"<p>Anyone who can see this reply will probably infer you are\n"
-"a Tails user. Time to wonder how much you trust your\n"
-"Internet and mailbox providers?</p>\n"
-msgstr "<h1>Help ons jouw bugs te fixen!</h1>\n<p>Lees <a href=\"%s\">onze handleiding voor het melden van fouten</a>.</p>\n<p><strong>Voeg niet meer persoonlijke informatie toe dan nodig!</strong></p>\n<h2>Over het opgeven van een e-mailadres</h2>\n<p>Als je het niet erg vindt om iets een beetje van je identiteit af te staan, dan kun je een e-mailadres opgeven zodat wij meer details over de fout kunnen vragen. Bovendien, door het toevoegen van een publieke PGP sleutel stel je ons in staat om zulke toekomstige communicatie te versleutelen.</p>\n<p>Iedereen die ons antwoordbericht kan zien zal waarschijnlijk kunnen afleiden dat je een Tails gebruiker bent. Tijd om je af te vragen hoeveel je je Internet- en mailprovider vertrouwd?</p>\n"
-
-#: ../whisperBack/gui.py:229
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "Bezig met mail versturen..."
 
-#: ../whisperBack/gui.py:230
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "Bezig met mail versturen"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "Dit kan enige tijd duren..."
 
-#: ../whisperBack/gui.py:246
+#: ../whisperBack/gui.py:234
 msgid "The contact email adress doesn't seem valid."
 msgstr "Het contact e-mailadres lijkt niet geldig."
 
-#: ../whisperBack/gui.py:263
+#: ../whisperBack/gui.py:251
 msgid "Unable to send the mail: SMTP error."
 msgstr "Kan mail niet versturen: SMTP fout."
 
-#: ../whisperBack/gui.py:265
+#: ../whisperBack/gui.py:253
 msgid "Unable to connect to the server."
 msgstr "Kan niet verbinden met de server."
 
-#: ../whisperBack/gui.py:267
+#: ../whisperBack/gui.py:255
 msgid "Unable to create or to send the mail."
 msgstr "Kan mail niet aanmaken of versturen."
 
-#: ../whisperBack/gui.py:270
+#: ../whisperBack/gui.py:258
 msgid ""
 "\n"
 "\n"
@@ -120,25 +86,21 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nDe foutrapportage kon niet worden verstuurd, waarschijnlijk door netwerkproblemen. Probeer opnieuw verbinding te maken met het netwerk en probeer het opnieuw.\n\nAls dit niet werkt wordt je aangeboden om de foutrapportage op te slaan."
 
-#: ../whisperBack/gui.py:283
+#: ../whisperBack/gui.py:271
 msgid "Your message has been sent."
 msgstr "Je bericht is verstuurd."
 
-#: ../whisperBack/gui.py:289
-msgid "Unable to find encryption key."
-msgstr "Kan encryptiesleutel niet vinden."
-
-#: ../whisperBack/gui.py:293
+#: ../whisperBack/gui.py:278
 msgid "An error occured during encryption."
 msgstr "Er is een fout opgetreden tijdens het versleutelen"
 
-#: ../whisperBack/gui.py:313
+#: ../whisperBack/gui.py:298
 #, python-format
 msgid "Unable to save %s."
 msgstr "Kan %s niet opslaan."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:337
+#: ../whisperBack/gui.py:322
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -148,70 +110,39 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "De foutrapportage kon niet worden verstuurd, waarschijnlijk door netwerkproblemen.\n\nAls een tijdelijke oplossing kun je de foutrapportage opslaan op een USB-drive en het proberen te versturen naar ons op %s via jouw e-mailaccount op een ander systeem. Let wel op dat je foutrapportage niet anoniem zal zijn wanneer je dit doet, tenzij je zelf verdere stappen onderneemt (bijv. gebruik maken van Tor een een wegwerp-e-mailaccount.)\n\nWil je de foutrapportage opslaan als een bestand?"
 
-#: ../whisperBack/gui.py:401 ../data/whisperback.ui.h:11
+#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:402 ../data/whisperback.ui.h:8
+#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Stuur feedback in een versleutelde mail."
 
-#: ../whisperBack/gui.py:405
+#: ../whisperBack/gui.py:390
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 Tails ontwikkelaars (tails@boum.org)"
+msgstr "Copyright © 2009-2012 Tails-ontwikkelaars (tails@boum.org)"
 
-#: ../whisperBack/gui.py:406
+#: ../whisperBack/gui.py:391
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails ontwikkelaars <tails@boum.org>"
 
-#: ../whisperBack/gui.py:407
+#: ../whisperBack/gui.py:392
 msgid "translator-credits"
 msgstr "vertaler credits"
 
-#: ../whisperBack/gui.py:434
-msgid "This doesn's seem to be a valid URL or OpenPGP key."
+#: ../whisperBack/gui.py:419
+msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Dit lijkt geen geldige URL of OpenPGP sleutel te zijn."
 
 #: ../data/whisperback.ui.h:1
-msgid ""
-"Add a PGP key if you want us to encrypt messages when we respond to you."
-msgstr "Voeg een PGP sleutel toe als je wilt dat wij onze berichten versleutelen wanneer we jou een antwoord sturen."
-
-#: ../data/whisperback.ui.h:2
-msgid "Bug description"
-msgstr "Foutomschrijving"
-
-#: ../data/whisperback.ui.h:3
 msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr "Copyright © 2009-2012 tails@boum.org"
 
+#: ../data/whisperback.ui.h:3
+msgid "https://tails.boum.org/"
+msgstr "https://tails.boum.org/"
+
 #: ../data/whisperback.ui.h:4
-msgid "Help"
-msgstr "Help"
-
-#: ../data/whisperback.ui.h:5
-msgid ""
-"If you want us to encrypt messages when we respond to you, add your key ID, "
-"a link to your key, or the key as a public key block:"
-msgstr "Als je wilt dat wij onze berichten versleutelen wanneer we jou antwoorden, voeg je sleutel ID, een link naar je sleutel of de sleutel als een publieke sleutelblok"
-
-#: ../data/whisperback.ui.h:6
-msgid "Optional email address to contact you"
-msgstr "Optioneel e-mailadres om met jou contact op te nemen"
-
-#: ../data/whisperback.ui.h:7
-msgid "Send"
-msgstr "Verstuur"
-
-#: ../data/whisperback.ui.h:9
-msgid "Summary"
-msgstr "Samenvatting"
-
-#: ../data/whisperback.ui.h:10
-msgid "Technical details to include"
-msgstr "Technische details om bij te voegen"
-
-#: ../data/whisperback.ui.h:12
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
 "Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
@@ -228,20 +159,46 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Verstuur feedback in een versleutelde mail\nCopyright (C) 2009-2012 Tails ontwikkelaars <tails@boum.org>\n\nDit programma is vrije software; je mag het verspreiden en/of het aanpassen onder de voorwaarden van de GNU General Public License zoals gepubliceerd door de Free Software Foundation; zij het versie 3 van de Licentie, of (naar eigen keuze) enige latere versie.\n\nDit programma is verspreid in de hoop dat het nuttig is, maar ZONDER ENIGE GARANTIE; zonder zelfs de impliciete garantie van\nVERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de GNU General Public License voor meer details.\n\nJe zou een kopie ontvangen moeten hebben van de GNU General Public License samen met dit programma. Zo niet, zie <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Stuur terugkoppeling in een versleutelde email.\nCopyright (C) 2009-2012 Tails ontwikkelaars <tail@boum.org>\n\nDit programma is vrije programmatuur; u kan het verspreiden en/of aanpassen\nonder de voorwaarden van de GNU General Public License zoals gepubliceerd door\nThe Free Software Foundation; ofwel versie 3 van de Licentie, of (naar\nuw keuze) elke latere versie.\n\nDit programma wordt gedistribueerd in de hoop dat het nuttig zal zijn, maar\nZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie van\nVERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de GNU\nGeneral Public License voor meer details.\n\nU heeft een kopie moeten ontvangen van de GNU General Public License samen met dit programma. Zo niet, zie <http://www.gnu.org/licenses/>.\n"
+
+#: ../data/whisperback.ui.h:20
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr "Als je wilt dat wij onze berichten versleutelen wanneer we jou antwoorden, voeg je sleutel ID, een link naar je sleutel of de sleutel als een publieke sleutelblok"
+
+#: ../data/whisperback.ui.h:22
+msgid "Summary"
+msgstr "Samenvatting"
+
+#: ../data/whisperback.ui.h:23
+msgid "Bug description"
+msgstr "Foutomschrijving"
+
+#: ../data/whisperback.ui.h:24
+msgid "Optional email address to contact you"
+msgstr "Optioneel e-mailadres om met jou contact op te nemen"
+
+#: ../data/whisperback.ui.h:25
+msgid "optional PGP key"
+msgstr "optionele PGP sleutel"
+
+#: ../data/whisperback.ui.h:26
+msgid "Technical details to include"
+msgstr "Technische details om bij te voegen"
+
+#: ../data/whisperback.ui.h:27
+msgid "headers"
+msgstr "headers"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
 msgstr "debug info"
 
 #: ../data/whisperback.ui.h:29
-msgid "headers"
-msgstr "headers"
+msgid "Help"
+msgstr "Help"
 
 #: ../data/whisperback.ui.h:30
-msgid "https://tails.boum.org/"
-msgstr "https://tails.boum.org/"
-
-#: ../data/whisperback.ui.h:31
-msgid "optional PGP key"
-msgstr "optionele PGP sleutel"
+msgid "Send"
+msgstr "Verstuur"
