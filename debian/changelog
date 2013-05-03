@@ -1,3 +1,10 @@
+whisperback (1.6.7) devel; urgency=low
+
+  * New translation: Swedish.
+  * Update translations for many more languages.
+
+ -- Tails developers <tails@boum.org>  Fri, 03 May 2013 15:28:21 +0200
+
 whisperback (1.6.6) stable; urgency=low
 
   * Declare Debian source format is 3.0 (native).
