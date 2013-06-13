@@ -1,3 +1,9 @@
+whisperback (1.6.8) devel; urgency=low
+
+  * Update translations from Transifex.
+
+ -- Tails developers <tails@boum.org>  Thu, 13 Jun 2013 16:22:05 +0200
+
 whisperback (1.6.7) devel; urgency=low
 
   * New translation: Swedish.
