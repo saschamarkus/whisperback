@@ -5,15 +5,15 @@
 # Translators:
 # Mohammed ALDOUB <voulnet@gmail.com>, 2012
 # Mohammed ALDOUB <voulnet@gmail.com>, 2012
-# Sherief <sheriefalaa.w@gmail.com>, 2013
+# Sherief Alaa <sheriefalaa.w@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
 "POT-Creation-Date: 2013-03-26 15:50+0100\n"
-"PO-Revision-Date: 2013-04-29 08:29+0000\n"
-"Last-Translator: runasand <runa.sandvik@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-06-12 00:50+0000\n"
+"Last-Translator: Sherief Alaa <sheriefalaa.w@gmail.com>\n"
+"Language-Team: Arabic (http://www.transifex.com/projects/p/torproject/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,16 +24,16 @@ msgstr ""
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "البريد الالكتروني خطأ : %s"
+msgstr "عنوان البريد الإلكتروني الخاص غير صحيح : %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "مفتاح تشفير OpenPGPلجهة الاتصال خطأ: %s"
+msgstr "مفتاح الـOpenPGP غير صحيح : %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "مفتاح تشفير OpenPGP العام لجهة الاتصال خطأ"
+msgstr "مفتاح الـOpenPGP العام غير صحيح"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
@@ -44,32 +44,32 @@ msgstr "المتغير %s غير موجود في أي من ملفات الاعد
 
 #: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
-msgstr "غير قادر على تحميل اعدادات صالحة"
+msgstr "غير قادر على تحميل تكوين صالح."
 
 #: ../whisperBack/gui.py:217
 msgid "Sending mail..."
-msgstr "ارسال بريد إلكتروني"
+msgstr "جاري أرسال البريد الإلكتروني..."
 
 #: ../whisperBack/gui.py:218
 msgid "Sending mail"
-msgstr "ارسال بريد إلكتروني"
+msgstr "جاري أرسال البريد الإلكتروني"
 
 #. pylint: disable=C0301
 #: ../whisperBack/gui.py:220
 msgid "This could take a while..."
-msgstr "ربما نحتاج وقتاً آطول"
+msgstr "يمكن أن يستغرق هذا بعض الوقت..."
 
 #: ../whisperBack/gui.py:234
 msgid "The contact email adress doesn't seem valid."
-msgstr "البريد الالكتروني لجهة الاتصال لا يبدو صحيحاً"
+msgstr "البريد الالكتروني لا يبدو صحيحاً."
 
 #: ../whisperBack/gui.py:251
 msgid "Unable to send the mail: SMTP error."
-msgstr "غير قادر على ارسال بريد الكتروني. مشكلة في ال SMTP"
+msgstr "غير قادر على ارسال البريد الإلكتروني: مشكلة في SMTP."
 
 #: ../whisperBack/gui.py:253
 msgid "Unable to connect to the server."
-msgstr "غير قادر على الاتصال بالخادم"
+msgstr "غير قادر على الاتصال بالخادم."
 
 #: ../whisperBack/gui.py:255
 msgid "Unable to create or to send the mail."
@@ -82,11 +82,11 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nلم يتم ارسال التقرير لخطأ بالاتصال. تأكد من اتصالك و كرر المحاولة.\n\nاذا لم تتمكن من الاتصال يمكنك حفظ التقرير لارساله لاحقاً."
+msgstr "\n\nلم يتم ارسال تقرير الخطأ، وغالبا بسبب مشكلة بالاتصال. تأكد من اتصالك و كرر المحاولة.\n\nاذا لم تتمكن من الاتصال يمكنك حفظ تقرير الخطأ لارساله لاحقاً."
 
 #: ../whisperBack/gui.py:271
 msgid "Your message has been sent."
-msgstr "تم ارسال الرسالة"
+msgstr "تم ارسال رسالتك."
 
 #: ../whisperBack/gui.py:278
 msgid "An error occured during encryption."
@@ -95,7 +95,7 @@ msgstr "حصل خطأ أثناء التشفير"
 #: ../whisperBack/gui.py:298
 #, python-format
 msgid "Unable to save %s."
-msgstr "غير قادر على حفظ%s."
+msgstr "غير قادر على حفظ %s."
 
 #. XXX: fix string
 #: ../whisperBack/gui.py:322
@@ -106,7 +106,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "لم نتمكن من ارسال التقرير لمشاكل في الاتصال. تأكد من اتصالك بالشبكة و كرر المحاولة.\n\nكحل مؤقت يمكنك حفظ التقرير على ذاكرة فلاش و ارسالها لنا على %s من بريدك الالكتروني باستخدام جهاز آخر.\n\nلن يتم تسليم التقرير بكامل الخصوصية الا اذا استخدمت تور على الجهاز الآخر حين ارسالك الرسالة.\n\nهل تريد حفظ التقرير؟"
+msgstr "لم نتمكن من ارسال تقرير الأخطاء وذلك لخطأ في الاتصال.\n\nكحل مؤقت يمكنك حفظ التقرير على ذاكرة فلاش و ارسالها لنا على %s من بريدك الالكتروني باستخدام جهاز آخر. لن يتم تسليم التقرير بكامل الخصوصية الا اذا استخدمت تور على الجهاز الآخر حين ارسالك الرسالة.\n\nهل تريد حفظ التقرير في ملف؟"
 
 #: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -114,27 +114,27 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "أرسل آرائك عن الخدمة ببريد مشفر"
+msgstr "أرسل آرائك عن الخدمة في بريد مشفر"
 
 #: ../whisperBack/gui.py:390
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "حقوق النسخ ٢٠٠٩ - ٢٠١٢ مطوري تايلز tails@boum.org"
+msgstr "حقوق النسخ © ٢٠٠٩ - ٢٠١٢ مطوري تيلز (tails@boum.org)"
 
 #: ../whisperBack/gui.py:391
 msgid "Tails developers <tails@boum.org>"
-msgstr "مبرمجي تايلز <tails@boum.org>"
+msgstr "مبرمجي تيلز <tails@boum.org>"
 
 #: ../whisperBack/gui.py:392
 msgid "translator-credits"
-msgstr "translator-credits"
+msgstr "المترجمون"
 
 #: ../whisperBack/gui.py:419
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "هذا لايبدو انه عنوان موقع صحيح او مفتاح بي جي بي مفتوح المصدر صحيح."
+msgstr "هذا لايبدو انه عنوان موقع صحيح او مفتاح OpenPGP صحيح."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "حقوق النسخ ٢٠٠٩ - ٢٠١٢  tails@boum.org"
+msgstr "حقوق النسخ © ٢٠٠٩ - ٢٠١٢  tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -157,13 +157,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "ويسبرباك - أرسل تعليقاتك و آرائك بإيميلات مشفرة. ⏎ حقوق النسخ ٢٠٠٩ - ٢٠١٢ مطوري تايلز tails@boum.org ⏎ هذا البرنامج مجاني، يمكنك إعادة توزيعه أو تغييره تحت بنود رخصة غنو العامة كما نشرتها منظمة البرمجيات الحرة، النسخة الثالثة أو أي نسخة أحدث. ⏎ هذا البرنامج يتم توزيعه على أمل الاستفادة منه، لكن من دون أي نوع من الضمانات. راجع رخصة غنو العامة لمزيد من التفاصيل. ⏎ يجب ان تكون استلمت نسخة من رخصة غنو العامة مع هذا البرنامج، اذا لم تستلمها، راجع <http://www.gnu.org/licenses/>\n.\n"
+msgstr "ويسبرباك - أرسل تعليقاتك و آرائك بإيميلات مشفرة.\nحقوق النسخ ٢٠٠٩ - ٢٠١٢ مطوري تايلز <tails@boum.org>\n\n هذا البرنامج مجاني، يمكنك إعادة توزيعه أو تغييره تحت بنود رخصة جنو العامة كما نشرتها منظمة البرمجيات الحرة، النسخة الثالثة أو أي نسخة أحدث. هذا البرنامج يتم توزيعه على أمل الاستفادة منه، لكن من دون أي نوع من الضمانات. راجع رخصة جنو العامة لمزيد من التفاصيل. يجب ان تكون استلمت نسخة من رخصة غنو العامة مع هذا البرنامج، اذا لم تستلمها، اجع <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr " أردتنا أن نشفر الرد على رسالتك، أضف هوية مفتاحك> رابط لمفتاحك أو الجزء العام من المفتاح."
+msgstr "إذا اردت ان نشفر ردنا عليك، أضف هوية مفتاحك، رابط لمفتاحك أو الجزء العام من المفتاح:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -171,7 +171,7 @@ msgstr "ملخص"
 
 #: ../data/whisperback.ui.h:23
 msgid "Bug description"
-msgstr "شرح الخطأ"
+msgstr "وصف الخطأ"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
@@ -179,23 +179,23 @@ msgstr "عنوان بريد الكتروني بديل للاتصال بك"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "مفتاح بي جي بي اضافي"
+msgstr "مفتاح PGP اختياري"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
-msgstr "تفاصيل تقنية "
+msgstr "التفاصيل التقنية التي يجب شملها"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
-msgstr "رأس للرسالة"
+msgstr "رؤس"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "معلومات ال debugging"
+msgstr "معلومات الـdebugging"
 
 #: ../data/whisperback.ui.h:29
 msgid "Help"
-msgstr "مساعدة"
+msgstr "المساعدة"
 
 #: ../data/whisperback.ui.h:30
 msgid "Send"

@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-#   <viktor.varga@gmail.com>, 2012.
+# vargaviktor <viktor.varga@gmail.com>, 2013
+# vargaviktor <viktor.varga@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2012-02-16 22:33+0100\n"
-"PO-Revision-Date: 2012-10-07 16:21+0000\n"
+"POT-Creation-Date: 2013-03-26 15:50+0100\n"
+"PO-Revision-Date: 2013-05-13 13:14+0000\n"
 "Last-Translator: vargaviktor <viktor.varga@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Hungarian (http://www.transifex.com/projects/p/torproject/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,85 +34,47 @@ msgstr "Érvénytelen OpenPGP key: %s"
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Érvénytelen OpenPGP publikus kulcs blokk"
 
-#: ../whisperBack/encryption.py:126
-msgid "No keys found."
-msgstr "Nem találhatók kulcsok."
-
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The variable %s was not found in any of the configuation "
-"files/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "A %s változó nem található meg egy semelyik konfigurációs állományban a következő közül: /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "A %s változó nem található a egyik konfigurációs állományban sem az alábbiak közül /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:114
-msgid "Name of the affected software"
-msgstr "Az érintett szoftver neve"
-
-#: ../whisperBack/gui.py:115
-msgid "Exact steps to reproduce the problem"
-msgstr "Pontos lépései a probléma reprodukálásának"
-
-#: ../whisperBack/gui.py:116
-msgid "Actual result / the problem"
-msgstr "Az aktuális eredmény / a probléma"
-
-#: ../whisperBack/gui.py:117
-msgid "Desired result"
-msgstr "Elvárt eredmény"
-
-#: ../whisperBack/gui.py:155
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "Nem lehetséges érvényes konfiguráció betöltése."
 
-#: ../whisperBack/gui.py:177
-#, python-format
-msgid ""
-"<h1>Help us fix your bug!</h1>\n"
-"<p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
-"<p><strong>Do not include more personal information than\n"
-"needed!</strong></p>\n"
-"<h2>About giving us an email address</h2>\n"
-"<p>If you don't mind disclosing some bits of your identity\n"
-"to Tails developers, you can provide an email address to\n"
-"let us ask more details about the bug. Additionally entering\n"
-"a public PGP key enables us to encrypt such future\n"
-"communication.</p>\n"
-"<p>Anyone who can see this reply will probably infer you are\n"
-"a Tails user. Time to wonder how much you trust your\n"
-"Internet and mailbox providers?</p>\n"
-msgstr "<h1>Segítsen a hibák kijavításában</h1>\n<p>Olvasas el a <a href=\"%s\">hibabejelentési tanácsainakt</a>.</p>\n<p><strong>Ne ajdon meg annál több személyes adatot, mint szükséges!</strong></p>\n<h2>Az email cím megadásáról</h2>\n<p>Ha nem gond a személyazonossága felfedése a Tails fejlesztői felé, megadhat email címet, hogy lehetővé tegye számukra, hogy további kérdéseket tegyenek fel a hibával kapcsolatosan. Ha megad egy publikus PGP kulcsot, az lehetővé teszi, hogy a levelezést titkosítva folytassuk.</p>\n<p>Bárki aki ezt a láthatja, azt gondolhatja egy Tails felhasználó. Elgondolkozott már azon, mennyire bízik meg az internet vagy az elektronikus levelezés szolgáltatójában?</p>\n"
-
-#: ../whisperBack/gui.py:229
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "Email küldése..."
 
-#: ../whisperBack/gui.py:230
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "Email küldése"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "Ez egy kis időt vehet igénybe..."
 
-#: ../whisperBack/gui.py:246
+#: ../whisperBack/gui.py:234
 msgid "The contact email adress doesn't seem valid."
 msgstr "Az email cím nem tűnik érvényesnek."
 
-#: ../whisperBack/gui.py:263
+#: ../whisperBack/gui.py:251
 msgid "Unable to send the mail: SMTP error."
 msgstr "Sikertelen email küldés: SMTP hiba."
 
-#: ../whisperBack/gui.py:265
+#: ../whisperBack/gui.py:253
 msgid "Unable to connect to the server."
 msgstr "Nem lehetséges a kapcsolódás a szerverhez."
 
-#: ../whisperBack/gui.py:267
+#: ../whisperBack/gui.py:255
 msgid "Unable to create or to send the mail."
 msgstr "Az email létrehozása vagy küldése sikertelen."
 
-#: ../whisperBack/gui.py:270
+#: ../whisperBack/gui.py:258
 msgid ""
 "\n"
 "\n"
@@ -120,25 +83,21 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nA hibajelentés elküldése sikertelen, valószínűleg hálózati problémák miatt. Kérjük csatlakozzon újra a hálózathoz, majd kattintson a küldésre újra.\n\nHa ez nem működik, lehetősége lesz lementeni a hibajelentést."
 
-#: ../whisperBack/gui.py:283
+#: ../whisperBack/gui.py:271
 msgid "Your message has been sent."
 msgstr "Az üzenete elküldésre került."
 
-#: ../whisperBack/gui.py:289
-msgid "Unable to find encryption key."
-msgstr "A titkosító kulcs nem található."
-
-#: ../whisperBack/gui.py:293
+#: ../whisperBack/gui.py:278
 msgid "An error occured during encryption."
 msgstr "Hiba történt a titkosítás során."
 
-#: ../whisperBack/gui.py:313
+#: ../whisperBack/gui.py:298
 #, python-format
 msgid "Unable to save %s."
 msgstr "A %s mentése sikertelen."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:337
+#: ../whisperBack/gui.py:322
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -148,70 +107,39 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "A hibabejelentés nem volt elküldhető hálózati probléma miatt.\n\nKerülő lehetőségként lementheti a hibát egy  USB meghajtóra, elküldheti a %s címre, az email címéről, egy másik gépről. Fontos, hogy tudja, hogy eze esetben nem lesz névtelen a beküldése, csak akkor ha további lépéseket tesz. (Például: Tor-t egy eldobható email címmel együtt használva.)\n\nSzeretné lementeni a hibajelentést egy fájlba?"
 
-#: ../whisperBack/gui.py:401 ../data/whisperback.ui.h:11
+#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:402 ../data/whisperback.ui.h:8
+#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Visszajelzés küldése titkosított emailben."
 
-#: ../whisperBack/gui.py:405
+#: ../whisperBack/gui.py:390
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails fejlesztők (tails@boum.org)"
 
-#: ../whisperBack/gui.py:406
+#: ../whisperBack/gui.py:391
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails fejlesztők <tails@boum.org>"
 
-#: ../whisperBack/gui.py:407
+#: ../whisperBack/gui.py:392
 msgid "translator-credits"
 msgstr "fordítás készítői"
 
-#: ../whisperBack/gui.py:434
-msgid "This doesn's seem to be a valid URL or OpenPGP key."
-msgstr "Ez nem tűnik érvényes URL-nek, vagy OpenPGP kulcsnak."
+#: ../whisperBack/gui.py:419
+msgid "This doesn't seem to be a valid URL or OpenPGP key."
+msgstr "Nem tűnik érvényes URL-nek, vagy OpenPGP kulcsnak."
 
 #: ../data/whisperback.ui.h:1
-msgid ""
-"Add a PGP key if you want us to encrypt messages when we respond to you."
-msgstr "Adja meg a PGP kulcsát, ha szeretné, hogy titkosítsuk a levelet amikor válaszolunk Önnek."
-
-#: ../data/whisperback.ui.h:2
-msgid "Bug description"
-msgstr "Hiba leírás"
-
-#: ../data/whisperback.ui.h:3
 msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr "Copyright © 2009-2012 tails@boum.org"
 
+#: ../data/whisperback.ui.h:3
+msgid "https://tails.boum.org/"
+msgstr "https://tails.boum.org/"
+
 #: ../data/whisperback.ui.h:4
-msgid "Help"
-msgstr "Súgó"
-
-#: ../data/whisperback.ui.h:5
-msgid ""
-"If you want us to encrypt messages when we respond to you, add your key ID, "
-"a link to your key, or the key as a public key block:"
-msgstr "Ha szeretné, hogy titkosítsuk a válasz amikor válaszolunk, adja meg a kulcs azonosítóját, egy linket a kulcshoz, vagy a kulcsot, mint egy publikus kulcs blokkot:"
-
-#: ../data/whisperback.ui.h:6
-msgid "Optional email address to contact you"
-msgstr "Opcionális email cím amin elérhető a kapcsolatfelvételhez"
-
-#: ../data/whisperback.ui.h:7
-msgid "Send"
-msgstr "Küldés"
-
-#: ../data/whisperback.ui.h:9
-msgid "Summary"
-msgstr "Összefoglalás"
-
-#: ../data/whisperback.ui.h:10
-msgid "Technical details to include"
-msgstr "A csatolandó technikai adatok"
-
-#: ../data/whisperback.ui.h:12
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
 "Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
@@ -230,18 +158,44 @@ msgid ""
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr "WhisperBack - Visszajelzés küldése titkosított emailben\nCopyright (C) 2009-2012 Tails fejlesztők <tails@boum.org>\n\nEz a program szabad szoftver; terjesztheti és/vagy módosíthatja azt a  GNU General Public License szabályait betartva, mely licencet a Free Software Foundation készítette; a 3-as verziójú Licence vagy (választása szerint) későbbi változata alapján.\n\nEz a program annak reményében került terjesztésre, hogy hasznos lehet valakinek, de NINCS RÁ GARANCIA beleértve a beleértett garanciáit egy adott célra használatnak vagy közlésnek. További részletekért forduljon a  GNU General Public License-hez.\n\nA programhoz mellékelve kel találjon egy másolatát a  GNU General Public License-nek. Ha mégsem találja, tekintse meg a  <http://www.gnu.org/licenses/> oldalon.\n"
 
+#: ../data/whisperback.ui.h:20
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr "Ha szeretné, hogy titkosítsuk a válasz amikor válaszolunk, adja meg a kulcs azonosítóját, egy linket a kulcshoz, vagy a kulcsot, mint egy publikus kulcs blokkot:"
+
+#: ../data/whisperback.ui.h:22
+msgid "Summary"
+msgstr "Összefoglalás"
+
+#: ../data/whisperback.ui.h:23
+msgid "Bug description"
+msgstr "Hiba leírás"
+
+#: ../data/whisperback.ui.h:24
+msgid "Optional email address to contact you"
+msgstr "Opcionális email cím amin elérhető a kapcsolatfelvételhez"
+
+#: ../data/whisperback.ui.h:25
+msgid "optional PGP key"
+msgstr "opcionális PGP kulcs"
+
+#: ../data/whisperback.ui.h:26
+msgid "Technical details to include"
+msgstr "A csatolandó technikai adatok"
+
+#: ../data/whisperback.ui.h:27
+msgid "headers"
+msgstr "fejlécek"
+
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
 msgstr "hibakeresési info"
 
 #: ../data/whisperback.ui.h:29
-msgid "headers"
-msgstr "fejlécek"
+msgid "Help"
+msgstr "Súgó"
 
 #: ../data/whisperback.ui.h:30
-msgid "https://tails.boum.org/"
-msgstr "https://tails.boum.org/"
-
-#: ../data/whisperback.ui.h:31
-msgid "optional PGP key"
-msgstr "opcionális PGP kulcs"
+msgid "Send"
+msgstr "Küldés"
