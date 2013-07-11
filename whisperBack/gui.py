@@ -75,7 +75,9 @@ class WhisperBackUI(object):
         builder.connect_signals(self)
 
         self.main_window = builder.get_object("windowMain")
-        self.vbox_top_left = builder.get_object("vboxTopLeft")
+        self.hpaned_main = builder.get_object("hpanedMain")
+        self.notebook_right = builder.get_object("notebookLeft")
+        self.notebook_left = builder.get_object("notebookRight")
         self.progression_dialog = builder.get_object("dialogProgression")
         self.progression_main_text = builder.get_object("progressLabelMain")
         self.progression_progressbar = builder.get_object("progressProgressbar")
@@ -133,11 +135,12 @@ class WhisperBackUI(object):
         self.htmlhelp.get_settings().set_property("user-stylesheet-uri", "file://" +
             whisperBack.utils.get_datadir() + "/style.css")
 
-        # set the two main window areas to be each half of the window
-        # on big screens
+        # set the two main window areas size on big screens
         if self.main_window.get_screen().get_width() > 800:
-            self.vbox_top_left.set_size_request(400, -1)
-            self.help_container.set_size_request(400, -1)
+            self.notebook_left.set_size_request(400, -1)
+            self.notebook_right.set_size_request(400, -1)
+            self.hpaned_main.set_position(self.main_window.get_screen().get_width()
+                - max(self.main_window.get_screen().get_width()/3, 400))
 
         self.main_window.maximize()
 
