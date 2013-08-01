@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # mikkoharhanen <gitti@mikkoharhanen.fi>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2013-03-26 15:50+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-01 15:36+0200\n"
 "PO-Revision-Date: 2013-05-22 12:45+0000\n"
 "Last-Translator: runasand <runa.sandvik@gmail.com>\n"
-"Language-Team: Finnish (http://www.transifex.com/projects/p/torproject/language/fi/)\n"
+"Language-Team: Finnish (http://www.transifex.com/projects/p/torproject/"
+"language/fi/)\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
@@ -36,97 +37,119 @@ msgstr "Virheellinen julkinen OpenPGP-avain (public key block)"
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Muuttujaa %s ei löydetty asetustiedostoista /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr ""
+"Muuttujaa %s ei löydetty asetustiedostoista /etc/whisperback/config.py, ~/."
+"whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
 msgstr "Kelvollisia asetuksia ei voida ladata."
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:220
 msgid "Sending mail..."
 msgstr "Lähetetään sähköpostia..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:221
 msgid "Sending mail"
 msgstr "Lähetetään sähköpostia"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:223
 msgid "This could take a while..."
 msgstr "Tässä saattaa mennä hetki..."
 
-#: ../whisperBack/gui.py:234
+#: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
 msgstr "Yhteyshenkilön sähköpostiosoite ei vaikuta kelvolliselta."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
 msgstr "Sähköpostia ei voida lähettää: SMTP-virhe."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
 msgstr "Palvelimeen ei voida yhdistää."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
 msgstr "Sähköpostia ei voida luoda tai lähettää."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:261
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\nVikailmoitusta ei voitu lähettää luultavasti verkko-ongelmien vuoksi. Yritä yhdistää uudelleen verkkoon ja napsauta taas Lähetä-painiketta.\n\nJos tämä ei auta,  sinulle ehdotetaan vikailmoituksen tallentamista."
+msgstr ""
+"\n"
+"Vikailmoitusta ei voitu lähettää luultavasti verkko-ongelmien vuoksi. Yritä "
+"yhdistää uudelleen verkkoon ja napsauta taas Lähetä-painiketta.\n"
+"\n"
+"Jos tämä ei auta,  sinulle ehdotetaan vikailmoituksen tallentamista."
 
-#: ../whisperBack/gui.py:271
+#: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
 msgstr "Viestisi on lähetetty."
 
-#: ../whisperBack/gui.py:278
+#: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
 msgstr "Salauksen aikana sattui virhe."
 
-#: ../whisperBack/gui.py:298
+#: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
 msgstr "Ei voida tallentaa %s."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:322
+#: ../whisperBack/gui.py:325
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Vikailmoitusta ei voitu lähettää, mikä johtuu todennäköisesti verkko-ongelmista.\n\nTilapäinen ratkaisu on se, että tallennat vikailmoituksen USB-levylle tiedostoon ja lähetät ilmoituksen osoitteeseen %s, kun käytät toista käyttöjärjestelmää ja omaa sähköpostitiliäsi. Huomaa, että vikailmoituksesi ei ole nimetön ilman ylimääräisiä toimenpiteitä (kuten Torin ja kertakäyttöisten sähköpostitilien käyttöä).\n\nHaluatko tallentaa vikailmoituksen tiedostoon?"
+msgstr ""
+"Vikailmoitusta ei voitu lähettää, mikä johtuu todennäköisesti verkko-"
+"ongelmista.\n"
+"\n"
+"Tilapäinen ratkaisu on se, että tallennat vikailmoituksen USB-levylle "
+"tiedostoon ja lähetät ilmoituksen osoitteeseen %s, kun käytät toista "
+"käyttöjärjestelmää ja omaa sähköpostitiliäsi. Huomaa, että vikailmoituksesi "
+"ei ole nimetön ilman ylimääräisiä toimenpiteitä (kuten Torin ja "
+"kertakäyttöisten sähköpostitilien käyttöä).\n"
+"\n"
+"Haluatko tallentaa vikailmoituksen tiedostoon?"
 
-#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Lähetä palautetta salatulla sähköpostilla."
 
-#: ../whisperBack/gui.py:390
+#: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Tekijänoikeus © 2009-2012 Tailsin kehittäjät (tails@boum.org)"
 
-#: ../whisperBack/gui.py:391
+#: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tailsin kehittäjät <tails@boum.org>"
 
-#: ../whisperBack/gui.py:392
+#: ../whisperBack/gui.py:395
 msgid "translator-credits"
 msgstr "kääntäjät"
 
-#: ../whisperBack/gui.py:419
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Tämä ei vaikuta kelvolliselta URL-osoitteelta tai OpenPGP-avaimelta."
 
@@ -155,13 +178,30 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Lähetä palautetta salatulla sähköpostilla\nTekijänoikeus (C) 2009-2012 Tailsin kehittäjät <tails@boum.org>\n\nTämä on vapaa ohjelma: tätä ohjelmaa saa levittää edelleen ja muuttaa\nFree Software Foundationin julkaiseman GNU General Public Licensen\n(GPL-lisenssi) version 3 tai (valinnan mukaan) myöhemmän version\nehtojen mukaisesti.\n\nTätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen\nmutta ilman mitään takuuta; edes hiljaista takuuta kaupallisesti\nhyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen.\nKatso GPL- lisenssistä lisää yksityiskohtia.\n\nTämän ohjelman mukana pitäisi tulla kopio GPL-lisenssistä. Jos näin\nei ole, katso <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - Lähetä palautetta salatulla sähköpostilla\n"
+"Tekijänoikeus (C) 2009-2012 Tailsin kehittäjät <tails@boum.org>\n"
+"\n"
+"Tämä on vapaa ohjelma: tätä ohjelmaa saa levittää edelleen ja muuttaa\n"
+"Free Software Foundationin julkaiseman GNU General Public Licensen\n"
+"(GPL-lisenssi) version 3 tai (valinnan mukaan) myöhemmän version\n"
+"ehtojen mukaisesti.\n"
+"\n"
+"Tätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen\n"
+"mutta ilman mitään takuuta; edes hiljaista takuuta kaupallisesti\n"
+"hyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen.\n"
+"Katso GPL- lisenssistä lisää yksityiskohtia.\n"
+"\n"
+"Tämän ohjelman mukana pitäisi tulla kopio GPL-lisenssistä. Jos näin\n"
+"ei ole, katso <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Jos haluat, että salaamme vastausviestimme, kerro avaimesi tunnistenumero tai linkitä tai lisää tekstinä julkinen avaimesi:"
+msgstr ""
+"Jos haluat, että salaamme vastausviestimme, kerro avaimesi tunnistenumero "
+"tai linkitä tai lisää tekstinä julkinen avaimesi:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"

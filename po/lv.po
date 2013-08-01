@@ -1,23 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Ojars Balcers <ojars.balcers@gmail.com>, 2012
 # Ojars Balcers <ojars.balcers@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2013-03-26 15:50+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-01 15:36+0200\n"
 "PO-Revision-Date: 2013-04-29 08:29+0000\n"
 "Last-Translator: runasand <runa.sandvik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lv\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
@@ -37,97 +38,121 @@ msgstr "Nederīgs saziņas OpenPGP publiskās atslēgas bloks"
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Mainīgais %s netika atrasts nevienā no konfigurācijas datnēm /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr ""
+"Mainīgais %s netika atrasts nevienā no konfigurācijas datnēm /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
 msgstr "Nespēj ielādēt derīgu konfigurāciju."
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:220
 msgid "Sending mail..."
 msgstr "Sūta e-pastu..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:221
 msgid "Sending mail"
 msgstr "Sūta e-pastu"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:223
 msgid "This could take a while..."
 msgstr "Tas varētu aizņemt kādu brītiņu..."
 
-#: ../whisperBack/gui.py:234
+#: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
 msgstr "Šķiet, ka saziņas e-pasta adrese nav derīga."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
 msgstr "Nespēj nosūtīt e-pastu: SMTP kļūda."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
 msgstr "Nespēj izveidot savienojumu ar serveri."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
 msgstr "Nespēj izveidot vai nosūtīt e-pastu."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:261
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nKļūdu ziņojumu nebija iespējams nosūtīt, ticami, ar tīklu saistītu kļūmju dēļ. Lūdzu, mēģiniet atkārtoti pievienoties tīklam un nospiediet SŪTĪT vēlreiz.\n\nJa tas nelīdzēs, tiks piedāvāts saglabāt kļūdu ziņojumu."
+msgstr ""
+"\n"
+"\n"
+"Kļūdu ziņojumu nebija iespējams nosūtīt, ticami, ar tīklu saistītu kļūmju "
+"dēļ. Lūdzu, mēģiniet atkārtoti pievienoties tīklam un nospiediet SŪTĪT "
+"vēlreiz.\n"
+"\n"
+"Ja tas nelīdzēs, tiks piedāvāts saglabāt kļūdu ziņojumu."
 
-#: ../whisperBack/gui.py:271
+#: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
 msgstr "Jūsu vēstījums ir nosūtīts."
 
-#: ../whisperBack/gui.py:278
+#: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
 msgstr "Šifrēšanas laikā notika kļūda."
 
-#: ../whisperBack/gui.py:298
+#: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
 msgstr "Nespēj saglabāt %s."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:322
+#: ../whisperBack/gui.py:325
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Kļūdu ziņojumu nebija iespējams nosūtīt, ticami, ar tīklu saistītu kļūmju dēļ.\n\nAizstājējrisinājums ir saglabāt kļūdu ziņojumu datnē vai zibatmiņā jeb USB diskā, tad mēģināt nosūtīt ziņojumu mums uz %s no sava e-pasta, bet izmantojot citu sistēmu. Ievērojiet, ka tā darot kļūdu ziņojums nebūs anonīms, ja vien pats neveiksit atbilstīgus pasākumus (piem., lietot Tor ar citādi nelietojamu e-pastu).\n\nVai vēlaties saglabāt kļūdu ziņojumu datnē?"
+msgstr ""
+"Kļūdu ziņojumu nebija iespējams nosūtīt, ticami, ar tīklu saistītu kļūmju "
+"dēļ.\n"
+"\n"
+"Aizstājējrisinājums ir saglabāt kļūdu ziņojumu datnē vai zibatmiņā jeb USB "
+"diskā, tad mēģināt nosūtīt ziņojumu mums uz %s no sava e-pasta, bet "
+"izmantojot citu sistēmu. Ievērojiet, ka tā darot kļūdu ziņojums nebūs "
+"anonīms, ja vien pats neveiksit atbilstīgus pasākumus (piem., lietot Tor ar "
+"citādi nelietojamu e-pastu).\n"
+"\n"
+"Vai vēlaties saglabāt kļūdu ziņojumu datnē?"
 
-#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Sūtīt atsauksmes šifrētā e-pastā."
 
-#: ../whisperBack/gui.py:390
+#: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Autortiesības © 2009-2012 Tails developpers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:391
+#: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails izstrādātāji <tails@boum.org>"
 
-#: ../whisperBack/gui.py:392
+#: ../whisperBack/gui.py:395
 msgid "translator-credits"
 msgstr "tulkotāji"
 
-#: ../whisperBack/gui.py:419
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Šis nešķiet esam derīgs URL vai OpenPGP atslēga."
 
@@ -156,13 +181,31 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - sūtīt atsauksmes šifrētā e-pastā\nAutortiesības (C) 2009-2012 Tails izstrādātāji <tails@boum.org>\n\nŠī programma ir bezmaksas programmatūra; variet to izplatīt un/vai modificēt\nievērojot GNU Vispārējas publiskas licences noteikumus, kurus publicējis Brīvas programmatūras fonds; vai nu Licences 3. versiju, vai arī (pēc savas izvēles) jebkuru vēlāku versiju.\n\nŠo programmatūru izplata cerot, ka tā būs derīga, tomēr \nBEZ NEKĀDĀM GARANTIJĀM;   pat bez tieši nenolīgtām TIRDZNIECĪBAS garantījām  vai t.s. PIEMĒROTĪBAS NOTEIKTAM NOLŪKAM.   Papildu informācijai lūdzu skatiet GNU Vispārējo publisko licenci.\n\nKopā ar šo programmu Jums vajadzēja saņemt GNU Vispārējās publiskās licences kopiju.  Ja tas tā nav, skatiet <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - sūtīt atsauksmes šifrētā e-pastā\n"
+"Autortiesības (C) 2009-2012 Tails izstrādātāji <tails@boum.org>\n"
+"\n"
+"Šī programma ir bezmaksas programmatūra; variet to izplatīt un/vai "
+"modificēt\n"
+"ievērojot GNU Vispārējas publiskas licences noteikumus, kurus publicējis "
+"Brīvas programmatūras fonds; vai nu Licences 3. versiju, vai arī (pēc savas "
+"izvēles) jebkuru vēlāku versiju.\n"
+"\n"
+"Šo programmatūru izplata cerot, ka tā būs derīga, tomēr \n"
+"BEZ NEKĀDĀM GARANTIJĀM;   pat bez tieši nenolīgtām TIRDZNIECĪBAS garantījām  "
+"vai t.s. PIEMĒROTĪBAS NOTEIKTAM NOLŪKAM.   Papildu informācijai lūdzu "
+"skatiet GNU Vispārējo publisko licenci.\n"
+"\n"
+"Kopā ar šo programmu Jums vajadzēja saņemt GNU Vispārējās publiskās licences "
+"kopiju.  Ja tas tā nav, skatiet <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Ja vēlaties, lai atbildot šifrējam ziņojumus, pievienojiet savu atslēgas ID, saiti uz savu atslēgu, vai atslēgu kā publisku atslēgu bloku:"
+msgstr ""
+"Ja vēlaties, lai atbildot šifrējam ziņojumus, pievienojiet savu atslēgas ID, "
+"saiti uz savu atslēgu, vai atslēgu kā publisku atslēgu bloku:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-26 15:50+0100\n"
+"POT-Creation-Date: 2013-08-01 15:36+0200\n"
 "PO-Revision-Date: 2013-05-07 15:09-0000\n"
 "Last-Translator: MaK <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,40 +44,40 @@ msgstr ""
 "La variable %s n'a été trouvée dans aucun des fichiers de configuration /etc/"
 "whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
 msgstr "Impossible de charger une configuration valide"
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:220
 msgid "Sending mail..."
 msgstr "Envoi du mail..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:221
 msgid "Sending mail"
 msgstr "Envoi du mail"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:223
 msgid "This could take a while..."
 msgstr "Ceci peut prendre un moment..."
 
-#: ../whisperBack/gui.py:234
+#: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
 msgstr "L'adresse email de contact ne semble pas valide."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
 msgstr "Impossible d'envoyer le mail : erreur SMTP."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
 msgstr "Impossible de se connecter au serveur."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
 msgstr "Impossible de créer ou d'envoyer le mail."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:261
 msgid ""
 "\n"
 "\n"
@@ -95,21 +95,21 @@ msgstr ""
 "Si cela ne fonctionne pas, il vous sera possible de sauvegarder le rapport "
 "de bug."
 
-#: ../whisperBack/gui.py:271
+#: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
 msgstr "Votre message a été envoyé."
 
-#: ../whisperBack/gui.py:278
+#: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
 msgstr "Une erreur est survenue durant le chiffrement."
 
-#: ../whisperBack/gui.py:298
+#: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
 msgstr "Impossible d'enregistrer %s."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:322
+#: ../whisperBack/gui.py:325
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -134,27 +134,27 @@ msgstr ""
 "\n"
 "Voulez-vous sauvegarder le rapport de bug dans un fichier ?"
 
-#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Envoyer vos remarques dans un mail chiffré."
 
-#: ../whisperBack/gui.py:390
+#: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 développeurs de Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:391
+#: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
 msgstr "Développeurs de Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:392
+#: ../whisperBack/gui.py:395
 msgid "translator-credits"
 msgstr "traducteurs"
 
-#: ../whisperBack/gui.py:419
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Ceci ne semble pas être une URL ou une clé OpenPGP valide."
 

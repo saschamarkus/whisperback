@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # lateralus, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2013-03-26 15:50+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-01 15:36+0200\n"
 "PO-Revision-Date: 2013-05-13 18:15+0000\n"
 "Last-Translator: lateralus\n"
-"Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/torproject/language/nb/)\n"
+"Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/"
+"torproject/language/nb/)\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
@@ -36,97 +37,119 @@ msgstr "Ugyldig offentlig OpenPGP-nøkkel blokkering"
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "%s variabelen ble ikke funnet i noen av konfigurasjonsfilene /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr ""
+"%s variabelen ble ikke funnet i noen av konfigurasjonsfilene /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
 msgstr "Klarte ikke å laste inn en gyldig konfigurasjon"
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:220
 msgid "Sending mail..."
 msgstr "Sender e-post..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:221
 msgid "Sending mail"
 msgstr "Sender e-post"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:223
 msgid "This could take a while..."
 msgstr "Dette kan kan ta en stund..."
 
-#: ../whisperBack/gui.py:234
+#: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
 msgstr "E-postadressen virker ikke gyldig"
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
 msgstr "Kunne ikke sende e-posten: SMTP feil."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
 msgstr "Kunne ikke koble til serveren."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
 msgstr "Kunne ikke opprette eller sende e-posten."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:261
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nFeilmeldingen kunne ikke sendes, trolig grunnet nettverksproblemer. Prøv å koble til nettverket på nytt og trykk send en gang til.\n\nHvis det ikke virker, vil du bli spurt om å lagre feilmeldingen."
+msgstr ""
+"\n"
+"\n"
+"Feilmeldingen kunne ikke sendes, trolig grunnet nettverksproblemer. Prøv å "
+"koble til nettverket på nytt og trykk send en gang til.\n"
+"\n"
+"Hvis det ikke virker, vil du bli spurt om å lagre feilmeldingen."
 
-#: ../whisperBack/gui.py:271
+#: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
 msgstr "Meldingen din ble sendt."
 
-#: ../whisperBack/gui.py:278
+#: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
 msgstr "En feil oppstod under kryptering."
 
-#: ../whisperBack/gui.py:298
+#: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
 msgstr "Kunne ikke lagre %s."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:322
+#: ../whisperBack/gui.py:325
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Feilmeldingen kunne ikke sendes, trolig grunnet nettverksproblemer.\n\nSom en løsning kan du lagre feilmeldingen på en USB-enhet og prøve å sende den til oss på %s med en e-postkonto på et annet system. Vær klar over at feilmeldingen ikke vil være anonym når du gjør dette, hvis du ikke tar ytterligere steg selv (f.eks ved å bruke Tor med en midlertidig e-postkonto).\n\nØnsker du å lagre feilmeldingen i en lokal fil?"
+msgstr ""
+"Feilmeldingen kunne ikke sendes, trolig grunnet nettverksproblemer.\n"
+"\n"
+"Som en løsning kan du lagre feilmeldingen på en USB-enhet og prøve å sende "
+"den til oss på %s med en e-postkonto på et annet system. Vær klar over at "
+"feilmeldingen ikke vil være anonym når du gjør dette, hvis du ikke tar "
+"ytterligere steg selv (f.eks ved å bruke Tor med en midlertidig e-"
+"postkonto).\n"
+"\n"
+"Ønsker du å lagre feilmeldingen i en lokal fil?"
 
-#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Send tilbakemelding i en kryptert e-post."
 
-#: ../whisperBack/gui.py:390
+#: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails developers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:391
+#: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails utviklere <tails@boum.org>"
 
-#: ../whisperBack/gui.py:392
+#: ../whisperBack/gui.py:395
 msgid "translator-credits"
 msgstr "Oversettere"
 
-#: ../whisperBack/gui.py:419
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Dette ser ikke ut til å være en gydlig URL eller OpenPGP-nøkkel."
 
@@ -155,13 +178,31 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Send feedback in an encrypted mail\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\nThis program is  free software; you can redistribute  it and/or modify\nit under the  terms of the GNU General Public  License as published by\nthe Free Software Foundation; either  version 3 of the License, or (at\nyour option) any later version.\n\nThis program  is distributed in the  hope that it will  be useful, but\nWITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\nMERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\nGeneral Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - Send feedback in an encrypted mail\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"\n"
+"This program is  free software; you can redistribute  it and/or modify\n"
+"it under the  terms of the GNU General Public  License as published by\n"
+"the Free Software Foundation; either  version 3 of the License, or (at\n"
+"your option) any later version.\n"
+"\n"
+"This program  is distributed in the  hope that it will  be useful, but\n"
+"WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\n"
+"MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\n"
+"General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Hvis du vil at vi krypterer meldingene når vi svarer deg, legg til nøkkel-ID'en din, en link til nøkkelen din, eller nøkkelen som en offentlig nøkkel-blokkering:"
+msgstr ""
+"Hvis du vil at vi krypterer meldingene når vi svarer deg, legg til nøkkel-"
+"ID'en din, en link til nøkkelen din, eller nøkkelen som en offentlig nøkkel-"
+"blokkering:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
