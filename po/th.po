@@ -1,0 +1,240 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# bact' ☂ <arthit@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: The Tor Project\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-01 15:36+0200\n"
+"PO-Revision-Date: 2013-07-09 07:10+0000\n"
+"Last-Translator: bact' ☂ <arthit@gmail.com>\n"
+"Language-Team: Thai (http://www.transifex.com/projects/p/torproject/language/"
+"th/)\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. XXX use a better exception
+#: ../whisperBack/whisperback.py:63
+#, python-format
+msgid "Invalid contact email: %s"
+msgstr "อีเมลติดต่อไม่ถูกต้อง: %s"
+
+#: ../whisperBack/whisperback.py:80
+#, python-format
+msgid "Invalid contact OpenPGP key: %s"
+msgstr "กุญแจ OpenPGP ของที่ติดต่อไม่ถูกต้อง: %s"
+
+#: ../whisperBack/whisperback.py:82
+msgid "Invalid contact OpenPGP public key block"
+msgstr "บล็อคกุญแจ OpenPGP ของที่ติดต่อไม่ถูกต้อง"
+
+#: ../whisperBack/exceptions.py:41
+#, python-format
+msgid ""
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr ""
+"ไม่พบตัวแประ %s ในแฟ้มตั้งค่าใดๆ /etc/whisperback/config.py, ~/.whisperback/config."
+"py, ./config.py"
+
+#: ../whisperBack/gui.py:154
+msgid "Unable to load a valid configuration."
+msgstr "ไม่สามารถเรียกแฟ้มตั้งค่าที่ถูกต้องได้"
+
+#: ../whisperBack/gui.py:220
+msgid "Sending mail..."
+msgstr "กำลังส่งอีเมล..."
+
+#: ../whisperBack/gui.py:221
+msgid "Sending mail"
+msgstr "กำลังส่งอีเมล"
+
+#. pylint: disable=C0301
+#: ../whisperBack/gui.py:223
+msgid "This could take a while..."
+msgstr "นี่อาจใช้เวลาสักพัก..."
+
+#: ../whisperBack/gui.py:237
+msgid "The contact email adress doesn't seem valid."
+msgstr "ที่อยู่อีเมลติดต่อดูเหมือนจะใช้ไม่ได้"
+
+#: ../whisperBack/gui.py:254
+msgid "Unable to send the mail: SMTP error."
+msgstr "ไม่สามารถส่งอีเมลได้: ข้อผิดพลาด SMTP"
+
+#: ../whisperBack/gui.py:256
+msgid "Unable to connect to the server."
+msgstr "ไม่สามารถเชื่อมต่อไปยังเซิร์ฟเวอร์ได้"
+
+#: ../whisperBack/gui.py:258
+msgid "Unable to create or to send the mail."
+msgstr "ไม่สามารถสร้างหรือส่งอีเมลได้"
+
+#: ../whisperBack/gui.py:261
+msgid ""
+"\n"
+"\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
+"\n"
+"If it does not work, you will be offered to save the bug report."
+msgstr ""
+"\n"
+"\n"
+"ไม่สามารถส่งรายงานบั๊กได้ เป็นไปได้ว่าเนื่องจากปัญหาเครือข่าย โปรดลองเชื่อมต่อกับเครือข่ายใหม่ "
+"และคลิกส่งอีกครั้ง\n"
+"\n"
+"ถ้ามันไม่ได้ คุณจะถูกถามให้บันทึกรายงานบั๊กดังกล่าว"
+
+#: ../whisperBack/gui.py:274
+msgid "Your message has been sent."
+msgstr "ข้อความของคุณถูกส่งแล้ว"
+
+#: ../whisperBack/gui.py:281
+msgid "An error occured during encryption."
+msgstr "เกิดข้อผิดพลาดระหว่างการเข้ารหัส"
+
+#: ../whisperBack/gui.py:301
+#, python-format
+msgid "Unable to save %s."
+msgstr "ไม่สามารถบันทึก %s"
+
+#. XXX: fix string
+#: ../whisperBack/gui.py:325
+#, python-format
+msgid ""
+"The bug report could not be sent, likely due to network problems.\n"
+"\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
+"\n"
+"Do you want to save the bug report to a file?"
+msgstr ""
+"ไม่สามารถส่งรายงานบั๊กได้ เป็นไปได้ว่าเนื่องจากปัญหาเครือข่าย\n"
+"\n"
+"เพื่อให้ทำงานไปก่อนได้ คุณสามารถบันทึกรายงานบั๊กเป็นแฟ้มบนไดรฟ์ยูเอสบี และลองส่งมันหาเราที่ %s "
+"จากบัญชีอีเมลของคุณ โดยใช้ระบบอื่น โปรดจำว่า รายงานบั๊กของคุณจะไม่ถูกปิดชื่อถ้าคุณทำเช่นนั้น "
+"เว้นเสียแต่ว่าคุณจะใช้มาตรการเพิ่มเติมด้วยตัวคุณเอง (เช่น ใช้ Tor "
+"ด้วยบัญชีอีเมลแบบใช้ครั้งเดียวทิ้ง)\n"
+"\n"
+"คุณต้องการบันทึกรายงานบั๊กลงแฟ้มหรือไม่?"
+
+#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+msgid "WhisperBack"
+msgstr "WhisperBack"
+
+#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+msgid "Send feedback in an encrypted mail."
+msgstr "ส่งคำติชมในอีเมลเข้ารหัส"
+
+#: ../whisperBack/gui.py:393
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "ลิขสิทธิ์ © 2009-2012 นักพัฒนา Tails (tails@boum.org)"
+
+#: ../whisperBack/gui.py:394
+msgid "Tails developers <tails@boum.org>"
+msgstr "นักพัฒนา Tails <tails@boum.org>"
+
+#: ../whisperBack/gui.py:395
+msgid "translator-credits"
+msgstr "translator-credits"
+
+#: ../whisperBack/gui.py:422
+msgid "This doesn't seem to be a valid URL or OpenPGP key."
+msgstr "นี่ไม่น่าจะเป็น URL หรือกุญแจ OpenPGP ที่ถูกต้อง"
+
+#: ../data/whisperback.ui.h:1
+msgid "Copyright © 2009-2012 tails@boum.org"
+msgstr "ลิขสิทธิ์ © 2009-2012 tails@boum.org"
+
+#: ../data/whisperback.ui.h:3
+msgid "https://tails.boum.org/"
+msgstr "https://tails.boum.org/"
+
+#: ../data/whisperback.ui.h:4
+msgid ""
+"WhisperBack - Send feedback in an encrypted mail\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"\n"
+"This program is  free software; you can redistribute  it and/or modify\n"
+"it under the  terms of the GNU General Public  License as published by\n"
+"the Free Software Foundation; either  version 3 of the License, or (at\n"
+"your option) any later version.\n"
+"\n"
+"This program  is distributed in the  hope that it will  be useful, but\n"
+"WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\n"
+"MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\n"
+"General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - ส่งข้อมูลติชมกลับทางอีเมลเข้ารหัส\n"
+"ลิขสิทธิ์ (C) 2009-2012 ผู้พัฒนา Tails <tails@boum.org>\n"
+"\n"
+"โปรแกรมนี้เป็นซอฟต์แวร์เสรี; คุณสามารถจำหน่ายจ่ายแจกมัน และ/หรือ แก้ไข\n"
+"มันภายใต้เงื่อนไขของสัญญาอนุญาตสาธารณะทั่วไปของกนู (GNU General\n"
+"Public License) ตามที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี (Free Software\n"
+"Foundation); ซึ่งจะใช้รุ่นที่ 3 ของสัญญาดังกล่าว หรือรุ่นหลังจากนั้นก็ได้\n"
+"(อยู่ที่คุณเลือก)\n"
+"\n"
+"โปรแกรมนี้ถูกจำหน่ายจ่ายแจก ด้วยหวังว่ามันจะมีประโยชน์ แต่มันไม่มีการรับประกันใดๆ\n"
+"ไม่มีแม้แต่การรับประกันโดยนัยถึงความสามารถในการนำไปทำการค้าได้\n"
+"หรือ ความเหมาะสมสำหรับจุดประสงค์ใดจุดประสงค์หนึ่ง ดูสัญญาอนุญาต\n"
+"สาธารณะทั่วไปของกนูสำหรับรายละเอียดเพิ่มเติม\n"
+"\n"
+"คุณควรได้รับสำเนาของสัญญาอนุญาตสาธารณะทั่วไปของกนู\n"
+"มาพร้อมกับโปรแกรมนี้ ถ้าไม่พบ ดู <http://www.gnu.org/licenses/>\n"
+
+#: ../data/whisperback.ui.h:20
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr ""
+"ถ้าคุณต้องการให้เราเข้ารหัสข้อความเมื่อเราตอบกลับคุณ เพิ่ม ID ของกุญแจคุณ ลิงก์ไปหากุญแจคุณ "
+"หรือกุญแจดังกล่าวในรูปแบบบล็อคกุญแจสาธารณะ"
+
+#: ../data/whisperback.ui.h:22
+msgid "Summary"
+msgstr "สรุป"
+
+#: ../data/whisperback.ui.h:23
+msgid "Bug description"
+msgstr "รายละเอียดบัก"
+
+#: ../data/whisperback.ui.h:24
+msgid "Optional email address to contact you"
+msgstr "ที่อยู่อีเมลทางเลือกสำหรับติดต่อคุณ"
+
+#: ../data/whisperback.ui.h:25
+msgid "optional PGP key"
+msgstr "กุญแจ PGP ตัวเลือก"
+
+#: ../data/whisperback.ui.h:26
+msgid "Technical details to include"
+msgstr "รายละเอียดทางเทคนิคที่จะรวมไปด้วย"
+
+#: ../data/whisperback.ui.h:27
+msgid "headers"
+msgstr "ส่วนหัว"
+
+#: ../data/whisperback.ui.h:28
+msgid "debugging info"
+msgstr "ข้อมูลดีบัก"
+
+#: ../data/whisperback.ui.h:29
+msgid "Help"
+msgstr "ช่วยเหลือ"
+
+#: ../data/whisperback.ui.h:30
+msgid "Send"
+msgstr "ส่ง"
