@@ -14,7 +14,7 @@ sed -i -E "s/Version=$OLDVERSION/Version=$NEWVERSION/g" data/whisperback.desktop
 
 sed -i "\$a \\\n$NEWVERSION\n$(echo $NEWVERSION | tr '[:graph:]' '=')\n" ChangeLog
 #echo "Please edit ChangeLog…"
-vim ChangeLog
+${EDITOR} ChangeLog
 
 #echo "Please edit Debian changelog…"
 export DEBFULLNAME="Tails developers"
