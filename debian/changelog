@@ -1,3 +1,9 @@
+whisperback (1.6.10) stable; urgency=low
+
+  * Update translations from Transifex.
+
+ -- Tails developers <tails@boum.org>  Mon, 09 Sep 2013 12:09:19 +0200
+
 whisperback (1.6.9) devel; urgency=low
 
   * Update translations from Transifex.
