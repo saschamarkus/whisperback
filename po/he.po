@@ -1,28 +1,29 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
-#   <yaelgogol@gmail.com>, 2012.
+# Elifelet <arab.with.nargila@gmail.com>, 2013
+# blackbird <yaelgogol@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
 "POT-Creation-Date: 2013-08-01 15:36+0200\n"
-"PO-Revision-Date: 2012-11-29 22:03+0000\n"
-"Last-Translator: blackbird <yaelgogol@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: he\n"
+"PO-Revision-Date: 2013-08-14 11:40+0000\n"
+"Last-Translator: Elifelet <arab.with.nargila@gmail.com>\n"
+"Language-Team: Hebrew (http://www.transifex.com/projects/p/torproject/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "איש קשר של אימייל לא תקין: %s"
+msgstr "אימייל לא תקין: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
@@ -34,13 +35,11 @@ msgid "Invalid contact OpenPGP public key block"
 msgstr "מפתח ציבורי  OpenPGP לא תקין של איש קשר"
 
 #: ../whisperBack/exceptions.py:41
-#, fuzzy, python-format
+#, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr ""
-"המשתנה %s לא נמצא באף אחד מקבמי ההגדרות /etc/whisperback/config.py,\n"
-".whisperback/config.py, ./config.py."
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "המשתנים %s‎ לא נמצאו באף אחד מקבצי הקונפיגורציה: /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
 #: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
@@ -79,14 +78,10 @@ msgstr "אי אפשר ליצור או לשלוח מייל."
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try "
-"to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr ""
-"\n"
-"דיווח התקלה לא יכל להשלח, כנראה בשל בעיות רשת. בבקשה נסה להתחבר מחדש לרשת "
-"ולחץ שלח שוב. אם זה לא עובד, יציעו לך לשמור את דיווח התקלה"
+msgstr "\nדיווח התקלה לא יכל להשלח, כנראה בשל בעיות רשת. בבקשה נסה להתחבר מחדש לרשת ולחץ שלח שוב. אם זה לא עובד, יציעו לך לשמור את דיווח התקלה"
 
 #: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
@@ -107,19 +102,10 @@ msgstr "אי אפשר לשמור %s."
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and "
-"try to send it to us at %s from your email account using another system. "
-"Note that your bug report will not be anonymous when doing so unless you "
-"take further steps yourself (e.g. using Tor with a throw-away email "
-"account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr ""
-"דיווח התקלה לא יכל להשלח, כנראה בשל בעיות רשת. \n"
-" אתה יכול לשמור את דיווח התקלה כקובץ בUSB drive ולנסות לשלוח לנו אותו ב %s "
-"מחשבון האימייל שלך על ידי שימוש במערכת אחרת. שים לב שדיוחח התקלה שלך לא יהיה "
-"אנונימי בעשייתך זאת אלא אם כן תבצע מספר צעדים בעצמך (למשל שימוש ב Tor עם "
-"חשבון אימייל  throw-away). האם אתה רוצה לשמור את דיווח התקלה לקובץ?"
+msgstr "דיווח התקלה לא יכל להשלח, כנראה בשל בעיות רשת. \n אתה יכול לשמור את דיווח התקלה כקובץ בUSB drive ולנסות לשלוח לנו אותו ב %s מחשבון האימייל שלך על ידי שימוש במערכת אחרת. שים לב שדיוחח התקלה שלך לא יהיה אנונימי בעשייתך זאת אלא אם כן תבצע מספר צעדים בעצמך (למשל שימוש ב Tor עם חשבון אימייל  throw-away). האם אתה רוצה לשמור את דיווח התקלה לקובץ?"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -131,9 +117,7 @@ msgstr "שלח משוב במייל מוצפן."
 
 #: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr ""
-"כל הזכויות שמורות © 2009-2012 למפתחי Tails \n"
-" (tails@boum.org)"
+msgstr "כל הזכויות שמורות © 2009-2012 למפתחי Tails \n (tails@boum.org)"
 
 #: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
@@ -144,15 +128,12 @@ msgid "translator-credits"
 msgstr "קרדיטים למתרגם"
 
 #: ../whisperBack/gui.py:422
-#, fuzzy
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "זה לא נראה מפתח OpenPGP או URL תקין."
+msgstr "מפתח ה OpenPGP או שורת הכתובת לא תקפים"
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr ""
-"כל הזכויות שמורות © 2009-2012 \n"
-"tails@boum.org"
+msgstr "כל הזכויות שמורות © 2009-2012 \ntails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -175,26 +156,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
-"                                                                                                                                                                                      \n"
-"                                                                             WhisperBack          \n"
-"                                                                                                                                                   שלח "
-"משוב במייל מוצפן. כל הזכויות שמורות Copyright (C) 2009-2012 למפתחי \n"
-"tails@boum.org>  Tails   >. תוכנה זאת היא תוכנה חופשית;  אתה יכול להפיץ מחדש "
-"אותה ו\\או לשנותה תחת התנאים של GNU General \n"
-"Public License  כפי שפורסם על ידי Free Software Foundation ; או גרסה 3 של ה  "
-"License,  או (לבחירתך) כל גרסה מאוחרת יותר. תוכנה זאת מופצת בתקווה שהיא תהיה "
-"שימושית, אבל בלי שום התחייבות ; אפילו בלי ההתחייבות המרומזת של מסחריות או "
-"התאמה לכוונה מסויימת. ראה  GNU General Public License ביחדעם  התוכנה הזאת. "
-"אם לא, ראה <http://www.gnu.org/licenses/>\n"
+msgstr "                                                                                                                                                                                      \n                                                                             WhisperBack          \n                                                                                                                                                   שלח משוב במייל מוצפן. כל הזכויות שמורות Copyright (C) 2009-2012 למפתחי \ntails@boum.org>  Tails   >. תוכנה זאת היא תוכנה חופשית;  אתה יכול להפיץ מחדש אותה ו\\או לשנותה תחת התנאים של GNU General \nPublic License  כפי שפורסם על ידי Free Software Foundation ; או גרסה 3 של ה  License,  או (לבחירתך) כל גרסה מאוחרת יותר. תוכנה זאת מופצת בתקווה שהיא תהיה שימושית, אבל בלי שום התחייבות ; אפילו בלי ההתחייבות המרומזת של מסחריות או התאמה לכוונה מסויימת. ראה  GNU General Public License ביחדעם  התוכנה הזאת. אם לא, ראה <http://www.gnu.org/licenses/>\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr ""
-"אם אתה רוצה שאנחנו נצפין הודעות כאשר אנחנו עונים לך, הוסף את מפתח ה ID, "
-"קישור למפתח שלך, או המפתח כמפתח ציבורי: "
+msgstr "אם אתה רוצה שאנחנו נצפין הודעות כאשר אנחנו עונים לך, הוסף את מפתח ה ID, קישור למפתח שלך, או המפתח כמפתח ציבורי: "
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -231,50 +199,3 @@ msgstr "עזרה"
 #: ../data/whisperback.ui.h:30
 msgid "Send"
 msgstr "שלח"
-
-#~ msgid "No keys found."
-#~ msgstr "לא נמצאו מפתחות."
-
-#~ msgid "Name of the affected software"
-#~ msgstr "שם של התוכנה המושפעת"
-
-#~ msgid "Exact steps to reproduce the problem"
-#~ msgstr "צעדים מדויקים לייצר מחדש את הבעיה"
-
-#~ msgid "Actual result / the problem"
-#~ msgstr "תוצאה ממשית \\ הבעיה"
-
-#~ msgid "Desired result"
-#~ msgstr "תוצאה  רצויה"
-
-#~ msgid ""
-#~ "<h1>Help us fix your bug!</h1>\n"
-#~ "<p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
-#~ "<p><strong>Do not include more personal information than\n"
-#~ "needed!</strong></p>\n"
-#~ "<h2>About giving us an email address</h2>\n"
-#~ "<p>If you don't mind disclosing some bits of your identity\n"
-#~ "to Tails developers, you can provide an email address to\n"
-#~ "let us ask more details about the bug. Additionally entering\n"
-#~ "a public PGP key enables us to encrypt such future\n"
-#~ "communication.</p>\n"
-#~ "<p>Anyone who can see this reply will probably infer you are\n"
-#~ "a Tails user. Time to wonder how much you trust your\n"
-#~ "Internet and mailbox providers?</p>\n"
-#~ msgstr ""
-#~ "<h1> עזור לנו לתקן את התקלה שלך! </h1>\n"
-#~ "<p> קרא <a href=\"%s\"> את הוראות דיווח התקלות שלנו </p> </a>\n"
-#~ "<strong><p> אל תכלול מידע אישי יותר ממה שצריך! </p></strong>\n"
-#~ "<h2> בקשר לנתינת כתובת אימייל </h2>\n"
-#~ "<p> אם לא אכפת לך לגלות מידע מהזהות שלך למפתחי Tails, אתה יכול לספק כתובת "
-#~ "אימייל כדי לאפשר לנו לשאול יותר פרטים על התקלה. כניסה נוספת עם מפתח "
-#~ "ציבורי  PGP מאפשרת לנו להצפין תקשורת עתידית כזאת. </p>\n"
-#~ "כל אחד שיכול לראות את התגובה הזאת כנראה שיניח שאתה משתמש  Tails. \n"
-#~ "זמן לתהות כמה אתה סומך על האינטרנט שלך וספקי המייל? </p>\n"
-
-#~ msgid "Unable to find encryption key."
-#~ msgstr "אי אפשר למצוא את מפתח ההצפנה."
-
-#~ msgid ""
-#~ "Add a PGP key if you want us to encrypt messages when we respond to you."
-#~ msgstr "הוסף מפתח PGP אם אתה רוצה שאנחנו נצפין הודעות כאשר אנחנו עונים לך."

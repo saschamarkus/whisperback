@@ -1,24 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Augustine <evandro@geocities.com>, 2013
 # bruuh <bruuh@outlook.com>, 2012
-# m4lqu1570 <>, 2012
+# betodso <beto.cpv@gmail.com>, 2013
+# Snake Plissken <>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
 "POT-Creation-Date: 2013-08-01 15:36+0200\n"
-"PO-Revision-Date: 2013-06-24 22:52+0000\n"
-"Last-Translator: runasand <runa.sandvik@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
-"torproject/language/pt_BR/)\n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2013-08-13 15:40+0000\n"
+"Last-Translator: betodso <beto.cpv@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/torproject/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. XXX use a better exception
@@ -39,11 +39,9 @@ msgstr "Bloco de chave pública OpenPGP de contato inválida"
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr ""
-"A variável %s não foi encontrada em quaisquer dos arquivos de configuração: /"
-"etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "A variável %s não foi encontrada em quaisquer dos arquivos de configuração: /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
 #: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
@@ -82,17 +80,10 @@ msgstr "Habilitar criar ou enviar o e-mail."
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try "
-"to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr ""
-"\n"
-"\n"
-"O report do bug não pode ser enviado, provavelmente por problemas de rede. "
-"Por favor, tente reconectar à rede e clique em enviar novamente.\n"
-"\n"
-"Se isto não funcionar, será oferecido a você salvar o report do bug."
+msgstr "\n\nO report do bug não pode ser enviado, provavelmente por problemas de rede. Por favor, tente reconectar à rede e clique em enviar novamente.\n\nSe isto não funcionar, será oferecido a você salvar o report do bug."
 
 #: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
@@ -113,23 +104,10 @@ msgstr "Habilitar salvar %s."
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and "
-"try to send it to us at %s from your email account using another system. "
-"Note that your bug report will not be anonymous when doing so unless you "
-"take further steps yourself (e.g. using Tor with a throw-away email "
-"account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr ""
-"O report do bug não pode ser enviado, provavelmente devido à problemas na "
-"rede.\n"
-"\n"
-"Você pode salvar o report como um arquivo em um drive USB e tentar enviar-"
-"nos em %s de sua conta de e-mail usando outro sistema. Note que seu report "
-"de bug não será anônimo ao fazer isto, a não ser que você faça-o por conta "
-"própria (ex. usando Tor com uma conta de e-mail descartável).\n"
-"\n"
-"Você quer salvar o report para um arquivo? "
+msgstr "O report do bug não pode ser enviado, provavelmente devido à problemas na rede.\n\nVocê pode salvar o report como um arquivo em um drive USB e tentar enviar-nos em %s de sua conta de e-mail usando outro sistema. Note que seu report de bug não será anônimo ao fazer isto, a não ser que você faça-o por conta própria (ex. usando Tor com uma conta de e-mail descartável).\n\nVocê quer salvar o report para um arquivo? "
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -180,32 +158,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
-"WhisperBack - Envie feedback em um email encriptado\n"
-"Copyright (C) 2009-2011 Tails developers <tails@boum.org>\n"
-"\n"
-"Este programa é  software livre; você pode redistribuir  e/ou modificá-lo\n"
-"sobre os  termos da Licença Pública  Geral GNU como publicado pela\n"
-"Free Software Foundation;  versão 3 da Licença, ou (sob\n"
-"sua opção) qualquer versão mais recente.\n"
-"\n"
-"Este programa  é distribuído na  na esperança de que será  útil, mas\n"
-"SEM   QUALQUER  GARANTIA;   sem  nem   a  garantia   implícita  de\n"
-"COMERCIALIZAÇÃO  ou ADEQUAÇÃO  PARA UM  PROPÓSITO PARTICULAR.   Veja  a "
-"Licença Pública Geral GNU para maiores detalhes.\n"
-"\n"
-"Você deve ter recebido uma cópia da Licença Pública Geral GNU\n"
-"junto com este programa.  Caso contrário, veja <http://www.gnu.org/licenses/"
-">.\n"
+msgstr "WhisperBack - Envie feedback em um email encriptado\nCopyright (C) 2009-2011 Tails developers <tails@boum.org>\n\nEste programa é  software livre; você pode redistribuir  e/ou modificá-lo\nsobre os  termos da Licença Pública  Geral GNU como publicado pela\nFree Software Foundation;  versão 3 da Licença, ou (sob\nsua opção) qualquer versão mais recente.\n\nEste programa  é distribuído na  na esperança de que será  útil, mas\nSEM   QUALQUER  GARANTIA;   sem  nem   a  garantia   implícita  de\nCOMERCIALIZAÇÃO  ou ADEQUAÇÃO  PARA UM  PROPÓSITO PARTICULAR.   Veja  a Licença Pública Geral GNU para maiores detalhes.\n\nVocê deve ter recebido uma cópia da Licença Pública Geral GNU\njunto com este programa.  Caso contrário, veja <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr ""
-"Se você quiser que nós encriptemos as mensagens quando respondermos à você, "
-"adicione sua chave ID, um link para sua chave, ou a chave como um bloco de "
-"chave pública:"
+msgstr "Se você quiser que nós encriptemos as mensagens quando respondermos à você, adicione sua chave ID, um link para sua chave, ou a chave como um bloco de chave pública:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
