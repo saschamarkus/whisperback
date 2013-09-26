@@ -114,8 +114,8 @@ class WhisperBackUI(object):
         self.message.get_buffer().insert_with_tags(
             self.message.get_buffer().get_start_iter(),
                 underline ( "Name of the affected software" ) + "\n"*4 +
-                underline ( "Exact steps to reproduce the problem" ) + "\n"*4 +
-                underline ( "Actual result / the problem" ) + "\n"*4 +
+                underline ( "Exact steps to reproduce the error" ) + "\n"*4 +
+                underline ( "Actual result and description of the error" ) + "\n"*4 +
                 underline ( "Desired result" ) + "\n"*4,
             self.message.get_buffer().create_tag(family="Monospace"))
 
