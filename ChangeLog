@@ -399,3 +399,10 @@ Minor improvements
 ======
 
  * Update translations from Transifex.
+
+1.6.11
+======
+
+ * Update translations from Transifex.
+ * Drop buggy tr.po.
+ * Use 'error' instead of 'problem'.
