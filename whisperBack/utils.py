@@ -159,11 +159,11 @@ def sanitize_hardware_info(log_string):
                         log_string)
 
     # IPs
-    log_string = re.sub(r'\<([\d]{1,3}\.){3}[\d]{1,3}\>',
+    log_string = re.sub(r'([\d]{1,3}\.){3}[\d]{1,3}',
                         r'[IP REMOVED]',
                         log_string)
     # MAC addresses
-    log_string = re.sub(r'\<([0-9a-fA-F]{2}:){5,}[0-9a-fA-F]{2}\>',
+    log_string = re.sub(r'([0-9a-fA-F]{2}:){5,}[0-9a-fA-F]{2}',
                         r'[MAC REMOVED]',
                         log_string)
     return log_string
