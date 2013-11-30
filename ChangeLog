@@ -406,3 +406,7 @@ Minor improvements
  * Update translations from Transifex.
  * Drop buggy tr.po.
  * Use 'error' instead of 'problem'.
+
+1.6.12
+======
+
