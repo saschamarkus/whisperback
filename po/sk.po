@@ -3,76 +3,76 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# digitaldreamer <digitaldreamer@email.cz>, 2012
-# Radog <bensch.radek@gmail.com>, 2013
+# momoali <momoali007@googlemail.com>, 2013
+# Michelozzo <michalslovak2@hotmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
 "POT-Creation-Date: 2013-08-01 15:36+0200\n"
-"PO-Revision-Date: 2013-10-26 08:10+0000\n"
-"Last-Translator: Radog <bensch.radek@gmail.com>\n"
-"Language-Team: Czech (http://www.transifex.com/projects/p/torproject/language/cs/)\n"
+"PO-Revision-Date: 2013-10-30 05:20+0000\n"
+"Last-Translator: Michelozzo <michalslovak2@hotmail.com>\n"
+"Language-Team: Slovak (http://www.transifex.com/projects/p/torproject/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: cs\n"
+"Language: sk\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Neplatný kontaktní email: %s"
+msgstr "Neplatný kontaktny email: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Neplatný kontaktní OpenPGP klíč: %s"
+msgstr "Neplatný kontaktný OpenPGP kľúč: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Neplatný blok veřejného OpenPGP klíče"
+msgstr "Neplatný blok verejného OpenPGP kľúča"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "%s proměnná nebyla nalezena v konfiguračních souborech /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "%s premenná nebola nájdená v žiadnych konfiguračných súboroch  /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
 #: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
-msgstr "Nelze nahrát platnou konfiguraci"
+msgstr "Nie je možné načítať validnú konfiguraciu."
 
 #: ../whisperBack/gui.py:220
 msgid "Sending mail..."
-msgstr "Odesílám mail..."
+msgstr "Odosielam mail..."
 
 #: ../whisperBack/gui.py:221
 msgid "Sending mail"
-msgstr "Odesílám mail"
+msgstr "Odosielam mail"
 
 #. pylint: disable=C0301
 #: ../whisperBack/gui.py:223
 msgid "This could take a while..."
-msgstr "Může to chvíli trvat..."
+msgstr "Toto môže biť na dlhšie..."
 
 #: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
-msgstr "Zdá se, že kontaktní emailová adresa je neplatná."
+msgstr "Kontaktná emailová adresa sa nezdá but správna."
 
 #: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
-msgstr "Mail nelze odeslat. Chyba SMTP."
+msgstr "Nie je možné odoslať správu: chyba SMTP"
 
 #: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
-msgstr "Nelze se připojit k serveru."
+msgstr "Nedá sa pripojiť na server."
 
 #: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
-msgstr "Mail nelze vytvořit nebo odeslat."
+msgstr "Správa sa nedá vytvoriť ani poslať."
 
 #: ../whisperBack/gui.py:261
 msgid ""
@@ -81,20 +81,20 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nHlášení o problému nebylo možné odeslat, pravděpodobně kvůli problémům sítě. Zkuste se, prosím, znovu připojit k síti a znovu kliknout na Odeslat.\n\nPokud to nebude fungovat, bude vám nabídnuta možnost hlášení o problému uložit."
+msgstr "\n\nSpráva o chybe sa nedá poslať, zrejme z dôvodu problémov so sieťou. Prosím, pokúste sa znovu pripojiť do siete a kliknite znova na tlačidlo poslať.\n\nAk to nefunguje, bude Vám ponúknutá možnosť uložiť správu o chybe."
 
 #: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
-msgstr "Vaše zpráva byla úspěšně odeslána."
+msgstr "Vaša správa bola odoslaná."
 
 #: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
-msgstr "Během šifrování došlo k chybě."
+msgstr "Nastala chyba počas šifrovania."
 
 #: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
-msgstr "Nelze uložit %s."
+msgstr "Nie je možné uložiť %s."
 
 #. XXX: fix string
 #: ../whisperBack/gui.py:325
@@ -105,7 +105,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Hlášení o problému nebylo možné odeslat, pravděpodobně kvůli problémům sítě. \n\nLze to obejít tak, že své hlášení o problému uložíte na USB flashdisk a pokusíte s ho poslat na %s z jiného počítače. Mějte na paměti, že vaše hlášení v tomto případě nebude anonymní, pokud se o to nepostaráte smi (jako například že se připojít přez Tor jednoráznově založenému emailovému účtu).\n\nChcete tedy uložit hlášení o problému jako soubor?"
+msgstr "Správa o chybe nemôže byť odoslaná, zrejme kvôli sieťovým problémom.\n\nNamiesto toho môžete uložiť správu o chybe ako súbor na USB kľúč a skúsiť nám ju poslať na %s z Vášho emailového účtu prostredníctvom iného operačného systému. Majte však na pamäti, že takto poslaná správa nebude anonymná, ak nepodniknete iné kroky na jej zabezpečenie (napr. použitím Toru so vzdialeným emailovým účtom).\n\nChcete uložiť správu o chybe do súboru?"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -113,7 +113,7 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Poslat odezvu jako šifrovaný mail."
+msgstr "Poslať odozvu v zašifrovanej správe."
 
 #: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
@@ -121,15 +121,15 @@ msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 
 #: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
-msgstr "Vývojáři softwaru Tails <tails@boum.org>"
+msgstr "Vývojári Tails <tails@boum.org>"
 
 #: ../whisperBack/gui.py:395
 msgid "translator-credits"
-msgstr "translator-credits"
+msgstr "prekladatelia"
 
 #: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Tohle není správná URL adresa ani OpenPGP klíč."
+msgstr "Toto nie je platná URL adresa ani OpenPGP kľúč."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
@@ -156,33 +156,33 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Odešlete vaší odezvu jako zašifrovaný email\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\nTento program je svobodný software; můžete ho šířit dál a / nebo modifikovat pokud dodržíte podmínky GNU General Public License tak, jak jí publikovala Free Software Foundation; buď ve verzi 3 této license, nebo (pokud chcete) kteroukoli její novější verzi.\n\nTento program je distribuován v naději, že bude užitečný, ale ZCELA BEZ ZÁRUKY;   i bez implicitní záurky PRODEJNOSTI nebo VHODNOSTI KE KONKRÉTNÍMU ÚČELU.   Podrobnosti najdete v textu GNU\nGeneral Public License.\n\nKopii GNU General Public License jste měli dostat spolu s tímto programem. Pokud tomu tak není, najde ji na <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Pošlite Vašu odzvu v zašifrovanej správe\nCopyright (C) 2009-2012 Vývojári Tails <tails@boum.org>\n\nTento program je slobodným softvérom; môžete ho šíriť a/alebo ho upravovať\npod podmienkou dodržania licencie GNU General Public License zverejnenej\nnadáciou Free Software Foundation; buď vo verzii 3 tejto licencie, alebo (ak\nchcete), v ktorejkoľvek jej novšej verzií.\n\nTento program je šírený v nádeji, že bude užitočný, ale\nBEZ AKEJKOĽVEK ZÁRUKY; i bez implicitnej záruky\nPREDAJNOSTI alebo VHODNOSTI NA KONKRÉTNY ÚČEL. Pozri GNU\nGeneral Public License pre viac informácií.\n\nSpolu s programom by ste mali dostať kópiu GNU General Public License.\nAk ste ju nedostali, pozrite <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Pokud chcete, abychom šifrovali zprávy až vám budeme odpovídat, přidejte ID svého klíče, odkaz na váš klíč, nebo klíč jako blok veřejného klíče."
+msgstr "Ak chcete, aby sme šifrovali správy, keď Vám budeme odpovedať, pridajte ID svojho kľúča, odkaz na Váš kľúč, alebo kľúč ako blok verejného kľúča:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
-msgstr "Shrnutí"
+msgstr "Zhrnutie"
 
 #: ../data/whisperback.ui.h:23
 msgid "Bug description"
-msgstr "Popis problému"
+msgstr "Popis chyby"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Nepovinná adresa, na které vás můžeme kontaktovat."
+msgstr "Vhodná emailová adresa, na ktorej Vás môžeme kontaktovať"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "nepovinný PGP klíč"
+msgstr "voliteľný PGP kľúč"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
-msgstr "Technické detaily k přiložení"
+msgstr "Technické podrobnosti na priloženie"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
@@ -190,12 +190,12 @@ msgstr "hlavičky"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "informace pro debuggování"
+msgstr "informácie o ladení"
 
 #: ../data/whisperback.ui.h:29
 msgid "Help"
-msgstr "Nápověda"
+msgstr "Pomocník"
 
 #: ../data/whisperback.ui.h:30
 msgid "Send"
-msgstr "Odeslat"
+msgstr "Poslať"
