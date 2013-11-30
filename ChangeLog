@@ -409,4 +409,7 @@ Minor improvements
 
 1.6.12
 ======
-
+ * More generic IP and MAC sanitizing regexp.
+ * Use editor (Debian alternative) instead of $EDITOR.
+ * Update transifex translations.
+    
