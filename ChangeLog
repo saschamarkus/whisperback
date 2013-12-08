@@ -412,4 +412,3 @@ Minor improvements
  * More generic IP and MAC sanitizing regexp.
  * Use editor (Debian alternative) instead of $EDITOR.
  * Update transifex translations.
-    
