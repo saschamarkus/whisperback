@@ -1,12 +1,7 @@
-Whisperback developper guide
+Whisperback developer guide
 
 Release
 =======
-
-Fetch updated PO from the whisperback_completed branch of
-git://git.torproject.org/translation.git
-
-Verify and commit.
 
 Upgrade version using scripts/update-version.sh.
 
