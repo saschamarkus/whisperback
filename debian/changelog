@@ -1,3 +1,9 @@
+whisperback (1.6.13) stable; urgency=medium
+
+  * Update translations.
+
+ -- Tails developers <tails@boum.org>  Fri, 10 Jan 2014 12:14:49 +0100
+
 whisperback (1.6.12) devel; urgency=low
 
   * More generic IP and MAC sanitizing regexp.
