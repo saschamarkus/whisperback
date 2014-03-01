@@ -150,7 +150,15 @@ def sanitize_hardware_info(log_string):
     # XXX: must be updated once IPv6 is enabled
 
     # Serial Numbers
-    log_string = re.sub(r'((Serial Number:?[\s]+|SerialNo=|iSerial[\s]+[\d]+\s+|SerialNumber:|Serial#:)[\s]+)[^\s].+',
+    log_string = re.sub(r'(Serial Number:?[\s]+|'
+                          'SerialNo=|'
+                          'iSerial[\s]+[\d]+\s+|'
+                          'SerialNumber:[\s]+|'
+                          'SerialNumber=|'
+                          'Serial#:[\s+]|'
+                          'serial#[\s+]|'
+                          'Serial No:[\s]+'
+                        ')[^\s].*',
                         r'\1[SN REMOVED]',
                         log_string)
     # UUIDs
