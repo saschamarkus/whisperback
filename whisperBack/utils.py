@@ -149,6 +149,11 @@ def sanitize_hardware_info(log_string):
     """
     # XXX: must be updated once IPv6 is enabled
 
+    # DMI
+    log_string = re.sub(r'(DMI:)[\s].*',
+                        r'\1[DMI REMOVED]',
+                        log_string)
+
     # Serial Numbers
     log_string = re.sub(r'(Serial Number:?[\s]+|'
                           'SerialNo=|'
