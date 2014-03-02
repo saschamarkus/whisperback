@@ -176,11 +176,11 @@ def sanitize_hardware_info(log_string):
                         r'[IPV4 REMOVED]',
                         log_string)
     # IPv6s
-    log_string = re.sub(r'[0-9a-fA-F]{4}(:[0-9a-fA-F]{4}){7}',
+    log_string = re.sub(r'(?i)[0-9A-F]{4}(:[0-9A-F]{4}){7}',
                         r'[IPV6 REMOVED]',
                         log_string)
     # MAC addresses
-    log_string = re.sub(r'([0-9a-fA-F]{2}:){5,}[0-9a-fA-F]{2}',
+    log_string = re.sub(r'(?i)([0-9A-F]{2}:){5,}[0-9A-F]{2}',
                         r'[MAC REMOVED]',
                         log_string)
     return log_string
