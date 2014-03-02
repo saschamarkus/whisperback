@@ -171,13 +171,13 @@ def sanitize_hardware_info(log_string):
                         r'\1[UUID REMOVED]',
                         log_string)
 
-    # IPs
+    # IPv4s
     log_string = re.sub(r'([\d]{1,3}\.){3}[\d]{1,3}',
-                        r'[IP REMOVED]',
+                        r'[IPV4 REMOVED]',
                         log_string)
-    # IP6s
+    # IPv6s
     log_string = re.sub(r'[0-9a-fA-F]{4}(:[0-9a-fA-F]{4}){7}',
-                        r'[IP6 REMOVED]',
+                        r'[IPV6 REMOVED]',
                         log_string)
     # MAC addresses
     log_string = re.sub(r'([0-9a-fA-F]{2}:){5,}[0-9a-fA-F]{2}',
