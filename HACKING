@@ -3,6 +3,14 @@ Whisperback developper guide
 Release
 =======
 
+Install the test suite dependencies:
+
+    sudo apt-get install python-gnupginterface
+
+Run the test suite:
+
+    ./test.py
+
 Fetch updated PO from the whisperback_completed branch of
 git://git.torproject.org/translation.git
 
