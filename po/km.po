@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# soksophea <sksophea@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: The Tor Project\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-01 15:36+0200\n"
+"PO-Revision-Date: 2014-01-30 03:40+0000\n"
+"Last-Translator: soksophea <sksophea@gmail.com>\n"
+"Language-Team: Khmer (http://www.transifex.com/projects/p/torproject/language/km/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: km\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. XXX use a better exception
+#: ../whisperBack/whisperback.py:63
+#, python-format
+msgid "Invalid contact email: %s"
+msgstr "អ៊ីមែល​ទំនាក់ទំនង​មិន​ត្រឹមត្រូវ៖ %s"
+
+#: ../whisperBack/whisperback.py:80
+#, python-format
+msgid "Invalid contact OpenPGP key: %s"
+msgstr "ពាក្យ​គន្លឹះ OpenPGP ទំនាក់ទំនង​មិន​ត្រឹមត្រូវ៖ %s"
+
+#: ../whisperBack/whisperback.py:82
+msgid "Invalid contact OpenPGP public key block"
+msgstr "ប្លុក​ពាក្យ​គន្លឹះ​សាធារណៈ OpenPGP មិន​ត្រឹមត្រូវ"
+
+#: ../whisperBack/exceptions.py:41
+#, python-format
+msgid ""
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "អថេរ %s មិន​ត្រូវ​បាន​រក​ឃើញ​នៅ​ក្នុង​ឯកសារ​ការ​កំណត់​រចនាសម្ព័ន្ធ /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+
+#: ../whisperBack/gui.py:154
+msgid "Unable to load a valid configuration."
+msgstr "មិន​អាច​ផ្ទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ​ត្រឹមត្រូវ។"
+
+#: ../whisperBack/gui.py:220
+msgid "Sending mail..."
+msgstr "កំពុង​ផ្ញើ​អ៊ីមែល..."
+
+#: ../whisperBack/gui.py:221
+msgid "Sending mail"
+msgstr "ផ្ញើ​អ៊ីមែល"
+
+#. pylint: disable=C0301
+#: ../whisperBack/gui.py:223
+msgid "This could take a while..."
+msgstr "វា​អាច​ប្រើ​ពេល​បន្តិចបន្តួច..."
+
+#: ../whisperBack/gui.py:237
+msgid "The contact email adress doesn't seem valid."
+msgstr "អាសយដ្ឋាន​អ៊ីមែល​ទំនាក់ទំនង​ហាក់​មិន​ត្រឹមត្រូវ។"
+
+#: ../whisperBack/gui.py:254
+msgid "Unable to send the mail: SMTP error."
+msgstr "មិន​អាច​ផ្ញើ​អ៊ីមែល៖ កំហុស SMTP ។"
+
+#: ../whisperBack/gui.py:256
+msgid "Unable to connect to the server."
+msgstr "មិន​អាច​តភ្ជាប់​ទៅ​ម៉ាស៊ីន​មេ។"
+
+#: ../whisperBack/gui.py:258
+msgid "Unable to create or to send the mail."
+msgstr "មិន​អាច​បង្កើត ឬ​ផ្ញើ​អ៊ីមែល។"
+
+#: ../whisperBack/gui.py:261
+msgid ""
+"\n"
+"\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"\n"
+"If it does not work, you will be offered to save the bug report."
+msgstr "\n\nមិន​អាច​ផ្ញើ​របាយការណ៍​កំហុស​បាន​ទេ ដោយសារ​បញ្ហា​បណ្ដាញ។ ព្យាយាម​តភ្ជាប់​បណ្ដាញ​ឡើងវិញ រួច​ចុច​ផ្ញើ​ម្ដងទៀត។\n\nបើ​វា​មិន​ដំណើរការ​ទេ អ្នក​នឹង​ត្រូវ​រក្សាទុក​របាយការណ៍​កំហុស។"
+
+#: ../whisperBack/gui.py:274
+msgid "Your message has been sent."
+msgstr "សារ​របស់​អ្នក​ត្រូវ​បាន​ផ្ញើ។"
+
+#: ../whisperBack/gui.py:281
+msgid "An error occured during encryption."
+msgstr "មាន​កំហុស​ពេល​ដាក់​លេខ​កូដ។"
+
+#: ../whisperBack/gui.py:301
+#, python-format
+msgid "Unable to save %s."
+msgstr "មិន​អាច​រក្សាទុក %s ។"
+
+#. XXX: fix string
+#: ../whisperBack/gui.py:325
+#, python-format
+msgid ""
+"The bug report could not be sent, likely due to network problems.\n"
+"\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"\n"
+"Do you want to save the bug report to a file?"
+msgstr "មិន​អាច​ផ្ញើ​របាយការណ៍​កំហុស​បាន​ទេ ដោយសារ​បញ្ហា​បណ្ដាញ។\n\nជា​យុទ្ធវិធី​អ្នក​អាច​រក្សាទុក​របាយការណ៍​កំហុស​នៅ​លើ​ដ្រាយ​យូអេសប៊ី រួច​សាកល្បង​ផ្ញើ​វា​តាម %s ចេញពី​គណនី​អ៊ីមែល​របស់​អ្នក​ដោយ​ប្រើ​ប្រព័ន្ធ​ផ្សេង។ ចងចាំ​ថា​របាយការណ៍​កំហុស​របស់​អ្នក​នឹង​មិន​អនាមិក​ទេ ពេល​ធ្វើ​ដូចនេះ លុះត្រាតែ​អ្នក​អនុវត្ត​ជំហាន​ច្រើន​ទៀត​ដោយ​ខ្លួនឯង (ឧ. ការ​ប្រើ Tor ជាមួយ​គណនី​អ៊ីមែល​ក្លែងក្លាយ)។\n\nតើ​អ្នក​ចង់​រក្សាទុក​របាយការណ៍​កំហុស​ជា​ឯកសារ​ដែរ​ឬទេ?"
+
+#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+msgid "WhisperBack"
+msgstr "WhisperBack"
+
+#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+msgid "Send feedback in an encrypted mail."
+msgstr "ផ្ញើ​មតិ​ព័ត៌មាន​នៅ​ក្នុង​អ៊ីមែល​ដែល​បាន​ដាក់​លេខ​កូដ។"
+
+#: ../whisperBack/gui.py:393
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៩-២០១២ ដោយ​អ្នក​អភិវឌ្ឍន៍ Tails (tails@boum.org)"
+
+#: ../whisperBack/gui.py:394
+msgid "Tails developers <tails@boum.org>"
+msgstr "អ្នក​អភិវឌ្ឍន៍ Tails <tails@boum.org>"
+
+#: ../whisperBack/gui.py:395
+msgid "translator-credits"
+msgstr "អ្នកចូលរួម​បកប្រែ"
+
+#: ../whisperBack/gui.py:422
+msgid "This doesn't seem to be a valid URL or OpenPGP key."
+msgstr "វា​ហាក់​មិនមែន​ជា URL ឬ​ពាក្យ​គន្លឹះ OpenPGP ត្រឹមត្រូវ។"
+
+#: ../data/whisperback.ui.h:1
+msgid "Copyright © 2009-2012 tails@boum.org"
+msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៩-២០១២ ដោយ tails@boum.org"
+
+#: ../data/whisperback.ui.h:3
+msgid "https://tails.boum.org/"
+msgstr "https://tails.boum.org/"
+
+#: ../data/whisperback.ui.h:4
+msgid ""
+"WhisperBack - Send feedback in an encrypted mail\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"\n"
+"This program is  free software; you can redistribute  it and/or modify\n"
+"it under the  terms of the GNU General Public  License as published by\n"
+"the Free Software Foundation; either  version 3 of the License, or (at\n"
+"your option) any later version.\n"
+"\n"
+"This program  is distributed in the  hope that it will  be useful, but\n"
+"WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\n"
+"MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\n"
+"General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - ផ្ញើ​មតិ​ព័ត៌មាន​នៅ​ក្នុង​អ៊ីមែល​ដែល​បាន​ដាក់​លេខ​កូដ\nរក្សាសិទ្ធិ​ឆ្នាំ ២០០៩-២០១២ ដោយ​អ្នក​អភិវឌ្ឍន៍ Tails <tails@boum.org>\n\nនេះ​ជា​កម្មវិធី​ឥតគិតថ្លៃ អ្នក​អាច​ចែកចាយ​ឡើងវិញ និង/ឬ​កែប្រែ​​វា​បាន​ក្រោម\nលក្ខខណ្ឌ​អាជ្ញាប័ណ្ណ​សាធារណៈ​ទូទៅ GNU ដែល​បាន​បោះពុម្ពផ្សាយ​ដោយ\nមូលនិធិ​កម្មវិធី​ឥត​បង់ថ្លៃ ទាំង​អាជ្ញាប័ណ្ណ​កំណែ ៣ ឬ (នៅ​ជម្រើស​របស់​អ្នក)\nកំណែ​ក្រោយៗ។\n\nកម្មវិធី​នេះ​ត្រូវ​បាន​ចែកចាយ​ដោយ​សង្ឃឹម​ថា​នឹង​មាន​ប្រយោជន៍ ប៉ុន្តែ\nដោយ​គ្មាន​ការ​ធានា​ណាមួយ​ឡើយ សូម្បី​ការ​ធានា​អំពី​មុខ​ជំនួញ ឬ\nគោលបំណង​សមរម្យ​ជាក់លាក់​ណាមួយ​ក៏ដោយ។ សូម​មើល\nអាជ្ញាប័ណ្ណ​សាធារណៈ​ទូទៅ GNU សម្រាប់​ព័ត៌មាន​លម្អិត។\n\nអ្នក​គួរតែ​ទទួល​បាន​ច្បាប់​ចម្លង​អាជ្ញាប័ណ្ណ​សាធារណៈ​ទូទៅ GNU\nនៅ​ក្នុង​កម្មវិធី​នេះ។ បើ​មិន​បាន​ទទួល​ទេ សូម​មើល <http://www.gnu.org/licenses/>។\n"
+
+#: ../data/whisperback.ui.h:20
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr "បើ​អ្នក​ចង់​ឲ្យ​យើង​ដាក់​លេខ​កូដ​សារ ពេល​យើង​ឆ្លើយតប​ទៅ​អ្នក អ្នក​ត្រូវ​បន្ថែម​លេខ​សម្គាល់​ពាក្យគន្លឹះ តំណ​ទៅកាន់​ពាក្យ​គន្លឹះ​របស់​អ្នក ឬ​ពាក្យ​គន្លឹះ​ដែល​ជា​ប្លុក​ពាក្យ​គន្លឹះ​សាធារណៈ៖"
+
+#: ../data/whisperback.ui.h:22
+msgid "Summary"
+msgstr "សង្ខេប"
+
+#: ../data/whisperback.ui.h:23
+msgid "Bug description"
+msgstr "សេចក្ដី​ពណ៌នា​កំហុស"
+
+#: ../data/whisperback.ui.h:24
+msgid "Optional email address to contact you"
+msgstr "អាសយដ្ឋាន​អ៊ីមែល​ជា​ជម្រើស​ដើម្បី​ទាក់ទង​អ្នក"
+
+#: ../data/whisperback.ui.h:25
+msgid "optional PGP key"
+msgstr "ពាក្យ​គន្លឹះ PGP ជា​ជម្រើស"
+
+#: ../data/whisperback.ui.h:26
+msgid "Technical details to include"
+msgstr "ព័ត៌មាន​លម្អិត​បច្ចេកទេស​ដែល​ត្រូវ​រួមបញ្ចូល"
+
+#: ../data/whisperback.ui.h:27
+msgid "headers"
+msgstr "បឋមកថា"
+
+#: ../data/whisperback.ui.h:28
+msgid "debugging info"
+msgstr "ព័ត៌មាន​បំបាត់​កំហុស"
+
+#: ../data/whisperback.ui.h:29
+msgid "Help"
+msgstr "ជំនួយ"
+
+#: ../data/whisperback.ui.h:30
+msgid "Send"
+msgstr "ផ្ញើ"
