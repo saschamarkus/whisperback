@@ -3,37 +3,36 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# klovnecaspar, 2013
-# torebjornson <tore.bjornson@gmail.com>, 2013
+# xatier 同學@提不起勁 <xatierlike@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2013-07-05 09:10+0000\n"
-"Last-Translator: klovnecaspar\n"
-"Language-Team: Danish (http://www.transifex.com/projects/p/torproject/"
-"language/da/)\n"
-"Language: da\n"
+"PO-Revision-Date: 2014-03-13 11:50+0000\n"
+"Last-Translator: xatier 同學@提不起勁 <xatierlike@gmail.com>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/"
+"torproject/language/zh_TW/)\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Ugyldig kontakt email: %s"
+msgstr "非法的聯絡信箱: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Ugyldig kontakt OpenPGP key: %s"
+msgstr "非法的連略人 OpenPGP key: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Ugyldig kontakt OpenPGP offentlig nøgle blok"
+msgstr "非法的聯絡人 OpenPGP 公鑰 block"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
@@ -41,41 +40,41 @@ msgid ""
 "The %s variable was not found in any of the configuration files /etc/"
 "whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr ""
-"Variablen %s blev ikke fundet i nogle af konfigurationsfilerne /etc/"
-"whisperback/config.py. ~/.whisperback/config.py. ./config.py"
+"%s 的值無法在以下任何設定檔中被找到 /etc/whisperback/config.py, ~/."
+"whisperback/config.py, ./config.py"
 
 #: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
-msgstr "Ude af stand til at indlæse en korrekt konfiguration."
+msgstr "無法讀取合法設定"
 
 #: ../whisperBack/gui.py:220
 msgid "Sending mail..."
-msgstr "Sender mail.."
+msgstr "寄信中..."
 
 #: ../whisperBack/gui.py:221
 msgid "Sending mail"
-msgstr "Sender mail.."
+msgstr "寄信中"
 
 #. pylint: disable=C0301
 #: ../whisperBack/gui.py:223
 msgid "This could take a while..."
-msgstr "Dette kommer muligvis til at tage et stykke tid.."
+msgstr "可能會花一點時間..."
 
 #: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
-msgstr "Deres email adresse er ikke valid."
+msgstr "聯絡人 email 地址似乎不適合法的。"
 
 #: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
-msgstr "Kunne ikke sende mailen: SMTP fejl"
+msgstr "無法寄出信件: SMTP 錯誤。"
 
 #: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
-msgstr "Ude af stand til at forbinde til serveren"
+msgstr "無法和伺服器連線。"
 
 #: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
-msgstr "Ude af stand til at kreere eller sende mailen"
+msgstr "無法建立或是寄出信件。"
 
 #: ../whisperBack/gui.py:261
 msgid ""
@@ -88,24 +87,23 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Fejl rapporten kunne ikke sende, sandsynligvis på grund af netværks "
-"problemer. Forsøg venligst at genoprette forbindelsen til netværket og tryk "
-"\"Send Igen\".\n"
+"Bug 報告無法被送出，似乎是因為網路問題。請重新連線試試看並再次點擊寄出按"
+"鈕。\n"
 "\n"
-"Hvis det ikke virker, vil De få mulighed for at gemme fejl rapporten."
+"如果還是不行，您需要儲存 bug 報告。"
 
 #: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
-msgstr "Deres besked er sendt."
+msgstr "信息已被寄出。"
 
 #: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
-msgstr "En fejl opstod under krypteringen."
+msgstr "加密中出現錯誤。"
 
 #: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
-msgstr "Kunne ikke gemme %s."
+msgstr "無法儲存 %s。"
 
 #. XXX: fix string
 #: ../whisperBack/gui.py:325
@@ -121,16 +119,13 @@ msgid ""
 "\n"
 "Do you want to save the bug report to a file?"
 msgstr ""
-"Fejl rapporten kunne ikke sendes, sandsynligvis på grund af netværks "
-"problemer.\n"
+"錯誤報告無法被寄出，似乎是因為網路問題。\n"
 "\n"
-"Som en løsning kan De gemme fejl rapporten på en USB nøgle og forsøge at "
-"sende den til os på %s fra Deres email konto via et andet system. Noter "
-"venligst at Deres fejl rapport ikke længere er anonym på denne måde, med "
-"mindre de selv tager andre metoder i brug  (f.eks. bruger Tor med en \"throw-"
-"away\" email konto).\n"
+"一個替代方案是您可以將錯誤報告儲存在 USB 隨身碟的檔案中，並嘗試將它寄給我們"
+"在 %s 從您的 email 帳號使用其他系統。注意這樣一來您的錯誤報告並不會被匿名除非"
+"您自己用其他方式 (例如，使用 Tor 用完即丟的 email 帳號)。\n"
 "\n"
-"Vil De gemme fejl rapporten til en fil?"
+"您想要將錯誤報告存成檔案嗎？"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -138,23 +133,23 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Send feedback i en krypteret mail."
+msgstr "使用加密過的信件來傳送回饋。"
 
 #: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Copyright © 2009-2012 Tails 開發團隊 (tails@boum.org)"
 
 #: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
-msgstr "Tails udviklere <tails@boum.org>"
+msgstr "Tails 開發者  <tails@boum.org>"
 
 #: ../whisperBack/gui.py:395
 msgid "translator-credits"
-msgstr "oversætter-kredit"
+msgstr "翻譯者銘謝"
 
 #: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Dette ser ikke ud til at være en valid URL eller OpenPGP nøgle."
+msgstr "似乎不適合法的 URL 或是 OpenPGP key。"
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
@@ -182,63 +177,62 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"WhisperBack - Send feedback i en krypteret mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"WhisperBack - 使用加密郵件來寄送反潰。\n"
+"Copyright (C) 2009-2012 Tails 開發者 <tails@boum.org>\n"
 "\n"
-"Dette program er fri software; du kan videredistribuere det og/eller ændre\n"
-"det i henhold til GNU General Public License som udgivet af\n"
-"Free Software Foundation; enten version 3 af licensen, eller (efter\n"
-"eget valg) en hvilken som helst senere version.\n"
+"This program is  free software; you can redistribute  it and/or modify\n"
+"it under the  terms of the GNU General Public  License as published by\n"
+"the Free Software Foundation; either  version 3 of the License, or (at\n"
+"your option) any later version.\n"
 "\n"
-"Dette program er distribueret i håbet om at det vil være anvendeligt, men\n"
-"UDEN NOGEN GARANTI;   uden selv den underforståede garanti for\n"
-"SALGSBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Læs GNU\n"
-"General Public License for flere detaljer.\n"
+"This program  is distributed in the  hope that it will  be useful, but\n"
+"WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\n"
+"MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\n"
+"General Public License for more details.\n"
 "\n"
-"Du burde have modtaget en kopi af GNU General Public License\n"
-"sammen med dette program.  Hvis ikke, se <http://www.gnu.org/licenses/>.\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
 msgstr ""
-"Hvis De vil have os til at kryptere beskeder når vi svarer Dem, tilføj "
-"venligst Deres nøgle ID, et link til Deres nøgle eller Deres nøgle som en "
-"offentlig nøgle blok:"
+"如果您想要當我們回覆時使用加密後的信息，請附上您的 key ID ，一個您的 key 的 "
+"link ，或是一個 public key block 。"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
-msgstr "Opsummering"
+msgstr "摘要"
 
 #: ../data/whisperback.ui.h:23
 msgid "Bug description"
-msgstr "Fejl beskrivelse"
+msgstr "Bug 描述"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Valgfri email adresse til at kontakte Dem"
+msgstr "聯繫您的額外的 email 地址"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "valgfri PGP nøgle"
+msgstr "optional PGP key"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
-msgstr "Tekniske detaljer til at inkludere"
+msgstr "包含的技術細節"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
-msgstr "headers"
+msgstr "標頭"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "Fejlretnings info"
+msgstr "除錯資訊"
 
 #: ../data/whisperback.ui.h:29
 msgid "Help"
-msgstr "Hjælp"
+msgstr "說明"
 
 #: ../data/whisperback.ui.h:30
 msgid "Send"
-msgstr "Send"
+msgstr "寄信"

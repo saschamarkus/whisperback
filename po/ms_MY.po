@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # shahril <mohd_shahril_96@yahoo.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2013-08-01 15:36+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-17 17:40+0100\n"
 "PO-Revision-Date: 2013-10-10 13:20+0000\n"
 "Last-Translator: shahril <mohd_shahril_96@yahoo.com>\n"
-"Language-Team: Malay (Malaysia) (http://www.transifex.com/projects/p/torproject/language/ms_MY/)\n"
+"Language-Team: Malay (Malaysia) (http://www.transifex.com/projects/p/"
+"torproject/language/ms_MY/)\n"
+"Language: ms_MY\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ms_MY\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. XXX use a better exception
@@ -36,9 +37,11 @@ msgstr "Public key OpenPGP yang tidak sah"
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Pembolehubah %s tidak dijumpai dalam mana-mana fail konfigurasi /etc/whisperback/config.py, ~/.whisperback/config.py, ./Config.py"
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr ""
+"Pembolehubah %s tidak dijumpai dalam mana-mana fail konfigurasi /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./Config.py"
 
 #: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
@@ -77,10 +80,17 @@ msgstr "Tidak dapat mencipta atau menghantar e-mel."
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nLaporan bug tidak dapat dihantar, mungkin kerana masalah rangkaian. Sila cuba untuk menyambung semula ke rangkaian dan klik hantar lagi.\n\nJika ia tidak berfungsi, anda akan ditawarkan untuk menyimpan laporan bug."
+msgstr ""
+"\n"
+"\n"
+"Laporan bug tidak dapat dihantar, mungkin kerana masalah rangkaian. Sila "
+"cuba untuk menyambung semula ke rangkaian dan klik hantar lagi.\n"
+"\n"
+"Jika ia tidak berfungsi, anda akan ditawarkan untuk menyimpan laporan bug."
 
 #: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
@@ -101,10 +111,23 @@ msgstr "Tidak dapat menyimpan %s."
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Laporan bug tidak dapat dihantar, mungkin kerana masalah rangkaian.\n\nSebagai langkah yang lain, anda boleh menyimpan fail laporan bug itu pada pemacu USB dan cuba menghantarnya pada %s daripada akaun e-mel anda menggunakan sistem yang lain. Ambil perhatian bahawa laporan bug anda tidak akan menjadi rahsia melainkan anda mengambil langkah-langkah selanjutnya(contohnya menggunakan Tor dengan dan memakai e-mel pakai buang).\n\nKamu mahu menyimpan laporan bug ini kepada bentuk fail ?"
+msgstr ""
+"Laporan bug tidak dapat dihantar, mungkin kerana masalah rangkaian.\n"
+"\n"
+"Sebagai langkah yang lain, anda boleh menyimpan fail laporan bug itu pada "
+"pemacu USB dan cuba menghantarnya pada %s daripada akaun e-mel anda "
+"menggunakan sistem yang lain. Ambil perhatian bahawa laporan bug anda tidak "
+"akan menjadi rahsia melainkan anda mengambil langkah-langkah selanjutnya"
+"(contohnya menggunakan Tor dengan dan memakai e-mel pakai buang).\n"
+"\n"
+"Kamu mahu menyimpan laporan bug ini kepada bentuk fail ?"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -128,7 +151,8 @@ msgstr "Kredit peterjemah"
 
 #: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Ini tidak kelihatan seperti URL yang sah atau kekunci OpenPGP yang sah."
+msgstr ""
+"Ini tidak kelihatan seperti URL yang sah atau kekunci OpenPGP yang sah."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
@@ -155,13 +179,31 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Hantar maklum balas dalam mel sulit\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\nThis program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 3 of the License, or (at\nyour option) any later version.\n\nThis program is distributed in the hope that it will be useful, but\nWITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU\nGeneral Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program. If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - Hantar maklum balas dalam mel sulit\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 3 of the License, or (at\n"
+"your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but\n"
+"WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU\n"
+"General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program. If not, see <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Jika anda mahu kami untuk menyulitkan mesej apabila kam membalas email anda, tambahkan kunci ID anda, pautan ke kunci anda, atau kunci sebagai blok public key:"
+msgstr ""
+"Jika anda mahu kami untuk menyulitkan mesej apabila kam membalas email anda, "
+"tambahkan kunci ID anda, pautan ke kunci anda, atau kunci sebagai blok "
+"public key:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
