@@ -1,3 +1,9 @@
+whisperback (1.6.17) stable; urgency=medium
+
+  * Update translations.
+
+ -- Tails developers <tails@boum.org>  Wed, 16 Apr 2014 23:25:48 +0200
+
 whisperback (1.6.16) testing; urgency=medium
 
   * Update translations.
