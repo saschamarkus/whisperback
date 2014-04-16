@@ -1,23 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # ganeshwaki <ganeshwaki@gmail.com>, 2013
 # Sachie <jemabha@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
+"POT-Creation-Date: 2013-03-26 15:50+0100\n"
 "PO-Revision-Date: 2013-06-24 22:52+0000\n"
 "Last-Translator: ganeshwaki <ganeshwaki@gmail.com>\n"
-"Language-Team: Sinhala (Sri Lanka) (http://www.transifex.com/projects/p/"
-"torproject/language/si_LK/)\n"
-"Language: si_LK\n"
+"Language-Team: Sinhala (Sri Lanka) (http://www.transifex.com/projects/p/torproject/language/si_LK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: si_LK\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
@@ -38,117 +37,97 @@ msgstr "අවලංගු සම්බන්ධක OpenPGP පොදු යත�
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr ""
-"%s විචල්‍ය කිසිම වින්‍යාස ගොනුවක සොයාගත නොහැකි විය /etc/whisperback/config.py, ~/."
-"whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "%s විචල්‍ය කිසිම වින්‍යාස ගොනුවක සොයාගත නොහැකි විය /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "වලංගු වින්‍යාසය ප්‍රවේෂණයට අසමර්ථ විය."
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "විද්‍යුත් තැපෑලය යවමින්..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "විද්‍යුත් තැපෑලය යවමින්"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "මෙම කාර්යය ඉටුකිරීමට ටික වෙලාවක් ගත විය හැක..."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:234
 msgid "The contact email adress doesn't seem valid."
 msgstr "මෙම සම්බන්ධක විද්‍යුත් තැපෑල ලිපිනය වලංගු නොවේ."
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:251
 msgid "Unable to send the mail: SMTP error."
 msgstr "තැපෑලය යැවීමට අසමර්ථ විය: SMTP දෝෂය."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:253
 msgid "Unable to connect to the server."
 msgstr "සේවාදායකයාට සම්බන්ධවීමට නොහැක."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:255
 msgid "Unable to create or to send the mail."
 msgstr "තැපෑලය නිර්මාණය කිරීමට හෝ යැවීමට අසමර්ථ විය."
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:258
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try "
-"to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr ""
-"\n"
-"\n"
-"දෝෂ වාර්තාව ජාල ගැටලු නිසා, යැවීමට නොහැකි විය. කරුණාකර ජාල සැපයුම නැවත සම්බන්ධකර යවන්න "
-"ක්ලික් කරන්න.\n"
-"\n"
-"මෙයද ක්‍රියා නොකළේ නම්, ඔබට දෝෂ වාර්තාව සුරැකීමේ අවස්ථාවක් පිරිනැමේ."
+msgstr "\n\nදෝෂ වාර්තාව ජාල ගැටලු නිසා, යැවීමට නොහැකි විය. කරුණාකර ජාල සැපයුම නැවත සම්බන්ධකර යවන්න ක්ලික් කරන්න.\n\nමෙයද ක්‍රියා නොකළේ නම්, ඔබට දෝෂ වාර්තාව සුරැකීමේ අවස්ථාවක් පිරිනැමේ."
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:271
 msgid "Your message has been sent."
 msgstr "ඔබේ පණිවිඩය යවා අවසානය."
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:278
 msgid "An error occured during encryption."
 msgstr "සංකේතනය කිරීමේදී දෝෂයක් හටගෙන ඇත."
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:298
 #, python-format
 msgid "Unable to save %s."
 msgstr "%s සුරැකීමට අසමත්."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:322
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and "
-"try to send it to us at %s from your email account using another system. "
-"Note that your bug report will not be anonymous when doing so unless you "
-"take further steps yourself (e.g. using Tor with a throw-away email "
-"account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr ""
-"දෝෂ වාර්තාව යැවීමට නොහැකි විය, බොහෝ දුරට හේතුව ජාල ගැටළුවක් විය හැක. \n"
-"\n"
-"ඔබට දෝෂ වාර්තාව USB ධාරකයක සුරක්ෂිත කර වෙනත් පද්ධතියකින් ඔබේ විද්‍යුත් තැපෑල මගින් අපට %s "
-"එවන්න. ඔබ වැඩිදුර පියවර අනුගමනය නොකරන්නේ නම් (Tor ඉවතලන විද්‍යුත් තැපැල් ගිණුමක් මගින් භාවිතය), "
-"මෙම ක්‍රියාවලිය සිදුකරන විට ඔබේ දෝෂ වාර්තාව නිර්නාමික නොවේ. \n"
-"\n"
-"ඔබට දෝෂ වාර්තාව ගොනුවකට සුරැකීමට අවශ්‍ය ද?"
+msgstr "දෝෂ වාර්තාව යැවීමට නොහැකි විය, බොහෝ දුරට හේතුව ජාල ගැටළුවක් විය හැක. \n\nඔබට දෝෂ වාර්තාව USB ධාරකයක සුරක්ෂිත කර වෙනත් පද්ධතියකින් ඔබේ විද්‍යුත් තැපෑල මගින් අපට %s එවන්න. ඔබ වැඩිදුර පියවර අනුගමනය නොකරන්නේ නම් (Tor ඉවතලන විද්‍යුත් තැපැල් ගිණුමක් මගින් භාවිතය), මෙම ක්‍රියාවලිය සිදුකරන විට ඔබේ දෝෂ වාර්තාව නිර්නාමික නොවේ. \n\nඔබට දෝෂ වාර්තාව ගොනුවකට සුරැකීමට අවශ්‍ය ද?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "නැවත ඉගි කිරීම "
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "සංකේතනය කල තැපැලක් මගින් ප්‍රතිපෝෂණය යවන්න."
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:390
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "කතු හිමිකම © 2009-2012 Tails ක්‍රමලේඛකයන් (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:391
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails කේතකරුවන් <tails@boum.org>"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:392
 msgid "translator-credits"
 msgstr "පරිවර්තක-ස්තුතිය "
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:419
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "මෙය වලංගු URL එකක් හෝ OpenPGP යතුරක් නොවේ."
 
@@ -177,30 +156,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
-"නැවත ඉගිකිරිම - සංකේතනය කල තැපැලක් මගින් ප්‍රතිපෝෂණය යවන්න.\n"
-"කතු හිමිකම (C) 2009-2012 Tails developers <tails@boum.org>\n"
-"\n"
-"මෙම වැඩසටහන නිදහස් මෘදුකාංගයකි; ඔබට මෙය නැවත බෙදාහැරීමට හා/හෝ වෙනස් කිරීමට සදහා \n"
-"Free Software Foundation මගින් ප්‍රකාශිත \n"
-"GNU General Public License හි කොන්දේසි වලට යටත් විය යුතුය; බලපත්‍රයෙහි 3 වන අනුවාදය\n"
-"(ඔබේ මනාපය අනුව) හෝ ඊට පසු අනුවාදයක් බාවිතය උචිතය.\n"
-"\n"
-"මෙම වැඩසටහන අන්‍යන්හට ඵලදායිවන පරමාර්ථයෙන් බෙදාහැරින නමුත්, \n"
-"කිසිදු ප්‍රතිඥා භාරයක් නොලැබේ;  විකිණීමේ හැකියාව හෝ \n"
-"යම් සුවිශේෂ අභිප්‍රායකට ඇති යෝග්‍යතාව ගම්‍ය වන  ප්‍රතිඥා භාරයක් හෝ නොමැත. \n"
-"වැඩිදුර විස්තර දැනගැනීමට GNU General Public License බලන්න.\n"
-"\n"
-"වැඩසටහන සමග GNU General Public License හි අනුපිටපතක් ඔබ ලැබිය යුතු ය.\n"
-"නැත්නම් <http://www.gnu.org/licenses/> බලන්න.\n"
+msgstr "නැවත ඉගිකිරිම - සංකේතනය කල තැපැලක් මගින් ප්‍රතිපෝෂණය යවන්න.\nකතු හිමිකම (C) 2009-2012 Tails developers <tails@boum.org>\n\nමෙම වැඩසටහන නිදහස් මෘදුකාංගයකි; ඔබට මෙය නැවත බෙදාහැරීමට හා/හෝ වෙනස් කිරීමට සදහා \nFree Software Foundation මගින් ප්‍රකාශිත \nGNU General Public License හි කොන්දේසි වලට යටත් විය යුතුය; බලපත්‍රයෙහි 3 වන අනුවාදය\n(ඔබේ මනාපය අනුව) හෝ ඊට පසු අනුවාදයක් බාවිතය උචිතය.\n\nමෙම වැඩසටහන අන්‍යන්හට ඵලදායිවන පරමාර්ථයෙන් බෙදාහැරින නමුත්, \nකිසිදු ප්‍රතිඥා භාරයක් නොලැබේ;  විකිණීමේ හැකියාව හෝ \nයම් සුවිශේෂ අභිප්‍රායකට ඇති යෝග්‍යතාව ගම්‍ය වන  ප්‍රතිඥා භාරයක් හෝ නොමැත. \nවැඩිදුර විස්තර දැනගැනීමට GNU General Public License බලන්න.\n\nවැඩසටහන සමග GNU General Public License හි අනුපිටපතක් ඔබ ලැබිය යුතු ය.\nනැත්නම් <http://www.gnu.org/licenses/> බලන්න.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr ""
-"අප ඔබට සංකේතන පණිවිඩවලින් ප්‍රතිචාර දැක්වීමට අවශ්‍ය නම්, ඔබේ අනන්‍යතා යතුර, ඔබේ යතුරු සබැදිය, "
-"හෝ පොදු යතුරු බ්ලොකයක් ලෙස ඇති යතුර එක් කරන්න:"
+msgstr "අප ඔබට සංකේතන පණිවිඩවලින් ප්‍රතිචාර දැක්වීමට අවශ්‍ය නම්, ඔබේ අනන්‍යතා යතුර, ඔබේ යතුරු සබැදිය, හෝ පොදු යතුරු බ්ලොකයක් ලෙස ඇති යතුර එක් කරන්න:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"

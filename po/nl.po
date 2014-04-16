@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # JerBen <ayurveda63@gmail.com>, 2012
 # Shondoit Walker <shondoit@gmail.com>, 2012
@@ -11,16 +11,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
+"POT-Creation-Date: 2013-03-26 15:50+0100\n"
 "PO-Revision-Date: 2013-06-24 22:52+0000\n"
 "Last-Translator: runasand <runa.sandvik@gmail.com>\n"
-"Language-Team: Dutch (http://www.transifex.com/projects/p/torproject/"
-"language/nl/)\n"
-"Language: nl\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/torproject/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
@@ -41,121 +40,97 @@ msgstr "Ongeldige contact OpenPGP publieke sleutelblok"
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr ""
-"De %s variabel is niet gevonden in de configuratie bestanden etc/whisperback/"
-"config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "De %s variabel is niet gevonden in de configuratie bestanden etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "Kan geen geldige configuratie inladen."
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "Bezig met mail versturen..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "Bezig met mail versturen"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "Dit kan enige tijd duren..."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:234
 msgid "The contact email adress doesn't seem valid."
 msgstr "Het contact e-mailadres lijkt niet geldig."
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:251
 msgid "Unable to send the mail: SMTP error."
 msgstr "Kan mail niet versturen: SMTP fout."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:253
 msgid "Unable to connect to the server."
 msgstr "Kan niet verbinden met de server."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:255
 msgid "Unable to create or to send the mail."
 msgstr "Kan mail niet aanmaken of versturen."
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:258
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try "
-"to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr ""
-"\n"
-"\n"
-"De foutrapportage kon niet worden verstuurd, waarschijnlijk door "
-"netwerkproblemen. Probeer opnieuw verbinding te maken met het netwerk en "
-"probeer het opnieuw.\n"
-"\n"
-"Als dit niet werkt wordt je aangeboden om de foutrapportage op te slaan."
+msgstr "\n\nDe foutrapportage kon niet worden verstuurd, waarschijnlijk door netwerkproblemen. Probeer opnieuw verbinding te maken met het netwerk en probeer het opnieuw.\n\nAls dit niet werkt wordt je aangeboden om de foutrapportage op te slaan."
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:271
 msgid "Your message has been sent."
 msgstr "Je bericht is verstuurd."
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:278
 msgid "An error occured during encryption."
 msgstr "Er is een fout opgetreden tijdens het versleutelen"
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:298
 #, python-format
 msgid "Unable to save %s."
 msgstr "Kan %s niet opslaan."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:322
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and "
-"try to send it to us at %s from your email account using another system. "
-"Note that your bug report will not be anonymous when doing so unless you "
-"take further steps yourself (e.g. using Tor with a throw-away email "
-"account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr ""
-"De foutrapportage kon niet worden verstuurd, waarschijnlijk door "
-"netwerkproblemen.\n"
-"\n"
-"Als een tijdelijke oplossing kun je de foutrapportage opslaan op een USB-"
-"drive en het proberen te versturen naar ons op %s via jouw e-mailaccount op "
-"een ander systeem. Let wel op dat je foutrapportage niet anoniem zal zijn "
-"wanneer je dit doet, tenzij je zelf verdere stappen onderneemt (bijv. "
-"gebruik maken van Tor een een wegwerp-e-mailaccount.)\n"
-"\n"
-"Wil je de foutrapportage opslaan als een bestand?"
+msgstr "De foutrapportage kon niet worden verstuurd, waarschijnlijk door netwerkproblemen.\n\nAls een tijdelijke oplossing kun je de foutrapportage opslaan op een USB-drive en het proberen te versturen naar ons op %s via jouw e-mailaccount op een ander systeem. Let wel op dat je foutrapportage niet anoniem zal zijn wanneer je dit doet, tenzij je zelf verdere stappen onderneemt (bijv. gebruik maken van Tor een een wegwerp-e-mailaccount.)\n\nWil je de foutrapportage opslaan als een bestand?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Stuur feedback in een versleutelde mail."
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:390
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails-ontwikkelaars (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:391
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails ontwikkelaars <tails@boum.org>"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:392
 msgid "translator-credits"
 msgstr "vertaler credits"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:419
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Dit lijkt geen geldige URL of OpenPGP sleutel te zijn."
 
@@ -184,32 +159,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
-"WhisperBack - Stuur terugkoppeling in een versleutelde email.\n"
-"Copyright (C) 2009-2012 Tails ontwikkelaars <tail@boum.org>\n"
-"\n"
-"Dit programma is vrije programmatuur; u kan het verspreiden en/of aanpassen\n"
-"onder de voorwaarden van de GNU General Public License zoals gepubliceerd "
-"door\n"
-"The Free Software Foundation; ofwel versie 3 van de Licentie, of (naar\n"
-"uw keuze) elke latere versie.\n"
-"\n"
-"Dit programma wordt gedistribueerd in de hoop dat het nuttig zal zijn, maar\n"
-"ZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie van\n"
-"VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de GNU\n"
-"General Public License voor meer details.\n"
-"\n"
-"U heeft een kopie moeten ontvangen van de GNU General Public License samen "
-"met dit programma. Zo niet, zie <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Stuur terugkoppeling in een versleutelde email.\nCopyright (C) 2009-2012 Tails ontwikkelaars <tail@boum.org>\n\nDit programma is vrije programmatuur; u kan het verspreiden en/of aanpassen\nonder de voorwaarden van de GNU General Public License zoals gepubliceerd door\nThe Free Software Foundation; ofwel versie 3 van de Licentie, of (naar\nuw keuze) elke latere versie.\n\nDit programma wordt gedistribueerd in de hoop dat het nuttig zal zijn, maar\nZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie van\nVERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de GNU\nGeneral Public License voor meer details.\n\nU heeft een kopie moeten ontvangen van de GNU General Public License samen met dit programma. Zo niet, zie <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr ""
-"Als je wilt dat wij onze berichten versleutelen wanneer we jou antwoorden, "
-"voeg je sleutel ID, een link naar je sleutel of de sleutel als een publieke "
-"sleutelblok"
+msgstr "Als je wilt dat wij onze berichten versleutelen wanneer we jou antwoorden, voeg je sleutel ID, een link naar je sleutel of de sleutel als een publieke sleutelblok"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
