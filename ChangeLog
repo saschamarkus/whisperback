@@ -444,3 +444,12 @@ Minor improvements
 ======
 
 * Update translations.
+
+1.6.19
+======
+
+* Update translations.
+* Remove more serial numbers.
+* Remove IPv6 addresses.
+* Remove DMI strings.
+* Add test suite.
