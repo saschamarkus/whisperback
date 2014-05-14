@@ -3,6 +3,19 @@ Whisperback developer guide
 Release
 =======
 
+Install the test suite dependencies:
+
+    sudo apt-get install python-gnupginterface
+
+Run the test suite:
+
+    ./test.py
+
+Fetch updated PO from the whisperback_completed branch of
+git://git.torproject.org/translation.git
+
+Verify and commit.
+
 Upgrade version using scripts/update-version.sh.
 
 Commit with message "Update version to <New version>".

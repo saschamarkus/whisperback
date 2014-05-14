@@ -149,8 +149,21 @@ def sanitize_hardware_info(log_string):
     """
     # XXX: must be updated once IPv6 is enabled
 
+    # DMI
+    log_string = re.sub(r'(DMI:)[\s].*',
+                        r'\1[DMI REMOVED]',
+                        log_string)
+
     # Serial Numbers
-    log_string = re.sub(r'((Serial Number:?[\s]+|SerialNo=|iSerial[\s]+[\d]+\s+|SerialNumber:|Serial#:)[\s]+)[^\s].+',
+    log_string = re.sub(r'(Serial Number:?[\s]+|'
+                          'SerialNo=|'
+                          'iSerial[\s]+[\d]+\s+|'
+                          'SerialNumber:[\s]+|'
+                          'SerialNumber=|'
+                          'Serial#:[\s+]|'
+                          'serial#[\s+]|'
+                          'Serial No:[\s]+'
+                        ')[^\s].*',
                         r'\1[SN REMOVED]',
                         log_string)
     # UUIDs
@@ -158,12 +171,16 @@ def sanitize_hardware_info(log_string):
                         r'\1[UUID REMOVED]',
                         log_string)
 
-    # IPs
+    # IPv4s
     log_string = re.sub(r'([\d]{1,3}\.){3}[\d]{1,3}',
-                        r'[IP REMOVED]',
+                        r'[IPV4 REMOVED]',
+                        log_string)
+    # IPv6s
+    log_string = re.sub(r'(?i)[0-9A-F]{4}(:[0-9A-F]{4}){7}',
+                        r'[IPV6 REMOVED]',
                         log_string)
     # MAC addresses
-    log_string = re.sub(r'([0-9a-fA-F]{2}:){5,}[0-9a-fA-F]{2}',
+    log_string = re.sub(r'(?i)([0-9A-F]{2}:){5,}[0-9A-F]{2}',
                         r'[MAC REMOVED]',
                         log_string)
     return log_string
