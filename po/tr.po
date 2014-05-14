@@ -5,6 +5,7 @@
 # Translators:
 # sgtpepper <barlasmirc@gmail.com>, 2013
 # Tosbaa <conan@operamail.com>, 2013
+# Tails_developers <tails@boum.org>, 2014
 # volkangezer <volkangezer@gmail.com>, 2014
 # yozel <iletisim@yasinozel.com.tr>, 2013
 msgid ""
@@ -12,7 +13,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2014-03-31 01:10+0000\n"
+"PO-Revision-Date: 2014-05-06 23:20+0000\n"
 "Last-Translator: volkangezer <volkangezer@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/torproject/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -25,16 +26,16 @@ msgstr ""
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Geçersiz iletişim e-postası:%s"
+msgstr "Geçersiz iletişim e-postası: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Geçersiz iletişim OpenPGP anahtarı: %s"
+msgstr "Geçersiz kişi OpenPGP anahtarı: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Geçersiz iletişim OpenPGP halk anahtarı engeli."
+msgstr "Geçersiz kişi OpenPGP halk anahtarı engeli"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
@@ -45,7 +46,7 @@ msgstr "%s değişkeni /etc/whisperback/config.py, ~/.whisperback/config.py, ./c
 
 #: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
-msgstr "Geçerli ayarları yükleme başarısız"
+msgstr "Geçerli ayarları yükleme başarısız."
 
 #: ../whisperBack/gui.py:220
 msgid "Sending mail..."
@@ -62,7 +63,7 @@ msgstr "Bu biraz zaman alabilir..."
 
 #: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
-msgstr "İletişim E-postası geçerli değil gibi görünüyor."
+msgstr "Kişi e-postası geçerli değil gibi görünüyor."
 
 #: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
@@ -107,11 +108,11 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Hata raporu ağ problemlerinden dolayı gönderilemedi.\n\nGeçici bir çözüm olarak hata raporunu USB belleğinize kaydedip başka bir sistem kullanarak %s'de kendi e-posta hesabınızdan bize gönderebilirsiniz. Bu işlemi yaparken kendi önleminizi almadığınız takdirde gizliliğiniz ortadan kalkacaktır. (ör: TOR tarayıcısı aracılığıyla alınmış bir kullan-at mail kullanmak gibi...) \n\nHata raporunu bir dosyaya kaydetmek istiyor musunuz?"
+msgstr "Hata raporu ağ problemlerinden dolayı gönderilemedi.\n\nGeçici bir çözüm olarak hata raporunu USB belleğinize kaydedip başka bir sistem kullanarak %s'de kendi e-posta hesabınızdan bize gönderebilirsiniz. Bu işlemi yaparken kendi önleminizi almadığınız takdirde gizliliğiniz ortadan kalkacaktır. (ör: TOR tarayıcısı aracılığıyla alınmış bir kullan-at e-posta kullanmak gibi...) \n\nHata raporunu bir dosyaya kaydetmek istiyor musunuz?"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
-msgstr "GeriyeFısılda"
+msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
@@ -123,7 +124,7 @@ msgstr "Telif Hakkı © 2009-2012 Tails Geliştiricileri  (tails@boum.org)"
 
 #: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
-msgstr "Geliştiriciler <tails@boum.org>"
+msgstr "Tails geliştiricileri <tails@boum.org>"
 
 #: ../whisperBack/gui.py:395
 msgid "translator-credits"
@@ -158,21 +159,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Geri bildirimlerinizi şifreli bir mail ile gönderin\n"
-"Copyright (C) 2009-2012 Tails geliştiricileri<tails@boum.org>\n"
-"\n"
-"Bu program özgür yazılımdır: Özgür Yazılım Vakfı tarafından yayımlanan GNU\n"
-"Genel Kamu Lisansı'nın sürüm 3 ya da (isteğinize bağlı olarak) daha\n"
-"sonraki sürümlerinin hükümleri altında yeniden dağıtabilir ve/veya\n"
-"değiştirebilirsiniz.\n"
-"\n"
-"Bu program kullanışlı olması umuduyla dağıtılmıştır, ancak HİÇBİR GARANTİSİ\n"
-"YOKTUR; hatta SATILABİLİRLİK ya da BİR AMACA HİZMET gibi garantisi de\n"
-"yoktur. Daha fazla ayrıntı için GNU Genel Kamu Lisansı'na bakın.\n"
-"\n"
-"Bu programla birlikte GNU Genel Kamu Lisansı'nın bir kopyasını elde etmiş\n"
-"olmanız gerekir. Eğer elinize ulaşmadıysa <http://www.gnu.org/licenses/>\n"
-"adresine bakınız.\n"
+msgstr "WhisperBack - Geri bildirimlerinizi şifreli bir e-posta ile gönderin\nTelif Hakkı (C) 2009-2012 Tails geliştiricileri<tails@boum.org>\n\nBu program özgür yazılımdır: Özgür Yazılım Vakfı tarafından yayımlanan GNU\nGenel Kamu Lisansı'nın sürüm 3 ya da (isteğinize bağlı olarak) daha\nsonraki sürümlerinin hükümleri altında yeniden dağıtabilir ve/veya\ndeğiştirebilirsiniz.\n\nBu program kullanışlı olması umuduyla dağıtılmıştır, ancak HİÇBİR GARANTİSİ\nYOKTUR; hatta SATILABİLİRLİK ya da BİR AMACA HİZMET gibi garantisi de\nyoktur. Daha fazla ayrıntı için GNU Genel Kamu Lisansı'na bakın.\n\nBu programla birlikte GNU Genel Kamu Lisansı'nın bir kopyasını elde etmiş\nolmanız gerekir. Eğer elinize ulaşmadıysa <http://www.gnu.org/licenses/>\nadresine bakınız.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
@@ -190,7 +177,7 @@ msgstr "Hata tarifi"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Size ulaşılacak isteğe bağlı mail adresi."
+msgstr "Size ulaşılacak isteğe bağlı posta adresi."
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
@@ -214,4 +201,4 @@ msgstr "Yardım"
 
 #: ../data/whisperback.ui.h:30
 msgid "Send"
-msgstr "Yolla"
+msgstr "Gönder"
