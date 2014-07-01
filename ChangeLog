@@ -453,3 +453,8 @@ Minor improvements
 * Remove IPv6 addresses.
 * Remove DMI strings.
 * Add test suite.
+
+1.6.20
+======
+
+* Update translations.
