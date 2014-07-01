@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Communia <ameaneantie@riseup.net>, 2013
-# ebonsi, 2013
+# Communia <ameaneantie@riseup.net>, 2013-2014
+# Eduardo Bonsi, 2013
 # Augustine <evandro@geocities.com>, 2013
-# bruuh <bruuh@outlook.com>, 2012
-# betodso <beto.cpv@gmail.com>, 2013
-# jkaizer <jkck2010@hotmail.com>, 2013
-# kohpyreit <kohpyreit@gmail.com>, 2013
-# Snake Plissken <>, 2012
-# ncaio <caiogore@gmail.com>, 2013
+# Bruno Geronimo <bruuh@outlook.com>, 2012
+# Gilberto Osorio <beto.cpv@gmail.com>, 2013
+# Jonathan Kaizer <jkck2010@hotmail.com>, 2013
+# Koh Pyreit <kohpyreit@gmail.com>, 2013
+# m4lqu1570 <>, 2012
+# Noilson Caio T. de Araujo <caiogore@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-01 15:36+0200\n"
-"PO-Revision-Date: 2013-12-02 23:00+0000\n"
+"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"PO-Revision-Date: 2014-06-25 16:21+0000\n"
 "Last-Translator: Communia <ameaneantie@riseup.net>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/torproject/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -112,7 +112,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "O  relatório de bug não foi enviado, provavelmente devido a problemas de rede.\n\nVocê pode tentar salvar o relatório como um arquivo em um drive USB e nos enviar em %s de sua conta  e-mail, usando um outro sistema. Lembre que seu relatório de bug não será anônimo, a menos que você o anonimize por conta própria (ex. usando Tor com uma conta de e-mail descartável).\n\nVocê quer salvar o relatório em um arquivo? "
+msgstr "O  relatório de bug não foi enviado, provavelmente devido a problemas de rede.\n\nVocê pode tentar salvar o relatório como um arquivo em um dispositivo USB e nos enviar em %s de sua conta e-mail, usando um outro sistema. Lembre que seu relatório de bug não será anônimo, a menos que você o anonimize por conta própria (ex. usando Tor com uma conta de e-mail descartável).\n\nVocê quer salvar o relatório em um arquivo? "
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
