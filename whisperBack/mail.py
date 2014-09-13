@@ -25,10 +25,9 @@
 
 """
 
-import smtplib
-import socket
 from email.mime.text import MIMEText
-import gnutls.errors
+import smtplib
+import ssl
 import time
 
 def create_message (from_address, to_address, subject, message):
@@ -63,14 +62,15 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param message The content of the mail
     @param host The host of the smtp server to connect to
     @param port The port of the smtp server to connect to
-    @param tls_ca Certificate authority file passed to the socket module’s ssl() function.
+    @param tls_cafile Certificate authority file used to create the SSLContext
     """
+
     # Send the message via our own SMTP server, but don't include the
     # envelope header.
     # We set a long timeout because Tor is slow
     smtp = smtplib.SMTP(timeout=120)
     smtp.connect(host, port)
-    (resp, reply) = smtp.starttls(cafile = tls_cafile)
+    (resp, reply) = smtp.starttls(context=create_ssl_context(tls_cafile))
     # Default python let you continue in cleartext if starttls
     # fails, while you expect to have an encrypted connexion
     if resp != 220:
@@ -80,99 +80,20 @@ def send_message_tls (from_address, to_address, message, host="localhost",
         smtp.sendmail(from_address, [to_address], message)
         smtp.quit()
 
+def create_ssl_context(tls_cafile):
+    """Creates an SSLContext appropriate for use in WhisperBack
+
+    @param tls_cafile Certificate authority file
+    @returns An SSLContext
+    """
+    context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
+    context.load_verify_locations(cafile=tls_cafile)
+    context.verify_mode = ssl.CERT_REQUIRED
+    # disable compression to prevent CRIME attacks (OpenSSL 1.0+)
+    # this is copied from python's SSL module source
+    context.options |= ssl.OP_NO_COMPRESSION
+    return context
+
 class TLSError(Exception):
     """Exception raised if problem happens in STARTTLS step"""
     pass
-
-# This is a monkey patch to make the starttls function of libsmtp use
-# starttls, as the buildin doesn't really check certificates and doesn't
-# have a timeout parameter
-#pylint: disable=W0613
-def starttls(self, keyfile = None, certfile = None, cafile=None):
-    """Puts the connection to the SMTP server into TLS mode.
-
-    If the server supports TLS, this will encrypt the rest of the SMTP
-    session.
-
-    """
-    (resp, reply) = self.docmd("STARTTLS")
-    if resp == 220:
-
-        from gnutls.crypto import X509Certificate
-        from gnutls.connection import ClientSession, X509Credentials
-        # Don't worry, this is a monkey patch
-        #pylint: disable=W0621
-        import struct
-
-        tv = struct.pack('ii', int(6), int(0))
-        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_RCVTIMEO, tv)
-
-        if cafile:
-            ca = X509Certificate(open(cafile).read())
-        # XXX: use CRL
-        #crl = X509CRL(open(certs_path + '/crl.pem').read())
-        #cred = X509Credentials(trusted=[ca], crl_list=[crl])
-        cred = X509Credentials(trusted=[ca])
-        session = ClientSession(self.sock, cred)
-
-        while True:
-            try:
-                session.handshake()
-                session.verify_peer()
-                break
-            except gnutls.errors.OperationWouldBlock:
-                time.sleep(0.1)
-
-        def tls_quit():
-            """Terminate the SMTP session."""
-            self.docmd("quit")
-            while True:
-                try:
-                    self.sock.bye()
-                    break
-                except gnutls.errors.OperationWouldBlock:
-                    time.sleep(0.1)
-            self.close()
-
-        self.quit = tls_quit
-
-        self.sock = session
-        self.file = SSLFakeFile(session)
-
-        # RFC 3207:
-        # The client MUST discard any knowledge obtained from
-        # the server, such as the list of SMTP service extensions,
-        # which was not obtained from the TLS negotiation itself.
-        self.helo_resp = None
-        self.ehlo_resp = None
-        self.esmtp_features = {}
-        self.does_esmtp = 0
-    return (resp, reply)
-
-class SSLFakeFile:
-    """A fake file like object that really wraps a SSLObject.
-
-    It only supports what is needed in smtplib.
-    """
-    def __init__(self, sslobj):
-        self.sslobj = sslobj
-
-    #pylint: disable=C0111
-    def readline(self):
-        string = ""
-        char = None
-        while char != "\n":
-            while True:
-                try:          
-                    char = self.sslobj.recv(1)
-                    string += char
-                    break
-                except gnutls.errors.OperationWouldBlock:
-                    time.sleep(0.1)
-        return string
-
-    #pylint: disable=C0111
-    def close(self):
-        pass
-
-smtplib.SMTP.starttls = starttls
