@@ -27,7 +27,7 @@
 
 import os
 import re
-import urlparse
+import urllib.parse
 import locale
 
 # Ugly pathes finder utilities
@@ -85,7 +85,7 @@ def is_valid_link(candidate):
     - an hostname of the form domain.tld
     - a scheme http(s) or ftp(S)
     """
-    parseresult = urlparse.urlparse(candidate)
+    parseresult = urllib.parse.urlparse(candidate)
     #pylint: disable=E1101
     if (re.search(r'^(ht|f)tp(s)?$', parseresult.scheme) and
         re.search(r'^(\w{1,}\.){1,}\w{1,}$', parseresult.hostname)):

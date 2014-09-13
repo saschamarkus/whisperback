@@ -8,12 +8,12 @@ import unittest
 if not (sys.version_info[0] >= 2 and sys.version_info[1] >= 7):
     def skip_test(reason):
         def decorator(test_item):
-            print "Skipped test %s: %s" % (test_item, reason)
+            print("Skipped test %s: %s" % (test_item, reason))
             return None
         return decorator
     unittest.skip = skip_test
 
-print sys.path
+print(sys.path)
 import whisperBack.utils
 
 class TestIsValidLink(unittest.TestCase):

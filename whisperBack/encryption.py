@@ -68,6 +68,6 @@ class Encryption (GnuPGInterface.GnuPG):
             proc.wait()
             return output
 
-        except IOError, e:
+        except IOError as e:
             # XXX: raise a specific exception if the key wasn't found
             raise whisperBack.exceptions.EncryptionException(error)

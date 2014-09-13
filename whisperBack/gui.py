@@ -105,8 +105,8 @@ class WhisperBackUI(object):
         try:
             self.main_window.set_icon_from_file(os.path.join(
                 whisperBack.utils.get_pixmapdir(), "whisperback.svg"))
-        except gobject.GError, e:
-            print e
+        except gobject.GError as e:
+            print(e)
 
         underline = lambda str: str + "\n" + len(str) * '-'
 
@@ -149,7 +149,7 @@ class WhisperBackUI(object):
         # Launches the backend
         try:
             self.backend = whisperBack.whisperback.WhisperBack()
-        except whisperBack.exceptions.MisconfigurationException, e:
+        except whisperBack.exceptions.MisconfigurationException as e:
             self.show_exception_dialog(
                 _("Unable to load a valid configuration."), e,
                 self.cb_close_application)
@@ -232,7 +232,7 @@ class WhisperBackUI(object):
         if self.contact_email.get_text():
             try:
                 self.backend.contact_email = self.contact_email.get_text()
-            except ValueError, e:
+            except ValueError as e:
                 self.show_exception_dialog(
                     _("The contact email adress doesn't seem valid."), e)
                 self.progression_dialog.hide()
@@ -276,7 +276,7 @@ If it does not work, you will be offered to save the bug report."), e)
 
         try:
             self.backend.send(cb_update_progress, cb_finished_progress)
-        except whisperBack.exceptions.EncryptionException, e:
+        except whisperBack.exceptions.EncryptionException as e:
             self.show_exception_dialog(
                 _("An error occured during encryption."), e)
             self.progression_dialog.hide()
@@ -297,7 +297,7 @@ If it does not work, you will be offered to save the bug report."), e)
             if event == gtk.RESPONSE_ACCEPT:
                 try:
                     self.backend.save(widget.get_filename())
-                except IOError, e:
+                except IOError as e:
                     self.show_exception_dialog(_("Unable to save %s.")
                                                % widget.get_filename(), e)
             widget.hide()
@@ -368,7 +368,7 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
         
         dialog.connect("response", close_callback)
         dialog.show()
-        print traceback.format_exc()
+        print(traceback.format_exc())
 
     def cb_close_exception_dialog(self, widget, data=None):
         """Callback function for the exception dialog close event
@@ -417,7 +417,7 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
             self.backend.contact_gpgkey = self.gpg_keyblock.get_buffer().get_text(
                 self.gpg_keyblock.get_buffer().get_start_iter(),
                 self.gpg_keyblock.get_buffer().get_end_iter())
-        except ValueError, e:
+        except ValueError as e:
             self.show_exception_dialog(
                 _("This doesn't seem to be a valid URL or OpenPGP key."),
                 e, parent=self.gpg_dialog)

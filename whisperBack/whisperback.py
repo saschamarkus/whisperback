@@ -60,7 +60,7 @@ class WhisperBack(object):
         else:
 
             #XXX use a better exception
-            raise ValueError, _("Invalid contact email: %s" % email)
+            raise ValueError(_("Invalid contact email: %s" % email))
 
     #pylint: disable=W0212
     contact_email = property(lambda self: self._contact_email,
@@ -80,7 +80,7 @@ class WhisperBack(object):
                 message = _("Invalid contact OpenPGP key: %s" % gpgkey)
             else:
                 message = _("Invalid contact OpenPGP public key block")
-            raise ValueError, message
+            raise ValueError(message)
 
     #pylint: disable=W0212
     contact_gpgkey = property(lambda self: self._contact_gpgkey,
@@ -147,7 +147,7 @@ class WhisperBack(object):
             if f:
                 f.close()
         #pylint: disable=W0122
-        exec code in self.__dict__
+        exec(code, self.__dict__)
 
     def __check_conf(self):
         """Check that all the required configuration variables are filled
@@ -198,7 +198,7 @@ class WhisperBack(object):
             try:
                 #pylint: disable=W0142
                 func(*args)
-            except Exception, e:
+            except Exception as e:
                 self.__error_output = e
                 raise
 
