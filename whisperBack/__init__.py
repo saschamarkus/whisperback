@@ -29,4 +29,4 @@ import gettext
 from whisperBack.gui import WhisperBackUI
 
 # FIXME: hardcoded path
-gettext.install('whisperback', localedir='/usr/share/locale', str=True)
+gettext.install('whisperback', localedir='/usr/share/locale')
