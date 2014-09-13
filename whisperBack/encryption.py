@@ -26,25 +26,21 @@
 """
 import os.path
 
-import GnuPGInterface
+import gnupg
 
 import whisperBack.exceptions
 
-class Encryption (GnuPGInterface.GnuPG):
+class Encryption ():
     """Some tools for encryption"""
 
     def __init__ (self, keyring=None):
         """Initialize the encryption mechanism"""
 
-        GnuPGInterface.GnuPG.__init__(self)
+        if not (keyring and os.path.exists(keyring)):
+            keyring = None
 
-        self.options.armor = True
-        self.options.meta_interactive = False
-        self.options.always_trust = True
+        self._gpg = gnupg.GPG(keyring=keyring)
 
-        if keyring and os.path.exists(keyring):
-            self.options.extra_args = ["--keyring", keyring, "--no-default-keyring"]
- 
     def encrypt (self, data, to_fingerprints):
         """Encrypts data for a list of recepients
         
@@ -52,22 +48,9 @@ class Encryption (GnuPGInterface.GnuPG):
         @param data Data to be encrypted
         @return The encrypted data
         """
-        try:
-            self.options.recipients = to_fingerprints
-            proc = self.run(['--encrypt'], create_fhs=['stdin', 'stdout', 'stderr'])
-
-            proc.handles['stdin'].write(data)
-            proc.handles['stdin'].close()
-
-            output = proc.handles['stdout'].read()
-            proc.handles['stdout'].close()
-
-            error = proc.handles['stderr'].read()
-            proc.handles['stderr'].close()
-
-            proc.wait()
-            return output
-
-        except IOError as e:
+        crypt = self._gpg.encrypt(data, to_fingerprints, always_trust=True)
+        if crypt:
+            return str(crypt)
+        else:
             # XXX: raise a specific exception if the key wasn't found
-            raise whisperBack.exceptions.EncryptionException(error)
+            raise whisperBack.exceptions.EncryptionException(crypt.status)
