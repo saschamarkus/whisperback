@@ -25,19 +25,14 @@
 
 """
 
-import gobject
-# Workaround an API change: timeout_add was moved from gobject to glib
-# in 2.16
-#pylint: disable=C0301,C0111,C0103,W0232,R0903
-if gobject.pygobject_version[:2] >= (2, 16):
-    import glib
-else:
-    class glib:
-        timeout_add = gobject.timeout_add
-gobject.threads_init()
-
 import os
 import threading
+
+import gi
+from gi.repository import GLib
+
+# XXX: move elsewhere
+GLib.threads_init()
 
 # Import our modules
 import whisperBack.exceptions
@@ -217,7 +212,7 @@ class WhisperBack(object):
         self.__thread = threading.Thread(target=save_exception, args=(func, args))
         self.__thread.start()
         # XXX: there could be no main loop
-        glib.timeout_add(polling_freq, poll_thread, self)
+        GLib.timeout_add(polling_freq, poll_thread, self)
     # XXX: static would be best, but I get a problem with self.*
     #execute_threaded = staticmethod(execute_threaded)
 

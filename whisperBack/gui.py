@@ -32,13 +32,6 @@ LOCALEDIR = "locale/"
 PACKAGE = "whisperback"
 
 import os
-
-import pygtk
-pygtk.require('2.0')
-import gtk
-import gobject
-
-import webkit
 import webbrowser
 
 # Used by show_exception_dialog
@@ -48,6 +41,10 @@ import types
 # Import these because we need the exception they raise
 import smtplib
 import socket
+
+# GIR imports
+from gi.repository import Gtk
+from gi.repository import WebKit
 
 # Import our modules
 import whisperBack.exceptions
@@ -68,7 +65,7 @@ class WhisperBackUI(object):
         widgets we want.
         """
 
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain('whisperback')
         builder.add_from_file(os.path.join(whisperBack.utils.get_datadir(),
                                           "whisperback.ui"))
@@ -120,7 +117,7 @@ class WhisperBackUI(object):
             self.message.get_buffer().create_tag(family="Monospace"))
 
         #pylint: disable=E1101
-        self.htmlhelp = webkit.WebView()
+        self.htmlhelp = WebKit.WebView()
 
         # Load only local ressources in the embedded webkit
         # Loading untrusted ressources in such an unprotected browser
@@ -228,7 +225,8 @@ class WhisperBackUI(object):
         self.backend.subject = self.subject.get_text()
         self.backend.message = self.message.get_buffer().get_text(
                                self.message.get_buffer().get_start_iter(),
-                               self.message.get_buffer().get_end_iter())
+                               self.message.get_buffer().get_end_iter(),
+                               include_hidden_chars=False)
         if self.contact_email.get_text():
             try:
                 self.backend.contact_email = self.contact_email.get_text()
@@ -294,7 +292,7 @@ If it does not work, you will be offered to save the bug report."), e)
         """
         #pylint: disable=C0111
         def cb_save_response(widget, event, data=None):
-            if event == gtk.RESPONSE_ACCEPT:
+            if event == Gtk.ResponseType.ACCEPT:
                 try:
                     self.backend.save(widget.get_filename())
                 except IOError as e:
@@ -306,12 +304,12 @@ If it does not work, you will be offered to save the bug report."), e)
         #pylint: disable=C0111
         def cb_response(widget, event, data=None):
             widget.hide()
-            if event == gtk.RESPONSE_YES:
-                save_dialog = gtk.FileChooserDialog(title=None,
+            if event == Gtk.ResponseType.YES:
+                save_dialog = Gtk.FileChooserDialog(title=None,
                               parent=self.main_window,
-                              action=gtk.FILE_CHOOSER_ACTION_SAVE,
-                              buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL,
-                                       gtk.STOCK_SAVE, gtk.RESPONSE_ACCEPT))
+                              action=Gtk.FileChooserAction.SAVE,
+                              buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+                                       Gtk.STOCK_SAVE, Gtk.ResponseType.ACCEPT))
 
 
                 save_dialog.set_local_only(True)
@@ -335,11 +333,11 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
         self.show_exception_dialog(message + "\n\n" + suggestion, exception,
                                    parent=self.progression_dialog,
                                    close_callback=cb_response,
-                                   buttons=gtk.BUTTONS_YES_NO)
+                                   buttons=Gtk.ButtonsType.YES_NO)
 
     def show_exception_dialog(self, message, exception,
                             close_callback=None, parent=None,
-                            buttons=gtk.BUTTONS_CLOSE):
+                            buttons=Gtk.ButtonsType.CLOSE):
         """Shows a dialog reporting an exception
 
         @param message          A string explaining the exception
@@ -359,9 +357,9 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
         else:
             exception_message = str(exception)
 
-        dialog = gtk.MessageDialog(parent=parent,
-                                   flags=gtk.DIALOG_MODAL,
-                                   type=gtk.MESSAGE_ERROR,
+        dialog = Gtk.MessageDialog(parent=parent,
+                                   flags=Gtk.DialogFlags.MODAL,
+                                   type=Gtk.MessageType.ERROR,
                                    buttons=buttons,
                                    message_format=message)
         dialog.format_secondary_text(exception_message)
@@ -383,7 +381,7 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
         
         """
 
-        about_dialog = gtk.AboutDialog()
+        about_dialog = Gtk.AboutDialog()
         about_dialog.set_transient_for(self.main_window)
         about_dialog.set_version(__version__)
         about_dialog.set_name(_("WhisperBack"))
@@ -394,7 +392,7 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
         about_dialog.set_authors([_("Tails developers <tails@boum.org>")])
         about_dialog.set_translator_credits(_("translator-credits"))
         about_dialog.set_website("https://tails.boum.org/")
-        about_dialog.connect("response", gtk.Widget.hide_on_delete)
+        about_dialog.connect("response", Gtk.Widget.hide_on_delete)
         about_dialog.show()
 
     def show_gpg_dialog(self):
@@ -436,4 +434,4 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
         Closes the application
 
         """
-        gtk.main_quit()
+        Gtk.main_quit()

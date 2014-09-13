@@ -23,10 +23,12 @@
 
 """
 
-import gtk
 import gettext
+
+import gi
+from gi.repository import Gtk
 
 import whisperBack
 
 ui = whisperBack.WhisperBackUI()
-gtk.main()
+Gtk.main()
