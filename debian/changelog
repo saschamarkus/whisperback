@@ -1,3 +1,10 @@
+whisperback (1.6.24+python3) feature-jessie; urgency=low
+
+  * Port to python3, GIR, python3-ssl and python3-gnupg
+  * Use PGP/MIME to format bugreports
+
+ -- Tails developers <tails@boum.org>  Mon, 19 Jan 2015 10:47:19 +0000
+
 whisperback (1.6.24) stable; urgency=medium
 
   * Update translations.
