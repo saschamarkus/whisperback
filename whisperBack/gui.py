@@ -34,10 +34,6 @@ PACKAGE = "whisperback"
 import os
 import webbrowser
 
-# Used by show_exception_dialog
-import traceback
-import types
-
 # Import these because we need the exception they raise
 import smtplib
 import socket
@@ -352,10 +348,7 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
         if not parent:
             parent = self.main_window
 
-        if isinstance(exception.message, types.MethodType):
-            exception_message = exception.message()
-        else:
-            exception_message = str(exception)
+        exception_message = str(exception)
 
         dialog = Gtk.MessageDialog(parent=parent,
                                    flags=Gtk.DialogFlags.MODAL,
@@ -366,7 +359,6 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
         
         dialog.connect("response", close_callback)
         dialog.show()
-        print(traceback.format_exc())
 
     def cb_close_exception_dialog(self, widget, data=None):
         """Callback function for the exception dialog close event
