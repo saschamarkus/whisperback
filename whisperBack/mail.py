@@ -68,8 +68,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     # Send the message via our own SMTP server, but don't include the
     # envelope header.
     # We set a long timeout because Tor is slow
-    smtp = smtplib.SMTP(timeout=120)
-    smtp.connect(host, port)
+    smtp = smtplib.SMTP(timeout=120, host=host, port=port)
     (resp, reply) = smtp.starttls(context=create_ssl_context(tls_cafile))
     # Default python let you continue in cleartext if starttls
     # fails, while you expect to have an encrypted connexion
