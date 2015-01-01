@@ -31,9 +31,6 @@ import threading
 import gi
 from gi.repository import GLib
 
-# XXX: move elsewhere
-GLib.threads_init()
-
 # Import our modules
 import whisperBack.exceptions
 import whisperBack.mail
