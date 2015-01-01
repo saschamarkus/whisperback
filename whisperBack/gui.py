@@ -315,7 +315,6 @@ If it does not work, you will be offered to save the bug report."), e)
             else:
                 self.main_window.set_sensitive(True)
 
-        #XXX: fix string
         suggestion = _("The bug report could not be sent, likely \
 due to network problems.\n\
 \n\
