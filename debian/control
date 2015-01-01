@@ -5,12 +5,15 @@ Maintainer: Tails developers <tails@boum.org>
 Homepage: http://git.immerda.ch/?p=whisperback.git
 Vcs-Browser: http://git.immerda.ch/?p=whisperback.git
 Vcs-Git: git://git.immerda.ch/whisperback.git
-Build-Depends: debhelper (>= 7.0.50~), python-support, python-distutils-extra, txt2tags
-Standards-Version: 3.9.1.0
+Build-Depends: debhelper (>= 7.0.50~), dh-python, python3-all,
+ python3-distutils-extra, txt2tags
+Standards-Version: 3.9.10
+X-Python3-Version: >= 3.2
 
 Package: whisperback
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-gnupginterface, python-gnutls, python-gtk2, python-webkit
+Depends: ${misc:Depends}, ${python3:Depends}, python3-gnupg, python3-gi,
+ gir1.2-gtk-3.0, gir1.2-webkit-3.0, gir1.2-glib-2.0
 Description: send feedback using encrypted email
  WhisperBack is designed to allow Live system users to be able to report bugs
  or issues in a simple yet secure manner.
