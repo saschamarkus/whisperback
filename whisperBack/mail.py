@@ -55,7 +55,8 @@ def send_message_tls (from_address, to_address, message, host="localhost",
                     port=25, tls_cafile=None):
     """Sends a mail
 
-    This is from an example from doc.python.org
+    Send the message via our own SMTP server, but don't include the
+    envelope header. This is based on an example from doc.python.org
 
     @param from_address The sender's address
     @param to_address The recipient address
@@ -65,8 +66,6 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param tls_cafile Certificate authority file used to create the SSLContext
     """
 
-    # Send the message via our own SMTP server, but don't include the
-    # envelope header.
     # We set a long timeout because Tor is slow
     smtp = smtplib.SMTP(timeout=120, host=host, port=port)
     (resp, reply) = smtp.starttls(context=create_ssl_context(tls_cafile))
