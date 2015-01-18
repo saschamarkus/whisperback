@@ -24,9 +24,13 @@
 """Some tools for encryption
 
 """
-import os.path
-
+import email.encoders
+import email.mime.application
+import email.mime.base
+import email.mime.multipart
+import email.mime.text
 import gnupg
+import os.path
 
 import whisperBack.exceptions
 
@@ -41,16 +45,39 @@ class Encryption ():
 
         self._gpg = gnupg.GPG(keyring=keyring)
 
-    def encrypt (self, data, to_fingerprints):
-        """Encrypts data for a list of recepients
+    # XXX: credits
+    def pgp_mime_encrypt(self, message, to_fingerprints):
+        """Encrypts  for a list of recepients
         
         @param to_fingerprints A list of recepient's key fingerprints
-        @param data Data to be encrypted
+        @param message MIME message to be encrypted. 
         @return The encrypted data
         """
-        crypt = self._gpg.encrypt(data, to_fingerprints, always_trust=True)
-        if crypt:
-            return str(crypt)
-        else:
+        assert isinstance(message, email.mime.base.MIMEBase)
+
+        encrypted_content = self._gpg.encrypt(message.as_string(), to_fingerprints, always_trust=True)
+        if not encrypted_content:
             # XXX: raise a specific exception if the key wasn't found
             raise whisperBack.exceptions.EncryptionException(crypt.status)
+
+        enc = email.mime.application.MIMEApplication(
+                _data=str(encrypted_content),
+                _subtype='octet-stream; name="encrypted.asc"',
+                _encoder=email.encoders.encode_7or8bit)
+        enc['Content-Description'] = 'OpenPGP encrypted message'
+        enc.set_charset('us-ascii')
+
+        control = email.mime.application.MIMEApplication(
+                _data='Version: 1\n',
+                _subtype='pgp-encrypted',
+                _encoder=email.encoders.encode_7or8bit)
+        control.set_charset('us-ascii')
+
+        encmsg = email.mime.multipart.MIMEMultipart(
+                'encrypted',
+                protocol='application/pgp-encrypted')
+        encmsg.attach(control)
+        encmsg.attach(enc)
+        encmsg['Content-Disposition'] = 'inline'
+
+        return encmsg

@@ -25,30 +25,9 @@
 
 """
 
-from email.mime.text import MIMEText
 import smtplib
 import ssl
 import time
-
-def create_message (from_address, to_address, subject, message):
-    """Create a plaintext mail
-
-    This is from an example from doc.python.org
-
-    @param from_address The sender's address
-    @param to_address The recipient address
-    @param subject The topic
-    @param message The content of the text message
-
-    @return the message to send
-    """
-
-    msg = MIMEText(message)
-    msg['Subject'] = subject
-    msg['From'] = from_address
-    msg['To'] = to_address
-
-    return msg.as_string()
 
 #pylint: disable=R0913
 def send_message_tls (from_address, to_address, message, host="localhost",

@@ -25,6 +25,7 @@
 
 """
 
+import email.mime.text
 import os
 import threading
 
@@ -233,11 +234,23 @@ class WhisperBack(object):
         body += "%s\n" % self.appended_data
         return body
 
-    def get_encrypted_message_body(self):
-        """Returns the encrypted body of the email to be send"""
+    def get_mime_message(self):
+        """Returns the PGP/MIME message to be send"""
 
-        encryption = whisperBack.encryption.Encryption(keyring=self.gnupg_keyring)
-        return encryption.encrypt(self.get_message_body(), [self.to_fingerprint])
+        mime_message = email.mime.text.MIMEText(self.get_message_body())
+
+        encrypter = whisperBack.encryption.Encryption(
+                                        keyring=self.gnupg_keyring)
+
+        encrypted_mime_message = encrypter.pgp_mime_encrypt(
+                                        mime_message,
+                                        [self.to_fingerprint])
+
+        encrypted_mime_message['Subject'] = self.mail_subject
+        encrypted_mime_message['From'] = self.from_address
+        encrypted_mime_message['To'] = self.to_address
+
+        return encrypted_mime_message
 
     def save(self, path):
         """Save the message into a file
@@ -246,7 +259,7 @@ class WhisperBack(object):
         """
         f = open(path, 'w')
         try:
-            f.write(self.get_encrypted_message_body())
+            f.write(self.get_mime_message())
         finally:
             f.close()
 
@@ -256,17 +269,13 @@ class WhisperBack(object):
         @param progress_callback 
         @param finished_callback
         """
-        
+
         # XXX: It's really strange that some exceptions from this method are
         #      raised and some other transmitted to finished_callback…
 
         self.send_attempts = self.send_attempts + 1
-        
-        encrypted_message_body = self.get_encrypted_message_body()
 
-        mime_message = whisperBack.mail.create_message(self.from_address,
-                                        self.to_address, self.mail_subject,
-                                        encrypted_message_body)
+        mime_message = self.get_mime_message().as_string()
 
         self.execute_threaded(func=whisperBack.mail.send_message_tls,
                               args=(self.from_address, self.to_address,
