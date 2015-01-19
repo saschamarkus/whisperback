@@ -45,12 +45,15 @@ class Encryption ():
 
         self._gpg = gnupg.GPG(keyring=keyring)
 
-    # XXX: credits
     def pgp_mime_encrypt(self, message, to_fingerprints):
         """Encrypts  for a list of recepients
-        
+
+        This code is based on send_pgp_mime by W. Trevor King <wking@drexel.edu>
+        available at:
+        http://www.physics.drexel.edu/~wking/code/python/send_pgp_mime
+
         @param to_fingerprints A list of recepient's key fingerprints
-        @param message MIME message to be encrypted. 
+        @param message MIME message to be encrypted.
         @return The encrypted data
         """
         assert isinstance(message, email.mime.base.MIMEBase)
