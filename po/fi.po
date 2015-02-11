@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# karvjorm <karvonen.jorma@gmail.com>, 2014
-# mikkoharhanen <gitti@mikkoharhanen.fi>, 2013
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2015
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2014
+# Mikko Harhanen <gitti@mikkoharhanen.fi>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-01 15:36+0200\n"
-"PO-Revision-Date: 2014-03-16 16:20+0000\n"
-"Last-Translator: karvjorm <karvonen.jorma@gmail.com>\n"
+"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"PO-Revision-Date: 2015-02-08 16:21+0000\n"
+"Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/torproject/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -156,7 +157,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Lähetä palautetta salatulla sähköpostilla\nCopyright © 2009-2012 Tailsin kehittäjät <tails@boum.org>\n\nTämä on vapaa ohjelma: tätä ohjelmaa saa levittää edelleen ja muuttaa\nFree Software Foundationin julkaiseman GNU General Public Licensen\n(GPL-lisenssi) version 3 tai (valinnan mukaan) myöhemmän version\nehtojen mukaisesti.\n\nTätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen\nmutta ilman mitään takuuta; edes hiljaista takuuta kaupallisesti\nhyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen.\nKatso GPL- lisenssistä lisää yksityiskohtia.\n\nTämän ohjelman mukana pitäisi tulla kopio GPL-lisenssistä. Jos näin\nei ole, katso <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Lähetä palautetta salatulla sähköpostilla\nCopyright © 2009-2012 Tails developers <tails@boum.org>\n\nTämä on vapaa ohjelma: tätä ohjelmaa saa levittää edelleen ja muuttaa Free Software Foundationin julkaiseman GNU General Public Licensen (GPL-lisenssi) version 3 tai (valinnan mukaan) myöhemmän version\nehtojen mukaisesti.\n\nTätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen mutta ilman mitään takuuta; edes hiljaista takuuta kaupallisesti hyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen.\nKatso GPL- lisenssistä lisää yksityiskohtia.\n\nTämän ohjelman mukana pitäisi tulla kopio GNU General Public License-lisenssistä. Jos näin ei ole, katso <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
