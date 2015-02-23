@@ -3,77 +3,80 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Ana B, 2013
-# skiddiep <lyricaltumor@gmail.com>, 2015
-# Tea Horvatic <teahorvatic@yahoo.co.uk>, 2014
+# Astryd Viandila Dahlan <astrydviandila@yahoo.com>, 2015
+# berespost <berespost@gmail.com>, 2013
+# Fathan Imanudin <night.ataraxia@gmail.com>, 2014
+# hermawan <hermawanadhis@gmail.com>, 2014
+# Hasan Al Banna, 2013
+# Rendiyono Wahyu Saputro <rendi.7936@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-02-18 13:11+0000\n"
-"Last-Translator: skiddiep <lyricaltumor@gmail.com>\n"
-"Language-Team: Croatian (Croatia) (http://www.transifex.com/projects/p/torproject/language/hr_HR/)\n"
+"PO-Revision-Date: 2015-02-12 07:18+0000\n"
+"Last-Translator: Astryd Viandila Dahlan <astrydviandila@yahoo.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/torproject/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hr_HR\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Nevažeći kontakt email: %s"
+msgstr "Kontak surel salah: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Nevažeći kontakt OpenPGP ključ: %s"
+msgstr "Kunci kontak OpenPGP salah: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Nevažeći kontakt OpenPGP blok javnog ključa"
+msgstr "Blok kunci umum OpenPGP tidak valid"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "%s varijabla nije pronađena ni u jednoj od datoteka konfiguracije /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "Variabel %stidak ditemukan di salah satu file konfigurasi /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
 #: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
-msgstr "Nije moguće učitati važeću konfiguraciju."
+msgstr "Tidak dapat memuat konfigurasi yang valid"
 
 #: ../whisperBack/gui.py:220
 msgid "Sending mail..."
-msgstr "Šaljem mail..."
+msgstr "Mengirim surel..."
 
 #: ../whisperBack/gui.py:221
 msgid "Sending mail"
-msgstr "Šaljem mail"
+msgstr "Mengirim surel"
 
 #. pylint: disable=C0301
 #: ../whisperBack/gui.py:223
 msgid "This could take a while..."
-msgstr "Ovo može potrajati..."
+msgstr "Membutuhkan beberapa saat..."
 
 #: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
-msgstr "Kontakt email adresa nije važeća."
+msgstr "Alamat surel tidak valid."
 
 #: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
-msgstr "Nije moguće poslati mail: SMTP greška."
+msgstr "Tidak dapat mengirim surel: SMTP eror."
 
 #: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
-msgstr "Nije se moguće povezati na server."
+msgstr "Tidak dapat terhubung dengan server."
 
 #: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
-msgstr "Nije moguće stvoriti ili poslati mail."
+msgstr "Tidak dapat membuat atau mengirim surel."
 
 #: ../whisperBack/gui.py:261
 msgid ""
@@ -82,20 +85,20 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nIzvješće o greški nije poslano, vjerojatno zbog problema mreže. Molimo pokušajte se ponovno povezati s mrežom i ponovno kliknite pošalji.\n\nAko ne radi, moći ćete spremiti izvješće o greški."
+msgstr "\n\nPelaporan kutu tidak dapat terkirim, sepertinya karena masalah jaringan. Harap coba menghubungkan kembali ke jaringan dan klik kirim lagi.\n\nJika tidak bisa juga, kalu akan ditawari untuk menyimpan laporan kutu."
 
 #: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
-msgstr "Vaša poruka je poslana."
+msgstr "Pesan Anda telah terkirim."
 
 #: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
-msgstr "Dogodila se greška prilikom šifriranja."
+msgstr "Terjadi eror saat enkripsi."
 
 #: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
-msgstr "Nije moguće spremiti %s."
+msgstr "Tidak dapat menyimpan %s."
 
 #. XXX: fix string
 #: ../whisperBack/gui.py:325
@@ -106,7 +109,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Izvješće o greški nije poslano, vjerojatno zbog problema mreže.\n\nKao obilazno rješenje tom problemu, možete spremiti izvješće o greški kao datoteku na USB pogon i pokušati je poslati nama na %s s Vašeg email računa koristeći drugi sustav. Pri tome Vaše izvješće o grešci neće biti anonimno, osim ako ne poduzmete daljnje korake (npr. korištenje Tor-a uz jednokratni email računa).\n\nŽelite li spremiti izvješće o grešci u datoteku?"
+msgstr "Laporan kesalahan tidak dapat dikirim, mungkin karena maslaah jaringan.\n\nSebagai pekerjaan-sekitar Anda dapat menyimpan laporan kesalahan sebagai dokumen di USB dan coba untuk mengirimkannya kepada kami di %s dari akun email Anda dengan menggunakan sistem lain. Perhatikan bahwa laporan kesalahan Anda tidak akan tanpa nama ketika melakukan itu kecuali Anda mengambil langka selanjutnya sendiri (contoh menggunakan Tor dengan akun email buangan).\n\nApakah Anda ingin menyimpan laporan kesalahan kedalam sebuah dokumen?"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -114,27 +117,27 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Pošaljite povratnu informaciju u šifriranom mailu."
+msgstr "Kirim umpan balik dalam email terenkripsi."
 
 #: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 razvijači Tails-a (tails@boum.org)"
+msgstr "Hak cipta © 2009-2012 Tails developpers (tails@boum.org)"
 
 #: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
-msgstr "Razvijači Tails-a <tails@boum.org>"
+msgstr "Tail developer <tails@boum.org>"
 
 #: ../whisperBack/gui.py:395
 msgid "translator-credits"
-msgstr "prevoditelj-zasluge"
+msgstr "kredit-penerjemah"
 
 #: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Ovo nije valjani URL ili OpenPGP ključ."
+msgstr "Ini tidak terlihat sebagai URL yang benar atau kunci OpenPGP."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Copyright © 2009-2012 tails@boum.org"
+msgstr "Hak Cipta © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -157,46 +160,46 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Pošaljite povratnu informaciju u šifriranom mail-u\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\nOvaj program je besplatan software; možete ga dalje distribuirati i/ili modificirati pod uvjetima GNU General Public  licence koju je objavila\nFree Software Foundation; bilo verziju 3 Licence, ili (prema\nVašem izboru) bilo koju daljnju verziju.\n\nOvaj program je distribuiran u nadi da će biti koristan, no\nBEZ IKAKVOG JAMSTVA; bez čak podrazumijevanog jamstva\nTRGOVANJA ili PODOBNOSTI ZA POJEDINU SVRHU.   Pogledajte GNU\nGeneral Public License za više detalja.\n\nUz ovaj program trebali ste primiti i kopiju GNU General Public License.\nAko niste, pogledajte <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Kirim umpan balik dalam surat terenkripsi\nCopyright (C) 2009-2012 ekor pengembang <tails@boum.org>\n\nProgram ini merupakan perangkat lunak gratis; Anda diizinkan untuk mendistribusikan dan / atau memodifikasinya\ndi bawah ketentuan GNU General Public License sebagaimana dipublikasikan oleh\nFree Software Foundation; baik versi 3 dari Lisensi, atau (dengan\npilihan Anda) versi yang lebih baru.\n\nProgram ini didistribusikan dengan harapan bahwa itu akan berguna, tetapi\nTANPA GARANSI; bahkan tanpa jaminan tersirat dari\nDAGANGAN atau KECOCOKAN UNTUK TUJUAN TERTENTU. Lihat GNU\nGeneral Public License untuk lebih jelasnya.\n\nAnda seharusnya menerima salinan dari GNU General Public License\nbersama dengan program ini. Jika tidak, lihat <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Ako želite da šifriramo poruke kad Vam odgovaramo, dodajte svoj ID ključa, poveznicu za Vaš ključ ili ključ kao blok javnog ključa:"
+msgstr "Jika Anda ingin kami untuk mengenkripsi pesan ketika kami merespon Anda, tambahkan kunci ID Anda, tautan ke kunci Anda, atau tombol sebagai blok kunci publik:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
-msgstr "Sažetak"
+msgstr "Ringkasan"
 
 #: ../data/whisperback.ui.h:23
 msgid "Bug description"
-msgstr "Opis greške"
+msgstr "Deskripsi bug"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Opcionalna email adresa na koju želite da Vas kontaktiramo"
+msgstr "Alamat surel pilihan untuk menghubungi Anda"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "opcionalni PGP ključ"
+msgstr "pilihan kunci PGP"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
-msgstr "Tehnički detalji koje treba uključiti"
+msgstr "Detail teknis dimasukkan"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
-msgstr "zaglavlja"
+msgstr "header"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "informacije o uklanjanju greške"
+msgstr "info debugging"
 
 #: ../data/whisperback.ui.h:29
 msgid "Help"
-msgstr "Pomoć"
+msgstr "Bantuan"
 
 #: ../data/whisperback.ui.h:30
 msgid "Send"
-msgstr "Pošalji"
+msgstr "Kirim"
