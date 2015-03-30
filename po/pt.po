@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# alfalb.as, 2015
 # TiagoJMMC <tiagojmmc@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-01 15:36+0200\n"
-"PO-Revision-Date: 2014-01-21 19:20+0000\n"
-"Last-Translator: TiagoJMMC <tiagojmmc@gmail.com>\n"
+"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"PO-Revision-Date: 2015-02-25 16:02+0000\n"
+"Last-Translator: alfalb.as\n"
 "Language-Team: Portuguese (http://www.transifex.com/projects/p/torproject/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,12 +23,12 @@ msgstr ""
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Email de contacto inválido: %s"
+msgstr "Correio eletrónico de contacto inválido: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Chave de contacto OpenPGP inválida: %s"
+msgstr "Chave OpenPGP de contacto inválida: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-02-22 22:21+0000\n"
+"PO-Revision-Date: 2015-02-23 23:22+0000\n"
 "Last-Translator: Bujar Tafili\n"
 "Language-Team: Albanian (http://www.transifex.com/projects/p/torproject/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -104,7 +104,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Raporti i gabimit s'mund të dërgohet, me gjasë për shkak të problemeve të rrjetit.\n\nJu mund ta ruani raportin e gabimit si një skedar, në një disk USB dhe të përpiqeni të na e dërgoni tek %s, nga llogaria juaj e e-postës, duke përdorur një sistem tjetër. Vini re se raporti juaj i gabimit nuk do të jetë anonim kur ta bëni këtë gjë, veçse në rast se ndërmerrni hapa të tjerë (p.sh. të përdorni Tor-in me një llogari e-poste çfarëdo).\n\nA dëshironi ta ruani raportin e gabimit tek një skedar?"
+msgstr "Raporti i gabimit s'mund të dërgohet, me gjasë për shkak të problemeve të rrjetit.\n\nJu mund ta ruani raportin e gabimit si një skedar, në një disk USB dhe të përpiqeni të na e dërgoni tek %s, nga llogaria juaj e e-postës, duke përdorur një sistem tjetër. Vini re se raporti juaj i gabimit nuk do të jetë anonim kur ta bëni këtë gjë, veçse në rast se ndërmerrni hapa të tjerë (p.sh. të përdorni Tor me një llogari e-poste çfarëdo).\n\nA dëshironi ta ruani raportin e gabimit tek një skedar?"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -173,7 +173,7 @@ msgstr "Përshkrim gabimi"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Adresë e poste e çfarëdoshme për të kontaktuar me ju"
+msgstr "Adresë e-poste e çfarëdoshme për të kontaktuar me ju"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
