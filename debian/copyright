@@ -1,7 +1,15 @@
 Name: WhisperBack
 Source: http://git.immerda.ch/?p=whisperback.git
 
-Copyright: 2009-2012, Tails developers <tails@boum.org>
+Files: *
+Copyright: 2009-2015, Tails developers <tails@boum.org>
 License: GPL-3+
- On Debian systems the full text of the GNU General Public 
+
+Files: whisperBack/encryption.py
+Copyright: 2009-2015, Tails developers <tails@boum.org>
+           2009, W. Trevor King <wking@drexel.edu>
+License: GPL-3+
+
+License: GPL-3+
+ On Debian systems the full text of the GNU General Public
  License can be found in the `/usr/share/common-licenses/GPL-3'
