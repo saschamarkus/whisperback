@@ -47,7 +47,7 @@ class Encryption ():
         self._gpg = gnupg.GPG(keyring=keyring)
 
     def pgp_mime_encrypt(self, message, to_fingerprints):
-        """Encrypts  for a list of recepients
+        """Encrypts  for a list of recipients
 
         This code is based on send_pgp_mime by W. Trevor King <wking@drexel.edu>
         available at:

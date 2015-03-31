@@ -235,7 +235,7 @@ class WhisperBack(object):
         return body
 
     def get_mime_message(self):
-        """Returns the PGP/MIME message to be send"""
+        """Returns the PGP/MIME message to be sent"""
 
         mime_message = email.mime.text.MIMEText(self.get_message_body())
 
