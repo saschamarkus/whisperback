@@ -31,7 +31,7 @@ import time
 
 #pylint: disable=R0913
 def send_message_tls (from_address, to_address, message, host="localhost",
-                    port=25, tls_cafile=None):
+                      port=25, tls_cafile=None):
     """Sends a mail
 
     Send the message via our own SMTP server, but don't include the
@@ -45,9 +45,11 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param tls_cafile Certificate authority file used to create the SSLContext
     """
 
+    ssl_context = ssl.create_defaut_context(purpose=ssl.Purpose.SERVER_AUTH,
+                                            cafile=tls_cafile)
     # We set a long timeout because Tor is slow
     smtp = smtplib.SMTP(timeout=120, host=host, port=port)
-    (resp, reply) = smtp.starttls(context=create_ssl_context(tls_cafile))
+    (resp, reply) = smtp.starttls(context=ssl_context)
     # Default python let you continue in cleartext if starttls
     # fails, while you expect to have an encrypted connexion
     if resp != 220:
@@ -56,20 +58,6 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     else:
         smtp.sendmail(from_address, [to_address], message)
         smtp.quit()
-
-def create_ssl_context(tls_cafile):
-    """Creates an SSLContext appropriate for use in WhisperBack
-
-    @param tls_cafile Certificate authority file
-    @returns An SSLContext
-    """
-    context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
-    context.load_verify_locations(cafile=tls_cafile)
-    context.verify_mode = ssl.CERT_REQUIRED
-    # disable compression to prevent CRIME attacks (OpenSSL 1.0+)
-    # this is copied from python's SSL module source
-    context.options |= ssl.OP_NO_COMPRESSION
-    return context
 
 class TLSError(Exception):
     """Exception raised if problem happens in STARTTLS step"""
