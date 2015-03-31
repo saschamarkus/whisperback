@@ -8,7 +8,7 @@
 ########################################################################
 __licence__ = """
 WhisperBack - Send feedback in an encrypted mail
-Copyright (C) 2009-2012 Tails developers <tails@boum.org>
+Copyright (C) 2009-2015 Tails developers <tails@boum.org>
 
 This file is part of WhisperBack
 
