@@ -39,6 +39,7 @@ import smtplib
 import socket
 
 # GIR imports
+from gi.repository import GObject
 from gi.repository import Gtk
 from gi.repository import WebKit
 
@@ -98,7 +99,7 @@ class WhisperBackUI(object):
         try:
             self.main_window.set_icon_from_file(os.path.join(
                 whisperBack.utils.get_pixmapdir(), "whisperback.svg"))
-        except gobject.GError as e:
+        except GObject.GError as e:
             print(e)
 
         underline = lambda str: str + "\n" + len(str) * '-'
