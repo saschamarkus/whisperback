@@ -62,7 +62,7 @@ class Encryption ():
         encrypted_content = self._gpg.encrypt(message.as_string(), to_fingerprints, always_trust=True)
         if not encrypted_content:
             # XXX: raise a specific exception if the key wasn't found
-            raise whisperBack.exceptions.EncryptionException(crypt.status)
+            raise whisperBack.exceptions.EncryptionException()
 
         enc = email.mime.application.MIMEApplication(
                 _data=str(encrypted_content),
