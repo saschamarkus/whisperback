@@ -14,14 +14,7 @@ a GnuPG-encrypted way.
 DEPENDENCIES
 ============
 
-You need the following runtime dependencies:
-  - python-gtk2
-  - python-pyme
-
-In addition, you need the following build dependencies:
-  - python-distutils-extra
-  - txt2tags
-
+See debian/control.
 
 INSTALLATION
 ============
