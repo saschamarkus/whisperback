@@ -1,9 +1,14 @@
-whisperback (1.6.28+python3) feature-7756-reintroduce-whisperback; urgency=low
+whisperback (1.6.28+python3.1) feature-7756-reintroduce-whisperback; urgency=low
 
   * Port to python3, GIR, python3-ssl and python3-gnupg
   * Use PGP/MIME to format bugreports
+  * Run the test suite with Python 3.
+  * HACKING: update test suite dependencies.
+  * Test suite: remove compatibility code for Python < 2.7.
+  * debian/control: declare compliance with Standards-Version 3.9.6.
+  * Make debian/copyright compliant with DEP-5.
 
- -- Tails developers <tails@boum.org>  Mon, 19 Jan 2015 18:53:19 +0000
+ -- Tails developers <tails@boum.org>  Sat, 16 May 2015 09:20:00 +0000
 
 whisperback (1.6.28) testing; urgency=medium
 
