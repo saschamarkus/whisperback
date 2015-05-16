@@ -1,4 +1,6 @@
-Name: WhisperBack
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: WhisperBack
+Upstream-Contact: Tails developers <tails@boum.org>
 Source: http://git.immerda.ch/?p=whisperback.git
 
 Files: *
@@ -11,5 +13,9 @@ Copyright: 2009-2015, Tails developers <tails@boum.org>
 License: GPL-3+
 
 License: GPL-3+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3, or (at your option)
+ any later version.
  On Debian systems the full text of the GNU General Public
  License can be found in the `/usr/share/common-licenses/GPL-3'
