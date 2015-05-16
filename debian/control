@@ -7,7 +7,7 @@ Vcs-Browser: http://git.immerda.ch/?p=whisperback.git
 Vcs-Git: git://git.immerda.ch/whisperback.git
 Build-Depends: debhelper (>= 7.0.50~), dh-python, python3-all,
  python3-distutils-extra, txt2tags
-Standards-Version: 3.9.10
+Standards-Version: 3.9.6
 X-Python3-Version: >= 3.4
 
 Package: whisperback
