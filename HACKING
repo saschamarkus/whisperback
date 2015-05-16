@@ -5,7 +5,7 @@ Release
 
 Install the test suite dependencies:
 
-    sudo apt-get install python-gnupginterface
+    sudo apt-get install python3-gnupg
 
 Run the test suite:
 
