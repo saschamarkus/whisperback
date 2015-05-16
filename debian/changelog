@@ -1,9 +1,33 @@
-whisperback (1.6.24+python3) feature-7756-reintroduce-whisperback; urgency=low
+whisperback (1.6.28+python3) feature-7756-reintroduce-whisperback; urgency=low
 
   * Port to python3, GIR, python3-ssl and python3-gnupg
   * Use PGP/MIME to format bugreports
 
  -- Tails developers <tails@boum.org>  Mon, 19 Jan 2015 18:53:19 +0000
+
+whisperback (1.6.28) testing; urgency=medium
+
+  * Update translations.
+
+ -- anonym <anonym@riseup.net>  Sat, 02 May 2015 21:13:03 +0200
+
+whisperback (1.6.27) stable; urgency=medium
+
+  * Update translations.
+
+ -- anonym <anonym@riseup.net>  Mon, 30 Mar 2015 14:52:00 +0200
+
+whisperback (1.6.26) testing; urgency=medium
+
+  * Update translations.
+
+ -- Tails developers <tails@boum.org>  Mon, 23 Feb 2015 13:51:10 +0100
+
+whisperback (1.6.25) testing; urgency=medium
+
+  * Update translations.
+
+ -- Tails developers <tails@boum.org>  Wed, 11 Feb 2015 19:22:14 +0100
 
 whisperback (1.6.24) stable; urgency=medium
 

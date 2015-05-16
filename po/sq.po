@@ -3,77 +3,75 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Ana B, 2013
-# skiddiep <lyricaltumor@gmail.com>, 2015
-# Tea Horvatic <teahorvatic@yahoo.co.uk>, 2014
+# Bujar Tafili, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-02-18 13:11+0000\n"
-"Last-Translator: skiddiep <lyricaltumor@gmail.com>\n"
-"Language-Team: Croatian (Croatia) (http://www.transifex.com/projects/p/torproject/language/hr_HR/)\n"
+"PO-Revision-Date: 2015-02-23 23:22+0000\n"
+"Last-Translator: Bujar Tafili\n"
+"Language-Team: Albanian (http://www.transifex.com/projects/p/torproject/language/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hr_HR\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Nevažeći kontakt email: %s"
+msgstr "E-postë kontakti e pavlefshme: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Nevažeći kontakt OpenPGP ključ: %s"
+msgstr "Çelës kontakti OpenPGP i pavlefshëm: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Nevažeći kontakt OpenPGP blok javnog ključa"
+msgstr "Bllok i pavlefshëm kontakti për kyçin publik OpenPGP "
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "%s varijabla nije pronađena ni u jednoj od datoteka konfiguracije /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "Ndryshorja %s nuk u gjet në asnjë nga skedarët e kjonfigurimit /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
 #: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
-msgstr "Nije moguće učitati važeću konfiguraciju."
+msgstr "S'mund të ngarkohet një konfigurim i vlefshëm."
 
 #: ../whisperBack/gui.py:220
 msgid "Sending mail..."
-msgstr "Šaljem mail..."
+msgstr "Duke dërguar postën..."
 
 #: ../whisperBack/gui.py:221
 msgid "Sending mail"
-msgstr "Šaljem mail"
+msgstr "Dërgimi i postës"
 
 #. pylint: disable=C0301
 #: ../whisperBack/gui.py:223
 msgid "This could take a while..."
-msgstr "Ovo može potrajati..."
+msgstr "Kjo mund të hajë pak kohë..."
 
 #: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
-msgstr "Kontakt email adresa nije važeća."
+msgstr "Adresa e e-postës së kontaktit s'duket e vlefshme."
 
 #: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
-msgstr "Nije moguće poslati mail: SMTP greška."
+msgstr "S'mund të dërgohet posta: gabim SMTP."
 
 #: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
-msgstr "Nije se moguće povezati na server."
+msgstr "S'mund të bëhet lidhja me shërbyesin."
 
 #: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
-msgstr "Nije moguće stvoriti ili poslati mail."
+msgstr "S'mund të krijohet ose dërgohet posta."
 
 #: ../whisperBack/gui.py:261
 msgid ""
@@ -82,20 +80,20 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nIzvješće o greški nije poslano, vjerojatno zbog problema mreže. Molimo pokušajte se ponovno povezati s mrežom i ponovno kliknite pošalji.\n\nAko ne radi, moći ćete spremiti izvješće o greški."
+msgstr "\n\nRaporti i gabimit s'mund të dërgohet, me gjasë për shkak të problemeve të rrjetit. Ju lutemi përpiquni të rilidheni me rrjetin dhe klikojeni sërish \"dërgoni\".\n\nNëse kjo s'jep fryte, do t'ju ofrohet që ta ruani raportin e gabimit."
 
 #: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
-msgstr "Vaša poruka je poslana."
+msgstr "Mesazhi juaj u dërgua."
 
 #: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
-msgstr "Dogodila se greška prilikom šifriranja."
+msgstr "U has një gabim gjatë shifrimit"
 
 #: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
-msgstr "Nije moguće spremiti %s."
+msgstr "S'mund të ruhet %s."
 
 #. XXX: fix string
 #: ../whisperBack/gui.py:325
@@ -106,7 +104,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Izvješće o greški nije poslano, vjerojatno zbog problema mreže.\n\nKao obilazno rješenje tom problemu, možete spremiti izvješće o greški kao datoteku na USB pogon i pokušati je poslati nama na %s s Vašeg email računa koristeći drugi sustav. Pri tome Vaše izvješće o grešci neće biti anonimno, osim ako ne poduzmete daljnje korake (npr. korištenje Tor-a uz jednokratni email računa).\n\nŽelite li spremiti izvješće o grešci u datoteku?"
+msgstr "Raporti i gabimit s'mund të dërgohet, me gjasë për shkak të problemeve të rrjetit.\n\nJu mund ta ruani raportin e gabimit si një skedar, në një disk USB dhe të përpiqeni të na e dërgoni tek %s, nga llogaria juaj e e-postës, duke përdorur një sistem tjetër. Vini re se raporti juaj i gabimit nuk do të jetë anonim kur ta bëni këtë gjë, veçse në rast se ndërmerrni hapa të tjerë (p.sh. të përdorni Tor me një llogari e-poste çfarëdo).\n\nA dëshironi ta ruani raportin e gabimit tek një skedar?"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -114,27 +112,27 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Pošaljite povratnu informaciju u šifriranom mailu."
+msgstr "Dërgoni përshtypje me një e-postë të shifruar."
 
 #: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 razvijači Tails-a (tails@boum.org)"
+msgstr "E drejta e autorit © 2009-2012, zhvilluesit e Tails (tails@boum.org)"
 
 #: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
-msgstr "Razvijači Tails-a <tails@boum.org>"
+msgstr "Zhvilluesit e Tails <tails@boum.org>"
 
 #: ../whisperBack/gui.py:395
 msgid "translator-credits"
-msgstr "prevoditelj-zasluge"
+msgstr "me kredite përkthyesi"
 
 #: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Ovo nije valjani URL ili OpenPGP ključ."
+msgstr "Kjo s'duket të jetë një URL ose çelës OpenPGP i vlefshëm."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Copyright © 2009-2012 tails@boum.org"
+msgstr "E drejta e autorit © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -157,46 +155,46 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Pošaljite povratnu informaciju u šifriranom mail-u\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\nOvaj program je besplatan software; možete ga dalje distribuirati i/ili modificirati pod uvjetima GNU General Public  licence koju je objavila\nFree Software Foundation; bilo verziju 3 Licence, ili (prema\nVašem izboru) bilo koju daljnju verziju.\n\nOvaj program je distribuiran u nadi da će biti koristan, no\nBEZ IKAKVOG JAMSTVA; bez čak podrazumijevanog jamstva\nTRGOVANJA ili PODOBNOSTI ZA POJEDINU SVRHU.   Pogledajte GNU\nGeneral Public License za više detalja.\n\nUz ovaj program trebali ste primiti i kopiju GNU General Public License.\nAko niste, pogledajte <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Dërgoni përshtypje me një e-postë të shifruar\nE drejta e autorit © 2009-2012, zhvilluesit e Tails (tails@boum.org)\n\nKy program është një program falas; ju mund ta shpërndani atë dhe/ose ta modifikoni\nsipas përcaktimeve të Licencës Publike të Përgjithshme GNU, siç publikohet prej\nFondacionit të Programit Falas; apo versioni 3-të i Licencës, ose (sipas\nmendimit tuaj) çdo version i mëvonshëm.\n\nKy program shpërndahet me shpresën që do të jetë i vlefshëm, por\nPA ASNJË GARANCI;  madje edhe pa garancinë e nënkuptuar të\nSHITJES ose PËRDORIMIT PËR NJË QËLLIM TË CAKTUAR. Shihni Licencën Publike të Përgjithshme \n GNU për më shumë hollësi.\n\nJu duhet ta keni marrë një kopje të Licencës Publike të Përgjithshme GNU\nsë bashku me këtë program. Nëse jo, shihni <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Ako želite da šifriramo poruke kad Vam odgovaramo, dodajte svoj ID ključa, poveznicu za Vaš ključ ili ključ kao blok javnog ključa:"
+msgstr "Nëse dëshironi që ne të shifrojmë mesazhet kur ju përgjigjemi, shtoni ID-në tuaj kyçe, një lidhje tek kyçi juaj, ose kyçin si një bllokim të kyçit publik:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
-msgstr "Sažetak"
+msgstr "Përmbledhje"
 
 #: ../data/whisperback.ui.h:23
 msgid "Bug description"
-msgstr "Opis greške"
+msgstr "Përshkrim gabimi"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Opcionalna email adresa na koju želite da Vas kontaktiramo"
+msgstr "Adresë e-poste e çfarëdoshme për të kontaktuar me ju"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "opcionalni PGP ključ"
+msgstr "çelës PGP me zgjedhje të pakushtëzuar"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
-msgstr "Tehnički detalji koje treba uključiti"
+msgstr "Hollësitë teknike për t'u përfshirë"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
-msgstr "zaglavlja"
+msgstr "blloqet e epërme"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "informacije o uklanjanju greške"
+msgstr "informacioni i ndreqjes"
 
 #: ../data/whisperback.ui.h:29
 msgid "Help"
-msgstr "Pomoć"
+msgstr "Ndihmë"
 
 #: ../data/whisperback.ui.h:30
 msgid "Send"
-msgstr "Pošalji"
+msgstr "Dërgoni"
