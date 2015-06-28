@@ -3,20 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Ardeshir, 2012
-# desmati <desmati@gmail.com>, 2014
+# ardeshir, 2012
+# Mohammad Hossein <desmati@gmail.com>, 2014
 # wtf <hmn23@yahoo.com>, 2012
 # mohammad.s.n, 2013
-# M.Hossein Mojtahedi <Mhm5000@gmail.com>, 2013
-# backtrack <razavi.moh@gmail.com>, 2013
+# Mohammad Hossein Mojtahedi <Mhm5000@gmail.com>, 2013
+# Mohammad Razavi <razavi.moh@gmail.com>, 2013
 # runasand <runa.sandvik@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-01 15:36+0200\n"
-"PO-Revision-Date: 2014-02-24 11:21+0000\n"
-"Last-Translator: desmati <desmati@gmail.com>\n"
+"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"PO-Revision-Date: 2015-06-21 08:26+0000\n"
+"Last-Translator: Mohammad Hossein <desmati@gmail.com>\n"
 "Language-Team: Persian (http://www.transifex.com/projects/p/torproject/language/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

@@ -7,14 +7,15 @@
 # MaK <>, 2012
 # Onizuka, 2013
 # Tails developpers <amnesia@boum.org>, 2011
-# Alain-Olivier  Breysse, 2014
+# Trans-fr, 2015
+# Trans-fr, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-01 15:36+0200\n"
-"PO-Revision-Date: 2014-01-02 08:30+0000\n"
-"Last-Translator: Alain-Olivier  Breysse\n"
+"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"PO-Revision-Date: 2015-06-23 12:21+0000\n"
+"Last-Translator: Trans-fr\n"
 "Language-Team: French (Canada) (http://www.transifex.com/projects/p/torproject/language/fr_CA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -92,7 +93,7 @@ msgstr "Votre message a été envoyé."
 
 #: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
-msgstr "Une erreur est survenue durant le chiffrement."
+msgstr "Une erreur est survenue lors du chiffrement."
 
 #: ../whisperBack/gui.py:301
 #, python-format
@@ -108,7 +109,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Le rapport de bogue n'a pas pu être envoyé, probablement à cause de problèmes de réseau.\n\nPour contourner le problème vous pouvez sauvegarder le rapport de bogue sur une clef USB et essayer de nous l'envoyer à %s depuis votre compte de courriel en utilisant un autre système. Noter que votre rapport de bogue ne sera pas anonyme de cette façon, à moins que vous ne preniez des précautions supplémentaires (par exemple en utilisant Tor avec une adresse courriel jetable).\n\nVoulez-vous sauvegarder le rapport de bogue dans un fichier?"
+msgstr "Le rapport de bogue n'a pas pu être envoyé, probablement à cause de problèmes de réseau.\n\nPour contourner le problème vous pouvez sauvegarder le rapport de bogue sur une clef USB et essayer de nous l'envoyer à %s depuis votre compte de courriel en utilisant un autre système. Noter que votre rapport de bogue ne sera pas anonyme de cette façon, à moins que vous ne preniez des précautions supplémentaires (par exemple en utilisant Tor avec une adresse courriel jetable).\n\nVoulez-vous enregistrer le rapport de bogue dans un fichier?"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"

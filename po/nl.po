@@ -5,15 +5,15 @@
 # Translators:
 # JerBen <ayurveda63@gmail.com>, 2012
 # Shondoit Walker <shondoit@gmail.com>, 2012
-# Marco Brohet <therbom@gmail.com>, 2012
-# caesarjulius <darthim@hotmail.com>, 2013
+# Marco Brohet <inactive+therbom@transifex.com>, 2012
+# Tim E <darthim@hotmail.com>, 2013
 # unknown365 <unknown365@hotmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2013-03-26 15:50+0100\n"
-"PO-Revision-Date: 2013-06-24 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"PO-Revision-Date: 2015-06-19 21:02+0000\n"
 "Last-Translator: runasand <runa.sandvik@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/torproject/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -44,40 +44,40 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "De %s variabel is niet gevonden in de configuratie bestanden etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
 msgstr "Kan geen geldige configuratie inladen."
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:220
 msgid "Sending mail..."
 msgstr "Bezig met mail versturen..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:221
 msgid "Sending mail"
 msgstr "Bezig met mail versturen"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:223
 msgid "This could take a while..."
 msgstr "Dit kan enige tijd duren..."
 
-#: ../whisperBack/gui.py:234
+#: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
 msgstr "Het contact e-mailadres lijkt niet geldig."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
 msgstr "Kan mail niet versturen: SMTP fout."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
 msgstr "Kan niet verbinden met de server."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
 msgstr "Kan mail niet aanmaken of versturen."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:261
 msgid ""
 "\n"
 "\n"
@@ -86,21 +86,21 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nDe foutrapportage kon niet worden verstuurd, waarschijnlijk door netwerkproblemen. Probeer opnieuw verbinding te maken met het netwerk en probeer het opnieuw.\n\nAls dit niet werkt wordt je aangeboden om de foutrapportage op te slaan."
 
-#: ../whisperBack/gui.py:271
+#: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
 msgstr "Je bericht is verstuurd."
 
-#: ../whisperBack/gui.py:278
+#: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
 msgstr "Er is een fout opgetreden tijdens het versleutelen"
 
-#: ../whisperBack/gui.py:298
+#: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
 msgstr "Kan %s niet opslaan."
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:322
+#: ../whisperBack/gui.py:325
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -110,27 +110,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "De foutrapportage kon niet worden verstuurd, waarschijnlijk door netwerkproblemen.\n\nAls een tijdelijke oplossing kun je de foutrapportage opslaan op een USB-drive en het proberen te versturen naar ons op %s via jouw e-mailaccount op een ander systeem. Let wel op dat je foutrapportage niet anoniem zal zijn wanneer je dit doet, tenzij je zelf verdere stappen onderneemt (bijv. gebruik maken van Tor een een wegwerp-e-mailaccount.)\n\nWil je de foutrapportage opslaan als een bestand?"
 
-#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Stuur feedback in een versleutelde mail."
 
-#: ../whisperBack/gui.py:390
+#: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails-ontwikkelaars (tails@boum.org)"
 
-#: ../whisperBack/gui.py:391
+#: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails ontwikkelaars <tails@boum.org>"
 
-#: ../whisperBack/gui.py:392
+#: ../whisperBack/gui.py:395
 msgid "translator-credits"
 msgstr "vertaler credits"
 
-#: ../whisperBack/gui.py:419
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Dit lijkt geen geldige URL of OpenPGP sleutel te zijn."
 
