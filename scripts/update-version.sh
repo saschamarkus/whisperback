@@ -1,7 +1,7 @@
 #!/bin/sh
 
 OLDVERSION=$(/bin/grep "version=" setup.py | sed -E "s/^.*version='(.*)',/\1/g")
-echo "Current version is $OLDVERSION. Please enter the new vesrion"
+echo "Current version is $OLDVERSION. Please enter the new version"
 read NEWVERSION
 
 sed -i -E "s/version='$OLDVERSION',/version='$NEWVERSION',/g" setup.py
