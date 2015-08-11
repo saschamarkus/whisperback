@@ -499,7 +499,12 @@ Minor improvements
 
 * Update translations.
 
-1.6.28+python3.1
+1.6.29
+======
+
+* Update translations.
+
+1.6.29+jessie.1
 ================
 
 * Port to python3, GIR, python3-ssl and python3-gnupg

@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Communia <ameaneantie@riseup.net>, 2013-2014
+# Communia <ameaneantie@riseup.net>, 2013-2015
 # Eduardo Bonsi, 2013
 # Augustine <evandro@geocities.com>, 2013
 # Bruno Geronimo <bruuh@outlook.com>, 2012
@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2014-07-03 21:10+0000\n"
+"PO-Revision-Date: 2015-06-18 19:18+0000\n"
 "Last-Translator: Communia <ameaneantie@riseup.net>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/torproject/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -96,7 +96,7 @@ msgstr "Sua mensagem foi enviada."
 
 #: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
-msgstr "Um erro ocorreu durante a criptografia."
+msgstr "Ocorreu um erro durante a encriptação."
 
 #: ../whisperBack/gui.py:301
 #, python-format
