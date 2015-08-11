@@ -1,3 +1,11 @@
+whisperback (1.6.29+jessie.1) feature-jessie; urgency=medium
+
+  * Add missing import of GObject GIR
+  * Don't use inexistent crypt object
+  * Fix "defaut" typo
+
+ -- Tails developers <tails@boum.org>  Tue, 11 Aug 2015 11:08:09 +0200
+
 whisperback (1.6.29) devel; urgency=medium
 
   * Update translations.
