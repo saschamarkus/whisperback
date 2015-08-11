@@ -45,7 +45,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param tls_cafile Certificate authority file used to create the SSLContext
     """
 
-    ssl_context = ssl.create_defaut_context(purpose=ssl.Purpose.SERVER_AUTH,
+    ssl_context = ssl.create_default_context(purpose=ssl.Purpose.SERVER_AUTH,
                                             cafile=tls_cafile)
     # We set a long timeout because Tor is slow
     smtp = smtplib.SMTP(timeout=120, host=host, port=port)
