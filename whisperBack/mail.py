@@ -28,6 +28,8 @@
 import smtplib
 import ssl
 import time
+import socket
+import socks
 
 #pylint: disable=R0913
 def send_message_tls (from_address, to_address, message, host="localhost",
@@ -44,6 +46,10 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param port The port of the smtp server to connect to
     @param tls_cafile Certificate authority file used to create the SSLContext
     """
+
+    # Monkeypatching the entire connection through the SOCKS proxy
+    socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 9050)
+    socket.socket = socks.socksocket
 
     ssl_context = ssl.create_default_context(purpose=ssl.Purpose.SERVER_AUTH,
                                             cafile=tls_cafile)
