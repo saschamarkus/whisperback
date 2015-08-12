@@ -170,7 +170,16 @@ class WhisperBack(object):
         if not self.socks_port:
             raise whisperBack.exceptions.MisconfigurationException('socks_port')
 
-    def execute_threaded(self, func, args, progress_callback=None, 
+        if not whisperBack.utils.is_valid_hostname_or_ipv4(self.smtp_host):
+            raise ValueError("Invalid value for 'smtp_host'.")
+        if not whisperBack.utils.is_valid_port(self.smtp_port):
+            raise ValueError("Invalid value for 'smtp_port'.")
+        if not whisperBack.utils.is_valid_hostname_or_ipv4(self.socks_host):
+            raise ValueError("Invalid value for 'socks_host'.")
+        if not whisperBack.utils.is_valid_port(self.socks_port):
+            raise ValueError("Invalid value for 'socks_port'.")
+
+    def execute_threaded(self, func, args, progress_callback=None,
                            finished_callback=None, polling_freq=100):
         """Execute a function in another thread and handle it.
         
