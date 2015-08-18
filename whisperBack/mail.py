@@ -26,14 +26,15 @@
 """
 
 import smtplib
-import ssl
-import time
 import socket
 import socks
+import ssl
+import time
 
 #pylint: disable=R0913
 def send_message_tls (from_address, to_address, message, host="localhost",
-                      port=25, tls_cafile=None):
+                      port=25, tls_cafile=None, socks_host="127.0.0.1",
+                      socks_port=9050):
     """Sends a mail
 
     Send the message via our own SMTP server, but don't include the
@@ -45,10 +46,12 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param host The host of the smtp server to connect to
     @param port The port of the smtp server to connect to
     @param tls_cafile Certificate authority file used to create the SSLContext
+    @param socks_host The host of the SOCKS proxy to connect through
+    @param socks_port The port of the SOCKS proxy to connect through
     """
 
     # Monkeypatching the entire connection through the SOCKS proxy
-    socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 9050)
+    socks.set_default_proxy(socks.SOCKS5, socks_host, socks_port)
     socket.socket = socks.socksocket
 
     ssl_context = ssl.create_default_context(purpose=ssl.Purpose.SERVER_AUTH,

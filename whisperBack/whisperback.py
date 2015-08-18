@@ -100,6 +100,8 @@ class WhisperBack(object):
         self.smtp_host = None
         self.smtp_port = None
         self.smtp_tlscafile = None
+        self.socks_host = None
+        self.socks_port = None
 
         # Load the python configuration file "config.py" from diffrents locations
         # XXX: this is an absolute path, bad !
@@ -163,6 +165,10 @@ class WhisperBack(object):
             raise whisperBack.exceptions.MisconfigurationException('smtp_port')
         if not self.smtp_tlscafile:
             raise whisperBack.exceptions.MisconfigurationException('smtp_tlscafile')
+        if not self.socks_host:
+            raise whisperBack.exceptions.MisconfigurationException('socks_host')
+        if not self.socks_port:
+            raise whisperBack.exceptions.MisconfigurationException('socks_port')
 
     def execute_threaded(self, func, args, progress_callback=None, 
                            finished_callback=None, polling_freq=100):
@@ -280,6 +286,7 @@ class WhisperBack(object):
         self.execute_threaded(func=whisperBack.mail.send_message_tls,
                               args=(self.from_address, self.to_address,
                                     mime_message, self.smtp_host,
-                                    self.smtp_port, self.smtp_tlscafile),
+                                    self.smtp_port, self.smtp_tlscafile, 
+                                    self.socks_host, self.socks_port),
                               progress_callback=progress_callback,
                               finished_callback=finished_callback)
