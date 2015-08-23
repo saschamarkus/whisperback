@@ -135,6 +135,46 @@ def is_valid_email(candidate):
     else:
         return False
 
+def is_valid_port(candidate):
+    """Check if candidate is a valid port number (integer between 1 and 65535)
+
+    @param candidate the port number to be checked
+    """
+    try:
+        int(candidate)
+    except ValueError:
+        return False
+
+    if candidate >= 1 and candidate < 65535:
+        return True
+    else:
+        return False
+
+def is_valid_hostname_or_ipv4(candidate):
+    """Check if candidate is a valid hostname or IPv4 address
+
+    pySocks is not compatible with IPv6
+    hostname specs follow RFC 1123
+
+    @param candidate the hostname or IPv4 address to validate
+    """
+
+    # XXX: must be updated once IPv6 is enabled
+
+    if not isinstance(candidate, str):
+        return False
+    if len(candidate) > 255:
+        return False
+
+    # regex from http://stackoverflow.com/a/106223
+    ip_address_regex = re.compile("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$");
+    hostname_regex = re.compile("^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$");
+
+    if ip_address_regex.match(candidate) or hostname_regex.match(candidate):
+        return True
+    else:
+        return False
+
 def sanitize_hardware_info(log_string):
     """Sanitize hardware-identifying info from a string
 
