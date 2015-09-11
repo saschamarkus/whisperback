@@ -1,3 +1,9 @@
+whisperback (1.7.0) feature-jessie; urgency=low
+
+  * Add SOCKS support
+
+ -- Tails developers <tails@boum.org>  Fri, 11 Sep 2015 19:53:34 +0000
+
 whisperback (1.6.29+jessie.1) feature-jessie; urgency=medium
 
   * Add missing import of GObject GIR

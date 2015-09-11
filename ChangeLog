@@ -518,3 +518,8 @@ Minor improvements
 * Don't use inexistent crypt object
 * Fix "defaut" typo
 
+
+1.7.0
+=====
+
+* Add SOCKS proxy support
