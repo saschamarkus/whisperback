@@ -295,7 +295,7 @@ class WhisperBack(object):
         self.execute_threaded(func=whisperBack.mail.send_message_tls,
                               args=(self.from_address, self.to_address,
                                     mime_message, self.smtp_host,
-                                    self.smtp_port, self.smtp_tlscafile, 
+                                    self.smtp_port, self.smtp_tlscafile,
                                     self.socks_host, self.socks_port),
                               progress_callback=progress_callback,
                               finished_callback=finished_callback)
