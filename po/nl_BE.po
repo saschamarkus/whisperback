@@ -3,76 +3,75 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Caspar Christensen, 2013
-# Tore Bjørnson <tore.bjornson@gmail.com>, 2013
+# Katrien Igodt <kigodt@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-08-04 10:04+0000\n"
-"Last-Translator: Caspar Christensen\n"
-"Language-Team: Danish (http://www.transifex.com/otf/torproject/language/da/)\n"
+"PO-Revision-Date: 2015-08-03 19:35+0000\n"
+"Last-Translator: Katrien Igodt <kigodt@gmail.com>\n"
+"Language-Team: Dutch (Belgium) (http://www.transifex.com/otf/torproject/language/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
+"Language: nl_BE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Ugyldig kontakt email: %s"
+msgstr "Ongeldig e-mail contact: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Ugyldig kontakt OpenPGP key: %s"
+msgstr "Ongeldig OpenPGP key contact: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Ugyldig kontakt OpenPGP offentlig nøgle blok"
+msgstr "Ongeldig contact OpenPGP public key block"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Variablen %s blev ikke fundet i nogle af konfigurationsfilerne /etc/whisperback/config.py. ~/.whisperback/config.py. ./config.py"
+msgstr "De %s variabele werd niet gevonden in geen enkele van de configuratiebestanden /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
 #: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
-msgstr "Ude af stand til at indlæse en korrekt konfiguration."
+msgstr "Niet in staat om een geldige configuratie te laden."
 
 #: ../whisperBack/gui.py:220
 msgid "Sending mail..."
-msgstr "Sender mail.."
+msgstr "E-mail verzenden..."
 
 #: ../whisperBack/gui.py:221
 msgid "Sending mail"
-msgstr "Sender mail.."
+msgstr "E-mail verzenden..."
 
 #. pylint: disable=C0301
 #: ../whisperBack/gui.py:223
 msgid "This could take a while..."
-msgstr "Dette kommer muligvis til at tage et stykke tid.."
+msgstr "Dit kan even duren..."
 
 #: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
-msgstr "Deres email adresse er ikke valid."
+msgstr "Het e-mailadres van dit contact lijkt niet geldig."
 
 #: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
-msgstr "Kunne ikke sende mailen: SMTP fejl"
+msgstr "Niet in staat de e-mail te verzenden : SMTP foutmelding."
 
 #: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
-msgstr "Ude af stand til at forbinde til serveren"
+msgstr "Niet in staat om naar de server te verbinden."
 
 #: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
-msgstr "Ude af stand til at kreere eller sende mailen"
+msgstr "Niet in staat om de e-mail aan te maken of te verzenden."
 
 #: ../whisperBack/gui.py:261
 msgid ""
@@ -81,20 +80,20 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nFejl rapporten kunne ikke sende, sandsynligvis på grund af netværks problemer. Forsøg venligst at genoprette forbindelsen til netværket og tryk \"Send Igen\".\n\nHvis det ikke virker, vil De få mulighed for at gemme fejl rapporten."
+msgstr "\n\nHet foutrapport kon niet verzonden worden, waarschijnlijk door netwerkproblemen. Gelieve proberen terug te connecteren en te versturen. \n\nIndien dit niet werkt, zal u de optie krijgen het foutrapport te bewaren."
 
 #: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
-msgstr "Deres besked er sendt."
+msgstr "Uw bericht is verzonden."
 
 #: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
-msgstr "En fejl opstod under krypteringen."
+msgstr "Er gebeurde een fout tijdens de encryptie."
 
 #: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
-msgstr "Kunne ikke gemme %s."
+msgstr "Niet in staat %s te bewaren."
 
 #. XXX: fix string
 #: ../whisperBack/gui.py:325
@@ -105,7 +104,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Fejl rapporten kunne ikke sendes, sandsynligvis på grund af netværks problemer.\n\nSom en løsning kan De gemme fejl rapporten på en USB nøgle og forsøge at sende den til os på %s fra Deres email konto via et andet system. Noter venligst at Deres fejl rapport ikke længere er anonym på denne måde, med mindre de selv tager andre metoder i brug  (f.eks. bruger Tor med en \"throw-away\" email konto).\n\nVil De gemme fejl rapporten til en fil?"
+msgstr "Het foutrapport kon niet verzonden worden, waarschijnlijk omwille van netwerkproblemen.\n\nAls een alternatiieve oplossing, kan u het foutrapport bewaren als een bestand op uw USB schijf en ons dit proberen te versturen via uw e-mailaccount naar ons adres %s op een ander systeem. Gelieve u ervan te vergewissen dat het versturen van het foutrapport bijgevolg niet anoniem gebeurd, tenzij u hier zelf stappen in onderneemt (bv. door het gebruik van een wegwerp e-mailaccount).\n\nWilt u dit foutrapport bewaren als bestand?"
 
 #: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -113,23 +112,23 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Send feedback i en krypteret mail."
+msgstr "Stuur feedback in een geëncrypteerde e-mail."
 
 #: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Copyright © 2009-2012 Tails ontwikkelaars (tails@boum.org)"
 
 #: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
-msgstr "Tails udviklere <tails@boum.org>"
+msgstr "Tails ontwikkelaars <tails@boum.org>"
 
 #: ../whisperBack/gui.py:395
 msgid "translator-credits"
-msgstr "oversætter-kredit"
+msgstr "vertaler-credits"
 
 #: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Dette ser ikke ud til at være en valid URL eller OpenPGP nøgle."
+msgstr "Dit lijkt geen geldige URL of OpenPGP key te zijn."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
@@ -156,33 +155,33 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Send feedback i en krypteret mail\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\nDette program er fri software; du kan videredistribuere det og/eller ændre\ndet i henhold til GNU General Public License som udgivet af\nFree Software Foundation; enten version 3 af licensen, eller (efter\neget valg) en hvilken som helst senere version.\n\nDette program er distribueret i håbet om at det vil være anvendeligt, men\nUDEN NOGEN GARANTI;   uden selv den underforståede garanti for\nSALGSBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Læs GNU\nGeneral Public License for flere detaljer.\n\nDu burde have modtaget en kopi af GNU General Public License\nsammen med dette program.  Hvis ikke, se <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Stuur feedback in een geëncrypteerde e-mail\nCopyright (C) 2009-2012 Tails developers \n<tails@boum.org>\n\nDit programma is gratis software; u kan dit herverdelen en/of wijzigen onder de voorwaarden van de GNU General Public License zoals gepubliceerd door\nde Free Software Foundation; versie 3 van de License, of (optioneel) elke latere versie.\n\nDit programma werd verdeeld in de hoop dat het nuttig kan zijn, maar\nZONDER ENKELE GARANTIE; zelfs niet de geïmpliceerde garantie van\nVERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Gelieve de GNU General Public License te consulteren voor meer details.\n\nU zou een kopie van de GNU General Public License\nmoeten verkregen hebben samen met dit programma. Indien niet, gelieve u te wenden tot <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Hvis De vil have os til at kryptere beskeder når vi svarer Dem, tilføj venligst Deres nøgle ID, et link til Deres nøgle eller Deres nøgle som en offentlig nøgle blok:"
+msgstr "Indien u wenst dat de berichten die wij u sturen, geëncrypteerd zijn, gelieve uw key ID, een link naar uw ID of de key als een publiek key block, toe te voegen:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
-msgstr "Opsummering"
+msgstr "Samenvatting"
 
 #: ../data/whisperback.ui.h:23
 msgid "Bug description"
-msgstr "Fejl beskrivelse"
+msgstr "Foutmelding beschrijving"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Valgfri email adresse til at kontakte Dem"
+msgstr "Optioneel e-mailadres om u te contacteren"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "valgfri PGP nøgle"
+msgstr "Optionele PGP key"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
-msgstr "Tekniske detaljer til at inkludere"
+msgstr "Technische details om toe te voegen"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
@@ -190,12 +189,12 @@ msgstr "headers"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "Fejlretnings info"
+msgstr "debugging informatie"
 
 #: ../data/whisperback.ui.h:29
 msgid "Help"
-msgstr "Hjælp"
+msgstr "Help"
 
 #: ../data/whisperback.ui.h:30
 msgid "Send"
-msgstr "Send"
+msgstr "Verstuur"

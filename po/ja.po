@@ -4,15 +4,15 @@
 # 
 # Translators:
 # brt <87@itokei.info>, 2013
-# plazmism <gomidori@live.jp>, 2013
+# タカハシ <indexial@outlook.jp>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2013-03-26 15:50+0100\n"
-"PO-Revision-Date: 2013-06-24 22:52+0000\n"
-"Last-Translator: plazmism <gomidori@live.jp>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/torproject/language/ja/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"PO-Revision-Date: 2015-08-29 06:12+0000\n"
+"Last-Translator: タカハシ <indexial@outlook.jp>\n"
+"Language-Team: Japanese (http://www.transifex.com/otf/torproject/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,40 +41,40 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "%s 変数は、/etc/whisperback/config.py、/.whisperback/config.py、 ./config.pyの設定ファイルのいずれにも見つかりませんでした。"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:154
 msgid "Unable to load a valid configuration."
 msgstr "有効な設定を読み込めません"
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:220
 msgid "Sending mail..."
 msgstr "メールを送信中..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:221
 msgid "Sending mail"
 msgstr "メール送信"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:223
 msgid "This could take a while..."
 msgstr "これは時間がかかります..."
 
-#: ../whisperBack/gui.py:234
+#: ../whisperBack/gui.py:237
 msgid "The contact email adress doesn't seem valid."
 msgstr "連絡先メールアドレスが有効なものではないようです。"
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:254
 msgid "Unable to send the mail: SMTP error."
 msgstr "メールを送信出来ません: SMTP エラー。"
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:256
 msgid "Unable to connect to the server."
 msgstr "サーバーに接続できません。"
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:258
 msgid "Unable to create or to send the mail."
 msgstr "メールの作成、または送信ができません。"
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:261
 msgid ""
 "\n"
 "\n"
@@ -83,21 +83,21 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\nバグ報告は送信されませんでした。おそらくネットワークの問題によるものでしょう。 ネットワークに再接続して、もう一度送信するをクリックしてください。\n\n動作しない場合は、 バグ報告の保存を提案します。"
 
-#: ../whisperBack/gui.py:271
+#: ../whisperBack/gui.py:274
 msgid "Your message has been sent."
 msgstr "あなたのメッセージは送信されました。"
 
-#: ../whisperBack/gui.py:278
+#: ../whisperBack/gui.py:281
 msgid "An error occured during encryption."
 msgstr "暗号化中にエラーが発生しました。"
 
-#: ../whisperBack/gui.py:298
+#: ../whisperBack/gui.py:301
 #, python-format
 msgid "Unable to save %s."
 msgstr "%sを保存出来ません。"
 
 #. XXX: fix string
-#: ../whisperBack/gui.py:322
+#: ../whisperBack/gui.py:325
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -107,27 +107,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "バグ報告は送信されませんでした。おそらくネットワーク問題によるものです。\n\n回避策として、バグ報告をUSBドライブ上にファイルとして保存して、他のシステムで使用しているあなたのメールアカウントから%sで私達に送信しようとすることが出来ます。 あなたが自分でさらにステップ(例えば、捨てアカウントでTorを使用するなど)を踏まないなら、そうする時あなたのバグ報告は匿名でないことにご注意ください。"
 
-#: ../whisperBack/gui.py:386 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:387 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "暗号化されたメールでフィードバックを送信する。"
 
-#: ../whisperBack/gui.py:390
+#: ../whisperBack/gui.py:393
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:391
+#: ../whisperBack/gui.py:394
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails デベロッパー <tails@boum.org>"
 
-#: ../whisperBack/gui.py:392
+#: ../whisperBack/gui.py:395
 msgid "translator-credits"
 msgstr "翻訳者のクレジット"
 
-#: ../whisperBack/gui.py:419
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "これは有効なURLかOpenPGPのキーではないようです。"
 
