@@ -6,20 +6,21 @@
 # Astryd Viandila Dahlan <astrydviandila@yahoo.com>, 2015
 # berespost <berespost@gmail.com>, 2013
 # Fathan Imanudin <night.ataraxia@gmail.com>, 2014
+# Ferriandy Chianiago <gpl4all@gmail.com>, 2015
 # hermawan <hermawanadhis@gmail.com>, 2014
 # Lucas Susanto <susantolucas@yahoo.com>, 2015
 # Mark Hiro <akmalgaul@gmail.com>, 2015
-# Se7enTime <se7entime@tutanota.com>, 2013
+# Mohamad Hasan Al Banna <se7entime@openmailbox.org>, 2013
 # Rendiyono Wahyu Saputro <rendi.7936@gmail.com>, 2015
-# Zamani Karmana <zamani.karmana@gmail.com>, 2015
+# zk <zamani.karmana@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-07-12 19:37+0000\n"
-"Last-Translator: Mark Hiro <akmalgaul@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/torproject/language/id/)\n"
+"PO-Revision-Date: 2015-10-25 04:02+0000\n"
+"Last-Translator: Ferriandy Chianiago <gpl4all@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/otf/torproject/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,16 +31,16 @@ msgstr ""
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Kontak surel salah: %s"
+msgstr "Alamat email kontak tidak benar: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Kunci kontak OpenPGP tidak valid: %s"
+msgstr "Kunci OpenPGP kontak tidak benar: %s"
 
 #: ../whisperBack/whisperback.py:82
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Blok kunci publik OpenPGP tidak valid"
+msgstr "Blok kunci umum OpenPGP kontak tidak benar"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format

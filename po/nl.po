@@ -4,6 +4,7 @@
 # 
 # Translators:
 # JerBen <ayurveda63@gmail.com>, 2012
+# Jeroen Baert <jerbae@gmail.com>, 2015
 # Shondoit Walker <shondoit@gmail.com>, 2012
 # Marco Brohet <inactive+therbom@transifex.com>, 2012
 # Tim E <darthim@hotmail.com>, 2013
@@ -13,9 +14,9 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-06-19 21:02+0000\n"
-"Last-Translator: runasand <runa.sandvik@gmail.com>\n"
-"Language-Team: Dutch (http://www.transifex.com/projects/p/torproject/language/nl/)\n"
+"PO-Revision-Date: 2015-08-14 12:48+0000\n"
+"Last-Translator: Jeroen Baert <jerbae@gmail.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/otf/torproject/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,7 +27,7 @@ msgstr ""
 #: ../whisperBack/whisperback.py:63
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Ongeldig contact e-mail: %s"
+msgstr "Ongeldige contact e-mail: %s"
 
 #: ../whisperBack/whisperback.py:80
 #, python-format

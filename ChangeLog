@@ -518,8 +518,17 @@ Minor improvements
 * Don't use inexistent crypt object
 * Fix "defaut" typo
 
-
 1.7.0
 =====
 
 * Add SOCKS proxy support
+
+1.6.30
+======
+
+* Update translations.
+
+1.6.31
+======
+
+* Update translations.
