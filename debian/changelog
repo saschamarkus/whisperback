@@ -1,3 +1,9 @@
+whisperback (1.7.1) feature-jessie; urgency=medium
+
+  * Merge master (Wheezy) branch.
+
+ -- anonym <anonym@riseup.net>  Mon, 09 Nov 2015 17:47:36 +0100
+
 whisperback (1.6.31) devel; urgency=medium
 
   * Update translations.

@@ -58,7 +58,7 @@ build_extra.build_extra.sub_commands.insert(0, ("build_gtkbuilderi18n", None))
 build_extra.build_extra.sub_commands.append(("build_man", None))
 
 setup(name='whisperback',
-    version='1.7.0',
+    version='1.7.1',
     description='Send feedback in an encrypted mail',
     author='Tails developers',
     author_email='tails@boum.org',
