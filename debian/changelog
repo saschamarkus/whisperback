@@ -1,3 +1,10 @@
+whisperback (1.7.2) devel; urgency=medium
+
+  * Merge feature/jessie into master.
+  * Update POT and PO files.
+
+ -- anonym <anonym@riseup.net>  Wed, 16 Dec 2015 19:53:20 +0100
+
 whisperback (1.7.1) feature-jessie; urgency=medium
 
   * Merge master (Wheezy) branch.

@@ -542,3 +542,9 @@ Minor improvements
 =====
 
 * Merge master (Wheezy) branch.
+
+1.7.2
+=====
+
+* Merge feature/jessie into master.
+* Update POT and PO files.
