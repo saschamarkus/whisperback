@@ -1,132 +1,156 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Bujar Tafili, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 17:40+0100\n"
+"POT-Creation-Date: 2015-12-16 19:54+0100\n"
 "PO-Revision-Date: 2015-06-23 22:30+0000\n"
 "Last-Translator: Bujar Tafili\n"
-"Language-Team: Albanian (http://www.transifex.com/projects/p/torproject/language/sq/)\n"
+"Language-Team: Albanian (http://www.transifex.com/projects/p/torproject/"
+"language/sq/)\n"
+"Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sq\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
-#: ../whisperBack/whisperback.py:63
+#: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
 msgstr "E-postë kontakti e pavlefshme: %s"
 
-#: ../whisperBack/whisperback.py:80
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Çelës kontakti OpenPGP i pavlefshëm: %s"
 
-#: ../whisperBack/whisperback.py:82
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Bllok i pavlefshëm kontakti për kyçin publik OpenPGP "
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Ndryshorja %s nuk u gjet në asnjë nga skedarët e kjonfigurimit /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr ""
+"Ndryshorja %s nuk u gjet në asnjë nga skedarët e kjonfigurimit /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
 msgstr "S'mund të ngarkohet një konfigurim i vlefshëm."
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:214
 msgid "Sending mail..."
 msgstr "Duke dërguar postën..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:215
 msgid "Sending mail"
 msgstr "Dërgimi i postës"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:217
 msgid "This could take a while..."
 msgstr "Kjo mund të hajë pak kohë..."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
 msgstr "Adresa e e-postës së kontaktit s'duket e vlefshme."
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
 msgstr "S'mund të dërgohet posta: gabim SMTP."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:251
 msgid "Unable to connect to the server."
 msgstr "S'mund të bëhet lidhja me shërbyesin."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:253
 msgid "Unable to create or to send the mail."
 msgstr "S'mund të krijohet ose dërgohet posta."
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:256
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nRaporti i gabimit s'mund të dërgohet, me gjasë për shkak të problemeve të rrjetit. Ju lutemi përpiquni të rilidheni me rrjetin dhe klikojeni sërish \"dërgoni\".\n\nNëse kjo s'jep fryte, do t'ju ofrohet që ta ruani raportin e gabimit."
+msgstr ""
+"\n"
+"\n"
+"Raporti i gabimit s'mund të dërgohet, me gjasë për shkak të problemeve të "
+"rrjetit. Ju lutemi përpiquni të rilidheni me rrjetin dhe klikojeni sërish "
+"\"dërgoni\".\n"
+"\n"
+"Nëse kjo s'jep fryte, do t'ju ofrohet që ta ruani raportin e gabimit."
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
 msgstr "Mesazhi juaj u dërgua."
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:276
 msgid "An error occured during encryption."
 msgstr "U has një gabim gjatë shifrimit"
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
 msgstr "S'mund të ruhet %s."
 
-#. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:319
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Raporti i gabimit s'mund të dërgohet, me gjasë për shkak të problemeve të rrjetit.\n\nJu mund ta ruani raportin e gabimit si një skedar, në një disk USB dhe të përpiqeni të na e dërgoni tek %s, nga llogaria juaj e e-postës, duke përdorur një sistem tjetër. Vini re se raporti juaj i gabimit nuk do të jetë anonim kur ta bëni këtë gjë, veçse në rast se ndërmerrni hapa të tjerë (p.sh. të përdorni Tor me një llogari e-poste çfarëdo).\n\nA dëshironi ta ruani raportin e gabimit tek një skedar?"
+msgstr ""
+"Raporti i gabimit s'mund të dërgohet, me gjasë për shkak të problemeve të "
+"rrjetit.\n"
+"\n"
+"Ju mund ta ruani raportin e gabimit si një skedar, në një disk USB dhe të "
+"përpiqeni të na e dërgoni tek %s, nga llogaria juaj e e-postës, duke "
+"përdorur një sistem tjetër. Vini re se raporti juaj i gabimit nuk do të jetë "
+"anonim kur ta bëni këtë gjë, veçse në rast se ndërmerrni hapa të tjerë (p."
+"sh. të përdorni Tor me një llogari e-poste çfarëdo).\n"
+"\n"
+"A dëshironi ta ruani raportin e gabimit tek një skedar?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Dërgoni përshtypje me një e-postë të shifruar."
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "E drejta e autorit © 2009-2012, zhvilluesit e Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
 msgstr "Zhvilluesit e Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:385
 msgid "translator-credits"
 msgstr "me kredite përkthyesi"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Kjo s'duket të jetë një URL ose çelës OpenPGP i vlefshëm."
 
@@ -155,13 +179,34 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Dërgoni përshtypje me një e-postë të shifruar\nE drejta e autorit © 2009-2012, zhvilluesit e Tails (tails@boum.org)\n\nKy program është një program falas; ju mund ta shpërndani atë dhe/ose ta modifikoni\nsipas përcaktimeve të Licencës Publike të Përgjithshme GNU, siç publikohet prej\nFondacionit të Programit Falas; apo versioni 3-të i Licencës, ose (sipas\nmendimit tuaj) çdo version i mëvonshëm.\n\nKy program shpërndahet me shpresën që do të jetë i vlefshëm, por\nPA ASNJË GARANCI;  madje edhe pa garancinë e nënkuptuar të\nSHITJES ose PËRDORIMIT PËR NJË QËLLIM TË CAKTUAR. Shihni Licencën Publike të Përgjithshme \n GNU për më shumë hollësi.\n\nJu duhet ta keni marrë një kopje të Licencës Publike të Përgjithshme GNU\nsë bashku me këtë program. Nëse jo, shihni <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - Dërgoni përshtypje me një e-postë të shifruar\n"
+"E drejta e autorit © 2009-2012, zhvilluesit e Tails (tails@boum.org)\n"
+"\n"
+"Ky program është një program falas; ju mund ta shpërndani atë dhe/ose ta "
+"modifikoni\n"
+"sipas përcaktimeve të Licencës Publike të Përgjithshme GNU, siç publikohet "
+"prej\n"
+"Fondacionit të Programit Falas; apo versioni 3-të i Licencës, ose (sipas\n"
+"mendimit tuaj) çdo version i mëvonshëm.\n"
+"\n"
+"Ky program shpërndahet me shpresën që do të jetë i vlefshëm, por\n"
+"PA ASNJË GARANCI;  madje edhe pa garancinë e nënkuptuar të\n"
+"SHITJES ose PËRDORIMIT PËR NJË QËLLIM TË CAKTUAR. Shihni Licencën Publike të "
+"Përgjithshme \n"
+" GNU për më shumë hollësi.\n"
+"\n"
+"Ju duhet ta keni marrë një kopje të Licencës Publike të Përgjithshme GNU\n"
+"së bashku me këtë program. Nëse jo, shihni <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Nëse dëshironi që ne të shifrojmë mesazhet kur ju përgjigjemi, shtoni ID-në tuaj kyçe, një lidhje tek kyçi juaj, ose kyçin si një bllokim të kyçit publik:"
+msgstr ""
+"Nëse dëshironi që ne të shifrojmë mesazhet kur ju përgjigjemi, shtoni ID-në "
+"tuaj kyçe, një lidhje tek kyçi juaj, ose kyçin si një bllokim të kyçit "
+"publik:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
