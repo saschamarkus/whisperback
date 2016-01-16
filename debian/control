@@ -13,7 +13,7 @@ X-Python3-Version: >= 3.4
 Package: whisperback
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends}, python3-regex, python3-gnupg,
- python3-gi, python3-pysocks, gir1.2-gtk-3.0, gir1.2-webkit-3.0, gir1.2-glib-2.0
+ python3-gi, python3-socks (>= 1.5.0) | python3-socksipy (>= 1.5.0) | python3-pysocks (>= 1.5.0), gir1.2-gtk-3.0, gir1.2-webkit-3.0, gir1.2-glib-2.0
 Description: send feedback using encrypted email
  WhisperBack is designed to allow Live system users to be able to report bugs
  or issues in a simple yet secure manner.
