@@ -1,3 +1,12 @@
+whisperback (1.7.3) devel; urgency=medium
+
+  * Run the upstream test suite as part of the Debian package build process.
+  * Make dependency on python3-pysocks more future proof.
+  * Update PO files.
+  * debian/control: wrap-and-sort
+
+ -- Tails developers <tails@boum.org>  Sun, 17 Jan 2016 01:27:30 +0000
+
 whisperback (1.7.2) devel; urgency=medium
 
   * Merge feature/jessie into master.

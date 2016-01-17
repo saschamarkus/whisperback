@@ -548,3 +548,10 @@ Minor improvements
 
 * Merge feature/jessie into master.
 * Update POT and PO files.
+
+1.7.3
+=====
+
+* Run the upstream test suite as part of the Debian package build process.
+* Make dependency on python3-pysocks more future proof.
+* Update PO files.
