@@ -5,21 +5,30 @@ Maintainer: Tails developers <tails@boum.org>
 Homepage: http://git.immerda.ch/?p=whisperback.git
 Vcs-Browser: http://git.immerda.ch/?p=whisperback.git
 Vcs-Git: git://git.immerda.ch/whisperback.git
-Build-Depends: debhelper (>= 7.0.50~), dh-python, python3-all,
- gir1.2-gtk-3.0,
- gir1.2-webkit-3.0,
- python3-distutils-extra,
- python3-gi,
- python3-gnupg,
- python3-socks (>= 1.5.0) | python3-socksipy (>= 1.5.0) | python3-pysocks (>= 1.5.0),
- txt2tags
+Build-Depends: debhelper (>= 7.0.50~),
+               dh-python,
+               gir1.2-gtk-3.0,
+               gir1.2-webkit-3.0,
+               python3-all,
+               python3-distutils-extra,
+               python3-gi,
+               python3-gnupg,
+               python3-socks (>= 1.5.0) | python3-socksipy (>= 1.5.0) | python3-pysocks (>= 1.5.0),
+               txt2tags
 Standards-Version: 3.9.6
 X-Python3-Version: >= 3.4
 
 Package: whisperback
 Architecture: all
-Depends: ${misc:Depends}, ${python3:Depends}, python3-regex, python3-gnupg,
- python3-gi, python3-socks (>= 1.5.0) | python3-socksipy (>= 1.5.0) | python3-pysocks (>= 1.5.0), gir1.2-gtk-3.0, gir1.2-webkit-3.0, gir1.2-glib-2.0
+Depends: gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         gir1.2-webkit-3.0,
+         python3-gi,
+         python3-gnupg,
+         python3-regex,
+         python3-socks (>= 1.5.0) | python3-socksipy (>= 1.5.0) | python3-pysocks (>= 1.5.0),
+         ${misc:Depends},
+         ${python3:Depends}
 Description: send feedback using encrypted email
  WhisperBack is designed to allow Live system users to be able to report bugs
  or issues in a simple yet secure manner.
