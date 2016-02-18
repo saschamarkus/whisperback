@@ -56,8 +56,19 @@ def send_message_tls (from_address, to_address, message, host="localhost",
 
     ssl_context = ssl.create_default_context(purpose=ssl.Purpose.SERVER_AUTH,
                                             cafile=tls_cafile)
-    # We set a long timeout because Tor is slow
-    smtp = smtplib.SMTP(timeout=120, host=host, port=port)
+    try:
+        # We set a long timeout because Tor is slow
+        smtp = smtplib.SMTP(timeout=120, host=host, port=port)
+    except ValueError:
+        # socks assumes the host resolves to AF_INET and triggers a ValueError
+        # if it's not the case. If a .onion address is given, it resolves to an
+        # AF_INET address and to an AF_INET6 address. If the 1st doesn't connect,
+        # the 2nd is tried, which make socks trigger the ValueError.
+        # This issue is fixed upstream in socks, in which this situation raises
+        # a socket.error (https://github.com/Anorov/PySocks/commit/4081b79)
+        # XXX: this workaround should be removed when a version of socks containing
+        # this commit reaches Tails.
+        raise socket.error("PySocks doesn't support IPv6")
     (resp, reply) = smtp.starttls(context=ssl_context)
     # Default python let you continue in cleartext if starttls
     # fails, while you expect to have an encrypted connexion
