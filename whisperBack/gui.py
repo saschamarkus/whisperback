@@ -406,7 +406,8 @@ Do you want to save the bug report to a file?" % self.backend.to_address)
             #pylint: disable=C0301
             self.backend.contact_gpgkey = self.gpg_keyblock.get_buffer().get_text(
                 self.gpg_keyblock.get_buffer().get_start_iter(),
-                self.gpg_keyblock.get_buffer().get_end_iter())
+                self.gpg_keyblock.get_buffer().get_end_iter(),
+                include_hidden_chars=False)
         except ValueError as e:
             self.show_exception_dialog(
                 _("This doesn't seem to be a valid URL or OpenPGP key."),
