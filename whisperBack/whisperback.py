@@ -274,7 +274,7 @@ class WhisperBack(object):
         """
         f = open(path, 'w')
         try:
-            f.write(self.get_mime_message())
+            f.write(str(self.get_mime_message()))
         finally:
             f.close()
 
