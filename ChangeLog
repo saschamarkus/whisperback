@@ -555,3 +555,10 @@ Minor improvements
 * Run the upstream test suite as part of the Debian package build process.
 * Make dependency on python3-pysocks more future proof.
 * Update PO files.
+
+1.7.4
+=====
+
+* Import PO files from Transifex, update POT and PO files.
+* Actually write a string when saving the bugreport to a file. (Closes Tails bug: #11133)
+* Add missing argument to OpenPGP dialog. (Closes Tails bug: #11033)

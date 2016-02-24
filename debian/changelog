@@ -1,3 +1,11 @@
+whisperback (1.7.4) devel; urgency=medium
+
+  * Import PO files from Transifex, update POT and PO files.
+  * Actually write a string when saving the bugreport to a file. (Closes Tails bug: #11133)
+  * Add missing argument to OpenPGP dialog. (Closes Tails bug: #11033)
+
+ -- anonym <anonym@riseup.net>  Wed, 24 Feb 2016 17:16:43 +0100
+
 whisperback (1.7.3) devel; urgency=medium
 
   * Run the upstream test suite as part of the Debian package build process.
