@@ -562,3 +562,9 @@ Minor improvements
 * Import PO files from Transifex, update POT and PO files.
 * Actually write a string when saving the bugreport to a file. (Closes Tails bug: #11133)
 * Add missing argument to OpenPGP dialog. (Closes Tails bug: #11033)
+
+1.7.5
+=====
+
+* Workaround socks bug. Fixes Tails bug #11136.
+* Import PO files from Transifex, update POT and PO files.

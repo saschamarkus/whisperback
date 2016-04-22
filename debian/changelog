@@ -1,3 +1,10 @@
+whisperback (1.7.5) stable; urgency=medium
+
+  * Workaround socks bug. Fixes Tails bug #11136.
+  * Import PO files from Transifex, update POT and PO files.
+
+ -- anonym <anonym@riseup.net>  Fri, 22 Apr 2016 17:14:03 +0200
+
 whisperback (1.7.4) devel; urgency=medium
 
   * Import PO files from Transifex, update POT and PO files.
