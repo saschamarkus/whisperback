@@ -10,15 +10,15 @@
 # hermawan <hermawanadhis@gmail.com>, 2014
 # Lucas Susanto <susantolucas@yahoo.com>, 2015
 # Mark Hiro <akmalgaul@gmail.com>, 2015
-# Mohamad Hasan Al Banna <se7entime@openmailbox.org>, 2013
+# Mohamad Hasan Al Banna <se7entime@protonmail.com>, 2013
 # Rendiyono Wahyu Saputro <rendi.7936@gmail.com>, 2015
 # zk <zamani.karmana@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-10-25 04:02+0000\n"
+"POT-Creation-Date: 2015-12-16 19:54+0100\n"
+"PO-Revision-Date: 2016-03-21 16:28+0000\n"
 "Last-Translator: Ferriandy Chianiago <gpl4all@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/otf/torproject/language/id/)\n"
 "MIME-Version: 1.0\n"
@@ -28,17 +28,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. XXX use a better exception
-#: ../whisperBack/whisperback.py:63
+#: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
 msgstr "Alamat email kontak tidak benar: %s"
 
-#: ../whisperBack/whisperback.py:80
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Kunci OpenPGP kontak tidak benar: %s"
 
-#: ../whisperBack/whisperback.py:82
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Blok kunci umum OpenPGP kontak tidak benar"
 
@@ -49,40 +49,40 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "Variabel %s tidak ditemukan di berkas konfigurasi manapun /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
 msgstr "Tidak dapat memuat konfigurasi yang valid."
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:214
 msgid "Sending mail..."
 msgstr "Mengirimkan surat..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:215
 msgid "Sending mail"
 msgstr "Mengirimkan surat"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:217
 msgid "This could take a while..."
 msgstr "Membutuhkan beberapa saat..."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
 msgstr "Alamat surel kontak sepertinya tidak valid."
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
 msgstr "Tidak dapat mengirim surat: galat SMTP."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:251
 msgid "Unable to connect to the server."
 msgstr "Tidak visa terhubung dengan server."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:253
 msgid "Unable to create or to send the mail."
 msgstr "Tidak dapat membuat atau mengirim surat."
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:256
 msgid ""
 "\n"
 "\n"
@@ -91,21 +91,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nPelaporan kutu tidak bisa dikirimkan, sepertinya karena masalah jaringan. Mohon coba sambungkan kembali jaringan dan klik kirim lagi.\n\nJika tidak bisa juga, Anda akan ditawari untuk menyimpan laporan kutu tersebut."
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
 msgstr "Pesan Anda telah terkirim."
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:276
 msgid "An error occured during encryption."
 msgstr "Sebuah galat terjadi saat proses enkripsi."
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
 msgstr "Tidak bisa menyimpan %s."
 
-#. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:319
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -115,27 +114,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Laporan kutu tidak bisa dikirim, sepertinya karena maslaah jaringan.\n\nSolusinya Anda dapat menyimpan laporan kutu tersebut sebagai sebuah berkas di perangkat USB dan coba kirimkan kepada kami di %s dari akun surel Anda dengan menggunakan sistem lain. Mohon dicatat bahwa laporan kutu Anda tidak akan anonim kecuali Anda mengambil langkah yang lebih aman (mis. menggunakan Tor dengan akun surel sementara).\n\nApakah Anda ingin menyimpan laporan kutu ke dalam berkas?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Kirim umpan balik melalui surel terenkripsi."
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Hak Cipta © 2009-2012 Tails developpers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
 msgstr "Pengembang Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:385
 msgid "translator-credits"
 msgstr "Kredit-Translator"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Ini tidak terlihat sebagai URL atau kunci OpenPGP yang valid."
 

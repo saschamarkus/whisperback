@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-06-27 16:07+0000\n"
+"POT-Creation-Date: 2015-12-16 19:54+0100\n"
+"PO-Revision-Date: 2016-03-21 16:28+0000\n"
 "Last-Translator: runasand <runa.sandvik@gmail.com>\n"
-"Language-Team: Basque (http://www.transifex.com/projects/p/torproject/language/eu/)\n"
+"Language-Team: Basque (http://www.transifex.com/otf/torproject/language/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,17 +19,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
-#: ../whisperBack/whisperback.py:63
+#: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
 msgstr "Harremanetarako email baliogabea: %s"
 
-#: ../whisperBack/whisperback.py:80
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Harremanetarako OpenPGP gako baliogabea: %s"
 
-#: ../whisperBack/whisperback.py:82
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Harremanarako OpenPGP giltz publiko blokea baliogabea"
 
@@ -40,40 +40,40 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "%s aldagaia ez da ez /etc/whisperback/config.py, ez ~/.whisperback/config.py, ezta ./config.py konfigurazio fitxategietan aurkitu."
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
 msgstr "Ezin izan da konfigurazio baliogarririk kargatu"
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:214
 msgid "Sending mail..."
 msgstr "Posta bidaltzen..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:215
 msgid "Sending mail"
 msgstr "Posta bidaltzen"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:217
 msgid "This could take a while..."
 msgstr "Honek luze jo dezake..."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
 msgstr "Harremanetarako email helbidea ez du baliogarria ematen."
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
 msgstr "Ezin izan da emaila bidali: SMTP akatsa."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:251
 msgid "Unable to connect to the server."
 msgstr "Ezin izan da zerbitzarira konektatu."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:253
 msgid "Unable to create or to send the mail."
 msgstr "Ezin izan da emaila sortu edo bidali."
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:256
 msgid ""
 "\n"
 "\n"
@@ -82,21 +82,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nAkats txostena ezin izan da bidali, ziurrenik sare arazoengatik. Mesedez saiatu sarera berriz konektatzen eta sakatu bidali berriz.\n\nEz badu funtzionatzen, akats txostena gordetzea eskainiko zaizu."
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
 msgstr "Zure mezua bidali da."
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:276
 msgid "An error occured during encryption."
 msgstr "Akats bat gertatu da enkriptazioaren bitartean."
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
 msgstr "Ezin izan da %s gorde."
 
-#. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:319
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -106,27 +105,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Akats txostena ezin izan da bidali, ziurrenik sare arazoengatik.\n\nLan-inguru bezala akats txostena fitxategi bat bezala USB batean gorde dezakezu eta guri %s ra bidaltzen saiatu zure email kontutik beste sistema bat erabiliz. Jakin ezazu zure akats txostena ez dela anonimoa izango zure kontu beste pausu batzuk ematen ez badituzu (adib. Tor erabili aldi baterako email kontu batekin).\n\nAkats txostena fitxategi batean gorde nahi duzu?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Atzeraelikadura enkriptatutako email batean bidali."
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails garatzaileak (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails garatzaileak <tails@boum.org>"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:385
 msgid "translator-credits"
 msgstr "itzultzaile-kredituak"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Honek es du URL edo OpenPGP gako baliogarri baten antzik."
 

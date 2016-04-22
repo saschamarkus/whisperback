@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# E <ehuseynzade@gmail.com>, 2014
+# D, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2014-12-30 13:51+0000\n"
-"Last-Translator: E <ehuseynzade@gmail.com>\n"
-"Language-Team: Azerbaijani (http://www.transifex.com/projects/p/torproject/language/az/)\n"
+"POT-Creation-Date: 2015-12-16 19:54+0100\n"
+"PO-Revision-Date: 2016-03-21 16:28+0000\n"
+"Last-Translator: D\n"
+"Language-Team: Azerbaijani (http://www.transifex.com/otf/torproject/language/az/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,17 +19,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
-#: ../whisperBack/whisperback.py:63
+#: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
 msgstr "Səhv əlaqə emaili: %s"
 
-#: ../whisperBack/whisperback.py:80
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Səhv OpenPGP əlaqə açarı: %s"
 
-#: ../whisperBack/whisperback.py:82
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Səhv OpenPGP ictimai əlaqə açarı kilidi"
 
@@ -40,40 +40,40 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "%s dəyişikliyi heç bir konfiqurasiya faylında tapılmadı: /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
 msgstr "Düzgün konfiqurasiyanın yüklənməsi mümkün deyil."
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:214
 msgid "Sending mail..."
 msgstr "Məktub göndərilir..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:215
 msgid "Sending mail"
 msgstr "Məktub göndərilir"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:217
 msgid "This could take a while..."
 msgstr "Bu bir az vaxt ala bilər..."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
 msgstr "Əlaqə emaili düz olana oxşamır."
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
 msgstr "Bu məktubun göndərilməsi mümkün deyil: SMTP xətası."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:251
 msgid "Unable to connect to the server."
 msgstr "Serverlə əlaqə mümkün deyil."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:253
 msgid "Unable to create or to send the mail."
 msgstr "Məktub yaratmaq və ya göndərmək mümkün deyil."
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:256
 msgid ""
 "\n"
 "\n"
@@ -82,21 +82,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nProblem haqqında xəbər çox güman ki, şəbəkə problemləri səbəbi ilə göndərilə bilmədi. Lütfən, şəbəkəyə yenidən qoşulmağa cəh et və yenidən göndər düyməsini kliklə.\n\nBu işləmir, problem haqqında xəbəri yaddaşa salmağın təklif edilir."
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
 msgstr "Mesajın göndərilib."
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:276
 msgid "An error occured during encryption."
 msgstr "Şifrləmə zamanı xəta baş verdi."
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
 msgstr "%s-in yaddaşa salınması mümkün deyil."
 
-#. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:319
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -106,27 +105,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Çox güman ki, şəbəkə problemləri səbəbi ilə problem haqqında xəbər göndərilə bilmədi.\n\nİş əsnasında xəbəri USB ötürücündə yadda saxlaya və bizə %s başqa sistemdən email hesabın vasitəsilə göndərə bilərsən. Nəzərə al ki, bunu etdiyin təqdirdə növbəti addımları özün seçdiyin üçün problem haqqında xəbərin anonim olmayacaq (məsələn, tullanmış email hesabı vasitəsilə Tor-un istifadəsi).\n\nProblem xəbərinio yadda saxlamaq istəyirsən?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Şifrələnmiş məktubda fikrini göndər."
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Hüquqların qorunması © 2009-2012 Tails yaradıcıları (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails yaradıcıları <tails@boum.org>"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:385
 msgid "translator-credits"
 msgstr "tərcüməçi-şöhrət"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Bu düzgün URL və ya OpenPGP açarına oxşamır."
 

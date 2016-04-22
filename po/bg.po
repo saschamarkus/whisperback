@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-09-29 21:08+0000\n"
+"POT-Creation-Date: 2015-12-16 19:54+0100\n"
+"PO-Revision-Date: 2016-03-21 16:28+0000\n"
 "Last-Translator: alexdimitrov <kvikmen@gmail.com>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/otf/torproject/language/bg/)\n"
 "MIME-Version: 1.0\n"
@@ -22,17 +22,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
-#: ../whisperBack/whisperback.py:63
+#: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
 msgstr "Невалиден контакт имейл: %s"
 
-#: ../whisperBack/whisperback.py:80
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Невалиден контакт OpenPGP ключ: %s"
 
-#: ../whisperBack/whisperback.py:82
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Невалиден контакт OpenPGP блок ключ"
 
@@ -43,40 +43,40 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "Променливата %s , не бе намерена в никой от конфигурационните файлове /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
 msgstr "Валидна конфигурация не може да се зареди."
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:214
 msgid "Sending mail..."
 msgstr "Изпращане на поща..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:215
 msgid "Sending mail"
 msgstr "Изпращане на мейл"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:217
 msgid "This could take a while..."
 msgstr "Това ще отнеме известно време..."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
 msgstr "Е-мейл адресът за контакт не е валиден"
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
 msgstr "Невъзможно да се изпрати: SMTP грешка"
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:251
 msgid "Unable to connect to the server."
 msgstr "Неосъществим достъп до сървъра."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:253
 msgid "Unable to create or to send the mail."
 msgstr "Невъзможно съхраняването или изпращането на мейла"
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:256
 msgid ""
 "\n"
 "\n"
@@ -85,21 +85,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nИнформацията за грешката не може да бъде изпратена, най-вероятно поради мрежови проблеми. Моля свържете се с интернет и натиснете изпрати пак.\n\nАко пак имате проблеми, може да запаметите репорта."
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
 msgstr "Съобщението ви е изпратено."
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:276
 msgid "An error occured during encryption."
 msgstr "Грешка по време на криптирането."
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
 msgstr " %s не може да бъде запазен."
 
-#. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:319
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -109,27 +108,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Информацията за грешката не може да бъде изпратена, най-вероятно поради мрежови проблеми. \n\nМожете да я запаметите на USB памет и да опитате да ни я изпратите по мейла на адрес %s. Този отчет няма да бъде анонимен, освен ако не го изпратите през временен е-майл акаунт.\n\nИскате ли да запаметите отчета за грешката във файл?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Изпратете обратната връзка в криптиран мейл."
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Всички права запазени © 2009-2012 Tails developpers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails developers <tails@boum.org>"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:385
 msgid "translator-credits"
 msgstr "преводач/и"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Това не изглежда да е валидно URL или OpenPGP ключ."
 

@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# bact' ☂ <arthit@gmail.com>, 2013
+# Arthit Suriyawongkul <arthit@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2013-08-01 15:36+0200\n"
-"PO-Revision-Date: 2013-09-17 13:02+0000\n"
-"Last-Translator: bact' ☂ <arthit@gmail.com>\n"
-"Language-Team: Thai (http://www.transifex.com/projects/p/torproject/language/th/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-16 19:54+0100\n"
+"PO-Revision-Date: 2016-03-21 16:28+0000\n"
+"Last-Translator: Arthit Suriyawongkul <arthit@gmail.com>\n"
+"Language-Team: Thai (http://www.transifex.com/otf/torproject/language/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,17 +19,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. XXX use a better exception
-#: ../whisperBack/whisperback.py:63
+#: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
 msgstr "อีเมลติดต่อไม่ถูกต้อง: %s"
 
-#: ../whisperBack/whisperback.py:80
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "กุญแจ OpenPGP ของที่ติดต่อไม่ถูกต้อง: %s"
 
-#: ../whisperBack/whisperback.py:82
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "บล็อคกุญแจ OpenPGP ของที่ติดต่อไม่ถูกต้อง"
 
@@ -40,40 +40,40 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "ไม่พบตัวแประ %s ในแฟ้มตั้งค่าใดๆ /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
 msgstr "ไม่สามารถเรียกแฟ้มตั้งค่าที่ถูกต้องได้"
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:214
 msgid "Sending mail..."
 msgstr "กำลังส่งอีเมล..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:215
 msgid "Sending mail"
 msgstr "กำลังส่งอีเมล"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:217
 msgid "This could take a while..."
 msgstr "นี่อาจใช้เวลาสักพัก..."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
 msgstr "ที่อยู่อีเมลติดต่อดูเหมือนจะใช้ไม่ได้"
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
 msgstr "ไม่สามารถส่งอีเมลได้: ข้อผิดพลาด SMTP"
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:251
 msgid "Unable to connect to the server."
 msgstr "ไม่สามารถเชื่อมต่อไปยังเซิร์ฟเวอร์ได้"
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:253
 msgid "Unable to create or to send the mail."
 msgstr "ไม่สามารถสร้างหรือส่งอีเมลได้"
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:256
 msgid ""
 "\n"
 "\n"
@@ -82,21 +82,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nไม่สามารถส่งรายงานบั๊กได้ เป็นไปได้ว่าเนื่องจากปัญหาเครือข่าย โปรดลองเชื่อมต่อกับเครือข่ายใหม่ และคลิกส่งอีกครั้ง\n\nถ้ามันไม่ได้ คุณจะถูกถามให้บันทึกรายงานบั๊กดังกล่าว"
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
 msgstr "ข้อความของคุณถูกส่งแล้ว"
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:276
 msgid "An error occured during encryption."
 msgstr "เกิดข้อผิดพลาดระหว่างการเข้ารหัส"
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
 msgstr "ไม่สามารถบันทึก %s"
 
-#. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:319
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -106,27 +105,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "ไม่สามารถส่งรายงานบั๊กได้ เป็นไปได้ว่าเนื่องจากปัญหาเครือข่าย\n\nเพื่อให้ทำงานไปก่อนได้ คุณสามารถบันทึกรายงานบั๊กเป็นแฟ้มบนไดรฟ์ยูเอสบี และลองส่งมันหาเราที่ %s จากบัญชีอีเมลของคุณ โดยใช้ระบบอื่น โปรดจำว่า รายงานบั๊กของคุณจะไม่ถูกปิดชื่อถ้าคุณทำเช่นนั้น เว้นเสียแต่ว่าคุณจะใช้มาตรการเพิ่มเติมด้วยตัวคุณเอง (เช่น ใช้ Tor ด้วยบัญชีอีเมลแบบใช้ครั้งเดียวทิ้ง)\n\nคุณต้องการบันทึกรายงานบั๊กลงแฟ้มหรือไม่?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "ส่งคำติชมในอีเมลเข้ารหัส"
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "ลิขสิทธิ์ © 2009-2012 นักพัฒนา Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
 msgstr "นักพัฒนา Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:385
 msgid "translator-credits"
 msgstr "translator-credits"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "นี่ไม่น่าจะเป็น URL หรือกุญแจ OpenPGP ที่ถูกต้อง"
 

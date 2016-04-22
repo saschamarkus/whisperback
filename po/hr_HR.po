@@ -4,16 +4,16 @@
 # 
 # Translators:
 # Ana B, 2013
-# skiddiep <lyricaltumor@gmail.com>, 2015
+# Igor <lyricaltumor@gmail.com>, 2015
 # Tea Horvatic <teahorvatic@yahoo.co.uk>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-07-22 11:05+0000\n"
-"Last-Translator: skiddiep <lyricaltumor@gmail.com>\n"
-"Language-Team: Croatian (Croatia) (http://www.transifex.com/projects/p/torproject/language/hr_HR/)\n"
+"POT-Creation-Date: 2015-12-16 19:54+0100\n"
+"PO-Revision-Date: 2016-03-21 16:28+0000\n"
+"Last-Translator: erinm\n"
+"Language-Team: Croatian (Croatia) (http://www.transifex.com/otf/torproject/language/hr_HR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,17 +21,17 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #. XXX use a better exception
-#: ../whisperBack/whisperback.py:63
+#: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
 msgstr "Nevažeći kontakt email: %s"
 
-#: ../whisperBack/whisperback.py:80
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Nevažeći kontakt OpenPGP ključ: %s"
 
-#: ../whisperBack/whisperback.py:82
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Nevažeći kontakt OpenPGP blok javnog ključa"
 
@@ -42,40 +42,40 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "%s varijabla nije pronađena ni u jednoj od datoteka konfiguracije /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
 msgstr "Nije moguće učitati važeću konfiguraciju."
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:214
 msgid "Sending mail..."
 msgstr "Šaljem mail..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:215
 msgid "Sending mail"
 msgstr "Šaljem mail"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:217
 msgid "This could take a while..."
 msgstr "Ovo može potrajati..."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
 msgstr "Kontakt email adresa nije važeća."
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
 msgstr "Nije moguće poslati mail: SMTP greška."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:251
 msgid "Unable to connect to the server."
 msgstr "Nije se moguće povezati na server."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:253
 msgid "Unable to create or to send the mail."
 msgstr "Nije moguće stvoriti ili poslati mail."
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:256
 msgid ""
 "\n"
 "\n"
@@ -84,21 +84,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nIzvješće o greški nije poslano, vjerojatno zbog problema mreže. Molimo pokušajte se ponovno povezati s mrežom i ponovno kliknite pošalji.\n\nAko ne radi, moći ćete spremiti izvješće o greški."
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
 msgstr "Vaša poruka je poslana."
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:276
 msgid "An error occured during encryption."
 msgstr "Dogodila se greška prilikom šifriranja."
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
 msgstr "Nije moguće spremiti %s."
 
-#. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:319
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -108,27 +107,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Izvješće o greški nije poslano, vjerojatno zbog problema mreže.\n\nKao obilazno rješenje tom problemu, možete spremiti izvješće o greški kao datoteku na USB pogon i pokušati je poslati nama na %s s Vašeg email računa koristeći drugi sustav. Pri tome Vaše izvješće o grešci neće biti anonimno, osim ako ne poduzmete daljnje korake (npr. korištenje Tor-a uz jednokratni email računa).\n\nŽelite li spremiti izvješće o grešci u datoteku?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Pošaljite povratnu informaciju u šifriranom mailu."
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 razvijači Tails-a (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
 msgstr "Razvijači Tails-a <tails@boum.org>"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:385
 msgid "translator-credits"
 msgstr "prevoditelj-zasluge"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Ovo nije valjani URL ili OpenPGP ključ."
 

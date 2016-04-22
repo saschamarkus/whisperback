@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 17:40+0100\n"
-"PO-Revision-Date: 2015-11-24 20:52+0000\n"
+"POT-Creation-Date: 2015-12-16 19:54+0100\n"
+"PO-Revision-Date: 2016-03-21 16:28+0000\n"
 "Last-Translator: Kunda\n"
 "Language-Team: Hebrew (http://www.transifex.com/otf/torproject/language/he/)\n"
 "MIME-Version: 1.0\n"
@@ -21,17 +21,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
-#: ../whisperBack/whisperback.py:63
+#: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
 msgstr "אימייל לא תקין: %s"
 
-#: ../whisperBack/whisperback.py:80
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "מפתח OpenPGP לא תקין של איש קשר: %s"
 
-#: ../whisperBack/whisperback.py:82
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "מפתח ציבורי  OpenPGP לא תקין של איש קשר"
 
@@ -42,40 +42,40 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "המשתנים %s‎ לא נמצאו באף אחד מקבצי הקונפיגורציה: /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:154
+#: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
 msgstr "לא מתאפשר לטעון הגדרה לא תקינה."
 
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:214
 msgid "Sending mail..."
 msgstr "שולח מייל..."
 
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:215
 msgid "Sending mail"
 msgstr "שולח מייל"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:223
+#: ../whisperBack/gui.py:217
 msgid "This could take a while..."
 msgstr "זה יכול לקחת קצת זמן.."
 
-#: ../whisperBack/gui.py:237
+#: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
 msgstr "כתובת המייל של איש הקשר לא נראית תקינה"
 
-#: ../whisperBack/gui.py:254
+#: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
 msgstr "אי אפשר לשלוח את המייל: שגיאת SMTP."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:251
 msgid "Unable to connect to the server."
 msgstr "אי אפשר להתחבר לשרת."
 
-#: ../whisperBack/gui.py:258
+#: ../whisperBack/gui.py:253
 msgid "Unable to create or to send the mail."
 msgstr "אי אפשר ליצור או לשלוח מייל."
 
-#: ../whisperBack/gui.py:261
+#: ../whisperBack/gui.py:256
 msgid ""
 "\n"
 "\n"
@@ -84,21 +84,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\nדיווח התקלה לא יכל להשלח, כנראה בשל בעיות רשת. בבקשה נסה להתחבר מחדש לרשת ולחץ שלח שוב. אם זה לא עובד, יציעו לך לשמור את דיווח התקלה"
 
-#: ../whisperBack/gui.py:274
+#: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
 msgstr "ההודעה שלך נשלחה."
 
-#: ../whisperBack/gui.py:281
+#: ../whisperBack/gui.py:276
 msgid "An error occured during encryption."
 msgstr "שגיאה קרתה במהלך ההצפנה."
 
-#: ../whisperBack/gui.py:301
+#: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
 msgstr "אי אפשר לשמור %s."
 
-#. XXX: fix string
-#: ../whisperBack/gui.py:325
+#: ../whisperBack/gui.py:319
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -108,27 +107,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "דיווח התקלה לא יכל להשלח, כנראה בשל בעיות רשת. \n אתה יכול לשמור את דיווח התקלה כקובץ בUSB drive ולנסות לשלוח לנו אותו ב %s מחשבון האימייל שלך על ידי שימוש במערכת אחרת. שים לב שדיוחח התקלה שלך לא יהיה אנונימי בעשייתך זאת אלא אם כן תבצע מספר צעדים בעצמך (למשל שימוש ב Tor עם חשבון אימייל  throw-away). האם אתה רוצה לשמור את דיווח התקלה לקובץ?"
 
-#: ../whisperBack/gui.py:389 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:390 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "שלח משוב במייל מוצפן."
 
-#: ../whisperBack/gui.py:393
+#: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "כל הזכויות שמורות © 2009-2012 למפתחי Tails \n (tails@boum.org)"
 
-#: ../whisperBack/gui.py:394
+#: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
 msgstr "מפתחי tails@boum.org> Tails >"
 
-#: ../whisperBack/gui.py:395
+#: ../whisperBack/gui.py:385
 msgid "translator-credits"
 msgstr "קרדיטים למתרגם"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "מפתח ה OpenPGP או שורת הכתובת לא תקפים"
 
