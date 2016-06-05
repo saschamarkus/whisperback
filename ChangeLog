@@ -568,3 +568,8 @@ Minor improvements
 
 * Workaround socks bug. Fixes Tails bug #11136.
 * Import PO files from Transifex, update POT and PO files.
+
+1.7.6
+=====
+
+* Import PO files from Transifex, update POT and PO files.
