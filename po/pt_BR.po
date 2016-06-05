@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Communia <ameaneantie@riseup.net>, 2013-2015
+# Communia <ameaneantie@riseup.net>, 2013-2016
 # Eduardo Bonsi, 2013
 # Augustine <evandro@geocities.com>, 2013
 # Bruno Geronimo <bruuh@outlook.com>, 2012
@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-03-21 16:28+0000\n"
+"PO-Revision-Date: 2016-05-10 23:57+0000\n"
 "Last-Translator: Communia <ameaneantie@riseup.net>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/otf/torproject/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr ""
 #: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Contato de e-mail inválido: %s"
+msgstr "E-mail de contato inválido: %s"
 
 #: ../whisperBack/whisperback.py:73
 #, python-format
