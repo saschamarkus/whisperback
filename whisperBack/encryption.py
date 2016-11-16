@@ -59,13 +59,12 @@ class Encryption ():
         """
         assert isinstance(message, email.mime.base.MIMEBase)
 
-        encrypted_content = self._gpg.encrypt(message.as_string(), to_fingerprints, always_trust=True)
-        if not encrypted_content:
-            # XXX: raise a specific exception if the key wasn't found
-            raise whisperBack.exceptions.EncryptionException()
+        crypt = self._gpg.encrypt(message.as_string(), to_fingerprints, always_trust=True)
+        if not crypt.ok:
+            raise whisperBack.exceptions.EncryptionException(crypt.status)
 
         enc = email.mime.application.MIMEApplication(
-                _data=str(encrypted_content),
+                _data=str(crypt),
                 _subtype='octet-stream; name="encrypted.asc"',
                 _encoder=email.encoders.encode_7or8bit)
         enc['Content-Description'] = 'OpenPGP encrypted message'
