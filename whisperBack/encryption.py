@@ -44,7 +44,7 @@ class Encryption ():
         if not (keyring and os.path.exists(keyring)):
             keyring = None
 
-        self._gpg = gnupg.GPG(keyring=keyring)
+        self._gpg = gnupg.GPG(keyring=keyring, gpgbinary="/usr/bin/gpg")
 
     def pgp_mime_encrypt(self, message, to_fingerprints):
         """Encrypts  for a list of recipients
