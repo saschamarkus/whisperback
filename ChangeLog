@@ -573,3 +573,11 @@ Minor improvements
 =====
 
 * Import PO files from Transifex, update POT and PO files.
+
+1.7.7
+=====
+
+* git: ignore vim swap files
+* Explicitly use /usr/bin/gpg binary (Closes: Tails#11922)
+* Report gnupg status when encryption fails
+

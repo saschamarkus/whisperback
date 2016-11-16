@@ -1,3 +1,11 @@
+whisperback (1.7.7) devel; urgency=medium
+
+  * git: ignore vim swap files
+  * Explicitly use /usr/bin/gpg binary (Closes: Tails#11922)
+  * Report gnupg status when encryption fails
+
+ -- intrigeri <intrigeri@boum.org>  Wed, 16 Nov 2016 16:06:30 +0000
+
 whisperback (1.7.6) testing; urgency=medium
 
   * Import PO files from Transifex, update POT and PO files.
