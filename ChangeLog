@@ -581,3 +581,8 @@ Minor improvements
 * Explicitly use /usr/bin/gpg binary (Closes: Tails#11922)
 * Report gnupg status when encryption fails
 
+
+1.7.8
+=====
+
+* Import PO files from Transifex, update POT and PO files.

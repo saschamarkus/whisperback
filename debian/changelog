@@ -1,3 +1,9 @@
+whisperback (1.7.8) testing; urgency=medium
+
+  * Import PO files from Transifex, update POT and PO files.
+
+ -- anonym <anonym@riseup.net>  Thu, 12 Jan 2017 16:22:57 +0100
+
 whisperback (1.7.7) devel; urgency=medium
 
   * git: ignore vim swap files

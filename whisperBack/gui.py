@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 ########################################################################
 
-__version__ = '1.7.7'
+__version__ = '1.7.8'
 LOCALEDIR = "locale/"
 PACKAGE = "whisperback"
 
