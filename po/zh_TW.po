@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Agustín Wu <losangwuyts@gmail.com>, 2016
 # danfong <danfong.hsieh@gmail.com>, 2014
 # x4r <xatierlike@gmail.com>, 2014
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-03-21 16:28+0000\n"
-"Last-Translator: danfong <danfong.hsieh@gmail.com>\n"
+"PO-Revision-Date: 2016-12-20 10:51+0000\n"
+"Last-Translator: Agustín Wu <losangwuyts@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/otf/torproject/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +29,7 @@ msgstr "不正確的聯絡信箱: %s"
 #: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "不正確的連略 OpenPGP 金鑰: %s"
+msgstr "不正確的 OpenPGP 金鑰: %s"
 
 #: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
@@ -39,7 +40,7 @@ msgstr "不正確的聯絡 OpenPGP 公開金鑰塊"
 msgid ""
 "The %s variable was not found in any of the configuration files "
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "%s 變數無法在以下任何設定檔中被找到 /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "在下列設定檔中找不到 %s 變數： /etc/whisperback/config.py、 ~/.whisperback/config.py、./config.py"
 
 #: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
@@ -60,7 +61,7 @@ msgstr "這可能需要一段時間..."
 
 #: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
-msgstr "聯絡電子郵件位址似乎不正確。"
+msgstr "聯絡人的電子郵件位址似乎不正確。"
 
 #: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
@@ -81,7 +82,7 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\n無法傳送錯誤報告，似乎是網路問題。請試著重新連線到網路並再次按一下〔傳送〕按鈕。\n\n如果還是不行，您需要儲存錯誤報告。"
+msgstr "\n\n無法傳送錯誤報告，似乎是網路問題。請試著重新連線到網路並再次按一下〔傳送〕按鈕。\n\n如果還是不行，您可以儲存錯誤報告。"
 
 #: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
@@ -128,7 +129,7 @@ msgstr "翻譯人員-製作群"
 
 #: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "似乎不是有效的網址或 OpenPGP 金鑰。"
+msgstr "這似乎不是有效的網址或 OpenPGP 金鑰。"
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
@@ -155,13 +156,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - 使用加密郵件來傳送意見反應。\nCopyright (C) 2009-2012 Tails 開發人員 <tails@boum.org>\n\n此程式為免費軟體: 您可以將它轉散發和/或修改，\n根據免費軟體基金會所發佈的 GNU 通用公共許可證條款，\n授權版本 3 或(由您選擇)任何更新的版本。\n\n散佈此程式希望它有用，\n但沒有任何擔保責任;沒有適合某特定用途之默示責任擔保。\n請參閱  GNU 通用公共許可證瞭解更多詳細資料。\n\n隨著此軟體您應該已收到 GNU 通用公共許可證副本。\n如果沒有，請參閱 <http://www.gnu.org/licenses/>。\n"
+msgstr "WhisperBack - 使用加密郵件來傳送意見反應。\nCopyright (C) 2009-2012 Tails 開發人員 <tails@boum.org>\n\n此程式為自由軟體: 您可以將它轉散發和/或修改，\n根據自由軟體基金會所發佈的 GNU 公眾授權條款，\n授權版本 3 或(由您選擇)任何更新的版本。\n\n廣為散佈此程式的目的是希望它能發揮實用價值，\n但沒有任何擔保責任;更沒有意指任何適用於某特定用途之責任擔保。\n請參閱 GNU 公眾授權條款以瞭解更多細節。\n\n在取得此軟體的同時，您應該也同時收到 GNU 公眾授權條款之副本。\n如果沒有，請參閱 <http://www.gnu.org/licenses/>。\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "如果您想要我們回覆給您時將訊息加密，請附上您的金鑰 ID，一個您金鑰的連結，或是一個公開金鑰塊。"
+msgstr "如果您想要我們以加密的訊息回覆您，請附上您的金鑰 ID、您金鑰的下載連結或是公開金鑰區塊。"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -173,19 +174,19 @@ msgstr "錯誤描述"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "與您聯絡的額外電子郵件位址"
+msgstr "可與您聯絡的電子郵件位址"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "選用的 PGP 金鑰"
+msgstr "選擇性的 PGP 金鑰"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
-msgstr "包含的技術詳細資料"
+msgstr "欲包含的技術細節"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
-msgstr "標題"
+msgstr "標頭"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"

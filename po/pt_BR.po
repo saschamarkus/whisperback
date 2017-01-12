@@ -9,7 +9,7 @@
 # Bruno Geronimo <bruuh@outlook.com>, 2012
 # Gilberto Osorio <beto.cpv@gmail.com>, 2013
 # Jonathan Kaizer <jkck2010@hotmail.com>, 2013
-# Koh Pyreit <kohpyreit@gmail.com>, 2013
+# Koh Pyreit <inactive+kohpyreit@transifex.com>, 2013
 # m4lqu1570 <>, 2012
 # Noilson Caio T. de Araujo <caiogore@gmail.com>, 2013
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-05-10 23:57+0000\n"
+"PO-Revision-Date: 2016-11-18 20:42+0000\n"
 "Last-Translator: Communia <ameaneantie@riseup.net>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/otf/torproject/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr "E-mail de contato inválido: %s"
 #: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Key OpenPGP de contato inválida: %s"
+msgstr "Chave OpenPGP de contato inválida: %s"
 
 #: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"

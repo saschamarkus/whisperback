@@ -4,18 +4,19 @@
 # 
 # Translators:
 # arpalord <arpalord@gmail.com>, 2012
+# French language coordinator <french.translation@rbox.me>, 2016
 # MaK <>, 2012
 # Onizuka, 2013
 # Tails developpers <amnesia@boum.org>, 2011
-# Trans-fr, 2015
-# Trans-fr, 2014
+# French language coordinator <french.translation@rbox.me>, 2015
+# French language coordinator <french.translation@rbox.me>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-03-21 16:28+0000\n"
-"Last-Translator: Trans-fr\n"
+"PO-Revision-Date: 2016-12-21 16:57+0000\n"
+"Last-Translator: French language coordinator <french.translation@rbox.me>\n"
 "Language-Team: French (Canada) (http://www.transifex.com/otf/torproject/language/fr_CA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,11 +33,11 @@ msgstr "Courriel de contact invalide : %s"
 #: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Clef OpenPGP de contact invalide : %s"
+msgstr "Clé OpenPGP de contact invalide : %s"
 
 #: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Bloc de clef publique de contact OpenPGP invalide"
+msgstr "Bloc de clé publique OpenPGP de contact invalide"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
@@ -60,7 +61,7 @@ msgstr "Envoi du courriel"
 #. pylint: disable=C0301
 #: ../whisperBack/gui.py:217
 msgid "This could take a while..."
-msgstr "Ceci peut prendre un moment..."
+msgstr "Cela peut prendre du temps..."
 
 #: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
@@ -85,7 +86,7 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nLe rapport de bogue n'a pas pu être envoyé, probablement à cause de problèmes de réseau. Veuillez essayer de reconnecter au réseau et cliquer sur envoyer à nouveau. \n\nSi cela ne fonctionne pas, l'on vous proposera de sauvegarder le rapport de bogue."
+msgstr "\n\nLe rapport de bogue n'a pas pu être envoyé, probablement à cause de problèmes de réseau. Veuillez essayer de vous reconnecter au réseau et recliquer sur envoyer.\n\nSi cela ne fonctionne pas, l'on vous proposera d'enregistrer le rapport de bogue."
 
 #: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
@@ -98,7 +99,7 @@ msgstr "Une erreur est survenue lors du chiffrement."
 #: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
-msgstr "Impossible de sauvegarder %s."
+msgstr "Impossible d'enregistrer %s."
 
 #: ../whisperBack/gui.py:319
 #, python-format
@@ -108,7 +109,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Le rapport de bogue n'a pas pu être envoyé, probablement à cause de problèmes de réseau.\n\nPour contourner le problème vous pouvez sauvegarder le rapport de bogue sur une clef USB et essayer de nous l'envoyer à %s depuis votre compte de courriel en utilisant un autre système. Noter que votre rapport de bogue ne sera pas anonyme de cette façon, à moins que vous ne preniez des précautions supplémentaires (par exemple en utilisant Tor avec une adresse courriel jetable).\n\nVoulez-vous enregistrer le rapport de bogue dans un fichier?"
+msgstr "Le rapport de bogue n'a pas pu être envoyé, probablement à cause de problèmes de réseau.\n\nPour contourner le problème, vous pouvez enregistrer le rapport de bogue sous forme de fichier sur une clé USB et essayer de nous l'envoyer à %s à partir de votre compte de courriel en utilisant un autre système. Prenez note que votre rapport de bogue ne sera pas anonyme de cette façon, à moins que vous ne preniez des précautions supplémentaires (p. ex. en utilisant Tor avec un compte de courriel jetable).\n\nVoulez-vous enregistrer le rapport de bogue dans un fichier ?"
 
 #: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -116,7 +117,7 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Envoyer vos réactions dans un courriel chiffré."
+msgstr "Envoyez votre rétroaction dans un courriel chiffré."
 
 #: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
@@ -124,15 +125,15 @@ msgstr "Tous droits réservés © 2009-2012 Les développeurs de Tails (tails@bo
 
 #: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
-msgstr "Développeurs de Tails <tails@boum.org>"
+msgstr "Les développeurs de Tails <tails@boum.org>"
 
 #: ../whisperBack/gui.py:385
 msgid "translator-credits"
-msgstr "crédits de traduction"
+msgstr "traducteurs - crédits"
 
 #: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Cela ne semble être ni une URL valide, ni une clef OpenPGP."
+msgstr "Cela ne semble être ni une URL ni une clé OpenPGP valide."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
@@ -159,13 +160,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Envoyer vos réactions dans un courriel chiffré\nTous droits réservés (C) 2009-2012 Les développeurs de Tails <tails@boum.org>\n\nCe programme est un logiciel libre; vous pouvez le redistribuer et/ou le\nmodifier suivant les conditions de la licence publique générale GNU telle que publiée par la « Free Software Foundation »; soit la version 3 de la licence, soit (au choix)\ntoute version ultérieure.\n\nCe programme est distribué dans l'espoir d'être utile, mais SANS AUCUNE\nGARANTIE; sans même la garantie implicite de COMMERCIALISATION ou\nD'ADAPTATION À UN USAGE PARTICULIER. Voir la licence publique générale\nGNU pour plus d'informations.\n\nVous devriez avoir reçu une copie de la licence publique générale GNU\navec ce programme. Sinon, voir <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Envoyez votre rétroaction dans un courriel chiffré\nTous droits réservés (C) 2009-2012 Les développeurs de Tails <tails@boum.org>\n\nCe programme est un logiciel libre; vous pouvez le redistribuer et/ou le\nmodifier suivant les conditions de la licence publique générale GNU telle que publiée par la « Free Software Foundation »; soit la version 3 de la licence, soit (au choix)\ntoute version ultérieure.\n\nCe programme est distribué dans l'espoir d'être utile, mais SANS AUCUNE\nGARANTIE; sans même la garantie implicite de COMMERCIALISATION ou\nD'ADAPTATION À UN USAGE PARTICULIER. Voir la licence publique générale\nGNU pour plus d'informations.\n\nVous devriez avoir reçu une copie de la licence publique générale GNU\navec ce programme. Sinon, voir <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Si vous voulez que l'on chiffre les messages quand on vous répond, ajoutez votre ID de clef, un lien vers votre clef, ou la clef comme bloc de clef publique :"
+msgstr "Si vous voulez que l'on chiffre les messages quand nous vous répondons, ajoutez votre ID de clé, un lien vers votre clé, ou la clé comme bloc de clé publique :"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -177,11 +178,11 @@ msgstr "Description du bogue"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Adresse courriel optionnelle pour vous contacter"
+msgstr "Adresse courriel facultative pour vous contacter"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "clef PGP optionnelle"
+msgstr "clé PGP facultative"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"

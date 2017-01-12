@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Aleksandr Jadov <a.jadov@tata.lt>, 2013
-# Moo, 2015
+# Moo, 2015-2016
 # Rasa Sakarviene, 2014
 # Tautvydas Zukauskas <lordmu@linuxmail.org>, 2015
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-03-21 16:28+0000\n"
+"PO-Revision-Date: 2016-07-22 09:40+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/otf/torproject/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "Neteisingas kontakto OpenPGP raktas: %s"
 
 #: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Neteisingas kontakto OpenPGP viešo rakto blokas"
+msgstr "Neteisingas kontakto OpenPGP viešojo rakto blokas"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
@@ -62,7 +62,7 @@ msgstr "Tai gali užtrukti..."
 
 #: ../whisperBack/gui.py:232
 msgid "The contact email adress doesn't seem valid."
-msgstr "Kontakto elektroninis paštas atrodo negalioja."
+msgstr "Neatrodo, kad kontakto el. paštas yra tinkamas."
 
 #: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
@@ -96,7 +96,7 @@ msgstr "Šifravimo metu, įvyko klaida"
 #: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
-msgstr "Neįmanoma išsaugoti %s."
+msgstr "Neįmanoma įrašyti %s."
 
 #: ../whisperBack/gui.py:319
 #, python-format
@@ -106,7 +106,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Tikriausiai, dėl tinklo problemų, nepavyko išsiųsti klaidos pranešimo.\n\nNorėdami apeiti problemą, galite įrašyti klaidos pranešimą kaip failą į savo USB diską ir, naudojant savo el. pašto paskyrą kitoje sistemoje, pabandyti išsiųsti pranešimą mums, adresu %s. Turėkite omenyje, kad taip darant, jūsų klaidos pranešimas nebus anoniminis, nebent patys atliksite tolimesnius žingsnius (pvz., naudosite Tor su vienkartine el. pašto paskyra).\n\nAr norite įrašyti klaidos pranešimą į failą?"
+msgstr "Tikriausiai, dėl tinklo problemų, nepavyko išsiųsti klaidos pranešimo.\n\nNorėdami apeiti problemą, galite įrašyti klaidos pranešimą kaip failą į savo USB diską ir, naudojantis savo el. pašto paskyra kitoje sistemoje, pabandyti išsiųsti pranešimą mums, adresu %s. Turėkite omenyje, kad taip darant, jūsų klaidos pranešimas nebus anoniminis, nebent patys atliksite tolimesnius žingsnius (pvz., naudosite Tor su vienkartine el. pašto paskyra).\n\nAr norite įrašyti klaidos pranešimą į failą?"
 
 #: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -118,7 +118,7 @@ msgstr "Siųskite atsiliepimus užšifruotu paštu."
 
 #: ../whisperBack/gui.py:383
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Autorių teisės © 2009-2012 Tails kūrėjai (tails@boum.org)"
 
 #: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
@@ -134,7 +134,7 @@ msgstr "Tai nepanašu į teisingą URL ar OpenPGP raktą."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Copyright © 2009-2012 tails@boum.org"
+msgstr "Autorių teisės © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -157,13 +157,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Siųsti atsiliepimus šifruotu paštu\nTeisės saugomos (C) 2009-2012 Tails kūrėjai <tails@boum.org>\n\nTai nemokama programinė įranga; galite ja dalintis ir/ar modifikuoti\npagal GNU General Public  License salygas, kaip nurodyta\n Free Software Foundation; pagal trečią(3) ar vėlesnę licenzijos versiją.\n\nŠi programinė įranga dalinama tikintis kad ji bus naudinga, tačiau\nBE JOKIŲ GARANTIJŲ;   be PARDAVIMO ar TIKIMO TAM TIKRAM TIKLSU garantijos.  Žiūrėti GNU General Public License dėl daugiau detalių.\n\nTurėjote gauti GNU General Public licenzijos kopiją\nkartu su programa.  Jei ne, žiūrėti <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Siųsti atsiliepimus šifruotu paštu\nTeisės saugomos (C) 2009-2012 Tails kūrėjai <tails@boum.org>\n\nTai nemokama programinė įranga; galite ja dalintis ir/ar modifikuoti\npagal GNU General Public  License salygas, kaip nurodyta\n Free Software Foundation; pagal trečią(3) ar vėlesnę licencijos versiją.\n\nŠi programinė įranga dalinama tikintis kad ji bus naudinga, tačiau\nBE JOKIŲ GARANTIJŲ;   be PARDAVIMO ar TIKIMO TAM TIKRAM TIKLSU garantijos.  Išsamesnei informacijai, žiūrėkite GNU General Public License.\n\nTurėjote gauti GNU General Public licencijos kopiją\nkartu su programa.  Jei ne, žiūrėkite <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Jeigu norite, kad jums atsakydami, užšifruotume laiškus, pridėkite savo rakto ID, nuorodą į savo raktą arba raktą kaip viešo rakto bloką:"
+msgstr "Jeigu norite, kad jums atsakydami, užšifruotume laiškus, pridėkite savo rakto ID, nuorodą į savo raktą arba raktą kaip viešojo rakto bloką:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
