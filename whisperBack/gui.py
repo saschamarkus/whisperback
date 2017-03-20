@@ -107,10 +107,14 @@ class WhisperBackUI(object):
         #pylint: disable=C0301
         self.message.get_buffer().insert_with_tags(
             self.message.get_buffer().get_start_iter(),
-                underline ( "Name of the affected software" ) + "\n"*4 +
-                underline ( "Exact steps to reproduce the error" ) + "\n"*4 +
-                underline ( "Actual result and description of the error" ) + "\n"*4 +
-                underline ( "Desired result" ) + "\n"*4,
+            underline(_("Name of the affected software"))
+            + "\n"*4
+            + underline(_("Exact steps to reproduce the error"))
+            + "\n"*4
+            + underline(_("Actual result and description of the error"))
+            + "\n"*4
+            + underline(_("Desired result"))
+            + "\n"*4,
             self.message.get_buffer().create_tag(family="Monospace"))
 
         #pylint: disable=E1101
