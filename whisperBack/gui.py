@@ -329,7 +329,7 @@ Note that your bug report will not be \
 anonymous when doing so unless you take further steps yourself (e.g. using \
 Tor with a throw-away email account).\n\
 \n\
-Do you want to save the bug report to a file?" % self.backend.to_address)
+Do you want to save the bug report to a file?") % self.backend.to_address
         self.show_exception_dialog(message + "\n\n" + suggestion, exception,
                                    parent=self.progression_dialog,
                                    close_callback=cb_response,
