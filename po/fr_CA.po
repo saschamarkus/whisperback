@@ -4,7 +4,7 @@
 # 
 # Translators:
 # arpalord <arpalord@gmail.com>, 2012
-# French language coordinator <french.translation@rbox.me>, 2016
+# French language coordinator <french.translation@rbox.me>, 2016-2017
 # MaK <>, 2012
 # Onizuka, 2013
 # Tails developpers <amnesia@boum.org>, 2011
@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-12-21 16:57+0000\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"PO-Revision-Date: 2017-03-21 13:43+0000\n"
 "Last-Translator: French language coordinator <french.translation@rbox.me>\n"
 "Language-Team: French (Canada) (http://www.transifex.com/otf/torproject/language/fr_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -46,40 +46,56 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "La variable %s n'a été trouvée dans aucun des fichiers de configuration /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:148
+#: ../whisperBack/gui.py:110
+msgid "Name of the affected software"
+msgstr "Nom du logiciel concerné"
+
+#: ../whisperBack/gui.py:112
+msgid "Exact steps to reproduce the error"
+msgstr "Étapes exactes pour reproduire l'erreur"
+
+#: ../whisperBack/gui.py:114
+msgid "Actual result and description of the error"
+msgstr "Résultat observé et description de l'erreur"
+
+#: ../whisperBack/gui.py:116
+msgid "Desired result"
+msgstr "Résultat souhaité"
+
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
 msgstr "Impossible de charger une configuration valide."
 
-#: ../whisperBack/gui.py:214
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
 msgstr "Envoi du courriel..."
 
-#: ../whisperBack/gui.py:215
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
 msgstr "Envoi du courriel"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
 msgstr "Cela peut prendre du temps..."
 
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:236
 msgid "The contact email adress doesn't seem valid."
 msgstr "L'adresse courriel de contact ne semble pas valide."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "Impossible d'envoyer le courriel : erreur SMTP."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Impossible de se connecter au serveur."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "Impossible de créer ou d'envoyer le courriel."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
@@ -88,20 +104,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nLe rapport de bogue n'a pas pu être envoyé, probablement à cause de problèmes de réseau. Veuillez essayer de vous reconnecter au réseau et recliquer sur envoyer.\n\nSi cela ne fonctionne pas, l'on vous proposera d'enregistrer le rapport de bogue."
 
-#: ../whisperBack/gui.py:269
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "Votre message a été envoyé."
 
-#: ../whisperBack/gui.py:276
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "Une erreur est survenue lors du chiffrement."
 
-#: ../whisperBack/gui.py:296
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "Impossible d'enregistrer %s."
 
-#: ../whisperBack/gui.py:319
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -111,27 +127,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Le rapport de bogue n'a pas pu être envoyé, probablement à cause de problèmes de réseau.\n\nPour contourner le problème, vous pouvez enregistrer le rapport de bogue sous forme de fichier sur une clé USB et essayer de nous l'envoyer à %s à partir de votre compte de courriel en utilisant un autre système. Prenez note que votre rapport de bogue ne sera pas anonyme de cette façon, à moins que vous ne preniez des précautions supplémentaires (p. ex. en utilisant Tor avec un compte de courriel jetable).\n\nVoulez-vous enregistrer le rapport de bogue dans un fichier ?"
 
-#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Envoyez votre rétroaction dans un courriel chiffré."
 
-#: ../whisperBack/gui.py:383
+#: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Tous droits réservés © 2009-2012 Les développeurs de Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:384
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Les développeurs de Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:385
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "traducteurs - crédits"
 
-#: ../whisperBack/gui.py:412
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Cela ne semble être ni une URL ni une clé OpenPGP valide."
 

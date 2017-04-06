@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Ana B, 2013
-# Igor <lyricaltumor@gmail.com>, 2016
+# Igor <lyricaltumor@gmail.com>, 2016-2017
 # Igor <lyricaltumor@gmail.com>, 2015
 # Tea Horvatic <teahorvatic@yahoo.co.uk>, 2014
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-08-29 12:59+0000\n"
+"PO-Revision-Date: 2017-03-10 11:14+0000\n"
 "Last-Translator: Igor <lyricaltumor@gmail.com>\n"
 "Language-Team: Croatian (Croatia) (http://www.transifex.com/otf/torproject/language/hr_HR/)\n"
 "MIME-Version: 1.0\n"
@@ -106,7 +106,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Izvješće o grešci nije poslano, vjerojatno zbog problema s mrežom.\n\nKao obilazak tog problema možete spremiti izvješće o grešci kao datoteku na USB pogon i pokušati je poslati nama na %s s Vašeg email računa koristeći drugi sustav. Pri tome Vaše izvješće o grešci neće biti anonimno, osim ako ne poduzmete daljnje korake (npr. korištenje Tor-a uz jednokratni email račun).\n\nŽelite li spremiti izvješće o grešci u datoteku?"
+msgstr "Izvješće o grešci nije poslano, vjerojatno zbog problema s mrežom.\n\nKao obilazak tog problema možete spremiti izvješće o grešci kao datoteku na USB pogon i pokušati je poslati nama na %s s Vašeg email računa koristeći drugi sustav. Pri tome Vaše izvješće o grešci neće biti anonimno, osim ako ne poduzmete daljnje korake (npr. korištenje Tora uz jednokratni email račun).\n\nŽelite li spremiti izvješće o grešci u datoteku?"
 
 #: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
