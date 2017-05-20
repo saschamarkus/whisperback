@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Communia <ameaneantie@riseup.net>, 2013-2016
+# Communia <ameaneantie@riseup.net>, 2013-2017
 # Eduardo Bonsi, 2013
 # Augustine <evandro@geocities.com>, 2013
 # Bruno Geronimo <bruuh@outlook.com>, 2012
@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-11-18 20:42+0000\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"PO-Revision-Date: 2017-05-13 00:13+0000\n"
 "Last-Translator: Communia <ameaneantie@riseup.net>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/otf/torproject/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -48,40 +48,56 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "A variável %s não foi encontrada em nenhum dos arquivos de configuração /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:148
+#: ../whisperBack/gui.py:110
+msgid "Name of the affected software"
+msgstr "Nome do programa afetado"
+
+#: ../whisperBack/gui.py:112
+msgid "Exact steps to reproduce the error"
+msgstr "Passos exatos para reproduzir o problema"
+
+#: ../whisperBack/gui.py:114
+msgid "Actual result and description of the error"
+msgstr "Resultado e descrição do erro"
+
+#: ../whisperBack/gui.py:116
+msgid "Desired result"
+msgstr "Resultado desejado"
+
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
 msgstr "Não foi possível carregar uma configuração válida."
 
-#: ../whisperBack/gui.py:214
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
 msgstr "Enviando e-mail..."
 
-#: ../whisperBack/gui.py:215
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
 msgstr "Enviando e-mail"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
 msgstr "Esta tarefa pode demorar algum tempo..."
 
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:236
 msgid "The contact email adress doesn't seem valid."
 msgstr "O endereço do e-mail de contato parece não ser válido."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "Impossível enviar o e-mail: erro SMTP."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Impossível conectar-se ao servidor."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "Impossível criar ou enviar o e-mail."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
@@ -90,20 +106,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nO relatório de bug não pôde ser enviado, provavelmente por causa de problemas de rede. Por favor, tente reconectar-se à rede e clique em 'enviar novamente'.\n\nSe isso não funcionar, você poderá escolher salvar o relatório do bug."
 
-#: ../whisperBack/gui.py:269
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "Sua mensagem foi enviada."
 
-#: ../whisperBack/gui.py:276
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "Ocorreu um erro durante a encriptação."
 
-#: ../whisperBack/gui.py:296
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "Impossível salvar %s."
 
-#: ../whisperBack/gui.py:319
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -113,27 +129,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "O  relatório de bug não foi enviado, provavelmente devido a problemas de rede.\n\nVocê pode tentar salvar o relatório como um arquivo em uma memória USB e nos enviar em %s de sua conta e-mail, usando um outro sistema. Lembre que seu relatório de bug não será anônimo, a menos que você o anonimize por conta própria (ex. usando Tor com uma conta de e-mail descartável).\n\nVocê quer salvar o relatório de bug em um arquivo? "
 
-#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Enviar feedback em um e-mail criptografado."
 
-#: ../whisperBack/gui.py:383
+#: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails developers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:384
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Desenvolvedores Tails  <tails@boum.org>"
 
-#: ../whisperBack/gui.py:385
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "créditos de tradução"
 
-#: ../whisperBack/gui.py:412
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Esta URL ou chave OpenPGP não parece ser válida."
 

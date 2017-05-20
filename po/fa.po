@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Amir Moezzi <amirreza.mz@yahoo.com>, 2017
 # ardeshir, 2012
 # Mohammad Hossein <desmati@gmail.com>, 2014
 # wtf <hmn23@yahoo.com>, 2012
 # mohammad.s.n, 2013
 # Mohammad Hossein Mojtahedi <Mhm5000@gmail.com>, 2013
 # Mohammad Razavi <razavi.moh@gmail.com>, 2013
-# runasand <runa.sandvik@gmail.com>, 2012
+# runasand <inactive+runasand@transifex.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-03-21 16:28+0000\n"
-"Last-Translator: Mohammad Hossein <desmati@gmail.com>\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"PO-Revision-Date: 2017-05-18 19:14+0000\n"
+"Last-Translator: Amir Moezzi <amirreza.mz@yahoo.com>\n"
 "Language-Team: Persian (http://www.transifex.com/otf/torproject/language/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,40 +47,56 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "پارامتر مورد نظر، %s، در هیچ کدام از فایل های تنظیمات زیر پیدا نشد:\n/etc/whisperback/config.py\n~/.whisperback/config.py\n./config.py"
 
-#: ../whisperBack/gui.py:148
+#: ../whisperBack/gui.py:110
+msgid "Name of the affected software"
+msgstr "نام نرم افزار اثر گذار"
+
+#: ../whisperBack/gui.py:112
+msgid "Exact steps to reproduce the error"
+msgstr "قدم های دقیق برای تصحیح کردن خطا"
+
+#: ../whisperBack/gui.py:114
+msgid "Actual result and description of the error"
+msgstr "دلیل و شرح دقیق خطا"
+
+#: ../whisperBack/gui.py:116
+msgid "Desired result"
+msgstr "نتیجه مطلوب"
+
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
 msgstr "امکان بارگذاری یک پیکربندی معتبر وجود ندارد."
 
-#: ../whisperBack/gui.py:214
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
 msgstr "درحال ارسال نامه..."
 
-#: ../whisperBack/gui.py:215
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
 msgstr "درحال ارسال نامه"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
 msgstr "این عملیات ممکن است کمی بطول بیانجامد..."
 
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:236
 msgid "The contact email adress doesn't seem valid."
 msgstr "آدرس ایمیل وارد شده به نظر صحیح نمی‌رسد."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "امکان ارسال نامه وجود ندارد: خطای SMTP."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "امکان برقراری ارتباط با سرور وجود ندارد."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "امکان ایجاد و یا ارسال نامه وجود ندارد."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
@@ -88,20 +105,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nگزارش باگ\"خطا نرم افزار\" فرستاده نشد. به نظر میرسد که این اشکال از شبکه باشد. لطفا سعی کنید  دوباره به شبکه متصل شوید و روی گزینه ارسال کلیک کنید.⏎\n⏎\nاگرموارد ذکر شده در بالا کار نکرد، به شما پیشنهاد داده خواهد شد تا گزارش باگ \"خطا نرم افزار\" را ذخیره کنید."
 
-#: ../whisperBack/gui.py:269
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "پیغام شما ارسال شد."
 
-#: ../whisperBack/gui.py:276
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "در هنگام رمزنگاری خطایی رخ داده است."
 
-#: ../whisperBack/gui.py:296
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "امکان ذخیره سازی اطلاعات وجود ندارد%s"
 
-#: ../whisperBack/gui.py:319
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -111,27 +128,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "گزارش باگ \"خطا نرم افزار\"  فرستاده نشد. به نظر میرسد که این اشکال از شبکه باشد.⏎\n⏎\nبرای حل این مشکل، میتوانید فایل گزارش باگ\"خطا نرم افزار\" را روی یک درایو USB ذخیره  و از طریق ایمیل و با استفاده از یک سیستم دیگر برای ما به آدرس %s بفرستید. توجه داشته باشید که گزارش باگ\"خطا نرم افزار\" سیستم شما، ناشناس نخواهد بود مگر اینکه اقدامات مقتضی را در جهت رفع مشکل پیش آمده انجام دهید. (بطور مثال از یک ایمیل ناشناس و بر روی شبکه تور اقدام به ارسال گزارش کنید)⏎\n⏎\nآیا مایلید که فایل گزارش باگ \"خطا نرم افزار\" را ذخیره کنید؟"
 
-#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "ارسال بازخورد در یک نامه رمزنگاری شده."
 
-#: ../whisperBack/gui.py:383
+#: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:384
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails developers <tails@boum.org>"
 
-#: ../whisperBack/gui.py:385
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "اعتبار-مترجم"
 
-#: ../whisperBack/gui.py:412
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "این به نظر یک آدرس معتبر و یا یک کلید تبادل معتبر OpenPGP نیست."
 

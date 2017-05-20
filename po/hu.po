@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Falu <info@falu.me>, 2017
 # vargaviktor <viktor.varga@gmail.com>, 2013
 # vargaviktor <viktor.varga@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-03-21 16:28+0000\n"
-"Last-Translator: vargaviktor <viktor.varga@gmail.com>\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"PO-Revision-Date: 2017-05-02 10:24+0000\n"
+"Last-Translator: Falu <info@falu.me>\n"
 "Language-Team: Hungarian (http://www.transifex.com/otf/torproject/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,40 +42,56 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "A %s változó nem található a egyik konfigurációs állományban sem az alábbiak közül /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:148
+#: ../whisperBack/gui.py:110
+msgid "Name of the affected software"
+msgstr "Az érintett szoftver neve"
+
+#: ../whisperBack/gui.py:112
+msgid "Exact steps to reproduce the error"
+msgstr "A hiba reprodukálásának pontos lépései"
+
+#: ../whisperBack/gui.py:114
+msgid "Actual result and description of the error"
+msgstr "Aktuális eredmény és a hiba leírása"
+
+#: ../whisperBack/gui.py:116
+msgid "Desired result"
+msgstr "Elvárt eredmény"
+
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
 msgstr "Nem lehetséges érvényes konfiguráció betöltése."
 
-#: ../whisperBack/gui.py:214
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
 msgstr "Email küldése..."
 
-#: ../whisperBack/gui.py:215
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
 msgstr "Email küldése"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
 msgstr "Ez egy kis időt vehet igénybe..."
 
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:236
 msgid "The contact email adress doesn't seem valid."
 msgstr "Az email cím nem tűnik érvényesnek."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "Sikertelen email küldés: SMTP hiba."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Nem lehetséges a kapcsolódás a szerverhez."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "Az email létrehozása vagy küldése sikertelen."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
@@ -83,20 +100,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nA hibajelentés elküldése sikertelen, valószínűleg hálózati problémák miatt. Kérjük csatlakozzon újra a hálózathoz, majd kattintson a küldésre újra.\n\nHa ez nem működik, lehetősége lesz lementeni a hibajelentést."
 
-#: ../whisperBack/gui.py:269
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "Az üzenete elküldésre került."
 
-#: ../whisperBack/gui.py:276
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "Hiba történt a titkosítás során."
 
-#: ../whisperBack/gui.py:296
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "A %s mentése sikertelen."
 
-#: ../whisperBack/gui.py:319
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -106,27 +123,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "A hibabejelentés nem volt elküldhető hálózati probléma miatt.\n\nKerülő lehetőségként lementheti a hibát egy  USB meghajtóra, elküldheti a %s címre, az email címéről, egy másik gépről. Fontos, hogy tudja, hogy eze esetben nem lesz névtelen a beküldése, csak akkor ha további lépéseket tesz. (Például: Tor-t egy eldobható email címmel együtt használva.)\n\nSzeretné lementeni a hibajelentést egy fájlba?"
 
-#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Visszajelzés küldése titkosított emailben."
 
-#: ../whisperBack/gui.py:383
+#: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails fejlesztők (tails@boum.org)"
 
-#: ../whisperBack/gui.py:384
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails fejlesztők <tails@boum.org>"
 
-#: ../whisperBack/gui.py:385
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "fordítás készítői"
 
-#: ../whisperBack/gui.py:412
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Nem tűnik érvényes URL-nek, vagy OpenPGP kulcsnak."
 
