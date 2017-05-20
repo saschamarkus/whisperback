@@ -592,3 +592,8 @@ Minor improvements
 
 * Make bug report template translatable
 * Import PO files from Transifex, update POT and PO files.
+
+1.7.10
+======
+
+* Import PO files from Transifex, update POT and PO files.
