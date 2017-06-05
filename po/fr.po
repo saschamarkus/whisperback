@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # arpalord <arpalord@gmail.com>, 2012
 # French language coordinator <french.translation@rbox.me>, 2016-2017
@@ -81,7 +81,7 @@ msgstr "Cela peut prendre du temps..."
 
 #: ../whisperBack/gui.py:236
 msgid "The contact email adress doesn't seem valid."
-msgstr "L'adresse courriel de contact ne semble pas valide."
+msgstr "L'adresse de contact ne semble pas valide."
 
 #: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
@@ -137,15 +137,15 @@ msgstr "Envoyez vos commentaires dans un courriel chiffré."
 
 #: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Tous droits réservés © 2009-2012 Les développeurs de Tails (tails@boum.org)"
+msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 
 #: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
-msgstr "Les développeurs de Tails <tails@boum.org>"
+msgstr "Tails developers <tails@boum.org>"
 
 #: ../whisperBack/gui.py:389
 msgid "translator-credits"
-msgstr "traducteurs - crédits"
+msgstr "translator-credits"
 
 #: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
@@ -153,11 +153,11 @@ msgstr "Cela ne semble être ni une URL ni une clé OpenPGP valide."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Tous droits réservés © 2009-2012 tails@boum.org"
+msgstr "Copyright © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
-msgstr "https://tails.boum.org/"
+msgstr "https://tails.boum.org/index.fr.html"
 
 #: ../data/whisperback.ui.h:4
 msgid ""
@@ -176,7 +176,25 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Envoyez vos commentaires dans un courriel chiffré\nTous droits réservés (C) 2009-2012 Les développeurs de Tails <tails@boum.org>\n\nCe programme est un logiciel libre; vous pouvez le redistribuer et/ou le\nmodifier suivant les conditions de la licence publique générale GNU telle que publiée par la « Free Software Foundation »; soit la version 3 de la licence, soit (au choix)\ntoute version ultérieure.\n\nCe programme est distribué dans l'espoir d'être utile, mais SANS AUCUNE\nGARANTIE; sans même la garantie implicite de COMMERCIALISATION ou\nD'ADAPTATION À UN USAGE PARTICULIER. Voir la licence publique générale\nGNU pour plus d'informations.\n\nVous devriez avoir reçu une copie de la licence publique générale GNU\navec ce programme. Sinon, voir <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - Envoyez vos commentaires dans un courriel chiffré\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"\n"
+"Ce programme est un logiciel libre; vous pouvez le redistribuer et/ou le\n"
+"modifier suivant les conditions de la licence publique générale GNU telle "
+"que publiée par\n"
+"la « Free Software Foundation »; soit la version 3 de la licence, soit (au "
+"choix)\n"
+"toute version ultérieure.\n"
+"\n"
+"Ce programme est distribué dans l'espoir d'être utile, mais SANS AUCUNE\n"
+"GARANTIE; sans même la garantie implicite de COMMERCIALISATION ou\n"
+"D'ADAPTATION À UN USAGE PARTICULIER. Voir la licence publique générale\n"
+"GNU pour plus d'informations.\n"
+"\n"
+"Vous devriez avoir reçu une copie de la licence publique générale GNU\n"
+"avec ce programme. Sinon, voir <https://www.gnu.org/licenses/licenses.fr."
+"html>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
