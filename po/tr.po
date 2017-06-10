@@ -3,93 +3,101 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# digitaldreamer <digitaldreamer@email.cz>, 2012
-# Mikulas Holy, 2017
-# Radek Bensch <inactive+Radog@transifex.com>, 2013
+# sgtpepper <barlasmirc@gmail.com>, 2013
+# Bullgeschichte <bullgeschichte@riseup.net>, 2015
+# Emre <conan@operamail.com>, 2013
+# Kaya Zeren <kayazeren@gmail.com>, 2015-2016
+# Ozancan Karataş <ozanc27@icloud.com>, 2015
+# sgtpepper <barlasmirc@gmail.com>, 2013
+# Tails_developers <tails@boum.org>, 2014
+# Tails_developers <tails@boum.org>, 2014
+# T. E. Kalayci <tekrei@fsfe.org>, 2017
+# Volkan Gezer <volkangezer@gmail.com>, 2014-2015
+# Yasin Özel <iletisim@yasinozel.com.tr>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2017-05-28 21:53+0000\n"
-"Last-Translator: Mikulas Holy\n"
-"Language-Team: Czech (http://www.transifex.com/otf/torproject/language/cs/)\n"
+"PO-Revision-Date: 2017-04-24 07:12+0000\n"
+"Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/otf/torproject/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: cs\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "Neplatný kontaktní email: %s"
+msgstr "Geçersiz iletişim e-postası: %s"
 
 #: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Neplatný kontaktní OpenPGP klíč: %s"
+msgstr "Geçersiz iletişim OpenPGP anahtarı: %s"
 
 #: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Neplatný blok veřejného OpenPGP klíče"
+msgstr "Geçersiz iletişim OpenPGP herkese açık anahtar bloğu"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "%s proměnná nebyla nalezena v konfiguračních souborech /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "%s değişkeni /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py ayar dosyalarının hiçbirinde bulunamadı"
 
 #: ../whisperBack/gui.py:110
 msgid "Name of the affected software"
-msgstr "Název postiženého softwaru"
+msgstr "Etkilenen yazılımın adı"
 
 #: ../whisperBack/gui.py:112
 msgid "Exact steps to reproduce the error"
-msgstr "Přesný popis kroků po kterých dochází k chybě"
+msgstr "Hatayı yeniden oluşturmak için kesin adımlar"
 
 #: ../whisperBack/gui.py:114
 msgid "Actual result and description of the error"
-msgstr "Aktuální výsledek a popis chyby"
+msgstr "Oluşan sonuç ve hatanın tanımı"
 
 #: ../whisperBack/gui.py:116
 msgid "Desired result"
-msgstr "Očekávaný výsledek"
+msgstr "Beklenen sonuç"
 
 #: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
-msgstr "Nelze nahrát platnou konfiguraci"
+msgstr "Geçerli bir ayar yüklenemedi."
 
 #: ../whisperBack/gui.py:218
 msgid "Sending mail..."
-msgstr "Odesílám mail..."
+msgstr "Posta gönderiliyor..."
 
 #: ../whisperBack/gui.py:219
 msgid "Sending mail"
-msgstr "Odesílám mail"
+msgstr "Posta gönderiliyor"
 
 #. pylint: disable=C0301
 #: ../whisperBack/gui.py:221
 msgid "This could take a while..."
-msgstr "Může to chvíli trvat..."
+msgstr "Bu işlem biraz zaman alabilir..."
 
 #: ../whisperBack/gui.py:236
 msgid "The contact email adress doesn't seem valid."
-msgstr "Zdá se, že kontaktní emailová adresa je neplatná."
+msgstr "İletişim e-postası geçerli gibi görünmüyor."
 
 #: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
-msgstr "Mail nelze odeslat. Chyba SMTP."
+msgstr "E-posta gönderilemedi: SMTP hatası."
 
 #: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
-msgstr "Nelze se připojit k serveru."
+msgstr "Sunucuya bağlanılamadı."
 
 #: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
-msgstr "Mail nelze vytvořit nebo odeslat."
+msgstr "Posta oluşturulamadı ya da gönderilemedi."
 
 #: ../whisperBack/gui.py:260
 msgid ""
@@ -98,20 +106,20 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nHlášení o problému nebylo možné odeslat, pravděpodobně kvůli problémům sítě. Zkuste se, prosím, znovu připojit k síti a znovu kliknout na Odeslat.\n\nPokud to nebude fungovat, bude vám nabídnuta možnost hlášení o problému uložit."
+msgstr "\n\nHata raporu ağ sorunları nedeniyle gönderilemedi. Lütfen ağa yeniden bağlanarak yeniden göndermeyi deneyin.\n\nİşe yaramazsa hata raporunuzun kaydedilmesi önerilir."
 
 #: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
-msgstr "Vaše zpráva byla úspěšně odeslána."
+msgstr "İletiniz gönderildi."
 
 #: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
-msgstr "Během šifrování došlo k chybě."
+msgstr "Şifreleme sırasında bir sorun çıktı."
 
 #: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
-msgstr "Nelze uložit %s."
+msgstr "%s kaydedilemedi."
 
 #: ../whisperBack/gui.py:323
 #, python-format
@@ -121,7 +129,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Hlášení o problému nebylo možné odeslat, pravděpodobně kvůli problémům sítě. \n\nLze to obejít tak, že své hlášení o problému uložíte na USB flashdisk a pokusíte s ho poslat na %s z jiného počítače. Mějte na paměti, že vaše hlášení v tomto případě nebude anonymní, pokud se o to nepostaráte smi (jako například že se připojít přez Tor jednoráznově založenému emailovému účtu).\n\nChcete tedy uložit hlášení o problému jako soubor?"
+msgstr "Hata raporu ağ sorunlarından dolayı gönderilemedi.\n\nGeçici bir çözüm olarak hata raporunu USB belleğinize bir dosya olarak kaydedip başka bir sistem kullanarak kendi e-posta hesabınızdan %s adresini kullanarak bize gönderebilirsiniz. Bu işlemi yaparken kendi önlemlerinizi almazsanız anonimliğiniz ortadan kalkar (Tor yazılımını kullan-at bir e-posta ile kullanmak gibi). \n\nHata raporunu bir dosyaya kaydetmek istiyor musunuz?"
 
 #: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -129,27 +137,27 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Poslat odezvu jako šifrovaný mail."
+msgstr "Şifrelenmiş e-posta ile geri bildirim gönderin."
 
 #: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Telif Hakkı © 2009-2012 Tails Geliştiricileri  (tails@boum.org)"
 
 #: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
-msgstr "Vývojáři softwaru Tails <tails@boum.org>"
+msgstr "Tails geliştiricileri <tails@boum.org>"
 
 #: ../whisperBack/gui.py:389
 msgid "translator-credits"
-msgstr "translator-credits"
+msgstr "Çeviriye Katkıda Bulunanlar"
 
 #: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Tohle není správná URL adresa ani OpenPGP klíč."
+msgstr "Bu geçerli bir İnternet adresi ya da OpenPGP anahtarına benzemiyor."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Copyright © 2009-2012 tails@boum.org"
+msgstr "Telif Hakkı © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -172,46 +180,46 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Odešlete vaší odezvu jako zašifrovaný email\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\nTento program je svobodný software; můžete ho šířit dál a / nebo modifikovat pokud dodržíte podmínky GNU General Public License tak, jak jí publikovala Free Software Foundation; buď ve verzi 3 této license, nebo (pokud chcete) kteroukoli její novější verzi.\n\nTento program je distribuován v naději, že bude užitečný, ale ZCELA BEZ ZÁRUKY;   i bez implicitní záurky PRODEJNOSTI nebo VHODNOSTI KE KONKRÉTNÍMU ÚČELU.   Podrobnosti najdete v textu GNU\nGeneral Public License.\n\nKopii GNU General Public License jste měli dostat spolu s tímto programem. Pokud tomu tak není, najde ji na <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Şifrelenmiş e-posta ile geri bildirim gönderin.\nTelif Hakkı (C) 2009-2012 Tails geliştiricileri <tails@boum.org>\n\nBu program özgür bir yazılımdır: Özgür Yazılım Vakfı tarafından yayımlanan\nGNU Genel Kamu Lisansı 3. sürüm ya da (isteğinize bağlı olarak) daha\nsonraki sürümlerinin hükümleri altında yeniden dağıtabilir ve/veya\ndeğiştirebilirsiniz.\n\nBu program işe yaraması umuduyla dağıtılmıştır, ancak HİÇBİR GARANTİSİ\nYOKTUR; hatta SATILABİLİRLİK ya da BİR AMACA HİZMET gibi bir garantisi de\nyoktur. Ayrıntılı bilgi almak için GNU Genel Kamu Lisansı içeriğine bakın.\n\nBu programın içeriğinde bir GNU Genel Kamu Lisansı kopyası da bulunmalı.\nElinizde yoksa <http://www.gnu.org/licenses/> adresine bakın.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Pokud chcete, abychom šifrovali zprávy až vám budeme odpovídat, přidejte ID svého klíče, odkaz na váš klíč, nebo klíč jako blok veřejného klíče."
+msgstr "Size yanıt verirken iletilerimizi şifrelememizi istiyorsanız, anahtar kodunuzu, anahtarınıza yöneltilmiş bir bağlantıyı ya da herkese açık anahtar bloğu şeklindeki bir anahtarı ekleyin:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
-msgstr "Shrnutí"
+msgstr "Özet"
 
 #: ../data/whisperback.ui.h:23
 msgid "Bug description"
-msgstr "Popis problému"
+msgstr "Hata açıklaması"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Nepovinná adresa, na které vás můžeme kontaktovat."
+msgstr "İsteğinize bağlı olarak size ulaşılabilecek e-posta adresi"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "nepovinný PGP klíč"
+msgstr "İsteğe bağlı PGP anahtarı"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
-msgstr "Technické detaily k přiložení"
+msgstr "Katılacak teknik ayrıntılar"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
-msgstr "hlavičky"
+msgstr "üst bilgiler"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "informace pro debuggování"
+msgstr "hata ayıklama bilgileri"
 
 #: ../data/whisperback.ui.h:29
 msgid "Help"
-msgstr "Nápověda"
+msgstr "Yardım"
 
 #: ../data/whisperback.ui.h:30
 msgid "Send"
-msgstr "Odeslat"
+msgstr "Gönder"
