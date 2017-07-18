@@ -2,9 +2,9 @@ Source: whisperback
 Section: net
 Priority: optional
 Maintainer: Tails developers <tails@boum.org>
-Homepage: https://git.immerda.ch/whisperback/
-Vcs-Browser: https://git.immerda.ch/whisperback/
-Vcs-Git: https://git-git.immerda.ch/whisperback
+Homepage: https://git-tails.immerda.ch/whisperback/
+Vcs-Browser: https://git-tails.immerda.ch/whisperback/
+Vcs-Git: https://git-tails.immerda.ch/whisperback
 Build-Depends: debhelper (>= 7.0.50~),
                dh-python,
                gir1.2-gtk-3.0,
