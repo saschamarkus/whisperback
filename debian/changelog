@@ -1,3 +1,10 @@
+whisperback (1.7.12) feature-13505-update-whisperback-text-files; urgency=medium
+
+  * Import PO files from Transifex, update POT and PO files.
+  * Fix URLs in Debian control file (Closes: #13505).
+
+ -- bertagaz <bertagaz@ptitcanardnoir.org>  Fri, 28 Jul 2017 11:22:22 +0200
+
 whisperback (1.7.11) testing; urgency=medium
 
   * Import PO files from Transifex, update POT and PO files.

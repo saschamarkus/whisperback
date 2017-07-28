@@ -602,3 +602,9 @@ Minor improvements
 ======
 
 * Import PO files from Transifex, update POT and PO files.
+
+1.7.12
+======
+
+* Import PO files from Transifex, update POT and PO files.
+* Fix URLs in Debian control file (Closes Tails bug #13505).
