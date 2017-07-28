@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: WhisperBack
 Upstream-Contact: Tails developers <tails@boum.org>
-Source: http://git.immerda.ch/?p=whisperback.git
+Source: https://git-tails.immerda.ch/whisperback/
 
 Files: *
 Copyright: 2009-2015, Tails developers <tails@boum.org>
