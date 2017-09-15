@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2017-03-21 14:50+0000\n"
+"PO-Revision-Date: 2017-06-20 09:47+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/otf/torproject/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -98,7 +98,7 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nFejl rapporten kunne ikke sende, sandsynligvis på grund af netværks problemer. Prøv venligst at genoprette forbindelsen til netværket og tryk \"Send Igen\".\n\nHvis det ikke virker, vil du få mulighed for at gemme fejl rapporten."
+msgstr "\n\nFejlrapporten kunne ikke sende, sandsynligvis på grund af netværks problemer. Prøv venligst at genoprette forbindelsen til netværket og tryk \"Send Igen\".\n\nHvis det ikke virker, vil du få mulighed for at gemme fejlrapporten."
 
 #: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
@@ -106,7 +106,7 @@ msgstr "Din besked er sendt."
 
 #: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
-msgstr "En fejl opstod under krypteringen."
+msgstr "Der opstod en fejl under krypteringen."
 
 #: ../whisperBack/gui.py:300
 #, python-format

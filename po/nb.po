@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2017-03-25 14:04+0000\n"
+"PO-Revision-Date: 2017-06-11 18:20+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/otf/torproject/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -80,7 +80,7 @@ msgstr "E-postadressen later ikke til å være gyldig"
 
 #: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
-msgstr "Kunne ikke sende e-posten: SMTP feil."
+msgstr "Kunne ikke sende e-posten: SMTP-feil."
 
 #: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
