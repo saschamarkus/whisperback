@@ -602,3 +602,14 @@ Minor improvements
 ======
 
 * Import PO files from Transifex, update POT and PO files.
+
+1.7.12
+======
+
+* ?
+
+1.7.13
+======
+
+* Import PO files from Transifex, update POT and PO files.
+* Update URLs in debian/control.

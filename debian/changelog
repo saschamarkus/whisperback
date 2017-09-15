@@ -1,3 +1,16 @@
+whisperback (1.7.13) testing; urgency=medium
+
+  * Import PO files from Transifex, update POT and PO files.
+  * Update URLs in debian/control.
+
+ -- Tails developers <tails@boum.org>  Fri, 15 Sep 2017 23:24:33 +0200
+
+whisperback (1.7.12) testing; urgency=medium
+
+  * ?
+
+ -- Tails developers <tails@boum.org>  Fri, 15 Sep 2017 21:53:15 +0200
+
 whisperback (1.7.11) testing; urgency=medium
 
   * Import PO files from Transifex, update POT and PO files.
