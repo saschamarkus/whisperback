@@ -588,7 +588,7 @@ Minor improvements
 * Import PO files from Transifex, update POT and PO files.
 
 1.7.9
- =====
+=====
 
 * Make bug report template translatable
 * Import PO files from Transifex, update POT and PO files.
@@ -606,10 +606,10 @@ Minor improvements
 1.7.12
 ======
 
-* ?
+* Import PO files from Transifex, update POT and PO files.
+* Fix URLs in Debian control file (Closes Tails bug #13505).
 
 1.7.13
 ======
 
 * Import PO files from Transifex, update POT and PO files.
-* Update URLs in debian/control.
