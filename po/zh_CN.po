@@ -5,6 +5,7 @@
 # Translators:
 # khi, 2013
 # 郑华 <hua5679@gmail.com>, 2012
+# khi, 2017
 # YF <yfdyh000@gmail.com>, 2017
 # xtoaster <zhazhenzhong@gmail.com>, 2012
 # 吴致远 <wuzhiyuan.cn@gmail.com>, 2017
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2017-05-02 16:18+0000\n"
-"Last-Translator: YF <yfdyh000@gmail.com>\n"
+"PO-Revision-Date: 2018-02-20 18:43+0000\n"
+"Last-Translator: Mingye Wang <arthur200126@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/otf/torproject/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -204,7 +205,7 @@ msgstr "所含技术细节"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
-msgstr "头部"
+msgstr "标头"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"

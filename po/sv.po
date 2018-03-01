@@ -4,16 +4,17 @@
 # 
 # Translators:
 # cryptohead <cryptohead@gmail.com>, 2013
-# Jonatan Nyberg <jonatan@autistici.org>, 2017
-# Isis, 2014
+# Jacob Andersson <jacob.c.andersson@protonmail.com>, 2017
+# Jonatan Nyberg, 2017
+# leveebreaks, 2014
 # WinterFairy <winterfairy@riseup.net>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2017-05-21 10:15+0000\n"
-"Last-Translator: Jonatan Nyberg <jonatan@autistici.org>\n"
+"PO-Revision-Date: 2018-02-20 18:43+0000\n"
+"Last-Translator: bsor\n"
 "Language-Team: Swedish (http://www.transifex.com/otf/torproject/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,7 +31,7 @@ msgstr "Ogiltig e-postadress: %s"
 #: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Ogiltig OpenPGP-nyckel: %s"
+msgstr "Ogiltig kontakt OpenPGP-nyckel: %s"
 
 #: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
@@ -122,7 +123,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Buggrapporten kunde inte skickas, troligen på grund av nätverksproblem.\n\nFör att komma runt problemet kan du spara buggrapporten till fil på en USB-sticka och sedan försöka skicka den till oss på %s från ett e-post konto på ett annat system. Notera att din buggrapport då inte kommer vara anonym såvida du inte vidtar ytterligare åtgärder själv för att säkerställa detta (t.ex. använder Tor med ett tillfälligt e-post konto).\n\nVill du spara buggrapporten till en fil?"
+msgstr "Buggrapporten kunde inte skickas, troligen på grund av nätverksproblem.\n\nFör att komma runt problemet kan du spara buggrapporten som en fil på en USB-sticka och sedan försöka skicka den till oss på %s från ett e-post konto på ett annat system. Notera att din buggrapport då inte kommer vara anonym såvida du inte vidtar ytterligare åtgärder själv för att säkerställa detta (t.ex. använder Tor med ett tillfälligt e-post konto).\n\nVill du spara buggrapporten till en fil?"
 
 #: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"

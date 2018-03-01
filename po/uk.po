@@ -4,15 +4,16 @@
 # 
 # Translators:
 # LinuxChata, 2014
+# O Herenko <herenko@ex.ua>, 2018
 # Pinro Lomil <lomil97@gmail.com>, 2013
 # Любомир <n.lyubomyr@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-10-22 23:20+0000\n"
-"Last-Translator: Любомир <n.lyubomyr@gmail.com>\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"PO-Revision-Date: 2018-02-20 18:43+0000\n"
+"Last-Translator: Андрій Бандура <andriykopanytsia@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/otf/torproject/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,40 +43,56 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "Змінна %s не була знайдена в жодному файлі конфігурації /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:148
+#: ../whisperBack/gui.py:110
+msgid "Name of the affected software"
+msgstr "Назва ураженого програмного забезпечення"
+
+#: ../whisperBack/gui.py:112
+msgid "Exact steps to reproduce the error"
+msgstr "Точні кроки для відтворення помилки"
+
+#: ../whisperBack/gui.py:114
+msgid "Actual result and description of the error"
+msgstr "Фактичний результат і опис помилки"
+
+#: ../whisperBack/gui.py:116
+msgid "Desired result"
+msgstr "Бажаний результат"
+
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
 msgstr "Не вдалося завантажити вірну конфігурацію."
 
-#: ../whisperBack/gui.py:214
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
 msgstr "Відправлення листа..."
 
-#: ../whisperBack/gui.py:215
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
 msgstr "Відправлення листа"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
 msgstr "Це може зайняти деякий час..."
 
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:236
 msgid "The contact email adress doesn't seem valid."
 msgstr "Невірна контактна адреса електронної пошти."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "Не вдалося відправити лист: помилка SMTP."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Не вдалося підключитися до серверу."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "Не вдалося створити або відправити повідомлення."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
@@ -84,20 +101,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nПовідомлення про помилку не може бути відправлено ймовірно через проблеми у мережі. Будь ласка, спробуйте підключитися до мережі і натисніть кнопку відправити знову.\n\n\nЯкщо це не допоможе, то Вам буде запропоновано зберегти звіт про помилку."
 
-#: ../whisperBack/gui.py:269
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "Ваше повідомлення було відправлено."
 
-#: ../whisperBack/gui.py:276
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "При шифруванні виникла помилка."
 
-#: ../whisperBack/gui.py:296
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "Не вдалося зберегти %s."
 
-#: ../whisperBack/gui.py:319
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -107,27 +124,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Повідомлення про помилку не може бути відправлено ймовірно через проблеми у мережі.\n\nМожливо зберегти звіт про помилку у вигляді файлу на USB диск і спробувати відправити його нам за адресою %s по електронній пошті за допомогою іншої системи. Зверніть увагу на те, що у цьому разі Ваше повідомлення про помилку не буде анонімним, якщо Ви не вживете додаткових кроків самостійно (наприклад, за допомогою Tor з одноразовим обліковим записом електронної пошти).\n\nВи хочете зберегти звіт про помилку у файл?"
 
-#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Відправити feedback у зашифрованому листі."
 
-#: ../whisperBack/gui.py:383
+#: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:384
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Розробники Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:385
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "перекладачі"
 
-#: ../whisperBack/gui.py:412
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Невірний URL або OpenPGP ключ."
 

@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# abuyop <abuyop@gmail.com>, 2017
 # Mohd Shahril Bin Zainol Abidin <mohd_shahril_96@yahoo.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-03-21 16:28+0000\n"
-"Last-Translator: Mohd Shahril Bin Zainol Abidin <mohd_shahril_96@yahoo.com>\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"PO-Revision-Date: 2018-02-20 18:43+0000\n"
+"Last-Translator: ramona robot <wendywednesday@yahoo.com>\n"
 "Language-Team: Malay (Malaysia) (http://www.transifex.com/otf/torproject/language/ms_MY/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,80 +23,96 @@ msgstr ""
 #: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
-msgstr "E-mel kenalan yang tidak sah: %s"
+msgstr "E-mel kenalan tidak sah: %s"
 
 #: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
-msgstr "Kenalan kekunci OpenPGP yang tidak sah: %s"
+msgstr "Kunci OpenPGP kenalan tidak sah: %s"
 
 #: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Public key OpenPGP yang tidak sah"
+msgstr "Blok kunci awam OpenPGP kenalan tidak sah"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Pembolehubah %s tidak dijumpai dalam mana-mana fail konfigurasi /etc/whisperback/config.py, ~/.whisperback/config.py, ./Config.py"
+msgstr "Pembolehubah %s tidak ditemui dalam mana-mana fail konfigurasi /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:148
+#: ../whisperBack/gui.py:110
+msgid "Name of the affected software"
+msgstr "Nama perisian yang terjejas"
+
+#: ../whisperBack/gui.py:112
+msgid "Exact steps to reproduce the error"
+msgstr "Langkah tepat untuk menghasilkan semula ralat tersebut"
+
+#: ../whisperBack/gui.py:114
+msgid "Actual result and description of the error"
+msgstr "Keputusan dan keterangan sebenar ralat"
+
+#: ../whisperBack/gui.py:116
+msgid "Desired result"
+msgstr "Keputusan dikehendaki"
+
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
-msgstr "Tidak dapat memuatkan konfigurasi yang sah."
+msgstr "Tidak boleh memuatkan konfigurasi yang sah."
 
-#: ../whisperBack/gui.py:214
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
-msgstr "Menghantar e-mail..."
+msgstr "Menghantar mel.."
 
-#: ../whisperBack/gui.py:215
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
-msgstr "Menghantar e-mail..."
+msgstr "Menghantar mel"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
-msgstr "Ini boleh mengambil masa..."
+msgstr "Ia mengambil masa..."
 
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:236
 msgid "The contact email adress doesn't seem valid."
-msgstr "Kenalan alamat e-mel kelihatan tidak sah."
+msgstr "Alamat emel kenalan kelihatan tidak sah."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
-msgstr "Tidak dapat menghantar e-mel: ralat pada SMTP."
+msgstr "Tidak dapat menghantar mel: ralat SMTP."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Tidak dapat menyambung ke pelayan."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
-msgstr "Tidak dapat mencipta atau menghantar e-mel."
+msgstr "Tidak dapat mencipta atau menghantar mel."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nLaporan bug tidak dapat dihantar, mungkin kerana masalah rangkaian. Sila cuba untuk menyambung semula ke rangkaian dan klik hantar lagi.\n\nJika ia tidak berfungsi, anda akan ditawarkan untuk menyimpan laporan bug."
+msgstr "\n\nLaporan pepijat gagal dihantar, mungkin terdapat masalah rangkaian. Cuba menyambung semula ke rangkaian dan klik hantar lagi.\n\nJika ia tidak berfungsi, anda akan ditawarkan untuk menyimpan laporan pepijat tersebut."
 
-#: ../whisperBack/gui.py:269
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "Mesej anda telah dihantar."
 
-#: ../whisperBack/gui.py:276
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "Ralat berlaku semasa penyulitan."
 
-#: ../whisperBack/gui.py:296
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
-msgstr "Tidak dapat menyimpan %s."
+msgstr "Tidak boleh menyimpan %s."
 
-#: ../whisperBack/gui.py:319
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -103,31 +120,31 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Laporan bug tidak dapat dihantar, mungkin kerana masalah rangkaian.\n\nSebagai langkah yang lain, anda boleh menyimpan fail laporan bug itu pada pemacu USB dan cuba menghantarnya pada %s daripada akaun e-mel anda menggunakan sistem yang lain. Ambil perhatian bahawa laporan bug anda tidak akan menjadi rahsia melainkan anda mengambil langkah-langkah selanjutnya(contohnya menggunakan Tor dengan dan memakai e-mel pakai buang).\n\nKamu mahu menyimpan laporan bug ini kepada bentuk fail ?"
+msgstr "Laporan pepijat tidak dapat dihantar, berkemungkinan disebabkan masalah rangkaian.\n\nSebagai jalan keluar, anda boleh menyimpan fail laporan pepijat ke dalam pemacu USB dan cuba menghantarnya pada %s melalui akaun emel anda dengan sistem lain. Ambil perhatian, laporan pepijat anda tidak akan menjadi rahsia melainkan anda mengambil langkah-langkah selanjutnya (contohnya menggunakan Tor dengan dan memakai akaun emel pakai buang).\n\nAnda mahu menyimpan laporan pepijat  dalam bentuk fail?"
 
-#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Hantar maklum balas dalam e-mel sulit."
+msgstr "Hantar maklum balas dengan emel tersulit."
 
-#: ../whisperBack/gui.py:383
+#: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "HakCipta © 2009-2012 Tails developers (tails@boum.org)"
+msgstr "HakCipta © 2009-2012 Pembangun Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:384
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
-msgstr "Tails developers <tails@boum.org>"
+msgstr "Pembangun Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:385
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
-msgstr "Kredit peterjemah"
+msgstr "Abuyop <abuyop@gmail.com>, 2017, 2018"
 
-#: ../whisperBack/gui.py:412
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Ini tidak kelihatan seperti URL yang sah atau kekunci OpenPGP yang sah."
+msgstr "Ia tidak kelihatan seperti URL atau kunci OpenPGP yang sah."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2012 tails@boum.org"
@@ -154,13 +171,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Hantar maklum balas dalam mel sulit\nCopyright (C) 2009-2012 Tails developers <tails@boum.org>\n\nThis program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 3 of the License, or (at\nyour option) any later version.\n\nThis program is distributed in the hope that it will be useful, but\nWITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU\nGeneral Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program. If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Hantar maklum balas dengan mel tersulit\nHakcipta (C) 2009-2012 Pembangun Tails <tails@boum.org>\n\nProgram ini adalah perisian bebas; anda boleh mengedarkannya semula\ndan/atau mengubahsuainya di bawah terma Lesan Awam Am GNU yang\nditerbitkan oleh Free Software Foundation; sama ada Lesen versi 3 ,\natau (mengikut pilihan anda) mana-mana versi terkemudian.\n\nProgram ini diedar dengan harapan ia berguna, tetapi TANPA APA-APA\nJAMINAN; juga tanpa jaminan ke atas KEBOLEHPASARAN atau\nKESESUAIAN ATAS APA JUA TUJUAN. Sila rujuk Lesen Awam Am GNU\nunyuk maklumat lanjut.\n\nAnda sepatutnya menerima satu salinan Lesen Awam Am GNU bersama-sama\nprogram ini. Jika tiada, sila rujuk <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Jika anda mahu kami untuk menyulitkan mesej apabila kam membalas email anda, tambahkan kunci ID anda, pautan ke kunci anda, atau kunci sebagai blok public key:"
+msgstr "Jika anda mahu kami menyulitkan mesej ketika membalas email anda, tambahkan ID kunci anda, satu pautan ke kunci anda, atau kunci sebagai blok kunci awam:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -168,27 +185,27 @@ msgstr "Ringkasan"
 
 #: ../data/whisperback.ui.h:23
 msgid "Bug description"
-msgstr "Penerangan Bug"
+msgstr "Keterangan pepijat"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Alamat e-mel pilihan untuk menghubungi anda"
+msgstr "Alamat emel pilihan untuk menghubungi anda"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"
-msgstr "Kunci PGP optional"
+msgstr "Kunci PGP pilihan"
 
 #: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
-msgstr "Butir-butir teknikal untuk dimasukkan"
+msgstr "Perincian teknikal yang disertakan"
 
 #: ../data/whisperback.ui.h:27
 msgid "headers"
-msgstr "tajuk"
+msgstr "pengepala"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
-msgstr "Info debugging"
+msgstr "Maklumat penyahpepijatan"
 
 #: ../data/whisperback.ui.h:29
 msgid "Help"

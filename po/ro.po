@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Adrian Staicu <astaicu@gmail.com>, 2017
 # Draga Bianca - Madalina <dragabianca@yahoo.com>, 2013
 # Iordache Livia-Serena <iordacheliviaserena@gmail.com>, 2013
 # Isus Satanescu <inactive+isus@transifex.com>, 2014
@@ -10,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-16 19:54+0100\n"
-"PO-Revision-Date: 2016-03-21 16:28+0000\n"
-"Last-Translator: Isus Satanescu <inactive+isus@transifex.com>\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"PO-Revision-Date: 2018-02-20 18:43+0000\n"
+"Last-Translator: Iasmina Gruicin <myna_90@yahoo.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/otf/torproject/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,40 +43,56 @@ msgid ""
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 msgstr "Variabila %s nu a fost găsită în nici un fișier de configurație\n/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:148
+#: ../whisperBack/gui.py:110
+msgid "Name of the affected software"
+msgstr "Numele programului afectat"
+
+#: ../whisperBack/gui.py:112
+msgid "Exact steps to reproduce the error"
+msgstr "Pași exacți pentru a reproduce eroarea"
+
+#: ../whisperBack/gui.py:114
+msgid "Actual result and description of the error"
+msgstr "Rezultat actual și descrierea erorii"
+
+#: ../whisperBack/gui.py:116
+msgid "Desired result"
+msgstr "Rezultat așteptat"
+
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
 msgstr "Nu pot încărca o configurație validă."
 
-#: ../whisperBack/gui.py:214
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
 msgstr "Se trimite mail-ul..."
 
-#: ../whisperBack/gui.py:215
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
 msgstr "Se trimite mail-ul"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
 msgstr "Ar putea dura...."
 
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:236
 msgid "The contact email adress doesn't seem valid."
 msgstr "Adresa email de contact nu pare a fi validă."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "Nu se poate trimite mail-ul: eroare SMTP."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Imposibilitate de conectare la server."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "Indisponibil pentru a crea sau pentru a trimite mail-ul."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
@@ -84,20 +101,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nRaportul cu bug nu a putut fi trimis, posibil din cauza problemelor cu rețeaua. Reîncercați să vă conectați la rețea și trimiteți din nou.\n\nDacă nu funcționează, vi se va oferi posibilitatea să salvați raportul."
 
-#: ../whisperBack/gui.py:269
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "Mesajul dumneavoastră a fost trimis."
 
-#: ../whisperBack/gui.py:276
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "Eroare în timpul criptării."
 
-#: ../whisperBack/gui.py:296
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "Nu pot salva %s."
 
-#: ../whisperBack/gui.py:319
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -107,27 +124,27 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Raportul cu bug nu a putut fi trimis, posibil din cauza unei probleme de rețea.\n\nPuteți ocoli problema salvînd raportul ca un fișier pe un USB drive și trimițîndu-ni-l la %s de pe contul de email folosind alt sistem. Remarcați că raportul nu va mai fi anonim decît dacă veți urma pași suplimentari (ex. Tor cu o adresă email de unică folosință).\n\nVreți să salvez raportul într-un fișier?"
 
-#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Trimiteți feedback într-un email criptat."
 
-#: ../whisperBack/gui.py:383
+#: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 dezvoltatorii Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:384
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Dezvoltatorii Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:385
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "credite-traducători"
 
-#: ../whisperBack/gui.py:412
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Acesta nu pare a fi un URL valabil sau o cheie PGP deschisă."
 

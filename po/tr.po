@@ -7,7 +7,7 @@
 # Bullgeschichte <bullgeschichte@riseup.net>, 2015
 # Emre <conan@operamail.com>, 2013
 # Kaya Zeren <kayazeren@gmail.com>, 2015-2016
-# Ozancan Karataş <ozanc27@icloud.com>, 2015
+# Ozancan Karataş <ozancankaratas96@outlook.com>, 2015
 # sgtpepper <barlasmirc@gmail.com>, 2013
 # Tails_developers <tails@boum.org>, 2014
 # Tails_developers <tails@boum.org>, 2014
@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2017-04-24 07:12+0000\n"
+"PO-Revision-Date: 2017-09-23 18:55+0000\n"
 "Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/otf/torproject/language/tr/)\n"
 "MIME-Version: 1.0\n"
