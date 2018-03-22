@@ -40,6 +40,7 @@ import socket
 
 # GIR imports
 from gi.repository import GObject
+from gi.repository import GdkPixbuf
 from gi.repository import Gtk
 from gi.repository import WebKit
 
@@ -388,6 +389,11 @@ Do you want to save the bug report to a file?") % self.backend.to_address
         about_dialog.set_authors([_("Tails developers <tails@boum.org>")])
         about_dialog.set_translator_credits(_("translator-credits"))
         about_dialog.set_website("https://tails.boum.org/")
+        try:
+            about_dialog.set_logo(GdkPixbuf.Pixbuf.new_from_file(os.path.join(
+                                  whisperBack.utils.get_pixmapdir(), "whisperback.svg")))
+        except GObject.GError as e:
+            print(e)
         about_dialog.connect("response", Gtk.Widget.hide_on_delete)
         about_dialog.show()
 
