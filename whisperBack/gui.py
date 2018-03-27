@@ -106,7 +106,7 @@ class WhisperBackUI(object):
         underline = lambda str: str + "\n" + len(str) * '-'
 
         #pylint: disable=C0301
-        self.message.get_buffer().insert_with_tags(
+        self.message.get_buffer().insert(
             self.message.get_buffer().get_start_iter(),
             underline(_("Name of the affected software"))
             + "\n"*4
@@ -115,9 +115,7 @@ class WhisperBackUI(object):
             + underline(_("Actual result and description of the error"))
             + "\n"*4
             + underline(_("Desired result"))
-            + "\n"*4,
-            self.message.get_buffer().create_tag(family="Monospace"))
-
+            + "\n"*4)
         #pylint: disable=E1101
         self.htmlhelp = WebKit.WebView()
 
