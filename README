@@ -23,7 +23,7 @@ WhisperBack is packaged using Python distutils.
 
 Build dependencies:
 
-  $ apt install python3-distutils-extra txt2tags
+  # apt install python3-distutils-extra txt2tags
 
 To install it:
 
@@ -35,7 +35,7 @@ and as root:
 
 To run it:
 
-  # ./whisperback
+  $ ./whisperback
 
 CONFIGURATION
 =============
