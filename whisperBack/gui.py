@@ -233,7 +233,7 @@ class WhisperBackUI(object):
                 self.backend.contact_email = self.contact_email.get_text()
             except ValueError as e:
                 self.show_exception_dialog(
-                    _("The contact email adress doesn't seem valid."), e)
+                    _("The contact email address doesn't seem valid."), e)
                 self.progression_dialog.hide()
                 return
 
