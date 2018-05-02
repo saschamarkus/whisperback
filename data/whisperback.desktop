@@ -2,6 +2,7 @@
 Version=1.7.14
 Name=WhisperBack
 Comment=Send feedback via encrypted e-mail
+Keywords=feedback;bug;report;tails,error;
 Type=Application
 Exec=whisperback
 Icon=whisperback
