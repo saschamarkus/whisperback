@@ -384,7 +384,7 @@ Do you want to save the bug report to a file?") % self.backend.to_address
         about_dialog.set_comments(_("Send feedback in an encrypted mail."))
         about_dialog.set_license(__licence__)
         about_dialog.set_copyright(
-            _("Copyright © 2009-2012 Tails developpers (tails@boum.org)"))
+            _("Copyright © 2009-2012 Tails developers (tails@boum.org)"))
         about_dialog.set_authors([_("Tails developers <tails@boum.org>")])
         about_dialog.set_translator_credits(_("translator-credits"))
         about_dialog.set_website("https://tails.boum.org/")
