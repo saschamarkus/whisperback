@@ -81,7 +81,7 @@ msgid "This could take a while..."
 msgstr "این عملیات ممکن است کمی بطول بیانجامد..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "آدرس ایمیل وارد شده به نظر صحیح نمی‌رسد."
 
 #: ../whisperBack/gui.py:253

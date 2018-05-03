@@ -78,7 +78,7 @@ msgid "This could take a while..."
 msgstr "다소 시간이 걸릴 수 있습니다..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "연락처 이메일 주소가 올바르지 않습니다."
 
 #: ../whisperBack/gui.py:253

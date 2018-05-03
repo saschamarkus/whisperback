@@ -60,7 +60,7 @@ msgid "This could take a while..."
 msgstr "Tässä saattaa mennä hetki..."
 
 #: ../whisperBack/gui.py:232
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "Yhteyshenkilön sähköpostiosoite ei vaikuta kelvolliselta."
 
 #: ../whisperBack/gui.py:249

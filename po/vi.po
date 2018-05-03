@@ -75,7 +75,7 @@ msgid "This could take a while..."
 msgstr "Việc này có thể mất chút thời gian..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "Địa chỉ email liên hệ đường như không hợp lệ."
 
 #: ../whisperBack/gui.py:253

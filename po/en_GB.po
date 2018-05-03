@@ -75,8 +75,8 @@ msgid "This could take a while..."
 msgstr "This could take a while..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
-msgstr "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
+msgstr "The contact email address doesn't seem valid."
 
 #: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."

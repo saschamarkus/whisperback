@@ -78,7 +78,7 @@ msgid "This could take a while..."
 msgstr "Det här kan ta en stund..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "E-postadressen verkar inte vara giltig."
 
 #: ../whisperBack/gui.py:253

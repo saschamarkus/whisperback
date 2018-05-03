@@ -62,7 +62,7 @@ msgid "This could take a while..."
 msgstr "呢樣可能需要一段時間…"
 
 #: ../whisperBack/gui.py:232
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "聯絡電郵地址似乎唔正確。"
 
 #: ../whisperBack/gui.py:249

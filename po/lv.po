@@ -75,7 +75,7 @@ msgid "This could take a while..."
 msgstr "Tas varētu aizņemt kādu brītiņu..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "Šķiet, ka saziņas e-pasta adrese nav derīga."
 
 #: ../whisperBack/gui.py:253

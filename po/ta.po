@@ -78,7 +78,7 @@ msgid "This could take a while..."
 msgstr "இது சிறிது நேரம் எடுக்கலாம்..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "தொடர்பு மின்னஞ்சல் முகவரி சரியானதாக தெரியவில்லை."
 
 #: ../whisperBack/gui.py:253

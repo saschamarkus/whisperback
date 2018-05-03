@@ -96,7 +96,7 @@ msgid "This could take a while..."
 msgstr "To może chwilę potrwać..."
 
 #: ../whisperBack/gui.py:246
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "Adres kontaktowy zdaje się być niepoprawny."
 
 #: ../whisperBack/gui.py:263

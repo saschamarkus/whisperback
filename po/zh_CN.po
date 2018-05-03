@@ -79,7 +79,7 @@ msgid "This could take a while..."
 msgstr "此操作可能需要一些时间..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "联系人电子邮件地址无效。"
 
 #: ../whisperBack/gui.py:253
