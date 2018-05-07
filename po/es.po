@@ -5,7 +5,7 @@
 # Translators:
 # tio <andolsa@gmail.com>, 2012
 # Carlos Javier <carlosjavier84@gmail.com>, 2015
-# Emma Peel, 2017
+# Emma Peel, 2017-2018
 # eulalio barbero espinosa <eulaliob@gmail.com>, 2017
 # cronayu <itacronayu@hotmail.com>, 2012
 # Noel Torres <envite@rolamasao.org>, 2013,2016
@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2018-02-20 18:43+0000\n"
+"PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: strel\n"
 "Language-Team: Spanish (http://www.transifex.com/otf/torproject/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -104,11 +104,11 @@ msgid ""
 "The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nEl informe de fallo no pudo ser enviado, probablemente por problemas de conexión. Intente reconectar a la red y pulse en Enviar de nuevo.\n\nSi esto no funciona, se le permitirá guardar el informe de fallo."
+msgstr "\n\nEl informe de fallo no pudo ser enviado, probablemente por problemas de conexión. Intenta reconectar a la red y pulsa en Enviar de nuevo.\n\nSi esto no funciona, se te permitirá guardar el informe de fallo."
 
 #: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
-msgstr "Su mensaje ha sido enviado."
+msgstr "Tu mensaje ha sido enviado."
 
 #: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
@@ -127,7 +127,7 @@ msgid ""
 "As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "El informe de fallo no se pudo enviar, probablemente debido a problemas de red.⏎\n⏎\nComo solución, puede guardar el informe de fallo a un archivo en una memoria USB, e intentar enviárnoslo a %s desde una cuenta de correo electrónico ordinario usando otro sistema. Observe que cuando lo haga su informe de errores no será anónimo a menos que tome las medidas necesarias por su cuenta (ej: usar Tor con una cuenta de correo desechable). ⏎ \n⏎\n¿Quiere guardar el informe de errores en un archivo?"
+msgstr "El informe de fallo no se pudo enviar, probablemente debido a problemas de red.\n\nComo solución, puedes guardar el informe de fallo a un archivo en una memoria USB, e intentar enviárnoslo a %s desde una cuenta de correo electrónico ordinario usando otro sistema. Ten en cuenta que cuando lo hagas tu informe de errores no será anónimo a menos que tomes las medidas necesarias (ej: usar Tor con una cuenta de correo desechable).  \n\n¿Quieres guardar el informe de errores en un archivo?"
 
 #: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -135,7 +135,7 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Enviar sus observaciones en un correo cifrado."
+msgstr "Enviar tus observaciones en un correo cifrado."
 
 #: ../whisperBack/gui.py:387
 msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
@@ -178,13 +178,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Envía la respuesta del usuario en un correo cifrado\nCopyright (C) 2009-2012 Desarrolladores de Tails <tails@boum.org>\n\nEste programa es libre; puede redistribuirlo y/o modificarlo\nbajo los términos de la GNU General Public Licence (Licencia\nPública General de GNU - GNU GPL) tal\ncomo está publicada por la Free Software Foundation; tanto en su\nversión 3 o (a su criterio) cualquier versión posterior.\n\nEste programa se distribuye con la esperanza de que resultará útil, \npero SIN GARANTÍA ALGUNA; sin siquiera la garantía implícita de \nUTILIDAD o ADECUACIÓN PARA UN PROPÓSITO ESPECÍFICO. \nVea la Licencia Pública General de GNU para más detalles.\n\nDebería haber recibido una copia de la Licencia Pública General de GNU \njunto a este programa. Si no, vea <http://www.gnu.org/licenses/licenses.es.html>.\n"
+msgstr "WhisperBack - Envía la respuesta del usuario en un correo cifrado\nCopyright (C) 2009-2012 Desarrolladores de Tails <tails@boum.org>\n\nEste programa es libre; puedes redistribuirlo y/o modificarlo\nbajo los términos de la GNU General Public Licence (Licencia\nPública General de GNU - GNU GPL) tal\ncomo está publicada por la Free Software Foundation; tanto en su\nversión 3 o (a su criterio) cualquier versión posterior.\n\nEste programa se distribuye con la esperanza de que resultará útil, \npero SIN GARANTÍA ALGUNA; sin siquiera la garantía implícita de \nUTILIDAD o ADECUACIÓN PARA UN PROPÓSITO ESPECÍFICO. \nVea la Licencia Pública General de GNU para más detalles.\n\nDebería haber recibido una copia de la Licencia Pública General de GNU \njunto a este programa. Si no, vea <http://www.gnu.org/licenses/licenses.es.html>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Si quiere que cifremos los mensajes cuando le respondamos, añada el identificador (ID) de su clave, un enlace a su clave, o la clave como un bloque de clave pública:"
+msgstr "Si quieres que cifremos los mensajes cuando te respondamos, añade el identificador (ID) de tu clave, un enlace a tu clave, o la clave como un bloque de clave pública:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -196,7 +196,7 @@ msgstr "Descripción del error"
 
 #: ../data/whisperback.ui.h:24
 msgid "Optional email address to contact you"
-msgstr "Dirección de correo electrónico opcional para contactarle"
+msgstr "Dirección de correo electrónico opcional para contactarte"
 
 #: ../data/whisperback.ui.h:25
 msgid "optional PGP key"

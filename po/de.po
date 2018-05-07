@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Deletescape, 2013
+# Till Kottmann, 2013
 # DoKnGH26" 21 <dokngh2621@gmail.com>, 2015
 # Ettore Atalan <atalanttore@googlemail.com>, 2017
 # Frank Anonima <franka1234@yandex.com>, 2015
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2018-02-20 18:43+0000\n"
+"PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: try once\n"
 "Language-Team: German (http://www.transifex.com/otf/torproject/language/de/)\n"
 "MIME-Version: 1.0\n"
