@@ -618,3 +618,13 @@ Minor improvements
 ======
 
 * Import PO files from Transifex, update POT and PO files.
+
+1.7.15
+======
+
+* Import PO files from Transifex, update POT and PO files.
+* Make WhisperBack easier to find in the GNOME Overview. (Closes Tails bug: #13299)
+* Don't prevent user from removing optional PGP keyblock once they have entered one. (Closes Tails bug: #7797)
+* Don't use a different font for last line of Whisperback report. (Closes Tails bug: #11272)
+* Show the logo in WHisperback About menu. (Closes Tails bug: #13198)
+* Document better how to test WhisperBack. (Closes Tails bug: #15537)
