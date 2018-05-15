@@ -1,3 +1,16 @@
+whisperback (1.7.15) stable; urgency=medium
+
+  * Import PO files from Transifex, update POT and PO files.
+  * Make WhisperBack easier to find in the GNOME Overview. (Closes: #13299)
+  * Don't prevent user from removing optional PGP keyblock once they have
+    entered one. (Closes: #7797)
+  * Don't use a different font for last line of Whisperback report.
+    (Closes: #11272)
+  * Show the logo in WHisperback About menu. (Closes: #13198)
+  * Document better how to test WhisperBack. (Closes: #15537)
+
+ -- Tails developers <tails@boum.org>  Mon, 07 May 2018 19:35:14 +0200
+
 whisperback (1.7.14) testing; urgency=medium
 
   * New upstream release:

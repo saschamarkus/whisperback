@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Allan Nordhøy <epost@anotheragency.no>, 2016-2017
+# Allan Nordhøy <epost@anotheragency.no>, 2016-2018
 # lateralus, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2017-09-19 19:43+0000\n"
+"PO-Revision-Date: 2018-03-14 23:26+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/otf/torproject/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "Ugyldig OpenPGP-nøkkel: %s"
 
 #: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
-msgstr "Ugyldig offentlig OpenPGP-nøkkelblokk for kontakt"
+msgstr "Kunne ikke lese (offentlig nøkkel) innhold fra nøkkelblokk-del"
 
 #: ../whisperBack/exceptions.py:41
 #, python-format

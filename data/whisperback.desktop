@@ -1,7 +1,8 @@
 [Desktop Entry]
-Version=1.7.14
+Version=1.7.15
 Name=WhisperBack
 Comment=Send feedback via encrypted e-mail
+Keywords=feedback;bug;report;tails,error;
 Type=Application
 Exec=whisperback
 Icon=whisperback

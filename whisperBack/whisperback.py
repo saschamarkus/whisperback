@@ -65,7 +65,8 @@ class WhisperBack(object):
         """
         if (whisperBack.utils.is_valid_pgp_block(gpgkey) or
             whisperBack.utils.is_valid_pgp_id(gpgkey) or
-            whisperBack.utils.is_valid_link(gpgkey)):
+            whisperBack.utils.is_valid_link(gpgkey) or
+            gpgkey is ''):
             self._contact_gpgkey = gpgkey
         else:
             #XXX use a better exception
