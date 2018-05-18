@@ -102,7 +102,7 @@ class WhisperBackUI(object):
         underline = lambda str: str + "\n" + len(str) * '-'
 
         #pylint: disable=C0301
-        self.message.get_buffer().insert(
+        self.message.get_buffer().insert_with_tags(
             self.message.get_buffer().get_start_iter(),
             underline(_("Name of the affected software"))
             + "\n"*4
@@ -113,28 +113,6 @@ class WhisperBackUI(object):
             + underline(_("Desired result"))
             + "\n"*4,
             self.message.get_buffer().create_tag(family="Monospace"))
-        #pylint: disable=E1101
-        self.htmlhelp = WebKit.WebView()
-
-        # Load only local ressources in the embedded webkit
-        # Loading untrusted ressources in such an unprotected browser
-        # wouldn't be safe
-        #pylint: disable=C0111,R0913
-        def cb_request_starting(web_view, web_frame, web_ressource, request,
-                                response, user_data=None):
-            if not request.get_uri().startswith("file://"):
-                webbrowser.open_new(request.get_uri())
-                request.set_uri(web_frame.get_uri())
-        self.htmlhelp.connect("resource-request-starting", cb_request_starting)
-        self.htmlhelp.get_settings().set_property("user-stylesheet-uri", "file://" +
-            whisperBack.utils.get_datadir() + "/style.css")
-
-        # set the two main window areas size on big screens
-        if self.main_window.get_screen().get_width() > 800:
-            self.notebook_left.set_size_request(400, -1)
-            self.notebook_right.set_size_request(400, -1)
-            self.hpaned_main.set_position(self.main_window.get_screen().get_width()
-                - max(self.main_window.get_screen().get_width()/3, 400))
 
         self.main_window.maximize()
 

@@ -368,12 +368,40 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                       </packing>
                     </child>
                     <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="hexpand">False</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="halign">start</property>
+                            <property name="label" translatable="yes">Help</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">False</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                    <child>
                       <object class="GtkLinkButton" id="linkGuidelines">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="xalign">0</property>
                         <property name="label" translatable="yes">Read our bug reporting guidelines.</property>
                         <property name="uri">https://tails.boum.org/doc/first_steps/bug_reporting/</property>
+                      </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">False</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -574,8 +602,6 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                   <object class="GtkLabel" id="labelMoreDetails">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
-                    <property name="yalign">0</property>
                     <property name="label" translatable="yes">Technical details to include</property>
                   </object>
                   <packing>
