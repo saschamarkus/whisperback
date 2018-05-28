@@ -223,10 +223,11 @@ class WhisperBackUI(object):
         self.main_window.set_sensitive(False)
 
         self.backend.subject = self.subject.get_text()
-        self.backend.message = self.message.get_buffer().get_text(
+        message_text = self.message.get_buffer().get_text(
                                self.message.get_buffer().get_start_iter(),
                                self.message.get_buffer().get_end_iter(),
                                include_hidden_chars=False)
+        self.backend.message = whisperBack.utils.wrap_text(message_text)
         if self.contact_email.get_text():
             try:
                 self.backend.contact_email = self.contact_email.get_text()
