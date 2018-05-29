@@ -59,7 +59,7 @@ class WhisperBackUI(object):
     def __init__(self):
         """Constructor of the class, which creates the main window
 
-        This is where the main window will be created and filled with the 
+        This is where the main window will be created and filled with the
         widgets we want.
         """
 
@@ -360,13 +360,13 @@ Do you want to save the bug report to a file?") % self.backend.to_address
                                    buttons=buttons,
                                    message_format=message)
         dialog.format_secondary_text(exception_message)
-        
+
         dialog.connect("response", close_callback)
         dialog.show()
 
     def cb_close_exception_dialog(self, widget, data=None):
         """Callback function for the exception dialog close event
-        
+
         """
         self.main_window.set_sensitive(True)
         widget.hide()
@@ -374,7 +374,7 @@ Do you want to save the bug report to a file?") % self.backend.to_address
 
     def show_about_dialog(self):
         """Shows an "about" dialog for the program
-        
+
         """
 
         about_dialog = Gtk.AboutDialog()
