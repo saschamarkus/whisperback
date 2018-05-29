@@ -234,8 +234,5 @@ def wrap_text(text):
     @return The wrapped text"""
 
     wrapper = TextWrapper()
-    wrapped = list()
-    for line in text.split('\n'):
-        wrapped_line = wrapper.fill(line)
-        wrapped.append(wrapped_line)
+    wrapped = [wrapper.fill(line) for line in text.split('\n')]
     return '\n'.join(wrapped)
