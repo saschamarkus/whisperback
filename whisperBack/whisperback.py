@@ -116,7 +116,7 @@ class WhisperBack(object):
 
         # Get additional info through the callbacks and sanitize it
         self.prepended_data = whisperBack.utils.sanitize_hardware_info(self.mail_prepended_info())
-        self.appended_data = self.__get_debug_info(whisperBack.utils.sanitize_hardware_info(self.mail_appended_info()))
+        self.appended_data = self.__get_debug_info(self.mail_appended_info())
 
         # Initialize other variables
         self.subject = subject
@@ -147,20 +147,22 @@ class WhisperBack(object):
         exec(code, self.__dict__)
 
     def __get_debug_info(self, raw_debug):
-        """ Deserializes the dicts from raw_debugand creates a string 
+        """ Deserializes the dicts from raw_debug and creates a string
         with the header from the dict key and it's content
 
         @param raw_debug The serialized json containing the debug info
+        It is a list of dicts to keep the order of the different debug infos
         """
-        debug_info = json.loads(raw_debug)
+        all_info = json.loads(raw_debug)
         result = ''
-        for info in debug_info:
-            result += '======= content of {} =======\n'.format(info)
-            if type(debug_info[info]) is list:
-                for line in debug_info[info]:
-                    result +=  '{}\n'.format(line)
-            else:
-                result += '{}\n'.format(debug_info[info])
+        for debug_info in all_info:
+            for info in debug_info:
+                result += '======= content of {} =======\n'.format(info)
+                if type(debug_info[info]) is list:
+                     for line in debug_info[info]:
+                         result +=  '{}\n'.format(whisperBack.utils.sanitize_hardware_info(line))
+                else:
+                    result += '{}\n'.format(whisperBack.utils.sanitize_hardware_info(debug_info[info]))
         return result
 
 
