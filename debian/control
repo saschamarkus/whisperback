@@ -16,7 +16,6 @@ Build-Depends: debhelper (>= 7.0.50~),
                python3-socks (>= 1.5.0) | python3-socksipy (>= 1.5.0) | python3-pysocks (>= 1.5.0),
                txt2tags
 Standards-Version: 3.9.8
-X-Python3-Version: >= 3.4
 
 Package: whisperback
 Architecture: all
