@@ -628,3 +628,10 @@ Minor improvements
 * Don't use a different font for last line of Whisperback report. (Closes Tails bug: #11272)
 * Show the logo in WHisperback About menu. (Closes Tails bug: #13198)
 * Document better how to test WhisperBack. (Closes Tails bug: #15537)
+
+1.7.16
+======
+
+* Rename launcher to "WhisperBack Error Reporting" (Closes: Tails#6432).
+* Wrap text written by the user to 70 chars (Closes: Tails#11689).
+* Use serial comma in user interface string.
