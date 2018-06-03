@@ -39,9 +39,13 @@ import smtplib
 import socket
 
 # GIR imports
+import gi
 from gi.repository import GObject
+gi.require_version('GdkPixbuf', '2.0')
 from gi.repository import GdkPixbuf
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
+gi.require_version('WebKit', '3.0')
 from gi.repository import WebKit
 
 # Import our modules
