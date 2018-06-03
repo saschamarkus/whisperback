@@ -39,12 +39,13 @@ import whisperBack.mail
 import whisperBack.encryption
 import whisperBack.utils
 
+
 # pylint: disable=R0902
 class WhisperBack(object):
     """
     This class contains the backend which actually sends the feedback
     """
-    
+
     def set_contact_email(self, email):
         """Sets an optional email address to be used for furether communication
 
@@ -79,12 +80,12 @@ class WhisperBack(object):
 
     #pylint: disable=W0212
     contact_gpgkey = property(lambda self: self._contact_gpgkey,
-                               set_contact_gpgkey)
+                              set_contact_gpgkey)
 
-    def __init__(self, subject = "", message = ""):
+    def __init__(self, subject="", message=""):
         """Initialize a feedback object with the given contents
-        
-        @param subject The topic of the feedback 
+
+        @param subject The topic of the feedback
         @param message The content of the feedback
         """
         self.__thread = None
@@ -128,7 +129,7 @@ class WhisperBack(object):
     def __load_conf(self, config_file_path):
         """Loads a configuration file from config_file_path and executes it
         inside the current class.
-        
+
         @param config_file_path The path on the configuration file to load
         """
 
@@ -159,12 +160,11 @@ class WhisperBack(object):
             for info in debug_info:
                 result += '======= content of {} =======\n'.format(info)
                 if type(debug_info[info]) is list:
-                     for line in debug_info[info]:
-                         result +=  '{}\n'.format(whisperBack.utils.sanitize_hardware_info(line))
+                    for line in debug_info[info]:
+                        result += '{}\n'.format(whisperBack.utils.sanitize_hardware_info(line))
                 else:
                     result += '{}\n'.format(whisperBack.utils.sanitize_hardware_info(debug_info[info]))
         return result
-
 
     def __check_conf(self):
         """Check that all the required configuration variables are filled
@@ -172,7 +172,7 @@ class WhisperBack(object):
         """
 
         # XXX: Add sanity checks
-        
+
         if not self.to_address:
             raise whisperBack.exceptions.MisconfigurationException('to_address')
         if not self.to_fingerprint:
@@ -202,20 +202,20 @@ class WhisperBack(object):
             raise ValueError("Invalid value for 'socks_port'.")
 
     def execute_threaded(self, func, args, progress_callback=None,
-                           finished_callback=None, polling_freq=100):
+                         finished_callback=None, polling_freq=100):
         """Execute a function in another thread and handle it.
-        
+
         Execute the function `func` with arguments `args` in another thread,
         and poll whether the thread is alive, executing the callback
         `progress_callback` every `polling_frequency`. When the function
         thread terminates, saves the execption it eventually raised and pass
         it to `finished_callback`.
-        
+
         @param func               the function to execute.
         @param args               the tuple to pass as arguments to `func`.
         @param progress_callback  (optional) a callback function to call
                                   every time the execution thread is polled.
-                                  It doesn't take any agument. 
+                                  It doesn't take any agument.
         @param finished_callback  (optional) a callback function to call when
                                   the execution thread terminated. It receives
                                   the exception raised by `func`, if any, or
@@ -302,8 +302,8 @@ class WhisperBack(object):
 
     def send(self, progress_callback=None, finished_callback=None):
         """Actually sends the message
-        
-        @param progress_callback 
+
+        @param progress_callback
         @param finished_callback
         """
 

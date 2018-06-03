@@ -16,7 +16,7 @@
 # it under the  terms of the GNU General Public  License as published by
 # the Free Software Foundation; either  version 3 of the License, or (at
 # your option) any later version.
-# 
+#
 # This program  is distributed in the  hope that it will  be useful, but
 # WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of
 # MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU
@@ -100,22 +100,32 @@ socks_port = 9500
 # Please take into account that this will not be encrypted
 mail_subject = "The subject of the mail"
 
-# A callback function to get information to prepend to the mail
-# (this information will be encrypted). This is useful to add
-# software version.
-#
-# It should not take any parameter, and should return a string. This string
-# will be sanitized with whisperBack.utils.sanitize_hardware_info and
-# preprended to the email
+
 def mail_prepended_info():
+    """Returns the version of the running Tails system
+    A callback function to get information to prepend to the mail
+    (this information will be encrypted). This is useful to add
+    software version.
+
+    It should not take any parameter, and should return a string to be
+    preprended to the email
+
+    @return The output of tails-version, if any, or an English string
+    explaining the error
+    """
     return ""
 
-# A callback function to get information to append to the email
-# (this information will be encrypted). This is useful to add
-# configuration files useful for debugging.
-#
-# It should not take any parameter, and should return a string. This string
-# will be sanitized with whisperBack.utils.sanitize_hardware_info and
-# appended to the email.
+
 def mail_appended_info():
+    """Returns debugging information on the running Tails system
+    A callback function to get information to append to the email
+    (this information will be encrypted). This is useful to add
+    configuration files useful for debugging.
+
+    It should not take any parameter, and should return a string serialized
+    json to be deserialized to append infos to the email
+
+    @return a string containing serialized json with debugging information
+    """
+
     return ""
