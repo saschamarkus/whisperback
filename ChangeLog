@@ -635,3 +635,10 @@ Minor improvements
 * Rename launcher to "WhisperBack Error Reporting" (Closes: Tails#6432).
 * Wrap text written by the user to 70 chars (Closes: Tails#11689).
 * Use serial comma in user interface string.
+
+1.7.17
+======
+
+* Various small updates to the Debian packaging.
+* Fix a few typos (Closes: Tails#15562).
+* Update POT and PO files.
