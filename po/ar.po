@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # ButterflyOfFire, 2018
 # mohammad ali <ilir95palira@gmail.com>, 2017
@@ -12,15 +12,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"POT-Creation-Date: 2018-06-03 08:58+0200\n"
 "PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: Martus Translations <translations@martus.org>\n"
-"Language-Team: Arabic (http://www.transifex.com/otf/torproject/language/ar/)\n"
+"Language-Team: Arabic (http://www.transifex.com/otf/torproject/language/"
+"ar/)\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ar\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:56
@@ -28,52 +30,54 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "عنوان البريد الإلكتروني الخاص غير صحيح : %s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "مفتاح الـOpenPGP غير صحيح : %s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "مفتاح الـOpenPGP العام غير صحيح"
 
 #: ../whisperBack/exceptions.py:41
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "المتغير %s غير موجود في أي من ملفات الاعدادات  /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr ""
+"المتغير %s غير موجود في أي من ملفات الاعدادات  /etc/whisperback/config.py, "
+"~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:110
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "اسم البرنامج المتأثّر"
 
-#: ../whisperBack/gui.py:112
+#: ../whisperBack/gui.py:113
 msgid "Exact steps to reproduce the error"
 msgstr "الخطوات الدقيقة لاعادة تكوين الخطأ"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:115
 msgid "Actual result and description of the error"
 msgstr "النتيجة الحاصلة ووصف الخطأ"
 
-#: ../whisperBack/gui.py:116
+#: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "النتيجة المرغوبة فيها"
 
-#: ../whisperBack/gui.py:152
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "غير قادر على تحميل تكوين صالح."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "جاري أرسال البريد الإلكتروني..."
 
-#: ../whisperBack/gui.py:219
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "جاري أرسال البريد الإلكتروني"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "يمكن أن يستغرق هذا بعض الوقت..."
 
@@ -97,10 +101,17 @@ msgstr "غير قادر على انشاء او ارسال بريد الكترو�
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nلم يتم ارسال تقرير الخطأ، وغالبا بسبب مشكلة بالاتصال. تأكد من اتصالك و كرر المحاولة.\n\nاذا لم تتمكن من الاتصال يمكنك حفظ تقرير الخطأ لارساله لاحقاً."
+msgstr ""
+"\n"
+"\n"
+"لم يتم ارسال تقرير الخطأ، وغالبا بسبب مشكلة بالاتصال. تأكد من اتصالك و كرر "
+"المحاولة.\n"
+"\n"
+"اذا لم تتمكن من الاتصال يمكنك حفظ تقرير الخطأ لارساله لاحقاً."
 
 #: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
@@ -120,10 +131,21 @@ msgstr "غير قادر على حفظ %s."
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "لم نتمكن من ارسال تقرير الأخطاء وذلك لخطأ في الاتصال.\n\nكحل مؤقت يمكنك حفظ التقرير على ذاكرة فلاش و ارسالها لنا على %s من بريدك الالكتروني باستخدام جهاز آخر. لن يتم تسليم التقرير بكامل الخصوصية الا اذا استخدمت تور على الجهاز الآخر حين ارسالك الرسالة.\n\nهل تريد حفظ التقرير في ملف؟"
+msgstr ""
+"لم نتمكن من ارسال تقرير الأخطاء وذلك لخطأ في الاتصال.\n"
+"\n"
+"كحل مؤقت يمكنك حفظ التقرير على ذاكرة فلاش و ارسالها لنا على %s من بريدك "
+"الالكتروني باستخدام جهاز آخر. لن يتم تسليم التقرير بكامل الخصوصية الا اذا "
+"استخدمت تور على الجهاز الآخر حين ارسالك الرسالة.\n"
+"\n"
+"هل تريد حفظ التقرير في ملف؟"
 
 #: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -134,7 +156,8 @@ msgid "Send feedback in an encrypted mail."
 msgstr "أرسل آرائك عن الخدمة في بريد مشفر"
 
 #: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+#, fuzzy
+msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
 msgstr "حقوق النسخ © ٢٠٠٩ - ٢٠١٢ مطوري تيلز (tails@boum.org)"
 
 #: ../whisperBack/gui.py:388
@@ -145,7 +168,7 @@ msgstr "مبرمجي تيلز <tails@boum.org>"
 msgid "translator-credits"
 msgstr "المترجمون"
 
-#: ../whisperBack/gui.py:417
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "هذا لايبدو انه عنوان موقع صحيح او مفتاح OpenPGP صحيح."
 
@@ -174,13 +197,23 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "ويسبرباك - أرسل تعليقاتك و آرائك بإيميلات مشفرة.\nحقوق النسخ ٢٠٠٩ - ٢٠١٢ مطوري تايلز <tails@boum.org>\n\n هذا البرنامج مجاني، يمكنك إعادة توزيعه أو تغييره تحت بنود رخصة جنو العامة كما نشرتها منظمة البرمجيات الحرة، النسخة الثالثة أو أي نسخة أحدث. هذا البرنامج يتم توزيعه على أمل الاستفادة منه، لكن من دون أي نوع من الضمانات. راجع رخصة جنو العامة لمزيد من التفاصيل. يجب ان تكون استلمت نسخة من رخصة غنو العامة مع هذا البرنامج، اذا لم تستلمها، اجع <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"ويسبرباك - أرسل تعليقاتك و آرائك بإيميلات مشفرة.\n"
+"حقوق النسخ ٢٠٠٩ - ٢٠١٢ مطوري تايلز <tails@boum.org>\n"
+"\n"
+" هذا البرنامج مجاني، يمكنك إعادة توزيعه أو تغييره تحت بنود رخصة جنو العامة "
+"كما نشرتها منظمة البرمجيات الحرة، النسخة الثالثة أو أي نسخة أحدث. هذا "
+"البرنامج يتم توزيعه على أمل الاستفادة منه، لكن من دون أي نوع من الضمانات. "
+"راجع رخصة جنو العامة لمزيد من التفاصيل. يجب ان تكون استلمت نسخة من رخصة غنو "
+"العامة مع هذا البرنامج، اذا لم تستلمها، اجع <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "إذا اردت ان نشفر ردنا عليك، أضف هوية مفتاحك، رابط لمفتاحك أو الجزء العام من المفتاح:"
+msgstr ""
+"إذا اردت ان نشفر ردنا عليك، أضف هوية مفتاحك، رابط لمفتاحك أو الجزء العام من "
+"المفتاح:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
