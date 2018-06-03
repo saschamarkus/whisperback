@@ -38,6 +38,8 @@ import smtplib
 import socket
 
 # GIR imports
+import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import GObject
 from gi.repository import GdkPixbuf
 from gi.repository import Gtk
@@ -77,6 +79,7 @@ class WhisperBackUI(object):
             builder.get_object("progressLabelSecondary")
         self.progression_close = builder.get_object("progressButtonClose")
         self.gpg_dialog = builder.get_object("dialogGpgkeyblock")
+        self.gpg_dialog.set_transient_for(self.main_window)
         self.gpg_keyblock = builder.get_object("textviewGpgKeyblock")
         self.gpg_ok = builder.get_object("buttonGpgOk")
         self.gpg_cancel = builder.get_object("buttonGpgClose")
@@ -337,7 +340,6 @@ Do you want to save the bug report to a file?") % self.backend.to_address
                                   whisperBack.utils.get_pixmapdir(), "whisperback.svg")))
         except GObject.GError as e:
             print(e)
-        about_dialog.connect("response", Gtk.Widget.hide_on_delete)
         about_dialog.show()
 
     def show_gpg_dialog(self):
