@@ -56,7 +56,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
       </object>
     </child>
   </object>
-  <object class="GtkDialogWindow" id="dialogGpgkeyblock">
+  <object class="GtkDialog" id="dialogGpgkeyblock">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="type_hint">normal</property>
