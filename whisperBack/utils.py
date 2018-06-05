@@ -29,6 +29,7 @@ import os
 import re
 import urllib.parse
 import locale
+from textwrap import TextWrapper
 
 # Ugly pathes finder utilities
 
@@ -224,3 +225,14 @@ def sanitize_hardware_info(log_string):
                         r'[MAC REMOVED]',
                         log_string)
     return log_string
+
+
+def wrap_text(text):
+    """Wraps long lines of text to a width of 70 chars
+    @param text the string to be wrapped
+
+    @return The wrapped text"""
+
+    wrapper = TextWrapper()
+    wrapped = [wrapper.fill(line) for line in text.split('\n')]
+    return '\n'.join(wrapped)

@@ -1,217 +1,187 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 #   <bog.d@gazeta.pl>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
-"Report-Msgid-Bugs-To: https://trac.torproject.org/projects/tor\n"
-"POT-Creation-Date: 2012-02-16 22:33+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-03 08:58+0200\n"
 "PO-Revision-Date: 2012-08-25 10:47+0000\n"
 "Last-Translator: bogdrozd <bog.d@gazeta.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl_PL\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2)\n"
 
 #. XXX use a better exception
-#: ../whisperBack/whisperback.py:63
+#: ../whisperBack/whisperback.py:56
 #, python-format
 msgid "Invalid contact email: %s"
 msgstr "Nieprawidłowy kontaktowy adres email: %s"
 
-#: ../whisperBack/whisperback.py:80
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Nieprawidłowy kontaktowy klucz OpenPGP: %s"
 
-#: ../whisperBack/whisperback.py:82
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Nieprawidłowy blok kontaktowego publicznego klucza OpenPGP"
 
-#: ../whisperBack/encryption.py:126
-msgid "No keys found."
-msgstr "Nie znaleziono kluczy."
-
 #: ../whisperBack/exceptions.py:41
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The variable %s was not found in any of the configuation "
-"files/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Zmienna %s nie została znelziona w żadnym pliku konfiguracyjnym /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr ""
+"Zmienna %s nie została znelziona w żadnym pliku konfiguracyjnym /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "Nazwa oprogramowania"
 
-#: ../whisperBack/gui.py:115
-msgid "Exact steps to reproduce the problem"
+#: ../whisperBack/gui.py:113
+#, fuzzy
+msgid "Exact steps to reproduce the error"
 msgstr "Dokłądne kroki do powtórzenia problemu"
 
-#: ../whisperBack/gui.py:116
-msgid "Actual result / the problem"
+#: ../whisperBack/gui.py:115
+#, fuzzy
+msgid "Actual result and description of the error"
 msgstr "Bieżący wynik / problem"
 
 #: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "Pożądany wynik"
 
-#: ../whisperBack/gui.py:155
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "Nie mogę załadować żadnej prawidłowej konfiguracji"
 
-#: ../whisperBack/gui.py:177
-#, python-format
-msgid ""
-"<h1>Help us fix your bug!</h1>\n"
-"<p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
-"<p><strong>Do not include more personal information than\n"
-"needed!</strong></p>\n"
-"<h2>About giving us an email address</h2>\n"
-"<p>If you don't mind disclosing some bits of your identity\n"
-"to Tails developers, you can provide an email address to\n"
-"let us ask more details about the bug. Additionally entering\n"
-"a public PGP key enables us to encrypt such future\n"
-"communication.</p>\n"
-"<p>Anyone who can see this reply will probably infer you are\n"
-"a Tails user. Time to wonder how much you trust your\n"
-"Internet and mailbox providers?</p>\n"
-msgstr "<h1>Pomóż nam naprawić Twój problem!</h1>\n<p>Przeczytaj <a href=\"%s\">nasze instrukcje zgłaszania błędów</a>.</p>\n<p><strong>Nie zawieraj więcej informacji osobistych, niż to jest\nkonieczne!</strong></p>\n<h2>O dawaniu nam adresu email</h2>\n<p>Jeśli nie masz nic przeciw podaniu części swojej tożsamości\ndeweloperom Tails, możesz podać adres email, by pozwolić nam\ndopytać się o szczegóły błędy. Dodatkowo, podawnie publicznego\nklucza PGP pozwala nam szyfrować taką przyszłą\nkomunikację.</p>\n<p>Każdy, kto widzi tę odpowiedź, prawdopodobnie wywnioskuje, że jesteś\nużytkownikiem Tails. Czas zastanowić się, jak bardzo ufasz swoim dostawcom\nInternetu i poczty?</p>\n"
-
-#: ../whisperBack/gui.py:229
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "Wysyłam pocztę..."
 
-#: ../whisperBack/gui.py:230
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "Wysyłam pocztę"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:232
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "To może chwilę potrwać..."
 
-#: ../whisperBack/gui.py:246
-msgid "The contact email adress doesn't seem valid."
+#: ../whisperBack/gui.py:236
+msgid "The contact email address doesn't seem valid."
 msgstr "Adres kontaktowy zdaje się być niepoprawny."
 
-#: ../whisperBack/gui.py:263
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "Nie mogę wysłąć pocztY: błąd SMTP."
 
-#: ../whisperBack/gui.py:265
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Nie mogę połączyć się z serwerem."
 
-#: ../whisperBack/gui.py:267
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "Nie mogę stworzyć lub wysłąć listu."
 
-#: ../whisperBack/gui.py:270
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nRaport o błądzie nie mógł zostać wysłany, prawdopodobnie przez problemy z siecią. Proszę spróbować ponownie połączyć się z siecią i ponownie kliknąć wyślij.\n\nJeśli to nie pomoże, będzie można zapisać raport o błędzie."
+msgstr ""
+"\n"
+"\n"
+"Raport o błądzie nie mógł zostać wysłany, prawdopodobnie przez problemy z "
+"siecią. Proszę spróbować ponownie połączyć się z siecią i ponownie kliknąć "
+"wyślij.\n"
+"\n"
+"Jeśli to nie pomoże, będzie można zapisać raport o błędzie."
 
-#: ../whisperBack/gui.py:283
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "Twoja wiadomość została wysłana."
 
-#: ../whisperBack/gui.py:289
-msgid "Unable to find encryption key."
-msgstr "Nie mogę znaleźć klucza szyfrowania."
-
-#: ../whisperBack/gui.py:293
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "Podczas szyfrowania wystąpił błąd."
 
-#: ../whisperBack/gui.py:313
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "Nie mogę zapisać %s."
 
-#. XXX: fix string
-#: ../whisperBack/gui.py:337
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Raport o błądzie nie mógł zostać wysłany, prawdopodobnie przez problemy z siecią.\n\nW zamian możesz zapisać raport o błędzie jako plik na dysku USB i spróbować wysłać go nam na adres %s ze swojego konta pocztowego z innego systemu. Twój raport o bęłdzie nie będzie anonimowy, gdy tak zrobisz, chyba że podejmiesz dalsze kroki (np. używając Tora z jednorazową skrzynką email).\n\nCzy chcesz zapisać raport o błędzie do pliku?"
+msgstr ""
+"Raport o błądzie nie mógł zostać wysłany, prawdopodobnie przez problemy z "
+"siecią.\n"
+"\n"
+"W zamian możesz zapisać raport o błędzie jako plik na dysku USB i spróbować "
+"wysłać go nam na adres %s ze swojego konta pocztowego z innego systemu. Twój "
+"raport o bęłdzie nie będzie anonimowy, gdy tak zrobisz, chyba że podejmiesz "
+"dalsze kroki (np. używając Tora z jednorazową skrzynką email).\n"
+"\n"
+"Czy chcesz zapisać raport o błędzie do pliku?"
 
-#: ../whisperBack/gui.py:401 ../data/whisperback.ui.h:11
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:402 ../data/whisperback.ui.h:8
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Wyślij informacje w szyfrowanej poczcie."
 
-#: ../whisperBack/gui.py:405
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+#: ../whisperBack/gui.py:387
+#, fuzzy
+msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 deweloperzy Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:406
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Deweloperzy Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:407
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "translator-credits"
 
-#: ../whisperBack/gui.py:434
-msgid "This doesn's seem to be a valid URL or OpenPGP key."
+#: ../whisperBack/gui.py:422
+#, fuzzy
+msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "To nie wygląda na poprawny adres URL lub plik OpenPGP."
 
 #: ../data/whisperback.ui.h:1
-msgid ""
-"Add a PGP key if you want us to encrypt messages when we respond to you."
-msgstr "Dodaj klucz PGP, jeśli chcesz, abyśmy szyfrowali wiadomości, gdy Ci odpowiemy."
-
-#: ../data/whisperback.ui.h:2
-msgid "Bug description"
-msgstr "Opis błędu"
-
-#: ../data/whisperback.ui.h:3
 msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr "Copyright © 2009-2012 tails@boum.org"
 
+#: ../data/whisperback.ui.h:3
+msgid "https://tails.boum.org/"
+msgstr "https://tails.boum.org/"
+
 #: ../data/whisperback.ui.h:4
-msgid "Help"
-msgstr "Pomoc"
-
-#: ../data/whisperback.ui.h:5
-msgid ""
-"If you want us to encrypt messages when we respond to you, add your key ID, "
-"a link to your key, or the key as a public key block:"
-msgstr "Jeśli chcesz, abyśmy szyfrowali wiadomości, gdy Ci odpowiem, dodaj ID swojego klucza, link do swojego klucza, lub sam klucz jako blok klucza publicznego:"
-
-#: ../data/whisperback.ui.h:6
-msgid "Optional email address to contact you"
-msgstr "Opcjonalny adres email do skontaktowania się z Tobą"
-
-#: ../data/whisperback.ui.h:7
-msgid "Send"
-msgstr "Wyślij"
-
-#: ../data/whisperback.ui.h:9
-msgid "Summary"
-msgstr "Podsumowanie"
-
-#: ../data/whisperback.ui.h:10
-msgid "Technical details to include"
-msgstr "Szcegóły techniczne do załączenia"
-
-#: ../data/whisperback.ui.h:12
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
 "Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
@@ -228,20 +198,109 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - wysyłaj informacje zwrotne zaszyfrowaną pocztą\nCopyright © 2009-2012 deweloperzy Tails (tails@boum.org)\nNiniejszy program jest wolnym oprogramowaniem; możesz go\nrozprowadzać dalej i/lub modyfikować na warunkach Powszechnej\nLicencji Publicznej GNU, wydanej przez Fundację Wolnego\nOprogramowania - według wersji 3-ciej tej Licencji lub którejś\nz późniejszych wersji.\n\nNiniejszy program rozpowszechniany jest z nadzieją, iż będzie on\nużyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej\ngwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH\nZASTOSOWAŃ. W celu uzyskania bliższych informacji - Powszechna\nLicencja Publiczna GNU.\n\nZ pewnością wraz z niniejszym programem otrzymałeś też egzemplarz\nPowszechnej Licencji Publicznej GNU (GNU General Public License);\njeśli nie - zajrzyj na <http://www.gnu.org/licenses/>.\n\n"
+msgstr ""
+"WhisperBack - wysyłaj informacje zwrotne zaszyfrowaną pocztą\n"
+"Copyright © 2009-2012 deweloperzy Tails (tails@boum.org)\n"
+"Niniejszy program jest wolnym oprogramowaniem; możesz go\n"
+"rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej\n"
+"Licencji Publicznej GNU, wydanej przez Fundację Wolnego\n"
+"Oprogramowania - według wersji 3-ciej tej Licencji lub którejś\n"
+"z późniejszych wersji.\n"
+"\n"
+"Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on\n"
+"użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej\n"
+"gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH\n"
+"ZASTOSOWAŃ. W celu uzyskania bliższych informacji - Powszechna\n"
+"Licencja Publiczna GNU.\n"
+"\n"
+"Z pewnością wraz z niniejszym programem otrzymałeś też egzemplarz\n"
+"Powszechnej Licencji Publicznej GNU (GNU General Public License);\n"
+"jeśli nie - zajrzyj na <http://www.gnu.org/licenses/>.\n"
+"\n"
+
+#: ../data/whisperback.ui.h:20
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr ""
+"Jeśli chcesz, abyśmy szyfrowali wiadomości, gdy Ci odpowiem, dodaj ID "
+"swojego klucza, link do swojego klucza, lub sam klucz jako blok klucza "
+"publicznego:"
+
+#: ../data/whisperback.ui.h:22
+msgid "Summary"
+msgstr "Podsumowanie"
+
+#: ../data/whisperback.ui.h:23
+msgid "Bug description"
+msgstr "Opis błędu"
+
+#: ../data/whisperback.ui.h:24
+msgid "Optional email address to contact you"
+msgstr "Opcjonalny adres email do skontaktowania się z Tobą"
+
+#: ../data/whisperback.ui.h:25
+msgid "optional PGP key"
+msgstr "opcjonalny klucz PGP"
+
+#: ../data/whisperback.ui.h:26
+msgid "Technical details to include"
+msgstr "Szcegóły techniczne do załączenia"
+
+#: ../data/whisperback.ui.h:27
+msgid "headers"
+msgstr "nagłówki"
 
 #: ../data/whisperback.ui.h:28
 msgid "debugging info"
 msgstr "informacje debugowania"
 
 #: ../data/whisperback.ui.h:29
-msgid "headers"
-msgstr "nagłówki"
+msgid "Help"
+msgstr "Pomoc"
 
 #: ../data/whisperback.ui.h:30
-msgid "https://tails.boum.org/"
-msgstr "https://tails.boum.org/"
+msgid "Send"
+msgstr "Wyślij"
 
-#: ../data/whisperback.ui.h:31
-msgid "optional PGP key"
-msgstr "opcjonalny klucz PGP"
+#~ msgid "No keys found."
+#~ msgstr "Nie znaleziono kluczy."
+
+#~ msgid ""
+#~ "<h1>Help us fix your bug!</h1>\n"
+#~ "<p>Read <a href=\"%s\">our bug reporting instructions</a>.</p>\n"
+#~ "<p><strong>Do not include more personal information than\n"
+#~ "needed!</strong></p>\n"
+#~ "<h2>About giving us an email address</h2>\n"
+#~ "<p>If you don't mind disclosing some bits of your identity\n"
+#~ "to Tails developers, you can provide an email address to\n"
+#~ "let us ask more details about the bug. Additionally entering\n"
+#~ "a public PGP key enables us to encrypt such future\n"
+#~ "communication.</p>\n"
+#~ "<p>Anyone who can see this reply will probably infer you are\n"
+#~ "a Tails user. Time to wonder how much you trust your\n"
+#~ "Internet and mailbox providers?</p>\n"
+#~ msgstr ""
+#~ "<h1>Pomóż nam naprawić Twój problem!</h1>\n"
+#~ "<p>Przeczytaj <a href=\"%s\">nasze instrukcje zgłaszania błędów</a>.</p>\n"
+#~ "<p><strong>Nie zawieraj więcej informacji osobistych, niż to jest\n"
+#~ "konieczne!</strong></p>\n"
+#~ "<h2>O dawaniu nam adresu email</h2>\n"
+#~ "<p>Jeśli nie masz nic przeciw podaniu części swojej tożsamości\n"
+#~ "deweloperom Tails, możesz podać adres email, by pozwolić nam\n"
+#~ "dopytać się o szczegóły błędy. Dodatkowo, podawnie publicznego\n"
+#~ "klucza PGP pozwala nam szyfrować taką przyszłą\n"
+#~ "komunikację.</p>\n"
+#~ "<p>Każdy, kto widzi tę odpowiedź, prawdopodobnie wywnioskuje, że jesteś\n"
+#~ "użytkownikiem Tails. Czas zastanowić się, jak bardzo ufasz swoim "
+#~ "dostawcom\n"
+#~ "Internetu i poczty?</p>\n"
+
+#~ msgid "Unable to find encryption key."
+#~ msgstr "Nie mogę znaleźć klucza szyfrowania."
+
+#~ msgid ""
+#~ "Add a PGP key if you want us to encrypt messages when we respond to you."
+#~ msgstr ""
+#~ "Dodaj klucz PGP, jeśli chcesz, abyśmy szyfrowali wiadomości, gdy Ci "
+#~ "odpowiemy."

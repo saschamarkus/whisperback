@@ -22,4 +22,4 @@ Commit with message "Update version to <New version>".
 
 Tag the git.
 
-Push to immerda.
+Push the master branch and the new tag to immerda.
