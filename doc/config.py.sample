@@ -121,8 +121,8 @@ def mail_appended_info():
     configuration files useful for debugging.
 
     It should not take any parameter, and should return a string serialized
-    json to be deserialized to append infos to the email. The strings 
-    in the json will be sanitized with whisperBack.utils.sanitize_hardware_info 
+    json to be deserialized to append infos to the email. The strings
+    in the json will be sanitized with whisperBack.utils.sanitize_hardware_info
 
     @return a string containing serialized json with debugging information
     """
