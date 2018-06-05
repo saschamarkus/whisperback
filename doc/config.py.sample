@@ -102,28 +102,27 @@ mail_subject = "The subject of the mail"
 
 
 def mail_prepended_info():
-    """Returns the version of the running Tails system
-    A callback function to get information to prepend to the mail
+    """A callback function to get information to prepend to the mail
     (this information will be encrypted). This is useful to add
     software version.
 
-    It should not take any parameter, and should return a string to be
+    It should not take any parameter, and should return a string. This string
+    will be sanitized with whisperBack.utils.sanitize_hardware_info and
     preprended to the email
-
-    @return The output of tails-version, if any, or an English string
-    explaining the error
+    @return a String prepended to the email
     """
     return ""
 
 
 def mail_appended_info():
-    """Returns debugging information on the running Tails system
+    """Returns debugging information on the running system
     A callback function to get information to append to the email
     (this information will be encrypted). This is useful to add
     configuration files useful for debugging.
 
     It should not take any parameter, and should return a string serialized
-    json to be deserialized to append infos to the email
+    json to be deserialized to append infos to the email. The strings
+    in the json will be sanitized with whisperBack.utils.sanitize_hardware_info
 
     @return a string containing serialized json with debugging information
     """
