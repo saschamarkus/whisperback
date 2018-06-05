@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Antxon Baldarra <baldarra@bitmessage.ch>, 2012-2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-16 19:54+0100\n"
+"POT-Creation-Date: 2018-06-03 08:58+0200\n"
 "PO-Revision-Date: 2016-03-21 16:28+0000\n"
 "Last-Translator: runasand <runa.sandvik@gmail.com>\n"
-"Language-Team: Basque (http://www.transifex.com/otf/torproject/language/eu/)\n"
+"Language-Team: Basque (http://www.transifex.com/otf/torproject/language/"
+"eu/)\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
@@ -24,108 +25,147 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "Harremanetarako email baliogabea: %s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Harremanetarako OpenPGP gako baliogabea: %s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Harremanarako OpenPGP giltz publiko blokea baliogabea"
 
 #: ../whisperBack/exceptions.py:41
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "%s aldagaia ez da ez /etc/whisperback/config.py, ez ~/.whisperback/config.py, ezta ./config.py konfigurazio fitxategietan aurkitu."
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr ""
+"%s aldagaia ez da ez /etc/whisperback/config.py, ez ~/.whisperback/config."
+"py, ezta ./config.py konfigurazio fitxategietan aurkitu."
 
-#: ../whisperBack/gui.py:148
+#: ../whisperBack/gui.py:111
+msgid "Name of the affected software"
+msgstr ""
+
+#: ../whisperBack/gui.py:113
+msgid "Exact steps to reproduce the error"
+msgstr ""
+
+#: ../whisperBack/gui.py:115
+msgid "Actual result and description of the error"
+msgstr ""
+
+#: ../whisperBack/gui.py:117
+msgid "Desired result"
+msgstr ""
+
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "Ezin izan da konfigurazio baliogarririk kargatu"
 
-#: ../whisperBack/gui.py:214
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "Posta bidaltzen..."
 
-#: ../whisperBack/gui.py:215
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "Posta bidaltzen"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "Honek luze jo dezake..."
 
-#: ../whisperBack/gui.py:232
-msgid "The contact email adress doesn't seem valid."
+#: ../whisperBack/gui.py:236
+msgid "The contact email address doesn't seem valid."
 msgstr "Harremanetarako email helbidea ez du baliogarria ematen."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "Ezin izan da emaila bidali: SMTP akatsa."
 
-#: ../whisperBack/gui.py:251
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Ezin izan da zerbitzarira konektatu."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "Ezin izan da emaila sortu edo bidali."
 
-#: ../whisperBack/gui.py:256
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nAkats txostena ezin izan da bidali, ziurrenik sare arazoengatik. Mesedez saiatu sarera berriz konektatzen eta sakatu bidali berriz.\n\nEz badu funtzionatzen, akats txostena gordetzea eskainiko zaizu."
+msgstr ""
+"\n"
+"\n"
+"Akats txostena ezin izan da bidali, ziurrenik sare arazoengatik. Mesedez "
+"saiatu sarera berriz konektatzen eta sakatu bidali berriz.\n"
+"\n"
+"Ez badu funtzionatzen, akats txostena gordetzea eskainiko zaizu."
 
-#: ../whisperBack/gui.py:269
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "Zure mezua bidali da."
 
-#: ../whisperBack/gui.py:276
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "Akats bat gertatu da enkriptazioaren bitartean."
 
-#: ../whisperBack/gui.py:296
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "Ezin izan da %s gorde."
 
-#: ../whisperBack/gui.py:319
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Akats txostena ezin izan da bidali, ziurrenik sare arazoengatik.\n\nLan-inguru bezala akats txostena fitxategi bat bezala USB batean gorde dezakezu eta guri %s ra bidaltzen saiatu zure email kontutik beste sistema bat erabiliz. Jakin ezazu zure akats txostena ez dela anonimoa izango zure kontu beste pausu batzuk ematen ez badituzu (adib. Tor erabili aldi baterako email kontu batekin).\n\nAkats txostena fitxategi batean gorde nahi duzu?"
+msgstr ""
+"Akats txostena ezin izan da bidali, ziurrenik sare arazoengatik.\n"
+"\n"
+"Lan-inguru bezala akats txostena fitxategi bat bezala USB batean gorde "
+"dezakezu eta guri %s ra bidaltzen saiatu zure email kontutik beste sistema "
+"bat erabiliz. Jakin ezazu zure akats txostena ez dela anonimoa izango zure "
+"kontu beste pausu batzuk ematen ez badituzu (adib. Tor erabili aldi baterako "
+"email kontu batekin).\n"
+"\n"
+"Akats txostena fitxategi batean gorde nahi duzu?"
 
-#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Atzeraelikadura enkriptatutako email batean bidali."
 
-#: ../whisperBack/gui.py:383
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+#: ../whisperBack/gui.py:387
+#, fuzzy
+msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails garatzaileak (tails@boum.org)"
 
-#: ../whisperBack/gui.py:384
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails garatzaileak <tails@boum.org>"
 
-#: ../whisperBack/gui.py:385
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "itzultzaile-kredituak"
 
-#: ../whisperBack/gui.py:412
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Honek es du URL edo OpenPGP gako baliogarri baten antzik."
 
@@ -154,13 +194,30 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Bidali berrelikadura enkriptatutako mail batean\nCopyright (C) 2009-2012 Tails garatzaileak <tails@boum.org>\n\nPrograma hau software askea da; birbana eta/edo alda dezakezu Software \nFoundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren 3. \nbertsioan, edo (nahiago baduzu) beste berriago batean.\n\nPrograma hau erabilgarria izango delakoan banatzen da, baina, INOLAKO \nBERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA \nMERKATURATZEKO edo HELBURU PARTIKULARRETARAKO \nERABILTZEKO. Argibide gehiago nahi izanez gero, ikus GNU Lizentzia \nPubliko Orokorra.\n\nPorgrama honekin batera GNU Lizentzia Publiko Orokorraren kopia bat \njasoko zenuen; hala ez bada, begiratu <http://www.gnu.org/licenses/>\n"
+msgstr ""
+"WhisperBack - Bidali berrelikadura enkriptatutako mail batean\n"
+"Copyright (C) 2009-2012 Tails garatzaileak <tails@boum.org>\n"
+"\n"
+"Programa hau software askea da; birbana eta/edo alda dezakezu Software \n"
+"Foundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren 3. \n"
+"bertsioan, edo (nahiago baduzu) beste berriago batean.\n"
+"\n"
+"Programa hau erabilgarria izango delakoan banatzen da, baina, INOLAKO \n"
+"BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA \n"
+"MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO \n"
+"ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus GNU Lizentzia \n"
+"Publiko Orokorra.\n"
+"\n"
+"Porgrama honekin batera GNU Lizentzia Publiko Orokorraren kopia bat \n"
+"jasoko zenuen; hala ez bada, begiratu <http://www.gnu.org/licenses/>\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Zuri erantzuterakoan mezuak enkripta ditzagun nahi baduzu, gehitu zure ID gakoa, zure gakorako lotura, edo gakoa gako bloke publiko bezala:"
+msgstr ""
+"Zuri erantzuterakoan mezuak enkripta ditzagun nahi baduzu, gehitu zure ID "
+"gakoa, zure gakorako lotura, edo gakoa gako bloke publiko bezala:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"

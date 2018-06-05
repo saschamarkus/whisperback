@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 ########################################################################
 
-__version__ = '1.7.16'
+__version__ = '1.7.17'
 LOCALEDIR = "locale/"
 PACKAGE = "whisperback"
 
@@ -39,9 +39,13 @@ import smtplib
 import socket
 
 # GIR imports
+import gi
 from gi.repository import GObject
+gi.require_version('GdkPixbuf', '2.0')
 from gi.repository import GdkPixbuf
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
+gi.require_version('WebKit', '3.0')
 from gi.repository import WebKit
 
 # Import our modules
@@ -233,7 +237,7 @@ class WhisperBackUI(object):
                 self.backend.contact_email = self.contact_email.get_text()
             except ValueError as e:
                 self.show_exception_dialog(
-                    _("The contact email adress doesn't seem valid."), e)
+                    _("The contact email address doesn't seem valid."), e)
                 self.progression_dialog.hide()
                 return
 
@@ -384,7 +388,7 @@ Do you want to save the bug report to a file?") % self.backend.to_address
         about_dialog.set_comments(_("Send feedback in an encrypted mail."))
         about_dialog.set_license(__licence__)
         about_dialog.set_copyright(
-            _("Copyright © 2009-2012 Tails developpers (tails@boum.org)"))
+            _("Copyright © 2009-2012 Tails developers (tails@boum.org)"))
         about_dialog.set_authors([_("Tails developers <tails@boum.org>")])
         about_dialog.set_translator_credits(_("translator-credits"))
         about_dialog.set_website("https://tails.boum.org/")

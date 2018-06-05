@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # adhisuryo i <adhisuryo@gmail.com>, 2017
 # Astryd Viandila Dahlan, 2015
@@ -18,14 +18,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"POT-Creation-Date: 2018-06-03 08:58+0200\n"
 "PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: Yerry Borang <yerry.borang@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/otf/torproject/language/id/)\n"
+"Language-Team: Indonesian (http://www.transifex.com/otf/torproject/language/"
+"id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. XXX use a better exception
@@ -34,57 +35,59 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "Alamat email kontak tidak benar: %s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Kunci OpenPGP kontak tidak benar: %s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Blok kunci umum OpenPGP kontak tidak benar"
 
 #: ../whisperBack/exceptions.py:41
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Variabel %s tidak ditemukan di berkas konfigurasi manapun /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr ""
+"Variabel %s tidak ditemukan di berkas konfigurasi manapun /etc/whisperback/"
+"config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:110
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "Nama perangkat lunak yang terpengaruh"
 
-#: ../whisperBack/gui.py:112
+#: ../whisperBack/gui.py:113
 msgid "Exact steps to reproduce the error"
 msgstr "Tahapan rinci untuk memproduksi ulang galat"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:115
 msgid "Actual result and description of the error"
 msgstr "Hasil aktual dan deskripsi galat"
 
-#: ../whisperBack/gui.py:116
+#: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "Hasil yang diharapkan"
 
-#: ../whisperBack/gui.py:152
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "Tidak dapat memuat konfigurasi yang valid."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "Mengirimkan surat..."
 
-#: ../whisperBack/gui.py:219
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "Mengirimkan surat"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "Membutuhkan beberapa saat..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "Alamat surel kontak sepertinya tidak valid."
 
 #: ../whisperBack/gui.py:253
@@ -103,10 +106,18 @@ msgstr "Tidak dapat membuat atau mengirim surat."
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nPelaporan kutu tidak bisa dikirimkan, sepertinya karena masalah jaringan. Mohon coba sambungkan kembali jaringan dan klik kirim lagi.\n\nJika tidak bisa juga, Anda akan ditawari untuk menyimpan laporan kutu tersebut."
+msgstr ""
+"\n"
+"\n"
+"Pelaporan kutu tidak bisa dikirimkan, sepertinya karena masalah jaringan. "
+"Mohon coba sambungkan kembali jaringan dan klik kirim lagi.\n"
+"\n"
+"Jika tidak bisa juga, Anda akan ditawari untuk menyimpan laporan kutu "
+"tersebut."
 
 #: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
@@ -126,10 +137,23 @@ msgstr "Tidak bisa menyimpan %s."
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Laporan kutu tidak bisa dikirim, sepertinya karena maslaah jaringan.\n\nSolusinya Anda dapat menyimpan laporan kutu tersebut sebagai sebuah berkas di perangkat USB dan coba kirimkan kepada kami di %s dari akun surel Anda dengan menggunakan sistem lain. Mohon dicatat bahwa laporan kutu Anda tidak akan anonim kecuali Anda mengambil langkah yang lebih aman (mis. menggunakan Tor dengan akun surel sementara).\n\nApakah Anda ingin menyimpan laporan kutu ke dalam berkas?"
+msgstr ""
+"Laporan kutu tidak bisa dikirim, sepertinya karena maslaah jaringan.\n"
+"\n"
+"Solusinya Anda dapat menyimpan laporan kutu tersebut sebagai sebuah berkas "
+"di perangkat USB dan coba kirimkan kepada kami di %s dari akun surel Anda "
+"dengan menggunakan sistem lain. Mohon dicatat bahwa laporan kutu Anda tidak "
+"akan anonim kecuali Anda mengambil langkah yang lebih aman (mis. menggunakan "
+"Tor dengan akun surel sementara).\n"
+"\n"
+"Apakah Anda ingin menyimpan laporan kutu ke dalam berkas?"
 
 #: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -140,7 +164,8 @@ msgid "Send feedback in an encrypted mail."
 msgstr "Kirim umpan balik melalui surel terenkripsi."
 
 #: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+#, fuzzy
+msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
 msgstr "Hak Cipta © 2009-2012 Tails developpers (tails@boum.org)"
 
 #: ../whisperBack/gui.py:388
@@ -151,7 +176,7 @@ msgstr "Pengembang Tails <tails@boum.org>"
 msgid "translator-credits"
 msgstr "Kredit-Translator"
 
-#: ../whisperBack/gui.py:417
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Ini tidak terlihat sebagai URL atau kunci OpenPGP yang valid."
 
@@ -180,13 +205,34 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Kirim umpan balik dalam surat terenkripsi\nHak Cipta (C) 2009-2012 pengembang Tails <tails@boum.org>\n\nAplikasi ini gratis; Anda diizinkan untuk mendistribusikan dan/atau memodifikasinya\ndi bawah ketentuan GNU General Public License sebagaimana seperti yang dipublikasikan oleh\nFree Software Foundation; baik versi 3 dari Lisensi, atau (dengan\npilihan Anda) versi yang lebih baru.\n\nAplikasi ini didistribusikan dengan harapan bahwa itu akan berguna, tetapi\nTANPA GARANSI; bahkan tanpa jaminan tersirat dari\nDAGANGAN atau KECOCOKAN UNTUK TUJUAN TERTENTU. Lihat GNU\nGeneral Public License untuk lebih jelas.\n\nAnda seharusnya menerima salinan dari GNU General Public License\nbersama dengan program ini. Jika tidak, lihat <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - Kirim umpan balik dalam surat terenkripsi\n"
+"Hak Cipta (C) 2009-2012 pengembang Tails <tails@boum.org>\n"
+"\n"
+"Aplikasi ini gratis; Anda diizinkan untuk mendistribusikan dan/atau "
+"memodifikasinya\n"
+"di bawah ketentuan GNU General Public License sebagaimana seperti yang "
+"dipublikasikan oleh\n"
+"Free Software Foundation; baik versi 3 dari Lisensi, atau (dengan\n"
+"pilihan Anda) versi yang lebih baru.\n"
+"\n"
+"Aplikasi ini didistribusikan dengan harapan bahwa itu akan berguna, tetapi\n"
+"TANPA GARANSI; bahkan tanpa jaminan tersirat dari\n"
+"DAGANGAN atau KECOCOKAN UNTUK TUJUAN TERTENTU. Lihat GNU\n"
+"General Public License untuk lebih jelas.\n"
+"\n"
+"Anda seharusnya menerima salinan dari GNU General Public License\n"
+"bersama dengan program ini. Jika tidak, lihat <http://www.gnu.org/licenses/"
+">.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Jika Anda ingin kami untuk mengenkripsi pesan ketika kami merespon Anda, tambahkan kunci ID Anda, tautan ke kunci Anda, atau tombol sebagai blok kunci publik:"
+msgstr ""
+"Jika Anda ingin kami untuk mengenkripsi pesan ketika kami merespon Anda, "
+"tambahkan kunci ID Anda, tautan ke kunci Anda, atau tombol sebagai blok "
+"kunci publik:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"

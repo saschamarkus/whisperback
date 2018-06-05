@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Adrian Staicu <astaicu@gmail.com>, 2017
 # Draga Bianca - Madalina <dragabianca@yahoo.com>, 2013
@@ -11,15 +11,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"POT-Creation-Date: 2018-06-03 08:58+0200\n"
 "PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: Iasmina Gruicin <myna_90@yahoo.com>\n"
-"Language-Team: Romanian (http://www.transifex.com/otf/torproject/language/ro/)\n"
+"Language-Team: Romanian (http://www.transifex.com/otf/torproject/language/"
+"ro/)\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ro\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:56
@@ -27,57 +29,59 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "Email de contact invalid: %s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Cheie OpenPGP de contact invalidă: %s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Bloc de chei publice OpenPGP de contact invalid"
 
 #: ../whisperBack/exceptions.py:41
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr ""
+"Variabila %s nu a fost găsită în nici un fișier de configurație\n"
 "/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Variabila %s nu a fost găsită în nici un fișier de configurație\n/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:110
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "Numele programului afectat"
 
-#: ../whisperBack/gui.py:112
+#: ../whisperBack/gui.py:113
 msgid "Exact steps to reproduce the error"
 msgstr "Pași exacți pentru a reproduce eroarea"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:115
 msgid "Actual result and description of the error"
 msgstr "Rezultat actual și descrierea erorii"
 
-#: ../whisperBack/gui.py:116
+#: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "Rezultat așteptat"
 
-#: ../whisperBack/gui.py:152
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "Nu pot încărca o configurație validă."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "Se trimite mail-ul..."
 
-#: ../whisperBack/gui.py:219
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "Se trimite mail-ul"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "Ar putea dura...."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "Adresa email de contact nu pare a fi validă."
 
 #: ../whisperBack/gui.py:253
@@ -96,10 +100,17 @@ msgstr "Indisponibil pentru a crea sau pentru a trimite mail-ul."
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nRaportul cu bug nu a putut fi trimis, posibil din cauza problemelor cu rețeaua. Reîncercați să vă conectați la rețea și trimiteți din nou.\n\nDacă nu funcționează, vi se va oferi posibilitatea să salvați raportul."
+msgstr ""
+"\n"
+"\n"
+"Raportul cu bug nu a putut fi trimis, posibil din cauza problemelor cu "
+"rețeaua. Reîncercați să vă conectați la rețea și trimiteți din nou.\n"
+"\n"
+"Dacă nu funcționează, vi se va oferi posibilitatea să salvați raportul."
 
 #: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
@@ -119,10 +130,23 @@ msgstr "Nu pot salva %s."
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "Raportul cu bug nu a putut fi trimis, posibil din cauza unei probleme de rețea.\n\nPuteți ocoli problema salvînd raportul ca un fișier pe un USB drive și trimițîndu-ni-l la %s de pe contul de email folosind alt sistem. Remarcați că raportul nu va mai fi anonim decît dacă veți urma pași suplimentari (ex. Tor cu o adresă email de unică folosință).\n\nVreți să salvez raportul într-un fișier?"
+msgstr ""
+"Raportul cu bug nu a putut fi trimis, posibil din cauza unei probleme de "
+"rețea.\n"
+"\n"
+"Puteți ocoli problema salvînd raportul ca un fișier pe un USB drive și "
+"trimițîndu-ni-l la %s de pe contul de email folosind alt sistem. Remarcați "
+"că raportul nu va mai fi anonim decît dacă veți urma pași suplimentari (ex. "
+"Tor cu o adresă email de unică folosință).\n"
+"\n"
+"Vreți să salvez raportul într-un fișier?"
 
 #: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -133,7 +157,8 @@ msgid "Send feedback in an encrypted mail."
 msgstr "Trimiteți feedback într-un email criptat."
 
 #: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+#, fuzzy
+msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 dezvoltatorii Tails (tails@boum.org)"
 
 #: ../whisperBack/gui.py:388
@@ -144,7 +169,7 @@ msgstr "Dezvoltatorii Tails <tails@boum.org>"
 msgid "translator-credits"
 msgstr "credite-traducători"
 
-#: ../whisperBack/gui.py:417
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Acesta nu pare a fi un URL valabil sau o cheie PGP deschisă."
 
@@ -173,13 +198,29 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Trimiteți feedback într-un email criptat\nCopyright (C) 2009-2012 dezvoltatorii Tails <tails@boum.org>\n\nAcest program este free software; îl puteți redistribui și/sau modifica sub termedii General Public License publicată de\nthe Free Software Foundation; versiunea 3 sau (la alegere) una mai nouă.\n\nAcest program este distribuit în speranța că va fi folositor, dar\nFĂRĂ NICI O GARANȚIE; fără măcar garanția de\nVÎNZARE sau COMPETENȚĂ PENTRU UN ANUMIT SCOP. Vezi GNU\nGeneral Public License pentru detalii.\n\nAr fi trebuit să fi primit o copie a GNU General Public License\ncu acest program. Dacă nu, vezi <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"WhisperBack - Trimiteți feedback într-un email criptat\n"
+"Copyright (C) 2009-2012 dezvoltatorii Tails <tails@boum.org>\n"
+"\n"
+"Acest program este free software; îl puteți redistribui și/sau modifica sub "
+"termedii General Public License publicată de\n"
+"the Free Software Foundation; versiunea 3 sau (la alegere) una mai nouă.\n"
+"\n"
+"Acest program este distribuit în speranța că va fi folositor, dar\n"
+"FĂRĂ NICI O GARANȚIE; fără măcar garanția de\n"
+"VÎNZARE sau COMPETENȚĂ PENTRU UN ANUMIT SCOP. Vezi GNU\n"
+"General Public License pentru detalii.\n"
+"\n"
+"Ar fi trebuit să fi primit o copie a GNU General Public License\n"
+"cu acest program. Dacă nu, vezi <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "Dacă vreți să criptăm mesajele cînd vă răspundem, adăugați IDul cheii, un link către cheie sau cheia publică atașată:"
+msgstr ""
+"Dacă vreți să criptăm mesajele cînd vă răspundem, adăugați IDul cheii, un "
+"link către cheie sau cheia publică atașată:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"

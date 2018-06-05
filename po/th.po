@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # bact' <arthit@gmail.com>, 2013,2017
 # Ben Siraphob <bensiraphob@gmail.com>, 2017
@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 12:09+0000\n"
+"POT-Creation-Date: 2018-06-03 08:58+0200\n"
 "PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: Acclaro Thailand <bkk-project@acclaro.com>\n"
 "Language-Team: Thai (http://www.transifex.com/otf/torproject/language/th/)\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. XXX use a better exception
@@ -25,57 +25,59 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "อีเมลติดต่อไม่ถูกต้อง: %s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "กุญแจ OpenPGP ของที่ติดต่อไม่ถูกต้อง: %s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "บล็อคกุญแจ OpenPGP ของที่ติดต่อไม่ถูกต้อง"
 
 #: ../whisperBack/exceptions.py:41
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "ไม่พบตัวแประ %s ในแฟ้มตั้งค่าใดๆ /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files /etc/"
+"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr ""
+"ไม่พบตัวแประ %s ในแฟ้มตั้งค่าใดๆ /etc/whisperback/config.py, ~/.whisperback/config."
+"py, ./config.py"
 
-#: ../whisperBack/gui.py:110
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "ชื่อของซอฟต์แวร์ที่ได้รับผลกระทบ"
 
-#: ../whisperBack/gui.py:112
+#: ../whisperBack/gui.py:113
 msgid "Exact steps to reproduce the error"
 msgstr "ขั้นตอนตามลำดับโดยเคร่งครัดเพื่อทำซ้ำข้อผิดพลาด"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:115
 msgid "Actual result and description of the error"
 msgstr "ผลลัพธ์ที่เกิดขึ้นจริงและคำอธิบายข้อผิดพลาด"
 
-#: ../whisperBack/gui.py:116
+#: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "ผลลัพธ์ที่ต้องการ"
 
-#: ../whisperBack/gui.py:152
+#: ../whisperBack/gui.py:151
 msgid "Unable to load a valid configuration."
 msgstr "ไม่สามารถเรียกแฟ้มตั้งค่าที่ถูกต้องได้"
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:217
 msgid "Sending mail..."
 msgstr "กำลังส่งอีเมล..."
 
-#: ../whisperBack/gui.py:219
+#: ../whisperBack/gui.py:218
 msgid "Sending mail"
 msgstr "กำลังส่งอีเมล"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:220
 msgid "This could take a while..."
 msgstr "นี่อาจใช้เวลาสักพัก..."
 
 #: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+msgid "The contact email address doesn't seem valid."
 msgstr "ที่อยู่อีเมลติดต่อดูเหมือนจะใช้ไม่ได้"
 
 #: ../whisperBack/gui.py:253
@@ -94,10 +96,17 @@ msgstr "ไม่สามารถสร้างหรือส่งอีเ
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try "
+"to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr "\n\nไม่สามารถส่งรายงานบั๊กได้ เป็นไปได้ว่าเนื่องจากปัญหาเครือข่าย โปรดลองเชื่อมต่อกับเครือข่ายใหม่ และคลิกส่งอีกครั้ง\n\nถ้ามันไม่ได้ คุณจะถูกถามให้บันทึกรายงานบั๊กดังกล่าว"
+msgstr ""
+"\n"
+"\n"
+"ไม่สามารถส่งรายงานบั๊กได้ เป็นไปได้ว่าเนื่องจากปัญหาเครือข่าย โปรดลองเชื่อมต่อกับเครือข่ายใหม่ "
+"และคลิกส่งอีกครั้ง\n"
+"\n"
+"ถ้ามันไม่ได้ คุณจะถูกถามให้บันทึกรายงานบั๊กดังกล่าว"
 
 #: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
@@ -117,10 +126,22 @@ msgstr "ไม่สามารถบันทึก %s"
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and "
+"try to send it to us at %s from your email account using another system. "
+"Note that your bug report will not be anonymous when doing so unless you "
+"take further steps yourself (e.g. using Tor with a throw-away email "
+"account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr "ไม่สามารถส่งรายงานบั๊กได้ เป็นไปได้ว่าเนื่องจากปัญหาเครือข่าย\n\nเพื่อให้ทำงานไปก่อนได้ คุณสามารถบันทึกรายงานบั๊กเป็นแฟ้มบนไดรฟ์ยูเอสบี และลองส่งมันหาเราที่ %s จากบัญชีอีเมลของคุณ โดยใช้ระบบอื่น โปรดจำว่า รายงานบั๊กของคุณจะไม่ถูกปิดชื่อถ้าคุณทำเช่นนั้น เว้นเสียแต่ว่าคุณจะใช้มาตรการเพิ่มเติมด้วยตัวคุณเอง (เช่น ใช้ Tor ด้วยบัญชีอีเมลแบบใช้ครั้งเดียวทิ้ง)\n\nคุณต้องการบันทึกรายงานบั๊กลงแฟ้มหรือไม่?"
+msgstr ""
+"ไม่สามารถส่งรายงานบั๊กได้ เป็นไปได้ว่าเนื่องจากปัญหาเครือข่าย\n"
+"\n"
+"เพื่อให้ทำงานไปก่อนได้ คุณสามารถบันทึกรายงานบั๊กเป็นแฟ้มบนไดรฟ์ยูเอสบี และลองส่งมันหาเราที่ %s "
+"จากบัญชีอีเมลของคุณ โดยใช้ระบบอื่น โปรดจำว่า รายงานบั๊กของคุณจะไม่ถูกปิดชื่อถ้าคุณทำเช่นนั้น "
+"เว้นเสียแต่ว่าคุณจะใช้มาตรการเพิ่มเติมด้วยตัวคุณเอง (เช่น ใช้ Tor "
+"ด้วยบัญชีอีเมลแบบใช้ครั้งเดียวทิ้ง)\n"
+"\n"
+"คุณต้องการบันทึกรายงานบั๊กลงแฟ้มหรือไม่?"
 
 #: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
@@ -131,7 +152,8 @@ msgid "Send feedback in an encrypted mail."
 msgstr "ส่งคำติชมในอีเมลเข้ารหัส"
 
 #: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+#, fuzzy
+msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
 msgstr "ลิขสิทธิ์ © 2009-2012 นักพัฒนา Tails (tails@boum.org)"
 
 #: ../whisperBack/gui.py:388
@@ -142,7 +164,7 @@ msgstr "นักพัฒนา Tails <tails@boum.org>"
 msgid "translator-credits"
 msgstr "translator-credits"
 
-#: ../whisperBack/gui.py:417
+#: ../whisperBack/gui.py:422
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "นี่ไม่น่าจะเป็น URL หรือกุญแจ OpenPGP ที่ถูกต้อง"
 
@@ -171,13 +193,31 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - ส่งข้อมูลติชมกลับทางอีเมลเข้ารหัส\nลิขสิทธิ์ (C) 2009-2012 ผู้พัฒนา Tails <tails@boum.org>\n\nโปรแกรมนี้เป็นซอฟต์แวร์เสรี; คุณสามารถจำหน่ายจ่ายแจกมัน และ/หรือ แก้ไข\nมันภายใต้เงื่อนไขของสัญญาอนุญาตสาธารณะทั่วไปของกนู (GNU General\nPublic License) ตามที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี (Free Software\nFoundation); ซึ่งจะใช้รุ่นที่ 3 ของสัญญาดังกล่าว หรือรุ่นหลังจากนั้นก็ได้\n(อยู่ที่คุณเลือก)\n\nโปรแกรมนี้ถูกจำหน่ายจ่ายแจก ด้วยหวังว่ามันจะมีประโยชน์ แต่มันไม่มีการรับประกันใดๆ\nไม่มีแม้แต่การรับประกันโดยนัยถึงความสามารถในการนำไปทำการค้าได้\nหรือ ความเหมาะสมสำหรับจุดประสงค์ใดจุดประสงค์หนึ่ง ดูสัญญาอนุญาต\nสาธารณะทั่วไปของกนูสำหรับรายละเอียดเพิ่มเติม\n\nคุณควรได้รับสำเนาของสัญญาอนุญาตสาธารณะทั่วไปของกนู\nมาพร้อมกับโปรแกรมนี้ ถ้าไม่พบ ดู <http://www.gnu.org/licenses/>\n"
+msgstr ""
+"WhisperBack - ส่งข้อมูลติชมกลับทางอีเมลเข้ารหัส\n"
+"ลิขสิทธิ์ (C) 2009-2012 ผู้พัฒนา Tails <tails@boum.org>\n"
+"\n"
+"โปรแกรมนี้เป็นซอฟต์แวร์เสรี; คุณสามารถจำหน่ายจ่ายแจกมัน และ/หรือ แก้ไข\n"
+"มันภายใต้เงื่อนไขของสัญญาอนุญาตสาธารณะทั่วไปของกนู (GNU General\n"
+"Public License) ตามที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี (Free Software\n"
+"Foundation); ซึ่งจะใช้รุ่นที่ 3 ของสัญญาดังกล่าว หรือรุ่นหลังจากนั้นก็ได้\n"
+"(อยู่ที่คุณเลือก)\n"
+"\n"
+"โปรแกรมนี้ถูกจำหน่ายจ่ายแจก ด้วยหวังว่ามันจะมีประโยชน์ แต่มันไม่มีการรับประกันใดๆ\n"
+"ไม่มีแม้แต่การรับประกันโดยนัยถึงความสามารถในการนำไปทำการค้าได้\n"
+"หรือ ความเหมาะสมสำหรับจุดประสงค์ใดจุดประสงค์หนึ่ง ดูสัญญาอนุญาต\n"
+"สาธารณะทั่วไปของกนูสำหรับรายละเอียดเพิ่มเติม\n"
+"\n"
+"คุณควรได้รับสำเนาของสัญญาอนุญาตสาธารณะทั่วไปของกนู\n"
+"มาพร้อมกับโปรแกรมนี้ ถ้าไม่พบ ดู <http://www.gnu.org/licenses/>\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr "ถ้าคุณต้องการให้เราเข้ารหัสข้อความเมื่อเราตอบกลับคุณ เพิ่ม ID ของกุญแจคุณ ลิงก์ไปหากุญแจคุณ หรือกุญแจดังกล่าวในรูปแบบบล็อคกุญแจสาธารณะ"
+msgstr ""
+"ถ้าคุณต้องการให้เราเข้ารหัสข้อความเมื่อเราตอบกลับคุณ เพิ่ม ID ของกุญแจคุณ ลิงก์ไปหากุญแจคุณ "
+"หรือกุญแจดังกล่าวในรูปแบบบล็อคกุญแจสาธารณะ"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
