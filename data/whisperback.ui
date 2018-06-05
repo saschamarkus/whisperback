@@ -376,7 +376,7 @@ add your key ID, a link to your key, or the key as a public key block:</property
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
-                            <property name="label" translatable="yes">Help</property>
+                            <property name="label" translatable="yes">Help:</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -413,8 +413,8 @@ add your key ID, a link to your key, or the key as a public key block:</property
                       <object class="GtkLabel" id="labelMail">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Email address (if you want an answer)</property>
                         <property name="xalign">0</property>
+                        <property name="label" translatable="yes">Email address (if you want an answer from us)</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
