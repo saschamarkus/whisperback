@@ -8,7 +8,6 @@ Vcs-Git: https://git-tails.immerda.ch/whisperback
 Build-Depends: debhelper (>= 7.0.50~),
                dh-python,
                gir1.2-gtk-3.0,
-               gir1.2-webkit-3.0,
                python3-all,
                python3-distutils-extra,
                python3-gi,
@@ -21,7 +20,6 @@ Package: whisperback
 Architecture: all
 Depends: gir1.2-glib-2.0,
          gir1.2-gtk-3.0,
-         gir1.2-webkit-3.0,
          python3-gi,
          python3-gnupg,
          python3-regex,
