@@ -4,11 +4,11 @@ Upstream-Contact: Tails developers <tails@boum.org>
 Source: https://git-tails.immerda.ch/whisperback/
 
 Files: *
-Copyright: 2009-2015, Tails developers <tails@boum.org>
+Copyright: 2009-2018, Tails developers <tails@boum.org>
 License: GPL-3+
 
 Files: whisperBack/encryption.py
-Copyright: 2009-2015, Tails developers <tails@boum.org>
+Copyright: 2009-2018, Tails developers <tails@boum.org>
            2009, W. Trevor King <wking@drexel.edu>
 License: GPL-3+
 
