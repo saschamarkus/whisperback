@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-03 08:58+0200\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,40 +55,40 @@ msgstr ""
 msgid "Desired result"
 msgstr ""
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr ""
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr ""
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr ""
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr ""
 
-#: ../whisperBack/gui.py:236
+#: ../whisperBack/gui.py:185
 msgid "The contact email address doesn't seem valid."
 msgstr ""
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr ""
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr ""
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr ""
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -98,20 +98,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr ""
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr ""
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr ""
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr ""
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -125,32 +125,32 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr ""
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr ""
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr ""
 
-#: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
+#: ../whisperBack/gui.py:336
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
 msgstr ""
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr ""
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr ""
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr ""
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
+msgid "Copyright © 2009-2018 tails@boum.org"
 msgstr ""
 
 #: ../data/whisperback.ui.h:3
@@ -160,7 +160,7 @@ msgstr ""
 #: ../data/whisperback.ui.h:4
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -191,29 +191,33 @@ msgid "Bug description"
 msgstr ""
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
+msgid "Help:"
 msgstr ""
 
 #: ../data/whisperback.ui.h:25
-msgid "optional PGP key"
+msgid "Read our bug reporting guidelines."
 msgstr ""
 
 #: ../data/whisperback.ui.h:26
-msgid "Technical details to include"
+msgid "Email address (if you want an answer from us)"
 msgstr ""
 
 #: ../data/whisperback.ui.h:27
-msgid "headers"
+msgid "optional PGP key"
 msgstr ""
 
 #: ../data/whisperback.ui.h:28
-msgid "debugging info"
+msgid "Technical details to include"
 msgstr ""
 
 #: ../data/whisperback.ui.h:29
-msgid "Help"
+msgid "headers"
 msgstr ""
 
 #: ../data/whisperback.ui.h:30
+msgid "debugging info"
+msgstr ""
+
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr ""
