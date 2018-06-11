@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-03 08:58+0200\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
 "PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: Senthil Kumar <paranthaba@gmail.com>\n"
 "Language-Team: Tamil (http://www.transifex.com/otf/torproject/language/ta/)\n"
@@ -62,40 +62,41 @@ msgstr "உண்மையான விளைவு மற்றும் பி
 msgid "Desired result"
 msgstr "எதிர்பார்த்த விளைவு"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr "சரியான கட்டமைப்பை ஏற்ற முடியவில்லை."
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr "மின்னஞ்சல் அனுப்புகிறது..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr "மின்னஞ்சல் அனுப்புகிறது"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr "இது சிறிது நேரம் எடுக்கலாம்..."
 
-#: ../whisperBack/gui.py:236
+#: ../whisperBack/gui.py:185
+#, fuzzy
 msgid "The contact email address doesn't seem valid."
 msgstr "தொடர்பு மின்னஞ்சல் முகவரி சரியானதாக தெரியவில்லை."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr "மின்னஞ்சல் அனுப்ப முடியவில்லை: SMTP பிழை."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr "சேவையகத்துடன் இணைக்க முடியவில்லை."
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr "மின்னஞ்சல் உருவாக்க அல்லது அனுப்ப முடியவில்லை."
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -112,20 +113,20 @@ msgstr ""
 "\n"
 "அது வேலை செய்யவில்லை என்றால், பிழை அறிக்கையை கோப்பாக சேமிக்க வழிவழங்கப்படும்."
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr "உங்கள் தகவல் அனுப்பப்பட்டது."
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr "மறைகுறியாக்கத்தின் பிழை போது ஏற்பட்டது."
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr "சேமிக்க முடியவில்லை %s."
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -147,33 +148,34 @@ msgstr ""
 "\n"
 "நீங்கள் பிழை அறிக்கையை ஒரு கோப்பாக சேமிக்க வேண்டுமா?"
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "ஒரு மறைகுறியாக்கப்பட்ட மின்னஞ்சல் பின்னூட்டம் அனுப்புக."
 
-#: ../whisperBack/gui.py:387
+#: ../whisperBack/gui.py:336
 #, fuzzy
-msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
 msgstr "பதிப்புரிமை © 2009-2012 டெயில்ஸ் டெவலப்பர்ஸ் (tails@boum.org)"
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr "டெயில்ஸ் டெவலப்பர்கள் <tails@boum.org>"
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr "மொழிபெயர்ப்பாளர்-மேம்பாடு"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "இது செல்லுபடியாகும் URL அல்லது OpenPGP சாவியாக தெரியவில்லை."
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
+#, fuzzy
+msgid "Copyright © 2009-2018 tails@boum.org"
 msgstr "பதிப்புரிமை © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
@@ -181,9 +183,10 @@ msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/"
 
 #: ../data/whisperback.ui.h:4
+#, fuzzy
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -231,29 +234,37 @@ msgid "Bug description"
 msgstr "பிழை விளக்கம்"
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
-msgstr "உங்களை தொடர்பு கொள்ள விருப்ப மின்னஞ்சல் முகவரி"
+#, fuzzy
+msgid "Help:"
+msgstr "உதவி"
 
 #: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr ""
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr ""
+
+#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "விருப்ப PGP சாவி"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
 msgstr "தொழில்நுட்ப விவரங்களை உள்ளடக்க"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:29
 msgid "headers"
 msgstr "தலைப்புகள்"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:30
 msgid "debugging info"
 msgstr "பிழைத்திருத்த விவரம்"
 
-#: ../data/whisperback.ui.h:29
-msgid "Help"
-msgstr "உதவி"
-
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr "அனுப்பு"
+
+#~ msgid "Optional email address to contact you"
+#~ msgstr "உங்களை தொடர்பு கொள்ள விருப்ப மின்னஞ்சல் முகவரி"
