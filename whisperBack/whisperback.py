@@ -28,6 +28,7 @@
 import email.mime.text
 import json
 import os
+import re
 import threading
 
 import gi
@@ -156,13 +157,13 @@ class WhisperBack(object):
         all_info = json.loads(raw_debug)
         result = ''
         for debug_info in all_info:
-            for info in debug_info:
-                result += '======= content of {} =======\n'.format(info)
-                if type(debug_info[info]) is list:
-                    for line in debug_info[info]:
-                        result += '{}\n'.format(whisperBack.utils.sanitize_hardware_info(line))
-                else:
-                    result += '{}\n'.format(whisperBack.utils.sanitize_hardware_info(debug_info[info]))
+            result += '\n======= content of {} =======\n'.format(debug_info['key'])
+            if type(debug_info['content']) is list:
+                for line in debug_info['content']:
+                    sanitized = '{}\n'.format(whisperBack.utils.sanitize_hardware_info(line))
+                    result += re.sub(r'^--\s*', '', sanitized)
+            else:
+                result += '{}\n'.format(whisperBack.utils.sanitize_hardware_info(debug_info['content']))
         return result
 
     def __check_conf(self):
