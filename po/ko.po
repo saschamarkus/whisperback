@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-03 08:58+0200\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
 "PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: Florencia Herra Vega <flohdot@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/otf/torproject/language/"
@@ -63,40 +63,41 @@ msgstr "오류의 실제 결과 및 설명"
 msgid "Desired result"
 msgstr "원하는 결과"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr "올바른 설정을 불러올 수 없습니다."
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr "메일 전송 중..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr "메일 전송 중"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr "다소 시간이 걸릴 수 있습니다..."
 
-#: ../whisperBack/gui.py:236
+#: ../whisperBack/gui.py:185
+#, fuzzy
 msgid "The contact email address doesn't seem valid."
 msgstr "연락처 이메일 주소가 올바르지 않습니다."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr "메일을 보낼 수 없습니다: SMPT 오류."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr "서버에 연결할 수 없습니다."
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr "메일을 작성하거나 보낼 수 없습니다."
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -112,20 +113,20 @@ msgstr ""
 "\n"
 "작동하지 않는 경우, 버그 보고서를 저장하십시오.  "
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr "메시지를 보냈습니다."
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr "암호화하는 동안 오류가 발생했습니다."
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr "%s을(를) 저장할 수 없습니다."
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -147,33 +148,34 @@ msgstr ""
 "\n"
 "버그 보고서를 파일로 저장하시겠습니까?"
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "암호화된 메일로 피드백을 보냅니다."
 
-#: ../whisperBack/gui.py:387
+#: ../whisperBack/gui.py:336
 #, fuzzy
-msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails developers <tails@boum.org>"
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr "번역-저작자"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "URL 또는 OpenPGP키가 유효하지 않은 것 같습니다."
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
+#, fuzzy
+msgid "Copyright © 2009-2018 tails@boum.org"
 msgstr "Copyright © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
@@ -181,9 +183,10 @@ msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/"
 
 #: ../data/whisperback.ui.h:4
+#, fuzzy
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -230,29 +233,37 @@ msgid "Bug description"
 msgstr "버그 설명"
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
-msgstr "연락 가능한 이메일 주소 (옵션)"
+#, fuzzy
+msgid "Help:"
+msgstr "도움말"
 
 #: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr ""
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr ""
+
+#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "부가적인 PGP 키"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
 msgstr "기술적인 세부 사항 포함"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:29
 msgid "headers"
 msgstr "헤더"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:30
 msgid "debugging info"
 msgstr "디버깅 정보"
 
-#: ../data/whisperback.ui.h:29
-msgid "Help"
-msgstr "도움말"
-
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr "보내기"
+
+#~ msgid "Optional email address to contact you"
+#~ msgstr "연락 가능한 이메일 주소 (옵션)"

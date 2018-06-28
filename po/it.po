@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-03 08:58+0200\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
 "PO-Revision-Date: 2017-09-23 18:09+0000\n"
 "Last-Translator: Random_R\n"
 "Language-Team: Italian (http://www.transifex.com/otf/torproject/language/"
@@ -67,40 +67,41 @@ msgstr "Risultato effettivo e descrizione dell'errore"
 msgid "Desired result"
 msgstr "Risultato atteso"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr "Impossibile caricare una configurazione valida."
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr "Invio della mail in corso..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr "Invio della mail in corso"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr "Questa operazione potrebbe richiedere un po' di tempo..."
 
-#: ../whisperBack/gui.py:236
+#: ../whisperBack/gui.py:185
+#, fuzzy
 msgid "The contact email address doesn't seem valid."
 msgstr "L'indirizzo email del contatto non sembra valido."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr "Impossibile inviare l'email: errore SMTP."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr "Impossibile connettersi al server."
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr "Impossibile creare o inviare la mail."
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -116,20 +117,20 @@ msgstr ""
 "\n"
 "Nel caso neanche questo funzioni, sarà possibile salvare il bug report."
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr "Messaggio inviato."
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr "Un errore è avvenuto durante la cifratura."
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr "Impossibile salvare %s"
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -152,33 +153,34 @@ msgstr ""
 "\n"
 "Si desidera salvare il bug report su un file?"
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Invia feedback in una email crittografata."
 
-#: ../whisperBack/gui.py:387
+#: ../whisperBack/gui.py:336
 #, fuzzy
-msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 sviluppatori Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr "Sviluppatori Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr "traduttore"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Questo non sembra essere un URL valido o una chiave OpenPGP."
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
+#, fuzzy
+msgid "Copyright © 2009-2018 tails@boum.org"
 msgstr "Copyright © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
@@ -186,9 +188,10 @@ msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/"
 
 #: ../data/whisperback.ui.h:4
+#, fuzzy
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -237,29 +240,37 @@ msgid "Bug description"
 msgstr "Descrizione del bug"
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
-msgstr "Indirizzo email (opzionale)"
+#, fuzzy
+msgid "Help:"
+msgstr "Aiuto"
 
 #: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr ""
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr ""
+
+#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "chiave PGP opzionale"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
 msgstr "Dettagli tecnici da includere nel report"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:29
 msgid "headers"
 msgstr "intestazioni"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:30
 msgid "debugging info"
 msgstr "informazioni di debug"
 
-#: ../data/whisperback.ui.h:29
-msgid "Help"
-msgstr "Aiuto"
-
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr "Invia"
+
+#~ msgid "Optional email address to contact you"
+#~ msgstr "Indirizzo email (opzionale)"

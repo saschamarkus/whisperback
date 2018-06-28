@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-03 08:58+0200\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
 "PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: Juris <juris.o@gmail.com>\n"
 "Language-Team: Latvian (http://www.transifex.com/otf/torproject/language/"
@@ -61,40 +61,41 @@ msgstr "Kļūdas apraksts un faktiskais rezultāts"
 msgid "Desired result"
 msgstr "Vēlamais rezultāts"
 
-#: ../whisperBack/gui.py:151
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr "Nespēj ielādēt derīgu konfigurāciju."
 
-#: ../whisperBack/gui.py:217
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr "Sūta e-pastu..."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr "Sūta e-pastu"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:220
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr "Tas varētu aizņemt kādu brītiņu..."
 
-#: ../whisperBack/gui.py:236
+#: ../whisperBack/gui.py:185
+#, fuzzy
 msgid "The contact email address doesn't seem valid."
 msgstr "Šķiet, ka saziņas e-pasta adrese nav derīga."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr "Nespēj nosūtīt e-pastu: SMTP kļūda."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr "Nespēj izveidot savienojumu ar serveri."
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr "Nespēj izveidot vai nosūtīt e-pastu."
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -111,20 +112,20 @@ msgstr ""
 "\n"
 "Ja tas nelīdzēs, tiks piedāvāts saglabāt kļūdu ziņojumu."
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr "Jūsu vēstījums ir nosūtīts."
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr "Šifrēšanas laikā notika kļūda."
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr "Nespēj saglabāt %s."
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -148,33 +149,34 @@ msgstr ""
 "\n"
 "Vai vēlaties saglabāt kļūdu ziņojumu datnē?"
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Sūtīt atsauksmes šifrētā e-pastā."
 
-#: ../whisperBack/gui.py:387
+#: ../whisperBack/gui.py:336
 #, fuzzy
-msgid "Copyright © 2009-2012 Tails developers (tails@boum.org)"
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
 msgstr "Autortiesības © 2009-2012 Tails developpers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails izstrādātāji <tails@boum.org>"
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr "tulkotāji"
 
-#: ../whisperBack/gui.py:422
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Šis nešķiet esam derīgs URL vai OpenPGP atslēga."
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
+#, fuzzy
+msgid "Copyright © 2009-2018 tails@boum.org"
 msgstr "Autortiesības © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
@@ -182,9 +184,10 @@ msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/"
 
 #: ../data/whisperback.ui.h:4
+#, fuzzy
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -233,29 +236,37 @@ msgid "Bug description"
 msgstr "Kļūdas apraksts"
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
-msgstr "Neobligāta e-pasta adrese saziņai ar Jums"
+#, fuzzy
+msgid "Help:"
+msgstr "Palīdzība"
 
 #: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr ""
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr ""
+
+#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "neobligāta PGP atslēga"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
 msgstr "Iekļaujamā tehniskā informācija"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:29
 msgid "headers"
 msgstr "galvenes"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:30
 msgid "debugging info"
 msgstr "atkļūdošanas informācija"
 
-#: ../data/whisperback.ui.h:29
-msgid "Help"
-msgstr "Palīdzība"
-
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr "Nosūtīt"
+
+#~ msgid "Optional email address to contact you"
+#~ msgstr "Neobligāta e-pasta adrese saziņai ar Jums"
