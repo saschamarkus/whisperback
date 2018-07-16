@@ -25,13 +25,13 @@
 
 """
 
-import email.mime.text
 import json
 import os
 import re
 import threading
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
-import gi
 from gi.repository import GLib
 
 # Import our modules
@@ -39,7 +39,7 @@ import whisperBack.exceptions
 import whisperBack.mail
 import whisperBack.encryption
 import whisperBack.utils
-
+from whisperBack.utils import sanitize_hardware_info as sanitize
 
 # pylint: disable=R0902
 class WhisperBack(object):
@@ -93,6 +93,7 @@ class WhisperBack(object):
         self.__error_output = None
 
         # Initialize config variables
+        self.html_help = ""
         self.gnupg_keyring = None
         self.to_address = None
         self.to_fingerprint = None
@@ -117,8 +118,9 @@ class WhisperBack(object):
 
         # Get additional info through the callbacks and sanitize it
         self.prepended_data = whisperBack.utils.sanitize_hardware_info(self.mail_prepended_info())
-        self.appended_data = self.__get_debug_info(self.mail_appended_info())
-
+        self.attachments = self.__get_debug_info(self.mail_appended_info())
+        # Create text to display on second tab
+        self.appended_data = "\n".join([a.get_payload() for a in self.attachments])
         # Initialize other variables
         self.subject = subject
         self.message = message
@@ -147,24 +149,40 @@ class WhisperBack(object):
         #pylint: disable=W0122
         exec(code, self.__dict__)
 
+
     def __get_debug_info(self, raw_debug):
-        """ Deserializes the dicts from raw_debug and creates a string
-        with the header from the dict key and it's content
+        """ Deserializes the dicts from raw_debug and creates list of attachments.
 
         @param raw_debug The serialized json containing the debug info
         It is a list of dicts to keep the order of the different debug infos
         """
-        all_info = json.loads(raw_debug)
-        result = ''
-        for debug_info in all_info:
-            result += '\n======= content of {} =======\n'.format(debug_info['key'])
-            if type(debug_info['content']) is list:
-                for line in debug_info['content']:
-                    sanitized = '{}\n'.format(whisperBack.utils.sanitize_hardware_info(line))
-                    result += re.sub(r'^--\s*', '', sanitized)
-            else:
-                result += '{}\n'.format(whisperBack.utils.sanitize_hardware_info(debug_info['content']))
-        return result
+        all_info = []
+        try:
+            all_info = json.loads(raw_debug)
+        except ValueError:
+            # In case the text in raw_debug isn't valid json we attach it as one file 
+            all_info.append({"appended_info": raw_debug})
+        return [self.__build_message(i['key'], i['content']) for i in all_info]
+
+    def __build_message(self, command, text):
+        """Create a text attachment.
+
+        @param command The executed command with an attached .txt will be the filemane 
+
+        @param text The text to attach
+        """
+        msg = MIMEText(self.__build_text(command, text))
+        filename = re.sub('[ \/]', '_', command) + '.txt'
+        msg.add_header('Content-Disposition', 'attachment', filename=filename)
+        return msg
+
+    def __build_text(self, command, lines):
+        text = ['\n======= content of {} ======='.format(command)]
+        if isinstance(lines, list):
+            text.extend([sanitize(line) for line in lines])
+        else:
+            text.append('{}\n'.format(sanitize(lines)))
+        return '\n'.join(text)
 
     def __check_conf(self):
         """Check that all the required configuration variables are filled
@@ -268,21 +286,22 @@ class WhisperBack(object):
         body += "%s\n%s\n\n" % (self.prepended_data, self.message)
         if self.contact_gpgkey and len(self.contact_gpgkey.splitlines()) > 1:
             body += "%s\n\n" % self.contact_gpgkey
-        body += "%s\n" % self.appended_data
         return body
 
     def get_mime_message(self):
         """Returns the PGP/MIME message to be sent"""
 
-        mime_message = email.mime.text.MIMEText(self.get_message_body())
+        mime_message = MIMEMultipart()
+        mime_message.attach(MIMEText(self.get_message_body()))
 
+        for msg in self.attachments:
+            mime_message.attach(msg)
         encrypter = whisperBack.encryption.Encryption(
                                         keyring=self.gnupg_keyring)
 
         encrypted_mime_message = encrypter.pgp_mime_encrypt(
                                         mime_message,
                                         [self.to_fingerprint])
-
         encrypted_mime_message['Subject'] = self.mail_subject
         encrypted_mime_message['From'] = self.from_address
         encrypted_mime_message['To'] = self.to_address
