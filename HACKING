@@ -3,23 +3,19 @@ Whisperback developer guide
 Release
 =======
 
-Install the test suite dependencies:
+Install the test suite dependencies and
+run the test suite:
 
-    sudo apt-get install python3-gnupg
-
-Run the test suite:
-
+    sudo apt-get install python3-gnupg && \
     ./test.py
 
-Fetch updated PO from the whisperback_completed branch of
-git://git.torproject.org/translation.git
+If not done yet, import translations from Transifex
+as documented on https://tails.boum.org/contribute/release_process/#upgrade-custom-debs.
 
-Verify and commit.
+Upgrade version and changelog, tag the release:
 
-Upgrade version using scripts/update-version.sh.
+    ./scripts/release.sh
 
-Commit with message "Update version to <New version>".
+Push:
 
-Tag the git.
-
-Push the master branch and the new tag to immerda.
+    git push --follow-tags origin master:master

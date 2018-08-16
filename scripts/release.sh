@@ -1,5 +1,8 @@
 #!/bin/sh
 
+set -e
+set -u
+
 OLDVERSION=$(/bin/grep "version=" setup.py | sed -E "s/^.*version='(.*)',/\1/g")
 echo "Current version is $OLDVERSION. Please enter the new version"
 read NEWVERSION
@@ -12,13 +15,20 @@ sed -i -E "s/__version__ = '$OLDVERSION'/__version__ = '$NEWVERSION'/g" whisperB
 
 sed -i -E "s/Version=$OLDVERSION/Version=$NEWVERSION/g" data/whisperback.desktop
 
-sed -i "\$a \\\n$NEWVERSION\n$(echo $NEWVERSION | tr '[:graph:]' '=')\n" ChangeLog
-#echo "Please edit ChangeLog…"
-editor ChangeLog
-
-#echo "Please edit Debian changelog…"
 export DEBFULLNAME="Tails developers"
 export DEBEMAIL="tails@boum.org"
-dch --newversion $NEWVERSION
+gbp dch --auto --release --new-version="$NEWVERSION" --spawn-editor=always
 
-#git ci -m "Update version to $NEWVERSION" setup.py doc/whisperback.t2t whisperback/whisperback.py data/whisperback.desktop ChangeLog debian/changelog
+git commit \
+    setup.py \
+    doc/whisperback.t2t \
+    whisperBack/gui.py \
+    data/whisperback.desktop \
+    debian/changelog \
+    -m "$(dpkg-parsechangelog -SSource) ($(dpkg-parsechangelog -SVersion))
+
+Gbp-Dch: Ignore
+"
+git show
+
+gbp buildpackage --git-tag-only --git-sign-tags

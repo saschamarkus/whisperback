@@ -642,3 +642,8 @@ Minor improvements
 * Various small updates to the Debian packaging.
 * Fix a few typos (Closes: Tails#15562).
 * Update POT and PO files.
+
+1.7.18 and newer
+================
+
+See debian/changelog.
