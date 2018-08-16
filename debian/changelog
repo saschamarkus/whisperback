@@ -1,28 +1,11 @@
-whisperback (1.7.17+feature.8514.7180~2.gbp46b740) feature-8514-7180-whisperback-remove-right-pane-and-refactor; urgency=medium
+whisperback (1.7.18) devel; urgency=medium
 
-  ** SNAPSHOT build @46b740fc194793cbca8d3502df8970570c960c64 **
-
-  [ intrigeri ]
-  * Bump copyright years.
-  * Update POT file.
-  * Import translations from Transifex and update PO files.
-
-  [ Sascha Markus ]
-  * Improve implementation of "Adjust to the fact mail_append_info now
-    returns structured data" (#8514).
-
- -- intrigeri <intrigeri@debian.org>  Thu, 28 Jun 2018 15:57:28 +0000
-
-whisperback (1.7.17+feature.8514.7180~1.gbpe6af3b) feature-8514-7180-whisperback-remove-right-pane-and-refactor; urgency=medium
-
-  ** SNAPSHOT build @e6af3bae8c8f48ff7162aa4e39a55884687c97ee **
-
-  [ Sascha Markus ]
   * Remove the right pane and accordingly remove the dependency on WebKit.
   * Adjust to the fact mail_append_info now returns structured data.
   * Upgrade Glade UI to use GTK+ 3 widgets.
+  * Automate the release process.
 
- -- intrigeri <intrigeri@boum.org>  Wed, 06 Jun 2018 15:57:05 +0000
+ -- Tails developers <tails@boum.org>  Thu, 16 Aug 2018 12:48:44 +0000
 
 whisperback (1.7.17) stable; urgency=medium
 
