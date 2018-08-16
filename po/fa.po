@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Amir Moezzi <amirreza.mz@yahoo.com>, 2017
 # ardeshir, 2012
@@ -15,15 +15,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
 "PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: 🤖Nariman نریمان\n"
-"Language-Team: Persian (http://www.transifex.com/otf/torproject/language/"
-"fa/)\n"
-"Language: fa\n"
+"Language-Team: Persian (http://www.transifex.com/otf/torproject/language/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. XXX use a better exception
@@ -32,158 +31,129 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "آدرس ایمیل نامعتبر: %s"
 
-#: ../whisperBack/whisperback.py:74
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "کلید OpenPGP نامعتبر: %s"
 
-#: ../whisperBack/whisperback.py:76
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "قطعه کلید عمومی OpenPGP نامعتبر می باشد"
 
 #: ../whisperBack/exceptions.py:41
-#, fuzzy, python-format
+#, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
-msgstr ""
-"پارامتر مورد نظر، %s، در هیچ کدام از فایل های تنظیمات زیر پیدا نشد:\n"
-"/etc/whisperback/config.py\n"
-"~/.whisperback/config.py\n"
-"./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "پارامتر مورد نظر، %s، در هیچ کدام از فایل های تنظیمات زیر پیدا نشد:\n/etc/whisperback/config.py\n~/.whisperback/config.py\n./config.py"
 
-#: ../whisperBack/gui.py:111
+#: ../whisperBack/gui.py:110
 msgid "Name of the affected software"
 msgstr "نام نرم افزار اثر گذار"
 
-#: ../whisperBack/gui.py:113
+#: ../whisperBack/gui.py:112
 msgid "Exact steps to reproduce the error"
 msgstr "قدم های دقیق برای تصحیح کردن خطا"
 
-#: ../whisperBack/gui.py:115
+#: ../whisperBack/gui.py:114
 msgid "Actual result and description of the error"
 msgstr "دلیل و شرح دقیق خطا"
 
-#: ../whisperBack/gui.py:117
+#: ../whisperBack/gui.py:116
 msgid "Desired result"
 msgstr "نتیجه مطلوب"
 
-#: ../whisperBack/gui.py:130
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
 msgstr "امکان بارگذاری یک پیکربندی معتبر وجود ندارد."
 
-#: ../whisperBack/gui.py:166
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
 msgstr "درحال ارسال نامه..."
 
-#: ../whisperBack/gui.py:167
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
 msgstr "درحال ارسال نامه"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:169
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
 msgstr "این عملیات ممکن است کمی بطول بیانجامد..."
 
-#: ../whisperBack/gui.py:185
-#, fuzzy
-msgid "The contact email address doesn't seem valid."
+#: ../whisperBack/gui.py:236
+msgid "The contact email adress doesn't seem valid."
 msgstr "آدرس ایمیل وارد شده به نظر صحیح نمی‌رسد."
 
-#: ../whisperBack/gui.py:202
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "امکان ارسال نامه وجود ندارد: خطای SMTP."
 
-#: ../whisperBack/gui.py:204
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "امکان برقراری ارتباط با سرور وجود ندارد."
 
-#: ../whisperBack/gui.py:206
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "امکان ایجاد و یا ارسال نامه وجود ندارد."
 
-#: ../whisperBack/gui.py:209
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try "
-"to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr ""
-"\n"
-"\n"
-"گزارش باگ\"خطا نرم افزار\" فرستاده نشد. به نظر میرسد که این اشکال از شبکه "
-"باشد. لطفا سعی کنید  دوباره به شبکه متصل شوید و روی گزینه ارسال کلیک کنید.⏎\n"
-"⏎\n"
-"اگرموارد ذکر شده در بالا کار نکرد، به شما پیشنهاد داده خواهد شد تا گزارش باگ "
-"\"خطا نرم افزار\" را ذخیره کنید."
+msgstr "\n\nگزارش باگ\"خطا نرم افزار\" فرستاده نشد. به نظر میرسد که این اشکال از شبکه باشد. لطفا سعی کنید  دوباره به شبکه متصل شوید و روی گزینه ارسال کلیک کنید.⏎\n⏎\nاگرموارد ذکر شده در بالا کار نکرد، به شما پیشنهاد داده خواهد شد تا گزارش باگ \"خطا نرم افزار\" را ذخیره کنید."
 
-#: ../whisperBack/gui.py:222
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "پیغام شما ارسال شد."
 
-#: ../whisperBack/gui.py:229
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "در هنگام رمزنگاری خطایی رخ داده است."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "امکان ذخیره سازی اطلاعات وجود ندارد%s"
 
-#: ../whisperBack/gui.py:272
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and "
-"try to send it to us at %s from your email account using another system. "
-"Note that your bug report will not be anonymous when doing so unless you "
-"take further steps yourself (e.g. using Tor with a throw-away email "
-"account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr ""
-"گزارش باگ \"خطا نرم افزار\"  فرستاده نشد. به نظر میرسد که این اشکال از شبکه "
-"باشد.⏎\n"
-"⏎\n"
-"برای حل این مشکل، میتوانید فایل گزارش باگ\"خطا نرم افزار\" را روی یک درایو "
-"USB ذخیره  و از طریق ایمیل و با استفاده از یک سیستم دیگر برای ما به آدرس %s "
-"بفرستید. توجه داشته باشید که گزارش باگ\"خطا نرم افزار\" سیستم شما، ناشناس "
-"نخواهد بود مگر اینکه اقدامات مقتضی را در جهت رفع مشکل پیش آمده انجام دهید. "
-"(بطور مثال از یک ایمیل ناشناس و بر روی شبکه تور اقدام به ارسال گزارش کنید)⏎\n"
-"⏎\n"
-"آیا مایلید که فایل گزارش باگ \"خطا نرم افزار\" را ذخیره کنید؟"
+msgstr "گزارش باگ \"خطا نرم افزار\"  فرستاده نشد. به نظر میرسد که این اشکال از شبکه باشد.⏎\n⏎\nبرای حل این مشکل، میتوانید فایل گزارش باگ\"خطا نرم افزار\" را روی یک درایو USB ذخیره  و از طریق ایمیل و با استفاده از یک سیستم دیگر برای ما به آدرس %s بفرستید. توجه داشته باشید که گزارش باگ\"خطا نرم افزار\" سیستم شما، ناشناس نخواهد بود مگر اینکه اقدامات مقتضی را در جهت رفع مشکل پیش آمده انجام دهید. (بطور مثال از یک ایمیل ناشناس و بر روی شبکه تور اقدام به ارسال گزارش کنید)⏎\n⏎\nآیا مایلید که فایل گزارش باگ \"خطا نرم افزار\" را ذخیره کنید؟"
 
-#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "ارسال بازخورد در یک نامه رمزنگاری شده."
 
-#: ../whisperBack/gui.py:336
-#, fuzzy
-msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+#: ../whisperBack/gui.py:387
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:337
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails developers <tails@boum.org>"
 
-#: ../whisperBack/gui.py:338
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "اعتبار-مترجم"
 
-#: ../whisperBack/gui.py:370
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "این به نظر یک آدرس معتبر و یا یک کلید تبادل معتبر OpenPGP نیست."
 
 #: ../data/whisperback.ui.h:1
-#, fuzzy
-msgid "Copyright © 2009-2018 tails@boum.org"
+msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr "Copyright © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
@@ -191,10 +161,9 @@ msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/"
 
 #: ../data/whisperback.ui.h:4
-#, fuzzy
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -208,31 +177,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
-"WhisperBack - ارسال بازخورد در یک ایمیل رمزنگاری شده\n"
-"تمامی حقوق (C) از سال 2009-2012 متعلق به توسعه دهندگان Tails است. "
-"<tails@boum.org>\n"
-"\n"
-"این برنامه رایگان است؛ شما می توانید آن را برای دیگران ارسال کنید و یا آن را "
-"به دلخواه خود تغییر دهید. (طبق GNU General Public License نسخه 3 و یا "
-"بالاتر)\n"
-"\n"
-"این نرم افزار به امید این که برای شما کاربردی باشد توزیع شده است. اما هیچ "
-"ضمانتی برای شما وجود ندارد. \n"
-"برای اطلاعات بیشتر به قرارداد GNU General Public License مراجعه کنید.\n"
-"\n"
-"یک نسخه از آخرین قرارداد GNU General Public License می بایست همراه این "
-"برنامه که شما آن را دریافت کرده اید موجود باشد.\n"
-"اگر اینطور نیست، به آدرس <http://www.gnu.org/licenses/> بروید.\n"
-"\n"
+msgstr "WhisperBack - ارسال بازخورد در یک ایمیل رمزنگاری شده\nتمامی حقوق (C) از سال 2009-2012 متعلق به توسعه دهندگان Tails است. <tails@boum.org>\n\nاین برنامه رایگان است؛ شما می توانید آن را برای دیگران ارسال کنید و یا آن را به دلخواه خود تغییر دهید. (طبق GNU General Public License نسخه 3 و یا بالاتر)\n\nاین نرم افزار به امید این که برای شما کاربردی باشد توزیع شده است. اما هیچ ضمانتی برای شما وجود ندارد. \nبرای اطلاعات بیشتر به قرارداد GNU General Public License مراجعه کنید.\n\nیک نسخه از آخرین قرارداد GNU General Public License می بایست همراه این برنامه که شما آن را دریافت کرده اید موجود باشد.\nاگر اینطور نیست، به آدرس <http://www.gnu.org/licenses/> بروید.\n\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr ""
-"اگر میخواهید ما در هنگام پاسخ، پیام را رمزگذاری کنیم، آی دی کلید خود، یک "
-"لینک به کلید و یا کلید را بعنوان یک بلاک کلید عمومی اضافه کنید:"
+msgstr "اگر میخواهید ما در هنگام پاسخ، پیام را رمزگذاری کنیم، آی دی کلید خود، یک لینک به کلید و یا کلید را بعنوان یک بلاک کلید عمومی اضافه کنید:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -243,37 +194,29 @@ msgid "Bug description"
 msgstr "توضیح باگ"
 
 #: ../data/whisperback.ui.h:24
-#, fuzzy
-msgid "Help:"
-msgstr "راهنما"
+msgid "Optional email address to contact you"
+msgstr "آدرس ایمیل اختیاری برای تماس با شما"
 
 #: ../data/whisperback.ui.h:25
-msgid "Read our bug reporting guidelines."
-msgstr ""
-
-#: ../data/whisperback.ui.h:26
-msgid "Email address (if you want an answer from us)"
-msgstr ""
-
-#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "کلید اختیاری PGP"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
 msgstr "اطلاعات تخصصی"
 
-#: ../data/whisperback.ui.h:29
+#: ../data/whisperback.ui.h:27
 msgid "headers"
 msgstr "headers"
 
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:28
 msgid "debugging info"
 msgstr "اطلاعات اشکال زدایی"
 
-#: ../data/whisperback.ui.h:31
+#: ../data/whisperback.ui.h:29
+msgid "Help"
+msgstr "راهنما"
+
+#: ../data/whisperback.ui.h:30
 msgid "Send"
 msgstr "ارسال"
-
-#~ msgid "Optional email address to contact you"
-#~ msgstr "آدرس ایمیل اختیاری برای تماس با شما"

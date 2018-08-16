@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # alfalb.as, 2015
 # Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2015
@@ -13,15 +13,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
 "PO-Revision-Date: 2018-04-12 18:55+0000\n"
 "Last-Translator: Manuela Silva <manuela.silva@sky.com>\n"
-"Language-Team: Portuguese (http://www.transifex.com/otf/torproject/language/"
-"pt/)\n"
-"Language: pt\n"
+"Language-Team: Portuguese (http://www.transifex.com/otf/torproject/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
@@ -30,154 +29,129 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "Correio eletrónico de contacto inválido: %s"
 
-#: ../whisperBack/whisperback.py:74
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Chave OpenPGP de contacto inválida: %s"
 
-#: ../whisperBack/whisperback.py:76
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Bloco de chave de contacto pública OpenPGP inválido"
 
 #: ../whisperBack/exceptions.py:41
-#, fuzzy, python-format
+#, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
-msgstr ""
-"A variável %s não foi encontrada em nenhum dos ficheiros de configuração /"
-"etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "A variável %s não foi encontrada em nenhum dos ficheiros de configuração /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:111
+#: ../whisperBack/gui.py:110
 msgid "Name of the affected software"
 msgstr "Nome do software afetado"
 
-#: ../whisperBack/gui.py:113
+#: ../whisperBack/gui.py:112
 msgid "Exact steps to reproduce the error"
 msgstr "Passos exatos para reproduzir o erro"
 
-#: ../whisperBack/gui.py:115
+#: ../whisperBack/gui.py:114
 msgid "Actual result and description of the error"
 msgstr "Resultado e descrição atual do erro"
 
-#: ../whisperBack/gui.py:117
+#: ../whisperBack/gui.py:116
 msgid "Desired result"
 msgstr "Resultado pretendido"
 
-#: ../whisperBack/gui.py:130
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
 msgstr "Não é possível carregar uma configuração válida."
 
-#: ../whisperBack/gui.py:166
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
 msgstr "A enviar correio..."
 
-#: ../whisperBack/gui.py:167
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
 msgstr "A enviar correio"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:169
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
 msgstr "Isto pode demorar algum tempo..."
 
-#: ../whisperBack/gui.py:185
-#, fuzzy
-msgid "The contact email address doesn't seem valid."
+#: ../whisperBack/gui.py:236
+msgid "The contact email adress doesn't seem valid."
 msgstr "O endereço de correio eletrónico de contacto não parece válido."
 
-#: ../whisperBack/gui.py:202
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "Não é possível enviar o correio: erro SMTP."
 
-#: ../whisperBack/gui.py:204
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Não é possível ligar ao servidor."
 
-#: ../whisperBack/gui.py:206
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "Não é possível criar ou enviar o correio."
 
-#: ../whisperBack/gui.py:209
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try "
-"to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr ""
-"\n"
-"\n"
-"Não foi possível enviar o relatório de erros devido a problemas de rede. Por "
-"favor, tente religar à rede e clique de novo em enviar.\n"
-"\n"
-"Se isto não funcionar, ser-lhe-á pedido para guardar o relatório de erros."
+msgstr "\n\nNão foi possível enviar o relatório de erros devido a problemas de rede. Por favor, tente religar à rede e clique de novo em enviar.\n\nSe isto não funcionar, ser-lhe-á pedido para guardar o relatório de erros."
 
-#: ../whisperBack/gui.py:222
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "A sua mensagem foi enviada."
 
-#: ../whisperBack/gui.py:229
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "Ocorreu um erro durante a encriptação."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "Não é possível guardar %s."
 
-#: ../whisperBack/gui.py:272
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and "
-"try to send it to us at %s from your email account using another system. "
-"Note that your bug report will not be anonymous when doing so unless you "
-"take further steps yourself (e.g. using Tor with a throw-away email "
-"account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr ""
-"Não foi possível enviar o relatório de erros devido a problemas de rede.\n"
-"\n"
-"Como alternativa, pode guardar o relatório de erros como um ficheiro numa "
-"unidade USB e tente enviá-lo para nós em %s da sua conta de correio "
-"eletrónico, utilizando outro sistema. Note que o seu relatório de erros não "
-"será anónimo, a não ser que tome as devidas precauções (ex.: utilizar o Tor "
-"com uma conta de correio eletrónico descartável).\n"
-"\n"
-"Deseja guardar o relatório de erros para um ficheiro?"
+msgstr "Não foi possível enviar o relatório de erros devido a problemas de rede.\n\nComo alternativa, pode guardar o relatório de erros como um ficheiro numa unidade USB e tente enviá-lo para nós em %s da sua conta de correio eletrónico, utilizando outro sistema. Note que o seu relatório de erros não será anónimo, a não ser que tome as devidas precauções (ex.: utilizar o Tor com uma conta de correio eletrónico descartável).\n\nDeseja guardar o relatório de erros para um ficheiro?"
 
-#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Envie a opinião numa mensagem encriptada."
 
-#: ../whisperBack/gui.py:336
-#, fuzzy
-msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+#: ../whisperBack/gui.py:387
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Direitos de Autor © 2009-2012 Programadores Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:337
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Programadores Talis <tails@boum.org>"
 
-#: ../whisperBack/gui.py:338
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "tradução-créditos"
 
-#: ../whisperBack/gui.py:370
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "isto não parece ser um URL ou chave OpenPGP válido."
 
 #: ../data/whisperback.ui.h:1
-#, fuzzy
-msgid "Copyright © 2009-2018 tails@boum.org"
+msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr "Direitos de Autor © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
@@ -185,10 +159,9 @@ msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/"
 
 #: ../data/whisperback.ui.h:4
-#, fuzzy
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -202,32 +175,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
-"WhisperBack - Envie comentários numa mensagem encriptada\n"
-"Direitos de Autor (C) 2009-2012 programadores do Tails <tails@boum.org>\n"
-"\n"
-"Este programa é um software livre, pode redistribuí-lo e/ou modificá-lo\n"
-"sob os termos da GNU - Licença Pública Geral, conforme publicada pela\n"
-"Fundação de Software Livre; tanto a versão 3 da licença, ou (a seu "
-"critério)\n"
-"qualquer versão posterior.\n"
-"\n"
-"Este programa é distribuído na esperança que este será útil, mas\n"
-"SEM QUALQUER GARANTIA, sem mesmo a garantia implícita de \n"
-"COMERCIALIZAÇÃO ou ADEQUAÇÃO A UM DETERMINADO FIM. Consulte a GNU - Licença "
-"Pública Geral para mais detalhes.\n"
-"\n"
-"Deverá ter recebido uma cópia da GNU - Licença Pública Geral \n"
-"com este programa. Se não, consulte <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Envie comentários numa mensagem encriptada\nDireitos de Autor (C) 2009-2012 programadores do Tails <tails@boum.org>\n\nEste programa é um software livre, pode redistribuí-lo e/ou modificá-lo\nsob os termos da GNU - Licença Pública Geral, conforme publicada pela\nFundação de Software Livre; tanto a versão 3 da licença, ou (a seu critério)\nqualquer versão posterior.\n\nEste programa é distribuído na esperança que este será útil, mas\nSEM QUALQUER GARANTIA, sem mesmo a garantia implícita de \nCOMERCIALIZAÇÃO ou ADEQUAÇÃO A UM DETERMINADO FIM. Consulte a GNU - Licença Pública Geral para mais detalhes.\n\nDeverá ter recebido uma cópia da GNU - Licença Pública Geral \ncom este programa. Se não, consulte <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr ""
-"Se pretender que as nossas respostas sejam encriptadas quando lhe "
-"respondemos, adicione a Id. da sua chave, uma hiperligação para a sua chave, "
-"ou a chave como um bloco de chave pública:"
+msgstr "Se pretender que as nossas respostas sejam encriptadas quando lhe respondemos, adicione a Id. da sua chave, uma hiperligação para a sua chave, ou a chave como um bloco de chave pública:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -238,37 +192,29 @@ msgid "Bug description"
 msgstr "Descrição do erro"
 
 #: ../data/whisperback.ui.h:24
-#, fuzzy
-msgid "Help:"
-msgstr "Ajuda"
+msgid "Optional email address to contact you"
+msgstr "Endereço de correio eletrónico opcional para o contactar"
 
 #: ../data/whisperback.ui.h:25
-msgid "Read our bug reporting guidelines."
-msgstr ""
-
-#: ../data/whisperback.ui.h:26
-msgid "Email address (if you want an answer from us)"
-msgstr ""
-
-#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "chave PGP opcional"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
 msgstr "Detalhes técnicos a incluir"
 
-#: ../data/whisperback.ui.h:29
+#: ../data/whisperback.ui.h:27
 msgid "headers"
 msgstr "cabeçalhos"
 
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:28
 msgid "debugging info"
 msgstr "informação da depuração"
 
-#: ../data/whisperback.ui.h:31
+#: ../data/whisperback.ui.h:29
+msgid "Help"
+msgstr "Ajuda"
+
+#: ../data/whisperback.ui.h:30
 msgid "Send"
 msgstr "Enviar"
-
-#~ msgid "Optional email address to contact you"
-#~ msgstr "Endereço de correio eletrónico opcional para o contactar"

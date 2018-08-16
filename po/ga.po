@@ -1,23 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Kevin Scannell <kscanne@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"POT-Creation-Date: 2017-03-20 12:09+0000\n"
 "PO-Revision-Date: 2017-10-03 21:08+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish (http://www.transifex.com/otf/torproject/language/ga/)\n"
-"Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
-"4);\n"
+"Language: ga\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:56
@@ -25,155 +24,129 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "Seoladh rphoist neamhbhailí: %s"
 
-#: ../whisperBack/whisperback.py:74
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Eochair neamhbhailí OpenPGP: %s"
 
-#: ../whisperBack/whisperback.py:76
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Bloc eochrach poiblí OpenPGP neamhbhailí "
 
 #: ../whisperBack/exceptions.py:41
-#, fuzzy, python-format
+#, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
-msgstr ""
-"Níor aimsíodh athróg %s in aon cheann de na comhaid chumraíochta  /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "Níor aimsíodh athróg %s in aon cheann de na comhaid chumraíochta  /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:111
+#: ../whisperBack/gui.py:110
 msgid "Name of the affected software"
 msgstr "Ainm an bhogearra atá buailte"
 
-#: ../whisperBack/gui.py:113
+#: ../whisperBack/gui.py:112
 msgid "Exact steps to reproduce the error"
 msgstr "Céimeanna beachta leis an earráid a atáirgeadh"
 
-#: ../whisperBack/gui.py:115
+#: ../whisperBack/gui.py:114
 msgid "Actual result and description of the error"
 msgstr "An toradh a chonaic tú agus cur síos ar an earráid"
 
-#: ../whisperBack/gui.py:117
+#: ../whisperBack/gui.py:116
 msgid "Desired result"
 msgstr "An toradh a raibh tú ag súil leis"
 
-#: ../whisperBack/gui.py:130
+#: ../whisperBack/gui.py:152
 msgid "Unable to load a valid configuration."
 msgstr "Níorbh fhéidir cumraíocht bhailí a lódáil."
 
-#: ../whisperBack/gui.py:166
+#: ../whisperBack/gui.py:218
 msgid "Sending mail..."
 msgstr "Ríomhphost á sheoladh..."
 
-#: ../whisperBack/gui.py:167
+#: ../whisperBack/gui.py:219
 msgid "Sending mail"
 msgstr "Ríomhphost á sheoladh"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:169
+#: ../whisperBack/gui.py:221
 msgid "This could take a while..."
 msgstr "Seans go dtógfaidh seo tamall fada..."
 
-#: ../whisperBack/gui.py:185
-#, fuzzy
-msgid "The contact email address doesn't seem valid."
+#: ../whisperBack/gui.py:236
+msgid "The contact email adress doesn't seem valid."
 msgstr "Dealraíonn sé nach bhfuil an seoladh rphoist seo bailí."
 
-#: ../whisperBack/gui.py:202
+#: ../whisperBack/gui.py:253
 msgid "Unable to send the mail: SMTP error."
 msgstr "Níorbh fhéidir an ríomhphost a sheoladh: earráid SMTP."
 
-#: ../whisperBack/gui.py:204
+#: ../whisperBack/gui.py:255
 msgid "Unable to connect to the server."
 msgstr "Níorbh fhéidir ceangal leis an bhfreastalaí."
 
-#: ../whisperBack/gui.py:206
+#: ../whisperBack/gui.py:257
 msgid "Unable to create or to send the mail."
 msgstr "Níorbh fhéidir an ríomhphost a chruthú nó a sheoladh."
 
-#: ../whisperBack/gui.py:209
+#: ../whisperBack/gui.py:260
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try "
-"to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr ""
-"\n"
-"\n"
-"Níorbh fhéidir an fabht a thuairisciú, is dócha mar gheall ar fhadhbanna "
-"líonra. Déan iarracht athcheangal leis an líonra agus cliceáil Seol arís.\n"
-"\n"
-"Mura n-oibríonn sé seo, beidh tú in ann an tuairisc a shábháil go háitiúil."
+msgstr "\n\nNíorbh fhéidir an fabht a thuairisciú, is dócha mar gheall ar fhadhbanna líonra. Déan iarracht athcheangal leis an líonra agus cliceáil Seol arís.\n\nMura n-oibríonn sé seo, beidh tú in ann an tuairisc a shábháil go háitiúil."
 
-#: ../whisperBack/gui.py:222
+#: ../whisperBack/gui.py:273
 msgid "Your message has been sent."
 msgstr "Seoladh do theachtaireacht."
 
-#: ../whisperBack/gui.py:229
+#: ../whisperBack/gui.py:280
 msgid "An error occured during encryption."
 msgstr "Tharla earráid agus an teachtaireacht á criptiú."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:300
 #, python-format
 msgid "Unable to save %s."
 msgstr "Níorbh fhéidir %s a shábháil."
 
-#: ../whisperBack/gui.py:272
+#: ../whisperBack/gui.py:323
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and "
-"try to send it to us at %s from your email account using another system. "
-"Note that your bug report will not be anonymous when doing so unless you "
-"take further steps yourself (e.g. using Tor with a throw-away email "
-"account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr ""
-"Níorbh fhéidir linn an tuairisc a sheoladh, is dócha mar gheall ar "
-"fhadhbanna líonra.\n"
-"\n"
-"Mar sheift shealadach, is féidir leat an tuairisc a shábháil mar chomhad ar "
-"mhéaróg USB agus í a sheoladh chugainn ag %s ó do chuntas ríomhphoist ar "
-"ríomhaire eile. Tabhair faoi deara go mbeidh do chuid sonraí pearsanta "
-"ceangailte leis an tuairisc mura nglacann tú céimeanna breise (m.sh. Tor a "
-"úsáid le cuntas rphoist indiúscartha).\n"
-"\n"
-"An bhfuil fonn ort an tuairisc a shábháil i gcomhad?"
+msgstr "Níorbh fhéidir linn an tuairisc a sheoladh, is dócha mar gheall ar fhadhbanna líonra.\n\nMar sheift shealadach, is féidir leat an tuairisc a shábháil mar chomhad ar mhéaróg USB agus í a sheoladh chugainn ag %s ó do chuntas ríomhphoist ar ríomhaire eile. Tabhair faoi deara go mbeidh do chuid sonraí pearsanta ceangailte leis an tuairisc mura nglacann tú céimeanna breise (m.sh. Tor a úsáid le cuntas rphoist indiúscartha).\n\nAn bhfuil fonn ort an tuairisc a shábháil i gcomhad?"
 
-#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Seol aiseolas i dteachtaireacht chriptithe."
 
-#: ../whisperBack/gui.py:336
-#, fuzzy
-msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+#: ../whisperBack/gui.py:387
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Cóipcheart © 2009-2012 Forbróirí Tails (tails@boum.org)"
 
-#: ../whisperBack/gui.py:337
+#: ../whisperBack/gui.py:388
 msgid "Tails developers <tails@boum.org>"
 msgstr "Forbróirí Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:338
+#: ../whisperBack/gui.py:389
 msgid "translator-credits"
 msgstr "Kevin Scannell <kscanne at gmail>, 2017"
 
-#: ../whisperBack/gui.py:370
+#: ../whisperBack/gui.py:417
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Ní cosúil gur URL bailí nó eochair OpenPGP é seo."
 
 #: ../data/whisperback.ui.h:1
-#, fuzzy
-msgid "Copyright © 2009-2018 tails@boum.org"
+msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr "Cóipcheart © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
@@ -181,10 +154,9 @@ msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/"
 
 #: ../data/whisperback.ui.h:4
-#, fuzzy
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -198,32 +170,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
-"WhisperBack - Seol aiseolas i dteachtaireacht chriptithe\n"
-"Cóipcheart (C) 2009-2012 Forbróirí Tails <tails@boum.org>\n"
-"\n"
-"Is saorbhogearra é an ríomhchlár seo; tá cead agat é a scaipeadh agus/nó\n"
-"a athrú de réir na gcoinníollacha sa GNU General Public License mar atá "
-"foilsithe\n"
-"ag an Free Software Foundation; faoi leagan 3 den cheadúnas, nó\n"
-"(más mian leat) aon leagan níos déanaí.\n"
-"\n"
-"Scaiptear an ríomhchlár seo le súil go mbeidh sé áisiúil, ach GAN AON "
-"BHARÁNTA; fiú gan baránta intuigthe INDÍOLTACHTA nó FEILIÚNACHTA D'FHEIDHM "
-"AR LEITH.  Féach ar an GNU General Public License chun níos mó sonraí a "
-"fháil.\n"
-"\n"
-"Ba chóir go mbeifeá tar éis cóip den GNU General Public License a fháil in "
-"éineacht leis an ríomhchlár seo; mura bhfuair, féach <http://www.gnu.org/"
-"licenses/>.\n"
+msgstr "WhisperBack - Seol aiseolas i dteachtaireacht chriptithe\nCóipcheart (C) 2009-2012 Forbróirí Tails <tails@boum.org>\n\nIs saorbhogearra é an ríomhchlár seo; tá cead agat é a scaipeadh agus/nó\na athrú de réir na gcoinníollacha sa GNU General Public License mar atá foilsithe\nag an Free Software Foundation; faoi leagan 3 den cheadúnas, nó\n(más mian leat) aon leagan níos déanaí.\n\nScaiptear an ríomhchlár seo le súil go mbeidh sé áisiúil, ach GAN AON BHARÁNTA; fiú gan baránta intuigthe INDÍOLTACHTA nó FEILIÚNACHTA D'FHEIDHM AR LEITH.  Féach ar an GNU General Public License chun níos mó sonraí a fháil.\n\nBa chóir go mbeifeá tar éis cóip den GNU General Public License a fháil in éineacht leis an ríomhchlár seo; mura bhfuair, féach <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr ""
-"Má tá tú ag súil le freagra criptithe uainn, tabhair aitheantas d'eochrach, "
-"nasc le d'eochair, nó an eochair féin mar bhloc eochrach poiblí:"
+msgstr "Má tá tú ag súil le freagra criptithe uainn, tabhair aitheantas d'eochrach, nasc le d'eochair, nó an eochair féin mar bhloc eochrach poiblí:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -234,37 +187,29 @@ msgid "Bug description"
 msgstr "Cur síos ar an bhfabht"
 
 #: ../data/whisperback.ui.h:24
-#, fuzzy
-msgid "Help:"
-msgstr "Cabhair"
+msgid "Optional email address to contact you"
+msgstr "Seoladh rphoist malartach le dul i dteagmháil leat"
 
 #: ../data/whisperback.ui.h:25
-msgid "Read our bug reporting guidelines."
-msgstr ""
-
-#: ../data/whisperback.ui.h:26
-msgid "Email address (if you want an answer from us)"
-msgstr ""
-
-#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "eochair roghnach PGP"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
 msgstr "Sonraí teicniúla le cur san áireamh"
 
-#: ../data/whisperback.ui.h:29
+#: ../data/whisperback.ui.h:27
 msgid "headers"
 msgstr "ceanntáisc"
 
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:28
 msgid "debugging info"
 msgstr "eolas dífhabhtaithe"
 
-#: ../data/whisperback.ui.h:31
+#: ../data/whisperback.ui.h:29
+msgid "Help"
+msgstr "Cabhair"
+
+#: ../data/whisperback.ui.h:30
 msgid "Send"
 msgstr "Seol"
-
-#~ msgid "Optional email address to contact you"
-#~ msgstr "Seoladh rphoist malartach le dul i dteagmháil leat"

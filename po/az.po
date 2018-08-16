@@ -1,22 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # D, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"POT-Creation-Date: 2015-12-16 19:54+0100\n"
 "PO-Revision-Date: 2016-03-21 16:28+0000\n"
 "Last-Translator: D\n"
-"Language-Team: Azerbaijani (http://www.transifex.com/otf/torproject/language/"
-"az/)\n"
-"Language: az\n"
+"Language-Team: Azerbaijani (http://www.transifex.com/otf/torproject/language/az/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: az\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. XXX use a better exception
@@ -25,156 +24,113 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "Səhv əlaqə emaili: %s"
 
-#: ../whisperBack/whisperback.py:74
+#: ../whisperBack/whisperback.py:73
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Səhv OpenPGP əlaqə açarı: %s"
 
-#: ../whisperBack/whisperback.py:76
+#: ../whisperBack/whisperback.py:75
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Səhv OpenPGP ictimai əlaqə açarı kilidi"
 
 #: ../whisperBack/exceptions.py:41
-#, fuzzy, python-format
+#, python-format
 msgid ""
-"The %s variable was not found in any of the configuration files /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
-msgstr ""
-"%s dəyişikliyi heç bir konfiqurasiya faylında tapılmadı: /etc/whisperback/"
-"config.py, ~/.whisperback/config.py, ./config.py"
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+msgstr "%s dəyişikliyi heç bir konfiqurasiya faylında tapılmadı: /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
 
-#: ../whisperBack/gui.py:111
-msgid "Name of the affected software"
-msgstr ""
-
-#: ../whisperBack/gui.py:113
-msgid "Exact steps to reproduce the error"
-msgstr ""
-
-#: ../whisperBack/gui.py:115
-msgid "Actual result and description of the error"
-msgstr ""
-
-#: ../whisperBack/gui.py:117
-msgid "Desired result"
-msgstr ""
-
-#: ../whisperBack/gui.py:130
+#: ../whisperBack/gui.py:148
 msgid "Unable to load a valid configuration."
 msgstr "Düzgün konfiqurasiyanın yüklənməsi mümkün deyil."
 
-#: ../whisperBack/gui.py:166
+#: ../whisperBack/gui.py:214
 msgid "Sending mail..."
 msgstr "Məktub göndərilir..."
 
-#: ../whisperBack/gui.py:167
+#: ../whisperBack/gui.py:215
 msgid "Sending mail"
 msgstr "Məktub göndərilir"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:169
+#: ../whisperBack/gui.py:217
 msgid "This could take a while..."
 msgstr "Bu bir az vaxt ala bilər..."
 
-#: ../whisperBack/gui.py:185
-#, fuzzy
-msgid "The contact email address doesn't seem valid."
+#: ../whisperBack/gui.py:232
+msgid "The contact email adress doesn't seem valid."
 msgstr "Əlaqə emaili düz olana oxşamır."
 
-#: ../whisperBack/gui.py:202
+#: ../whisperBack/gui.py:249
 msgid "Unable to send the mail: SMTP error."
 msgstr "Bu məktubun göndərilməsi mümkün deyil: SMTP xətası."
 
-#: ../whisperBack/gui.py:204
+#: ../whisperBack/gui.py:251
 msgid "Unable to connect to the server."
 msgstr "Serverlə əlaqə mümkün deyil."
 
-#: ../whisperBack/gui.py:206
+#: ../whisperBack/gui.py:253
 msgid "Unable to create or to send the mail."
 msgstr "Məktub yaratmaq və ya göndərmək mümkün deyil."
 
-#: ../whisperBack/gui.py:209
+#: ../whisperBack/gui.py:256
 msgid ""
 "\n"
 "\n"
-"The bug report could not be sent, likely due to network problems. Please try "
-"to reconnect to the network and click send again.\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
 "\n"
 "If it does not work, you will be offered to save the bug report."
-msgstr ""
-"\n"
-"\n"
-"Problem haqqında xəbər çox güman ki, şəbəkə problemləri səbəbi ilə göndərilə "
-"bilmədi. Lütfən, şəbəkəyə yenidən qoşulmağa cəh et və yenidən göndər "
-"düyməsini kliklə.\n"
-"\n"
-"Bu işləmir, problem haqqında xəbəri yaddaşa salmağın təklif edilir."
+msgstr "\n\nProblem haqqında xəbər çox güman ki, şəbəkə problemləri səbəbi ilə göndərilə bilmədi. Lütfən, şəbəkəyə yenidən qoşulmağa cəh et və yenidən göndər düyməsini kliklə.\n\nBu işləmir, problem haqqında xəbəri yaddaşa salmağın təklif edilir."
 
-#: ../whisperBack/gui.py:222
+#: ../whisperBack/gui.py:269
 msgid "Your message has been sent."
 msgstr "Mesajın göndərilib."
 
-#: ../whisperBack/gui.py:229
+#: ../whisperBack/gui.py:276
 msgid "An error occured during encryption."
 msgstr "Şifrləmə zamanı xəta baş verdi."
 
-#: ../whisperBack/gui.py:249
+#: ../whisperBack/gui.py:296
 #, python-format
 msgid "Unable to save %s."
 msgstr "%s-in yaddaşa salınması mümkün deyil."
 
-#: ../whisperBack/gui.py:272
+#: ../whisperBack/gui.py:319
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
 "\n"
-"As a work-around you can save the bug report as a file on a USB drive and "
-"try to send it to us at %s from your email account using another system. "
-"Note that your bug report will not be anonymous when doing so unless you "
-"take further steps yourself (e.g. using Tor with a throw-away email "
-"account).\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
 "\n"
 "Do you want to save the bug report to a file?"
-msgstr ""
-"Çox güman ki, şəbəkə problemləri səbəbi ilə problem haqqında xəbər göndərilə "
-"bilmədi.\n"
-"\n"
-"İş əsnasında xəbəri USB ötürücündə yadda saxlaya və bizə %s başqa sistemdən "
-"email hesabın vasitəsilə göndərə bilərsən. Nəzərə al ki, bunu etdiyin "
-"təqdirdə növbəti addımları özün seçdiyin üçün problem haqqında xəbərin "
-"anonim olmayacaq (məsələn, tullanmış email hesabı vasitəsilə Tor-un "
-"istifadəsi).\n"
-"\n"
-"Problem xəbərinio yadda saxlamaq istəyirsən?"
+msgstr "Çox güman ki, şəbəkə problemləri səbəbi ilə problem haqqında xəbər göndərilə bilmədi.\n\nİş əsnasında xəbəri USB ötürücündə yadda saxlaya və bizə %s başqa sistemdən email hesabın vasitəsilə göndərə bilərsən. Nəzərə al ki, bunu etdiyin təqdirdə növbəti addımları özün seçdiyin üçün problem haqqında xəbərin anonim olmayacaq (məsələn, tullanmış email hesabı vasitəsilə Tor-un istifadəsi).\n\nProblem xəbərinio yadda saxlamaq istəyirsən?"
 
-#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:379 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:380 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Şifrələnmiş məktubda fikrini göndər."
 
-#: ../whisperBack/gui.py:336
-#, fuzzy
-msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+#: ../whisperBack/gui.py:383
+msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
 msgstr "Hüquqların qorunması © 2009-2012 Tails yaradıcıları (tails@boum.org)"
 
-#: ../whisperBack/gui.py:337
+#: ../whisperBack/gui.py:384
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails yaradıcıları <tails@boum.org>"
 
-#: ../whisperBack/gui.py:338
+#: ../whisperBack/gui.py:385
 msgid "translator-credits"
 msgstr "tərcüməçi-şöhrət"
 
-#: ../whisperBack/gui.py:370
+#: ../whisperBack/gui.py:412
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Bu düzgün URL və ya OpenPGP açarına oxşamır."
 
 #: ../data/whisperback.ui.h:1
-#, fuzzy
-msgid "Copyright © 2009-2018 tails@boum.org"
+msgid "Copyright © 2009-2012 tails@boum.org"
 msgstr "Hüquqların qorunması © 2009-2012 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
@@ -182,10 +138,9 @@ msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/"
 
 #: ../data/whisperback.ui.h:4
-#, fuzzy
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -199,32 +154,13 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
-"WhisperBack - fikirlərini şifrələnmiş məktubda göndər\n"
-"Hüquqların qorunması (C) 2009-2012 Tails yaradıcılar <tails@boum.org>\n"
-"\n"
-"Bu proqram ödənişsizdir; sən ona Free Software Foundation \n"
-"tərəfindən nəşr edilmiş GNU Ümumi İctimai Lisenziya qaydaları \n"
-"çərçivəsində dəyişiklik edə bilərsən; ya 3-cü versiya Lisenziya, ya da\n"
-"daha yeni versiyaları (istəyinə əsasən) əsasında.\n"
-"\n"
-"Bu proqram yararlı olma ümidi ilə paylaşılmışdır, amma HEÇ BİR \n"
-"ZƏMANƏTİ YOXDUR; hətta SATILABİLƏN və ya XÜSUSİ \n"
-"MƏQSƏDLƏR ÜÇÜN YARARLILIQ zəmanəti verilmədən. Daha \n"
-"ətraflı məlumat üçün GNU Ümumi İctimai Lisenziyaya baxmağın\n"
-"məsləhət edilir.\n"
-"\n"
-"Bu proqramla yanaşı sən GNU Ümumi İctimai Lisenziyanı da \n"
-"əldə etmiş olmalısan. Əks halda, bura bax: <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - fikirlərini şifrələnmiş məktubda göndər\nHüquqların qorunması (C) 2009-2012 Tails yaradıcılar <tails@boum.org>\n\nBu proqram ödənişsizdir; sən ona Free Software Foundation \ntərəfindən nəşr edilmiş GNU Ümumi İctimai Lisenziya qaydaları \nçərçivəsində dəyişiklik edə bilərsən; ya 3-cü versiya Lisenziya, ya da\ndaha yeni versiyaları (istəyinə əsasən) əsasında.\n\nBu proqram yararlı olma ümidi ilə paylaşılmışdır, amma HEÇ BİR \nZƏMANƏTİ YOXDUR; hətta SATILABİLƏN və ya XÜSUSİ \nMƏQSƏDLƏR ÜÇÜN YARARLILIQ zəmanəti verilmədən. Daha \nətraflı məlumat üçün GNU Ümumi İctimai Lisenziyaya baxmağın\nməsləhət edilir.\n\nBu proqramla yanaşı sən GNU Ümumi İctimai Lisenziyanı da \nəldə etmiş olmalısan. Əks halda, bura bax: <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
 "If you want us to encrypt messages when we respond to you, add your key ID, "
 "a link to your key, or the key as a public key block:"
-msgstr ""
-"Əgər sənə cavab məktublarımızı şifrələnmiş şəkildə almaq istəyirsənsə, ID "
-"açarını, açarına yönəldilən linki, ya da ictimai açar kilidi açarını əlavə "
-"et:"
+msgstr "Əgər sənə cavab məktublarımızı şifrələnmiş şəkildə almaq istəyirsənsə, ID açarını, açarına yönəldilən linki, ya da ictimai açar kilidi açarını əlavə et:"
 
 #: ../data/whisperback.ui.h:22
 msgid "Summary"
@@ -235,37 +171,29 @@ msgid "Bug description"
 msgstr "Problemin izahı"
 
 #: ../data/whisperback.ui.h:24
-#, fuzzy
-msgid "Help:"
-msgstr "Kömək"
+msgid "Optional email address to contact you"
+msgstr "Səninlə əlaqə yaratmaq üçün istəyə bağlı email ünvan"
 
 #: ../data/whisperback.ui.h:25
-msgid "Read our bug reporting guidelines."
-msgstr ""
-
-#: ../data/whisperback.ui.h:26
-msgid "Email address (if you want an answer from us)"
-msgstr ""
-
-#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "istəyə bağlı PGP açar"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:26
 msgid "Technical details to include"
 msgstr "Daxil edilməli texniki məlumatlar"
 
-#: ../data/whisperback.ui.h:29
+#: ../data/whisperback.ui.h:27
 msgid "headers"
 msgstr "başlıqlar"
 
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:28
 msgid "debugging info"
 msgstr "sazlama məlumatı"
 
-#: ../data/whisperback.ui.h:31
+#: ../data/whisperback.ui.h:29
+msgid "Help"
+msgstr "Kömək"
+
+#: ../data/whisperback.ui.h:30
 msgid "Send"
 msgstr "Göndər"
-
-#~ msgid "Optional email address to contact you"
-#~ msgstr "Səninlə əlaqə yaratmaq üçün istəyə bağlı email ünvan"
