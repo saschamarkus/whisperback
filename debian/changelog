@@ -1,3 +1,9 @@
+whisperback (1.7.19) testing; urgency=medium
+
+  * Import translations from Transifex.
+
+ -- Tails developers <tails@boum.org>  Tue, 04 Sep 2018 08:27:14 +0000
+
 whisperback (1.7.18) devel; urgency=medium
 
   * Remove the right pane and accordingly remove the dependency on WebKit.
