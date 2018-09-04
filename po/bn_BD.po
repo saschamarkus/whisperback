@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2018-07-17 08:43+0000\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"PO-Revision-Date: 2018-08-16 11:11+0000\n"
 "Last-Translator: Al Shahrior Hasan Sagor <shahrior3814@gmail.com>\n"
 "Language-Team: Bengali (Bangladesh) (http://www.transifex.com/otf/torproject/language/bn_BD/)\n"
 "MIME-Version: 1.0\n"
@@ -25,12 +25,12 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "যোগাযোগ ইমেল সঠিক নয়:%s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "যোগাযোগ OpenPGP কী সঠিক নয়:%s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "যোগাযোগের OpenPGP সর্বজনীন কী ব্লক সঠিক নয়"
 
@@ -38,59 +38,59 @@ msgstr "যোগাযোগের OpenPGP সর্বজনীন কী ব�
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "%s চলরাশি টি কোন কনফিগারেশন ফাইল পাওয়া যায়নি  /etc/whisperback/config.py, ~ / .whisperback / config.py, ./config.py"
+"/etc/whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr "কনফিগারেশন ফাইল /etc/whisperback/config.py, ~/.whisperback/config.py, অথবা./config.py-এ %s চলক খুঁজে পাওয়া যায়নি।"
 
-#: ../whisperBack/gui.py:110
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "প্রভাবিত সফটওয়্যারের নাম"
 
-#: ../whisperBack/gui.py:112
+#: ../whisperBack/gui.py:113
 msgid "Exact steps to reproduce the error"
 msgstr "ত্রুটি পুনরূদ্ধার সঠিক পদক্ষেপ হল"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:115
 msgid "Actual result and description of the error"
 msgstr "ত্রুটির প্রকৃত ফলাফল এবং বর্ণনা"
 
-#: ../whisperBack/gui.py:116
+#: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "কাঙ্ক্ষিত ফলাফল"
 
-#: ../whisperBack/gui.py:152
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr "একটি বৈধ কনফিগারেশন লোড করতে অক্ষম।"
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr "মেল পাঠানো হচ্ছে ..."
 
-#: ../whisperBack/gui.py:219
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr "মেল পাঠানো হচ্ছে"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr "এটি কিছু সময় নিতে পারে ..."
 
-#: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
-msgstr "যোগাযোগের ইমেল ঠিকানা বৈধ বলে মনে হচ্ছে না।"
+#: ../whisperBack/gui.py:185
+msgid "The contact email address doesn't seem valid."
+msgstr "যোগাযোগের ইমেল ঠিকানাটি বৈধ মনে হয়নি ।"
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr "মেইল পাঠাতে অক্ষম: এসএমটিপি ত্রুটি"
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr "সার্ভারের সাথে সংযোগ স্থাপন করতে অক্ষম."
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr "মেল তৈরি করতে বা পাঠাতে অক্ষম।"
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -99,20 +99,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nত্রুটির প্রতিবেদনটি সম্ভবত নেটওয়ার্ক সমস্যার কারণে পাঠানো যাবে না। নেটওয়ার্ক পুনরায় সংযোগ করার চেষ্টা করুন এবং আবার পাঠাতে ক্লিক করুন।\n\nযদি এটি কাজ না করে, তবে আপনাকে বাগ রিপোর্ট সংরক্ষণ করতে দেওয়া হবে।"
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr "আপনার বার্তাটি পাঠানো হয়েছে."
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr "এনক্রিপশন সময় একটি ত্রুটি ঘটেছে।"
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr "%s সংরক্ষণ করতে অক্ষম."
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -122,33 +122,33 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "ত্রুটির প্রতিবেদনটি সম্ভবত নেটওয়ার্ক সমস্যার কারণে পাঠানো যাবে না।\n\nএকটি কাজ হিসাবে আপনি একটি USB ড্রাইভে একটি ফাইল হিসাবে বাগ রিপোর্ট সংরক্ষণ করতে পারেন এবং অন্য একটি সিস্টেম ব্যবহার করে আপনার ইমেল অ্যাকাউন্ট থেকে %s এ আমাদের পাঠাতে চেষ্টা করুন। মনে রাখবেন আপনার বাগ রিপোর্ট যখন বেনামে করা হবে না তখন আপনি যদি আরও ধাপগুলি না করেন তবে (উদাহরণস্বরূপ টর্কে ছোঁড়া ইমেল অ্যাকাউন্টের সাথে)।\n\nআপনি কি একটি ফাইল বাগ রিপোর্ট সংরক্ষণ করতে চান?"
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "একটি এনক্রিপ্ট করা মেলে প্রতিক্রিয়া পাঠান।"
 
-#: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "কপিরাইট © 2009-2012 পুচ্ছ বিকাশকারী (tails@boum.org)"
+#: ../whisperBack/gui.py:336
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+msgstr "কপিরাইট © 2009-2018 Tails ডেভেলপার (tails@boum.org)"
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr "টাইল ডেভেলপার <tails@boum.org>"
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr "অনুবাদক-ক্রেডিট"
 
-#: ../whisperBack/gui.py:417
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "এটি একটি বৈধ URL বা OpenPGP কী বলে মনে হচ্ছে না।"
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "কপিরাইট © 2009-2012 tails@boum.org"
+msgid "Copyright © 2009-2018 tails@boum.org"
+msgstr "কপিরাইট © 2009-2018 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -157,7 +157,7 @@ msgstr "https://tails.boum.org/"
 #: ../data/whisperback.ui.h:4
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -171,7 +171,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - একটি এনক্রিপ্ট করা মেলে প্রতিক্রিয়া পাঠান\nকপিরাইট (সি) 2009-2012 পুচ্ছ ডেভেলপার <tails@boum.org>\n\nএই প্রোগ্রামটি বিনামূল্যে সফটওয়্যার; আপনি এটি পুনর্নির্মাণ এবং / অথবা সংশোধন করতে পারেন\nএটি দ্বারা প্রকাশিত হিসাবে জিএনইউ সাধারণ পাবলিক লাইসেন্স শর্তাবলী অধীনে\nফ্রি সফটওয়্যার ফাউন্ডেশন; লাইসেন্সের 3 সংস্করণ, বা (এ\nআপনার বিকল্প) পরবর্তী সংস্করণ।\n\nএই প্রোগ্রামটি আশা করা হয় যে এটি দরকারী হবে, কিন্তু\nকোনও ওয়ারেন্টি ছাড়া; এমনকি নিখুঁত ওয়ারেন্টি ছাড়াও\nবিপণন বা একটি নির্দিষ্ট উদ্দেশ্য জন্য ফিটনেস। জিএনইউ দেখুন\nআরও বিস্তারিত জানার জন্য সাধারণ পাবলিক লাইসেন্স।\n\nআপনি GNU সাধারণ পাবলিক লাইসেন্সের একটি কপি পেয়েছেন\nএই প্রোগ্রাম সহ বরাবর। যদি না হয় তবে <http://www.gnu.org/licenses/> দেখুন।\n\n"
+msgstr "WhisperBack-এনক্রিপ্ট করা মেইলে ফিডব্যাক প্রেরণ করুন\nকপিরাইট (C) 2009-2018 Tails ডেভেলপার <tails@boum.org>\n\nএই প্রোগ্রামটি বিনামূল্যে সফটওয়্যার; আপনি এটি পুনরায় বিতরণ করতে পারেন এবং/অথবা পরিবর্তন করতে পারবেন\nএটি GNU সাধারণ পাবলিক লাইসেন্সের শর্তাবলী অনুসারে প্রকাশিত\nবিনামূল্যে সফটওয়্যার ফাউন্ডেশন; হয় লাইসেন্সের সংস্করণ 3, অথবা (\nআপনার বিকল্প) যেকোনো পরবর্তী সংস্করণ ।\n\nএই প্রোগ্রামটি যে কাজে লাগবে তা বিতরণ করা হলেও\nকোনো ওয়ারেন্টি ছাড়াই; এমনকি এর ইঙ্গিতপূর্ণ ওয়ারেন্টি ছাড়া\nএকটি নির্দিষ্ট উদ্দেশ্যের জন্য নিশ্চয়তাও বা সুস্থতা কামনা করি । GNU দেখুন\nআরও বিস্তারিত জানতে সাধারণ পাবলিক লাইসেন্স ।\n\nআপনার উচিত GNU সাধারণ পাবলিক লাইসেন্সের একটি কপি পাওয়া\nসঙ্গে সঙ্গে এই প্রোগ্রামের । যদি না হয়, দেখুন http://www.gnu.org/licenses/ ।\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
@@ -188,29 +188,33 @@ msgid "Bug description"
 msgstr "বাগ বিবরণ"
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
-msgstr "আপনার সাথে যোগাযোগ করার ঐচ্ছিক ইমেল ঠিকানা"
+msgid "Help:"
+msgstr "সহায়তা:"
 
 #: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr "আমাদের বাগ রিপোর্টিং নির্দেশিকা পড়ুন।"
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr "ই-মেইল ঠিকানা (যদি আপনি আমাদের কাছ থেকে উত্তর চান)"
+
+#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "ঐচ্ছিক PGP কী"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
 msgstr "অন্তর্ভুক্ত প্রযুক্তিগত বিবরণ"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:29
 msgid "headers"
 msgstr "হেডার"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:30
 msgid "debugging info"
 msgstr "ডিবাগিং তথ্য"
 
-#: ../data/whisperback.ui.h:29
-msgid "Help"
-msgstr "সাহায্য"
-
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr "পাঠান"

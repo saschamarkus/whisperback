@@ -5,15 +5,16 @@
 # Translators:
 # Albert <provisionalib@hotmail.com>, 2013
 # Ari Romero <ariadnaaa55555@gmail.com>, 2017
+# escufi <escufi@gmail.com>, 2018
 # laia_, 2016
 # F Xavier Castane <electromigracion@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2017-09-30 07:59+0000\n"
-"Last-Translator: Ari Romero <ariadnaaa55555@gmail.com>\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"PO-Revision-Date: 2018-08-07 09:00+0000\n"
+"Last-Translator: escufi <escufi@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/otf/torproject/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,12 +28,12 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "Correu de contacte invàlid: %s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Clau OpenPGP de contacte invàlida: %s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Bloc de clau PGP pública de contacte invàlid."
 
@@ -40,59 +41,59 @@ msgstr "Bloc de clau PGP pública de contacte invàlid."
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "La variable %s no s'ha trobat als fitxers de configuració /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"/etc/whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr "La variable %s no s'ha trobat en cap dels fitxers de configuració /etc/whisperback/config.py, ~/.whisperback/config.py o ./config.py"
 
-#: ../whisperBack/gui.py:110
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "Nom del software afectat"
 
-#: ../whisperBack/gui.py:112
+#: ../whisperBack/gui.py:113
 msgid "Exact steps to reproduce the error"
 msgstr "Passos exactes per reproduir l' error"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:115
 msgid "Actual result and description of the error"
 msgstr "Resultat real i descripció de l'error"
 
-#: ../whisperBack/gui.py:116
+#: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "Resultat desitjat"
 
-#: ../whisperBack/gui.py:152
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr "No es pot carregar una configuració vàlida."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr "Enviant correu..."
 
-#: ../whisperBack/gui.py:219
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr "Enviant correu"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr "Això por trigar una mica..."
 
-#: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
-msgstr "L'adreça de correu de contacte no sembla vàlida."
+#: ../whisperBack/gui.py:185
+msgid "The contact email address doesn't seem valid."
+msgstr "L'adreça de correu electrònic de contacte no sembla vàlida."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr "No es pot enviar el correu: Error SMTP"
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr "No es pot connectar al servidor."
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr "No es pot crear o enviar el correu."
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -101,20 +102,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nEl registre d'error no s'ha enviat per problemes de connexió. Intenteu tornar a connectar-vos a la xarxa i cliqueu envia.\n\nSi això no funciona, podreu desar el registre."
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr "El missatge s'ha enviat."
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr "hi ha hagut un error durant l'encriptació."
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr "No es pot desar: %s."
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -124,33 +125,33 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "No s'ha enviat l'informe d'errors, probablement per problemes de xarxa.\n\nCom a opció, podeu desar-lo coma fitxer en un llapis de memòria i enviar-lo a %s des d'un correu electrònic. Teniu en compte que l'informe no serà anònim si no preneu les vostres pròpies precaucions (fer servir Tor amb un compte de correu electrònic d'un sol ús).\n\nVoleu desar-lo ara en un arxiu?"
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Envieu-nos comentaris en un correu encriptat."
 
-#: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 Desenvolupadors del Tails (tails@boum.org)"
+#: ../whisperBack/gui.py:336
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+msgstr "Copyright © 2009-2018 Tails developers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr "Desenvolupadors del Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr "Informació del traductor"
 
-#: ../whisperBack/gui.py:417
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "L'Enllaç o clau OpenPGP no és vàlid."
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Copyright © 2009-2012 tails@boum.org"
+msgid "Copyright © 2009-2018 tails@boum.org"
+msgstr "Copyright © 2009-2018 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -159,7 +160,7 @@ msgstr "https://tails.boum.org/"
 #: ../data/whisperback.ui.h:4
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -173,7 +174,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Envieu comentaris amb correu encriptat\nCopyright (C) 2009-2012 Desenvolupadors del Tails <tails@boum.org>\n\nAquest programari és lliure; podeu reproduir-lo i/o modificar-lo\nsegons les condicions de la Llicència Pública General GNU, tal com la publica \nla Free Software Foundation; ja sigui la versió 3 de la llicència o (a decisió vostra) de qualsevol posterior.\n\nAquest programari es distribueix amb la intenció de ser útil, però\nAMB CAP GARANTIA; inclús sense la garantia implícita de \nMERCANTIBILITAT  or ADECUACIÓ PER A PROPÒSITS PARTICULARS. Vegeu la Llicència\nPública General GNU per a més detalls.\n\nHauríeu d'haver rebut una còpia de la Llicència pública general GNU\njuntament amb el programa. Si no és així, visiteu <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack: envia comentaris en un correu xifrat\nCopyright (C) 2009-2018 desenvolupadors Tails <tails@boum.org>\n\nAquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo\nsota els termes de la Llicència Pública General de GNU tal com la publica\nla Free Software Foundation; ja sigui la versió 3 de la llicència, o (segons\nla vostra opció) qualsevol versió posterior.\n\nAquest programa es distribueix amb l'esperança que sigui útil, però\nSENSE CAP GARANTIA; sense ni tan sols la garantia implícita de\nCOMERCIABILITAT O ADEQUACIÓ PER A UN PROPÒSIT PARTICULAR. Vegeu el GNU\nLlicència pública general per obtenir més detalls.\n\nHeu d'haver rebut una còpia de la Llicència pública general de GNU\njuntament amb aquest programa. Si no, vegeu <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
@@ -190,29 +191,33 @@ msgid "Bug description"
 msgstr "Descripció de l'error"
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
-msgstr "Correu electrònic de contacte opcional"
+msgid "Help:"
+msgstr "Ajuda:"
 
 #: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr "Llegiu les nostres pautes d'informes d'errors."
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr "Adreça de correu electrònic (si voleu una resposta de nosaltres)"
+
+#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "clau PGP opcional"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
 msgstr "Detalls tècnics per incloure"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:29
 msgid "headers"
 msgstr "capçaleres"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:30
 msgid "debugging info"
 msgstr "Informació de depuració"
 
-#: ../data/whisperback.ui.h:29
-msgid "Help"
-msgstr "Ajuda"
-
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr "Envia"

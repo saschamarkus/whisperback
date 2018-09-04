@@ -4,22 +4,22 @@
 # 
 # Translators:
 # Aleksandr Jadov <a.jadov@tata.lt>, 2013
-# Moo, 2015-2017
+# Moo, 2015-2018
 # Rasa Sakarviene, 2014
 # Tautvydas Zukauskas <lordmu@linuxmail.org>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2017-09-19 17:08+0000\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"PO-Revision-Date: 2018-08-07 09:01+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/otf/torproject/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: lt\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:56
@@ -27,12 +27,12 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "Klaidingas kontakto el. paštas: %s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Neteisingas kontakto OpenPGP raktas: %s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Neteisingas kontakto OpenPGP viešojo rakto blokas"
 
@@ -40,59 +40,59 @@ msgstr "Neteisingas kontakto OpenPGP viešojo rakto blokas"
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Nei viename iš konfigūracijos failų /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py nebuvo rastas kintamasis %s."
+"/etc/whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr "Nei viename iš konfigūracijos failų /etc/whisperback/config.py, ~/.whisperback/config.py ar ./config.py nebuvo rastas kintamasis %s"
 
-#: ../whisperBack/gui.py:110
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "Paveiktos programinės įrangos pavadinimas"
 
-#: ../whisperBack/gui.py:112
+#: ../whisperBack/gui.py:113
 msgid "Exact steps to reproduce the error"
 msgstr "Tikslūs žingsniai, kaip galima pakartoti klaidą"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:115
 msgid "Actual result and description of the error"
 msgstr "Faktinis rezultatas ir klaidos aprašas"
 
-#: ../whisperBack/gui.py:116
+#: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "Pageidaujamas rezultatas"
 
-#: ../whisperBack/gui.py:152
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr "Nepavyko įkelti teisingos konfigūracijos."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr "Paštas siunčiamas..."
 
-#: ../whisperBack/gui.py:219
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr "Paštas siunčiamas"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr "Tai gali užtrukti..."
 
-#: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+#: ../whisperBack/gui.py:185
+msgid "The contact email address doesn't seem valid."
 msgstr "Neatrodo, kad kontakto el. paštas yra tinkamas."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr "Neįmanoma išsiūsti pašto: SMTP klaida."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr "Neįmanoma prisijungti prie serverio."
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr "Neįmanoma sukurti ar išsiūsti pašto."
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -101,20 +101,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nTikriausiai, dėl tinklo problemų, nepavyko išsiųsti klaidos pranešimo. Prašome pabandyti iš naujo prisijungti prie tinklo ir spustelėti siųsti dar kartą.\n\nJeigu tai nesuveikia, jums bus pasiūlyta įrašyti klaidos pranešimą."
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr "Jūsų laiškas išsiūstas."
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr "Šifravimo metu, įvyko klaida"
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr "Neįmanoma įrašyti %s."
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -124,33 +124,33 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Tikriausiai, dėl tinklo problemų, nepavyko išsiųsti klaidos pranešimo.\n\nNorėdami apeiti problemą, galite įrašyti klaidos pranešimą kaip failą į savo USB diską ir, naudojantis savo el. pašto paskyra kitoje sistemoje, pabandyti išsiųsti pranešimą mums, adresu %s. Turėkite omenyje, kad taip darant, jūsų klaidos pranešimas nebus anoniminis, nebent patys atliksite tolimesnius žingsnius (pvz., naudosite Tor su vienkartine el. pašto paskyra).\n\nAr norite įrašyti klaidos pranešimą į failą?"
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Siųskite atsiliepimus užšifruotu paštu."
 
-#: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Autorių teisės © 2009-2012 Tails kūrėjai (tails@boum.org)"
+#: ../whisperBack/gui.py:336
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+msgstr "Autorių teisės © 2009-2018 Tails kūrėjai (tails@boum.org)"
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails kūrėjai <tails@boum.org>"
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr "Moo"
 
-#: ../whisperBack/gui.py:417
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Tai nepanašu į teisingą URL ar OpenPGP raktą."
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Autorių teisės © 2009-2012 tails@boum.org"
+msgid "Copyright © 2009-2018 tails@boum.org"
+msgstr "Autorių teisės © 2009-2018 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -159,7 +159,7 @@ msgstr "https://tails.boum.org/"
 #: ../data/whisperback.ui.h:4
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -173,7 +173,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Siųsti atsiliepimus šifruotu paštu\nAutorių teisės (C) 2009-2012 Tails kūrėjai <tails@boum.org>\n\nTai yra laisvoji programinė įranga; galite ja dalintis ir/ar modifikuoti\npagal GNU bendrosios viešosios licencijos sąlygas, kurias nurodė\n Free Software Foundation; pagal trečią(3) ar vėlesnę licencijos versiją.\n\nŠi programinė įranga platinama tikintis, kad ji bus naudinga, tačiau\nBE JOKIŲ GARANTIJŲ; netgi be numanomos PARDAVIMO ar TINKAMUMO TAM TIKRAM TIKLSUI garantijos. Išsamesnei informacijai, žiūrėkite GNU bendrąją viešąją licenciją.\n\nJūs turėjote gauti GNU bendrosios viešosios licencijos kopiją\nkartu su šia programa. Jei negavote, žiūrėkite <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Siųsti atsiliepimus šifruotu paštu\nAutorių teisės (C) 2009-2018 Tails kūrėjai <tails@boum.org>\n\nŠi programa yra laisvoji programinė įranga; galite ją platinti ir/ar modifikuoti\npagal GNU bendrosios viešosios licencijos sąlygas, kurias nurodė\n Free Software Foundation; pagal trečią(3) ar vėlesnę licencijos versiją.\n\nŠi programinė įranga platinama tikintis, kad ji bus naudinga, tačiau\nBE JOKIŲ GARANTIJŲ; netgi be numanomos PARDAVIMO ar TINKAMUMO TAM TIKRAM TIKLSUI garantijos. Išsamesnei informacijai, žiūrėkite GNU bendrąją viešąją licenciją.\n\nKartu su šia programa, turėjote gauti GNU bendrosios viešosios licencijos kopiją. Jei negavote, žiūrėkite <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
@@ -190,29 +190,33 @@ msgid "Bug description"
 msgstr "Klaidos aprašymas"
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
-msgstr "Nebūtinas el. pašto adresas, skirtas susisiekti su jumis"
+msgid "Help:"
+msgstr "Žinynas:"
 
 #: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr "Skaitykite mūsų klaidų pranešimo gaires."
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr "El. pašto adresas (jei norite atsakymo iš mūsų)"
+
+#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "nebūtinas PGP raktas"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
 msgstr "Pridėti techninius duomenis"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:29
 msgid "headers"
 msgstr "antraštės"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:30
 msgid "debugging info"
 msgstr "derinimo informacija"
 
-#: ../data/whisperback.ui.h:29
-msgid "Help"
-msgstr "Pagalba"
-
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr "Siųsti"
