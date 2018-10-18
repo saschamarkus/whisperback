@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 17:17+0200\n"
-"PO-Revision-Date: 2017-03-21 13:41+0000\n"
+"PO-Revision-Date: 2018-10-18 12:18+0000\n"
 "Last-Translator: French language coordinator <french.translation@rbox.me>\n"
 "Language-Team: French (http://www.transifex.com/otf/torproject/language/"
 "fr/)\n"
@@ -24,6 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #. XXX use a better exception
 #: ../whisperBack/whisperback.py:56
@@ -41,13 +42,13 @@ msgid "Invalid contact OpenPGP public key block"
 msgstr "Bloc de clé publique OpenPGP de contact invalide"
 
 #: ../whisperBack/exceptions.py:41
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files /etc/"
 "whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
 msgstr ""
 "La variable %s n'a été trouvée dans aucun des fichiers de configuration /etc/"
-"whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"whisperback/config.py, ~/.whisperback/config.py, ou ./config.py"
 
 #: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
@@ -160,12 +161,11 @@ msgstr "WhisperBack"
 
 #: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
-msgstr "Envoyez vos commentaires dans un courriel chiffré."
+msgstr "Envoyez vos retours dans un courriel chiffré."
 
 #: ../whisperBack/gui.py:336
-#, fuzzy
 msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
+msgstr "Copyright © 2009-2018 Tails developers (tails@boum.org)"
 
 #: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
@@ -180,16 +180,14 @@ msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Cela ne semble être ni une URL ni une clé OpenPGP valide."
 
 #: ../data/whisperback.ui.h:1
-#, fuzzy
 msgid "Copyright © 2009-2018 tails@boum.org"
-msgstr "Copyright © 2009-2012 tails@boum.org"
+msgstr "Copyright © 2009-2018 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
 msgstr "https://tails.boum.org/index.fr.html"
 
 #: ../data/whisperback.ui.h:4
-#, fuzzy
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
 "Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
@@ -207,8 +205,8 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"WhisperBack - Envoyez vos commentaires dans un courriel chiffré\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"WhisperBack - Envoyez vos retours dans un courriel chiffré\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou le\n"
 "modifier suivant les conditions de la licence publique générale GNU telle "
@@ -244,17 +242,17 @@ msgid "Bug description"
 msgstr "Description du bogue"
 
 #: ../data/whisperback.ui.h:24
-#, fuzzy
 msgid "Help:"
-msgstr "Aide"
+msgstr "Aide :"
 
 #: ../data/whisperback.ui.h:25
 msgid "Read our bug reporting guidelines."
-msgstr ""
+msgstr "Lire nos instructions pour signaler un bogue."
 
 #: ../data/whisperback.ui.h:26
 msgid "Email address (if you want an answer from us)"
 msgstr ""
+"Adresse de courrier électronique (si vous voulez une réponse de notre part)"
 
 #: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
