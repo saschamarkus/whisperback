@@ -8,11 +8,11 @@
 # Tore Bjørnson <tore.bjornson@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: The Tor Project\n"
+"Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 17:17+0200\n"
-"PO-Revision-Date: 2018-08-19 15:23+0000\n"
-"Last-Translator: scootergrisen\n"
+"PO-Revision-Date: 2019-01-15 12:20+0000\n"
+"Last-Translator: erinm\n"
 "Language-Team: Danish (http://www.transifex.com/otf/torproject/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,11 +56,11 @@ msgstr "Resultatet og beskrivelse af fejlen"
 
 #: ../whisperBack/gui.py:117
 msgid "Desired result"
-msgstr "Ønskede resultat"
+msgstr "Ønsket resultat"
 
 #: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
-msgstr "Ude af stand til at indlæse en korrekt konfiguration."
+msgstr "Kan ikke indlæse en korrekt konfiguration."
 
 #: ../whisperBack/gui.py:166
 msgid "Sending mail..."
@@ -81,15 +81,15 @@ msgstr "Kontakt e-mailadressen ser ikke ud til at være gyldig."
 
 #: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
-msgstr "Kunne ikke sende mailen: SMTP fejl."
+msgstr "Kan ikke sende mailen: SMTP fejl."
 
 #: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
-msgstr "Ude af stand til at oprette forbindelse til serveren."
+msgstr "Kan ikke oprette forbindelse til serveren."
 
 #: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
-msgstr "Ude af stand til at kreere eller sende mailen."
+msgstr "Kan ikke oprette eller sende mailen."
 
 #: ../whisperBack/gui.py:209
 msgid ""
@@ -111,7 +111,7 @@ msgstr "Der opstod en fejl under krypteringen."
 #: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
-msgstr "Kunne ikke gemme %s."
+msgstr "Kan ikke gemme %s."
 
 #: ../whisperBack/gui.py:272
 #, python-format
@@ -137,7 +137,7 @@ msgstr "Ophavsret © 2009-2018 Tails-udviklere (tails@boum.org)"
 
 #: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
-msgstr "Tails udviklere <tails@boum.org>"
+msgstr "Tails-udviklere <tails@boum.org>"
 
 #: ../whisperBack/gui.py:338
 msgid "translator-credits"
@@ -145,7 +145,7 @@ msgstr "scootergrisen, 2017"
 
 #: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
-msgstr "Dette ser ikke ud til at være en valid URL eller OpenPGP nøgle."
+msgstr "Dette ser ikke ud til at være en valid URL eller OpenPGP-nøgle."
 
 #: ../data/whisperback.ui.h:1
 msgid "Copyright © 2009-2018 tails@boum.org"
@@ -172,7 +172,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Send feedback i en krypteret mail\nOphavsret (C) 2009-2018 Tails udviklere <tails@boum.org>\n\nDette program er fri software; du kan videredistribuere det og/eller ændre\ndet i henhold til GNU General Public License som udgivet af\nFree Software Foundation; enten version 3 af licensen, eller (efter\neget valg) en hvilken som helst senere version.\n\nDette program er distribueret i håbet om at det vil være anvendeligt, men\nUDEN NOGEN GARANTI;   uden selv den underforståede garanti for\nSALGSBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Læs GNU\nGeneral Public License for flere detaljer.\n\nDu burde have modtaget en kopi af GNU General Public License\nsammen med dette program. Hvis ikke, se <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Send feedback i en krypteret mail\nOphavsret (C) 2009-2018 Tails-udviklere <tails@boum.org>\n\nDette program er fri software; du kan videredistribuere det og/eller ændre\ndet i henhold til GNU General Public License som udgivet af\nFree Software Foundation; enten version 3 af licensen, eller (efter\neget valg) en hvilken som helst senere version.\n\nDette program er distribueret i håbet om at det vil være anvendeligt, men\nUDEN NOGEN GARANTI;   uden selv den underforståede garanti for\nSALGSBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Læs GNU\nGeneral Public License for flere detaljer.\n\nDu burde have modtaget en kopi af GNU General Public License\nsammen med dette program. Hvis ikke, se <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
@@ -186,7 +186,7 @@ msgstr "Opsummering"
 
 #: ../data/whisperback.ui.h:23
 msgid "Bug description"
-msgstr "Fejl beskrivelse"
+msgstr "Fejlbeskrivelse"
 
 #: ../data/whisperback.ui.h:24
 msgid "Help:"
@@ -202,11 +202,11 @@ msgstr "E-mailadresse (hvis du vil have svar fra os)"
 
 #: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
-msgstr "valgfri PGP nøgle"
+msgstr "valgfri PGP-nøgle"
 
 #: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
-msgstr "Tekniske detaljer til at inkludere"
+msgstr "Tekniske detaljer som skal med"
 
 #: ../data/whisperback.ui.h:29
 msgid "headers"

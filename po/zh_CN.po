@@ -10,13 +10,14 @@
 # YF <yfdyh000@gmail.com>, 2017
 # xtoaster <zhazhenzhong@gmail.com>, 2012
 # 吴致远, 2017
+# ヨイツの賢狼ホロ <kenookamihoro@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: The Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2018-08-02 01:15+0000\n"
-"Last-Translator: James Davis <fighter20@protonmail.com>\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"PO-Revision-Date: 2018-09-06 19:23+0000\n"
+"Last-Translator: ヨイツの賢狼ホロ <kenookamihoro@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/otf/torproject/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,12 +31,12 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "无效的联系人邮件：%s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "无效的联系人 OpenPGP 密钥：%s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "无效的联系人 OpenPGP 公钥块"
 
@@ -43,59 +44,59 @@ msgstr "无效的联系人 OpenPGP 公钥块"
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "在配置文件 /etc/whisperback/config.py、~/.whisperback/config.py 以及 ./config.py 中都没有找到 %s 变量"
+"/etc/whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr "变量 %s 在 /etc/whisperback/config.py, ~/.whisperback/config.py, 或 ./config.py 中均未找到。"
 
-#: ../whisperBack/gui.py:110
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "受影响软件的名称"
 
-#: ../whisperBack/gui.py:112
+#: ../whisperBack/gui.py:113
 msgid "Exact steps to reproduce the error"
 msgstr "重现问题的详细步骤"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:115
 msgid "Actual result and description of the error"
 msgstr "错误的实际结果和描述"
 
-#: ../whisperBack/gui.py:116
+#: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "预期效果"
 
-#: ../whisperBack/gui.py:152
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr "无法载入有效的配置。"
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr "正在发送邮件..."
 
-#: ../whisperBack/gui.py:219
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr "正在发送邮件"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr "此操作可能需要一些时间..."
 
-#: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
-msgstr "联系人电子邮件地址无效。"
+#: ../whisperBack/gui.py:185
+msgid "The contact email address doesn't seem valid."
+msgstr "联络电子邮件地址无效。"
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr "无法发送电子邮件：SMTP 错误。"
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr "无法连接服务器。"
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr "无法创建或发送邮件。"
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -104,20 +105,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\n错误报告无法发送，可能是网络问题。请尝试重新连接网络，然后再点击发送。\n\n如果仍然无法正常运行，将提示保存故障报告。"
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr "信息已发送。"
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr "加密时出现错误。"
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr "无法保存 %s。"
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -127,33 +128,33 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "可能由于网络原因，故障报告无法发送。\n\n为了解决这一问题，可将故障报告保存到U盘，然后在其他系统中以电子邮件的方式发送到 %s。请注意：如果未采取相应措施（比如通过一次性电子邮件帐号通过 Tor 发送），这种方式可无法保证故障报告的匿名性。\n\n是否将故障报告保存至文件？"
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "通过加密邮件发送反馈。"
 
-#: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Copyright © 2009-2012 Tails 开发人员 (tails@boum.org)"
+#: ../whisperBack/gui.py:336
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+msgstr "© 2009-2018 Tails 开发者 (tails@boum.org)"
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr "Tails 开发者 <tails@boum.org>"
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr "翻译人员"
 
-#: ../whisperBack/gui.py:417
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "URL 地址或 OpenPGP 密钥无效。"
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Copyright © 2009-2012 tails@boum.org"
+msgid "Copyright © 2009-2018 tails@boum.org"
+msgstr "© 2009-2018 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -162,7 +163,7 @@ msgstr "https://tails.boum.org/"
 #: ../data/whisperback.ui.h:4
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -176,7 +177,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - 请以加密邮件发送反馈信息\nCopyright (C) 2009-2012 Tails 开发者 <tails@boum.org>\n\n该程序为自由软件。根据自由软件基金会发布的 GNU 通用公共许可证\n（第 3 版或更高版本），你可以对该软件进行再发布和/或修改。\n\n该程序的发布是希望它能带来用处，但对此并不提供保证，\n甚至不包括对适销性或适用于特定用途的默示保证。\n更多详细信息，请参阅 GNU 通用公共许可证。\n\n该程序附带一份 GNU 通用公共许可证。\n如未收到，请查看 <http://www.gnu.org/licenses/>。\n"
+msgstr "WhisperBack - 以加密邮件发送反馈信息\nCopyright (C) 2009-2018 Tails 开发者 <tails@boum.org>\n\n该程序为自由软件。你可以依据自由软件基金会发行的\nGNU 通用公共许可证第 3 版或任意后续版本的条款，\n传播和/或修改本软件。 \n\n该程序的发布是希望它能带来用处，但对此无任何保证；\n亦无隐含的可以销售或适合特定目的的保证。详情请见GNU公众证。 \n\n你应该已收到一份该程序附带的 GNU 通用公共许可证的副本，\n如未收到，请查看 <http://www.gnu.org/licenses/>。\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
@@ -193,29 +194,33 @@ msgid "Bug description"
 msgstr "故障描述"
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
-msgstr "与你联系的电子邮件地址（可选）"
+msgid "Help:"
+msgstr "帮助："
 
 #: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr "阅读我们的问题报告提交指南。"
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr "电子邮件地址（如果你希望得到我们的回复）"
+
+#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "PGP 密钥（可选 ）"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
 msgstr "所含技术细节"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:29
 msgid "headers"
 msgstr "标头"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:30
 msgid "debugging info"
 msgstr "调试信息"
 
-#: ../data/whisperback.ui.h:29
-msgid "Help"
-msgstr "帮助"
-
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr "发送"

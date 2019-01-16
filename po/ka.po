@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# A. C. <georgianization@outlook.com>, 2018
+# Kristina Tyskiewicz <savannah5k@yahoo.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: The Tor Project\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"PO-Revision-Date: 2018-10-02 17:29+0000\n"
+"Last-Translator: A. C. <georgianization@outlook.com>\n"
+"Language-Team: Georgian (http://www.transifex.com/otf/torproject/language/ka/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ka\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#. XXX use a better exception
+#: ../whisperBack/whisperback.py:56
+#, python-format
+msgid "Invalid contact email: %s"
+msgstr "არამართებული ელფოსტა დასაკავშირებლად: %s"
+
+#: ../whisperBack/whisperback.py:74
+#, python-format
+msgid "Invalid contact OpenPGP key: %s"
+msgstr "არამართებული OpenPGP-გასაღები დასაკავშირებლად: %s"
+
+#: ../whisperBack/whisperback.py:76
+msgid "Invalid contact OpenPGP public key block"
+msgstr "არამართებული საჯარო OpenPGP-გასაღები"
+
+#: ../whisperBack/exceptions.py:41
+#, python-format
+msgid ""
+"The %s variable was not found in any of the configuration files "
+"/etc/whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr "%s ცვლადი არ მოიძებნა არცერთ გასამართ ფაილში /etc/whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+
+#: ../whisperBack/gui.py:111
+msgid "Name of the affected software"
+msgstr "ზემოქმედების ქვეშ მოქცეული პროგრამის დასახელება"
+
+#: ../whisperBack/gui.py:113
+msgid "Exact steps to reproduce the error"
+msgstr "ზუსტი ნაბიჯები შეცდომის წარმოსადგენად"
+
+#: ../whisperBack/gui.py:115
+msgid "Actual result and description of the error"
+msgstr "მოცემული შედეგი და შეცდომის აღწერა"
+
+#: ../whisperBack/gui.py:117
+msgid "Desired result"
+msgstr "სასურველი შედეგი"
+
+#: ../whisperBack/gui.py:130
+msgid "Unable to load a valid configuration."
+msgstr "სწორად გამართული პარამეტრების ჩატვირთვა ვერ ხერხდება"
+
+#: ../whisperBack/gui.py:166
+msgid "Sending mail..."
+msgstr "წერილი იგზავნება..."
+
+#: ../whisperBack/gui.py:167
+msgid "Sending mail"
+msgstr "წერილი იგზავნება"
+
+#. pylint: disable=C0301
+#: ../whisperBack/gui.py:169
+msgid "This could take a while..."
+msgstr "შესაძლოა გარკვეულ ხანს გასტანოს..."
+
+#: ../whisperBack/gui.py:185
+msgid "The contact email address doesn't seem valid."
+msgstr "დასაკავშირებელი ელფოსტა არ ჰგავს ნამდვილს."
+
+#: ../whisperBack/gui.py:202
+msgid "Unable to send the mail: SMTP error."
+msgstr "წერილის გაგზავნა ვერ ხერხდება: SMTP-ს შეცდომა."
+
+#: ../whisperBack/gui.py:204
+msgid "Unable to connect to the server."
+msgstr "სერვერთან დაკავშირება ვერ ხერხდება."
+
+#: ../whisperBack/gui.py:206
+msgid "Unable to create or to send the mail."
+msgstr "წერილის შექმნა ან გაგზავნა ვერ ხერხდება."
+
+#: ../whisperBack/gui.py:209
+msgid ""
+"\n"
+"\n"
+"The bug report could not be sent, likely due to network problems. Please try to reconnect to the network and click send again.\n"
+"\n"
+"If it does not work, you will be offered to save the bug report."
+msgstr "\n\nხარვეზის მოხსენება ვერ ხერხდება, სავარაუდოდ ქსელთან პრობლემების გამო. გთხოვთ სცადოთ ხელახლა დაკავშირება და დააწკაპოთ ხელახლა გაგზავნას.\n\nთუ არ იმუშავებს, შესაძლებლობა გექნებათ შეინახოთ ეს მოხსენება."
+
+#: ../whisperBack/gui.py:222
+msgid "Your message has been sent."
+msgstr "თქვენი შეტყობინება გაიგზავნა."
+
+#: ../whisperBack/gui.py:229
+msgid "An error occured during encryption."
+msgstr "დაშიფვრის დროს მოხდა შეცდომა."
+
+#: ../whisperBack/gui.py:249
+#, python-format
+msgid "Unable to save %s."
+msgstr "%s ვერ ინახება"
+
+#: ../whisperBack/gui.py:272
+#, python-format
+msgid ""
+"The bug report could not be sent, likely due to network problems.\n"
+"\n"
+"As a work-around you can save the bug report as a file on a USB drive and try to send it to us at %s from your email account using another system. Note that your bug report will not be anonymous when doing so unless you take further steps yourself (e.g. using Tor with a throw-away email account).\n"
+"\n"
+"Do you want to save the bug report to a file?"
+msgstr "ხარვეზის მოხსენება ვერ გაიგზავნა, სავარაუდოდ ქსელის შეფერხებების გამო.\n\nსანაცვლოდ, შეგიძლიათ შეინახოთ მოხსენება ფაილის სახით USB-მეხსიერებაზე და გამოგვიგზავნოთ %s ელფოსტაზე, სხვა სისტემიდან. გაითვალისწინეთ, რომ ასეთ შემთხვევაში შესაძლოა თქვენი ვინაობა გამჟღავნდეს, თუ სათანადო ზომებს არ მიიღებთ (მაგ. Tor-ით დროებითი ელფოსტის შექმნა).\n\nგსურთ მოხსენების შენახვა ფაილის სახით?"
+
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
+msgid "WhisperBack"
+msgstr "WhisperBack"
+
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
+msgid "Send feedback in an encrypted mail."
+msgstr "გამოხმაურების გაგზავნა დაშიფრული ფოსტით."
+
+#: ../whisperBack/gui.py:336
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+msgstr "ყველა უფლება დაცულია © 2009-2018 Tails-ის შემმუშავლებლები (tails@boum.org)"
+
+#: ../whisperBack/gui.py:337
+msgid "Tails developers <tails@boum.org>"
+msgstr "Tails-ის შემმუშავლებლები <tails@boum.org>"
+
+#: ../whisperBack/gui.py:338
+msgid "translator-credits"
+msgstr "თარგმნის-მონაწილეები"
+
+#: ../whisperBack/gui.py:370
+msgid "This doesn't seem to be a valid URL or OpenPGP key."
+msgstr "მოცემული URL-ბმული ან OpenPGP-გასაღები სავარაუდოდ არაა მართებული."
+
+#: ../data/whisperback.ui.h:1
+msgid "Copyright © 2009-2018 tails@boum.org"
+msgstr "ყველა უფლება დაცულია © 2009-2018 tails@boum.org"
+
+#: ../data/whisperback.ui.h:3
+msgid "https://tails.boum.org/"
+msgstr "https://tails.boum.org/"
+
+#: ../data/whisperback.ui.h:4
+msgid ""
+"WhisperBack - Send feedback in an encrypted mail\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
+"\n"
+"This program is  free software; you can redistribute  it and/or modify\n"
+"it under the  terms of the GNU General Public  License as published by\n"
+"the Free Software Foundation; either  version 3 of the License, or (at\n"
+"your option) any later version.\n"
+"\n"
+"This program  is distributed in the  hope that it will  be useful, but\n"
+"WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of\n"
+"MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU\n"
+"General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - გამოხმაურების გაგზავნა დაშიფრული ფოსტით\nყველა უფლება დაცულია (C) 2009-2018 Tails-ის შემმუშავებლები <tails@boum.org>\n\nეს თავისუფალი პროგრამული უზრუნველყოფაა; შეგიძლიათ მისი გავრცელება და/ან გარდაქმნა\nGNU General Public-ის ლიცენზიით, დადგენილი Free Software Foundation-ის მიერ; ლიცენზიის როგორც მე-3, აგრეთვე\n(სურვილისამებრ) ნებისმიერი უფრო ახალი ვერსიით.\n\nეს პროგრამა ვრცელდება იმ მიზნით, რომ სასარგებლო იქნება, თუმცა\nპირობისა და შედეგებზე ყოველგვარი პასუხისმგებლობის გარეშე; \nმათ შორის ნაგულისხმევი პირობისა და პასუხისმგებლობის გარეშე, რომ იქნება ღირებული ან გამოსადეგი ცალკეული დანიშნულებისთვის.    იხილეთ GNU\nGeneral Public-ის ლიცენზია, დამატებით ინფორმაციისთვის.\n\nთქვენ ასევე გადმოგეცემათ ასლი GNU General Public-ის ლიცენზიის\nპროგრამასთან ერთად. თუ ასე არაა, იხილეთ <http://www.gnu.org/licenses/>.\n"
+
+#: ../data/whisperback.ui.h:20
+msgid ""
+"If you want us to encrypt messages when we respond to you, add your key ID, "
+"a link to your key, or the key as a public key block:"
+msgstr "თუ გსურთ წერილები დავშიფროთ პასუხისას, დაამატეთ თქვენი გასაღების ID, ან ბმული თქვენს გასაღებზე, ან გასაღები, საჯარო გასაღების სახით:"
+
+#: ../data/whisperback.ui.h:22
+msgid "Summary"
+msgstr "შეჯამება"
+
+#: ../data/whisperback.ui.h:23
+msgid "Bug description"
+msgstr "ხარვეზის აღწერა"
+
+#: ../data/whisperback.ui.h:24
+msgid "Help:"
+msgstr "დახმარება:"
+
+#: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr "გაეცანით ჩვენს სახელმძღვანელოებს ხარვეზების მოხსენებაზე."
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr "ელფოსტის მისამართი (თუ გსურთ ჩვენგან პასუხის მიღება)"
+
+#: ../data/whisperback.ui.h:27
+msgid "optional PGP key"
+msgstr "დამატებითი PGP-გასაღები"
+
+#: ../data/whisperback.ui.h:28
+msgid "Technical details to include"
+msgstr "ტექნიკური მონაცემების დასართავად"
+
+#: ../data/whisperback.ui.h:29
+msgid "headers"
+msgstr "თავსართები"
+
+#: ../data/whisperback.ui.h:30
+msgid "debugging info"
+msgstr "მონაცემები გასამართად"
+
+#: ../data/whisperback.ui.h:31
+msgid "Send"
+msgstr "გაგზავნა"
