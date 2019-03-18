@@ -12,7 +12,7 @@ run the test suite:
 If not done yet, import translations from Transifex
 as documented on https://tails.boum.org/contribute/release_process/#upgrade-custom-debs.
 
-Upgrade version and changelog, tag the release:
+To bump the version, update the changelog, and tag the release, run:
 
     ./scripts/release.sh
 
