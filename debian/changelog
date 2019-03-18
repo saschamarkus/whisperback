@@ -1,3 +1,18 @@
+whisperback (1.7.21) devel; urgency=medium
+
+  [ sajolida ]
+  * Give visual feedback while starting (Closes: #16333).
+
+  [ Sascha Markus ]
+  * Fix crash when additional persistent APT repositories are configured
+    (Closes: #16563)
+
+  [ intrigeri ]
+  * Import updated translations from Transifex.
+  * Improve release process documentation.
+
+ -- Tails developers <tails@boum.org>  Mon, 18 Mar 2019 08:30:04 +0000
+
 whisperback (1.7.20) devel; urgency=medium
 
   [ xin ]
