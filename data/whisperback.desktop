@@ -8,4 +8,5 @@ Exec=whisperback
 Icon=whisperback
 Categories=Application;System;
 Terminal=false
-StartupNotify=false
+StartupNotify=true
+StartupWMClass=whisperback
