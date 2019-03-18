@@ -9,18 +9,19 @@
 # Fathan Imanudin <night.ataraxia@gmail.com>, 2014
 # Ferriandy Chianiago <gpl4all@gmail.com>, 2015
 # hermawan <hermawanadhis@gmail.com>, 2014
+# ical, 2019
 # Lucas Susanto <susantolucas@yahoo.com>, 2015
 # Mark Hiro <akmalgaul@gmail.com>, 2015
-# Mohamad Hasan Al Banna <se7entime@openmailbox.org>, 2013
+# se7entime <se7entime@openmailbox.org>, 2013
 # Rendiyono Wahyu Saputro <rendi.7936@gmail.com>, 2015
 # zk, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: The Tor Project\n"
+"Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 12:09+0000\n"
-"PO-Revision-Date: 2018-04-12 18:55+0000\n"
-"Last-Translator: Yerry Borang <yerry.borang@gmail.com>\n"
+"POT-Creation-Date: 2018-06-11 17:17+0200\n"
+"PO-Revision-Date: 2019-01-31 05:53+0000\n"
+"Last-Translator: ical\n"
 "Language-Team: Indonesian (http://www.transifex.com/otf/torproject/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,12 +35,12 @@ msgstr ""
 msgid "Invalid contact email: %s"
 msgstr "Alamat email kontak tidak benar: %s"
 
-#: ../whisperBack/whisperback.py:73
+#: ../whisperBack/whisperback.py:74
 #, python-format
 msgid "Invalid contact OpenPGP key: %s"
 msgstr "Kunci OpenPGP kontak tidak benar: %s"
 
-#: ../whisperBack/whisperback.py:75
+#: ../whisperBack/whisperback.py:76
 msgid "Invalid contact OpenPGP public key block"
 msgstr "Blok kunci umum OpenPGP kontak tidak benar"
 
@@ -47,59 +48,59 @@ msgstr "Blok kunci umum OpenPGP kontak tidak benar"
 #, python-format
 msgid ""
 "The %s variable was not found in any of the configuration files "
-"/etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
-msgstr "Variabel %s tidak ditemukan di berkas konfigurasi manapun /etc/whisperback/config.py, ~/.whisperback/config.py, ./config.py"
+"/etc/whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
+msgstr "%s variabel tidak ditemukan pada berkas konfigurasi /etc/whisperback/config.py, ~/.whisperback/config.py, or ./config.py"
 
-#: ../whisperBack/gui.py:110
+#: ../whisperBack/gui.py:111
 msgid "Name of the affected software"
 msgstr "Nama perangkat lunak yang terpengaruh"
 
-#: ../whisperBack/gui.py:112
+#: ../whisperBack/gui.py:113
 msgid "Exact steps to reproduce the error"
 msgstr "Tahapan rinci untuk memproduksi ulang galat"
 
-#: ../whisperBack/gui.py:114
+#: ../whisperBack/gui.py:115
 msgid "Actual result and description of the error"
 msgstr "Hasil aktual dan deskripsi galat"
 
-#: ../whisperBack/gui.py:116
+#: ../whisperBack/gui.py:117
 msgid "Desired result"
 msgstr "Hasil yang diharapkan"
 
-#: ../whisperBack/gui.py:152
+#: ../whisperBack/gui.py:130
 msgid "Unable to load a valid configuration."
 msgstr "Tidak dapat memuat konfigurasi yang valid."
 
-#: ../whisperBack/gui.py:218
+#: ../whisperBack/gui.py:166
 msgid "Sending mail..."
 msgstr "Mengirimkan surat..."
 
-#: ../whisperBack/gui.py:219
+#: ../whisperBack/gui.py:167
 msgid "Sending mail"
 msgstr "Mengirimkan surat"
 
 #. pylint: disable=C0301
-#: ../whisperBack/gui.py:221
+#: ../whisperBack/gui.py:169
 msgid "This could take a while..."
 msgstr "Membutuhkan beberapa saat..."
 
-#: ../whisperBack/gui.py:236
-msgid "The contact email adress doesn't seem valid."
+#: ../whisperBack/gui.py:185
+msgid "The contact email address doesn't seem valid."
 msgstr "Alamat surel kontak sepertinya tidak valid."
 
-#: ../whisperBack/gui.py:253
+#: ../whisperBack/gui.py:202
 msgid "Unable to send the mail: SMTP error."
 msgstr "Tidak dapat mengirim surat: galat SMTP."
 
-#: ../whisperBack/gui.py:255
+#: ../whisperBack/gui.py:204
 msgid "Unable to connect to the server."
 msgstr "Tidak visa terhubung dengan server."
 
-#: ../whisperBack/gui.py:257
+#: ../whisperBack/gui.py:206
 msgid "Unable to create or to send the mail."
 msgstr "Tidak dapat membuat atau mengirim surat."
 
-#: ../whisperBack/gui.py:260
+#: ../whisperBack/gui.py:209
 msgid ""
 "\n"
 "\n"
@@ -108,20 +109,20 @@ msgid ""
 "If it does not work, you will be offered to save the bug report."
 msgstr "\n\nPelaporan kutu tidak bisa dikirimkan, sepertinya karena masalah jaringan. Mohon coba sambungkan kembali jaringan dan klik kirim lagi.\n\nJika tidak bisa juga, Anda akan ditawari untuk menyimpan laporan kutu tersebut."
 
-#: ../whisperBack/gui.py:273
+#: ../whisperBack/gui.py:222
 msgid "Your message has been sent."
 msgstr "Pesan Anda telah terkirim."
 
-#: ../whisperBack/gui.py:280
+#: ../whisperBack/gui.py:229
 msgid "An error occured during encryption."
 msgstr "Sebuah galat terjadi saat proses enkripsi."
 
-#: ../whisperBack/gui.py:300
+#: ../whisperBack/gui.py:249
 #, python-format
 msgid "Unable to save %s."
 msgstr "Tidak bisa menyimpan %s."
 
-#: ../whisperBack/gui.py:323
+#: ../whisperBack/gui.py:272
 #, python-format
 msgid ""
 "The bug report could not be sent, likely due to network problems.\n"
@@ -131,33 +132,33 @@ msgid ""
 "Do you want to save the bug report to a file?"
 msgstr "Laporan kutu tidak bisa dikirim, sepertinya karena maslaah jaringan.\n\nSolusinya Anda dapat menyimpan laporan kutu tersebut sebagai sebuah berkas di perangkat USB dan coba kirimkan kepada kami di %s dari akun surel Anda dengan menggunakan sistem lain. Mohon dicatat bahwa laporan kutu Anda tidak akan anonim kecuali Anda mengambil langkah yang lebih aman (mis. menggunakan Tor dengan akun surel sementara).\n\nApakah Anda ingin menyimpan laporan kutu ke dalam berkas?"
 
-#: ../whisperBack/gui.py:383 ../data/whisperback.ui.h:21
+#: ../whisperBack/gui.py:332 ../data/whisperback.ui.h:21
 msgid "WhisperBack"
 msgstr "WhisperBack"
 
-#: ../whisperBack/gui.py:384 ../data/whisperback.ui.h:2
+#: ../whisperBack/gui.py:333 ../data/whisperback.ui.h:2
 msgid "Send feedback in an encrypted mail."
 msgstr "Kirim umpan balik melalui surel terenkripsi."
 
-#: ../whisperBack/gui.py:387
-msgid "Copyright © 2009-2012 Tails developpers (tails@boum.org)"
-msgstr "Hak Cipta © 2009-2012 Tails developpers (tails@boum.org)"
+#: ../whisperBack/gui.py:336
+msgid "Copyright © 2009-2018 Tails developers (tails@boum.org)"
+msgstr "Hak Cipta © 2009-2018 Tails developers (tails@boum.org)"
 
-#: ../whisperBack/gui.py:388
+#: ../whisperBack/gui.py:337
 msgid "Tails developers <tails@boum.org>"
 msgstr "Pengembang Tails <tails@boum.org>"
 
-#: ../whisperBack/gui.py:389
+#: ../whisperBack/gui.py:338
 msgid "translator-credits"
 msgstr "Kredit-Translator"
 
-#: ../whisperBack/gui.py:417
+#: ../whisperBack/gui.py:370
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
 msgstr "Ini tidak terlihat sebagai URL atau kunci OpenPGP yang valid."
 
 #: ../data/whisperback.ui.h:1
-msgid "Copyright © 2009-2012 tails@boum.org"
-msgstr "Hak Cipta © 2009-2012 tails@boum.org"
+msgid "Copyright © 2009-2018 tails@boum.org"
+msgstr "Hak Cipta © 2009-2018 tails@boum.org"
 
 #: ../data/whisperback.ui.h:3
 msgid "https://tails.boum.org/"
@@ -166,7 +167,7 @@ msgstr "https://tails.boum.org/"
 #: ../data/whisperback.ui.h:4
 msgid ""
 "WhisperBack - Send feedback in an encrypted mail\n"
-"Copyright (C) 2009-2012 Tails developers <tails@boum.org>\n"
+"Copyright (C) 2009-2018 Tails developers <tails@boum.org>\n"
 "\n"
 "This program is  free software; you can redistribute  it and/or modify\n"
 "it under the  terms of the GNU General Public  License as published by\n"
@@ -180,7 +181,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "WhisperBack - Kirim umpan balik dalam surat terenkripsi\nHak Cipta (C) 2009-2012 pengembang Tails <tails@boum.org>\n\nAplikasi ini gratis; Anda diizinkan untuk mendistribusikan dan/atau memodifikasinya\ndi bawah ketentuan GNU General Public License sebagaimana seperti yang dipublikasikan oleh\nFree Software Foundation; baik versi 3 dari Lisensi, atau (dengan\npilihan Anda) versi yang lebih baru.\n\nAplikasi ini didistribusikan dengan harapan bahwa itu akan berguna, tetapi\nTANPA GARANSI; bahkan tanpa jaminan tersirat dari\nDAGANGAN atau KECOCOKAN UNTUK TUJUAN TERTENTU. Lihat GNU\nGeneral Public License untuk lebih jelas.\n\nAnda seharusnya menerima salinan dari GNU General Public License\nbersama dengan program ini. Jika tidak, lihat <http://www.gnu.org/licenses/>.\n"
+msgstr "WhisperBack - Kirim umpan balik dalam surel terenkripsi\nHak Cipta (C) 2009-2018 pengembang Tails <tails@boum.org>\n\nProgram ini adalah perangkat lunak gratis; Anda diizinkan untuk mendistribusikan dan/atau memodifikasinya\ndi bawah ketentuan GNU General Public License sebagaimana seperti yang dipublikasikan oleh\nFree Software Foundation; baik versi 3 dari Lisensi, atau (dengan\npilihan Anda) versi yang lebih baru.\n\nProgram ini didistribusikan dengan harapan akan berguna, tetapi\nTANPA GARANSI; bahkan tanpa jaminan tersirat dari\nDAGANGAN atau KECOCOKAN UNTUK TUJUAN TERTENTU. Lihat GNU\nGeneral Public License untuk lebih jelas.\n\nAnda seharusnya menerima salinan dari GNU General Public License\nbersama dengan program ini. Jika tidak, lihat <http://www.gnu.org/licenses/>.\n"
 
 #: ../data/whisperback.ui.h:20
 msgid ""
@@ -197,29 +198,33 @@ msgid "Bug description"
 msgstr "Deskripsi bug"
 
 #: ../data/whisperback.ui.h:24
-msgid "Optional email address to contact you"
-msgstr "Alamat surel pilihan untuk menghubungi Anda"
+msgid "Help:"
+msgstr "Bantuan:"
 
 #: ../data/whisperback.ui.h:25
+msgid "Read our bug reporting guidelines."
+msgstr "Lihat panduan pelaporan bug kami."
+
+#: ../data/whisperback.ui.h:26
+msgid "Email address (if you want an answer from us)"
+msgstr "Alamat surel (Jika Anda ingin jawaban dari kami)"
+
+#: ../data/whisperback.ui.h:27
 msgid "optional PGP key"
 msgstr "pilihan kunci PGP"
 
-#: ../data/whisperback.ui.h:26
+#: ../data/whisperback.ui.h:28
 msgid "Technical details to include"
 msgstr "Detail teknis dimasukkan"
 
-#: ../data/whisperback.ui.h:27
+#: ../data/whisperback.ui.h:29
 msgid "headers"
 msgstr "header"
 
-#: ../data/whisperback.ui.h:28
+#: ../data/whisperback.ui.h:30
 msgid "debugging info"
 msgstr "info debugging"
 
-#: ../data/whisperback.ui.h:29
-msgid "Help"
-msgstr "Bantuan"
-
-#: ../data/whisperback.ui.h:30
+#: ../data/whisperback.ui.h:31
 msgid "Send"
 msgstr "Kirim"
