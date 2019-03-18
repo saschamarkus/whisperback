@@ -19,3 +19,8 @@ To bump the version, update the changelog, and tag the release, run:
 Push:
 
     git push --follow-tags origin master:master
+
+Before building the package, install an extra dependency of the clean
+target, that's usually run on the host system:
+
+    sudo apt install python3-distutils-extra
