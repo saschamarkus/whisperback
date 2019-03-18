@@ -147,7 +147,7 @@ class WhisperBack(object):
         #pylint: disable=W0122
         exec(code, self.__dict__)
 
-    def __get_debug_info(self, raw_debug):
+    def __get_debug_info(self, raw_debug, prefix=''):
         """ Deserializes the dicts from raw_debug and creates a string
         with the header from the dict key and it's content
 
@@ -157,13 +157,20 @@ class WhisperBack(object):
         all_info = json.loads(raw_debug)
         result = ''
         for debug_info in all_info:
-            result += '\n======= content of {} =======\n'.format(debug_info['key'])
+            if prefix:
+                result += '\n{} === content of {} ===\n'.format(prefix, debug_info['key'])
+            else:
+                result += '\n======= content of {} =======\n'.format(debug_info['key'])
             if type(debug_info['content']) is list:
                 for line in debug_info['content']:
-                    sanitized = '{}\n'.format(whisperBack.utils.sanitize_hardware_info(line))
-                    result += re.sub(r'^--\s*', '', sanitized)
+
+                    if isinstance(line, dict):
+                        result += self.__get_debug_info(json.dumps([line]), prefix + '> ')
+                    else:
+                        sanitized = '{}{}\n'.format(prefix, whisperBack.utils.sanitize_hardware_info(line))
+                        result += re.sub(r'^--\s*', '', sanitized)
             else:
-                result += '{}\n'.format(whisperBack.utils.sanitize_hardware_info(debug_info['content']))
+                result += '{}{}\n'.format(prefix, whisperBack.utils.sanitize_hardware_info(debug_info['content']))
         return result
 
     def __check_conf(self):
