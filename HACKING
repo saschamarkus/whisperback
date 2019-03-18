@@ -6,7 +6,7 @@ Release
 Install the test suite dependencies and
 run the test suite:
 
-    sudo apt-get install python3-gnupg && \
+    sudo apt install python3-gnupg && \
     ./test.py
 
 If not done yet, import translations from Transifex
