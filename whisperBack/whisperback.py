@@ -27,6 +27,7 @@
 
 import email.mime.text
 import json
+import logging
 import os
 import re
 import threading
@@ -40,6 +41,7 @@ import whisperBack.mail
 import whisperBack.encryption
 import whisperBack.utils
 
+logger = logging.getLogger(__name__)
 
 # pylint: disable=R0902
 class WhisperBack(object):
@@ -51,6 +53,8 @@ class WhisperBack(object):
         """Sets an optional email address to be used for furether communication
 
         """
+
+        logger.debug("Setting contact email")
         if whisperBack.utils.is_valid_email(email):
             self._contact_email = email
         else:
@@ -66,6 +70,8 @@ class WhisperBack(object):
         """Sets an optional PGP key to be used for furether communication
 
         """
+
+        logger.debug("Setting PGP key")
         if (whisperBack.utils.is_valid_pgp_block(gpgkey) or
             whisperBack.utils.is_valid_pgp_id(gpgkey) or
             whisperBack.utils.is_valid_link(gpgkey) or
@@ -133,6 +139,7 @@ class WhisperBack(object):
         @param config_file_path The path on the configuration file to load
         """
 
+        logger.debug('Loading conf from %s', config_file_path)
         f = None
         try:
             f = open(config_file_path, 'r')
@@ -140,6 +147,7 @@ class WhisperBack(object):
         except IOError:
             # There's no problem if one of the configuration files is not
             # present
+            logging.warn("Failed to load conf %s", config_file_path)
             return None
         finally:
             if f:
@@ -154,7 +162,15 @@ class WhisperBack(object):
         @param raw_debug The serialized json containing the debug info
         It is a list of dicts to keep the order of the different debug infos
         """
-        all_info = json.loads(raw_debug)
+
+        logger.debug("creating debug info")
+        all_info = dict()
+        try:
+            all_info = json.loads(raw_debug)
+        except:
+            pass
+        if not all_info:
+            logging.warn("Missing debug info")
         result = ''
         for debug_info in all_info:
             if prefix:
@@ -177,7 +193,7 @@ class WhisperBack(object):
         """Check that all the required configuration variables are filled
         and raise MisconfigurationException if not.
         """
-
+        logger.debug("checking conf")
         # XXX: Add sanity checks
 
         if not self.to_address:
@@ -263,6 +279,7 @@ class WhisperBack(object):
 
         Aggregate all informations to prepare the message body.
         """
+        logging("Creating message body")
         body = "Subject: %s\n" % self.subject
         if self.contact_email:
             body += "From: %s\n" % self.contact_email
@@ -280,7 +297,7 @@ class WhisperBack(object):
 
     def get_mime_message(self):
         """Returns the PGP/MIME message to be sent"""
-
+        logger.debug("Building mime message")
         mime_message = email.mime.text.MIMEText(self.get_message_body())
 
         encrypter = whisperBack.encryption.Encryption(
@@ -313,7 +330,7 @@ class WhisperBack(object):
         @param progress_callback
         @param finished_callback
         """
-
+        logger.debug("Sending message")
         # XXX: It's really strange that some exceptions from this method are
         #      raised and some other transmitted to finished_callback…
 

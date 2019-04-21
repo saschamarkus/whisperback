@@ -25,12 +25,14 @@
 
 """
 
+import logging
 import os
 import re
 import urllib.parse
 import locale
 from textwrap import TextWrapper
 
+logger = logging.getLogger(__name__)
 # Ugly pathes finder utilities
 
 def guess_prefix ():
@@ -86,6 +88,7 @@ def is_valid_link(candidate):
     - an hostname of the form domain.tld
     - a scheme http(s) or ftp(S)
     """
+    logger.debug("Validating link %s", candidate)
     parseresult = urllib.parse.urlparse(candidate)
     #pylint: disable=E1101
     if (re.search(r'^(ht|f)tp(s)?$', parseresult.scheme) and
@@ -102,6 +105,7 @@ def is_valid_pgp_block(candidate):
     @returns  true if candidate starts with `-----BEGIN PGP PUBLIC KEY BLOCK----`
               and ends with `-----END PGP PUBLIC KEY BLOCK-----`
     """
+    loggging.debug("Validating pgp block %s", candidate)
     #pylint: disable=C0301
     if re.search(r"-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----",
             candidate):
@@ -118,6 +122,7 @@ def is_valid_pgp_id(candidate):
               digit hex fingerprint
     """
     #pylint: disable=C0301
+    logger.debug("Validating pgp id %s", candidate)
     if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9f-zA-F]{4} {0,2}){10}$)",
             candidate):
         return True
@@ -131,6 +136,7 @@ def is_valid_email(candidate):
 
     @returns  true if candidate is in the form test@example.com
     """
+    logger.debug("Validating email %s", candidate)
     if re.search(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", candidate):
         return True
     else:
@@ -141,6 +147,7 @@ def is_valid_port(candidate):
 
     @param candidate the port number to be checked
     """
+    logger.debug("Validating port %s", candidate)
     try:
         int(candidate)
     except ValueError:
@@ -159,7 +166,7 @@ def is_valid_hostname_or_ipv4(candidate):
 
     @param candidate the hostname or IPv4 address to validate
     """
-
+    logger.debug("Validating host or IP %s", candidate)
     # XXX: must be updated once IPv6 is enabled
 
     if not isinstance(candidate, str):
@@ -188,6 +195,7 @@ def sanitize_hardware_info(log_string):
 
     @returns a sanitized version of log_string
     """
+    logger.debug("Sanitizing hardware info")
     # XXX: must be updated once IPv6 is enabled
 
     # DMI
@@ -232,6 +240,7 @@ def wrap_text(text):
     @param text the string to be wrapped
 
     @return The wrapped text"""
+    logger.debug("Wrapping text")
 
     wrapper = TextWrapper()
     wrapped = [wrapper.fill(line) for line in text.split('\n')]
