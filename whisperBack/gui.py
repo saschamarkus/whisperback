@@ -31,6 +31,7 @@ __version__ = '1.7.21'
 LOCALEDIR = "locale/"
 PACKAGE = "whisperback"
 
+import logging
 import os
 
 # Import these because we need the exception they raise
@@ -49,6 +50,8 @@ from gi.repository import Gtk
 import whisperBack.exceptions
 import whisperBack.whisperback
 import whisperBack.utils
+
+LOG = logging.getLogger(__name__)
 
 #pylint: disable=R0902
 class WhisperBackUI(object):
@@ -144,6 +147,7 @@ class WhisperBackUI(object):
         """
         self.close_application()
         return False
+
     def cb_show_about(self, widget, data=None):
         """Callback function to show the "about" dialog
 
@@ -295,6 +299,7 @@ Do you want to save the bug report to a file?") % self.backend.to_address
         @param buttons          Buttons to display
         """
 
+        LOG.debug("Show exception dialog")
         if not close_callback:
             close_callback = self.cb_close_exception_dialog
 
@@ -326,6 +331,7 @@ Do you want to save the bug report to a file?") % self.backend.to_address
 
         """
 
+        LOG.debug("Show about dialog")
         about_dialog = Gtk.AboutDialog()
         about_dialog.set_transient_for(self.main_window)
         about_dialog.set_version(__version__)
@@ -348,6 +354,7 @@ Do you want to save the bug report to a file?") % self.backend.to_address
         """Show a text entry dialog to let the user enter a GPG public key block
 
         """
+        LOG.debug("Show gpg dialog")
         if self.backend.contact_gpgkey:
             #pylint: disable=C0301
             self.gpg_keyblock.get_buffer().set_text(str(self.backend.contact_gpgkey))

@@ -11,7 +11,7 @@
 # it under the  terms of the GNU General Public  License as published by
 # the Free Software Foundation; either  version 3 of the License, or (at
 # your option) any later version.
-# 
+#
 # This program  is distributed in the  hope that it will  be useful, but
 # WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of
 # MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU
@@ -25,11 +25,15 @@
 
 """
 
+import logging
 import smtplib
 import socket
 import socks
 import ssl
 import time
+
+LOG = logging.getLogger(__name__)
+
 
 #pylint: disable=R0913
 def send_message_tls (from_address, to_address, message, host="localhost",
@@ -50,6 +54,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param socks_port The port of the SOCKS proxy to connect through
     """
 
+    LOG.debug("sending mail")
     # Monkeypatching the entire connection through the SOCKS proxy
     socks.set_default_proxy(socks.SOCKS5, socks_host, socks_port)
     socket.socket = socks.socksocket
@@ -78,6 +83,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     else:
         smtp.sendmail(from_address, [to_address], message)
         smtp.quit()
+
 
 class TLSError(Exception):
     """Exception raised if problem happens in STARTTLS step"""

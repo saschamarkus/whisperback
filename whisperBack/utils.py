@@ -11,7 +11,7 @@
 # it under the  terms of the GNU General Public  License as published by
 # the Free Software Foundation; either  version 3 of the License, or (at
 # your option) any later version.
-# 
+#
 # This program  is distributed in the  hope that it will  be useful, but
 # WITHOUT   ANY  WARRANTY;   without  even   the  implied   warranty  of
 # MERCHANTABILITY  or FITNESS  FOR A  PARTICULAR PURPOSE.   See  the GNU
@@ -25,13 +25,16 @@
 
 """
 
+import logging
 import os
 import re
 import urllib.parse
 import locale
 from textwrap import TextWrapper
 
+LOG = logging.getLogger(__name__)
 # Ugly pathes finder utilities
+
 
 def guess_prefix ():
     """Tries to guess the prefix
@@ -46,6 +49,7 @@ def guess_prefix ():
     else:
         return None
 
+
 def get_sharedir ():
     """Tries to guess the shared data directiry
 
@@ -56,6 +60,7 @@ def get_sharedir ():
     else:
         return "data"
 
+
 def get_datadir ():
     """Tries to guess the datadir
 
@@ -64,6 +69,7 @@ def get_datadir ():
         return os.path.join (get_sharedir(), "whisperback")
     else:
         return "data"
+
 
 def get_pixmapdir ():
     """Tries to guess the pixmapdir
@@ -77,6 +83,7 @@ def get_pixmapdir ():
 
 # Input validation fuctions
 
+
 def is_valid_link(candidate):
     """Check if candidate seems to be a internet link
 
@@ -86,6 +93,7 @@ def is_valid_link(candidate):
     - an hostname of the form domain.tld
     - a scheme http(s) or ftp(S)
     """
+    LOG.debug("Validating link %s", candidate)
     parseresult = urllib.parse.urlparse(candidate)
     #pylint: disable=E1101
     if (re.search(r'^(ht|f)tp(s)?$', parseresult.scheme) and
@@ -93,6 +101,7 @@ def is_valid_link(candidate):
         return True
     else:
         return False
+
 
 def is_valid_pgp_block(candidate):
     """Check if candidate seems to be a PGP public key block
@@ -102,12 +111,14 @@ def is_valid_pgp_block(candidate):
     @returns  true if candidate starts with `-----BEGIN PGP PUBLIC KEY BLOCK----`
               and ends with `-----END PGP PUBLIC KEY BLOCK-----`
     """
+    LOG.debug("Validating pgp block %s", candidate)
     #pylint: disable=C0301
     if re.search(r"-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----",
             candidate):
         return True
     else:
         return False
+
 
 def is_valid_pgp_id(candidate):
     """Check if candidate looks like a pgp key ID
@@ -118,11 +129,13 @@ def is_valid_pgp_id(candidate):
               digit hex fingerprint
     """
     #pylint: disable=C0301
+    LOG.debug("Validating pgp id %s", candidate)
     if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9f-zA-F]{4} {0,2}){10}$)",
             candidate):
         return True
     else:
         return False
+
 
 def is_valid_email(candidate):
     """Check if candidate looks like an email address
@@ -131,16 +144,19 @@ def is_valid_email(candidate):
 
     @returns  true if candidate is in the form test@example.com
     """
+    LOG.debug("Validating email %s", candidate)
     if re.search(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", candidate):
         return True
     else:
         return False
+
 
 def is_valid_port(candidate):
     """Check if candidate is a valid port number (integer between 1 and 65535)
 
     @param candidate the port number to be checked
     """
+    LOG.debug("Validating port %s", candidate)
     try:
         int(candidate)
     except ValueError:
@@ -151,6 +167,7 @@ def is_valid_port(candidate):
     else:
         return False
 
+
 def is_valid_hostname_or_ipv4(candidate):
     """Check if candidate is a valid hostname or IPv4 address
 
@@ -159,7 +176,7 @@ def is_valid_hostname_or_ipv4(candidate):
 
     @param candidate the hostname or IPv4 address to validate
     """
-
+    LOG.debug("Validating host or IP %s", candidate)
     # XXX: must be updated once IPv6 is enabled
 
     if not isinstance(candidate, str):
@@ -176,6 +193,7 @@ def is_valid_hostname_or_ipv4(candidate):
     else:
         return False
 
+
 def sanitize_hardware_info(log_string):
     """Sanitize hardware-identifying info from a string
 
@@ -188,6 +206,7 @@ def sanitize_hardware_info(log_string):
 
     @returns a sanitized version of log_string
     """
+    LOG.debug("Sanitizing hardware info")
     # XXX: must be updated once IPv6 is enabled
 
     # DMI
@@ -232,6 +251,7 @@ def wrap_text(text):
     @param text the string to be wrapped
 
     @return The wrapped text"""
+    LOG.debug("Wrapping text")
 
     wrapper = TextWrapper()
     wrapped = [wrapper.fill(line) for line in text.split('\n')]
