@@ -279,7 +279,7 @@ class WhisperBack(object):
 
         Aggregate all informations to prepare the message body.
         """
-        logging("Creating message body")
+        LOG.debug("Creating message body")
         body = "Subject: %s\n" % self.subject
         if self.contact_email:
             body += "From: %s\n" % self.contact_email
