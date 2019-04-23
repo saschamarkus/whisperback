@@ -105,7 +105,7 @@ def is_valid_pgp_block(candidate):
     @returns  true if candidate starts with `-----BEGIN PGP PUBLIC KEY BLOCK----`
               and ends with `-----END PGP PUBLIC KEY BLOCK-----`
     """
-    loggging.debug("Validating pgp block %s", candidate)
+    LOG.debug("Validating pgp block %s", candidate)
     #pylint: disable=C0301
     if re.search(r"-----BEGIN PGP PUBLIC KEY BLOCK-----\n(?:.*\n)+-----END PGP PUBLIC KEY BLOCK-----",
             candidate):
