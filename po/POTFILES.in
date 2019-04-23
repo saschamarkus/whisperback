@@ -9,5 +9,6 @@ whisperBack/utils.py
 whisperBack/__init__.py
 
 data/whisperback.ui.h
+data/whisperback.desktop.in
 
 whisperback

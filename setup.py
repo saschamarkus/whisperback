@@ -42,6 +42,11 @@ class build_gtkbuilderi18n(Command):
         subprocess.call (["intltool-extract",
                           "--type=gettext/glade",
                           "data/whisperback.ui"])
+        subprocess.call (["intltool-merge",
+                          "--desktop-style",
+                          "po",
+                          "data/whisperback.desktop.in",
+                          "data/whisperback.desktop"])
 
 class build_man(Command):
     description = "generate the man"
