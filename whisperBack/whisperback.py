@@ -41,7 +41,7 @@ import whisperBack.mail
 import whisperBack.encryption
 import whisperBack.utils
 
-logger = logging.getLogger(__name__)
+LOG = logging.getLogger(__name__)
 
 # pylint: disable=R0902
 class WhisperBack(object):
@@ -54,7 +54,7 @@ class WhisperBack(object):
 
         """
 
-        logger.debug("Setting contact email")
+        LOG.debug("Setting contact email")
         if whisperBack.utils.is_valid_email(email):
             self._contact_email = email
         else:
@@ -71,7 +71,7 @@ class WhisperBack(object):
 
         """
 
-        logger.debug("Setting PGP key")
+        LOG.debug("Setting PGP key")
         if (whisperBack.utils.is_valid_pgp_block(gpgkey) or
             whisperBack.utils.is_valid_pgp_id(gpgkey) or
             whisperBack.utils.is_valid_link(gpgkey) or
@@ -139,7 +139,7 @@ class WhisperBack(object):
         @param config_file_path The path on the configuration file to load
         """
 
-        logger.debug('Loading conf from %s', config_file_path)
+        LOG.debug('Loading conf from %s', config_file_path)
         f = None
         try:
             f = open(config_file_path, 'r')
@@ -163,7 +163,7 @@ class WhisperBack(object):
         It is a list of dicts to keep the order of the different debug infos
         """
 
-        logger.debug("creating debug info")
+        LOG.debug("creating debug info")
         all_info = dict()
         try:
             all_info = json.loads(raw_debug)
@@ -193,7 +193,7 @@ class WhisperBack(object):
         """Check that all the required configuration variables are filled
         and raise MisconfigurationException if not.
         """
-        logger.debug("checking conf")
+        LOG.debug("checking conf")
         # XXX: Add sanity checks
 
         if not self.to_address:
@@ -297,7 +297,7 @@ class WhisperBack(object):
 
     def get_mime_message(self):
         """Returns the PGP/MIME message to be sent"""
-        logger.debug("Building mime message")
+        LOG.debug("Building mime message")
         mime_message = email.mime.text.MIMEText(self.get_message_body())
 
         encrypter = whisperBack.encryption.Encryption(
@@ -330,7 +330,7 @@ class WhisperBack(object):
         @param progress_callback
         @param finished_callback
         """
-        logger.debug("Sending message")
+        LOG.debug("Sending message")
         # XXX: It's really strange that some exceptions from this method are
         #      raised and some other transmitted to finished_callback…
 

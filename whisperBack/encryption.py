@@ -36,7 +36,7 @@ import os.path
 
 import whisperBack.exceptions
 
-logger = logging.getLogger(__name__)
+LOG = logging.getLogger(__name__)
 
 class Encryption ():
     """Some tools for encryption"""
@@ -60,7 +60,7 @@ class Encryption ():
         @param message MIME message to be encrypted.
         @return The encrypted data
         """
-        logger.debug("Encrypting MIME message")
+        LOG.debug("Encrypting MIME message")
         assert isinstance(message, email.mime.base.MIMEBase)
 
         crypt = self._gpg.encrypt(message.as_string(), to_fingerprints, always_trust=True)

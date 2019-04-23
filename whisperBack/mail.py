@@ -32,7 +32,7 @@ import socks
 import ssl
 import time
 
-logger = logging.getLogger(__name__)
+LOG = logging.getLogger(__name__)
 
 #pylint: disable=R0913
 def send_message_tls (from_address, to_address, message, host="localhost",
@@ -53,7 +53,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param socks_port The port of the SOCKS proxy to connect through
     """
 
-    logger.debug("sending mail")
+    LOG.debug("sending mail")
     # Monkeypatching the entire connection through the SOCKS proxy
     socks.set_default_proxy(socks.SOCKS5, socks_host, socks_port)
     socket.socket = socks.socksocket
