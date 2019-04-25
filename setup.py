@@ -69,7 +69,7 @@ setup(name='whisperback',
         ('share/whisperback', [
             'data/whisperback.ui',
             'data/style.css',
-            'data/tails-logging.conf'
+            'data/logging.conf'
         ]),
         ('share/pixmaps', ['data/whisperback.svg']),
         ('share/applications', ['data/whisperback.desktop']),
