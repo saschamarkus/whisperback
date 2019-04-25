@@ -185,7 +185,7 @@ class WhisperBack(object):
         """Check that all the required configuration variables are filled
         and raise MisconfigurationException if not.
         """
-        LOG.debug("checking conf")
+        LOG.debug("Checking conf")
         # XXX: Add sanity checks
 
         if not self.to_address:

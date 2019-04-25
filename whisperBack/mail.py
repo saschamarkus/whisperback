@@ -54,7 +54,7 @@ def send_message_tls (from_address, to_address, message, host="localhost",
     @param socks_port The port of the SOCKS proxy to connect through
     """
 
-    LOG.debug("sending mail")
+    LOG.debug("Sending mail")
     # Monkeypatching the entire connection through the SOCKS proxy
     socks.set_default_proxy(socks.SOCKS5, socks_host, socks_port)
     socket.socket = socks.socksocket
