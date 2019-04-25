@@ -30,14 +30,14 @@ import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
-import whisperBack
-
 logging.config.fileConfig('/usr/share/whisperback/logging.conf')
 # Set loglevel if debug is found in kernel command line
 with open('/proc/cmdline') as cmdline_fd:
     CMDLINE = cmdline_fd.read()
 if "debug" in CMDLINE.split():
     logging.getLogger().setLevel(logging.DEBUG)
+
+import whisperBack
 
 ui = whisperBack.WhisperBackUI()
 Gtk.main()
