@@ -1,3 +1,21 @@
+whisperback (1.7.22) stable; urgency=medium
+
+  [ intrigeri ]
+  * Document host system dependency for building the package.
+
+  [ Sascha Markus ]
+  * Add support for debug cmdline option (refs: #12399)
+
+  [ segfault ]
+  * Use consistent capitalization in log messages (refs: #12399)
+  * Install tails-logging.conf (refs: #12399)
+  * Fix name of logging config file (refs: #12399)
+  * Fix logging config file not loaded (refs: #12399)
+  * Fix logging module used before being configured (refs: #12399)
+  * Remove too verbose debug output (refs: ##12399)
+
+ -- Tails developers <tails@boum.org>  Fri, 26 Apr 2019 01:09:04 +0200
+
 whisperback (1.7.21) devel; urgency=medium
 
   [ sajolida ]
