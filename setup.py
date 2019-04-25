@@ -65,12 +65,17 @@ setup(name='whisperback',
     license='GNU GPL v3',
     packages=['whisperBack'],
     scripts=['whisperback'],
-    data_files=[('share/whisperback', ['data/whisperback.ui', 'data/style.css']),
-                ('share/pixmaps', ['data/whisperback.svg']),
-                ('share/applications', ['data/whisperback.desktop']),
-                ('share/doc/whisperback', ['doc/config.py.sample', 
-                                           'README']),
-                ('share/man/man1', ['doc/whisperback.1'])],
+    data_files=[
+        ('share/whisperback', [
+            'data/whisperback.ui',
+            'data/style.css',
+            'data/tails-logging.conf'
+        ]),
+        ('share/pixmaps', ['data/whisperback.svg']),
+        ('share/applications', ['data/whisperback.desktop']),
+        ('share/doc/whisperback', ['doc/config.py.sample', 'README']),
+        ('share/man/man1', ['doc/whisperback.1'])
+    ],
     requires=['gi', 'gnupg', 'ssl'],
     cmdclass = { "build" : build_extra.build_extra,
         "build_gtkbuilderi18n" : build_gtkbuilderi18n,
