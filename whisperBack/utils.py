@@ -206,7 +206,6 @@ def sanitize_hardware_info(log_string):
 
     @returns a sanitized version of log_string
     """
-    LOG.debug("Sanitizing hardware info")
     # XXX: must be updated once IPv6 is enabled
 
     # DMI
